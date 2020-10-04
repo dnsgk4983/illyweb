@@ -94,7 +94,7 @@ body{
 		
 main{	
     background: url('../images/background-main.jpg');	
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
     /* background-color: #f1f7f5; */
 
