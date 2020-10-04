@@ -96,6 +96,7 @@ main{
     background: url('../images/background-main.jpg');	
     background-size: 100%;
     background-repeat: no-repeat;
+    position: relative;
     /* background-color: #f1f7f5; */
 
     background-position: bottom center;
