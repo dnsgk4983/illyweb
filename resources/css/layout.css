@@ -6267,9 +6267,7 @@ a.more > span{
 .bdr-none{
     border-right: none;
 }
-table.t3>thead>tr>th:last-child{
-    /* border-right: none; */
-}
+
 .wt-a40{
     width: 40%;
 }
