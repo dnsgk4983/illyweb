@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta property=”og:image” content="resources/images/POZ_202007131009436070.jpg">
+    <meta property=”og:image:width” content="600">
+    <meta property=”og:image:height” content="400">
+    <meta name="author" content="예산재난포털" />
+    <meta name="Keywords" content="예산재난포털" />
+    <title>예산군청</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="shortcut icon" href="resources/images/fa_gDi_icon.ico">
+    <link rel="stylesheet" href="resources/css/commmon/common.css">
+    <link rel="stylesheet" href="resources/css/layout.css">
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+</head>
+
+<body>
+    <!-- 공통메뉴  -->
+    <header id="header">
+        <div class="nav-wrapper">
+            <a href="index.html"><h1 id="logo">예산재난포털</h1></a>
+            <div class="gnb" id="gnb">
+                <ul>
+                    <li>
+                        <a href="#">종합날씨</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-weather">
+                                <ul>
+                                    <li>
+                                        <a href="livingweather.html">
+                                            <div class="sub-icon-6">
+                                                <img src="resources/images/icon/main-menu-2-1.png" alt="생활날씨">
+                                                <img src="resources/images/icon/main-menu-2-1-hover.png" alt="생활날씨">
+                                            </div>
+                                            생활날씨</a>
+                                    </li>
+                                    <li>
+                                        <a href="rain-info.html">
+                                            <div class="sub-icon-7">
+                                                <img src="resources/images/icon/main-menu-2-2.png" alt="강우정보">
+                                                <img src="resources/images/icon/main-menu-2-2-hover.png" alt="강우정보">
+                                            </div>
+                                            강우정보</a>
+                                    </li>
+                                    <li>
+                                        <a href="snow-info.html">
+                                            <div class="sub-icon-8">
+                                                <img src="resources/images/icon/main-menu-2-3.png" alt="적설정보">
+                                                <img src="resources/images/icon/main-menu-2-3-hover.png" alt="적설정보">
+                                            </div>
+                                            적설정보</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 1depth -->
+                    <li class="on">
+                        <a href="#">생활안전정보</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-information">
+                                <ul>
+                                    <li>
+                                        <a href="information.html">
+                                            <div class="sub-icon-3">
+                                                <img src="resources/images/icon/main-menu-1-3.png" alt="재난속보">
+                                                <img src="resources/images/icon/main-menu-1-3-hover.png" alt="재난속보">
+                                            </div>
+                                            재난속보
+                                        </a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="government-info.html">하천 수위</a></li>
+                                                <li><a href="dam-info.html">댐정보</a></li>
+                                                <li><a href="fire-info.html">소방 긴급구조</a></li>
+                                                <li><a href="firecenter-info.html">소방서센터</a></li>
+                                                <li><a href="earth-info.html">지진</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-9">
+                                                <img src="resources/images/icon/main-menu-3-1.png" alt="재난안전지도">
+                                                <img src="resources/images/icon/main-menu-3-1-hover.png" alt="재난안전지도">
+                                            </div>
+                                            재난안전지도
+                                        </a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="safemap.html">안전MAP</a></li>
+                                            </ul>
+                                        </div>
+                                        
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-10">
+                                                <img src="resources/images/icon/main-menu-3-2.png" alt="재난예방정보">
+                                                <img src="resources/images/icon/main-menu-3-2-hover.png" alt="재난예방정보">
+                                            </div>
+                                            재난예방정보</a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li>
+                                                    <a href="earthquake.html">자연재난</a>
+                                                </li>
+                                                <li>
+                                                    <a href="traffic.html">사회재난</a>
+                                                </li>
+                                                <li>
+                                                    <a href="extinguisher.html">생활안전수칙</a>
+                                                </li>
+                                                <li>
+                                                    <a href="farm.html">농어촌안전</a>
+                                                </li>
+                                                <li>
+                                                    <a href="spring.html">계절별재난</a>
+                                                </li>
+                                                <li>
+                                                    <a href="baby.html">생애주기별 재난</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-11">
+                                                <img src="resources/images/icon/main-menu-3-3.png" alt="재난안전보험">
+                                                <img src="resources/images/icon/main-menu-3-3-hover.png" alt="재난안전보험">
+                                            </div>
+                                            재난안전보험</a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="insurance.html">풍수해보험</a></li>
+                                                <li><a href="safe-insurance.html">예산군 군민안전보험</a></li>
+                                                <li><a href="bicycle.html">예산군 자전거안전보험</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-12">
+                                                <img src="resources/images/icon/main-menu-3-4.png" alt="재난안전앱">
+                                                <img src="resources/images/icon/main-menu-3-4-hover.png" alt="재난안전앱">
+                                            </div>
+                                            재난안전앱</a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="safe-app.html">안전디딤돌</a></li>
+                                                <li><a href="safe-news.html">안전신문고</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 2depth -->
+                    <li>
+                        <a href="#">재난안전대책본부</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-safety">
+                                <ul>
+                                    <li>
+                                        <a href="tissue.html">
+                                            <div class="sub-icon-13">
+                                                <img src="resources/images/icon/main-menu-4-1.png" alt="대책본부 조직도 및 주요업무">
+                                                <img src="resources/images/icon/main-menu-4-1-hover.png" alt="대책본부 조직도 및 주요업무">
+                                            </div>
+                                            대책본부 조직도 및 주요업무</a>
+                                    </li>
+                                    <li>
+                                        <a href="system-1.html">
+                                            <div class="sub-icon-14">
+                                                <img src="resources/images/icon/main-menu-4-2.png" alt="재난대응 체계도">
+                                                <img src="resources/images/icon/main-menu-4-2-hover.png" alt="재난대응 체계도">
+                                            </div>
+                                            재난대응 체계도</a>
+                                    </li>
+                                    <li>
+                                        <a href="system-2.html">
+                                            <div class="sub-icon-15">
+                                                <img src="resources/images/icon/main-menu-4-3.png" alt="피해조사 및 복구계획">
+                                                <img src="resources/images/icon/main-menu-4-3-hover.png" alt="피해조사 및 복구계획">
+                                            </div>
+                                            피해조사 및 복구계획</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 3depth -->
+                    <li>
+                        <a href="#">안전게시판</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-board">
+                                <ul>
+                                    <li>
+                                        <a href="notice.html">
+                                            <div class="sub-icon-16">
+                                                <img src="resources/images/icon/main-menu-5-1.png" alt="공지사항">
+                                                <img src="resources/images/icon/main-menu-5-1-hover.png" alt="공지사항">
+                                            </div>
+                                            공지사항</a>
+                                    </li>
+                                    <li>
+                                        <a href="report.html">
+                                            <div class="sub-icon-17">
+                                                <img src="resources/images/icon/main-menu-5-2.png" alt="보도자료">
+                                                <img src="resources/images/icon/main-menu-5-2-hover.png" alt="보도자료">
+                                            </div>
+                                            보도자료</a>
+                                    </li>
+                                    <li>
+                                        <a href="education.html">
+                                            <div class="sub-icon-18">
+                                                <img src="resources/images/icon/main-menu-5-3.png" alt="교육자료">
+                                                <img src="resources/images/icon/main-menu-5-3-hover.png" alt="교육자료">
+                                            </div>
+                                            교육자료</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 4depth -->
+                </ul>
+            </div>
+        </div>        
+    </header>
+    <div class="gnb_bg"></div>
+    <div class="visual_top_wrap-children">
+        <div class="content-title-top">
+            <h1>아동청소년</h1>
+        </div>
+    </div>
+    <div class="content-tab-top">
+        <ul class="tab-top-nav">
+            <li><a href="#">홈</a></li>
+            <li><span>&gt;</span></li>
+            <li><a href="#">재난예방정보</a></li>
+            <li><span>&gt;</span></li>
+            <li><a href="#">생애주기별 재난</a></li>
+            <li><span>&gt;</span></li>
+            <li><a>아동청소년</a></li>
+        </ul>
+    </div>
+    <section class="top_section" id="post" style="padding:0;">
+        <div class="earth-title">
+            <h1><img src="resources/images/life/children.png" align="center">아동청소년</h1>
+            <div class="line"></div>
+            <p>봄철 동영상 교육자료를 통해 비상상황에 대비하시기 바립니다.</p>
+        </div>
+        <div class="spring-page">
+            <h1>93 / 93 <span>건</span></h1>
+        </div>
+        <div class="spring-video-main">
+            <div class="spring-warp">
+                <div class="spring-video">
+                    <video controls="" poster="https://safe.chungnam.go.kr/images/sftv/MERSC_safe_rule.jpg">
+                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="https://safe.chungnam.go.kr/safeTv/MERSC_safe_rule.mp4"> 
+                    </video>
+                </div>
+                <div class="spring-text">
+                    119와 함께하는 메르스 안전수칙. <br><br>1. 물과 비누로 자주 손을 씻어요. <br><br>2. 씻지 않은 손으로 눈, 코, 입을 만지지 말아요.<br><br>3. 기침, 재채기 시 옷으로 입과 코를 가리고 해요.<br><br>4. 발열이나 호흡기 증상이 있는 사람과 접촉을 피해야 해요. <br><br>5. 외출 시에는 꼭 마스크 착용해요.
+                </div>
+            </div>
+        </div>
+        <!-- video 01 -->
+        <div class="spring-video-main">
+            <div class="spring-warp">
+                <div class="spring-video">
+                    <video controls="" poster="https://safe.chungnam.go.kr/images/sftv/superman_subway.jpg">
+                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="https://safe.chungnam.go.kr/images/sftv/superman_subway.jpg"> 
+                    </video>
+                </div>
+                <div class="spring-text">
+                    [KBS 슈퍼맨이 돌아왔다] 소다네의 지하철 안전을 <br>영상으로 만나보세요.
+                </div>
+            </div>
+        </div>
+        <div class="spring-video-main">
+            <div class="spring-warp">
+                <div class="spring-video">
+                    <video controls="" poster="https://safe.chungnam.go.kr/images/sftv/safebell_fireinAPT.jpg">
+                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="https://safe.chungnam.go.kr/safeTv/safebell_fireinAPT.mp4"> 
+                    </video>
+                </div>
+                <div class="spring-text">
+                    여러분 반갑습니다. 전 국민의 안전 상식을 퀴즈로 풀어 보는 도전 안전벨 시간입니다. <br><br>2000년도에 들어서 아파트가 일반적인 주택으로 자리 잡게 되었고 이런 아파트 세대에는 대도시뿐만 아니라 지방의 읍면 단위까지 일반적으로 바뀌고 있죠? <br><br>그래서 오늘의 퀴즈를 준비했습니다. 자! 지금부터 아파트 거주하시는 분들은 초집중하셔야 해요. 개. 봉. 박. 두.<br><br>오늘 도전 안전벨을 함께 풀어 볼 주이공은 인천의 한 아파트 부녀회원들인데요. 안전 교육이 한창이시더라고요.<br><br>[부녀회원1] 소화기 사용방법을 시작하겠습니다. 우선 소화기를 들고 불이 나는 곳으로 노즐을 향한 후에 안전핀을 뽑습니다.<br><br>[리포터] 여러분 안녕하세요.<br><br>[부녀회원들] 안녕하세요. <br><br>[부녀회원1] 화재가 발생 했을 시 초기진압에 가장 원초적인 게 소화기라고 생각합니다. 그것에 대해서 간단하게 말씀드렸고요. 도움이 되기를 바라는 측면에서 오늘 좀 실시하고 있습니다. <br><br>와우. 안전에 관심이 많은 어머님인 만큼 벌써부터 정답에 대한 기대 폭발! 도전 안전벨 문제 나갑니다. 오늘의 문제. 아파트 화재 발생 시 네모를 이용해선는 안 된다. 문제 공개 후 분위기는 급 다운~ 일순간 숙연해 지는데요. 이런 어머님들의 마음을 아는지 모르는지 야속하게 시간은 자꾸만 흘러가고 그러나 용기내서 정답판을 채워보는 어머님들. 정답을 들어주세요.<br><br>[부녀회원들] 우와~~~~<br><br>그 어느때 보다도 주부 포스가 물씬 풍기죠? 센스만점 답변들이 눈에 띕니다.<br><br>[부녀회원2] 불이 났을때는 갑자기 생각나는 게 창문일 것 같아서요. 다급한 사람들은 창문으로 뛰어내릴 것 같아서 창문이라고 했습니다.  모르겠어요. 나 어떻게 해.<br><br>잘하셨어요. 어머님 자신감을 갖으세요. 정답을 공개합니다. 드디어 공개되는 오늘의 정답!! 아파트 화재 발생 시 엘리베이터를 이용해서는 안된다. 환호와 야유가 엇갈리는 가운데 오늘의 정답자도 보이네요. <br><br>우리 생활과 가장 밀접과 관련이 있는 아파트 화재. 특히 아파트 화재는 인명피해가 많은 것이 특징인데요. 그런 만큼 화재 발생시 대피요령은 필수겠죠? 먼저 내가 살고 있는 아파트에 화재가 발생했다면 "불이야" "불이야"하고 외친 후, 신속히 비상벨을 눌러 이웃과 가족에게 화재 사실을 알립니다. 동시에 불이난 아파트의 위치 다친사람의 유무등을 119에 신고를 하는데요. 대피를 할 경우에는 물에 적신 손수건으로 코와 입을 막은 후 낮은 자세로 대피해야만 연기 흡입양을 최소화 할 수 있습니다. 이때 문을 손등으로 대어보거나 손잡이를 만져보고 손잡이가 뜨거울 경우에 다른 곳으로 피하는 것이 안전합니다. 그리고 화재 대피시 반드시 주의해야 할 점은 절대로 엘리베이터를 타서는 안된다는 건데요. 화재와 동시에 대부분 전원이 차단되어 엘리베이터가 멈추게 되고 내부에 유독가스나 연기가 가득차게 되어 질식사의 위험이 매우 높아지기 때문입니다. 따라서 아파트 화재시엔 계단으로 대피하고요. 아래층으로 대피가 불가능한 경우에는 건물 옥상으로 대피한 후 구조를 기다립니다.<br><br>[부녀회원3] 유쾌한 시간을 잘 보내고 소방교육에 대해서 많은 점을 알았습니다. 오늘 정말 기분 좋았습니다. 
+                </div>
+            </div>
+        </div>
+        <!-- video 01  -->
+        <div class="spring-video-main">
+            <div class="spring-warp">
+                <div class="spring-video">
+                    <video controls="" poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                    </video>
+                </div>
+                <div class="spring-text">
+                    <p>재난·안전에 관한 다양한 상식을 퀴즈로 풀어보는 도전 안전벨!<br>
+                        농기계가 농로에서 논밭에 들어갈 때는 경사로 OOO이하로 운행해야 한다.<br>
+                        오늘의 정답을 맞춰보세요.</p>
+                </div>
+            </div>
+        </div>
+        <!-- video 01  -->
+        <div class="spring-video-main">
+            <div class="spring-warp">
+                <div class="spring-video">
+                    <video controls="" poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                    </video>
+                </div>
+                <div class="spring-text">
+                    <p>재난·안전에 관한 다양한 상식을 퀴즈로 풀어보는 도전 안전벨!<br>
+                        농기계가 농로에서 논밭에 들어갈 때는 경사로 OOO이하로 운행해야 한다.<br>
+                        오늘의 정답을 맞춰보세요.</p>
+                </div>
+            </div>
+        </div>
+        <!-- video 01  -->
+        <div class="spring-video-main">
+            <div class="spring-warp">
+                <div class="spring-video">
+                    <video controls="" poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                    </video>
+                </div>
+                <div class="spring-text">
+                    <p>재난·안전에 관한 다양한 상식을 퀴즈로 풀어보는 도전 안전벨!<br>
+                        농기계가 농로에서 논밭에 들어갈 때는 경사로 OOO이하로 운행해야 한다.<br>
+                        오늘의 정답을 맞춰보세요.</p>
+                </div>
+            </div>
+        </div>
+        <!-- video 01  -->
+        <div class="spring-video-main">
+            <div class="spring-warp">
+                <div class="spring-video">
+                    <video controls="" poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                    </video>
+                </div>
+                <div class="spring-text">
+                    <p>재난·안전에 관한 다양한 상식을 퀴즈로 풀어보는 도전 안전벨!<br>
+                        농기계가 농로에서 논밭에 들어갈 때는 경사로 OOO이하로 운행해야 한다.<br>
+                        오늘의 정답을 맞춰보세요.</p>
+                </div>
+            </div>
+        </div>
+        <!-- video 01  -->
+        <div class="plus">
+            <a href="#" id="load">더보기 + </a>
+        </div>
+
+
+        <div class="quickmenu age-quick">
+            <ul>
+                <li>
+                    <a href="baby.html">
+                        <img src="resources/images/life/baby_w.png" alt="영유아">영유아
+                    </a>
+                </li>
+                <li class="hv">
+                    <a href="children.html">
+                        <img src="resources/images/life/children_w.png" alt="아동청소년">아동청소년
+                    </a>
+                </li>
+                <li>
+                    <a href="adult.html">
+                        <img src="resources/images/life/adult_w.png" alt="성인">성인
+                    </a>
+                </li>
+                <li>
+                    <a href="aged.html">
+                        <img src="resources/images/life/aged_w.png" alt="노인">노인
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- <script type="text/javascript">
+            $(function(){
+
+                $('.quickmenu li:nth-child(1)').mouseover(function(){
+                    $('.quickmenu li:nth-child(1) img').attr('src','resources/images/life/baby_w.png');
+                });
+                $('.quickmenu li:nth-child(1)').mouseleave(function(){
+                    $('.quickmenu li:nth-child(1) img').attr('src','resources/images/life/baby_r.png');
+                });
+
+                // $('.quickmenu li:nth-child(2)').mouseover(function(){
+                //     $('.quickmenu li:nth-child(2) img').attr('src','resources/images/life/children_w.png');
+                // });
+                // $('.quickmenu li:nth-child(2)').mouseleave(function(){
+                //     $('.quickmenu li:nth-child(2) img').attr('src','resources/images/life/children_r.png');
+                // });
+
+                $('.quickmenu li:nth-child(3)').mouseover(function(){
+                    $('.quickmenu li:nth-child(3) img').attr('src','resources/images/life/adult_w.png');
+                });
+                $('.quickmenu li:nth-child(3)').mouseleave(function(){
+                    $('.quickmenu li:nth-child(3) img').attr('src','resources/images/life/adult_r.png');
+                });
+
+                $('.quickmenu li:nth-child(4)').mouseover(function(){
+                    $('.quickmenu li:nth-child(4) img').attr('src','resources/images/life/aged_w.png');
+                });
+                $('.quickmenu li:nth-child(4)').mouseleave(function(){
+                    $('.quickmenu li:nth-child(4) img').attr('src','resources/images/life/aged_r.png');
+                });
+            });
+        </script> -->
+    </section>
+    <!-- TOP버튼 -->
+    <div class="quick">
+        <button type="button" class="go_top_btn" style="display: inline-block;"><span>위로</span></button>
+    </div>
+
+    <script>
+        $(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 500) {
+                    $('.quick').fadeIn();
+                } else {
+                    $('.quick').fadeOut();
+                }
+            });
+            
+            $(".quick").click(function() {
+                $('html, body').animate({
+                    scrollTop : 0
+                }, 400);
+                return false;
+            });
+        });
+    </script>
+    <!-- TOP버튼 끝 -->
+    <footer>
+        <div id="footer">
+            <div class="footer-content">
+                <div class="foot-logo">
+                    <img src="resources/images/logo.png" alt="로고">
+                </div>
+                <div class="footer-copyright">
+                    <p>(우) 32435 충남 예산군 예산읍 군청로 22 Tel 041-339-7114 / Fax 041-339-7229</p>
+                    <p>COPYRIGHT ⓒ YESAN COUNTRY.ALL RIGHTS RESERVED</p>
+                </div>
+                <div class="list-box"></div>
+            </div>
+        </div>
+    </footer>
+    <!-- JS -->
+    <script type="text/javascript" src="resources/javascripts/vendor/jquery.tabslet.min.js"></script>
+    <script type="text/javascript" src="resources/javascripts/vendor/rainbow-custom.min.js"></script>
+    <script type="text/javascript" src="resources/javascripts/vendor/jquery.anchor.js"></script>
+    <script src="resources/javascripts/initializers.js"></script>
+    <!-- JS ends -->
+    <!-- <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script> -->
+    <script type="text/javascript" src="resources/js/main.js"></script>
+    
+    <script>
+        $(function(){
+            $(".spring-video-main").slice(0, 3).show(); // select the first ten
+            $("#load").click(function(e){ 
+                e.preventDefault();
+                $(".spring-video-main:hidden").slice(0, 3).show(); // select next 10 hidden divs and show them
+                if($(".spring-video-main:hidden").length == 0){ // check if any hidden divs still exist
+                    $('.plus').css("opacity","0");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

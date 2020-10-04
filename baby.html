@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta property=”og:image” content="resources/images/POZ_202007131009436070.jpg">
+    <meta property=”og:image:width” content="600">
+    <meta property=”og:image:height” content="400">
+    <meta name="author" content="예산재난포털" />
+    <meta name="Keywords" content="예산재난포털" />
+    <title>예산군청</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="shortcut icon" href="resources/images/fa_gDi_icon.ico">
+    <link rel="stylesheet" href="resources/css/commmon/common.css">
+    <link rel="stylesheet" href="resources/css/layout.css">
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+</head>
+
+<body>
+    <!-- 공통메뉴  -->
+    <header id="header">
+        <div class="nav-wrapper">
+            <a href="index.html"><h1 id="logo">예산재난포털</h1></a>
+            <div class="gnb" id="gnb">
+                <ul>
+                    <li>
+                        <a href="#">종합날씨</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-weather">
+                                <ul>
+                                    <li>
+                                        <a href="livingweather.html">
+                                            <div class="sub-icon-6">
+                                                <img src="resources/images/icon/main-menu-2-1.png" alt="생활날씨">
+                                                <img src="resources/images/icon/main-menu-2-1-hover.png" alt="생활날씨">
+                                            </div>
+                                            생활날씨</a>
+                                    </li>
+                                    <li>
+                                        <a href="rain-info.html">
+                                            <div class="sub-icon-7">
+                                                <img src="resources/images/icon/main-menu-2-2.png" alt="강우정보">
+                                                <img src="resources/images/icon/main-menu-2-2-hover.png" alt="강우정보">
+                                            </div>
+                                            강우정보</a>
+                                    </li>
+                                    <li>
+                                        <a href="snow-info.html">
+                                            <div class="sub-icon-8">
+                                                <img src="resources/images/icon/main-menu-2-3.png" alt="적설정보">
+                                                <img src="resources/images/icon/main-menu-2-3-hover.png" alt="적설정보">
+                                            </div>
+                                            적설정보</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 1depth -->
+                    <li class="on">
+                        <a href="#">생활안전정보</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-information">
+                                <ul>
+                                    <li>
+                                        <a href="information.html">
+                                            <div class="sub-icon-3">
+                                                <img src="resources/images/icon/main-menu-1-3.png" alt="재난속보">
+                                                <img src="resources/images/icon/main-menu-1-3-hover.png" alt="재난속보">
+                                            </div>
+                                            재난속보
+                                        </a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="government-info.html">하천 수위</a></li>
+                                                <li><a href="dam-info.html">댐정보</a></li>
+                                                <li><a href="fire-info.html">소방 긴급구조</a></li>
+                                                <li><a href="firecenter-info.html">소방서센터</a></li>
+                                                <li><a href="earth-info.html">지진</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-9">
+                                                <img src="resources/images/icon/main-menu-3-1.png" alt="재난안전지도">
+                                                <img src="resources/images/icon/main-menu-3-1-hover.png" alt="재난안전지도">
+                                            </div>
+                                            재난안전지도
+                                        </a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="safemap.html">안전MAP</a></li>
+                                            </ul>
+                                        </div>
+                                        
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-10">
+                                                <img src="resources/images/icon/main-menu-3-2.png" alt="재난예방정보">
+                                                <img src="resources/images/icon/main-menu-3-2-hover.png" alt="재난예방정보">
+                                            </div>
+                                            재난예방정보</a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li>
+                                                    <a href="earthquake.html">자연재난</a>
+                                                </li>
+                                                <li>
+                                                    <a href="traffic.html">사회재난</a>
+                                                </li>
+                                                <li>
+                                                    <a href="extinguisher.html">생활안전수칙</a>
+                                                </li>
+                                                <li>
+                                                    <a href="farm.html">농어촌안전</a>
+                                                </li>
+                                                <li>
+                                                    <a href="spring.html">계절별재난</a>
+                                                </li>
+                                                <li>
+                                                    <a href="baby.html">생애주기별 재난</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-11">
+                                                <img src="resources/images/icon/main-menu-3-3.png" alt="재난안전보험">
+                                                <img src="resources/images/icon/main-menu-3-3-hover.png" alt="재난안전보험">
+                                            </div>
+                                            재난안전보험</a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="insurance.html">풍수해보험</a></li>
+                                                <li><a href="safe-insurance.html">예산군 군민안전보험</a></li>
+                                                <li><a href="bicycle.html">예산군 자전거안전보험</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-12">
+                                                <img src="resources/images/icon/main-menu-3-4.png" alt="재난안전앱">
+                                                <img src="resources/images/icon/main-menu-3-4-hover.png" alt="재난안전앱">
+                                            </div>
+                                            재난안전앱</a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="safe-app.html">안전디딤돌</a></li>
+                                                <li><a href="safe-news.html">안전신문고</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 2depth -->
+                    <li>
+                        <a href="#">재난안전대책본부</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-safety">
+                                <ul>
+                                    <li>
+                                        <a href="tissue.html">
+                                            <div class="sub-icon-13">
+                                                <img src="resources/images/icon/main-menu-4-1.png" alt="대책본부 조직도 및 주요업무">
+                                                <img src="resources/images/icon/main-menu-4-1-hover.png" alt="대책본부 조직도 및 주요업무">
+                                            </div>
+                                            대책본부 조직도 및 주요업무</a>
+                                    </li>
+                                    <li>
+                                        <a href="system-1.html">
+                                            <div class="sub-icon-14">
+                                                <img src="resources/images/icon/main-menu-4-2.png" alt="재난대응 체계도">
+                                                <img src="resources/images/icon/main-menu-4-2-hover.png" alt="재난대응 체계도">
+                                            </div>
+                                            재난대응 체계도</a>
+                                    </li>
+                                    <li>
+                                        <a href="system-2.html">
+                                            <div class="sub-icon-15">
+                                                <img src="resources/images/icon/main-menu-4-3.png" alt="피해조사 및 복구계획">
+                                                <img src="resources/images/icon/main-menu-4-3-hover.png" alt="피해조사 및 복구계획">
+                                            </div>
+                                            피해조사 및 복구계획</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 3depth -->
+                    <li>
+                        <a href="#">안전게시판</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-board">
+                                <ul>
+                                    <li>
+                                        <a href="notice.html">
+                                            <div class="sub-icon-16">
+                                                <img src="resources/images/icon/main-menu-5-1.png" alt="공지사항">
+                                                <img src="resources/images/icon/main-menu-5-1-hover.png" alt="공지사항">
+                                            </div>
+                                            공지사항</a>
+                                    </li>
+                                    <li>
+                                        <a href="report.html">
+                                            <div class="sub-icon-17">
+                                                <img src="resources/images/icon/main-menu-5-2.png" alt="보도자료">
+                                                <img src="resources/images/icon/main-menu-5-2-hover.png" alt="보도자료">
+                                            </div>
+                                            보도자료</a>
+                                    </li>
+                                    <li>
+                                        <a href="education.html">
+                                            <div class="sub-icon-18">
+                                                <img src="resources/images/icon/main-menu-5-3.png" alt="교육자료">
+                                                <img src="resources/images/icon/main-menu-5-3-hover.png" alt="교육자료">
+                                            </div>
+                                            교육자료</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 4depth -->
+                </ul>
+            </div>
+        </div>        
+    </header>
+    <div class="gnb_bg"></div>
+    <div class="visual_top_wrap-baby">
+        <div class="content-title-top">
+            <h1>영유아</h1>
+        </div>
+    </div>
+    <div class="content-tab-top">
+        <ul class="tab-top-nav">
+            <li><a href="#">홈</a></li>
+            <li><span>&gt;</span></li>
+            <li><a href="#">재난예방정보</a></li>
+            <li><span>&gt;</span></li>
+            <li><a href="#">생애주기별 재난</a></li>
+            <li><span>&gt;</span></li>
+            <li><a>영유아</a></li>
+        </ul>
+    </div>
+    <section class="top_section" id="post" style="padding:0; margin-bottom: 50px;">
+        <div class="earth-title">
+            <h1><img src="resources/images/life/baby.png" align="center">영유아</h1>
+            <div class="line"></div>
+            <p>봄철 동영상 교육자료를 통해 비상상황에 대비하시기 바립니다.</p>
+        </div>
+        <div class="spring-page">
+            <h1>93 / 93 <span>건</span></h1>
+        </div>
+        <div class="spring-video-main">
+            <div class="spring-warp">
+                <div class="spring-video">
+                    <video controls="" poster="https://safe.chungnam.go.kr/images/sftv/superman_home_accident.jpg">
+                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="https://safe.chungnam.go.kr/safeTv/superman_home_accident.mp4"> 
+                    </video>
+                </div>
+                <div class="spring-text">
+                    [태영] 아니 근데 여름이 끝났는데 아직까지 에어컨 코드를 꽂아 두고 계세요?<br><br>[샘해밍턴] 그런가요 전.. 뭐<br><br>[태영] 그러면 전력 낭비가 될 수도 있고 아이들한테도 위험할 수도 있으니까. 야야야 로희야 로희야. 만지면 안 돼요. 이거. 입에 다 넣으면 안돼. 자 이렇게 핸드폰 충전기 같은 경우도 이렇게 애들이 만지고 입에다 넣을 수 있어요. 손에 안 닿는 곳으로 치워 놓는게 좋으시고. <br><br>[샘해밍턴] 네<br><br>[태영] 접지가 없는 콘센트를 사용하시네..<br><br>[샘해밍턴] 접지? <br><br>[태영] 안전장친데.. 여기 보면 여기 쇠 같은게 튀어 나온게 있어요. 전류가 땅으로 흐를 수 있게 끔 해주는 거든요. 이게 그거를 안전하게 사용하시는게 좋을 것 같고. 이런것들은 어떤가? 아.. 이거.. 윌리암이 쫌 더 크면 이거 당길 수 있을 것 같아요. <br><br>[샘해밍턴]네<br><br>[태영] 당겨서 넘어지면 윌리엄한테 엄청 위험하거든요.   <br><br>[샘해밍턴] 그렇죠..<br><br>[태영] 요즘에 가구가 가벼워서 넘어져가지고 사망 사고가 꽤 많이 있어요. 나중에 거기다가 못하나 박고 끈하나 박아서 꽉 쩜매 놓으시면 안 넘어 지니까 그거 하시고 어! 이거 블라인드 쓰시네<br><br>[샘해밍턴] 네<br><br>[태영] 이거 끈이 있잖아요. 이거 <br><br>[샘해밍턴] 끈이 이렇게 잡아 당기는 거예요.<br><br>[태영] 애들한테 진짜 위험한 거예요. 애들한테 진짜 위험한 거예요. 이게 목이 걸려가지고 사망 사고가 많이 있어요.<br><br>블라인드 줄이 생명을 위협하는 흉기가 될 수 있습니다. 실제로 지난 해 7살 어린이가 이 때문에 숨졌습니다.<br><br>[태영] 제가 한번 보완을 좀 해드릴께요.<br><br>[샘해밍턴] 아. 진짜요?<br><br>[태영] 네네 접지 없는 거는 접지 있는 걸로 교체해 드릴께요. 블라인드는 아래로 떨어뜨려 놓으시면 안되고 이런 것을 붙여서 위에다 걸어 놓으시는 거예요. 다쓴 물티슈 있으면.. 뜯어서 이 캡으로 화장실 바닥에 미끄러지지 않으라고 이렇게 붙여 놓으면 좋아요. 이정도만 해도 훨씬 안전해지는 거예요. 그리고 아이들 영유아 사고 중에 가장 또 빈도 수가 높은게 아이들 장난감이예요. 장난감들은 어때요? 장난감. 볼까 한번. 어. 이거 뭐예요? 빛나오는 거예요?<br><br>[샘해밍턴] 총이예요. 총 <br><br>[태영] 이햐. 이거 이거 되게 위험해요. 모르고 눈에 다 쏴버리니까.. 이런거 이런거 이게 위험한거예요 또. 애들은 입으로 탐구하는 그런게 있어서 이런게 다 먹은 단 말이예요. 먹어서 삼키면 기도에 걸릴 수도 있고 넘어가면 장에 유착되서 이게 썩을 수가 있어요. 한 4일 후부터<br><br>[샘해밍턴] 이 솔직히 사람들한테 선물도 막 받고 여러가지 막 있으니까 <br><br>[태영] 자석아니더라도 목에 걸리는  문제가 생겨 버리면 기도를 막아버리면 숨을 못 쉬어서 위험하니까. 그럴때 응급조치하는거 아세요?<br><br>[샘해밍턴] 애들?<br><br>[태영] 네 하임리히법이라는게 있어요. 영유아 하임리이법이라고 해서 로희 이리와. 로희 조교. 사실 로희는 좀 큰데. 턱을 받치고 다리위에 올려놔요. 원래 거꾸로 해 놓고 탁탁탁 쳐주는거예요. 바로 뒤집어서 가슴을 눌러주는거 예요. 명치를 위쪽으로 뱉어 낼수 있게. 오케이<br><br>우와~ 기박사님 덕에 오늘도 한 수 배웠네요.
+                </div>
+            </div>
+        </div>
+        <!-- video 01 -->
+        <div class="spring-video-main">
+            <div class="spring-warp">
+                <div class="spring-video">
+                    <video controls="" poster="https://safe.chungnam.go.kr/images/sftv/superman_home_frozen.jpg">
+                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="https://safe.chungnam.go.kr/safeTv/superman_home_frozen.mp4"> 
+                    </video>
+                </div>
+                <div class="spring-text">
+                    눈 쌓인 아침 사랑둥이 승재네<br><br>[승재] 아빠 일어났어요.<br><br>[아빠] 일어 났어요. 승재야 밖에 눈왔어. 눈 구경할까?<br><br>[승재] 네<br><br>[아빠] 아빠 봐. 눈 보자. 우와. 눈이 왔지.<br><br>[승재] 삼촌들이랑 이모들이다. <br><br>[아빠] 삼촌들 있어? 눈봐봐 눈이 왔지<br><br>[승재] 눈이 오면 미끄러워<br><br>[아빠] 눈이 오면 미끄러워? 눈을 치우면은 안 미끄러워. 원래는 할머니, 할아버지들 미끄러우니까? 승재하고 아빠하고 눈 좀 나가서 쓸어줄까? 그래 나가자.<br><br>[승재] 네 <br><br>[아빠] 그래 나가자 승재야 우리 몸이 안 풀렸으니까 나가기 전에 몸 좀 풀고 나갈까? 아빠랑 무릎하고 어깨 좀 풀고 나가자. 뛰면서 어깨도 풀고 어깨. 무릎도 승재야 무릎도 무릎도 돌리고 돌리고 이렇게 왼쪽으로 돌리고 어깨도 똑똑 어깨도 이거 풀어야돼<br><br>[승재] 풀어?<br><br>[아빠] 등도 승재. 이렇게 펴봐. 아~ 시원해. 한번 더 한번 더 한번 더. 나가 보자 그럼. 가자. 나가. 일로 와봐봐 여기 와봐 오 이게 뭐야 수도 계량기죠. 이게 날이 추우면은 얼어서 터져버려. 근데 이거를 날이 추울때는 이렇게 감싸줘야돼.<br><br>[승재] 아기 없어졌네. <br><br>[아빠] 어. 없어졌지. 이렇게 감싸 줘야돼.<br><br>[승재] 계량기 안녕. 눈 치울꺼야. <br><br>[아빠] 승재 해봐. 쓱싹 쓱싹<br><br>[승재] 아니지 내가 이거 갖고 올게. 조금 기다려. 어때? 잘하지? <br><br>[아빠] 우와 승재 잘한다 승재 포크레인 좋아하잖아. 삽 좋아 하잖아.<br><br>[승재] 내가 눈 치울게. <br><br>[아빠] 승재야. 고승재. 화났어? <br><br>[승재] 어<br><br>[아빠] 화났어? <br><br>[승재] 어. 다음에 놀아야겠다. <br><br>[아빠] 승재야 어디가? 거기 아니야. 고승재. 너 이제 또 넘어진다. 저번 처럼<br><br>[승재] 어<br><br>[아빠] 저번에 날랐잖아. 아팠어? 안아팠어?<br><br>[승재] 아팠지<br><br>[아빠] 그러니까 이리와. 또 날으지 말고.<br><br>용아빠 기술이 보통이 아니네요.<br><br>[아빠] 승재야 여기부터 저기까지 시합할까? 여기부터 저기까지 시합할까?<br><br>[승재]어<br><br>[아빠]시작 오~ 빨리 더 빨리 빨리. 오 승재 빠른데. 오~ 빠른데 오~ 빠른데 빠른데. 이야 승재가 이겼네? <br><br>[승재]또 또해<br><br>[아빠]한번 더 해볼까? 한번 더 해보자.<br><br>[동네주민] 안추워?<br><br>[아빠]안녕하세요. 네. 들어가세요. 밀어. 밀어. 오~ 오~ 오~ 승재 빠른데. 오 아빠가 질것 같아. 아빠가 질것 같아. 이햐 또 이겼네.<br><br>춥고 힙들지만 이웃 주민들의 안전을 위해 마무리 비질까지 꼼꼼히 이햐 정말 깔끔해졌네요. 고생하셨어요. <br><br>승재때문에 할아버지, 할머니들 안 넘어지겠네. 하이 파이브. 하이 파이브. 다했다. <br><br>다했다. 다했다.
+                </div>
+            </div>
+        </div>
+        <div class="spring-video-main">
+            <div class="spring-warp">
+                <div class="spring-video">
+                    <video controls="" poster="https://safe.chungnam.go.kr/images/sftv/superman_child_abduction.jpg">
+                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="https://safe.chungnam.go.kr/safeTv/superman_child_abduction.mp4"> 
+                    </video>
+                </div>
+                <div class="spring-text">
+                    최근 아동 대상 범죄가 잇따르고 있어 부모들의 불안감이 커지고 있습니다. 2학년 김모양을 꾀어 김양의 빈집에 들어갔습니다. 엄마 친구라고 어린이들을 속였다고 합니다. 엄마친구라면 아이들이 쉽게 경계심을 푸는 성향을 노렸습니다. <br><br>어느날 쌍둥이를 찾아온 낯선 남자<br><br>[서언] 형 문 열어주지 말라니까. 문 열어 주지 말라니까. 저리 가세요.<br><br>[아빠] 비행기 에버 에버<br><br>이때 슬금 슬금 집을 빠져 나가는 스텝들<br><br>[아빠] 아! 맞다. 아빠가 뭘 깜박 두고 왔네. 아빠 잠깐 주차장에 갔다 올게. 알았지? 조금만 기다려. 싸우지 말고 있어.<br><br>[서언] 아빠 혼자?<br><br>[아빠] 어 아빠 혼자 가야지.<br><br>아빠도 급히 집을 나서는데요. 어? 아니 그런데.. 아이들을 집에 놓고 나오는 경우가 생기면 안되겠지만 사고는 정말 생각지도 못하게 일어날 수도 있거든요. 그래서 계속 교육을 시키곤 한데.. 너네 엄마, 아빠 없을 때 누가 와서 문 열어 달라고 벨 누르면 어떻게 해야돼?<br><br>[서언] 문 열어 주면 안돼! 우리 친구도 안돼!<br><br>[아빠] 아무도 안돼. 아이들은 말로만 듣기 보다는 실제로 경험을 통해서 교육을 받으면 확실히 더 기억에 강하게 남을 것 같습니다. 전문가 선생님이랑 같이 지켜보면서 좀 더 어떤 것을 교육시켜야 되는지 배워보려고 합니다.<br><br>[서준] 누구지?<br><br>[서언] 어! 우리집에 누가 놀러왔는데? <br><br>[여자1] 문 좀 열어 줄 수 있어요? 문 좀 열어 줄 수 있어요? 문 좀 열어 줄 수 있어요?<br><br>[전문가] 어머!<br><br>[아빠] 우와<br><br>[서언] 열렸다.<br><br>[여자1] 안녕하세요. 서언이구나. <br><br>[서언] 서준이도 있어<br><br>[여자] 서준이도 있어? 허~ 너희 진짜 예쁘게 생겼다. 고마워<br><br>[아빠] 전혀 경계심이 없구나<br><br>[전문가] 우리가 알아야 될게. 나쁜 사람이 있고 위험한 사람이 있다 이걸 구분할 수는 없어요. 애들이 사실.. 그리고 좀 착하게 생겼고 내가 좋아하는 장난감을 가졌어요. 그러면 이 사람은 내가 믿어도 되는 사람이다 아이들의 판단능력이 사실 거기까지인 거죠.<br><br>[아빠] 그렇군요.<br><br>[여자] 누나 본적 있어?<br><br>[서언] 아예 본적 없는데 <br><br>[여자]  아예 본적 없어? 근데 왜 열어줬어?<br><br>[서언] 몰라요.<br><br>[여자] 에헤 모라.<br><br>[여자1] 엄마 어디 갔어?<br><br>[서언] 엄마 슈퍼 갔어요.<br><br>[여자] 엄마 슈퍼 갔어? 그러면 엄마, 아빠 둘 다 안계셔?<br><br>[서언] 아니 금방 온데요.<br><br>[여자] 금방 온데? 누나랑 같이 밑에 내려가 볼까? 누나 차에 엄청 큰 장난감 있어. 근데 무거워서 누나 혼자 못 드는데.  <br><br>[서언] 나 힘 엄청 쎄요.<br><br>[전문가] 이제 저렇게 하면 따라 가는거죠. 정말 위험한 상황입니다.<br><br>[여자] 키즈 카페 갈까? 거기 아빠도 있어. 아빠 기다리고 있어 지금!<br><br>[서언] 아빠 주차장에...<br><br>[여자] 주차장에 있었는데...다시 키즈 카페로 갔데. 셋이 같이 놀려고, 아니면 다른 장난감 사러 마트 갈까? 거기 가면 아빠도 있어. 아빠 거기서 기다리고 있데. 갈꺼야? 서언이 서준이<br><br>[서준] 네<br><br>[여자] 이거 가지고 갈꺼야?<br><br>[전문가] 이제 가서 한번 물어보세요. 아이를 비난 할 수도 있고 질책할 수도 있어요. 그런 감정들을 억누르시고 무슨 이유에서 문을 열어줬는지 물어보고 그 누나가 예쁘게 생겼고, 놀잇감을 가지고 있다 할지라도 나쁜 사람일 수 있다. 위험한 사람일 수 있다 다시 얘기를 해야 되는거죠. 안간다고 해야될텐데..<br><br>[전문가] 서준이 손. 서언이 손. 우와! 짱이다..<br><br>[아빠] 너희 뭐야?<br><br>[서언] 우리 마트 가는데<br><br>[아빠] 누구야 서준아? 이사람 누구야?<br><br>[서언] 몰라..<br><br>[아빠] 처음보는 누난데..들어와! 이서언 빨리 들어와.<br><br>[서준] 누나는 어디 갔어?<br><br>[아빠] 너희 지금 큰일날.. 신발 벗고 들어와봐. 아빠 지금 너무 놀랐어. 너희 지금 앉아봐봐. 모르는 누나 오면 문 열어줘야 해. 안열어줘야 해? 큰일 나는거야. 아는 누나도 아빠, 엄마 없을 때는 문 열어주면 안돼요. 큰일나는 거야. 누가 열어줬어. 지금.. 서언이가? 왜 열어줬어요?<br><br>[서언] 어.. 누나가 예뻐서<br><br>[아빠] 누나가 아무리 예뻐도 열어주면 안 돼! 어? 엄마, 아빠 없을 때 아무리 아는 승훈이 엄마가 와도 열어주면 안돼.<br><br>[서준] 승훈이 엄마 우리 맨날 좋아하는데..  <br><br>[아빠] 누구라도 승훈이가 와도 열어주면 안돼. 알았지?<br><br>[서준] 승훈이는 우리 똑같이 장난치는데? <br><br>[아빠] 장난쳐도 아빠, 엄마 없을 땐 열어주면 안돼. 알았지?<br><br>[전문가] 사실 서준이, 서언이 뿐만 아니라 대부분의 아이들이 벨을 누르는 순간 "누구세요"도 안하고 70~80%가 문을 열어 주더라고요. 아빠 친구여도 엄마 친구여도 정말 위험한 사람일 수 있다라고 구체적으로 반복적으로 이 교육을 시켜야할 필요가 있고요.<br><br>[아빠] 모르는 사람은 절대 문열어주면 안돼. 응? 아빠 주차장에 금방 갔다 올게.  <br><br>[서준] 문 열어주지마<br><br>[남자] 안녕하세요. 서언이 서준이 집 맞아요? 아빠가 서언이랑 서준이 도와주라고 해서 왔는데. 문 좀 열어줄수 있어요? 서언이, 서준이 집에 없어요?<br><br>[서준] 형! 문 열어주지 말라니까!! 형 문 열어 주지 말라니까! 형아 문 열어주지 말라니까! <br><br>[서언] 저리 가세요!!<br><br>[전문가] 사람이 없는 것 처럼 행동하는게 가장 현명한 방법이긴 한데.. 계속 말을 해대고 벨을 누르고 이러니까 뭔가 응답을 해줘야 한다고 생각하는거죠.<br><br>[서언] 누구세요?<br><br>[남자] 형 아빠랑 친한 친군데 문 좀 열어줄수 있어요?<br><br>[서준] 아빠 친구세요?<br><br>[남자] 아빠 친구예요. 형 아빠 친구예요. 문 좀 열어주세요.<br><br>[서준] 그래요?<br><br>[남자] 형 잠깐 들어가도 돼요? 아빠 친구래!!<br><br>[전문가] 어머 어떻게요.. 지금까지 잘했는데..<br><br>[서준] 아빠 친구래..<br><br>[남자] 안녕하세요. 이햐..<br><br>[서준] 우리 아빠 친구예요?<br><br>[남자] 네 아빠 친구예요.<br><br>[서언] 우리 아빠??<br><br>[남자] 삼촌 착한 사람 같아요? 나쁜 사람 같아요?<br><br>[서언] 착한사람 <br><br>[남자] 서준이는.. 착한 사람 같아요? 왜 왜 착한 사람 같아요?<br><br>[서준] 아빠 친구니까..<br><br>[남자] 아빠 친구니까? 아빠 친구라서 착한 사람 같아요? 형이랑 놀러 갈까요? 같이? 아빠한테? 아빠한테 전화한번 해볼께요. 네 형 네네.. 알겠습니다. 지금 나오라고 하는데 같이 나갈까요?<br><br>[아이들] 네<br><br>[서언] 같이<br><br>[남자] 지금 아빠 지하주차장에서 기다리고 있어요. 같이 갈까요? 이쪽으로 신발 어딨어? 형이 신겨 줄께요.<br><br>[서언] 헤헤헤헤헤헤~~ 아빠<br><br>[아빠] 누구야?<br><br>[서언] 아빠 친구<br><br>[아빠] 아는 사람도 문 열어주면 안된다 했는데.<br><br>[서준] 아빠 친구라고 했는...<br><br>[아빠] 아빠 친구라고 했어? 들어와. 서언이도 들어와. 아빠가 승훈이라도 문 열어주면 안된다 햇는데.. 서준아 누가 물어보고 문 열어준거야?<br><br>[서준] 응 내가! 내가 물어보니까 아빠 친구래..<br><br>[아빠] 아빠 친구도 안돼! 엄마 친구도 안돼! 할머니 친구도 안돼고.. <br><br>[서준] 왜 안돼? <br><br>[아빠] 문 왜 안열어 주어야 하면 그 사람이 나쁜 사람일 수도 있거든 지금 모르는 사람 열어줬잖아. 그래서 있는척을 하면 안돼. 만약 그게 나쁜사람이라고 해봐..<br><br>[서준] 근데 처음에 서언이가 처음에 저리 가세요!! 이렇게 했어요.<br><br>[서언] 오지 마세요. 이렇게 <br><br>[서준] 서언이가 처음에.<br><br>[아빠] 그랬어? 그래도 안돼. 가만히 있어야돼. 아무도 없는 척해야돼.. 봐봐 아빠 봐봐. 모르는 사람이 왔어. 아는 사람이 와도.. 알았지? 없는척 하는거야 쉿!!쉿!! 서준이도 쉿!! 우리 없어요. 알았지? 일차적으로 우리가 너희를 두진 않을거야. 이렇게 둘만 두지는 않을거야. 하지만 어떤 경우라도 따라가거나 열어주면 안돼.<br><br>[서언] 알겠어요. <br><br>[아빠] 진짜로 알겠지?<br><br>[여성청소년과 경장] 엄마, 아빠, 할머니 등 정해진 사람 외에는 아는 사람도 절대로 문을 열어주면 안된다고 문을 열어주면 안됩니다. 어린이는 낯선 방문자에 말에 절대 답하지 않도록 합니다. 가능하면 부모님에게 연락하고 위험할 경우 112에 신고합니다. 아이만 있을때 택배는 경비실로 오도록 조치하고 아이들에게 택배가 올일이 없으니 문을 열지 않도록 전달하여야 합니다. 아이 혼자 집에 들어가는 경우 어린이 있는 척 큰 소리로 인사하는 것이 좋습니다. 무엇보다 아이를 집에 혼자 두지 않는 것이 가장 중요합니다. 아동안전에 대한 부모님들의 관심과 반복적인 교육이 필요합니다. 
+                </div>
+            </div>
+        </div>
+        <!-- video 01  -->
+        <div class="spring-video-main">
+            <div class="spring-warp">
+                <div class="spring-video">
+                    <video controls="" poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                    </video>
+                </div>
+                <div class="spring-text">
+                    <p>재난·안전에 관한 다양한 상식을 퀴즈로 풀어보는 도전 안전벨!<br>
+                        농기계가 농로에서 논밭에 들어갈 때는 경사로 OOO이하로 운행해야 한다.<br>
+                        오늘의 정답을 맞춰보세요.</p>
+                </div>
+            </div>
+        </div>
+        <!-- video 01  -->
+        <div class="spring-video-main">
+            <div class="spring-warp">
+                <div class="spring-video">
+                    <video controls="" poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                    </video>
+                </div>
+                <div class="spring-text">
+                    <p>재난·안전에 관한 다양한 상식을 퀴즈로 풀어보는 도전 안전벨!<br>
+                        농기계가 농로에서 논밭에 들어갈 때는 경사로 OOO이하로 운행해야 한다.<br>
+                        오늘의 정답을 맞춰보세요.</p>
+                </div>
+            </div>
+        </div>
+        <!-- video 01  -->
+        <div class="spring-video-main">
+            <div class="spring-warp">
+                <div class="spring-video">
+                    <video controls="" poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                    </video>
+                </div>
+                <div class="spring-text">
+                    <p>재난·안전에 관한 다양한 상식을 퀴즈로 풀어보는 도전 안전벨!<br>
+                        농기계가 농로에서 논밭에 들어갈 때는 경사로 OOO이하로 운행해야 한다.<br>
+                        오늘의 정답을 맞춰보세요.</p>
+                </div>
+            </div>
+        </div>
+        <!-- video 01  -->
+        <div class="spring-video-main">
+            <div class="spring-warp">
+                <div class="spring-video">
+                    <video controls="" poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                    </video>
+                </div>
+                <div class="spring-text">
+                    <p>재난·안전에 관한 다양한 상식을 퀴즈로 풀어보는 도전 안전벨!<br>
+                        농기계가 농로에서 논밭에 들어갈 때는 경사로 OOO이하로 운행해야 한다.<br>
+                        오늘의 정답을 맞춰보세요.</p>
+                </div>
+            </div>
+        </div>
+        <!-- video 01  -->
+        <div class="plus">
+            <a href="#" id="load">더보기 + </a>
+        </div>
+
+
+        <div class="quickmenu age-quick">
+            <ul>
+                <li class="hv">
+                    <a href="baby.html">
+                        <img src="resources/images/life/baby_w.png" alt="영유아">영유아
+                    </a>
+                </li>
+                <li>
+                    <a href="children.html">
+                        <img src="resources/images/life/children_w.png" alt="아동청소년">아동청소년
+                    </a>
+                </li>
+                <li>
+                    <a href="adult.html">
+                        <img src="resources/images/life/adult_w.png" alt="성인">성인
+                    </a>
+                </li>
+                <li>
+                    <a href="aged.html">
+                        <img src="resources/images/life/aged_w.png" alt="노인">노인
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- <script type="text/javascript">
+            $(function(){
+
+                // $('.quickmenu li:nth-child(1)').mouseover(function(){
+                //     $('.quickmenu li:nth-child(1) img').attr('src','resources/images/life/baby_w.png');
+                // });
+                // $('.quickmenu li:nth-child(1)').mouseleave(function(){
+                //     $('.quickmenu li:nth-child(1) img').attr('src','resources/images/life/baby_r.png');
+                // });
+
+                $('.quickmenu li:nth-child(2)').mouseover(function(){
+                    $('.quickmenu li:nth-child(2) img').attr('src','resources/images/life/children_w.png');
+                });
+                $('.quickmenu li:nth-child(2)').mouseleave(function(){
+                    $('.quickmenu li:nth-child(2) img').attr('src','resources/images/life/children_r.png');
+                });
+
+                $('.quickmenu li:nth-child(3)').mouseover(function(){
+                    $('.quickmenu li:nth-child(3) img').attr('src','resources/images/life/adult_w.png');
+                });
+                $('.quickmenu li:nth-child(3)').mouseleave(function(){
+                    $('.quickmenu li:nth-child(3) img').attr('src','resources/images/life/adult_r.png');
+                });
+
+                $('.quickmenu li:nth-child(4)').mouseover(function(){
+                    $('.quickmenu li:nth-child(4) img').attr('src','resources/images/life/aged_w.png');
+                });
+                $('.quickmenu li:nth-child(4)').mouseleave(function(){
+                    $('.quickmenu li:nth-child(4) img').attr('src','resources/images/life/aged_r.png');
+                });
+            });
+        </script> -->
+    </section>
+    <!-- TOP버튼 -->
+    <div class="quick">
+        <button type="button" class="go_top_btn" style="display: inline-block;"><span>위로</span></button>
+    </div>
+
+    <script>
+        $(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 500) {
+                    $('.quick').fadeIn();
+                } else {
+                    $('.quick').fadeOut();
+                }
+            });
+            
+            $(".quick").click(function() {
+                $('html, body').animate({
+                    scrollTop : 0
+                }, 400);
+                return false;
+            });
+        });
+    </script>
+    <!-- TOP버튼 끝 -->
+    <footer>
+        <div id="footer">
+            <div class="footer-content">
+                <div class="foot-logo">
+                    <img src="resources/images/logo.png" alt="로고">
+                </div>
+                <div class="footer-copyright">
+                    <p>(우) 32435 충남 예산군 예산읍 군청로 22 Tel 041-339-7114 / Fax 041-339-7229</p>
+                    <p>COPYRIGHT ⓒ YESAN COUNTRY.ALL RIGHTS RESERVED</p>
+                </div>
+                <div class="list-box"></div>
+            </div>
+        </div>
+    </footer>
+    <!-- JS -->
+    <script type="text/javascript" src="resources/javascripts/vendor/jquery.tabslet.min.js"></script>
+    <script type="text/javascript" src="resources/javascripts/vendor/rainbow-custom.min.js"></script>
+    <script type="text/javascript" src="resources/javascripts/vendor/jquery.anchor.js"></script>
+    <script src="resources/javascripts/initializers.js"></script>
+    <!-- JS ends -->
+    <!-- <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script> -->
+    <script type="text/javascript" src="resources/js/main.js"></script>
+    
+    <script>
+        $(function(){
+            $(".spring-video-main").slice(0, 3).show(); // select the first ten
+            $("#load").click(function(e){ 
+                e.preventDefault();
+                $(".spring-video-main:hidden").slice(0, 3).show(); // select next 10 hidden divs and show them
+                if($(".spring-video-main:hidden").length == 0){ // check if any hidden divs still exist
+                    $('.plus').css("opacity","0");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

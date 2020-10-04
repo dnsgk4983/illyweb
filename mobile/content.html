@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mobile-css/normalize.css">
+    <link rel="stylesheet" href="mobile-css/reset.css">
+    <link rel="stylesheet" href="mobile-css/mobile.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+</head>
+<body>
+    <section class="content-app-section">
+    <header>
+        <div class="header_inner">
+            <button type="button" class="back"> </button>
+        </div>
+    </header>
+    <section>
+        <div class="content_inner">
+            <div class="content-registration-title">
+                <h1>재난정보등록</h1>
+            </div>
+        <div class="content-join-app-id flex-center">
+            <input type="text" placeholder="제목" class="join-style-wh box">
+        </div>
+        <div class="content-join-app-id flex-center">
+            <input type="text" placeholder="재난위치" class="join-style-wh box">
+        </div>
+        <div class="content-join-app-id flex-center">
+            <input type="text" placeholder="이름" class="join-style-wh box">
+        </div>
+        <div class="content-join-app-id flex-center">
+            <input type="tel" placeholder="연락처" class="join-style-wh box">
+        </div>
+        <div class="content-join-app-id flex-center">
+            <input type="text" placeholder="재난유형" class="join-style-wh box">
+        </div>
+        <div class="content-join-app-id flex-center">
+            <input type="text" placeholder="재난유형" class="join-style-wh box">
+        </div>
+        <div class="filebox bs3-primary">
+            <div class="filebox bs3-primary">
+                <!-- <input class="upload-name" value="파일선택" disabled="disabled"> -->
+                <div class="content-file">
+                    <div class="file-box">
+                        <label for="ex_filename">+</label>
+                        <input type="file" id="ex_filename" class="upload-hidden box">
+                    </div>
+                    <div class="file-box">
+                        <label for="ex_filename">+</label>
+                        <input type="file" id="ex_filename" class="upload-hidden box">
+                    </div>
+                    <div class="file-box">
+                        <label for="ex_filename">+</label>
+                        <input type="file" id="ex_filename" class="upload-hidden box">
+                    </div>
+                </div>
+            </div>
+            <script>
+                $(document).ready(function () {
+                    var fileTarget = $('.filebox .upload-hidden');
+
+                    fileTarget.on('change', function () {
+                        if (window.FileReader) {
+                            var filename = $(this)[0].files[0].name;
+                        } else {
+                            var filename = $(this).val().split('/').pop().split('\\').pop();
+                        }
+
+                        $(this).siblings('.upload-name').val(filename);
+                    });
+                });
+            </script>
+        </div>
+
+        <div class="content-text-subjuct">
+            <textarea id="subject" name="subject" placeholder="내용" class="post-box"></textarea>
+        </div>
+        <div class="content-text-btn">
+            <button class="cancel">취소</button><button class="registration">재난등록</button>
+        </div>
+    </div>
+    </section>
+</section>
+</body>
+</html>

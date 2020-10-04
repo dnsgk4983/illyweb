@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta property=”og:image” content="resources/images/POZ_202007131009436070.jpg">
+    <meta property=”og:image:width” content="600">
+    <meta property=”og:image:height” content="400"> 
+    <meta name="author" content="예산재난포털" />
+    <meta name="Keywords" content="예산재난포털" />
+    <title>예산군청</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="shortcut icon" href="resources/images/fa_gDi_icon.ico">
+    <link rel="stylesheet" href="resources/css/commmon/common.css">
+    <link rel="stylesheet" href="resources/css/layout.css">
+        <!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+</head>
+<body>
+    <!-- 공통메뉴  -->
+    <header id="header">
+        <div class="nav-wrapper">
+            <a href="index.html"><h1 id="logo">예산재난포털</h1></a>
+            <div class="gnb" id="gnb">
+                <ul>
+                    <li>
+                        <a href="#">종합날씨</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-weather">
+                                <ul>
+                                    <li>
+                                        <a href="livingweather.html">
+                                            <div class="sub-icon-6">
+                                                <img src="resources/images/icon/main-menu-2-1.png" alt="생활날씨">
+                                                <img src="resources/images/icon/main-menu-2-1-hover.png" alt="생활날씨">
+                                            </div>
+                                            생활날씨</a>
+                                    </li>
+                                    <li>
+                                        <a href="rain-info.html">
+                                            <div class="sub-icon-7">
+                                                <img src="resources/images/icon/main-menu-2-2.png" alt="강우정보">
+                                                <img src="resources/images/icon/main-menu-2-2-hover.png" alt="강우정보">
+                                            </div>
+                                            강우정보</a>
+                                    </li>
+                                    <li>
+                                        <a href="snow-info.html">
+                                            <div class="sub-icon-8">
+                                                <img src="resources/images/icon/main-menu-2-3.png" alt="적설정보">
+                                                <img src="resources/images/icon/main-menu-2-3-hover.png" alt="적설정보">
+                                            </div>
+                                            적설정보</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 1depth -->
+                    <li class="on">
+                        <a href="#">생활안전정보</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-information">
+                                <ul>
+                                    <li>
+                                        <a href="information.html">
+                                            <div class="sub-icon-3">
+                                                <img src="resources/images/icon/main-menu-1-3.png" alt="재난속보">
+                                                <img src="resources/images/icon/main-menu-1-3-hover.png" alt="재난속보">
+                                            </div>
+                                            재난속보
+                                        </a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="government-info.html">하천 수위</a></li>
+                                                <li><a href="dam-info.html">댐정보</a></li>
+                                                <li><a href="fire-info.html">소방 긴급구조</a></li>
+                                                <li><a href="firecenter-info.html">소방서센터</a></li>
+                                                <li><a href="earth-info.html">지진</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-9">
+                                                <img src="resources/images/icon/main-menu-3-1.png" alt="재난안전지도">
+                                                <img src="resources/images/icon/main-menu-3-1-hover.png" alt="재난안전지도">
+                                            </div>
+                                            재난안전지도
+                                        </a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="safemap.html">안전MAP</a></li>
+                                            </ul>
+                                        </div>
+                                        
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-10">
+                                                <img src="resources/images/icon/main-menu-3-2.png" alt="재난예방정보">
+                                                <img src="resources/images/icon/main-menu-3-2-hover.png" alt="재난예방정보">
+                                            </div>
+                                            재난예방정보</a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li>
+                                                    <a href="earthquake.html">자연재난</a>
+                                                </li>
+                                                <li>
+                                                    <a href="traffic.html">사회재난</a>
+                                                </li>
+                                                <li>
+                                                    <a href="extinguisher.html">생활안전수칙</a>
+                                                </li>
+                                                <li>
+                                                    <a href="farm.html">농어촌안전</a>
+                                                </li>
+                                                <li>
+                                                    <a href="spring.html">계절별재난</a>
+                                                </li>
+                                                <li>
+                                                    <a href="baby.html">생애주기별 재난</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-11">
+                                                <img src="resources/images/icon/main-menu-3-3.png" alt="재난안전보험">
+                                                <img src="resources/images/icon/main-menu-3-3-hover.png" alt="재난안전보험">
+                                            </div>
+                                            재난안전보험</a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="insurance.html">풍수해보험</a></li>
+                                                <li><a href="safe-insurance.html">예산군 군민안전보험</a></li>
+                                                <li><a href="bicycle.html">예산군 자전거안전보험</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-12">
+                                                <img src="resources/images/icon/main-menu-3-4.png" alt="재난안전앱">
+                                                <img src="resources/images/icon/main-menu-3-4-hover.png" alt="재난안전앱">
+                                            </div>
+                                            재난안전앱</a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="safe-app.html">안전디딤돌</a></li>
+                                                <li><a href="safe-news.html">안전신문고</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 2depth -->
+                    <li>
+                        <a href="#">재난안전대책본부</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-safety">
+                                <ul>
+                                    <li>
+                                        <a href="tissue.html">
+                                            <div class="sub-icon-13">
+                                                <img src="resources/images/icon/main-menu-4-1.png" alt="대책본부 조직도 및 주요업무">
+                                                <img src="resources/images/icon/main-menu-4-1-hover.png" alt="대책본부 조직도 및 주요업무">
+                                            </div>
+                                            대책본부 조직도 및 주요업무</a>
+                                    </li>
+                                    <li>
+                                        <a href="system-1.html">
+                                            <div class="sub-icon-14">
+                                                <img src="resources/images/icon/main-menu-4-2.png" alt="재난대응 체계도">
+                                                <img src="resources/images/icon/main-menu-4-2-hover.png" alt="재난대응 체계도">
+                                            </div>
+                                            재난대응 체계도</a>
+                                    </li>
+                                    <li>
+                                        <a href="system-2.html">
+                                            <div class="sub-icon-15">
+                                                <img src="resources/images/icon/main-menu-4-3.png" alt="피해조사 및 복구계획">
+                                                <img src="resources/images/icon/main-menu-4-3-hover.png" alt="피해조사 및 복구계획">
+                                            </div>
+                                            피해조사 및 복구계획</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 3depth -->
+                    <li>
+                        <a href="#">안전게시판</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-board">
+                                <ul>
+                                    <li>
+                                        <a href="notice.html">
+                                            <div class="sub-icon-16">
+                                                <img src="resources/images/icon/main-menu-5-1.png" alt="공지사항">
+                                                <img src="resources/images/icon/main-menu-5-1-hover.png" alt="공지사항">
+                                            </div>
+                                            공지사항</a>
+                                    </li>
+                                    <li>
+                                        <a href="report.html">
+                                            <div class="sub-icon-17">
+                                                <img src="resources/images/icon/main-menu-5-2.png" alt="보도자료">
+                                                <img src="resources/images/icon/main-menu-5-2-hover.png" alt="보도자료">
+                                            </div>
+                                            보도자료</a>
+                                    </li>
+                                    <li>
+                                        <a href="education.html">
+                                            <div class="sub-icon-18">
+                                                <img src="resources/images/icon/main-menu-5-3.png" alt="교육자료">
+                                                <img src="resources/images/icon/main-menu-5-3-hover.png" alt="교육자료">
+                                            </div>
+                                            교육자료</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 4depth -->
+                </ul>
+            </div>
+        </div>        
+    </header>
+        <div class="gnb_bg"></div>
+    <section>
+        <!-- <div class="main-bg"></div> -->
+        <div class="container_wrapper">
+            <div class="visual_top_wrap-infection">
+                <div class="content-title-top">
+                    <h1>감염병 예방</h1>
+                </div>
+            </div>
+            <div class="content-tab-top">
+                <ul class="tab-top-nav">
+                    <li><a href="#">홈</a></li>
+                    <li><span>></span></li>
+                    <li><a href="#">재난예방정보</a></li>
+                    <li><span>></span></li>
+                    <li><a href="#">사회재난</a></li>
+                    <li><span>></span></li>
+                    <li><a>감염병 예방</a></li>
+                </ul>
+            </div>
+            <!-- visual top  end -->
+            <div class="sub-content">
+                <div class="content_title">
+                    <div class="earth-title">
+                        <h1><img src="resources/images/accident/ico_infection.png" align="center">감염병 예방</h1>
+                        <div class="line"></div>
+                        <p>
+                            감염병예방법을 사전에 충분히 습득해서 재난이 발생하였을 때 피해를 최소화할 수 있도록 대비하시기 바랍니다.
+                        </p>
+                    </div>
+                    <div class="sub-tab-title">             
+                        <div class='tabs tabs_animate'>
+                            <ul class='horizontal-tab'>
+                              <li class="active"><a href="#tab-1">감염병 예방 시</a></li>
+                              <li><a href="#tab-2">기침예절 & 올바른 손씻기</a></li>
+                            </ul>
+                            <div id='tab-1' style="margin-bottom: 50px;">
+                                <div class="msfrtn_info_wrap">
+                                    <h1 class="msfrtn-title">감염병 예방 시 이렇게 행동합니다.</h1>
+                                    <div class="msfrtn-info">
+                                        <div class="msfrtn-info-img">
+                                            <img src="resources/images/accident-item/mpr_infection01_1.jpg" alt="손 씻는 이미지" class="imgs">
+                                        </div>
+                                        <div class="msfrtn-info-txt">
+                                            <div class="msfrtn-txt">
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">감염병 예방은</li>
+                                                    <li>평소에도 손을 자주, 비누를 사용하여 흐르는 깨끗한 물에 씻어야 합니다.</li>
+                                                    <li>손을 씻어야 하는 때 : 외출 후, 많은 사람이 모이는 장소를 다녀온 후, 조리하거나 식사하기 전,<br>화장실사용 후, 기침이나 재채기 후 등</li>
+                                                    <li>식수는 반드시 끓였거나 병에 든 물(생수)을 드셔야 합니다.</li>
+                                                    <li>이외 요리시, 설거지시, 손을 씻거나 양치시 등에도 안전한 물, 소독된 물 사용 권고 채소류 등<br>식재료는 흐르는 깨끗한 물에 씻고, 충분히 가열하여 드셔야 합니다.</li>
+                                                    <li>특히, 여름철 조리 음식 보관 금지, 오염된 물에 닿았던 음식 섭취 금지, 이상한 냄새가 나거나<br>색깔, 모양 등이 변한 음식물 섭취 금지 도마, 칼 등은 식품별 구분하여 따로 사용하고,<br>사용 후 깨끗이 씻고, 잘 말려서 사용해야 합니다.</li>
+                                                    <li>설사 증상이나 손에 상처가 있는 사람은 조리 금지</li>
+                                                    <li>특히, 설사 증상이 있는 경우 의료기관 방문 진료 권고</li>
+                                                    <li>기침, 재채기를 할 경우 휴지나 손수건, 옷 소매 이용 입 가리기 등 기침 에티켓을 지키고<br>기침이 계속된다면 마스크를 착용을 권장합니다.</li>
+                                                    <li>손으로 가급적 눈, 코, 입 만지는 것을 피하고, 집안실내 등은 청결히 하고 환기를 자주 시킵니다.</li>
+                                                    <li>발열이나 호흡기 증상(기침, 목 아픔, 콧물이나 코막힘)이 있을 때에는 사람과 밀접한 접촉을<br>피하고 가급적 많은 사람이 모이는 장소로의 외출은 자제하시는 것이 좋습니다.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">감염병 증상이 나타날 때는</li>
+                                                    <li>설사, 발열 및 호흡기 증상이 나타날 때에는 바로 의료기관을 방문하시기 바랍니다.</li>
+                                                    <div class="tip_wrap" style="margin: 10px 0; padding: 10px 0">
+                                                        <p><img src="resources/images/blt_check.png" align="center">특히, 고위험군(5세 이하, 65세 이상, 임신부, 만성질환자 등) 경우 즉시 진료 권고</p>
+                                                    </div>
+                                                    <li>해외 여행객은 귀국시 발열, 호흡기 증상, 설사, 구토 등의 증상이 있을 경우 건강상태 질문서에<br>성실히 기재하고 검역관에게 반드시 신고하셔야 합니다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- msfrtn_info_wrap  -->
+                            </div>
+                            <div id='tab-2' style="margin-bottom: 50px;">
+                                <h1 class="msfrtn-title">기침예절 & 올바른 손씻기</h1>
+                                    <div class="msfrtn-info">
+                                        <div class="msfrtn-info-txt">
+                                            <div class="msfrtn-txt">
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">기침예절</li>
+                                                    <li>기침은 옷소매로 입과 코를 가리고 한다.</li>
+                                                </ul>
+                                                <ul class="mg-b80">
+                                                    <li class="tab-sub-main-txt">올바른 손씻기 6단계</li>
+                                                    <li>흐르는 물에 비누로 30초 이상 손을 씻는다.</li>
+                                                </ul>
+                                            </div>
+                                            <img src="resources/images/accident-item/mpr_infection02_1.jpg" alt="손바닥, 손등, 손가락사이, 두손모아, 엄지손가락, 손톱 밑 순서로 손을 씻는다." class="infection-img">
+                                        </div>
+                                    </div>
+                                <!-- msfrtn_info_wrap  -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- tab bar content   -->
+                    <div class='media_tab tab_media_title'>
+                        <div id='media-tab-1'>
+                            <div id="media-tab-1" class="media_title"><img src="resources/images/blt_check.png" align="center" style="margin-left:0;">주요 감염병 이해 및 예방법</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">2015년 메르스 전 세계적으로 2016년 4월 기준 26개국에서 1741명 발생 675명 사망 우리나라 집계수 2015년 12월 24일 상황종료 발표 시점 환자수 186명, 사망자 38명 1차 발병부터 빠른속도로 확산되는 메르스바이러스로 인해 전국이 공포에 떨었습니다. 불과 1년도 채 안 된 2016년 전 세계가 또 한 번 공포에 휩싸였습니다. <br><br>지카 바이러스. 150만 명 이상의 감염자와 지카 바이러스 감염으로 인한 소두증의심 사례가4천 건 이상으로 집계됩니다. 이런 바이러스를 예방하려면 감염병에 대해 미리 대비해야 합니다.<br><br>메르스를 예방하기 위해서는 일반적인 감염병 예방 수칙을 준수하고, 중동지역 여행 시, 익히지 않은 낙타고기, 생낙타유는 섭취하지 않습니다. 사람이 붐비는 장소 방문은 가급적 자제하고 발열 및 기침, 호흡곤란 등 호흡기 증상이 있을 경우 즉시 병원에 방문합니다. 귀국 후 14일 이내 발열, 호흡기증상이 있을 경우 의료기관 방문전에 119로 신고합니다.<br><br>지카 바이러스를 예방하기 위해서는, 일반적인 감염병 예방 수칙을 준수하고 해외 여행 중 모기에 물리지 않도록 주의해야 합니다. 또한 임산부 및 가임여성은 환자 발생국가 여행을 하지 않도록 합니다. 귀국 후 2주 이내 지카바이러스 감염 의심증상이 나타나면 의료기관을 방문하고, 귀국 후 1개월간 모기에 물리지 않도록 주의합니다. 자신도 모르는 사이 주변사람까지 병들게 만드는 감염병. 미리 예방하고 대비하여 확산을 막도록 합시다.</div>
+                            </div>
+                        </div>
+                        <!-- media 1 -->
+                        <div id='media-tab-2'>
+                            <div id="media-tab-2" class="media_title"><img src="resources/images/blt_check.png" align="center" style="margin-left:0;">[안전 십장생] 6월에 조심해야 할 어린이 감염병 예방법</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">감염병이 많이 발생하는 6월. 어떻게 예방해야 할까요?<br>풀이 있는 곳에서 야외활동을 할 때는 야생진드기에 물리지 않도록 긴 옷을 입은 후 돗자리를 깔고 앉아주세요.<br>외출 후에는 온 몸을 깨끗이 씻고 입었던 옷도 세탁합니다.<br>아이들이 자주 만지는 장난감, 놀이기구, 집기류 등은 청결히 소독해 주세요.<br>사람이 많은 장소에서 재채기를 할 때는 휴지나 옷소매로 입과 코를 가리고 해주세요.<br>생활 속 안전, 안전한TV가 지켜줍니다.</div>
+                            </div>
+                        </div>
+                        <!-- media 2 -->
+                        <div id='media-tab-3'>
+                            <div id="media-tab-3" class="media_title"><img src="resources/images/blt_check.png" align="center" style="margin-left:0;">해외 여행객을 위한 감염병 예방 행동요령(스팟)</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">감염병예방을 위해 해외 여행국의 위험요인을 미리 확인하고, 필요한 예방 접종은 최소 2개월 전부터 준비해야 합니다. <br>비상상비약등을 준비하고, 비위생적인 음식은 피합니다. 식사전 비누로 손을 씻고 물은 생수나 끓인 물을 마시는게 좋습니다. <br>야외에서는 긴옷과 모자를 착용합니다. 귀국후 이상증상이 있는 경우 콜센터등에 신고후 안내에 따라 행동합니다. </div>
+                            </div>
+                        </div>
+                        <!-- media 3 -->
+                        <div id='media-tab-4'>
+                            <div id="media-tab-4" class="media_title"><img src="resources/images/blt_check.png" align="center" style="margin-left:0;">해외 여행객을 위한 감염병 예방 행동요령</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">1. 해당 여행국의 위험요인을 미리 파악해 두세요.<br>2. 예방접종은 최소 2개월 전부터 준비해 주세요.<br>3. 곤충기피제, 비상상비약을 준비하고 비위생적인 음식은 피하세요.<br>4. 식사 전, 비누로 손을 씻고 생수, 끓인물, 탄산수를 마시세요.<br>5. 야외활동 시에는 긴팔 옷, 긴 바지, 모자를 착용하세요.<br>6. 지카바이러스의 경우 2~14일 이내에 발진, 발열, 관절통 등의 증상이 나타납니다.<br>   귀국 시 이상증상이 나타날 경우 검역관에게 신고하거나 콜센터(1339)나 지역 보건소 등에 신고하세요.</div>
+                            </div>
+                        </div>
+                        <!-- media 4 -->
+                        <div id='media-tab-5'>
+                            <div id="media-tab-5" class="media_title"><img src="resources/images/blt_check.png" align="center" style="margin-left:0;">119와 함께 알아보는 메르스 안전수칙</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">119와 함께하는 메르스 안전수칙. <br><br>1. 물과 비누로 자주 손을 씻어요. <br><br>2. 씻지 않은 손으로 눈, 코, 입을 만지지 말아요.<br><br>3. 기침, 재채기 시 옷으로 입과 코를 가리고 해요.<br><br>4. 발열이나 호흡기 증상이 있는 사람과 접촉을 피해야 해요. <br><br>5. 외출 시에는 꼭 마스크 착용해요. </div>
+                            </div>
+                        </div>
+                        <!-- media 5 -->
+                        <div id='media-tab-6'>
+                            <div id="media-tab-6" class="media_title"><img src="resources/images/blt_check.png" align="center" style="margin-left:0;">영화 감기를 통해 알아보는 전염병 확산 시 행동 요령</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">안녕하세요. 이럴땐 이렇게의 저는 장유진입니다. 오늘의 시네마 바로 감기인데요. <br>이 영화는 아파트가 밀집한 경기 성남시 분당구에 변형 조류독감 바이러스가 퍼진 사태를 상상으로 그려냈습니다. 감기 바이러스로 인한 영화속 사태들은 최근 메르스 사태를 자연히 떠오르게 하는데요. <br>전 세계적으로 천명이 넘는 환자수로 정보가 제한적이였던 메르스는 90% 이상이 사우디아라비아에서 발병된 것이였습니다. 감염력은 낮지만 치사율이 높고 접촉을 통해서만 전파되는 질병이였던 메르스! 신종 감염병이였던 만큼 많은 사람들에게 두렵게 인식되기도 했는데요. 예고 없이 찾아오는 불청객 전염병! 막연히 불안해하기전 이에 빠르게 대처하는 자세가 무엇보다 중요 할텐데요.<br>위기 상황 발생 시에는 재난 방송 및 문자 전송으로 상황이 전파됩니다. 이때는 먼저 개인위생부터 철저히 관리해야하는데요. 외출은 되도록 삼가하고 부득이 나갈경우에는 마스크를 꼭 착용하는 것이 좋습니다. 집에 들어온 후에는 손을 꼭 깨끗이 씻고 외출복을 갈아 입습니다. 라디오나 티비 청취를 통해 어느 지역에 전염병이 확산되었는지 알아두어야겠습니다. <br>오래전부터 우리 곁에 함께해 온 전염병! 피해를 아예 막기는 어렵겠지만 우리가 함께 힘을 모아 대처한다면 확산을 막고 병원균과의 싸움도 거뜬히 이겨낼 수 있을 것입니다. </div>
+                            </div>
+                        </div>
+                        <!-- media 6 -->
+                        <ul class='media-tab'>
+                            <li class="active-2"><a href="#media-tab-1">1</a></li>
+                            <li><a href="#media-tab-2">2</a></li>
+                            <li><a href="#media-tab-3">3</a></li>
+                            <li><a href="#media-tab-4">4</a></li>
+                            <li><a href="#media-tab-5">5</a></li>
+                            <li><a href="#media-tab-6">6</a></li>
+                          </ul>
+                      </div>
+        
+                </div>
+                    
+                    <script>
+                        $(function(){                
+                            $('.tabs').tabslet({
+                              mouseevent: 'click',
+                              attribute: 'href',
+                              animation: true
+                            });
+                        });
+                        $(function(){                
+                            $('.media_tab').tabslet({
+                            mouseevent: 'click',
+                            attribute: 'href'
+                            });
+                        });
+                    </script>
+                </div>
+        
+            </div>
+            <!-- content_wrap end  -->
+        </div>
+        <div class="quickmenu accident-quick">
+            <ul>
+                <li>
+                    <a href="traffic.html">
+                        <img src="resources/images/accident/ico_tfcacd_w.png" alt="교통사고">교통사고
+                    </a>
+                </li>
+                <li>
+                    <a href="fire.html">
+                        <img src="resources/images/accident/ico_frfire_w.png" alt="화재사고">화재사고
+                    </a>
+                </li>
+                <li>
+                    <a href="child.html">
+                        <img src="resources/images/accident/ico_childadt_w.png" alt="어린이안전사고">어린이<br>안전사고
+                    </a>
+                </li>
+                <li>
+                    <a href="water.html">
+                        <img src="resources/images/accident/ico_wateradt_w.png" alt="수난사고">수난사고
+                    </a>
+                </li>
+                <li>
+                    <a href="animal.html">
+                        <img src="resources/images/accident/ico_animaladt_w.png" alt="가축질병">가축질병
+                    </a>
+                </li>
+                <li>
+                    <a href="dam.html">
+                        <img src="resources/images/accident/ico_dam_w.png" alt="댐 붕괴">댐 붕괴
+                    </a>
+                </li>
+                <li class="hv">
+                    <a href="infection.html">
+                        <img src="resources/images/accident/ico_infection_w.png" alt="감염병 예방">감염병 예방
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- <script type="text/javascript">
+            $(function(){
+
+                $('.quickmenu li:nth-child(1)').mouseover(function(){
+                    $('.quickmenu li:nth-child(1) img').attr('src','resources/images/accident/ico_tfcacd_w.png');
+                });
+                $('.quickmenu li:nth-child(1)').mouseleave(function(){
+                    $('.quickmenu li:nth-child(1) img').attr('src','resources/images/accident/ico_tfcacd_r.png');
+                });
+
+                $('.quickmenu li:nth-child(2)').mouseover(function(){
+                    $('.quickmenu li:nth-child(2) img').attr('src','resources/images/accident/ico_frfire_w.png');
+                });
+                $('.quickmenu li:nth-child(2)').mouseleave(function(){
+                    $('.quickmenu li:nth-child(2) img').attr('src','resources/images/accident/ico_frfire_r.png');
+                });
+
+                $('.quickmenu li:nth-child(3)').mouseover(function(){
+                    $('.quickmenu li:nth-child(3) img').attr('src','resources/images/accident/ico_childadt_w.png');
+                });
+                $('.quickmenu li:nth-child(3)').mouseleave(function(){
+                    $('.quickmenu li:nth-child(3) img').attr('src','resources/images/accident/ico_childadt_r.png');
+                });
+
+                $('.quickmenu li:nth-child(4)').mouseover(function(){
+                    $('.quickmenu li:nth-child(4) img').attr('src','resources/images/accident/ico_wateradt_w.png');
+                });
+                $('.quickmenu li:nth-child(4)').mouseleave(function(){
+                    $('.quickmenu li:nth-child(4) img').attr('src','resources/images/accident/ico_wateradt_r.png');
+                });
+                
+                $('.quickmenu li:nth-child(5)').mouseover(function(){
+                    $('.quickmenu li:nth-child(5) img').attr('src','resources/images/accident/ico_animaladt_w.png');
+                });
+                $('.quickmenu li:nth-child(5)').mouseleave(function(){
+                    $('.quickmenu li:nth-child(5) img').attr('src','resources/images/accident/ico_animaladt_r.png');
+                });
+
+                $('.quickmenu li:nth-child(6)').mouseover(function(){
+                    $('.quickmenu li:nth-child(6) img').attr('src','resources/images/accident/ico_dam_w.png');
+                });
+                $('.quickmenu li:nth-child(6)').mouseleave(function(){
+                    $('.quickmenu li:nth-child(6) img').attr('src','resources/images/accident/ico_dam_r.png');
+                });
+            });
+
+        </script> -->
+    </section>
+    <!-- TOP버튼 -->
+    <div class="quick">
+        <button type="button" class="go_top_btn" style="display: inline-block;"><span>위로</span></button>
+    </div>
+
+    <script>
+        $(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 500) {
+                    $('.quick').fadeIn();
+                } else {
+                    $('.quick').fadeOut();
+                }
+            });
+            
+            $(".quick").click(function() {
+                $('html, body').animate({
+                    scrollTop : 0
+                }, 400);
+                return false;
+            });
+        });
+    </script>
+    <!-- TOP버튼 끝 -->
+    <footer>
+        <div id="footer">
+            <div class="footer-content">
+                <div class="foot-logo">
+                    <img src="resources/images/logo.png" alt="로고">
+                </div>
+                <div class="footer-copyright">
+                    <p>(우) 32435 충남 예산군 예산읍 군청로 22 Tel 041-339-7114 / Fax 041-339-7229</p>
+                    <p>COPYRIGHT ⓒ YESAN COUNTRY.ALL RIGHTS RESERVED</p>
+                </div>
+                <div class="list-box"></div>
+            </div>
+        </div>
+    </footer>
+    <!-- JS -->
+    <script type="text/javascript" src="resources/javascripts/vendor/jquery.tabslet.min.js"></script>
+    <script type="text/javascript" src="resources/javascripts/vendor/rainbow-custom.min.js"></script>
+    <script type="text/javascript" src="resources/javascripts/vendor/jquery.anchor.js"></script>
+    <script src="resources/javascripts/initializers.js"></script>
+    <!-- JS ends -->
+    <!-- <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script> -->
+    <script type="text/javascript" src="resources/js/main.js"></script>
+</body>
+</html>

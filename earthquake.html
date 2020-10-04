@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta property=”og:image” content="resources/images/POZ_202007131009436070.jpg">
+    <meta property=”og:image:width” content="600">
+    <meta property=”og:image:height” content="400"> 
+    <meta name="author" content="예산재난포털" />
+    <meta name="Keywords" content="예산재난포털" />
+    <title>예산군청</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="shortcut icon" href="resources/images/fa_gDi_icon.ico">
+    <link rel="stylesheet" href="resources/css/commmon/common.css">
+    <link rel="stylesheet" href="resources/css/layout.css">
+        <!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+</head>
+<body>
+    <!-- 공통메뉴  -->
+    <header id="header">
+        <div class="nav-wrapper">
+            <a href="index.html"><h1 id="logo">예산재난포털</h1></a>
+            <div class="gnb" id="gnb">
+                <ul>
+                    <li>
+                        <a href="#">종합날씨</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-weather">
+                                <ul>
+                                    <li>
+                                        <a href="livingweather.html">
+                                            <div class="sub-icon-6">
+                                                <img src="resources/images/icon/main-menu-2-1.png" alt="생활날씨">
+                                                <img src="resources/images/icon/main-menu-2-1-hover.png" alt="생활날씨">
+                                            </div>
+                                            생활날씨</a>
+                                    </li>
+                                    <li>
+                                        <a href="rain-info.html">
+                                            <div class="sub-icon-7">
+                                                <img src="resources/images/icon/main-menu-2-2.png" alt="강우정보">
+                                                <img src="resources/images/icon/main-menu-2-2-hover.png" alt="강우정보">
+                                            </div>
+                                            강우정보</a>
+                                    </li>
+                                    <li>
+                                        <a href="snow-info.html">
+                                            <div class="sub-icon-8">
+                                                <img src="resources/images/icon/main-menu-2-3.png" alt="적설정보">
+                                                <img src="resources/images/icon/main-menu-2-3-hover.png" alt="적설정보">
+                                            </div>
+                                            적설정보</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 1depth -->
+                    <li class="on">
+                        <a href="#">생활안전정보</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-information">
+                                <ul>
+                                    <li>
+                                        <a href="information.html">
+                                            <div class="sub-icon-3">
+                                                <img src="resources/images/icon/main-menu-1-3.png" alt="재난속보">
+                                                <img src="resources/images/icon/main-menu-1-3-hover.png" alt="재난속보">
+                                            </div>
+                                            재난속보
+                                        </a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="government-info.html">하천 수위</a></li>
+                                                <li><a href="dam-info.html">댐정보</a></li>
+                                                <li><a href="fire-info.html">소방 긴급구조</a></li>
+                                                <li><a href="firecenter-info.html">소방서센터</a></li>
+                                                <li><a href="earth-info.html">지진</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-9">
+                                                <img src="resources/images/icon/main-menu-3-1.png" alt="재난안전지도">
+                                                <img src="resources/images/icon/main-menu-3-1-hover.png" alt="재난안전지도">
+                                            </div>
+                                            재난안전지도
+                                        </a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="safemap.html">안전MAP</a></li>
+                                            </ul>
+                                        </div>
+                                        
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-10">
+                                                <img src="resources/images/icon/main-menu-3-2.png" alt="재난예방정보">
+                                                <img src="resources/images/icon/main-menu-3-2-hover.png" alt="재난예방정보">
+                                            </div>
+                                            재난예방정보</a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li>
+                                                    <a href="earthquake.html">자연재난</a>
+                                                </li>
+                                                <li>
+                                                    <a href="traffic.html">사회재난</a>
+                                                </li>
+                                                <li>
+                                                    <a href="extinguisher.html">생활안전수칙</a>
+                                                </li>
+                                                <li>
+                                                    <a href="farm.html">농어촌안전</a>
+                                                </li>
+                                                <li>
+                                                    <a href="spring.html">계절별재난</a>
+                                                </li>
+                                                <li>
+                                                    <a href="baby.html">생애주기별 재난</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-11">
+                                                <img src="resources/images/icon/main-menu-3-3.png" alt="재난안전보험">
+                                                <img src="resources/images/icon/main-menu-3-3-hover.png" alt="재난안전보험">
+                                            </div>
+                                            재난안전보험</a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="insurance.html">풍수해보험</a></li>
+                                                <li><a href="safe-insurance.html">예산군 군민안전보험</a></li>
+                                                <li><a href="bicycle.html">예산군 자전거안전보험</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-12">
+                                                <img src="resources/images/icon/main-menu-3-4.png" alt="재난안전앱">
+                                                <img src="resources/images/icon/main-menu-3-4-hover.png" alt="재난안전앱">
+                                            </div>
+                                            재난안전앱</a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="safe-app.html">안전디딤돌</a></li>
+                                                <li><a href="safe-news.html">안전신문고</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 2depth -->
+                    <li>
+                        <a href="#">재난안전대책본부</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-safety">
+                                <ul>
+                                    <li>
+                                        <a href="tissue.html">
+                                            <div class="sub-icon-13">
+                                                <img src="resources/images/icon/main-menu-4-1.png" alt="대책본부 조직도 및 주요업무">
+                                                <img src="resources/images/icon/main-menu-4-1-hover.png" alt="대책본부 조직도 및 주요업무">
+                                            </div>
+                                            대책본부 조직도 및 주요업무</a>
+                                    </li>
+                                    <li>
+                                        <a href="system-1.html">
+                                            <div class="sub-icon-14">
+                                                <img src="resources/images/icon/main-menu-4-2.png" alt="재난대응 체계도">
+                                                <img src="resources/images/icon/main-menu-4-2-hover.png" alt="재난대응 체계도">
+                                            </div>
+                                            재난대응 체계도</a>
+                                    </li>
+                                    <li>
+                                        <a href="system-2.html">
+                                            <div class="sub-icon-15">
+                                                <img src="resources/images/icon/main-menu-4-3.png" alt="피해조사 및 복구계획">
+                                                <img src="resources/images/icon/main-menu-4-3-hover.png" alt="피해조사 및 복구계획">
+                                            </div>
+                                            피해조사 및 복구계획</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 3depth -->
+                    <li>
+                        <a href="#">안전게시판</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-board">
+                                <ul>
+                                    <li>
+                                        <a href="notice.html">
+                                            <div class="sub-icon-16">
+                                                <img src="resources/images/icon/main-menu-5-1.png" alt="공지사항">
+                                                <img src="resources/images/icon/main-menu-5-1-hover.png" alt="공지사항">
+                                            </div>
+                                            공지사항</a>
+                                    </li>
+                                    <li>
+                                        <a href="report.html">
+                                            <div class="sub-icon-17">
+                                                <img src="resources/images/icon/main-menu-5-2.png" alt="보도자료">
+                                                <img src="resources/images/icon/main-menu-5-2-hover.png" alt="보도자료">
+                                            </div>
+                                            보도자료</a>
+                                    </li>
+                                    <li>
+                                        <a href="education.html">
+                                            <div class="sub-icon-18">
+                                                <img src="resources/images/icon/main-menu-5-3.png" alt="교육자료">
+                                                <img src="resources/images/icon/main-menu-5-3-hover.png" alt="교육자료">
+                                            </div>
+                                            교육자료</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 4depth -->
+                </ul>
+            </div>
+        </div>        
+    </header>
+        <div class="gnb_bg"></div>
+    <section>
+        <!-- <div class="main-bg"></div> -->
+        <div class="container_wrapper">
+            <div class="visual_top_wrap">
+                <div class="content-title-top">
+                    <h1>지진</h1>
+                </div>
+            </div>
+            <div class="content-tab-top">
+                <ul class="tab-top-nav">
+                    <li><a href="#">홈</a></li>
+                    <li><span>></span></li>
+                    <li><a href="#">재난예방정보</a></li>
+                    <li><span>></span></li>
+                    <li><a href="#">자연재난</a></li>
+                    <li><span>></span></li>
+                    <li><a>지진</a></li>
+                </ul>
+            </div>
+            <!-- visual top  end -->
+            <div class="sub-content">
+                <div class="content_title">
+                    <div class="earth-title">
+                        <h1><img src="resources/images/ico_erthqk.png" align="center">지진</h1>
+                        <div class="line"></div>
+                        <p>지면이 흔들리는 자연 현상으로, 예고 없이 찾아오기 때문에 많은 피해를 줄 수 있습니다.</p><p>지진 피해를 최소화하기 위해서는 지진 발생 시 행동요령을 평소에 익히고, 실제 발생 시 침착하게 대처하는 게 중요합니다.</p>
+                    </div>
+                    <div class="sub-tab-title">             
+                        <div class='tabs tabs_animate'>
+                            <ul class='horizontal-tab'>
+                              <li class="active"><a href="#tab-1">지진 발생 전</a></li>
+                              <li><a href="#tab-2">지진 발생 시</a></li>
+                              <li><a href="#tab-3">지진 대피 후</a></li>
+                            </ul>
+                            <div id='tab-1'>
+                                <div class="msfrtn_info_wrap">
+                                    <h1 class="msfrtn-title">지진 발생 전 이렇게 대비합니다.</h1>
+                                    <div class="msfrtn-info">
+                                        <div class="msfrtn-info-img">
+                                            <img src="resources/images/item/mpr01_1.jpg" alt="책상 아래로 대피한 이미지" class="imgs mg-t30">
+                                            <img src="resources/images/item/mpr01_2.jpg" alt="가스밸브와 전기를 차단하는 이미지" class="imgs">
+                                            <img src="resources/images/item/mpr01_3.jpg" alt="비상용품 이미지" class="imgs">
+                                        </div>
+                                        <div class="msfrtn-info-txt">
+                                            <div class="msfrtn-txt">
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">집 안에서의 안전을 확보합니다.</li>
+                                                    <li>탁자 아래와 같이 집 안에서 대피할 수 있는 안전한 대피 공간을 미리 파악해 둡니다.</li>
+                                                    <li>유리창이나 넘어지기 쉬운 가구 주변 등 위험한 위치를 확인해 두고 지진 발생 시 가까이 가지 않도록 합니다.</li>
+                                                    <li>깨진 유리 등에 다치지 않도록 두꺼운 실내화를 준비해 둡니다.</li>
+                                                    <li>화재를 일으킬 수 있는 난로나 위험물은 주의하여 관리합니다.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">집 안에서 떨어지기 쉬운 물건을 고정합니다.</li>
+                                                    <li>가구나 가전제품이 흔들릴 때 넘어지지 않도록 고정해 둡니다.</li>
+                                                    <li>텔레비전, 꽃병 등 떨어질 수 있는 물건은 높은 곳에 두지 않도록 합니다.</li>
+                                                    <li>그릇장 안의 물건들이 쏟아지지 않도록 문을 고정해 둡니다.</li>
+                                                    <li>창문 등의 유리 부분은 필름을 붙여 유리가 파손되지 않도록 합니다.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">집을 안전하게 관리합니다.</li>
+                                                    <li>가스 및 전기를 미리 점검합니다.</li>
+                                                    <li>건물이나 담장은 수시로 점검하고, 위험한 부분은 안전하게 수리합니다.</li>
+                                                    <li>건물의 균열을 발견하면 전문가에게 문의하여 보수하고 보강합니다.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">비상용품을 준비하고 보관할 장소를 알아 둡니다.</li>
+                                                    <li>비상시를 대비하여 비상용품을 준비해 두고, 보관할 장소와 사용방법을 알아 둡니다.</li>
+                                                    <li>지진 발생 시 화재가 발생할 수 있으니 소화기를 준비해 두고, 사용방법을 알아 둡니다.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">평상시 가족회의를 통하여 위급한 상황에 대비합니다.</li>
+                                                    <li>가스, 전기를 차단하는 방법을 알아 둡니다.</li>
+                                                    <li>머물고 있는 곳 주위의 넓은 공간 등 대피할 수 있는 장소를 알아 둡니다.</li>
+                                                    <li>비상시 가족과 만날 곳과 연락할 방법을 정해 둡니다.</li>
+                                                    <li>응급처치하는 방법을 반복적으로 훈련하여 익혀 둡니다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- msfrtn_info_wrap  -->
+                                <div class="tip_wrap">
+                                    <h2><img src="resources/images/blt_check_green.png" align="center">비상용품</h2>
+                                    <ul>
+                                        <li>1. 비상식품 : 물, 통조림, 라면 등 가열하지 않고 먹을 수 있는 것</li>
+                                        <li>2. 구급약품 : 연고, 감기약, 소화제, 지병약 등이 포함된 구급함</li>
+                                        <li>3. 생활용품 : 간단한 옷, 화장지, 물티슈, 라이터, 여성용품, 비닐봉투</li>
+                                        <li>4. 기타 : 라디오, 손전등 및 건전지, 휴대전화 예비배터리, 비상금, 비상연락망 등</li>
+                                    </ul>
+                                    <h2><img src="resources/images/blt_check_green.png" align="center">스마트폰 재난정보 애플리케이션</h2>
+                                    <ul>
+                                        <li>· 국민안전처 안전디딤돌</li>
+                                        <li>· 기상청 지진 정보 알리미</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div id='tab-2' class="mg-b50">
+                                <div class="msfrtn_info_wrap">
+                                    <h1 class="msfrtn-title">지진 발생 시 상황에 따라 이렇게 행동합니다.</h1>
+                                    <div class="msfrtn-info">
+                                        <div class="msfrtn-info-img">
+                                            <img src="resources/images/item/mpr02_1.jpg" alt="책상 아래로 대피한 이미지" class="imgs">              
+                                        </div>
+                                        <div class="msfrtn-info-txt">
+                                            <div class="msfrtn-txt">
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">튼튼한 탁자 아래에 들어가 몸을 보호합니다.</li>
+                                                    <li>지진으로 크게 흔들리는 시간은 길어야 1~2분 정도입니다.</li>
+                                                    <li>중심이 낮고 튼튼한 탁자의 아래로 들어가 탁자 다리를 꼭 잡고 몸을 보호합니다.</li>
+                                                    <li>탁자 아래와 같은 피할 곳이 없을 때에는 방석 등으로 머리를 보호합니다.</li>
+                                                </ul>
+                                                <ul class="mg0">
+                                                    <li class="tab-sub-main-txt">가스와 전깃불을 차단하고 문을 열어 출구를 확보합니다.</li>
+                                                    <li>흔들림이 멈춘 후 당황하지 말고 화재에 대비하여 가스와 전깃불을 끕니다.</li>
+                                                    <li>문이나 창문을 열어 언제든 대피할 수 있도록 출구를 확보합니다.</li>
+                                                    <li>흔들림이 멈추면, 출구를 통해 밖으로 나갑니다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tip_wrap">
+                                    <p style="margin-left: 0 !important;"><img src="resources/images/blt_check.png" align="center">지진이 발생했을 때 불이 나면 침착하고 빠르게 불을 꺼야 합니다.</p>
+                                </div>
+                                <div class="msfrtn_info_wrap">
+                                    <div class="msfrtn-info">
+                                        <div class="msfrtn-info-img">
+                                            <img src="resources/images/item/mpr02_2.jpg" alt="건물 밖으로 대피하는 이미지" class="imgs mg-t50">
+                                        </div>
+                                        <div class="msfrtn-info-txt">
+                                            <div class="msfrtn-txt">
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">집에서 나갈 때는 발을 보호할 수 있는 신발을 신고 이동합니다.</li>
+                                                    <li>지진이 발생하면 유리 조각이나 떨어져 있는 물체 때문에 발을 다칠 수 있으니, 발을 보호할 수 있는 신발을<br> 신고 이동합니다.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">계단을 이용하여 밖으로 대피합니다.</li>
+                                                    <li>지진이 나면 엘리베이터를 타지 말고, 계단을 이용하여 건물 밖으로 대피합니다.</li>
+                                                    <li>밖으로 나갈 때에는 떨어지는 유리, 간판, 기와 등을 주의하며, 소지품으로 몸을 보호하면서 침착하게 대피합니다.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">건물 담장과 떨어져 이동합니다.</li>
+                                                    <li>건물 밖으로 나오면 담장, 유리창 등이 파손되어 다칠 수 있으니, 건물과 담장에서 최대한
+                                                        멀리 떨어져<br>가방이나 손으로 머리를 보호하면서 대피합니다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tip_wrap">
+                                    <ul>
+                                        <p style="margin-left: 0 !important;"><img src="resources/images/blt_check.png" align="center">빌딩이 많은 도심지에서는 깨진 유리창이나 간판 등이 떨어져 다칠 우려가 있으므로, 주변에 가까운 공원이나 넓은 공간이 없다면 최근에 지은 튼튼한 건물 안으로 들어가 우선 몸을 보호합니다.</p>
+                                        <p style="margin-left: 0 !important;"><img src="resources/images/blt_check.png" align="center">담장이나 전봇대는 지진으로 기반이 약해져 넘어지기 쉬우므로 절대 기대지 말아야 합니다.</p>
+                                    </ul>
+                                </div>
+                                <div class="msfrtn_info_wrap">
+                                    <div class="msfrtn-info">
+                                        <div class="msfrtn-info-img">
+                                            <img src="resources/images/item/mpr02_3.jpg" alt="대피장소에서 질서를 지키는 이미지" class="imgs">
+                                            
+                                        </div>
+                                        <div class="msfrtn-info-txt">
+                                            <div class="msfrtn-txt">
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">넓은 공간으로 대피합니다.</li>
+                                                    <li>떨어지는 물건에 주의하며 신속하게 운동장이나 공원 등 넓은 공간으로 대피합니다.</li>
+                                                    <li>이동할 때에는 차량을 이용하지 않고 걸어서 대피합니다.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">올바른 정보에 따라 행동합니다.</li>
+                                                    <li>대피 장소에서는 안내에 따라 질서를 지킵니다.</li>
+                                                    <li>지진 발생 직후에는 근거 없는 소문이나 유언비어가 유포될 수 있으니,
+                                                        라디오나 공공 기관의 안내 방송 등이<br>제공하는 정보에 따라 행동합니다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tip_wrap">
+                                    <h2><img src="resources/images/blt_check_green.png" align="center">대피 시 주의 사항</h2>
+                                    <ul>
+                                        <li>1. 화재가 발생하면 손수건 등으로 코와 입을 막은 후 연기를 피하여 최대한 자세를 낮추고 안내에 따라 대피합니다.</li>
+                                        <li>2. 야간에는 넘어지거나 추락할 위험이 있으니, 손전등을 사용하여 조심해서 대피합니다.</li>
+                                        <li>3. 겨울철에는 추위로 몸 상태가 나빠질 수 있으니, 두꺼운 옷이나 휴대용 난로 등을 준비하여 추위에 대비한 후 대피합니다.</li>
+                                        <li>4. 지하상가 등의 공간에서는 정전 시 벽에 붙어 이동하고, 가까운 출입구를 통해 밖으로 나갑니다.
+                                        </li>
+                                        <li>5. 끊어진 전선을 비롯한 사고의 위험이 있는 물건은 만지지 않도록 주의합니다.</li>
+                                        <li>6. 대피 중에 휴대전화, 이어폰 등을 사용하면 발을 헛디뎌 부상의 위험이 있으므로 사용을 자제합니다.</li>
+                                        <li>7. 화장실, 욕실에 있을 때는 거울이나 전구 등의 파손으로 다칠 수 있으니, 욕실에서 나와 안전한 장소로 이동합니다.</li>
+                                        <li>8. 갇혔을 때는 주변의 딱딱한 물건을 이용하여 소리를 내어 구조를 요청합니다.</li>
+                                   </ul>
+                                </div>
+                                <div class="msfrtn_info_wrap">
+                                    <h1 class="msfrtn-title" style="margin-top: -40px;">지진 발생 시 장소에 따라 이렇게 행동합니다.</h1>
+                                    <div class="msfrtn-info">
+                                        <div class="msfrtn-info-img">
+                                            <img src="resources/images/item/mpr02_4.jpg" alt="책상 아래로 대피한 이미지" class="imgs mg-t80">
+                                        </div>
+                                        <div class="msfrtn-info-txt">
+                                            <div class="msfrtn-txt">
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">사무실에 있을 때에는 책상 아래로 피합니다.</li>
+                                                    <li>사무실은 컴퓨터 본체, 모니터 등 무거운 물건들이 많아 다칠 위험이 큽니다.</li>
+                                                    <li>사무실 책상 아래로 들어가 몸을 웅크리고 책상다리를 꼭 잡고 몸을 보호합니다.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">학교에 있을 때에는 책상 아래로 피합니다.</li>
+                                                    <li>책상 아래로 들어가 몸을 웅크리고 책상다리를 꼭 잡고 몸을 보호합니다.</li>
+                                                    <li>흔들림이 멈추면 선생님의 안내에 따라 질서를 지키면서 운동장으로 대피합니다.</li>
+                                                    <li>복도에서는 창문 유리가 깨질 우려가 있으니 창문과 떨어져 이동합니다.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">고층 건물에 있을 때에는 실내에서 떨어지는 물건에 주의합니다.</li>
+                                                    <li>높은 층의 건물일수록 흔들림이 크고 오래 지속될 수 있으므로 실내에서 떨어지는 물건에 더욱<br>주의하여야 합니다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- msfrtn_info_wrap  -->
+                                <div class="tip_wrap">
+                                    <ul>
+                                        <p style="margin-left: 0 !important;"><img src="resources/images/blt_check.png" align="center">고층 건물이 저층 건물보다 지진에 더 잘 견디도록 설계되어 있습니다.</p>
+                                        <p style="margin-left: 0 !important;"><img src="resources/images/blt_check.png" align="center">지진이 나면 고층건물은 흔들리는 폭은 크지만, 일반적으로 내진설계를 통하여 내진성능을 확보하고 있습니다.</p>
+                                    </ul>
+                                </div>
+                                <div class="msfrtn_info_wrap">
+                                    <div class="msfrtn-info">
+                                        <div class="msfrtn-info-img">
+                                            <img src="resources/images/item/mpr02_5.jpg" alt="계단으로 대피하는 이미지" class="imgs mg-t150">
+                                        </div>
+                                        <div class="msfrtn-info-txt">
+                                            <div class="msfrtn-txt">
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">백화점이나 마트에 있을 때에는 장바구니로 머리를 보호합니다.</li>
+                                                    <li>진열장에서 떨어지는 물건으로부터 몸을 보호합니다.</li>
+                                                    <li>계단이나 기둥 근처로 피하고, 흔들림이 멈추면 안내에 따라 밖으로 대피합니다.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">극장이나 경기장에 있을 때에는 우선 자리에서 몸을 보호합니다.</li>
+                                                    <li>흔들림이 멈출 때까지 가방 등 소지품으로 몸을 보호하며 잠시 동안 자리에 머물러 있습니다.</li>
+                                                    <li>사람이 많이 있는 곳에서는 한 곳으로 갑자기 몰리게 되면 사고의 우려가 있으니, 안내에 따라 대피합니다.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">엘리베이터를 타고 있을 때에는 즉시 내립니다.</li>
+                                                    <li>지진이 발생하면 엘리베이터를 타지 말아야 합니다.</li>
+                                                    <li>엘리베이터를 타고 있다면 모든 층의 버튼을 눌러 가장 먼저 열리는 층에서 신속하게 내린 후, 계단을 이용하여 대피합니다.</li>
+                                                    <li>만약 엘리베이터 안에 갇혔을 때는 인터폰이나 휴대전화를 이용하여 구조를 요청합니다.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">자동차를 타고 있을 때에는 서서히 차를 멈춥니다.</li>
+                                                    <li>비상등을 켜고 서서히 속도를 줄여 도로 오른쪽에 차를 세우고 긴급차량을 위해 도로의 중앙 부분을 비워 둡니다.</li>
+                                                    <li>라디오의 정보를 잘 듣고, 대피해야 할 때에는 열쇠를 꽂은 채 문을 잠그지 않고 이동합니다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- msfrtn_info_wrap  -->
+                                <div class="tip_wrap">
+                                    <ul>
+                                        <p style="margin-left: 0 !important;"><img src="resources/images/blt_check.png" align="center">운전 할 때 지진이 발생하면 흔들림에 의하여 제대로 된 주행이 불가능합니다.</p>
+                                        <p style="margin-left: 0 !important;"><img src="resources/images/blt_check.png" align="center">비상등을 켜고 속도를 줄여 주변을 충분히 살피면서 교차로를 피하여 길 오른쪽에 차를 세웁니다.</p>
+                                    </ul>
+                                </div>
+                                <div class="msfrtn_info_wrap">
+                                    <div class="msfrtn-info">
+                                        <div class="msfrtn-info-txt">
+                                            <div class="msfrtn-txt">
+                                                <ul class="pd0">
+                                                    <li class="tab-sub-main-txt">전철을 타고 있을 때에는 손잡이를 꼭 잡습니다.</li>
+                                                    <li>전철 안의 손잡이나 기둥, 선반을 꼭 잡고 넘어지지 않도록 합니다.</li>
+                                                    <li>전철이 멈췄다고 해서 서둘러 출구로 뛰어가는 것은 위험하므로 안내에 따라 행동합니다.</li>
+                                                </ul>
+                                                <ul class="pd0">
+                                                    <li class="tab-sub-main-txt">산이나 바다에 있을 때에는 안전한 곳으로 대피합니다.</li>
+                                                    <li>산이나 급한 경사지 근처에서는 산사태가 발생할 수 있으니 떨어지는 물체에 주의해서 안전한 곳으로 대피합니다.</li>
+                                                    <li>지진해일 특보가 발령되면 지진해일 긴급대피장소 등 높은 곳으로 대피합니다.</li>
+                                                </ul>  
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                
+                                                            
+                                     
+                                            
+                                
+                                <!-- msfrtn_info_wrap  -->
+                            </div>
+                            <div id='tab-3'>
+                                <div class="msfrtn_info_wrap">
+                                    <h1 class="msfrtn-title">지진 대피 후 이렇게 행동합니다.</h1>
+                                    <div class="msfrtn-info">
+                                        <div class="msfrtn-info-img">
+                                            <img src="resources/images/item/mpr03_1.jpg" alt="라디오 이미지" class="imgs">
+                                        </div>
+                                        <div class="msfrtn-info-txt">
+                                            <div class="msfrtn-txt">
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">부상자를 살펴보고 즉시 구조 요청을 합니다.</li>
+                                                    <li>흔들림이 멈춘 후 주변에 부상자가 있으면 이웃과 서로 협력하여 응급처치 하고 119에 신고합니다.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">주변 피해 상황에 따라 귀가 여부를 결정합니다.</li>
+                                                    <li>지진이 발생하면 통신기기의 사용이 폭주하여 일시적인 장애가 발생할 수 있으니 당황하지 마시고,<br>라디오 및 주변에 있는 공공 기관이 제공하는 정보에 따라 행동하시기 바랍니다.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">가정이나 사무실로 돌아간 후에는 안전에 유의하여 주변을 확인합니다.</li>
+                                                    <li>가정이나 사무실의 피해 상황을 확인하고, 안전이 의심된다면 전문가 확인을 받도록 합니다.</li>
+                                                    <li>옷장이나 사무실 보관함 등의 내용물이 쏟아져 내려 부상을 입을 수도 있으므로 문을 열 때 주의합니다.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">올바른 정보를 항상 확인합니다.</li>
+                                                    <li>여진이 발생할 수 있으므로, 지역방송 등이 제공하는 정보를 확인하고, 대피해야 할 경우에는<br>지진 국민행동요령에 따릅니다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tip_wrap">
+                                    <h2><img src="resources/images/blt_check_green.png" align="center">가스, 전기, 수도관 등의 피해를 체크합니다.</h2>
+                                    <li>하나,<br>가스 냄새가 나거나 소리가 들릴 경우에는 창문을 열고 밸브를 잠근 후 우선 대피합니다.<br>
+                                        대피 후에는 가스 관련 기관(지역도시가스회사, LPG공급회사,한국가스안전공사 등)에 확인하고 사용합니다.</li>
+                                    <li>둘,<br>
+                                        전기에 이상이 발견되었을 때는 원인이 파악될 때까지 엘리베이터를 사용하지 않습니다.<br>
+                                        정전이 되었다면 손전등을 사용하고, 차단기를 내린 후 전선의 이상 유무를 확인합니다.</li>
+                                    <li>셋,<br>
+                                        수도관의 피해가 있다면 밸브를 잠급니다.<br>
+                                        하수관의 피해여부를 확인하기 전까지 수도꼭지나 화장실 등 물을 사용하지 말아야 합니다.</li>
+                                    <li>넷,<br>
+                                        피해가 확인되었다면 살고 있는 곳의 시·군·구청에 신고합니다.</li>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                    <!-- tab bar content   -->
+                    <div class='media_tab tab_media_title'>
+                 
+        
+                        <div id='media-tab-1'>
+                            <div id="media-tab-1" class="media_title"><img src="resources/images/blt_check_green.png" align="center">국민이 안전이와 함께하는 지진 안전수칙</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">
+                                    <p class="main-detail-title">국민안전방송 <span class="safe-title-box"> 안전한TV</span></p>
+                                    <p class="detail-title title-caption-bg"><a href="http://www.safetv.go.kr/web/main/main.do" target="_blank"> 자세히 보기</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- media 1 -->
+                        <div id='media-tab-2'>
+                            <div id="media-tab-2" class="media_title"><img src="resources/images/blt_check_green.png" align="center">[도전 안전벨] 지진 해일</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">여러분 안녕하세요.</div>
+                            </div>
+                        </div>
+                        <!-- media 2 -->
+                        <div id='media-tab-3'>
+                            <div id="media-tab-3" class="media_title"><img src="resources/images/blt_check_green.png" align="center">지진 대응요령</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">자연재해 중 가장 큰 규모와 파괴력을 가진 지진.</div>
+                            </div>
+                        </div>
+                        <!-- media 3 -->
+                        <div id='media-tab-4'>
+                            <div id="media-tab-4" class="media_title"><img src="resources/images/blt_check_green.png" align="center">지진 발생 시 행동요령</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">[엄  마] 주희야 과일 먹자.</div>
+                            </div>
+                        </div>
+                        <!-- media 4 -->
+                        <div id='media-tab-5'>
+                            <div id="media-tab-5" class="media_title"><img src="resources/images/blt_check_green.png" align="center">지진 피해 예방 및 행동요령</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">지진 피해 예방 및 행동요령</div>
+                            </div>
+                        </div>
+                        <!-- media 5 -->
+                        <div id='media-tab-6'>
+                            <div id="media-tab-6" class="media_title"><img src="resources/images/blt_check_green.png" align="center">지진해일 피해예방 및 행동요령</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">지진해일 피해 예방 및 행동요령</div>
+                            </div>
+                        </div>
+                        <!-- media 6 -->
+                        <div id='media-tab-7'>
+                            <div id="media-tab-7" class="media_title"><img src="resources/images/blt_check_green.png" align="center">어쩌다 히어로(지진방재 애니메이션)</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">지진 발생시 행동요령을 애니메이션을 통해 알아보세요~</div>
+                            </div>
+                        </div>
+                        <!-- media 7 -->
+                        <div id='media-tab-8'>
+                            <div id="media-tab-8" class="media_title"><img src="resources/images/blt_check_green.png" align="center">집 안에서의 지진 대응요령</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">자연재해 중 가장 큰 규모와 파괴력을 가진 지진.</div>
+                            </div>
+                        </div>
+                        <!-- media 8 -->
+                        <div id='media-tab-9'>
+                            <div id="media-tab-9" class="media_title"><img src="resources/images/blt_check_green.png" align="center">다중이용시설 이용 시 지진국민행동요령</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">지진 발생시! 자, 따라 하세요.</div>
+                            </div>
+                        </div>
+                        <!-- media 9 -->
+                        <div id='media-tab-10'>
+                            <div id="media-tab-10" class="media_title"><img src="resources/images/blt_check_green.png" align="center">실내에 있을 때 지진국민행동요령</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">지진 발생 시! 자, 따라하세요.</div>
+                            </div>
+                        </div>
+                        <!-- media 10 -->
+                        <div id='media-tab-11'>
+                            <div id="media-tab-11" class="media_title"><img src="resources/images/blt_check_green.png" align="center">실외에 있을 때 지진국민행동요령</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">지진 발생 시! 자, 따라하세요.</div>
+                            </div>
+                        </div>
+                        <!-- media 11 -->
+                        <div id='media-tab-12'>
+                            <div id="media-tab-12" class="media_title"><img src="resources/images/blt_check_green.png" align="center">지진 다큐멘터리, 일상의 낯선 위험</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">[조수민]<br>평소와 다를 것 없는 저녁이었습니다.</div>
+                            </div>
+                        </div>
+                        <!-- media 12 -->
+                        <div id='media-tab-13'>
+                            <div id="media-tab-13" class="media_title"><img src="resources/images/blt_check_green.png" align="center">지진, 알아두면 안전합니다(지진 대피 행동요령)</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">지진 미리미리 대비하면 나와 가족의 안전을 지킬 수 있습니다.</div>
+                        </div>
+                        </div>
+                        <!-- media 13 -->
+                        <ul class='media-tab'>
+                            <li class="active-2"><a href="#media-tab-1">1</a></li>
+                            <li><a href="#media-tab-2">2</a></li>
+                            <li><a href="#media-tab-3">3</a></li>
+                            <li><a href="#media-tab-4">4</a></li>
+                            <li><a href="#media-tab-5">5</a></li>
+                            <li><a href="#media-tab-6">6</a></li>
+                            <li><a href="#media-tab-7">7</a></li>
+                            <li><a href="#media-tab-8">8</a></li>
+                            <li><a href="#media-tab-9">9</a></li>
+                            <li><a href="#media-tab-10">10</a></li>
+                            <li><a href="#media-tab-11">11</a></li>
+                            <li><a href="#media-tab-12">12</a></li>
+                            <li><a href="#media-tab-13">13</a></li>
+                          </ul>
+                      </div>
+        
+                </div>
+                    
+                    <script>
+                        $(function(){                
+                            $('.tabs').tabslet({
+                              mouseevent: 'click',
+                              attribute: 'href',
+                              animation: true
+                            });
+                        });
+                        $(function(){                
+                            $('.media_tab').tabslet({
+                            mouseevent: 'click',
+                            attribute: 'href'
+                            });
+                        });
+                    </script>
+                </div>
+        
+            </div>
+            <!-- content_wrap end  -->
+        </div>
+        <div class="quickmenu quick-1">
+            <ul>
+                <li class="hv">
+                    <a href="earthquake.html">
+                        <img src="resources/images/ico_erthqk_w.png" alt="지진">지진
+                    </a>
+                </li>
+                <li>
+                    <a href="typhoon.html">
+                        <img src="resources/images/ico_typhn_w.png" alt="태풍">태풍
+                    </a>
+                </li>
+                <li>
+                    <a href="downpour.html">
+                        <img src="resources/images/ico_havyrain_w.png" alt="호우">호우
+                    </a>
+                </li>
+                <li>
+                    <a href="gale.html">
+                        <img src="resources/images/ico_gale_w.png" alt="강풍/풍랑">강풍/풍랑
+                    </a>
+                </li>
+                <li>
+                    <a href="flood.html">
+                        <img src="resources/images/ico_flood_w.png" alt="홍수">홍수
+                    </a>
+                </li>
+                <li>
+                    <a href="hvsnow.html">
+                        <img src="resources/images/ico_hvsnow_w.png" alt="대설">대설
+                    </a>
+                </li>
+                <li>
+                    <a href="frfire.html">
+                        <img src="resources/images/ico_frfire_w.png" alt="산불">산불
+                    </a>
+                </li>
+                <li>
+                    <a href="landslide.html">
+                        <img src="resources/images/ico_lndsld_w.png" alt="산사태">산사태
+                    </a>
+                </li>
+                <li>
+                    <a href="hitwave.html">
+                        <img src="resources/images/ico_hitwave_w.png" alt="폭염">폭염
+                    </a>
+                </li>
+                <li>
+                    <a href="drought.html">
+                        <img src="resources/images/ico_drought_w.png" alt="가뭄">가뭄
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- quickmenu -->
+        <div class="quickmenu-1 r-fast">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img src="resources/images/icon/icon_gnb05_01-w.png" alt="안전맵">Home
+                    </a>
+                </li>
+                <li>
+                    <a href="livingweather.html">
+                        <img src="resources/images/icon/main-menu-2-1-w.png" alt="생활날씨">생활날씨
+                    </a>
+                </li>
+                <li>
+                    <a href="safemap.html">
+                        <img src="resources/images/icon/main-menu-3-1-w.png" alt="재난안전지도">재난안전지도
+                    </a>
+                </li>
+                <li>
+                    <div class="quick">
+                        <button type="button" class="go_top_btn" style="display: inline-block;"><img src="resources/images/ico_up_arrow.png" alt=""><span>위로</span></button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- quickmenu end -->
+
+    </section>
+    <!-- TOP버튼 -->
+    <div class="quick">
+        <button type="button" class="go_top_btn" style="display: inline-block;"><span>위로</span></button>
+    </div>
+
+    <script>
+        $(function() {
+            
+            $(".quick").click(function() {
+                $('html, body').animate({
+                    scrollTop : 0
+                }, 400);
+                return false;
+            });
+        });
+    </script>
+    <!-- TOP버튼 끝 -->
+    <footer>
+        <div id="footer">
+            <div class="footer-content">
+                <div class="foot-logo">
+                    <img src="resources/images/logo.png" alt="로고">
+                </div>
+                <div class="footer-copyright">
+                    <p>(우) 32435 충남 예산군 예산읍 군청로 22 Tel 041-339-7114 / Fax 041-339-7229</p>
+                    <p>COPYRIGHT ⓒ YESAN COUNTRY.ALL RIGHTS RESERVED</p>
+                </div>
+                <div class="list-box"></div>
+            </div>
+        </div>
+    </footer>
+    <!-- JS -->
+    <script type="text/javascript" src="resources/javascripts/vendor/jquery.tabslet.min.js"></script>
+    <script type="text/javascript" src="resources/javascripts/vendor/rainbow-custom.min.js"></script>
+    <script type="text/javascript" src="resources/javascripts/vendor/jquery.anchor.js"></script>
+    <script src="resources/javascripts/initializers.js"></script>
+    <!-- JS ends -->
+    <!-- <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script> -->
+    <script type="text/javascript" src="resources/js/main.js"></script>
+</body>
+</html>

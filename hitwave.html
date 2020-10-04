@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta property=”og:image” content="resources/images/POZ_202007131009436070.jpg">
+    <meta property=”og:image:width” content="600">
+    <meta property=”og:image:height” content="400"> 
+    <meta name="author" content="예산재난포털" />
+    <meta name="Keywords" content="예산재난포털" />
+    <title>예산군청</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="shortcut icon" href="resources/images/fa_gDi_icon.ico">
+    <link rel="stylesheet" href="resources/css/commmon/common.css">
+    <link rel="stylesheet" href="resources/css/layout.css">
+        <!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+</head>
+<body>
+    <!-- 공통메뉴  -->
+    <header id="header">
+        <div class="nav-wrapper">
+            <a href="index.html"><h1 id="logo">예산재난포털</h1></a>
+            <div class="gnb" id="gnb">
+                <ul>
+                    <li>
+                        <a href="#">종합날씨</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-weather">
+                                <ul>
+                                    <li>
+                                        <a href="livingweather.html">
+                                            <div class="sub-icon-6">
+                                                <img src="resources/images/icon/main-menu-2-1.png" alt="생활날씨">
+                                                <img src="resources/images/icon/main-menu-2-1-hover.png" alt="생활날씨">
+                                            </div>
+                                            생활날씨</a>
+                                    </li>
+                                    <li>
+                                        <a href="rain-info.html">
+                                            <div class="sub-icon-7">
+                                                <img src="resources/images/icon/main-menu-2-2.png" alt="강우정보">
+                                                <img src="resources/images/icon/main-menu-2-2-hover.png" alt="강우정보">
+                                            </div>
+                                            강우정보</a>
+                                    </li>
+                                    <li>
+                                        <a href="snow-info.html">
+                                            <div class="sub-icon-8">
+                                                <img src="resources/images/icon/main-menu-2-3.png" alt="적설정보">
+                                                <img src="resources/images/icon/main-menu-2-3-hover.png" alt="적설정보">
+                                            </div>
+                                            적설정보</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 1depth -->
+                    <li class="on">
+                        <a href="#">생활안전정보</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-information">
+                                <ul>
+                                    <li>
+                                        <a href="information.html">
+                                            <div class="sub-icon-3">
+                                                <img src="resources/images/icon/main-menu-1-3.png" alt="재난속보">
+                                                <img src="resources/images/icon/main-menu-1-3-hover.png" alt="재난속보">
+                                            </div>
+                                            재난속보
+                                        </a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="government-info.html">하천 수위</a></li>
+                                                <li><a href="dam-info.html">댐정보</a></li>
+                                                <li><a href="fire-info.html">소방 긴급구조</a></li>
+                                                <li><a href="firecenter-info.html">소방서센터</a></li>
+                                                <li><a href="earth-info.html">지진</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-9">
+                                                <img src="resources/images/icon/main-menu-3-1.png" alt="재난안전지도">
+                                                <img src="resources/images/icon/main-menu-3-1-hover.png" alt="재난안전지도">
+                                            </div>
+                                            재난안전지도
+                                        </a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="safemap.html">안전MAP</a></li>
+                                            </ul>
+                                        </div>
+                                        
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-10">
+                                                <img src="resources/images/icon/main-menu-3-2.png" alt="재난예방정보">
+                                                <img src="resources/images/icon/main-menu-3-2-hover.png" alt="재난예방정보">
+                                            </div>
+                                            재난예방정보</a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li>
+                                                    <a href="earthquake.html">자연재난</a>
+                                                </li>
+                                                <li>
+                                                    <a href="traffic.html">사회재난</a>
+                                                </li>
+                                                <li>
+                                                    <a href="extinguisher.html">생활안전수칙</a>
+                                                </li>
+                                                <li>
+                                                    <a href="farm.html">농어촌안전</a>
+                                                </li>
+                                                <li>
+                                                    <a href="spring.html">계절별재난</a>
+                                                </li>
+                                                <li>
+                                                    <a href="baby.html">생애주기별 재난</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-11">
+                                                <img src="resources/images/icon/main-menu-3-3.png" alt="재난안전보험">
+                                                <img src="resources/images/icon/main-menu-3-3-hover.png" alt="재난안전보험">
+                                            </div>
+                                            재난안전보험</a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="insurance.html">풍수해보험</a></li>
+                                                <li><a href="safe-insurance.html">예산군 군민안전보험</a></li>
+                                                <li><a href="bicycle.html">예산군 자전거안전보험</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-12">
+                                                <img src="resources/images/icon/main-menu-3-4.png" alt="재난안전앱">
+                                                <img src="resources/images/icon/main-menu-3-4-hover.png" alt="재난안전앱">
+                                            </div>
+                                            재난안전앱</a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="safe-app.html">안전디딤돌</a></li>
+                                                <li><a href="safe-news.html">안전신문고</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 2depth -->
+                    <li>
+                        <a href="#">재난안전대책본부</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-safety">
+                                <ul>
+                                    <li>
+                                        <a href="tissue.html">
+                                            <div class="sub-icon-13">
+                                                <img src="resources/images/icon/main-menu-4-1.png" alt="대책본부 조직도 및 주요업무">
+                                                <img src="resources/images/icon/main-menu-4-1-hover.png" alt="대책본부 조직도 및 주요업무">
+                                            </div>
+                                            대책본부 조직도 및 주요업무</a>
+                                    </li>
+                                    <li>
+                                        <a href="system-1.html">
+                                            <div class="sub-icon-14">
+                                                <img src="resources/images/icon/main-menu-4-2.png" alt="재난대응 체계도">
+                                                <img src="resources/images/icon/main-menu-4-2-hover.png" alt="재난대응 체계도">
+                                            </div>
+                                            재난대응 체계도</a>
+                                    </li>
+                                    <li>
+                                        <a href="system-2.html">
+                                            <div class="sub-icon-15">
+                                                <img src="resources/images/icon/main-menu-4-3.png" alt="피해조사 및 복구계획">
+                                                <img src="resources/images/icon/main-menu-4-3-hover.png" alt="피해조사 및 복구계획">
+                                            </div>
+                                            피해조사 및 복구계획</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 3depth -->
+                    <li>
+                        <a href="#">안전게시판</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-board">
+                                <ul>
+                                    <li>
+                                        <a href="notice.html">
+                                            <div class="sub-icon-16">
+                                                <img src="resources/images/icon/main-menu-5-1.png" alt="공지사항">
+                                                <img src="resources/images/icon/main-menu-5-1-hover.png" alt="공지사항">
+                                            </div>
+                                            공지사항</a>
+                                    </li>
+                                    <li>
+                                        <a href="report.html">
+                                            <div class="sub-icon-17">
+                                                <img src="resources/images/icon/main-menu-5-2.png" alt="보도자료">
+                                                <img src="resources/images/icon/main-menu-5-2-hover.png" alt="보도자료">
+                                            </div>
+                                            보도자료</a>
+                                    </li>
+                                    <li>
+                                        <a href="education.html">
+                                            <div class="sub-icon-18">
+                                                <img src="resources/images/icon/main-menu-5-3.png" alt="교육자료">
+                                                <img src="resources/images/icon/main-menu-5-3-hover.png" alt="교육자료">
+                                            </div>
+                                            교육자료</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 4depth -->
+                </ul>
+            </div>
+        </div>        
+    </header>
+        <div class="gnb_bg"></div>
+    <section>
+        <!-- <div class="main-bg"></div> -->
+        <div class="container_wrapper">
+            <div class="visual_top_wrap-hitwave">
+                <div class="content-title-top">
+                    <h1>폭염</h1>
+                </div>
+            </div>
+            <div class="content-tab-top">
+                <ul class="tab-top-nav">
+                    <li><a href="#">홈</a></li>
+                    <li><span>></span></li>
+                    <li><a href="#">재난예방정보</a></li>
+                    <li><span>></span></li>
+                    <li><a href="#">자연재난</a></li>
+                    <li><span>></span></li>
+                    <li><a>폭염</a></li>
+                </ul>
+            </div>
+            <!-- visual top  end -->
+            <div class="sub-content">
+                <div class="content_title">
+                    <div class="earth-title">
+                        <h1><img src="resources/images/ico_hitwave.png" align="center">폭염</h1>
+                        <div class="line"></div>
+                        <p>일반적으로 일 최고기온이 33℃이상일 때를 폭염이라고 하며,</p><p>산에서 발생되는 화재로 인명 및 재산피해를 유발하는 재해 입니다.</p>
+                    </div>
+                    <div class="sub-tab-title">             
+                        <div class='tabs tabs_animate'>
+                            <ul class='horizontal-tab'>
+                              <li class="active"><a href="#tab-1">국민행동요령</a></li>
+                              <li><a href="#tab-2">폭염 관련 자료실</a></li>
+                              <li><a href="#tab-3">더위질병상식</a></li>
+                            </ul>
+                            <div id='tab-1' style="margin-bottom: 50px;">
+                                <div class="msfrtn_info_wrap">
+                                    <h1 class="msfrtn-title">사전준비</h1>
+                                    <div class="msfrtn-info">
+                                        <div class="msfrtn-info-img">
+                                            <img src="resources/images/item/mpr_hitwave01_1.jpg" alt="라디오 이미지" class="imgs">
+                                            <img src="resources/images/item/mpr_hitwave01_2.jpg" alt="에어컨 청소 이미지" class="imgs">
+                                        </div>
+                                        <div class="msfrtn-info-txt">
+                                            <div class="msfrtn-txt">
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">여름철에는 항상 기상상황에 주목합니다.</li>
+                                                    <li>여름철에는 TV, 라디오, 인터넷 등을 통해 무더위와 관련한 기상상황을 수시로 확인합니다.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">열사병 등 온열질환의 증상과 가까운 병원 연락처 등을 사전에 파악합니다.</li>
+                                                    <li>집에서 가까운 병원 연락처를 알아두고, 본인과 가족의 열사병 등 증상을 확인합니다.</li>
+                                                    <li>어린이, 노약자, 심뇌혈관질환자 등 취약계층은 더위에 약하므로 건강관리에 더욱 유의해야 합니다.</li>
+                                                    <li>더위로 인한 질병(땀띠, 열경련, 열사병, 울열증, 화상)에 대한 증상과 대처방법을 사전에 알아둡니다.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">폭염예보에 맞추어 무더위에 필요한 용품이나 준비사항을 확인합니다.</li>
+                                                    <li>에어컨, 선풍기 등을 사용할 수 있도록 사전에 정비합니다.</li>
+                                                    <li>집안 창문에 직사광선을 차단할 수 있도록 커튼이나 천, 필름 등을 설치합니다.</li>
+                                                    <li>외출 시를 대비하여 창이 긴 모자, 햇빛 가리개, 썬크림 등 차단제를 준비합니다.</li>
+                                                    <li>정전에 대비하여 손전등, 비상 식음료, 부채, 휴대용 라디오 등을 미리 확인해 둡니다.</li>
+                                                    <li>단수에 대비하여 생수를 준비하고, 생활용수는 욕조에 미리 받아 둡니다.</li>
+                                                    <li>오래된 주택은 변압기를 사전에 점검하여 과부하에 대비합니다.</li>
+                                                    <li>장거리 운행계획이 있다면 도로, 철도의 궤도 변형 등으로 교통사고 등이 발생할 수 있으므로 신중히 판단합니다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- msfrtn_info_wrap  -->
+                                <div class="tip_wrap">
+                                    <ul>
+                                        <h2 style="margin-left: 0; margin-top: -10px;"><img src="resources/images/blt_check_green.png" align="center">무더위 안전상식</h2>
+                                        <li>냉방기기를 사용하는 경우에는 실내·외 온도차를 5℃내외로 유지하여 냉방병을 예방하도록 합니다.<br>(건강 실내 냉방온도는 26℃～28℃가 적당)</li>
+                                        <li>무더위에 카페인이 들어간 음료나 주류는 삼가고, 생수나 이온음료를 마시는 것이 좋습니다.</li>
+                                        <li>여름철 오후2시에서 오후5시 사이에는 가정 더운 시간으로 실외 작업은 되도록 하지 않습니다.</li>
+                                        <li>여름철에는 음식이 쉽게 상할 수 있으므로 외부에 오랫동안 방치된 것은 먹지 않습니다.</li>
+                                    </ul>
+                                </div>
+                                <div class="msfrtn_info_wrap">
+                                    <h1 class="msfrtn-title" style="margin-top:-40px">폭염발생시</h1>
+                                    <div class="msfrtn-info">
+                                        <div class="msfrtn-info-img">
+                                            <img src="resources/images/item/mpr_hitwave01_3.jpg" alt="시원한 음료수 이미지" class="imgs">
+                                            <img src="resources/images/item/mpr_hitwave01_4.jpg" alt="야외활동 이미지" class="imgs">
+                                        </div>
+                                        <div class="msfrtn-info-txt">
+                                            <div class="msfrtn-txt">
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">일반 가정에서는</li>
+                                                    <li>야외활동을 최대한 자제하고, 외출이 꼭 필요한 경우에는 창이 넓은 모자와 가벼운 옷차림을 하고 물병을<br> 반드시 휴대합니다.</li>
+                                                    <li>물을 많이 마시고, 카페인이 들어간 음료나 주류는 마시지 않습니다.</li>
+                                                    <li>냉방이 되지 않는 실내는 햇볕을 가리고 맞바람이 불도록 환기를 합니다.</li>
+                                                    <li>창문이 닫힌 자동차 안에는 노약자나 어린이를 홀로 남겨두지 않습니다.</li>
+                                                    <li>거동이 불편한 노인, 신체허약자, 환자 등을 남겨두고 장시간 외출할 경우에는 친인척, 이웃 등에<br>보호를 부탁합니다.</li>
+                                                    <li>현기증, 메스꺼움, 두통, 근육경련 등의 증세가 보이는 경우에는 시원한 곳으로 이동하여 휴식을 취하고<br> 시원한 음료를 천천히 마십니다.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">직장에서는</li>
+                                                    <li>휴식시간은 장시간 한 번에 쉬기보다는 짧게라도 자주 가지는 것이 좋습니다.</li>
+                                                    <li>야외행사, 스포츠경기 등 각종 외부행사를 자제합니다.</li>
+                                                    <li>점심시간 등을 이용하여 10～15분 정도의 낮잠으로 개인건강을 유지합니다.</li>
+                                                    <li>직장인들은 편한 복장으로 출근하여 체온을 낮추도록 노력합니다.</li>
+                                                    <li>냉방이 되지 않는 실내에서는 햇볕이 실내에 들어오지 않도록 하고, 환기가 잘 되도록 선풍기를 켜고 창문이나<br> 출입문을 열어둡니다.</li>
+                                                    <li>건설현장 등 실외 작업장에서는 폭염안전수칙(물, 그늘, 휴식)을 항상 준수하고, 특히, 취약시간(2~5시)에는<br> ‘무더위 휴식시간제’를 적극 시행 합니다.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">학교에서는</li>
+                                                    <li>초·중·고등학교에서 에어콘 등 냉방장치 운영이 곤란한 경우에는 단축수업, 휴교 등 학사일정 조정을 검토하고,<br> 식중독 사고가 발생하지 않도록 주의합니다.</li>
+                                                    <li>냉방이 되지 않는 실내에서는 햇볕이 실내에 들어오지 않도록 하고, 환기가 잘 되도록 선풍기를 켜고 창문이나<br> 출입문을 열어둡니다.</li>
+                                                    <li>운동장에서 체육활동 및 소풍 등 각종 야외활동을 자제합니다.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">축사·양식장에서는</li>
+                                                    <li>축사 창문을 개방하고 지속적인 환기를 실시하며, 적정 사육밀도를 유지합니다.</li>
+                                                    <li>비닐하우스, 축사 천장 등에 물 분무 장치를 설치하여 복사열을 낮춥니다.</li>
+                                                    <li>양식어류에 대해 꾸준히 관찰하고, 얼음을 넣는 등 수온 상승을 억제합니다.</li>
+                                                    <li>가축·어류 폐사시 신속하게 방역기관에 신고하고 조치에 따릅니다.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">약속, 일정 등을 조정합니다.</li>
+                                                    <li>외부에 외출 중인 경우나 자택에 냉방기가 설치되어 있지 않은 경우 가장 더운 시간에는 인근 무더위쉼터로<br> 이동하여 더위를 피합니다. 무더위 쉼터는 각 시청, 구청 홈페이지에서 확인할 수 있으며 평소에 위치를<br>확인해 둡니다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- msfrtn_info_wrap  -->
+                            </div>
+
+
+
+                            <div id='tab-2' style="margin-bottom: 50px;">
+                                <ul class="download_list">
+                                    <li>
+                                        <p>국내외 폭염피해의 유형별 원인과 대처현황 조사<a href="http://www.safekorea.go.kr/idsiSFK/idsiSfkBBSWebsquareDownload.do?fileName=20080323%252Fadmin%252Fboard%252FBoardForm.jsp%252F%255B%25EC%259E%2590%25EB%25A3%258C%255D%2520%25EA%25B5%25AD%25EB%2582%25B4%25EC%2599%25B8%2520%25ED%258F%25AD%25EC%2597%25BC%25ED%2594%25BC%25ED%2595%25B4%25EC%259D%2598%2520%25EC%259C%25A0%25ED%2598%2595%25EB%25B3%2584%2520%25EC%259B%2590%25EC%259D%25B8%25EA%25B3%25BC%2520%25EB%258C%2580%25EC%25B2%2598%25ED%2598%2584%25ED%2599%25A9%2520%25EC%25A1%25B0%25EC%2582%25AC.hwp&localSaveFileName=%255B%25EC%259E%2590%25EB%25A3%258C%255D%2520%25EA%25B5%25AD%25EB%2582%25B4%25EC%2599%25B8%2520%25ED%258F%25AD%25EC%2597%25BC%25ED%2594%25BC%25ED%2595%25B4%25EC%259D%2598%2520%25EC%259C%25A0%25ED%2598%2595%25EB%25B3%2584%2520%25EC%259B%2590%25EC%259D%25B8%25EA%25B3%25BC%2520%25EB%258C%2580%25EC%25B2%2598%25ED%2598%2584%25ED%2599%25A9%2520%25EC%25A1%25B0%25EC%2582%25AC.hwp" target="_blank" class="myButton"><img src="resources/images/ico_down.png" alt="다운로드" align="center">다운로드</a></p>
+                                        
+                                    </li>
+                                     <li>
+                                        <p>폭염발생 원인 및 현황<a href="http://www.safekorea.go.kr/idsiSFK/idsiSfkBBSWebsquareDownload.do?fileName=20080323%252Fadmin%252Fboard%252FBoardForm.jsp%252F%255B%25EC%259E%2590%25EB%25A3%258C%255D%2520%25ED%258F%25AD%25EC%2597%25BC%25EB%25B0%259C%25EC%2583%259D%2520%25EC%259B%2590%25EC%259D%25B8%2520%25EB%25B0%258F%2520%25ED%2598%2584%25ED%2599%25A9.hwp&localSaveFileName=%255B%25EC%259E%2590%25EB%25A3%258C%255D%2520%25ED%258F%25AD%25EC%2597%25BC%25EB%25B0%259C%25EC%2583%259D%2520%25EC%259B%2590%25EC%259D%25B8%2520%25EB%25B0%258F%2520%25ED%2598%2584%25ED%2599%25A9.hwp" target="_blank" class="myButton"><img src="resources/images/ico_down.png" alt="다운로드" align="center">다운로드</a></p>
+                                    </li>
+                                     <li>
+                                        <p>국내외 폭염의 개념과 지역별 특성<a href="http://www.safekorea.go.kr/idsiSFK/idsiSfkBBSWebsquareDownload.do?fileName=20080323%252Fadmin%252Fboard%252FBoardForm.jsp%252F%255B%25EC%259E%2590%25EB%25A3%258C%255D%2520%25EA%25B5%25AD%25EB%2582%25B4%25EC%2599%25B8%2520%25ED%258F%25AD%25EC%2597%25BC%25EC%259D%2598%2520%25EA%25B0%259C%25EB%2585%2590%25EA%25B3%25BC%2520%25EC%25A7%2580%25EC%2597%25AD%25EB%25B3%2584%2520%25ED%258A%25B9%25EC%2584%25B1.hwp&localSaveFileName=%255B%25EC%259E%2590%25EB%25A3%258C%255D%2520%25EA%25B5%25AD%25EB%2582%25B4%25EC%2599%25B8%2520%25ED%258F%25AD%25EC%2597%25BC%25EC%259D%2598%2520%25EA%25B0%259C%25EB%2585%2590%25EA%25B3%25BC%2520%25EC%25A7%2580%25EC%2597%25AD%25EB%25B3%2584%2520%25ED%258A%25B9%25EC%2584%25B1.hwp" target="_blank" class="myButton"><img src="resources/images/ico_down.png" alt="다운로드" align="center">다운로드</a></p>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+
+                            <div id='tab-3' style="margin-bottom: 50px;">
+                                <table class="board_shelterSTT" summary="종류, 증상, 대처요령 항목순으로 구성된 질병안내표">
+                                    <colgroup>
+                                        <col style="width:20%;"/>
+                                        <col style="width:40%;"/>
+                                        <col style="width:40%"/>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">종류</th>
+                                            <th scope="col">증상</th>
+                                            <th scope="col">대처요령</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>땀띠(한진)</td>
+                                            <td>땀을 많이 흘려 피부가 자극을 받으면 붉은색이나 무색의 좁쌀같은 발진이 생기는 것을 말한다. 긁으면 땀구멍이 막혀서 피부상태가 나빠지고 화상이나 습진으로 악화될 수 있다.</td>
+                                            <td>일단 환자를 시원한 곳으로 옮기고, 땀에 젖은 옷을 마른 옷으로 갈아입히고 상처부위를 잘 닦아 주어야 한다. 환자가 가려움증을 호소할 경우에는 의사의 진료에 따라 항히스타민을 처방할 수 있다.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>열경련</td>
+                                            <td>땀을 많이 흘렸을 때 우리 몸에 꼭 필요한 수분과 염분이 부족해서 생기는 것으로 주로 근육 중심으로 경련이 일어나는 증상이다. 심하면 현기증과 구토를 유발한다.</td>
+                                            <td>환자는 그늘에서 쉬게하고 소금을 물에 녹여 섭취하게 해주어야 한다. 의사의 진료에 따라 조치한다.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>열사병</td>
+                                            <td>고온 다습한 환경에서 몸의 열이 발산하지 못하여 생기는 병으로 높은 온도와 습도에 방치되거나 바람이 통하지 않는 뜨거운 방에 오래 있을 경우 발생될 수 있다. 열사병이 생기면 얼굴이 창백해지고 식은 땀이 나며, 현기증이나 순간적으로 정신착란을 일으킬 수 있다.</td>
+                                            <td>즉시 119에 신고하고, 환자를 그늘로 옮겨 겉옷을 벗기고, 미지근한 물로 몸을 적셔 체온이 내려가도록 한 후 의사&middot;의료기관 등의 지시에 따른다.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>울열증</td>
+                                            <td>태양열 아래 오랜 시간 노출되었을 경우 체온은 매우 높지만 땀이 나지 않는 상태가 되고 두통과 구토중세를 동반하며 심할 경우 의식을 잃기도 할 수 있다.</td>
+                                            <td>그늘로 옮겨 겉옷을 벗기고 미지근한 물로 옷을 적셔 물이 증발하며 체온을 낮출 수 있다. 의식이 있을 경우 물을 주고, 체온이 돌아오면 옷이나 담요로 몸을 따뜻하게 하여 냉기를 없애준다.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>화상</td>
+                                            <td>태양열로 인해서 피부가 그을리거나 수포까지 발생할 수 있다. 신체의 3분의 2이상 화상을 입으면 생명이 위험할 수 있다.</td>
+                                            <td>그늘로 환자를 이동시켜 햇빛에 노출되지 않게 하고 피부에 수포가 생긴 경우에는 거즈를 이용 덮어 주되 세균 감염 위험이 있으므로 수포를 터뜨려서는 안된다.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    <!-- tab bar content   -->
+                    <div class='media_tab tab_media_title'>
+                        <div id='media-tab-1'>
+                            <div id="media-tab-1" class="media_title"><img src="resources/images/blt_check_green.png" align="center" style="margin-left: 0;">폭염 대비 안전상식 생방송</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">[MC] 네. 요즘 찜통더위로 전국이 몸살을 앓고 있는데요. 지금 중부지방 중심으로 장마비가 내리고 있지만 남부 대부분 지역은 폭염 특보가 계속되는 가운데 당분간 낮 최고 기온이 33도 이상 오르면서 덥겠다고 합니다. <br>먼저 제 소개부터 할께요. 여러분 안녕하세요, 오늘 진행을 맡은 김소미입니다.<br>더워도 너무 더운 요즘이죠? 30도를 넘는 것은 기본이구요. 연일 올라가는 기온에 야외할동 자체가 힘겨운데요. 밖에서 일하시는 분들이 느끼는 체감 온도는 이 보다 더 높겠죠?<br>더위를 잊기 위해 시원한 곳을 찾지만 이런 무더위 속에 자칫 건강을 잃을 수도 있는데요, 의외로 폭염에 대비한 안전상식은 잘 모르시는 분들이 많은 것 같아요. 그래서 오늘 여러분의 궁금증을 확실하게 해결해 드리기 위한 시간을 마련했습니다. 국민 여러분들과 소통하는 페이스북 라이브 방송~ 국민안전처 페이스북으로 생방송되고 있으니깐 평소 궁금하신거 많이 많이 올려주세요...^^<br>더워도 너무 더운 요즈음, 폭염 대비 안전상식을 전해드리겠습니다. 오늘 저와 같이 함께 할 전문가 모시겠습니다!  류효진 소방관님 나와 주세요~~~<br>[류효진] 반갑습니다. 구로소방서에서 근무중인 류효진입니다. 이 더운 여름 폭염을 대비하는 방법 확실하게 알려드리겠습니다...... <br> <br>[MC] 연일 계속되는 찜통더위로 불쾌지수도 높아지는 것 같은데요, 많은 분들이 폭염에 대해 찾아보시고 계시죠. 그래서 폭염 연관어! 중심으로 궁금증 풀어 보려고 하는데요, 어떤 궁금증을 가지고 계실까요? <br>지금 보니까 폭염 주의보, 폭염경보가 눈에 띄는데요, 폭염의 개념부터 정리해보고 갈게요~ 저도 궁금했던 건데 폭염 주의보와 경보는 어떻게 다른 건가요?<br>[류효진] 네, 폭염, 그 단어 자체가 참 뜨겁습니다. 폭염의 한자어가 햇볕쪼일 폭(暴), 불탈 염(炎)이 잖아요. 햇볕에 불타는 것처럼 느껴질 만큼 덥다는 뜻인데요, 기상청에서 낮 최고기온이 최고 섭씨 33도 이상의 날씨가  2일 정도 지속될 때 폭염주의보를 내리고, '폭염경보'는 낮 최고기온이35도 이상인 경우가 2일 이상 지속될 때 내립니다. 2도 차이가 크지만 저희가 느끼기엔 똑같이 참기 힘들만큼 무더운 날이 계속되는 건 같죠.<br> <br>자막&gt; <br>Q 폭염 주의보와 폭염 경보의 차이<br>폭염 주의보 : 일 최고기온 33도, 2일 지속 예상<br>폭염 경보 : 일 최고기온 35도, 2일 지속 예상<br>[MC] 아!!2도의 차이가 주의보와 경보로 나뉘네요. 잘 몰랐는데 소방관님 덕분에 제대로 알게 됐네요.<br>[MC]: 그런데 사실 전 날이 덥다는 건 알지만 폭염주의보가 내려졌다는 건 긴급재난문자를 보고 알게 되는 것 같아요. 올 여름 특히 자주 받고  있는데, 소방관님도 받으시죠?<br>[류효진] 네, 저도 자주 받죠.<br>[MC] 아. 그렇죠... 전 국민에게 재난문자가 전송이 되는 거니까요~ 요즘 폭염 재난 문자 자주 받다보니 깨닫게 된 사실이 하나 있는데요, <br>국민안전처에서 보내주는 ‘폭염 주의보’ 안내 문자에 “11시 폭염 주의보, 낮 동안 야외 활동 자제” 라는 문구가 있잖아요. 이 문구가 딱 폭염 대비한 행동 요령의 핵심 같거든요? 폭염 주의보가 내려지면 어떻게 해야 할지 조금 더 자세히 설명해 주세요.<br>[류효진] 네 정확하게 파악하신 것 같은데요? <br>폭염 주의보이든 폭염 경보든 발효가 되면 기상 상황을 수시로 확인하셔서 야외 활동 계획을 잡으시는 게 좋은데요, 낮 12시부터 오후 4시까지는 햇살이 가장 뜨거울 때니까 가급적이면 야외활동을 자제하셔야 되고요. 부득이하게 야외 작업을 하시는 분들은 충분한 수분을 섭취하고  그늘을 찾아 쉬어가며 일을 하셔야 합니다. 특히, 야외 주차된 차량은 최고 80도까지 올라가 그야말로 찜통이 되니까 노약자와 어린이들을 차량에 혼자 남겨 두지 않아야 됩니다. 하지만 모두가 주의한다고 해도 언제 어느 때 불상사가 일어날 수도 있잖아요. 혹시라도 폭염으로 인해 열사병이나 일사병 환자가 발생한다면 재빨리 119로 즉시 연락해 적절한 응급처치를 받을 수 있게 해야 합니다.<br>자막&gt;<br>Q 폭염 주의보’발령 시 행동 요령<br> ① 기상 상황 수시 확인<br> ② 낮 12시~오후 4시 야외 활동 자제<br> ③ 충분한 수분 섭취와 휴식<br> ④ 노약자 차안에 혼자 두지 않기<br> ⑤ 응급환자 발생시 119 즉시 신고 <br>[MC] 아 그렇군요.. 긴급재난문자 정말 중요하네요..  여러분들은 지금 반장님이 알려 주신대로 행동하셔야 하는 거 잊지 마세요~<br> 그리고 지금, 긴급재난 문자 얘기가 나왔으니 중요한 소식 하나 전하도록  할게요. 긴급재난문자를 보내주던 ‘국민안전처’가 앞으로 새롭게  ‘행정안전부’로 바뀌게 됐습니다. 아쉽지만 ‘국민안전처’ 이름으로 하는  라이브 방송은 오늘이 마지막인데요, 긴급재난문자는 ‘행정안전부’의  이름으로 계속 국민여러분께 전달될 예정입니다.  그리고 ‘행정안전부’라는 새 이름으로 국민들을 재난으로부터 보호하고,<br> 안전을 지키기 위해 더욱더 힘쓰고 노력할 것입니다.  언제나 국민 여러분 곁에서 소통하는 ‘행정안전부’ 기대해 주세요~ <br> <br> 자, 그런 의미에서 여러분들의 뜨거운 반응 한번 살펴볼까요? 지금 생방송으로 진행되고 있는데요..  페이스북 라이브 채팅창 실시간 댓글 <br> 우리 류효진 소방관님 핵심만 콕콕 잘 짚어주시고 계십니다.  궁금한 질문도 많이 올려주세요<br>[MC]) 계속해서 폭염 연관어 살펴보죠. ‘열사병’과 일사병’이 눈에 띄는데요,  지금, ‘폭염대응 구급활동’ 강화하고 있죠?  지금 가지고 나오신 폭염 대비 물품을 가져오셨는데 설명 같이 해주시죠.<br>[류효진] 네 폭염으로 인한 불상사를 예방하기 위해 최선을 다하고 있는데요,  각 소방서마다 ‘폭염 구급대’가 운영되고 있습니다.  기본적으로 폭염으로 인해 온열질환자가 다수 발생할 것을 대비해서 얼음조끼, 아이스 팩, 생리식염수와 같이 체온을 저하시킬 수 있는 장비를 <br> 구급차에 구비해 두고 운영하고 있습니다.<br>[MC]) 네, 온열질환 환자를 발견하면 즉시 119에 신고를 해야겠지만  그 동안 환자 어떻게 돌봐줘야 할까요?<br>[류효진] 일단 구급차고 오는 시간이 걸리니까 즉시 환자를 그늘지고 시원한 곳으로 옮겨야 합니다. 그리고 옷을 풀고 너무 차갑지 않은 <br> 시원한 물수건으로 닦아 체온을 내려주는 것이 중요한데요. 이때 환자에게 수분 보충 하는 것이 도움이 되지만 의식 없는 환자에게 음료수를 억지로 마시도록 하면 안 됩니다.<br>자막&gt; <br>온열질환자 속출…119 폭염대책 강화 <br>폭염 구급 대표 장비 얼음조끼, 얼음 팩, 정제 소금’<br>[MC]&gt; 일단은 열을 내리는 것이 중요한 거네요, 그리고 수분 보충이 가장 중요하고 의식이 없을 경우엔 즉시 119에 신고해야 겠네요..<br> 여러분은 안전한 TV 라이브 방송을 보고 계십니다.<br> <br>[MC]&gt; 계속해서 연관 키워드 볼게요. 이번 연관어는 조금 무섭네요. ‘쓰러지다’ ‘숨지다’ ‘사망’이란 연관어가 있어요. 지난 14일 충북 청주에서 70대 할머니가 불볕더위 속에서 폐지를 줍다가 목숨을 잃은 안타까운 일이 있었죠. 온열 질환으로 사망하는 경우가 많은가요?<br>[류효진] 네 지난해 온열 질환으로 사망한 사람이 17명이었고, 올해 벌써 세 번째 온열질환 사망자가 나왔죠. 지난 한해 온열 질환 인명피해자가  2125명이나 됐는데, 65세 이상 노인이 578명으로, 특히 혼자 사는 노인 분들이 폭염에 취약계층이라 할 수 있습니다. <br>[MC]&gt; 폭염으로 인한 사망자는 주로 노인 분들이시잖아요? 특히 야외 밭일 하시는 농촌 지역 홀로 사는 어르신은 집중 관리 필요하겠네요?<br>[류효진] 네 그래서 각 지자체별로 폭염에 취약한 어르신에게 선풍기와 같은 냉방용품과 냉방비도 지원하고 있는 것으로 알고 있습니다. 그중에서도 특히, 홀로 계신 어르신의 폭염피해를 예방하는데 노력을 하고 있고요, 올해 전국적으로 지정된 무더위쉼터가 4만 2천 912개소나 됩니다. 여러분 사시는 지역의 주민 센터나 경로당, 여러 복지시설을 찾으시면 편리하게 이용할 수 있거든요. 그러니까 언제든 찾아서 더위도 피하시고 휴식도 취하시면 좋을 것 같습니다.<br>자막&gt;<br>폭염대응 취약노인 대책마련 강화<br>폭염 취약 계층 : 어린이와 노약자<br>[MC]맞아요. 저는 괜히 은행에 들러보기도 하고 사실 더울 땐 도서관에 자주 가거든요... 너무 더워서 지칠 때 흔히 더위 먹었다는 말을<br>쓰는데, 열사병과 일사병과 같은 온열 질환도 초기 증상이 나타날 때 적절한 조치를 취한다면 응급 상황은 피할 수 있지 않나요?<br>  <br>[류효진] 네 그렇죠. 무슨 병이든 전조 증상이 있기 마련인데요.  무더위에 갈증을 느끼는 것 자체도 몸이 신호를 보내는 것이라고 할 수 <br> 있습니다. 그리고 이렇게 더위가 계속 되면 목이 마르지 않더라도  규칙적으로 수분을 섭취하는 것이 건강에 좋습니다. <br> 그런데도 만약 어지러움이나, 두통 메스꺼움 같은 증상이 나타나면 즉시 하던 일을 놓고, 시원한 곳으로 이동해서 휴식을 취하셔야 됩니다. 그리고 의료 기관을 방문해 정확한 진단을 받으시고 적절한 치료를 받으시면 응급상황은 벌어지지 않겠죠~<br> <br>[MC]&gt; 네 폭염에 대비한 전반적인 안전상식 지금부터는 실제로 여러분들이 궁금한 점~ 직접 질문을 받아서 풀어드리겠습니다!<br>  <br> 이름 하여 “폭염, 무엇이든 물어보세요!” 어떤 질문 올리셨는지 좀 살펴보죠.<br>예상1&gt;지금 온열질환이 정확히 뭐냐고 물어보시는데요, 온열질환이 무엇인가요?<br>답변1&gt;온열질환이란, 몸의 열로 인해 발생하는 급성질환으로 뜨거운 환경에 장시간 노출 될시 발생하는 질환을 말합니다. 열이 나는 상태를 방치하면 최악의 경우 일사병,열사병 등으로 사망에 이를 수 있습니다.<br>예상2&gt; 네, 그렇다면 열사병과 일사병 차이는 뭔가요?<br>답변2&gt; 일사병은 더운 곳에서 장시간 일하거나 직사광선을 쬘 경우 일어납니다. 뇌의 체온을 조절하는 중추가 잘 활동하지 못해 발한과 여러 장기로 가는 혈류가 증가함에도 심장으로부터의 혈액 송출이 따라가지 못하게 된 상태를 말하는데요, 이렇게 되면 몸이 나른하고 두통과 구토, 현기증, 저혈압, 빈맥등이 생기고 심할 때는 실신하게 됩니다. 특히 어린이와 노인, 기저 질환을 가지고 있는 경우 더 취약하니까 주의가 필요하겠죠. <br>열사병은 뜨거운 햇볕 아래가 아니더라도 매우 더운 곳에서 일을 하거나 운동을 할 때 열 발산이 제대로 이루어지지 않아 증상이 생길 수 있습니다. 쉽게 말해 체온 조절이 제대로 안된다고 보시면 되는데, 열이 축적되고 산소가 결핍되면서 체온이 40도 이상 상승하면서 의식을 잃고 경련이 일어나기도 합니다. 일사병과 열사병에 있어서 가장 중요한 치료의 원칙은 즉각적인 냉각요법이라고 할 수 있겠습니다.<br>[MC] 네. 여러분의 궁금증 조금이나마 풀어드렸는지 모르겠습니다.  반장님 마지막으로 폭염 대비 행동 요령과 피해야할 사항 정리해 주시죠! <br>[류효진] 기상 상황을 수시로 확인하면서 야외 활동 범위를 조절하시고 특히, 노약자와 고혈압 같은 질환을 가진 분들은 낮 12시부터 <br>오후4시까지 야외 활동을 자제해주시기 바랍니다.  야외 근무자들은 수시로 수분을 섭취하고 그늘에서 휴식을 취해 주셔야 합니다.~ 그리고 응급환자가 발생하면 바로  119에 즉시 신고해주시기 바랍니다.<br>(CG)<br>폭염 주의보’발령 시 행동 요령<br> ① 기상 상황 수시 확인<br> ② 낮 12시~오후 4시 야외 활동 자제<br> ③ 충분한 수분 섭취와 휴식<br> ④ 노약자 차안에 혼자 두지 않기<br> ⑤ 응급환자 발생시 119 즉시 신고 <br>[MC] 오늘 폭염에 대비한 안전 상식 알아봤는데요,  폭염으로부터 건강을 지키기 위해 절대 잊지 않아야 할 핵심 키워드 세 가지가 있습니다.<br> 온열질환 예방 키워드 ‘수분’ <br> 온열질환 예방 키워드 ‘그늘’<br> 온열질환 예방 키워드 ‘휴식’<br> 첫 번째 ‘수분 섭취’ 갈증이 나지 않아도 수시로 물을 마셔주셔야 하고요  두 번째 ‘그늘’ 장시간 햇볕은 피하시고 그늘로 다니시고요<br> 세 번째 ‘휴식’ 몸의 이상이 느껴지면 바로 휴식을 취하셔서 건강한 여름 나기 하시기 바랍니다.<br> 앗 뜨거~~ 폭염대비 안전상식 저희가 준비한 내용은 여기까지 인데요.  류효진 반장님 마지막으로 한 말씀 해주시죠...<br>[류효진] 지구 온난화 현상으로 매년 점점 더 더워지고 온도가 30도 이상으로 올라가는 날들이 많아지고 있습니다.<br>오늘 소미씨와 제가 알려드린 안전 상식을 숙지하고 행동하신다면 폭염으로 인한 피해를 최소화하실 수 있으실 겁니다. 그리고<br>뜨거운 여름만큼 시청해주신 여러분들의 안전수칙에 관한 배움의 열정도 뜨거웠으면 좋겠습니다.<br>[MC] 오늘 정말 도움이 많이 되는 폭염대비 안전 상식 가르쳐주셔서 감사합니다.<br>폭염을 이겨내고 건강한 여름 보내기 바라는 마음으로 여러분과 소통하는 라이브 방송 준비해 봤는데, 도움이 좀 되셨나요? 알고 보면 참 쉬운 안전 상식~ 잘 지킬 거라고 약속해줘~~ 매일매일 건강하고 행복한 여름 보내시기 바라며~인사드릴게요. </div>
+                            </div>
+                        </div>
+                        <!-- media 1 -->
+                        <div id='media-tab-2'>
+                            <div id="media-tab-2" class="media_title"><img src="resources/images/blt_check_green.png" align="center" style="margin-left: 0;">개그맨 최효종과 함께 애매한 여름철 자연재난 안전상식을 알아봅니다</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">퀴즈를 통해 애매한 안전상식을 정해주는 남자, 개그맨 최효종!<br>오늘은 여름철 발생하는 자연재난의 애매한 안전상식에 대해 알아봅니다.</div>
+                            </div>
+                        </div>
+                        <!-- media 2 -->
+                        <div id="media-tab-3">
+                            <div id="media-tab-3" class="media_title"><img src="resources/images/blt_check_green.png" align="center" style="margin-left: 0;">여름철 폭염대비 요령</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">지구 온난화와 엘니뇨 등으로 발생되는 폭염. 30도 이상의 불볕 더위가 이어지는 폭염은 우리의 건강과 안전을 크게 위협한답니다. <br><br>[남자] 아! 더워. 이 더위 정말 괴롭다 괴로워<br><br>[국민이] 폭염 때문에 너무 힘드시죠? 폭염으로부터 건강과 안전을 지키는 방법 지금부터 알려드릴께요. <br><br>라디오나 TV에 기상상황을 매일 주목하세요. 폭염은 정도에 따라 주의보와 경보로 나뉩니다. <br><br>만약 폭염주의보나 경보가 떨어지면 적극적인 대비책을 마련해야하는데요. <br><br>가정에서는 변압기를 점검하고 노후 되거나 이상이 있다면 바로 교체하세요. 정전에 대비해 손전등, 비상식량, 휴대용 라디오, 부채를 미리 준비해둡니다. 물 사용 증가로 단수가 일어날 수 있으니 식수를 미리 준비하고 생활용수를 욕조에 받아 놓으세요. 열사병 증상을 미리 체크해 알아두고 증상 발열시 바로 치료 받을 수 있도록 가까운 병원을 파악해 둡니다. 잠깐! 지나친 냉방기 사용은 냉방병의 위험이 있어요. <br><br>[안전이] 꼭 실내적정 온도를 유지하세요. 그리고 창문에는 커튼이나 블라인드, 천을 이용해 빛과 열이 들어오지 못하게 막습니다. 뜨거운 열로 도로가 변형되거나 타이어가 손상될 수 있어요. 교통사고에 주의하고 장거리 운행 계획이 있다면 신중히 검토하세요. 잠깐 절대 차량안에 아이를 혼자 두시면 안되요. 유아 열사병 사망에 위험이 있으니까요. <br><br>[국민이] 폭염에서 가장 중요한 것은 충분한 물과 그늘, 휴식 잊지 마세요.  </div>
+                            </div>
+                        </div>
+                        <!-- media 3 -->
+                        <div id="media-tab-3">
+                            <div id="media-tab-3" class="media_title"><img src="resources/images/blt_check_green.png" align="center" style="margin-left: 0;">여름철 폭염대비 요령</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">지구 온난화와 엘니뇨 등으로 발생되는 폭염. 30도 이상의 불볕 더위가 이어지는 폭염은 우리의 건강과 안전을 크게 위협한답니다. <br><br>[남자] 아! 더워. 이 더위 정말 괴롭다 괴로워<br><br>[국민이] 폭염 때문에 너무 힘드시죠? 폭염으로부터 건강과 안전을 지키는 방법 지금부터 알려드릴께요. <br><br>라디오나 TV에 기상상황을 매일 주목하세요. 폭염은 정도에 따라 주의보와 경보로 나뉩니다. <br><br>만약 폭염주의보나 경보가 떨어지면 적극적인 대비책을 마련해야하는데요. <br><br>가정에서는 변압기를 점검하고 노후 되거나 이상이 있다면 바로 교체하세요. 정전에 대비해 손전등, 비상식량, 휴대용 라디오, 부채를 미리 준비해둡니다. 물 사용 증가로 단수가 일어날 수 있으니 식수를 미리 준비하고 생활용수를 욕조에 받아 놓으세요. 열사병 증상을 미리 체크해 알아두고 증상 발열시 바로 치료 받을 수 있도록 가까운 병원을 파악해 둡니다. 잠깐! 지나친 냉방기 사용은 냉방병의 위험이 있어요. <br><br>[안전이] 꼭 실내적정 온도를 유지하세요. 그리고 창문에는 커튼이나 블라인드, 천을 이용해 빛과 열이 들어오지 못하게 막습니다. 뜨거운 열로 도로가 변형되거나 타이어가 손상될 수 있어요. 교통사고에 주의하고 장거리 운행 계획이 있다면 신중히 검토하세요. 잠깐 절대 차량안에 아이를 혼자 두시면 안되요. 유아 열사병 사망에 위험이 있으니까요. <br><br>[국민이] 폭염에서 가장 중요한 것은 충분한 물과 그늘, 휴식 잊지 마세요.  </div>
+                            </div>
+                        </div>
+                        <!-- media 3 -->
+                        <div id="media-tab-4">
+                            <div id="media-tab-4" class="media_title"><img src="resources/images/blt_check_green.png" align="center" style="margin-left: 0;">폭염 대비 행동 요령(2015 스팟)</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">폭염 건강하게 극복하세요. 요즘 같은 무더위 속에선 기상 상황을 수시로 확인하는게 무엇보다 중요합니다. 특보가 발령되면 야외 활동을 자제하고 물을 많이 마셔 수분을 보충합니다. 현기증, 매스꺼움, 두통, 근육경련과 같은 열사병 초기 증세가 보일 경우 시원한 곳에서 휴식을 취하시는게 좋습니다. 어린이와 노약자, 신체허약자는 외출을 금지하고 가족과 이웃이 수시로 상태를 점검하셔야 합니다. 폭염! 건강하게 극복하세요!</div>
+                            </div>
+                        </div>
+                        <!-- media 4 -->
+                        <div id="media-tab-5">
+                            <div id="media-tab-5" class="media_title"><img src="resources/images/blt_check_green.png" align="center" style="margin-left: 0;">폭염 대비 행동 요령(스팟)</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">무더운 여름철 우리의 생명을 위협하는 폭염. 슬기롭게 대처하는 지혜가 필요합니다. <br>무더운 날에는 야외 활동을 자제하고 물을 자주 마시세요. 야외 근로자는 그늘에서 짧은 휴식을 자주 취하세요. <br>폭염에 취약한 어르신들의 건강상태를 수시로 확인하세요. 응급환자 발생시 즉시 119에 신고합니다. <br>폭염 대비 행동요령을 실천하여 건강한 여름을 보내세요. </div>
+                            </div>
+                        </div>
+                        <!-- media 5 -->
+                        <div id="media-tab-6">
+                            <div id="media-tab-6" class="media_title"><img src="resources/images/blt_check_green.png" align="center" style="margin-left: 0;">폭염대비 3대 건강수칙(스팟)</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">더운 여름의 반갑지 않은 손님 폭염. 폭염에 대비하는 요령. <br>폭염대비 3대 건강 수칙 <br>1. 물을 자주 마십니다. 규칙적으로 물, 스포츠 음료나 과일주스 섭취.<br> 2. 시원하게 지냅시다. 실내온도 26도 유지, 헐렁하고 가벼운 옷을 착용, 햇빛을 차단하세요.(양산, 모자 착용) <br>3. 더운 시간대에는 휴식합니다. 더운 시간인 오전 12시~오후 5시 야외활동 자제 </div>
+                            </div>
+                        </div>
+                        <!-- media 6 -->
+                        <div id="media-tab-7">
+                            <div id="media-tab-7" class="media_title"><img src="resources/images/blt_check_green.png" align="center" style="margin-left: 0;">[스펀지119] 일일최고기온 몇도가 몇일이상 지속되면 폭염일까요</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">여러분 요즘 정말 더우시죠. 야~~~ 무더운 날씨가 계속해서 이어지고 있는데요. <br><br>긴 장마가 지나가더니 연일 폭염특보가 발효되고 있습니다. <br><br>자 그런데. 이 폭염. 폭염은 어느정도 더운 날씨를 폭염이라고 하는 걸까요? <br><br>과연 시민분들은 폭염에 대해서 어느 정도 알고 계신지 직접 만나보러 가보겠습니다. 함께 가보시지요.<br><br>스펀지 119 오늘의 주제. 일일 최고 기온 몇 ℃가 몇일이상 지속되면 폭염이라 한다. 과연 시민들은 알고 있을까요?<br><br>[리포터] 몇도 어느 정도 온도가 폭염인지?<br><br>[시민1] 글쎄.. 33도? <br><br>[시민2] 30도 이상 3일간?<br><br>[시민3] 30도가 5일이상?<br><br>[시민4] 33도가 3일이상 지속되면 폭염이다.<br><br>[시민1] 33도... <br><br>[시민4] 오!!<br><br>[리포터] 다양한 답들이 나오고 있습니다.<br><br>[시민5] 2일이다 2일. 33도 내가 하루 틀렸구나.<br><br>일일 최고 기온 33℃가 2일 이상 지속되면 폭염이라 한다. 폭염에도 차이가 있다는 사실! 알고 계신가요? 바로 주의보와 경보로 나뉘는데요. 최고기온이 33℃ 2일 이상이면 폭염주의보 최고기온이 35℃가 2일 이상 계속되면 폭염경보입니다. 이런 날씨에서는 물을 수시로 자주 마셔서 몸의 수분을 공급해 주어야 하며, 조이는 옷보다는 헐렁한 옷차림으로 체온을 낮추시기 바랍니다.<br><br>[시민들] 일일 최고 기곤 33℃가 2일 이상 지속되면 폭염이다. 올 여름 시원하게 보내세요~</div>
+                            </div>
+                        </div>
+                        <!-- media 7 -->
+                        <div id="media-tab-8">
+                            <div id="media-tab-8" class="media_title"><img src="resources/images/blt_check_green.png" align="center" style="margin-left: 0;">[스펀지119] 에어컨 1대는 선풍기 몇 대의 전력소비일까요</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">전국민의 안전 상식 도우미 스펀지 119의 안주미입니다. 본격적인 여름철이 시작이 되면서요. 전력수급 위기상황은 계속되고 있는데요. 혹시 지금도 무심코 에어컨을 틀고 계시진 않으신가요? 여름철 대표적인 냉방기구인 에어컨! 과연 시민들은 우리가 자주 쓰는 에어컨의 전력 소모가 어느 정도 인지 알고 있을까요?<br><br>[리포터] 에어컨 1대는 선풍기 몇대의 전력소비와 같다! 몇대랑 같다고 생각하세요?<br><br>[시민1] 10대?<br><br>[시민2] 20대요.<br><br>[시민3] 한 10대. 10대 정도요<br><br>[리포터] 에어컨 1대와 선풍기 10대가 같다. 에어컨 한대는 선풍기 30대의 전력소비와 같다.<br><br>[시민3] 아니. 에어컨이 그렇게 많이 나오는지는 몰랐어요. <br><br>[시민4] 너무 많이 이용되고 있구나 전력 소모가<br><br>[시민2] 좀 아껴써야 되겠다는 생각이 들어요.<br><br>에어컨 사용 시에는 26도에서 28도를 유지하고요. 사용 시간 외 전기 제품의 플러거는 빼 놓아야 합니다. 또 가전제품 구입시에는 에너지효율이 높은 것을 구입하는 것이 좋습니다. 전기에너지 줄이기 위해서 좀 하고 계신 노력이 혹시 있으신가요?<br><br>[시민3] 저희는 에어컨은 잘 안 틀고요. 좀 덥다 싶으면 찬물로 샤워를 자주 하고요. 그 다음에 선풍기 1단으로만 틀고 살거든요.<br><br>[시민5] 화장실 갈 때 웬만하면은 불을 안 켜고.. 낮에는 불을 안켜고 사용한다든가..<br><br>[모두들] 에어컨 1대는 선풍기 30대의 선풍기 30대 선풍기 30대 전력소비와 같다. 기억해 주세요.</div>
+                            </div>
+                        </div>
+                        <!-- media 8 -->
+                        <div id="media-tab-9">
+                            <div id="media-tab-9" class="media_title"><img src="resources/images/blt_check_green.png" align="center" style="margin-left: 0;">[도전 안전벨] 폭염</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">재난·안전에 관한 다양한 상식을 퀴즈로 풀어보는 도전 안전벨!<br>폭염 경보 발령시 OOO부터 OOO까지는 야외활동을 금지 또는 자제해야 한다.<br>오늘의 정답을 맞춰보세요.</div>
+                            </div>
+                        </div>
+                        <!-- media 9 -->
+                        <div id="media-tab-10">
+                            <div id="media-tab-10" class="media_title"><img src="resources/images/blt_check_green.png" align="center" style="margin-left: 0;">[안전 돋보기] 노인 폭염 사고 예방 요령</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                               <div class="media_caption">지난 100년 동안 1.8℃ 상승한 평균기온은 사람들의 건강에 직접적 혹은 간접적인 영향을 끼쳤으며 특히 기후 변화에 몹시 취약한 계층으로 알려진 노인들은 폭염에 대한 각별한 주의를 기울여야 하는데요.<br><br>[노인 1] 노인네들은 젊은 사람들보다도 면역력이 약해서 더우면 쓰러질 수도 있고 그래..<br><br>[노인 2] 집에 있으면 더 덥잖아요. 집에 있으면 더 더워.<br><br>[노인 3] 쓰러질까 봐 겁나요. 나이가 있으니까<br><br>폭염으로 인한 사망자는 모두 7명 특히 7명 가운데 6명이 노인입니다. 이처럼 폭염으로 노인 사망자와 온열 환자가 끊임없이 발생하고 있는데요. 그렇기 때문에 노인 폭염사고에 대한 예방이 절실한 상황입니다.<br><br>[응급의학과 전문의] 노인분들은 생리적으로 열에 견딜 수 있는 내성이 떨어져 있고 또 땀샘이라든지 이런 것도 노화되기 때문에 줄어들게 됩니다. 땀 배출량이 줄어들게 되면서 열을 발산할 수 잇는 능력이 다른 연령대에 비해서 현저하게 떨어지게 됩니다.<br><br>즉, 고온에 장시간 노출 되면 체온 조절 능력이 감소하는데 외부 환경 변화에 민감한 노인은 건강 손상이 더 커진다는 건데요.<br><br>실제로 얼마전 폭염 피해 사례자가 있어서 만나봤습니다. 74세 전창권씨에겐 어떤 일이 있었던 걸까요?<br><br>[노인 4]자 물 드세요.<br><br>[사례자]고맙습니다.<br><br>한낮 최고 기온이 섭씨 35도를 기록한 며칠 전 낚시를 갔다 쓰러져 큰일이 날뻔 했던 전창권씨 그런 남편이 부인 김옥례씨는 걱정스럽기만 한데요.<br><br>[사례자] 더운 줄도 모르고 그냥 갔기는 갔는데 풀이 많이 우거졌어요. 낚시를 들고 하려고 펼쳤는데 핑하고 어지럽더라고요. 날씨가 더워서 그러는모양인가 했죠. 그래서 쓰러졌는데 죽다가 살았지 뭐 <br><br>사고는 정말 순식간에 벌어졌고 햇빛에 데인 팔의 흉터며 발에 남겨진 상처가 위험천만했던 사고를 실감케했습니다.<br><br>그리고 그날 이후 하루 하루  몸을 지탱해야 하는 전창권씨. 이렇듯 폭염은 갑작스럽게 찾아와 노인의 생명까지 위협하는 무서운 존재입니다.<br><br>[노인 4]시원합니까?<br><br>[사례자]네<br><br>[노인 4]이젠 낚시가지 마슈<br><br>전창권씨처럼 폭염으로 더위병을 호소하는 노인은 꾸준히 늘고 있는 실정<br><br>실제로 3년사이 전체 온열 질환자중 노인 환자는 3배 증가했습니다.<br><br>이로인해 발병하는 건강상해로는 열사병 열탈진 열경련등이 대표적이였습니다. <br><br>[응급의학과 전문의] 가장 경미한 걸로는 피부에 발진이 돋는 열발진 그리고 이제 다리 같은 데나 몸이 좀 붓게되는 열 부종 같은게 있을 수 있겠고요.<br><br>좀 더 이제 심해지면은 의식을 살짝 잃게 되는 열실신이나 흔히 말하는 열사병, 완전히 의식을 잃게 되는 열사병까지생길 수가 있습니다.<br><br>폭염특보 발령시 발생하는 노인 질병의 유형으로는 더운 날씨에 실외에서 일을 하거나 무리하게 운동을 함으로써 발생하는 사고<br><br>더운 날씨에 차안이나 밀폐된 공간에서 장시간 머무르면서 급격히 상승하는 온도에 대비하지 못해 발생하는 사고<br><br>실외에서 충분한 수분 섭취를 하지 않으면서 탈수증과 그에 따른 급성 건강 문제가 발생하는 사고 <br><br>더운 날씨로 인해 상승한 체온을 낮추고자 갑작스럽게 찬 물이 몸에 닿았을 경우 발생하는 사고 <br><br>실내 공기를 충분히 환기시키지 않은 상태로 선풍기나 에어콘 등 냉방기기를 오랫동안 사용할때 발생하는 사고가 있습니다.<br>불볕 더위가 기승을 부리는 무더운 여름철. 폭염 특보가 발령시 고체온증에 취약한 노인들이 열로 인한 질환을 줄이고 건강을 지킬 수 있는 예방법이 필요한데요.<br><br>[응급의학과 전문의] 노인분들은 아무래도 집에서 많이 생활을 하시기 때문에요 집에서 될 수 있는 좀 시원하게 얇은 옷 같은 걸 입고 계셔야겠고요. 갈증이  나지 않더라도 시간마다 좀 충분한 양의 물을 드시고 야외에 나가시게 되는 경우에는 양산이나 모자와 같은 것을 착용을 하셔갔고, 열을 좀 많이 받지 않을 수 있게 하셔야 합니다.<br><br>폭염특보 발령시 낮 12시에서 오후 5시 사이에는 가급적 야외 활동을 삼가해야 되는데요. 만약 외출을 할 경우에는 반드시 넓은 모자를 착용하고 가벼운 옷차림을 하는 것이 안전 합니다. 또한 갈증이 나지 않더라도 충분한 수분 섭취를 하는 것이 필수며 외출할 경우에도 물병을 휴대하여 수시로 수분을 섭취하도록 합니다. 한 시간에 한 번씩 공기를 환기를 시키고 실내 온도차를 5℃ 내외로 유지하며 냉방기기를 이용할 경우에는 타이머를 활용해 장시간 가동을 삼가합니다.<br><br>어르신 스스로 예방법을 실천하는 것도 중요하지만 주변에 계신 노인 분들을 자주 찾아뵙고 고온에 노출 될 경우엔 신속한 확인을 통해 조취를 취해야 합니다.<br><br>[노인 4]건강한 양반들도 그런 더운날은 나가는걸 삼가했으면 좋겠어요.<br><br>노인은 노화로 인해 질병에 대한 취약성이 증가합니다. 따라서 다른 연령층보다 위험에 빠질 확률이 높아지는데요.<br><br>올바른 관리를 통한 예방으로 피해를 최소화 하고 폭염에 안전하게 대비하도록 해야겠습니다.</div>
+                            </div>
+                        </div>
+                        <!-- media 10 -->
+                        <div id="media-tab-11">
+                            <div id="media-tab-11" class="media_title"><img src="resources/images/blt_check_green.png" align="center" style="margin-left: 0;">폭염 피해 예방 및 행동요령</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">폭염 피해 예방 및 행동요령</div>
+                            </div>
+                        </div>
+                        <!-- media 11 -->
+                        <ul class='media-tab'>
+                            <li class="active-2"><a href="#media-tab-1">1</a></li>
+                            <li><a href="#media-tab-2">2</a></li>
+                            <li><a href="#media-tab-3">3</a></li>
+                            <li><a href="#media-tab-4">4</a></li>
+                            <li><a href="#media-tab-5">5</a></li>
+                            <li><a href="#media-tab-6">6</a></li>
+                            <li><a href="#media-tab-7">7</a></li>
+                            <li><a href="#media-tab-8">8</a></li>
+                            <li><a href="#media-tab-9">9</a></li>
+                            <li><a href="#media-tab-10">10</a></li>
+                            <li><a href="#media-tab-11">11</a></li>
+                          </ul>
+                      </div>
+        
+                </div>
+                    
+                    <script>
+                        $(function(){                
+                            $('.tabs').tabslet({
+                              mouseevent: 'click',
+                              attribute: 'href',
+                              animation: true
+                            });
+                        });
+                        $(function(){                
+                            $('.media_tab').tabslet({
+                            mouseevent: 'click',
+                            attribute: 'href'
+                            });
+                        });
+                    </script>
+                </div>
+        
+            </div>
+            <!-- content_wrap end  -->
+        </div>
+        <div class="quickmenu quick-1">
+            <ul>
+                <li>
+                    <a href="earthquake.html">
+                        <img src="resources/images/ico_erthqk_w.png" alt="지진">지진
+                    </a>
+                </li>
+                <li>
+                    <a href="typhoon.html">
+                        <img src="resources/images/ico_typhn_w.png" alt="태풍">태풍
+                    </a>
+                </li>
+                <li>
+                    <a href="downpour.html">
+                        <img src="resources/images/ico_havyrain_w.png" alt="호우">호우
+                    </a>
+                </li>
+                <li>
+                    <a href="gale.html">
+                        <img src="resources/images/ico_gale_w.png" alt="강풍/풍랑">강풍/풍랑
+                    </a>
+                </li>
+                <li>
+                    <a href="flood.html">
+                        <img src="resources/images/ico_flood_w.png" alt="홍수">홍수
+                    </a>
+                </li>
+                <li>
+                    <a href="hvsnow.html">
+                        <img src="resources/images/ico_hvsnow_w.png" alt="대설">대설
+                    </a>
+                </li>
+                <li>
+                    <a href="frfire.html">
+                        <img src="resources/images/ico_frfire_w.png" alt="산불">산불
+                    </a>
+                </li>
+                <li>
+                    <a href="landslide.html">
+                        <img src="resources/images/ico_lndsld_w.png" alt="산사태">산사태
+                    </a>
+                </li>
+                <li class="hv">
+                    <a href="hitwave.html">
+                        <img src="resources/images/ico_hitwave_w.png" alt="폭염">폭염
+                    </a>
+                </li>
+                <li>
+                    <a href="drought.html">
+                        <img src="resources/images/ico_drought_w.png" alt="가뭄">가뭄
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- <script type="text/javascript">
+            $(function(){
+                $('.quickmenu li:nth-child(1)').mouseover(function(){
+                    $('.quickmenu li:nth-child(1) img').attr('src','resources/images/ico_erthqk_w.png');
+                });
+                $('.quickmenu li:nth-child(1)').mouseleave(function(){
+                    $('.quickmenu li:nth-child(1) img').attr('src','resources/images/ico_erthqk_r.png');
+                });
+
+                $('.quickmenu li:nth-child(2)').mouseover(function(){
+                    $('.quickmenu li:nth-child(2) img').attr('src','resources/images/ico_typhn_w.png');
+                });
+                $('.quickmenu li:nth-child(2)').mouseleave(function(){
+                    $('.quickmenu li:nth-child(2) img').attr('src','resources/images/ico_typhn_r.png');
+                });
+
+                $('.quickmenu li:nth-child(3)').mouseover(function(){
+                    $('.quickmenu li:nth-child(3) img').attr('src','resources/images/ico_havyrain_w.png');
+                });
+                $('.quickmenu li:nth-child(3)').mouseleave(function(){
+                    $('.quickmenu li:nth-child(3) img').attr('src','resources/images/ico_havyrain_r.png');
+                });
+
+                $('.quickmenu li:nth-child(4)').mouseover(function(){
+                    $('.quickmenu li:nth-child(4) img').attr('src','resources/images/ico_gale_w.png');
+                });
+                $('.quickmenu li:nth-child(4)').mouseleave(function(){
+                    $('.quickmenu li:nth-child(4) img').attr('src','resources/images/ico_gale_r.png');
+                });
+                
+                $('.quickmenu li:nth-child(5)').mouseover(function(){
+                    $('.quickmenu li:nth-child(5) img').attr('src','resources/images/ico_flood_w.png');
+                });
+                $('.quickmenu li:nth-child(5)').mouseleave(function(){
+                    $('.quickmenu li:nth-child(5) img').attr('src','resources/images/ico_flood_r.png');
+                });
+
+                $('.quickmenu li:nth-child(6)').mouseover(function(){
+                    $('.quickmenu li:nth-child(6) img').attr('src','resources/images/ico_hvsnow_w.png');
+                });
+                $('.quickmenu li:nth-child(6)').mouseleave(function(){
+                    $('.quickmenu li:nth-child(6) img').attr('src','resources/images/ico_hvsnow_r.png');
+                });
+
+                $('.quickmenu li:nth-child(7)').mouseover(function(){
+                    $('.quickmenu li:nth-child(7) img').attr('src','resources/images/ico_frfire_w.png');
+                });
+                $('.quickmenu li:nth-child(7)').mouseleave(function(){
+                    $('.quickmenu li:nth-child(7) img').attr('src','resources/images/ico_frfire_r.png');
+                });
+
+                $('.quickmenu li:nth-child(8)').mouseover(function(){
+                    $('.quickmenu li:nth-child(8) img').attr('src','resources/images/ico_lndsld_w.png');
+                });
+                $('.quickmenu li:nth-child(8)').mouseleave(function(){
+                    $('.quickmenu li:nth-child(8) img').attr('src','resources/images/ico_lndsld_r.png');
+                });
+                
+                $('.quickmenu li:nth-child(10)').mouseover(function(){
+                    $('.quickmenu li:nth-child(10) img').attr('src','resources/images/ico_drought_w.png');
+                });
+                $('.quickmenu li:nth-child(10)').mouseleave(function(){
+                    $('.quickmenu li:nth-child(10) img').attr('src','resources/images/ico_drought_r.png');
+                });
+            });
+
+        </script> -->
+
+    </section>
+    <!-- TOP버튼 -->
+    <div class="quick">
+        <button type="button" class="go_top_btn" style="display: inline-block;"><span>위로</span></button>
+    </div>
+
+    <script>
+        $(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 500) {
+                    $('.quick').fadeIn();
+                } else {
+                    $('.quick').fadeOut();
+                }
+            });
+            
+            $(".quick").click(function() {
+                $('html, body').animate({
+                    scrollTop : 0
+                }, 400);
+                return false;
+            });
+        });
+    </script>
+    <!-- TOP버튼 끝 -->
+    <footer>
+        <div id="footer">
+            <div class="footer-content">
+                <div class="foot-logo">
+                    <img src="resources/images/logo.png" alt="로고">
+                </div>
+                <div class="footer-copyright">
+                    <p>(우) 32435 충남 예산군 예산읍 군청로 22 Tel 041-339-7114 / Fax 041-339-7229</p>
+                    <p>COPYRIGHT ⓒ YESAN COUNTRY.ALL RIGHTS RESERVED</p>
+                </div>
+                <div class="list-box"></div>
+            </div>
+        </div>
+    </footer>
+    <!-- JS -->
+    <script type="text/javascript" src="resources/javascripts/vendor/jquery.tabslet.min.js"></script>
+    <script type="text/javascript" src="resources/javascripts/vendor/rainbow-custom.min.js"></script>
+    <script type="text/javascript" src="resources/javascripts/vendor/jquery.anchor.js"></script>
+    <script src="resources/javascripts/initializers.js"></script>
+    <!-- JS ends -->
+    <!-- <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script> -->
+    <script type="text/javascript" src="resources/js/main.js"></script>
+</body>
+</html>

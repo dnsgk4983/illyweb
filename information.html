@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta
+            name="viewport"
+            content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+        <meta
+            property="”og:image”"
+            content="resources/images/POZ_202007131009436070.jpg">
+        <meta property="”og:image:width”" content="600">
+        <meta property="”og:image:height”" content="400">
+        <meta name="author" content="예산재난포털"/>
+        <meta name="Keywords" content="예산재난포털"/>
+        <title>예산군청</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <link rel="shortcut icon" href="resources/images/fa_gDi_icon.ico">
+        <link rel="stylesheet" href="resources/css/commmon/common.css">
+        <link rel="stylesheet" href="resources/css/layout.css">
+        <!-- jQuery Modal -->
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"/>
+
+        <!-- 아코디언 -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+    </head>
+    <body>
+        <!-- 공통메뉴 -->
+        <header id="header">
+            <div class="nav-wrapper">
+                <a href="index.html">
+                    <h1 id="logo">예산재난포털</h1>
+                </a>
+                <div class="gnb" id="gnb">
+                    <ul>
+                        <li>
+                            <a href="#">종합날씨</a>
+                            <div class="sub-nav-wrap">
+                                <div class="sub-nav sub-nav-weather">
+                                    <ul>
+                                        <li>
+                                            <a href="livingweather.html">
+                                                <div class="sub-icon-6">
+                                                    <img src="resources/images/icon/main-menu-2-1.png" alt="생활날씨">
+                                                    <img src="resources/images/icon/main-menu-2-1-hover.png" alt="생활날씨">
+                                                </div>
+                                                생활날씨</a>
+                                        </li>
+                                        <li>
+                                            <a href="rain-info.html">
+                                                <div class="sub-icon-7">
+                                                    <img src="resources/images/icon/main-menu-2-2.png" alt="강우정보">
+                                                    <img src="resources/images/icon/main-menu-2-2-hover.png" alt="강우정보">
+                                                </div>
+                                                강우정보</a>
+                                        </li>
+                                        <li>
+                                            <a href="snow-info.html">
+                                                <div class="sub-icon-8">
+                                                    <img src="resources/images/icon/main-menu-2-3.png" alt="적설정보">
+                                                    <img src="resources/images/icon/main-menu-2-3-hover.png" alt="적설정보">
+                                                </div>
+                                                적설정보</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- 1depth -->
+                        <li class="on">
+                            <a href="#">생활안전정보</a>
+                            <div class="sub-nav-wrap">
+                                <div class="sub-nav sub-nav-information">
+                                    <ul>
+                                        <li>
+                                            <a href="information.html">
+                                                <div class="sub-icon-3">
+                                                    <img src="resources/images/icon/main-menu-1-3.png" alt="재난속보">
+                                                    <img src="resources/images/icon/main-menu-1-3-hover.png" alt="재난속보">
+                                                </div>
+                                                재난속보
+                                            </a>
+                                            <div class="inner-nav">
+                                                <ul>
+                                                    <li>
+                                                        <a href="government-info.html">하천 수위</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="dam-info.html">댐정보</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="fire-info.html">소방 긴급구조</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="firecenter-info.html">소방서센터</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="earth-info.html">지진</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="sub-icon-9">
+                                                    <img src="resources/images/icon/main-menu-3-1.png" alt="재난안전지도">
+                                                    <img src="resources/images/icon/main-menu-3-1-hover.png" alt="재난안전지도">
+                                                </div>
+                                                재난안전지도
+                                            </a>
+                                            <div class="inner-nav">
+                                                <ul>
+                                                    <li>
+                                                        <a href="safemap.html">안전MAP</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="sub-icon-10">
+                                                    <img src="resources/images/icon/main-menu-3-2.png" alt="재난예방정보">
+                                                    <img src="resources/images/icon/main-menu-3-2-hover.png" alt="재난예방정보">
+                                                </div>
+                                                재난예방정보</a>
+                                            <div class="inner-nav">
+                                                <ul>
+                                                    <li>
+                                                        <a href="earthquake.html">자연재난</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="traffic.html">사회재난</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="extinguisher.html">생활안전수칙</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="farm.html">농어촌안전</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="spring.html">계절별재난</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="baby.html">생애주기별 재난</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="sub-icon-11">
+                                                    <img src="resources/images/icon/main-menu-3-3.png" alt="재난안전보험">
+                                                    <img src="resources/images/icon/main-menu-3-3-hover.png" alt="재난안전보험">
+                                                </div>
+                                                재난안전보험</a>
+                                            <div class="inner-nav">
+                                                <ul>
+                                                    <li>
+                                                        <a href="insurance.html">풍수해보험</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="safe-insurance.html">예산군 군민안전보험</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="bicycle.html">예산군 자전거안전보험</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="sub-icon-12">
+                                                    <img src="resources/images/icon/main-menu-3-4.png" alt="재난안전앱">
+                                                    <img src="resources/images/icon/main-menu-3-4-hover.png" alt="재난안전앱">
+                                                </div>
+                                                재난안전앱</a>
+                                            <div class="inner-nav">
+                                                <ul>
+                                                    <li>
+                                                        <a href="safe-app.html">안전디딤돌</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="safe-news.html">안전신문고</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- 2depth -->
+                        <li>
+                            <a href="#">재난안전대책본부</a>
+                            <div class="sub-nav-wrap">
+                                <div class="sub-nav sub-nav-safety">
+                                    <ul>
+                                        <li>
+                                            <a href="tissue.html">
+                                                <div class="sub-icon-13">
+                                                    <img src="resources/images/icon/main-menu-4-1.png" alt="대책본부 조직도 및 주요업무">
+                                                    <img src="resources/images/icon/main-menu-4-1-hover.png" alt="대책본부 조직도 및 주요업무">
+                                                </div>
+                                                대책본부 조직도 및 주요업무</a>
+                                        </li>
+                                        <li>
+                                            <a href="system-1.html">
+                                                <div class="sub-icon-14">
+                                                    <img src="resources/images/icon/main-menu-4-2.png" alt="재난대응 체계도">
+                                                    <img src="resources/images/icon/main-menu-4-2-hover.png" alt="재난대응 체계도">
+                                                </div>
+                                                재난대응 체계도</a>
+                                        </li>
+                                        <li>
+                                            <a href="system-2.html">
+                                                <div class="sub-icon-15">
+                                                    <img src="resources/images/icon/main-menu-4-3.png" alt="피해조사 및 복구계획">
+                                                    <img src="resources/images/icon/main-menu-4-3-hover.png" alt="피해조사 및 복구계획">
+                                                </div>
+                                                피해조사 및 복구계획</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- 3depth -->
+                        <li>
+                            <a href="#">안전게시판</a>
+                            <div class="sub-nav-wrap">
+                                <div class="sub-nav sub-nav-board">
+                                    <ul>
+                                        <li>
+                                            <a href="notice.html">
+                                                <div class="sub-icon-16">
+                                                    <img src="resources/images/icon/main-menu-5-1.png" alt="공지사항">
+                                                    <img src="resources/images/icon/main-menu-5-1-hover.png" alt="공지사항">
+                                                </div>
+                                                공지사항</a>
+                                        </li>
+                                        <li>
+                                            <a href="report.html">
+                                                <div class="sub-icon-17">
+                                                    <img src="resources/images/icon/main-menu-5-2.png" alt="보도자료">
+                                                    <img src="resources/images/icon/main-menu-5-2-hover.png" alt="보도자료">
+                                                </div>
+                                                보도자료</a>
+                                        </li>
+                                        <li>
+                                            <a href="education.html">
+                                                <div class="sub-icon-18">
+                                                    <img src="resources/images/icon/main-menu-5-3.png" alt="교육자료">
+                                                    <img src="resources/images/icon/main-menu-5-3-hover.png" alt="교육자료">
+                                                </div>
+                                                교육자료</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- 4depth -->
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="gnb_bg"></div>
+        <section class="weather-info-bg">
+            <div class="weather-info-top">
+                <h1 class="weather-info-main-title"><img src="resources/images/ico_all_w.png" alt="전체">
+                    <span>전체</span></h1>
+                <div class="weather-info">
+                    <div class="weather-info-map">
+                        <div class="weather-info-form">
+                            <div class="info-area-01">
+                                <span>지역선택</span></div>
+                            <div class="info-area-02">
+                                <span>충청남도</span></div>
+                            <div class="info-area-03">
+                                <span>예산군</span></div>
+                            <div class="info-area-04">
+                                <select id="">
+                                    <option>예산읍</option>
+                                    <option>예산읍</option>
+                                    <option>예산읍</option>
+                                </select>
+                            </div>
+                            <div class="info-area-search">
+                                <button class="btn_search"><img src="resources/images/icon01.png" alt="검색아이콘">검색</button>
+                            </div>
+                        </div>
+                        <div class="weather-info-map-box"></div>
+                    </div>
+                    <div class="weather-info-tab">
+                        <div class="weather-info-title">
+                            <h1>전체정보</h1>
+                        </div>
+                        <div class="weather-information-box">
+                            <div class="accordion js-accordion">
+                                <div class="accordion__item js-accordion-item active">
+                                    <div class="accordion-header js-accordion-header">
+                                        <div class="accrdion-main">
+                                            <div class="accrdion-img">
+                                                <svg
+                                                    version="1.1"
+                                                    id="Layer_1"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                    x="0px"
+                                                    y="0px"
+                                                    viewbox="0 0 50 50"
+                                                    style="enable-background:new 0 0 50 50;"
+                                                    xml:space="preserve">
+                                                    <g>
+                                                        <circle class="st0" cx="25" cy="26" r="21.3"/>
+                                                        <g>
+                                                            <circle class="st1" cx="25" cy="24" r="21.3"/>
+                                                            <g>
+                                                                <g>
+                                                                    <polygon class="st2" points="30.4,8.4 32.1,9.1 30.5,13.4 28.8,12.6 				"/>
+                                                                    <rect x="24" y="7.7" class="st2" width="1.8" height="4.6"/>
+                                                                    <polygon class="st2" points="19.7,8.4 21.4,12.6 19.6,13.4 17.9,9.1 				"/>
+                                                                    <polygon class="st2" points="14.3,11.5 17.3,14.9 15.9,16.3 12.9,12.9 				"/>
+                                                                    <path
+                                                                        class="st2"
+                                                                        d="M35.7,40.3H14.4v-4.1c0-1.3,0.9-2.5,2-2.8V24c0-4.8,4-8.6,8.6-8.6s8.7,3.9,8.7,8.6v9.3c1.2,0.5,2,1.5,2,2.8
+					C35.7,36.1,35.7,40.3,35.7,40.3z"/>
+                                                                    <polygon class="st2" points="34.1,16.2 32.7,14.9 35.7,11.5 37.1,12.9 				"/>
+                                                                </g>
+                                                                <path
+                                                                    class="st3"
+                                                                    d="M30.6,25.7c0-3.1-2.5-5.6-5.6-5.6s-5.6,2.5-5.6,5.6V30h11.2L30.6,25.7L30.6,25.7z M25.8,28.8h-1.5v-1.5h1.5
+				V28.8z M25.8,26.1h-1.5v-4.3h1.5V26.1z"/>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="accrdion-txt">
+                                                <b>[태풍주의보 해제]</b>
+                                                <span>충청남도 예산군</span>
+                                                <span class="acc-block">2020.08.04. 06시 00분</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <div class="newsbreak" style="display: block;">
+                                                <p>
+                                                    <b>[태풍주의보 해제]</b>충청남도 예산군</p>
+                                                <label>태풍예보 제 2020-30 호</label><br>
+                                                <label>해제일시</label>
+                                                <span>
+                                                    2020년 08월 04일 06시 00분</span><br>
+                                                <label>해제자</label>
+                                                <span>금강태풍통제소장</span><br>
+                                                <p class="news-content">삽교천 예산군(예산대교) 지점의 수위가 계속 하강하고 있으므로 2020년 08월 04일 01시 50분
+                                                    에 발령한 예산 지역의 홍수주의보를 해제합니다.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end of accordion body -->
+                                </div>
+                                <!-- end of accordion item -->
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">
+                                        <div class="accrdion-main">
+                                            <div class="accrdion-img">
+                                                <svg
+                                                    version="1.1"
+                                                    id="Layer_1"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                    x="0px"
+                                                    y="0px"
+                                                    viewbox="0 0 50 50"
+                                                    style="enable-background:new 0 0 50 50;"
+                                                    xml:space="preserve">
+                                                    <g>
+                                                        <circle class="st0" cx="25" cy="26" r="21.3"/>
+                                                        <g>
+                                                            <circle class="st1" cx="25" cy="24" r="21.3"/>
+                                                            <g>
+                                                                <defs>
+                                                                    <circle id="SVGID_1_" cx="25" cy="24" r="21.3"/>
+                                                                </defs>
+                                                                <clippath id="SVGID_2_">
+                                                                    <use xlink:href="#SVGID_1_" style="overflow:visible;"/>
+                                                                </clippath>
+                                                                <g class="st2">
+                                                                    <path
+                                                                        class="st3"
+                                                                        d="M27.5,19.8c0.7,0.9,1.5,1.6,2.3,2.5c1.1,1.1,2.5,1.7,3.8,1.8c0.1,0,0.2,0,0.2,0c1.3,0,2.6-0.5,3.6-1.4
+                        l6.7-5.3L36,19.9c-1.1,0.4-2,0-2.9-1c-0.1-0.2-0.3-0.3-0.4-0.5c-0.2-0.2-0.3-0.4-0.5-0.5c-0.2-0.3-0.5-0.5-0.6-0.7l-0.1-0.1
+                        c-0.9-1-1.8-2.1-3-2.9c-2-1.5-4.4-1.8-7-0.9l-5.1,1.9l5.4,1.3C25.2,17.1,25.2,17.2,27.5,19.8z"/>
+                                                                    <path
+                                                                        class="st3"
+                                                                        d="M15.2,27.3c-2,0.5-3.6,2.3-3.7,3.9l-0.2,4.1l2.9-2.9c1.7-1.7,3.6-1,6.2-0.1l6.7,2.4l-4.5-4.8
+                        C20.5,27.4,18,26.5,15.2,27.3z"/>
+                                                                    <path
+                                                                        class="st3"
+                                                                        d="M41.8,25.9c-0.4,0.3-0.7,0.5-1,0.7c-0.5,0.4-0.9,0.6-1.5,1c-3.5,2.2-5.4,2-8.2-0.8
+                        c-0.1-0.2-0.3-0.4-0.5-0.5c-0.5-0.5-0.9-0.8-1.4-1.3c-1.4-1.4-2.8-2.7-4.3-3.9c-1.3-1-3-1.8-4.8-2.2c-4.8-0.9-7.9,2-10.5,4.9
+                        l-7.3,8.6l9.4-6.1c1-0.6,2.1-1.3,3.4-1.7c1.2-0.5,2.4-0.7,3.5-0.5c1.5,0.4,2.7,1.5,4,2.8c0.3,0.3,0.6,0.6,0.9,0.9
+                        s0.6,0.6,0.9,0.9c1.3,1.3,2.6,2.6,4.1,3.6c1.6,1.2,3.6,1.9,5.6,1.9c0.2,0,0.3,0,0.5,0c0.8,0,1.7-0.1,2.6-0.3
+                        c3.1-0.8,5.7-2.9,7.1-5.8l2.6-5.3L41.8,25.9z"/>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="accrdion-txt">
+                                                <b>[홍수주의보 해제]</b>
+                                                <span>충청남도 예산군</span>
+                                                <span class="acc-block">2020.08.04. 06시 00분</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <div class="newsbreak" style="display: block;">
+                                                <p>
+                                                    <b>[홍수주의보 해제]</b>충청남도 예산군</p>
+                                                <label>홍수예보 제 2020-30 호</label><br>
+                                                <label>해제일시</label>
+                                                <span>
+                                                    2020년 08월 04일 06시 00분</span><br>
+                                                <label>해제자</label>
+                                                <span>금강홍수통제소장</span><br>
+                                                <p class="news-content">삽교천 예산군(예산대교) 지점의 수위가 계속 하강하고 있으므로 2020년 08월 04일 01시 50분
+                                                    에 발령한 예산 지역의 홍수주의보를 해제합니다.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end of accordion body -->
+                                </div>
+                                <!-- end of accordion item -->
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">
+                                        <div class="accrdion-main">
+                                            <div class="accrdion-img">
+                                                <svg
+                                                    version="1.1"
+                                                    id="Layer_1"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                    x="0px"
+                                                    y="0px"
+                                                    viewbox="0 0 50 50"
+                                                    style="enable-background:new 0 0 50 50;"
+                                                    xml:space="preserve">
+                                                    <g>
+                                                        <circle class="st0" cx="25" cy="26" r="22.5"/>
+                                                        <g>
+                                                            <circle class="st1" cx="25" cy="24" r="22.5"/>
+                                                            <g>
+                                                                <path
+                                                                    class="st2"
+                                                                    d="M32.5,16.5c3,0,5.5-2.5,5.5-5.4c0-3-2.5-5.5-5.4-5.5s-5.5,2.6-5.5,5.5c-0.1,1.4,0.5,2.8,1.5,3.8
+				C29.6,15.9,31,16.5,32.5,16.5z"/>
+                                                                <path
+                                                                    class="st2"
+                                                                    d="M41.9,17L41.9,17c-1.2-1.3-2.8-1.4-4.3-0.2c-0.5,0.5-1,0.8-1.6,1.3c-0.6,0.5-1.1,0.9-1.7,1.4
+				c-0.1,0.1-0.2,0.1-0.2,0.1s-0.1,0-0.3-0.1l-0.6-0.4c-3.3-1.7-6.7-3.5-10.1-5.3c-1.3-0.6-2.5-0.5-3.5,0.5
+				c-1.6,1.4-3.1,2.7-4.7,3.9c-0.7,0.6-1.2,1.4-1.2,2.2c-0.1,0.7,0.2,1.5,0.7,2.1c1.1,1.3,2.8,1.3,4.2,0.1c0.4-0.3,0.7-0.6,1.1-0.9
+				l0.1-0.1c0.6-0.6,1.4-1.2,2.1-1.7c0.1,0,0.2,0.1,0.4,0.2c-0.8,1.4-1.6,2.7-2.4,3.9L20,24.1c-1.5,2.6-3,5.2-4.6,7.7
+				c0,0.1-0.1,0.1-0.1,0.2c-0.1,0.1-0.2,0.2-0.2,0.3c-0.8,0.1-1.7,0.2-2.6,0.2c-0.9,0.1-1.7,0.2-2.7,0.3c-1.7,0.3-2.7,1.6-2.5,3.2
+				c0.2,1.5,1.4,2.4,3.1,2.4c0,0,0,0,0.1,0c1-0.1,2-0.2,3.1-0.3H14c0.9-0.1,1.9-0.1,2.8-0.2c1.2,0,2.2-0.6,2.9-1.7
+				C20.4,35,21,34,21.7,33c0.3-0.4,0.5-0.5,0.5-0.5c0.1,0,0.3,0.1,0.5,0.2l0.7,0.6c0.7,0.6,1.5,1.3,2.3,1.8c0.6,0.6,0.9,1,0.9,1.9
+				c0.1,1.7,0.2,3.1,0.4,4.5c0.1,0.8,0.5,1.6,1.1,2.1c0.5,0.4,1,0.6,1.7,0.6c0.2,0,0.4,0,0.5,0c1.5-0.2,2.6-1.6,2.4-3.2
+				c-0.2-1.8-0.4-3.8-0.5-5.9c-0.1-1.4-0.6-2.4-1.7-3.2c-0.4-0.4-0.6-0.6-0.9-0.8c-0.2-0.2-0.2-0.2-0.5-0.5c1-1.9,2.4-3.6,3.5-5.5
+				l0,0c0.3,0.1,0.5,0.2,1,0.6c1.2,0.6,2.3,0.4,3.4-0.5c0.8-0.6,1.6-1.3,2.4-2l2.4-2C42.8,20.1,43,18.5,41.9,17z"/>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="accrdion-txt">
+                                                <b>[소방 긴급구조출동]</b>
+                                                <span>충청남도 예산군</span>
+                                                <span class="acc-block">2020.08.04. 06시 00분</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <div class="newsbreak" style="display: block;">
+                                                <p>
+                                                    <b>[소방 긴급구조출동]</b>충청남도 예산군</p>
+                                                <label>소방 긴급구조 제 2020-30 호</label><br>
+                                                <label>해제일시</label>
+                                                <span>
+                                                    2020년 08월 04일 06시 00분</span><br>
+                                                <label>해제자</label>
+                                                <span>소방긴급통제소장</span><br>
+                                                <p class="news-content">삽교천 예산군(예산대교) 지점의 수위가 계속 하강하고 있으므로 2020년 08월 04일 01시 50분
+                                                    에 발령한 예산 지역의 홍수주의보를 해제합니다.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end of accordion body -->
+                                </div>
+                                <!-- end of accordion item -->
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">
+                                        <div class="accrdion-main">
+                                            <div class="accrdion-img">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                    version="1.1"
+                                                    id="Layer_1"
+                                                    x="0px"
+                                                    y="0px"
+                                                    viewbox="0 0 50 50"
+                                                    style="enable-background:new 0 0 50 50;"
+                                                    xml:space="preserve">
+                                                    <g>
+                                                        <g>
+                                                            <circle class="st0" cx="25" cy="26" r="21.8"/>
+                                                            <path
+                                                                class="st0"
+                                                                d="M25,4.7c11.8,0,21.3,9.5,21.3,21.3S36.8,47.3,25,47.3S3.7,37.8,3.7,26S13.2,4.7,25,4.7 M25,3.7    C12.7,3.7,2.7,13.7,2.7,26s10,22.3,22.3,22.3s22.3-10,22.3-22.3S37.3,3.7,25,3.7L25,3.7z"/>
+                                                        </g>
+                                                        <g>
+                                                            <g>
+                                                                <circle class="st1" cx="25" cy="24" r="21.8"/>
+                                                                <path
+                                                                    class="st2"
+                                                                    d="M25,2.7c11.8,0,21.3,9.5,21.3,21.3S36.8,45.3,25,45.3S3.7,35.8,3.7,24S13.2,2.7,25,2.7 M25,1.7     C12.7,1.7,2.7,11.7,2.7,24s10,22.3,22.3,22.3s22.3-10,22.3-22.3S37.3,1.7,25,1.7L25,1.7z"/>
+                                                            </g>
+                                                            <g>
+                                                                <defs>
+                                                                    <circle id="SVGID_1_" cx="25" cy="24" r="21.3"/>
+                                                                </defs>
+                                                                <clippath id="SVGID_2_">
+                                                                    <use xlink:href="#SVGID_1_" style="overflow:visible;"/>
+                                                                </clippath>
+                                                                <g class="st3">
+                                                                    <path
+                                                                        class="st4"
+                                                                        d="M45.1,25.4C45.2,25.4,45.2,25.4,45.1,25.4c0.5-0.2,0.9-0.5,1.2-0.5v2.2h-0.1c-0.7,0.2-1.4,0.7-2.4,0.9      c-0.2,0-0.4,0.5-0.3,1.2c0,0.5,0.2,0.7,0.4,0.7c0,0,0,0,0.1,0c1-0.2,1.7-0.7,2.3-0.9v3.1c-2.2,1.2-7.3,2.6-10.6,2.6      s-8.4-1.3-10.6-2.4c-2.2-1.2-7.3-2.6-10.6-2.6S6,31.2,3.7,32.3v-7.4h0.1c0.3-0.2,0.8-0.2,1.2-0.5c0.2,0,0.4-0.5,0.3-1.2      c0-0.5-0.2-0.9-0.5-0.7C4.4,22.7,4,22.7,3.7,23v-7.4C5.9,14.4,11,13,14.3,13s8.4,1.4,10.6,2.6s7.3,2.6,10.6,2.6S44,17,46.2,15.7      v3.1h-0.1c-0.7,0.2-1.4,0.7-2.4,0.9c-0.2,0-0.4,0.5-0.3,1.2c0,0.5,0.2,0.7,0.4,0.7c0,0,0,0,0.1,0c1-0.2,1.7-0.7,2.4-0.9v2.2      h-0.1c-0.3,0.2-0.8,0.2-1.2,0.5c-0.2,0-0.4,0.5-0.3,1.2C44.7,25.2,45,25.4,45.1,25.4z"/>
+                                                                    <g>
+                                                                        <path
+                                                                            class="st1"
+                                                                            d="M13.7,21.4c0-0.5-0.2-0.9-0.4-0.9c-0.8,0.2-1.5,0.2-2.3,0.5c-0.2,0-0.4,0.5-0.3,0.9c0,0.5,0.2,0.9,0.4,0.9       c0,0,0,0,0.1,0c0.8-0.2,1.5-0.2,2.3-0.5C13.5,22.4,13.7,22.2,13.7,21.4z"/>
+                                                                        <path
+                                                                            class="st1"
+                                                                            d="M9.1,17.6c-0.9,0.2-1.7,0.7-2.4,0.9c-0.2,0-0.4,0.7-0.3,1.2c0,0.5,0.2,0.7,0.4,0.7h0.1       c0.7-0.2,1.5-0.7,2.4-0.9c0.2,0,0.4-0.5,0.3-0.9C9.6,17.8,9.4,17.3,9.1,17.6z"/>
+                                                                        <path
+                                                                            class="st1"
+                                                                            d="M15.7,16.2c-0.8,0-1.6,0.2-2.5,0.2c-0.2,0-0.4,0.5-0.4,0.9c0,0.5,0.2,0.9,0.4,0.9l0,0       c0.9-0.2,1.6-0.2,2.4-0.2c0.2,0,0.4-0.5,0.4-0.9S15.9,16.2,15.7,16.2z"/>
+                                                                        <path
+                                                                            class="st1"
+                                                                            d="M15.7,24.5c-0.8,0-1.6,0.2-2.5,0.2c-0.2,0-0.4,0.5-0.4,0.9s0.2,0.9,0.4,0.9l0,0c0.9-0.2,1.6-0.2,2.4-0.2       c0.2,0,0.4-0.5,0.4-0.9C16.1,24.8,15.9,24.5,15.7,24.5z"/>
+                                                                        <path
+                                                                            class="st1"
+                                                                            d="M26.4,20.2c0.3,0.2,0.5,0.2,0.9,0.5c0.4,0.2,1,0.5,1.6,0.7c0,0,0,0,0.1,0c0.2,0,0.4-0.2,0.4-0.7       s-0.1-0.9-0.3-1.2c-0.7-0.2-1.1-0.5-1.5-0.7c-0.2-0.2-0.5-0.2-0.9-0.5c-0.2,0-0.4,0.2-0.5,0.7C26,19.5,26.1,20,26.4,20.2z"/>
+                                                                        <path
+                                                                            class="st1"
+                                                                            d="M9.1,25.8c-0.9,0.2-1.7,0.5-2.4,0.9c-0.2,0-0.4,0.7-0.3,1.2c0,0.5,0.1,0.7,0.3,0.7h0.1       c0.7-0.2,1.5-0.7,2.4-0.9c0.2,0,0.4-0.5,0.3-0.9C9.6,26,9.4,25.8,9.1,25.8z"/>
+                                                                        <path
+                                                                            class="st1"
+                                                                            d="M32.8,22.6c0.9,0.2,1.6,0.2,2.5,0.5l0,0c0.2,0,0.4-0.5,0.4-0.9c0-0.5-0.2-0.9-0.4-0.9       c-0.8,0-1.6-0.2-2.4-0.5c-0.2,0-0.4,0.2-0.4,0.9C32.4,22,32.6,22.4,32.8,22.6z"/>
+                                                                        <path
+                                                                            class="st1"
+                                                                            d="M39.5,23.1L39.5,23.1c0.8,0,1.6-0.2,2.5-0.5c0.2,0,0.4-0.5,0.4-0.9c0-0.5-0.2-0.9-0.4-0.9       c-0.9,0.2-1.6,0.2-2.4,0.5c-0.2,0-0.4,0.5-0.4,0.9C39.1,22.6,39.3,23.1,39.5,23.1z"/>
+                                                                        <path
+                                                                            class="st1"
+                                                                            d="M19.8,21.4c0-0.5-0.2-0.9-0.4-0.9c-0.9-0.2-1.6-0.2-2.3-0.2c-0.2,0-0.4,0.5-0.4,0.9c0,0.5,0.2,0.9,0.4,0.9       c0.7,0,1.4,0,2.3,0.2l0,0C19.6,22.4,19.8,22.2,19.8,21.4z"/>
+                                                                        <path
+                                                                            class="st1"
+                                                                            d="M19.8,18.3c0.8,0.2,1.6,0.2,2.4,0.5l0,0c0.2,0,0.4-0.5,0.4-0.9c0-0.5-0.1-0.9-0.3-0.9       c-0.9-0.2-1.6-0.5-2.5-0.5c-0.2,0-0.4,0.2-0.4,0.9C19.4,17.8,19.6,18.3,19.8,18.3z"/>
+                                                                        <path
+                                                                            class="st1"
+                                                                            d="M43.5,24.5c-0.8,0.2-1.5,0.2-2.3,0.5c-0.2,0-0.4,0.5-0.4,0.9c0,0.5,0.2,0.9,0.4,0.9l0,0       c0.8-0.2,1.5-0.2,2.3-0.5c0.2,0,0.4-0.5,0.3-0.9C44,25.1,43.8,24.5,43.5,24.5z"/>
+                                                                        <path
+                                                                            class="st1"
+                                                                            d="M22.4,25.3c-0.9-0.2-1.6-0.5-2.5-0.5c-0.2,0-0.4,0.2-0.4,0.9c0,0.5,0.1,0.9,0.4,0.9       c0.8,0.2,1.6,0.2,2.4,0.5l0,0c0.2,0,0.4-0.5,0.4-0.7C22.7,25.8,22.6,25.3,22.4,25.3z"/>
+                                                                        <path
+                                                                            class="st1"
+                                                                            d="M37.5,25.5c-0.7,0-1.4,0-2.3-0.2c-0.2,0-0.4,0.5-0.4,0.9c0,0.5,0.2,0.9,0.4,0.9c0.9,0.2,1.6,0.2,2.3,0.2       l0,0c0.2,0,0.4-0.5,0.4-0.9S37.7,25.5,37.5,25.5z"/>
+                                                                        <path
+                                                                            class="st1"
+                                                                            d="M41.9,29.1c-0.9,0.2-1.6,0.2-2.4,0.5c-0.2,0-0.4,0.5-0.4,0.9c0,0.5,0.2,0.9,0.4,0.9l0,0       c0.8,0,1.6-0.2,2.5-0.5c0.2,0,0.4-0.5,0.4-0.9C42.5,29.6,42.2,29.1,41.9,29.1z"/>
+                                                                        <path
+                                                                            class="st1"
+                                                                            d="M25.5,22.2c-0.7-0.2-1.4-0.5-2.3-0.7c-0.2,0-0.4,0.2-0.4,0.7s0.1,0.9,0.3,0.9c0.8,0.2,1.5,0.5,2.2,0.7       c0,0,0,0,0.1,0c0.2,0,0.4-0.2,0.4-0.7C25.9,22.6,25.7,22.2,25.5,22.2z"/>
+                                                                        <path
+                                                                            class="st1"
+                                                                            d="M35.4,29.3c-0.8,0-1.6-0.2-2.4-0.5c-0.2,0-0.4,0.2-0.4,0.9c0,0.5,0.1,0.9,0.4,0.9c0.9,0.2,1.6,0.2,2.5,0.5       l0,0c0.2,0,0.4-0.5,0.4-0.9C35.8,29.8,35.7,29.3,35.4,29.3z"/>
+                                                                        <path
+                                                                            class="st1"
+                                                                            d="M28.9,27.6c-0.7-0.2-1.1-0.5-1.5-0.7c-0.2-0.2-0.5-0.2-0.9-0.5c-0.2,0-0.4,0.2-0.5,0.7       c0,0.5,0.1,0.9,0.3,1.2c0.3,0.2,0.5,0.2,0.9,0.5c0.4,0.2,1,0.5,1.6,0.7c0,0,0,0,0.1,0c0.2,0,0.4-0.2,0.4-0.7       C29.3,28.4,29.1,27.9,28.9,27.6z"/>
+                                                                        <path
+                                                                            class="st1"
+                                                                            d="M31.4,24.3c-0.8-0.2-1.5-0.5-2.2-0.7c-0.2,0-0.4,0.2-0.5,0.7c0,0.5,0.1,0.9,0.3,1.2       c0.7,0.2,1.4,0.5,2.3,0.7c0,0,0,0,0.1,0c0.2,0,0.4-0.2,0.4-0.9C31.8,25.1,31.6,24.5,31.4,24.3z"/>
+                                                                    </g>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="accrdion-txt">
+                                                <b>[화재]</b>
+                                                <span>충청남도 예산군</span>
+                                                <span class="acc-block">2020.08.04. 06시 00분</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <div class="newsbreak" style="display: block;">
+                                                <p>
+                                                    <b>[화재]</b>충청남도 예산군</p>
+                                                <label>화재 제 2020-30 호</label><br>
+                                                <label>해제일시</label>
+                                                <span>
+                                                    2020년 08월 04일 06시 00분</span><br>
+                                                <label>해제자</label>
+                                                <span>소방통제소장</span><br>
+                                                <p class="news-content">삽교천 예산군(예산대교) 지점의 수위가 계속 하강하고 있으므로 2020년 08월 04일 01시 50분
+                                                    에 발령한 예산 지역의 홍수주의보를 해제합니다.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end of accordion body -->
+                                </div>
+                                <!-- end of accordion item -->
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">
+                                        <div class="accrdion-main">
+                                            <div class="accrdion-img">
+                                                <svg
+                                                    version="1.1"
+                                                    id="Layer_1"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                    x="0px"
+                                                    y="0px"
+                                                    viewbox="0 0 50 50"
+                                                    style="enable-background:new 0 0 50 50;"
+                                                    xml:space="preserve">
+                                                    <g>
+                                                        <circle class="st0" cx="25" cy="26" r="22.5"/>
+                                                        <g>
+                                                            <circle class="st1" cx="25" cy="24" r="22.5"/>
+                                                            <path
+                                                                class="st2"
+                                                                d="M37.8,30.2l3.2-1.7c0.2-0.1,0.4-0.4,0.4-0.8h0.1v-5c0-0.6-0.4-0.9-0.9-0.9h-2.3v-7.6l1.1,0.9
+			c0.2,0.1,0.3,0.1,0.6,0.1s0.6-0.1,0.7-0.3c0.2-0.4,0.1-0.9-0.2-1.1l-9.1-6.6c-0.3-0.2-0.7-0.2-1,0l-9.1,6.6
+			c-0.4,0.3-0.6,0.8-0.2,1.1c0.3,0.4,0.9,0.6,1.1,0.2l1.1-0.9V22h-4.3c-0.3,0-0.7,0.1-0.8,0.4l-1.6,3.4c-0.2,0.3-0.1,0.8,0.1,1
+			l2.6,2.6L18,30.4l0.2-0.6c0.2-0.3,0.1-0.8-0.1-1L15.3,26l1.3-2.8c0.2-0.3,0.2-0.6,0-0.9c-0.2-0.3-0.4-0.4-0.7-0.4H9.3
+			c-0.6,0-0.9,0.4-0.9,0.9v13.4c0,0.6,0.4,0.9,0.9,0.9h16.5c0.3,0,0.7-0.2,0.8-0.4c0.1-0.3,0.1-0.7,0-0.9l-1.3-2.8l2-2l-0.6,1.7
+			c-0.1,0.2-0.1,0.4,0,0.7l1.7,3.2c0.1,0.2,0.4,0.4,0.8,0.4h11.7c0.6,0,0.9-0.4,0.9-0.9v-5c0-0.3-0.1-0.7-0.4-0.8s-0.7-0.1-0.9,0
+			l-2.7,1.3L36.7,30l0.6,0.2C37.3,30.3,37.6,30.3,37.8,30.2z M32.5,22h-3.2v-5.7h3.2V22z"/>
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="accrdion-txt">
+                                                <b>[지진특보]</b>
+                                                <span>충청남도 예산군</span>
+                                                <span class="acc-block">2020.08.04. 06시 00분</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <div class="newsbreak" style="display: block;">
+                                                <p>
+                                                    <b>[지진특보]</b>충청남도 예산군</p>
+                                                <label>규모 2.4</label><br>
+                                                <label>해제일시</label>
+                                                <span>
+                                                    2020년 08월 04일 06시 00분</span><br>
+                                                <label>해제자</label>
+                                                <span>지진관리센터소장</span><br>
+                                                <p class="news-content">삽교천 예산군(예산대교) 지점의 수위가 계속 하강하고 있으므로 2020년 08월 04일 01시 50분
+                                                    에 발령한 예산 지역의 홍수주의보를 해제합니다.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end of accordion body -->
+                                </div>
+                                <!-- end of accordion item -->
+                            </div>
+                            <!-- end of accordion -->
+                            <!-- 아코디언 끝 -->
+                        </div>
+                        <!-- information-box -->
+                    </div>
+                </div>
+                <div class="cont">
+                    <ul>
+                        <li>
+                            <strong>지진 발생 시</strong>
+                            <b>행동요령</b>
+                        </li>
+                        <li>
+                            <b>1</b>
+                            <span>흔들리는 동안<br>머리를 보호할 수<br>있는 곳에서 대기</span>
+                        </li>
+                        <li>
+                            <b>2</b>
+                            <span>전기차단기 Off<br>가스 밸브 잠그기</span>
+                        </li>
+                        <li>
+                            <b>3</b>
+                            <span>엘리베이터<br>이용금지</span>
+                        </li>
+                        <li>
+                            <b>4</b>
+                            <span>차량 이용 금지</span>
+                        </li>
+                        <li>
+                            <b>5</b>
+                            <span>넓은 공간으로 대피</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 퀵메뉴 -->
+                <div class="quickmenu info-quick">
+                    <ul>
+                        <li class="hv">
+                            <a href="information.html"><img src="resources/images/ico_all_w.png" alt="전체">전체</a>
+                        </li>
+                        <li>
+                            <a href="firecenter-info.html">
+                                <img src="resources/images/icon/main-menu-1-3-w.png" alt="사건사고">
+                                사건사고속보</a>
+                        </li>
+                        <li>
+                            <a href="dam-info.html">
+                                <img src="resources/images/ico_typhn_w.png" alt="태풍아이콘">
+                                    태풍</a>
+                            </li>
+                        <li>
+                        <a href="earth-info.html">
+                                <img src="resources/images/ico_drought_w.png" alt="지진아이콘"> 
+                                지진</a>
+                        </li>
+                        <li>
+                            <a href="government-info.html">
+                                <img src="resources/images/ico_flood_w.png" alt="하천수위">
+                                하천 수위</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 퀵메뉴 끝 -->
+            </div>
+                <!-- <script type="text/javascript">
+                    $(function(){
+                        // $('.info-quick li:nth-child(1)').mouseover(function(){
+                        //     $('.info-quick li:nth-child(1) img').attr('src','resources/images/ico_all_w.png');
+                        // });
+                        // $('.info-quick li:nth-child(1)').mouseleave(function(){
+                        //     $('.info-quikc li:nth-child(1) img').attr("src",'resources/images/ico_all_r.png');
+                        // });
+                        $('.info-quick li:nth-child(2)').mouseover(function(){
+                            $('.info-quick li:nth-child(2) img').attr('src','resources/images/icon/main-menu-1-3-w.png');
+                        });
+                        $('.info-quick li:nth-child(2)').mouseleave(function(){
+                            $('.info-quick li:nth-child(2) img').attr("src",'resources/images/icon/main-menu-1-3-hover.png');
+                        });
+                        $('.info-quick li:nth-child(3)').mouseover(function(){
+                            $('.info-quick li:nth-child(3) img').attr('src','resources/images/ico_typhn_w.png');
+                        });
+                        $('.info-quick li:nth-child(3)').mouseleave(function(){
+                            $('.info-quick li:nth-child(3) img').attr("src",'resources/images/ico_typhn_r.png');
+                        });
+                        $('.info-quick li:nth-child(4)').mouseover(function(){
+                            $('.info-quick li:nth-child(4) img').attr('src','resources/images/ico_drought_w.png');
+                        });
+                        $('.info-quick li:nth-child(4)').mouseleave(function(){
+                            $('.info-quick li:nth-child(4) img').attr("src",'resources/images/ico_drought_r.png');
+                        });
+                        $('.info-quick li:nth-child(5)').mouseover(function(){
+                            $('.info-quick li:nth-child(5) img').attr('src','resources/images/ico_flood_w.png');
+                        });
+                        $('.info-quick li:nth-child(5)').mouseleave(function(){
+                            $('.info-quick li:nth-child(5) img').attr("src",'resources/images/ico_flood_r.png');
+                        });
+                    })
+                </script> -->
+            </section>
+            <!-- TOP버튼 -->
+    <div class="quick">
+        <button type="button" class="go_top_btn" style="display: inline-block;"><span>위로</span></button>
+    </div>
+
+    <script>
+        $(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 500) {
+                    $('.quick').fadeIn();
+                } else {
+                    $('.quick').fadeOut();
+                }
+            });
+            
+            $(".quick").click(function() {
+                $('html, body').animate({
+                    scrollTop : 0
+                }, 400);
+                return false;
+            });
+        });
+    </script>
+    <!-- TOP버튼 끝 -->
+
+            <footer>
+                <div id="footer">
+                    <div class="footer-content">
+                        <div class="foot-logo">
+                            <img src="resources/images/logo.png" alt="로고">
+                        </div>
+                        <div class="footer-copyright">
+                            <p>(우) 32435 충남 예산군 예산읍 군청로 22 Tel 041-339-7114 / Fax 041-339-7229</p>
+                            <p>COPYRIGHT ⓒ YESAN COUNTRY.ALL RIGHTS RESERVED</p>
+                        </div>
+                        <div class="list-box"></div>
+                    </div>
+                </div>
+            </footer>
+            <!-- JS -->
+            <script
+                type="text/javascript"
+                src="resources/javascripts/vendor/jquery.tabslet.min.js"></script>
+            <script
+                type="text/javascript"
+                src="resources/javascripts/vendor/rainbow-custom.min.js"></script>
+            <script
+                type="text/javascript"
+                src="resources/javascripts/vendor/jquery.anchor.js"></script>
+            <script src="resources/javascripts/initializers.js"></script>
+            <!-- JS ends -->
+            <!-- <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script> -->
+            <script type="text/javascript" src="resources/js/main.js"></script>
+            <script type="text/javascript" src="resources/js/accordion.js"></script>
+
+        </body>
+    </html>

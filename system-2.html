@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta property=”og:image” content="resources/images/POZ_202007131009436070.jpg">
+    <meta property=”og:image:width” content="600">
+    <meta property=”og:image:height” content="400"> 
+    <meta name="author" content="예산재난포털" />
+    <meta name="Keywords" content="예산재난포털" />
+    <title>예산군청</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="shortcut icon" href="resources/images/fa_gDi_icon.ico">
+    <link rel="stylesheet" href="resources/css/commmon/common.css">
+    <link rel="stylesheet" href="resources/css/layout.css">
+        <!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+</head>
+<body>
+    <!-- 공통메뉴  -->
+    <header id="header">
+        <div class="nav-wrapper">
+            <a href="index.html"><h1 id="logo">예산재난포털</h1></a>
+            <div class="gnb" id="gnb">
+                <ul>
+                    <li>
+                        <a href="#">종합날씨</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-weather">
+                                <ul>
+                                    <li>
+                                        <a href="livingweather.html">
+                                            <div class="sub-icon-6">
+                                                <img src="resources/images/icon/main-menu-2-1.png" alt="생활날씨">
+                                                <img src="resources/images/icon/main-menu-2-1-hover.png" alt="생활날씨">
+                                            </div>
+                                            생활날씨</a>
+                                    </li>
+                                    <li>
+                                        <a href="rain-info.html">
+                                            <div class="sub-icon-7">
+                                                <img src="resources/images/icon/main-menu-2-2.png" alt="강우정보">
+                                                <img src="resources/images/icon/main-menu-2-2-hover.png" alt="강우정보">
+                                            </div>
+                                            강우정보</a>
+                                    </li>
+                                    <li>
+                                        <a href="snow-info.html">
+                                            <div class="sub-icon-8">
+                                                <img src="resources/images/icon/main-menu-2-3.png" alt="적설정보">
+                                                <img src="resources/images/icon/main-menu-2-3-hover.png" alt="적설정보">
+                                            </div>
+                                            적설정보</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 1depth -->
+                    <li>
+                        <a href="#">생활안전정보</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-information">
+                                <ul>
+                                    <li>
+                                        <a href="information.html">
+                                            <div class="sub-icon-3">
+                                                <img src="resources/images/icon/main-menu-1-3.png" alt="재난속보">
+                                                <img src="resources/images/icon/main-menu-1-3-hover.png" alt="재난속보">
+                                            </div>
+                                            재난속보
+                                        </a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="government-info.html">하천 수위</a></li>
+                                                <li><a href="dam-info.html">댐정보</a></li>
+                                                <li><a href="fire-info.html">소방 긴급구조</a></li>
+                                                <li><a href="firecenter-info.html">소방서센터</a></li>
+                                                <li><a href="earth-info.html">지진</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-9">
+                                                <img src="resources/images/icon/main-menu-3-1.png" alt="재난안전지도">
+                                                <img src="resources/images/icon/main-menu-3-1-hover.png" alt="재난안전지도">
+                                            </div>
+                                            재난안전지도
+                                        </a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="safemap.html">안전MAP</a></li>
+                                            </ul>
+                                        </div>
+                                        
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-10">
+                                                <img src="resources/images/icon/main-menu-3-2.png" alt="재난예방정보">
+                                                <img src="resources/images/icon/main-menu-3-2-hover.png" alt="재난예방정보">
+                                            </div>
+                                            재난예방정보</a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li>
+                                                    <a href="earthquake.html">자연재난</a>
+                                                </li>
+                                                <li>
+                                                    <a href="traffic.html">사회재난</a>
+                                                </li>
+                                                <li>
+                                                    <a href="extinguisher.html">생활안전수칙</a>
+                                                </li>
+                                                <li>
+                                                    <a href="farm.html">농어촌안전</a>
+                                                </li>
+                                                <li>
+                                                    <a href="spring.html">계절별재난</a>
+                                                </li>
+                                                <li>
+                                                    <a href="baby.html">생애주기별 재난</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-11">
+                                                <img src="resources/images/icon/main-menu-3-3.png" alt="재난안전보험">
+                                                <img src="resources/images/icon/main-menu-3-3-hover.png" alt="재난안전보험">
+                                            </div>
+                                            재난안전보험</a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="insurance.html">풍수해보험</a></li>
+                                                <li><a href="safe-insurance.html">예산군 군민안전보험</a></li>
+                                                <li><a href="bicycle.html">예산군 자전거안전보험</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-12">
+                                                <img src="resources/images/icon/main-menu-3-4.png" alt="재난안전앱">
+                                                <img src="resources/images/icon/main-menu-3-4-hover.png" alt="재난안전앱">
+                                            </div>
+                                            재난안전앱</a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="safe-app.html">안전디딤돌</a></li>
+                                                <li><a href="safe-news.html">안전신문고</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 2depth -->
+                    <li class="on2">
+                        <a href="#">재난안전대책본부</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-safety">
+                                <ul>
+                                    <li>
+                                        <a href="tissue.html">
+                                            <div class="sub-icon-13">
+                                                <img src="resources/images/icon/main-menu-4-1.png" alt="대책본부 조직도 및 주요업무">
+                                                <img src="resources/images/icon/main-menu-4-1-hover.png" alt="대책본부 조직도 및 주요업무">
+                                            </div>
+                                            대책본부 조직도 및 주요업무</a>
+                                    </li>
+                                    <li>
+                                        <a href="system-1.html">
+                                            <div class="sub-icon-14">
+                                                <img src="resources/images/icon/main-menu-4-2.png" alt="재난대응 체계도">
+                                                <img src="resources/images/icon/main-menu-4-2-hover.png" alt="재난대응 체계도">
+                                            </div>
+                                            재난대응 체계도</a>
+                                    </li>
+                                    <li>
+                                        <a href="system-2.html">
+                                            <div class="sub-icon-15">
+                                                <img src="resources/images/icon/main-menu-4-3.png" alt="피해조사 및 복구계획">
+                                                <img src="resources/images/icon/main-menu-4-3-hover.png" alt="피해조사 및 복구계획">
+                                            </div>
+                                            피해조사 및 복구계획</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 3depth -->
+                    <li>
+                        <a href="#">안전게시판</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-board">
+                                <ul>
+                                    <li>
+                                        <a href="notice.html">
+                                            <div class="sub-icon-16">
+                                                <img src="resources/images/icon/main-menu-5-1.png" alt="공지사항">
+                                                <img src="resources/images/icon/main-menu-5-1-hover.png" alt="공지사항">
+                                            </div>
+                                            공지사항</a>
+                                    </li>
+                                    <li>
+                                        <a href="report.html">
+                                            <div class="sub-icon-17">
+                                                <img src="resources/images/icon/main-menu-5-2.png" alt="보도자료">
+                                                <img src="resources/images/icon/main-menu-5-2-hover.png" alt="보도자료">
+                                            </div>
+                                            보도자료</a>
+                                    </li>
+                                    <li>
+                                        <a href="education.html">
+                                            <div class="sub-icon-18">
+                                                <img src="resources/images/icon/main-menu-5-3.png" alt="교육자료">
+                                                <img src="resources/images/icon/main-menu-5-3-hover.png" alt="교육자료">
+                                            </div>
+                                            교육자료</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 4depth -->
+                </ul>
+            </div>
+        </div>        
+    </header>
+        <div class="gnb_bg"></div>
+    <section>
+        <div class="content_title system-title">
+            <div class="earth-title">
+                <h1><img src="resources/images/icon/report.svg"><span>피해조사 및 복구계획</span></h1>
+            </div>
+            <div class="sub-tab-title">             
+                <div class="tabs tabs_animate">
+                    <ul class="horizontal-tab">
+                      <li class="active"><a href="#tab-1"><h2 style="font-size:24px; display:inline;">절차 및 흐름도</h2></a></li>
+                      <li class=""><a href="#tab-2"><h2 style="font-size:24px; display:inline;">사유시설 피해 지원</h2><span style="font-size:16px">(재난지원금)</span></a></li>
+                      <li class=""><a href="#tab-3"><h2 style="font-size:24px; display:inline;">재난복구 비용</h2><span style="font-size:16px">(재난지원금 제외)</span></a></li>
+                    </ul>
+                    <div id="tab-1" style="">
+                        <img src="resources/images/system/restoration.jpg" alt="흐름도">
+                    </div>
+                    <div id="tab-2" style="display: none;">
+                        <div class="insurance-wrap">
+                            <div class="ins-info">
+                                <div class="ins-info-img">
+                                    <img src="resources/images/insurance/bicycle.svg" alt="자전거안전보험">
+                                </div>
+                                <div class="ins-info-txt bicycle-info-txt">
+                                    <h1>“재난지원금”이란 </h1>
+                                    <p> 국가 또는 지방자치단체가 재난으로 인하여 인명, 주택 또는 주 생계수단이 농업·어업·임업·염생산업에 재해를 입은 자에 대하여 재난복구 및 이재민 구호를 위하여 지원하는 금액(가구별로 최대 5천만원을 초과하여 지급할 수 없음)</p>
+                                </div>
+                            </div>
+                            <div class="ins-cont">
+                                <h2><img src="resources/images/icon1-b.png" alt="아이콘">근거법령</h2>
+                                <p>- ｢재난 및 안전관리 기본법｣ 제66조</p>
+                                <p>- ｢자연재난 구호 및 복구 비용 부담기준 등에 관한 규정｣</p>
+                            </div>
+                            <div class="ins-cont">
+                                <h2><img src="resources/images/icon1-b.png" alt="아이콘">지원 대상</h2>
+                                <p>① 세대주‧세대원 중 사망‧실종자 및 부상자가 있는 경우</p>
+                                <ul>
+                                    <li>- 사망·실종 : 1,000만원</li>
+                                    <li>- 부상 : 장해등급 1~7급 500만원, 8~14급 250만원</li>
+                                </ul>
+                                <p>② 주택피해(전파‧유실, 반파, 침수피해)를 입은 경우</p>
+                                <ul>
+                                    <li><p>- 주택전파‧유실 1,300만원, 반파 650만원, 침수 100만원, 소파 100만원(지진피해만 해당)</p></li>
+                                    <li><p>* 주택피해자는 구호비 추가 지원(1인당 전파 480,000원, 반파 240,000원, 침수 56,000원)</p></li>
+                                    <li><p>** 피해주택 복구 시 내진설계를 적용할 경우 자부담 면제 및 융자 70% 확대</p></li>
+                                </ul>
+                                <p>③ 주생계수단인 농업‧어업‧임업‧염생산업에 피해를 입은 경우</p>
+                                <ul>
+                                    <li><p>** 총 소유량의 50%이상 피해를 입은 농․어가 및 주택 전파(유실), 반파 피해를 입은 자는 생계
+                                        지원비 및 고등학교 학자금 추가 지원</p></li>
+                                </ul>
+                            </div>
+                            <div class="ins-cont t3 ttvam thtac">
+                                <h2><img src="resources/images/icon1-b.png" alt="아이콘">생계지원비 지원</h2>
+                                <table width="100%" border="1" class="t3">
+                                    <thead>
+                                        <tr>
+                                            <th>가구구성원수</th>
+                                            <th>1인</th>
+                                            <th>2인</th>
+                                            <th>3인</th>
+                                            <th>4인</th>
+                                            <th>5인</th>
+                                            <th>6인</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>지 원 금 액</td>
+                                            <td>454,900</td>
+                                            <td>774,700</td>
+                                            <td>1,002,400</td>
+                                            <td>1,230,000</td>
+                                            <td>1,457,500</td>
+                                            <td>1,685,000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p>* 가구구성원이 7인 이상인 경우, 1인 증가시마다 227,500원씩 추가 지급</p>
+                            </div>
+                            <div class="ins-cont">
+                                <h2><img src="resources/images/icon1-b.png" alt="아이콘">지원제외 대상</h2>
+                                <p>- 각종 상품, 농기계 등 동산은 피해조사 및 복구대상에서 제외</p>
+                                <p> - 세대주 또는 세대원이 공무원, 회사원, 상업 등의 주업(주 생계수단)을 갖고 있는 자가
+                                    농·임·축·어업·염생산업 등의 피해를 입은 경우 지원 대상에서 제외</p>
+                            </div>
+                            <div class="info1box1">
+                                <strong class="t1">  ⯄신청방법</strong>
+                                <ul class="bu bu2 mgt0">
+                                    <li>- ｢자연재난피해신고서｣를 작성하여 10일 이내에 관할 읍․면사무소 및 관련부서에 신고</li>
+                                    <li>- 국민재난안전포털 → 참여와 신고 → 사유재산피해신고(직접신고) </li>
+                                </ul>
+                                <p>https://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/pan/cdr/cdreaiBefore.jsp?menuSeq=157</p>
+                            </div>
+                        </div>
+
+                        <!-- 컨텐츠  -->
+                    </div>
+                    <div id="tab-3" style="display: none;">
+                        <div class="insurance-wrap">
+                            <div class="ins-cont">
+                                <h3><img src="resources/images/icon1-b.png" alt="아이콘">공사 중인 건축물과 인공구조물 그 밖의 시설물(이하 “건축물 등”이라 한다)에 재난이
+                                    발생한 경우</h3>
+                                <p>- 공사 중인 건축물 : 준공검사가 완료되지 않고 또한 일부 준공검사를 필하여도 시설물 설치 본래 목적의 기능이 발휘하기에 완전하지 못한 모든 시설물</p>
+                                <p>- 인공구조물, 그 밖의 시설물 각종 임시적으로 설치한 가설물</p>
+                            </div>
+                            <div class="ins-cont">
+                                <h3><img src="resources/images/icon1-b.png" alt="아이콘">국가, 지방자치단체, 「공공기관의 운영에 관한 법률」 제5조에 따른 공기업(이하 “공기업”이라한다), 「지방공기업법」에 따른 지방공사와 지방공단(이하 “지방공사 등”이라 한다) 및 그 밖의 공공기관이 공공사업 등을 위하여 수용한 지역에서 발생한 피해</h3>
+                                <p>- 댐, 택지개발, 도로개설, 하천개량 등 사업계획이 확정되어 수용한 지역의 피해 등
+                                </p>
+                            </div>
+                            <div class="ins-cont">
+                                <h3><img src="resources/images/icon1-b.png" alt="아이콘">법령에 따른 각종 사업시행계획이 확정된 지구에서 건축물 등에 피해가 발생하였으나, 복구할 필요가 없는 경우</h3>
+                                <ul>
+                                    <li> ※ 공공사업 지구 내에서 보상계약체결 이전에 피해를 입은 경우는 지원대상임</li>
+                                </ul>
+                            </div>
+                            <div class="ins-cont">
+                                <h3><img src="resources/images/icon1-b.png" alt="아이콘">적법하지 아니한 건축물 등에 자연재난이 발생한 경우</h3>
+                                <p>- 관계 법령에 허가·면허·신고를 받도록 되어 있으나 이를 이행하지 않은 시설과 표준도 및 표준규격에 의해 설치하여야 하나 이에 맞지 않은 시설</p>
+                                <ul>
+                                    <li> ※ 조세를 납부하였다고 하더라도 관계법령에 의한 허가를 받지 않은 시설은 무허가임(조세납부          사실과 허가사항은 별개의 성격임)</li>
+                                </ul>
+                                <p>- 시설물 설치 목적과 다른 용도로 사용 중이거나 장기간 영농을 하지 않는 시설</p>
+                                <p>- 다만, 적법하게 복구하는 주택의 경우와 주거하는 무허가 주택이 침수된 경우는 국고지원 가능</p>
+                            </div>
+                            <div class="ins-cont">
+                                <h3><img src="resources/images/icon1-b.png" alt="아이콘">다른 법령에 따라 복구비와 보상비 등이 지원되는 경우</h3>
+                            
+                                <p>- 선박의 경우 선주가 선원을 대상으로 일반보험(어선원 및 어선재해 보상보험) 등에 가입하여 사망·실종자 유가족이 그 보험금을 받은 경우</p>
+                                <p>- 지방자치단체의 공유재산 중 보험 또는 공제 가입대상 건물 및 시설물</p>
+                                <p>- 「풍수해보험법」 및 「농어업재해보험법」에 따른 보험에 가입하여 목적물에 피해가 발생하여 보험금을 받거나 보험금 지급 청구권을 취득한 경우, 다만 「자연재해대책법」 제46조에 따른 재해복구계획에 포함되지 않은 응급구호비는 제외한다.</p>
+                                <ul>
+                                    <li>* 농작물보험: 경작불능보험금, 재정식, 재파종보험금, 나무보상보험금</li>
+                                </ul>
+                                <p> - 보험가입 어선( ｢자연재난 복구비용 산정기준｣에 따른 지원품목 외의 지원 사항은 해당 지자체에서 관계 법령, 규정 등을 검토하여 지원)</p>
+                            </div>
+                            <div class="ins-cont">
+                                <h3><img src="resources/images/icon1-b.png" alt="아이콘">기본법에 따른 대피명령 등 재해예방 조치에 따르지 않거나 본인의 고의 또는 중대한 과실로 인해 피해가 발생되었거나 확대된 경우 등</h3>
+                                <p>  - 재해예방 조치를 위한 행정기관의 지시나 권고에 따르지 않아 피해를 입은 경우<br>
+                                    - ｢자연재난에 의한 인명피해 관리지침｣에서 정한 사항 등(행정안전부 지침 참조)<br>
+                                    - 악기상이 예상되어 공원 관리인이 등산 포기를 권고하였으나 이를 무시하여 발생한 사고<br>
+                                    - 홍수 구경 중에 본인의 실수로 실족하여 사망 또는 실종된 자<br>
+                                    - 통제 중인 잠수교 또는 세월교를 무리하게 건너다 발생한 사고<br>
+                                    - 행정청의 퇴거 또는 대피권고에 따르지 않아 발생한 사고<br>
+                                    - 하천바닥이나 세월교(잠수교)에서 야영중 불어난 물에 의한 사고<br>
+                                    - 선박의 입·출항이 통제되었으나 이를 어기고 출항하여 발생한 사고</p>
+                                    <ul>
+                                        <li> ※ 폭염 및 한파 인명피해와 관련해서는 각각 ‘한파 인명피해 판단지침’ 및 ‘폭염 인명피해 판단지침’을 따른다.</li>
+                                    </ul>
+                            </div>
+                            <div class="ins-cont">
+                                <h3><img src="resources/images/icon1-b.png" alt="아이콘">하천구역 내 농작물, 산림작물 및 농림시설</h3>
+                            
+                                <p>- 제방이 있는 곳에 있어서 그 제외지(제방으로부터 하심측의 토지를 말함)의 농작물, 산림작물과 농경지 피해는 지원 대상에서 제외</p>
+                                <p>- 다만, ｢소하천정비법｣, ｢하천법｣에 따라 하천 점용허가를 받아 경작하던 중 폭설･지진･가뭄 또는 강풍으로 인한 피해가 발생한 농림시설 및 농작물, 산림작물은 지원</p>
+                            </div>
+                        </div>
+                    <!-- 컨텐츠 끝 -->
+          
+                    </div>
+                </div>
+            </div>
+            <!-- tab bar content   -->
+        
+    </section>
+
+    <!-- quickmenu -->
+    <div class="quickmenu-1">
+        <ul>
+            <li>
+                <a href="index.html">
+                    <img src="resources/images/icon/icon_gnb05_01-w.png" alt="안전맵">Home
+                </a>
+            </li>
+            <li>
+                <a href="earthquake.html">
+                    <img src="resources/images/icon/main-menu-3-2-w.png" alt="재난예방정보">재난예방정보
+                </a>
+            </li>
+            <li>
+                <a href="insurance.html">
+                    <img src="resources/images/icon/main-menu-3-3-w.png" alt="재난안전보험">재난안전보험
+                </a>
+            </li>
+            <li>
+                <a href="safe-app.html">
+                    <img src="resources/images/icon/main-menu-3-4-w.png" alt="재난안전앱">재난안전앱
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- quickmenu end -->
+
+    <!-- TOP버튼 -->
+    <div class="quick">
+        <button type="button" class="go_top_btn" style="display: inline-block;"><span>위로</span></button>
+    </div>
+
+    <script>
+        $(function() {
+            // $(window).scroll(function() {
+            //     if ($(this).scrollTop() > 500) {
+            //         $('.quick').fadeIn();
+            //     } else {
+            //         $('.quick').fadeOut();
+            //     }
+            // });
+            
+            $(".quick").click(function() {
+                $('html, body').animate({
+                    scrollTop : 0
+                }, 400);
+                return false;
+            });
+        });
+    </script>
+    <!-- TOP버튼 끝 -->
+    <footer>
+        <div id="footer">
+            <div class="footer-content">
+                <div class="foot-logo">
+                    <img src="resources/images/logo.png" alt="로고">
+                </div>
+                <div class="footer-copyright">
+                    <p>(우) 32435 충남 예산군 예산읍 군청로 22 Tel 041-339-7114 / Fax 041-339-7229</p>
+                    <p>COPYRIGHT ⓒ YESAN COUNTRY.ALL RIGHTS RESERVED</p>
+                </div>
+                <div class="list-box"></div>
+            </div>
+        </div>
+    </footer>
+    <!-- JS -->
+    <script type="text/javascript" src="resources/javascripts/vendor/jquery.tabslet.min.js"></script>
+    <script type="text/javascript" src="resources/javascripts/vendor/rainbow-custom.min.js"></script>
+    <script type="text/javascript" src="resources/javascripts/vendor/jquery.anchor.js"></script>
+    <script src="resources/javascripts/initializers.js"></script>
+    <!-- JS ends -->
+    <!-- <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script> -->
+    <script type="text/javascript" src="resources/js/main.js"></script>
+</body>
+</html>

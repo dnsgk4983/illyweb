@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta property=”og:image” content="resources/images/POZ_202007131009436070.jpg">
+    <meta property=”og:image:width” content="600">
+    <meta property=”og:image:height” content="400"> 
+    <meta name="author" content="예산재난포털" />
+    <meta name="Keywords" content="예산재난포털" />
+    <title>예산군청</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="shortcut icon" href="resources/images/fa_gDi_icon.ico">
+    <link rel="stylesheet" href="resources/css/commmon/common.css">
+    <link rel="stylesheet" href="resources/css/layout.css">
+        <!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+</head>
+<body>
+    <!-- 공통메뉴  -->
+    <header id="header">
+        <div class="nav-wrapper">
+            <a href="index.html"><h1 id="logo">예산재난포털</h1></a>
+            <div class="gnb" id="gnb">
+                <ul>
+                    <li>
+                        <a href="#">종합날씨</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-weather">
+                                <ul>
+                                    <li>
+                                        <a href="livingweather.html">
+                                            <div class="sub-icon-6">
+                                                <img src="resources/images/icon/main-menu-2-1.png" alt="생활날씨">
+                                                <img src="resources/images/icon/main-menu-2-1-hover.png" alt="생활날씨">
+                                            </div>
+                                            생활날씨</a>
+                                    </li>
+                                    <li>
+                                        <a href="rain-info.html">
+                                            <div class="sub-icon-7">
+                                                <img src="resources/images/icon/main-menu-2-2.png" alt="강우정보">
+                                                <img src="resources/images/icon/main-menu-2-2-hover.png" alt="강우정보">
+                                            </div>
+                                            강우정보</a>
+                                    </li>
+                                    <li>
+                                        <a href="snow-info.html">
+                                            <div class="sub-icon-8">
+                                                <img src="resources/images/icon/main-menu-2-3.png" alt="적설정보">
+                                                <img src="resources/images/icon/main-menu-2-3-hover.png" alt="적설정보">
+                                            </div>
+                                            적설정보</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 1depth -->
+                    <li class="on">
+                        <a href="#">생활안전정보</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-information">
+                                <ul>
+                                    <li>
+                                        <a href="information.html">
+                                            <div class="sub-icon-3">
+                                                <img src="resources/images/icon/main-menu-1-3.png" alt="재난속보">
+                                                <img src="resources/images/icon/main-menu-1-3-hover.png" alt="재난속보">
+                                            </div>
+                                            재난속보
+                                        </a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="government-info.html">하천 수위</a></li>
+                                                <li><a href="dam-info.html">댐정보</a></li>
+                                                <li><a href="fire-info.html">소방 긴급구조</a></li>
+                                                <li><a href="firecenter-info.html">소방서센터</a></li>
+                                                <li><a href="earth-info.html">지진</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-9">
+                                                <img src="resources/images/icon/main-menu-3-1.png" alt="재난안전지도">
+                                                <img src="resources/images/icon/main-menu-3-1-hover.png" alt="재난안전지도">
+                                            </div>
+                                            재난안전지도
+                                        </a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="safemap.html">안전MAP</a></li>
+                                            </ul>
+                                        </div>
+                                        
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-10">
+                                                <img src="resources/images/icon/main-menu-3-2.png" alt="재난예방정보">
+                                                <img src="resources/images/icon/main-menu-3-2-hover.png" alt="재난예방정보">
+                                            </div>
+                                            재난예방정보</a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li>
+                                                    <a href="earthquake.html">자연재난</a>
+                                                </li>
+                                                <li>
+                                                    <a href="traffic.html">사회재난</a>
+                                                </li>
+                                                <li>
+                                                    <a href="extinguisher.html">생활안전수칙</a>
+                                                </li>
+                                                <li>
+                                                    <a href="farm.html">농어촌안전</a>
+                                                </li>
+                                                <li>
+                                                    <a href="spring.html">계절별재난</a>
+                                                </li>
+                                                <li>
+                                                    <a href="baby.html">생애주기별 재난</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-11">
+                                                <img src="resources/images/icon/main-menu-3-3.png" alt="재난안전보험">
+                                                <img src="resources/images/icon/main-menu-3-3-hover.png" alt="재난안전보험">
+                                            </div>
+                                            재난안전보험</a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="insurance.html">풍수해보험</a></li>
+                                                <li><a href="safe-insurance.html">예산군 군민안전보험</a></li>
+                                                <li><a href="bicycle.html">예산군 자전거안전보험</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-12">
+                                                <img src="resources/images/icon/main-menu-3-4.png" alt="재난안전앱">
+                                                <img src="resources/images/icon/main-menu-3-4-hover.png" alt="재난안전앱">
+                                            </div>
+                                            재난안전앱</a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="safe-app.html">안전디딤돌</a></li>
+                                                <li><a href="safe-news.html">안전신문고</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 2depth -->
+                    <li>
+                        <a href="#">재난안전대책본부</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-safety">
+                                <ul>
+                                    <li>
+                                        <a href="tissue.html">
+                                            <div class="sub-icon-13">
+                                                <img src="resources/images/icon/main-menu-4-1.png" alt="대책본부 조직도 및 주요업무">
+                                                <img src="resources/images/icon/main-menu-4-1-hover.png" alt="대책본부 조직도 및 주요업무">
+                                            </div>
+                                            대책본부 조직도 및 주요업무</a>
+                                    </li>
+                                    <li>
+                                        <a href="system-1.html">
+                                            <div class="sub-icon-14">
+                                                <img src="resources/images/icon/main-menu-4-2.png" alt="재난대응 체계도">
+                                                <img src="resources/images/icon/main-menu-4-2-hover.png" alt="재난대응 체계도">
+                                            </div>
+                                            재난대응 체계도</a>
+                                    </li>
+                                    <li>
+                                        <a href="system-2.html">
+                                            <div class="sub-icon-15">
+                                                <img src="resources/images/icon/main-menu-4-3.png" alt="피해조사 및 복구계획">
+                                                <img src="resources/images/icon/main-menu-4-3-hover.png" alt="피해조사 및 복구계획">
+                                            </div>
+                                            피해조사 및 복구계획</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 3depth -->
+                    <li>
+                        <a href="#">안전게시판</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-board">
+                                <ul>
+                                    <li>
+                                        <a href="notice.html">
+                                            <div class="sub-icon-16">
+                                                <img src="resources/images/icon/main-menu-5-1.png" alt="공지사항">
+                                                <img src="resources/images/icon/main-menu-5-1-hover.png" alt="공지사항">
+                                            </div>
+                                            공지사항</a>
+                                    </li>
+                                    <li>
+                                        <a href="report.html">
+                                            <div class="sub-icon-17">
+                                                <img src="resources/images/icon/main-menu-5-2.png" alt="보도자료">
+                                                <img src="resources/images/icon/main-menu-5-2-hover.png" alt="보도자료">
+                                            </div>
+                                            보도자료</a>
+                                    </li>
+                                    <li>
+                                        <a href="education.html">
+                                            <div class="sub-icon-18">
+                                                <img src="resources/images/icon/main-menu-5-3.png" alt="교육자료">
+                                                <img src="resources/images/icon/main-menu-5-3-hover.png" alt="교육자료">
+                                            </div>
+                                            교육자료</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 4depth -->
+                </ul>
+            </div>
+        </div>        
+    </header>
+        <div class="gnb_bg"></div>
+    <section>
+        <!-- <div class="main-bg"></div> -->
+        <div class="container_wrapper">
+            <div class="visual_top_wrap-animal">
+                <div class="content-title-top">
+                    <h1>가축질병</h1>
+                </div>
+            </div>
+            <div class="content-tab-top">
+                <ul class="tab-top-nav">
+                    <li><a href="#">홈</a></li>
+                    <li><span>></span></li>
+                    <li><a href="#">재난예방정보</a></li>
+                    <li><span>></span></li>
+                    <li><a href="#">사회재난</a></li>
+                    <li><span>></span></li>
+                    <li><a>가축질병</a></li>
+                </ul>
+            </div>
+            <!-- visual top  end -->
+            <div class="sub-content">
+                <div class="content_title">
+                    <div class="earth-title" style="padding-bottom: 0;">
+                        <h1><img src="resources/images/accident/ico_animaladt.png" align="center">가축질병</h1>
+                        <div class="line"></div>
+                        <p>
+                            가축질병을 사전에 충분히 습득해서 재난이 발생하였을 때 피해를 최소화할 수 있도록 대비하시기 바랍니다.
+                        </p>
+                    </div>
+                    <div class="sub-tab-title">             
+                        <div class='tabs tabs_animate'>
+                            <div style="margin-bottom: 30px;">
+                                <div class="msfrtn_info_wrap">
+                                    <h1 class="msfrtn-title animal-title">구제역 발생시 증상은?</h1>
+                                    <div class="msfrtn-info">
+                                        <div class="msfrtn-info-img">
+                                            <img src="resources/images/accident-item/mpr_animal01_1.jpg" alt="소, 돼지 이미지" class="imgs">
+                                        </div>
+                                        <div class="msfrtn-info-txt">
+                                            <div class="msfrtn-txt">
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">소</li>
+                                                    <li>감염 후 24시간 이내에 침을 심하게 흘리고, 혀·잇몸·발굽·유두 등에서 수포(물집)가 생기며,<br>수포가 파열되면 피부가 드러나고 궤양으로 발전되기도 합니다.</li>
+                                                    <li>폐사율은 낮으나, 1주 이상 거의 먹지 못하며, 절룩거리며, 유방염이 발생되고,<br>산유량이 50%이상 격감 등의 경제적 피해를 입힙니다.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">돼지</li>
+                                                    <li>감염 후 제대로 서거나 걷지 못하는 증상이 관찰되며, 발굽의 수포가 파열되어<br>피부가 벗겨진 자리에 세균에 의한 2차 감염이 일어나면 발톱이 탈락되기도 합니다.</li>
+                                                    <li>새끼 돼지는 50% 정도 폐사하며, 때로는 어미 돼지가 죽기도 합니다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- msfrtn_info_wrap  -->
+                                <div class="msfrtn_info_wrap">
+                                    <h1 class="msfrtn-title animal-title">고병원성 조류인플루엔자(AI) 발생시 증상은?</h1>
+                                    <div class="msfrtn-info">
+                                        <div class="msfrtn-info-img">
+                                            <img src="resources/images/accident-item/mpr_animal01_2.jpg" alt="오리, 닭 이미지" class="imgs">
+                                            <img src="resources/images/accident-item/mpr_animal01_3.jpg" alt="소독중인 사람 이미지" class="imgs">
+                                            <img src="resources/images/accident-item/mpr_animal01_4.jpg" alt="차량출입금지 이미지" class="imgs">
+                                        </div>
+                                        <div class="msfrtn-info-txt">
+                                            <div class="msfrtn-txt">
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">닭</li>
+                                                    <li>감염 후 사료섭취량 저하, 침울, 졸음 증상을 보인 후, 약 4～5일 후 50%의 폐사율을 보이며,<br>이후 거의 100% 폐사</li>
+                                                    <li>벼슬·다리에 청색증을 보이며, 안면이 붇고, 호흡기 증상이 동반됨. 흰색 또는 녹색의<br>심한 설사 등 소화기 증상도 관찰됨.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">오리</li>
+                                                    <li>감염 후 사료섭취량이 줄고 호흡기 증상이 있으나, 점진적으로 회복.</li>
+                                                    <li>산란용 오리는 급격한 산란율 저하가 보통 일주일 정도 지속되다가 회복하며,<br>육용오리는 사료섭취량이 갑자기 감소되고 10% 내외의 폐사율을 보임.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">가축질병 발생 방지를 위한 농장별 조치사항은?</li>
+                                                    <li>축사와 그 주변을 청결히 하고 주기적으로 소독하세요.</li>
+                                                    <li>운반차량(가축·사료·약품·분뇨·기계류) 및 사람 등은 가급적 농장 출입을 자제토록 합니다.</li>
+                                                    <li>농장 및 축사 출입시에는 반드시 차량 소독을 실시하고, 사람은 신발을 소독한 후 출입하도록 합니다.</li>
+                                                    <li>출입한 차량에 대한 기록을 철저히 합니다.</li>
+                                                    <li>구제역, 고병원성 AI 발생국에 대한 해외여행을 삼가시고, 부득이 여행을 하여야 하는 경우에는<br>귀국 시 공항에 상주하는 검역기관에 신고하여 소독조치를 받으시고,<br>입국 후 5일 이내 축산시설 출입을 자제합니다.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">구제역 및 고병원성 AI 발생이 의심되는 경우에는?</li>
+                                                    <li>축사와 그 주변을 청결히 하고 주기적으로 소독하세요.</li>
+                                                    <li>갑자기 가축 폐사가 일어나거나 늘어나는 경우, 가까운 가축방역기관 또는 시·군·구(읍·면·동)<br>에 즉시 신고하며, 죽은 가축은 가축방역관의 지시가 있을 때까지 이동시키지 마세요.</li>
+                                                    <li>가축방역관(시·도, 시·군·구, 가축방역기관) 또는 가축방역사(가축위생방역지원본부)의<br>사람·차량·가축 등에 대한 소독 등 초기 방역조치, 검사시료 채취 및 역학조사 실시에 협조합시다.</li>
+                                                    <li>정밀검사 결과가 최종 “음성”으로 판정될 때까지 사람(축주·관리자·가족), 가축·분뇨·장비·물품<br>등에 대한 이동제한 및 차단방역 조치에 협조합시다.</li>
+                                                    <li>그 외 가축방역관 등의 방역활동에 협조해 주세요.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">구제역 및 고병원성 AI 발생이 확인된 경우에는?</li>
+                                                    <li>발생농장에 대한 방역조치(소독, 살처분 등)에 적극 협조합시다.</li>
+                                                    <li>현장 파견 가축방역관 등의 사람·차량·가축 등의 소독 등 차단방역 조치, 검사시료 채취 및<br>역학조사 실시에 적극 협조합시다.</li>
+                                                    <li>발생농장을 중심으로 설정한 방역지역(오염·위험·경계지역) 및 이동통제초소 등에 대한<br>방역조치에 적극 협조합시다.</li>
+                                                    <li>만일, 관내 모든 축산농장·작업장 등에 가축·사람·차량의 출입을 일시 금지하는<br>조치(Standstill)를 시행하는 “이동제한 명령”공고하는 경우에는 적극 협조합시다.</li>
+                                                    <li>방역지역(경계지역 내) 등에 대한 가축의 이상여부 확인을 위한 예찰전화 및 문의에 협조합시다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- msfrtn_info_wrap -->
+                                <div class="tip_wrap">
+                                    <ul>
+                                        <h2 class="msfrtn-title">Q & A</h2>
+                                        <li style="margin-left:0"><img src="resources/images/blt_check_green.png" align="center">Q. 구제역 및 고병원성 AI 의심이 가는 경우에는 ?</li>
+                                        <li>A. 임상증상이 나타나는 의사환축이 발생하면 즉시 각 시·도(시·군, 가축방역기관 : 1588-4060) 또는 농림축산검역본부(1588-9060)에 신고하세요.<br>최대한 빠른 시간내에 정밀진단이 이루어져야 하고, 즉각적인 방역대책이 실시되어 축산농가 및 축산업 등 국내산업의 피해를 최소화하여야 합니다.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- tab bar content -->
+                    <div class='media_tab tab_media_title'>
+                        <div id='media-tab-1'>
+                            <div id="media-tab-1" class="media_title"><img src="resources/images/blt_check_green.png">가축전염병 예방·대처, 격리원칙 이해</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">구제역이란, 소, 돼지, 양, 염소, 사슴 등 발굽이 둘로 갈라진 동물에게 감염되는 질병으로 전염성이 강한 질병입니다. 구제역은 사람이 감염되기는 드물지만 사람, 차량, 기구 등에 바이러스가 묻어서 전파됩니다. 그렇기 때문에 큰 피해를 입기 전 각 농가에서 구제역 백신을 100% 접종하도록 합니다. 그리고 외부인, 차량 통제 등 차단방역을 철저히 합니다. 구제역 발병 의심 농가는 즉시 119로 신고 합니다.<br><br>조류인플루엔자란 조류인플루엔자 바이러스 감염 때문에 발생하는 조류의 급성 전염병으로 닭?칠면조?오리 등 가금류에서 피해가 심하게 나타납니다. 조류인플루엔자의 인체 감염 시 38도 이상의 고열과 기침, 호흡곤란 등 호흡기 계통 이상증세가 발생합니다. 조류인플루엔자의 인체 감염을 예방하려면 닭이나 오리고기는 익혀 먹고 달걀껍데기에 입을 대는 행동은 하지 않습니다. 국내 철새 도래지를 여행할 때는 철새의 분변이 신발에 묻지 않도록 유의하며 탐방로 등에 설치된 발판 소독조를 통과해야 합니다. 해외 여행 시에는 조류인플루엔자 발생지역 여행을 자제하고 해당 지역을 방문하더라도 가금농장에는 가지 않도록 합니다.</div>
+                            </div>
+                        </div>
+                        <!-- media 1 -->
+                        <div id='media-tab-2'>
+                            <div id="media-tab-2" class="media_title"><img src="resources/images/blt_check_green.png">가축전염병 이해 및 예방</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">가축전염병 이해 및 예방<br><br>[안국] 어~ 저기 새가 있어. 가보자.<br><br>[체키] 안국아 같이 가~ 잠깐! 만지면 안 돼!<br><br>[안국] 왜~? 흥부 놀부 이야기에서 다친 새를 고쳐주면 많은 보물을 받는댔어.<br><br>[체키] 하지만 새의 깃털에는 조류인플루엔자 같은 병균이 있어서 함부로 만지면 위험해.<br><br>[엄마]  어머! 새가 다쳤잖아. 손대지 말고 잠깐만 기다려. 조금만 참아~<br><br>[안국] 근데 엄마 아까 체키가 그랬는데 조류독감이 뭐에요?<br><br>[엄마] 아이고~ 우리 안국이 똑똑하네. 조류인플루엔자는 새와 같은 동물들에게 발생하는 급성 전염병이야. 그래서 만지지 말라고 했던 거야. 야생의 새들에겐 조류인플루엔자 뿐만 아니라 다른 세균들 있을 수 있고 사람에게 전염 될 수 있어서 혹시 만졌다면 바로 손을 깨끗이 씻어야 해.<br><br>[안국] 그럼 바이러스가 있을지도 모르니 닭고기 오리고기는 먹지 말아야 해요?<br><br>[엄마] 아유~ 그게 또 걱정이야? 충분히 익혀 먹으면 괜찮아.<br><br>[안국] 아이 그럼 괜찮네.<br><br>[엄마] 하지만 닭과 같은 동물들은 조류인플루엔자에 감염되면 거의 죽게 되기 때문에 키우고 있던 농가에 큰 피해를 준단다. 모든 전염병이 그렇듯 예방이 가장 중요하지.<br><br>[안국] 그럼 전 이제 소고기랑 돼지고기만 먹을래요.<br><br>[엄마] 하하하~ 뭐라구? 소와 돼지는 또 구제역이라는 전염병을 조심해야 하는 걸.<br><br>[안국] 구제역이요? 그건 뭔데요?<br><br>[엄마] 구제역은 소나 돼지와 같이 발굽이 둘로 갈라진 동물들이 걸리는 전염병이야. 코나 발굽사이, 혀 등에 수포가 생기고 심하게 앓거나 죽을 수도 있어. 이 병은 특별한 치료법이 없어. 공기 등 여러 요소로 전파 될 수도 있어서 예방에 각별히 신경을 써야 해.<br><br>[안국] 그럼 난 이제 뭘 먹어요? 고기 고기 좋은데...<br><br>[엄마] 너무 걱정 하지 마. 우리 안국이가 병원균으로부터 안전하려면 손 씻기 같은 개인위생에 철저 하면 안전할 거야. <br><br>[안국] 그럼 다 먹을 수 있어요?<br><br>[엄마] 당연하지. 오늘 저녁은 불고기로 할까?<br><br>[안국] 네~ 좋아요. 엄마 최고!</div>
+                            </div>
+                        </div>
+                        <!-- media 2 -->
+                        <ul class='media-tab'>
+                            <li class="active-2"><a href="#media-tab-1">1</a></li>
+                            <li><a href="#media-tab-2">2</a></li>
+                          </ul>
+                      </div>
+        
+                </div>
+                    
+                    <script>
+                        $(function(){                
+                            $('.tabs').tabslet({
+                              mouseevent: 'click',
+                              attribute: 'href',
+                              animation: true
+                            });
+                        });
+                        $(function(){                
+                            $('.media_tab').tabslet({
+                            mouseevent: 'click',
+                            attribute: 'href'
+                            });
+                        });
+                    </script>
+                </div>
+        
+            </div>
+            <!-- content_wrap end  -->
+        </div>
+        <div class="quickmenu accident-quick">
+            <ul>
+                <li>
+                    <a href="traffic.html">
+                        <img src="resources/images/accident/ico_tfcacd_w.png" alt="교통사고">교통사고
+                    </a>
+                </li>
+                <li>
+                    <a href="fire.html">
+                        <img src="resources/images/accident/ico_frfire_w.png" alt="화재사고">화재사고
+                    </a>
+                </li>
+                <li>
+                    <a href="child.html">
+                        <img src="resources/images/accident/ico_childadt_w.png" alt="어린이안전사고">어린이<br>안전사고
+                    </a>
+                </li>
+                <li>
+                    <a href="water.html">
+                        <img src="resources/images/accident/ico_wateradt_w.png" alt="수난사고">수난사고
+                    </a>
+                </li>
+                <li class="hv">
+                    <a href="animal.html">
+                        <img src="resources/images/accident/ico_animaladt_w.png" alt="가축질병">가축질병
+                    </a>
+                </li>
+                <li>
+                    <a href="dam.html">
+                        <img src="resources/images/accident/ico_dam_w.png" alt="댐 붕괴">댐 붕괴
+                    </a>
+                </li>
+                <li>
+                    <a href="infection.html">
+                        <img src="resources/images/accident/ico_infection_w.png" alt="감염병 예방">감염병 예방
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- <script type="text/javascript">
+            $(function(){
+
+                $('.quickmenu li:nth-child(1)').mouseover(function(){
+                    $('.quickmenu li:nth-child(1) img').attr('src','resources/images/accident/ico_tfcacd_w.png');
+                });
+                $('.quickmenu li:nth-child(1)').mouseleave(function(){
+                    $('.quickmenu li:nth-child(1) img').attr('src','resources/images/accident/ico_tfcacd_r.png');
+                });
+
+                $('.quickmenu li:nth-child(2)').mouseover(function(){
+                    $('.quickmenu li:nth-child(2) img').attr('src','resources/images/accident/ico_frfire_w.png');
+                });
+                $('.quickmenu li:nth-child(2)').mouseleave(function(){
+                    $('.quickmenu li:nth-child(2) img').attr('src','resources/images/accident/ico_frfire_r.png');
+                });
+
+                $('.quickmenu li:nth-child(3)').mouseover(function(){
+                    $('.quickmenu li:nth-child(3) img').attr('src','resources/images/accident/ico_childadt_w.png');
+                });
+                $('.quickmenu li:nth-child(3)').mouseleave(function(){
+                    $('.quickmenu li:nth-child(3) img').attr('src','resources/images/accident/ico_childadt_r.png');
+                });
+                
+                $('.quickmenu li:nth-child(4)').mouseover(function(){
+                    $('.quickmenu li:nth-child(4) img').attr('src','resources/images/accident/ico_wateradt_w.png');
+                });
+                $('.quickmenu li:nth-child(4)').mouseleave(function(){
+                    $('.quickmenu li:nth-child(4) img').attr('src','resources/images/accident/ico_wateradt_r.png');
+                });
+
+                $('.quickmenu li:nth-child(6)').mouseover(function(){
+                    $('.quickmenu li:nth-child(6) img').attr('src','resources/images/accident/ico_dam_w.png');
+                });
+                $('.quickmenu li:nth-child(6)').mouseleave(function(){
+                    $('.quickmenu li:nth-child(6) img').attr('src','resources/images/accident/ico_dam_r.png');
+                });
+
+                $('.quickmenu li:nth-child(7)').mouseover(function(){
+                    $('.quickmenu li:nth-child(7) img').attr('src','resources/images/accident/ico_infection_w.png');
+                });
+                $('.quickmenu li:nth-child(7)').mouseleave(function(){
+                    $('.quickmenu li:nth-child(7) img').attr('src','resources/images/accident/ico_infection_r.png');
+                });
+            });
+
+        </script> -->
+    </section>
+    <!-- TOP버튼 -->
+    <div class="quick">
+        <button type="button" class="go_top_btn" style="display: inline-block;"><span>위로</span></button>
+    </div>
+
+    <script>
+        $(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 500) {
+                    $('.quick').fadeIn();
+                } else {
+                    $('.quick').fadeOut();
+                }
+            });
+            
+            $(".quick").click(function() {
+                $('html, body').animate({
+                    scrollTop : 0
+                }, 400);
+                return false;
+            });
+        });
+    </script>
+    <!-- TOP버튼 끝 -->
+    <footer>
+        <div id="footer">
+            <div class="footer-content">
+                <div class="foot-logo">
+                    <img src="resources/images/logo.png" alt="로고">
+                </div>
+                <div class="footer-copyright">
+                    <p>(우) 32435 충남 예산군 예산읍 군청로 22 Tel 041-339-7114 / Fax 041-339-7229</p>
+                    <p>COPYRIGHT ⓒ YESAN COUNTRY.ALL RIGHTS RESERVED</p>
+                </div>
+                <div class="list-box"></div>
+            </div>
+        </div>
+    </footer>
+    <!-- JS -->
+    <script type="text/javascript" src="resources/javascripts/vendor/jquery.tabslet.min.js"></script>
+    <script type="text/javascript" src="resources/javascripts/vendor/rainbow-custom.min.js"></script>
+    <script type="text/javascript" src="resources/javascripts/vendor/jquery.anchor.js"></script>
+    <script src="resources/javascripts/initializers.js"></script>
+    <!-- JS ends -->
+    <!-- <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script> -->
+    <script type="text/javascript" src="resources/js/main.js"></script>
+</body>
+</html>

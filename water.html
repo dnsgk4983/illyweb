@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta property=”og:image” content="resources/images/POZ_202007131009436070.jpg">
+    <meta property=”og:image:width” content="600">
+    <meta property=”og:image:height” content="400"> 
+    <meta name="author" content="예산재난포털" />
+    <meta name="Keywords" content="예산재난포털" />
+    <title>예산군청</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="shortcut icon" href="resources/images/fa_gDi_icon.ico">
+    <link rel="stylesheet" href="resources/css/commmon/common.css">
+    <link rel="stylesheet" href="resources/css/layout.css">
+        <!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+</head>
+<body>
+    <!-- 공통메뉴  -->
+    <header id="header">
+        <div class="nav-wrapper">
+            <a href="index.html"><h1 id="logo">예산재난포털</h1></a>
+            <div class="gnb" id="gnb">
+                <ul>
+                    <li>
+                        <a href="#">종합날씨</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-weather">
+                                <ul>
+                                    <li>
+                                        <a href="livingweather.html">
+                                            <div class="sub-icon-6">
+                                                <img src="resources/images/icon/main-menu-2-1.png" alt="생활날씨">
+                                                <img src="resources/images/icon/main-menu-2-1-hover.png" alt="생활날씨">
+                                            </div>
+                                            생활날씨</a>
+                                    </li>
+                                    <li>
+                                        <a href="rain-info.html">
+                                            <div class="sub-icon-7">
+                                                <img src="resources/images/icon/main-menu-2-2.png" alt="강우정보">
+                                                <img src="resources/images/icon/main-menu-2-2-hover.png" alt="강우정보">
+                                            </div>
+                                            강우정보</a>
+                                    </li>
+                                    <li>
+                                        <a href="snow-info.html">
+                                            <div class="sub-icon-8">
+                                                <img src="resources/images/icon/main-menu-2-3.png" alt="적설정보">
+                                                <img src="resources/images/icon/main-menu-2-3-hover.png" alt="적설정보">
+                                            </div>
+                                            적설정보</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 1depth -->
+                    <li class="on">
+                        <a href="#">생활안전정보</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-information">
+                                <ul>
+                                    <li>
+                                        <a href="information.html">
+                                            <div class="sub-icon-3">
+                                                <img src="resources/images/icon/main-menu-1-3.png" alt="재난속보">
+                                                <img src="resources/images/icon/main-menu-1-3-hover.png" alt="재난속보">
+                                            </div>
+                                            재난속보
+                                        </a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="government-info.html">하천 수위</a></li>
+                                                <li><a href="dam-info.html">댐정보</a></li>
+                                                <li><a href="fire-info.html">소방 긴급구조</a></li>
+                                                <li><a href="firecenter-info.html">소방서센터</a></li>
+                                                <li><a href="earth-info.html">지진</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-9">
+                                                <img src="resources/images/icon/main-menu-3-1.png" alt="재난안전지도">
+                                                <img src="resources/images/icon/main-menu-3-1-hover.png" alt="재난안전지도">
+                                            </div>
+                                            재난안전지도
+                                        </a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="safemap.html">안전MAP</a></li>
+                                            </ul>
+                                        </div>
+                                        
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-10">
+                                                <img src="resources/images/icon/main-menu-3-2.png" alt="재난예방정보">
+                                                <img src="resources/images/icon/main-menu-3-2-hover.png" alt="재난예방정보">
+                                            </div>
+                                            재난예방정보</a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li>
+                                                    <a href="earthquake.html">자연재난</a>
+                                                </li>
+                                                <li>
+                                                    <a href="traffic.html">사회재난</a>
+                                                </li>
+                                                <li>
+                                                    <a href="extinguisher.html">생활안전수칙</a>
+                                                </li>
+                                                <li>
+                                                    <a href="farm.html">농어촌안전</a>
+                                                </li>
+                                                <li>
+                                                    <a href="spring.html">계절별재난</a>
+                                                </li>
+                                                <li>
+                                                    <a href="baby.html">생애주기별 재난</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-11">
+                                                <img src="resources/images/icon/main-menu-3-3.png" alt="재난안전보험">
+                                                <img src="resources/images/icon/main-menu-3-3-hover.png" alt="재난안전보험">
+                                            </div>
+                                            재난안전보험</a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="insurance.html">풍수해보험</a></li>
+                                                <li><a href="safe-insurance.html">예산군 군민안전보험</a></li>
+                                                <li><a href="bicycle.html">예산군 자전거안전보험</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-12">
+                                                <img src="resources/images/icon/main-menu-3-4.png" alt="재난안전앱">
+                                                <img src="resources/images/icon/main-menu-3-4-hover.png" alt="재난안전앱">
+                                            </div>
+                                            재난안전앱</a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="safe-app.html">안전디딤돌</a></li>
+                                                <li><a href="safe-news.html">안전신문고</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 2depth -->
+                    <li>
+                        <a href="#">재난안전대책본부</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-safety">
+                                <ul>
+                                    <li>
+                                        <a href="tissue.html">
+                                            <div class="sub-icon-13">
+                                                <img src="resources/images/icon/main-menu-4-1.png" alt="대책본부 조직도 및 주요업무">
+                                                <img src="resources/images/icon/main-menu-4-1-hover.png" alt="대책본부 조직도 및 주요업무">
+                                            </div>
+                                            대책본부 조직도 및 주요업무</a>
+                                    </li>
+                                    <li>
+                                        <a href="system-1.html">
+                                            <div class="sub-icon-14">
+                                                <img src="resources/images/icon/main-menu-4-2.png" alt="재난대응 체계도">
+                                                <img src="resources/images/icon/main-menu-4-2-hover.png" alt="재난대응 체계도">
+                                            </div>
+                                            재난대응 체계도</a>
+                                    </li>
+                                    <li>
+                                        <a href="system-2.html">
+                                            <div class="sub-icon-15">
+                                                <img src="resources/images/icon/main-menu-4-3.png" alt="피해조사 및 복구계획">
+                                                <img src="resources/images/icon/main-menu-4-3-hover.png" alt="피해조사 및 복구계획">
+                                            </div>
+                                            피해조사 및 복구계획</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 3depth -->
+                    <li>
+                        <a href="#">안전게시판</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-board">
+                                <ul>
+                                    <li>
+                                        <a href="notice.html">
+                                            <div class="sub-icon-16">
+                                                <img src="resources/images/icon/main-menu-5-1.png" alt="공지사항">
+                                                <img src="resources/images/icon/main-menu-5-1-hover.png" alt="공지사항">
+                                            </div>
+                                            공지사항</a>
+                                    </li>
+                                    <li>
+                                        <a href="report.html">
+                                            <div class="sub-icon-17">
+                                                <img src="resources/images/icon/main-menu-5-2.png" alt="보도자료">
+                                                <img src="resources/images/icon/main-menu-5-2-hover.png" alt="보도자료">
+                                            </div>
+                                            보도자료</a>
+                                    </li>
+                                    <li>
+                                        <a href="education.html">
+                                            <div class="sub-icon-18">
+                                                <img src="resources/images/icon/main-menu-5-3.png" alt="교육자료">
+                                                <img src="resources/images/icon/main-menu-5-3-hover.png" alt="교육자료">
+                                            </div>
+                                            교육자료</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 4depth -->
+                </ul>
+            </div>
+        </div>        
+    </header>
+        <div class="gnb_bg"></div>
+    <section>
+        <!-- <div class="main-bg"></div> -->
+        <div class="container_wrapper">
+            <div class="visual_top_wrap-water">
+                <div class="content-title-top">
+                    <h1>수난사고</h1>
+                </div>
+            </div>
+            <div class="content-tab-top">
+                <ul class="tab-top-nav">
+                    <li><a href="#">홈</a></li>
+                    <li><span>></span></li>
+                    <li><a href="#">재난예방정보</a></li>
+                    <li><span>></span></li>
+                    <li><a href="#">사회재난</a></li>
+                    <li><span>></span></li>
+                    <li><a>수난사고</a></li>
+                </ul>
+            </div>
+            <!-- visual top  end -->
+            <div class="sub-content">
+                <div class="content_title">
+                    <div class="earth-title">
+                        <h1><img src="resources/images/accident/ico_wateradt.png" align="center">수난사고</h1>
+                        <div class="line"></div>
+                        <p>
+                            물놀이 활동시 지켜야할 10대 안전수칙과 사고 시 장소별, 상황별 대처요령을 알려드립니다.<br>
+                            또한 물놀이 시 침수·고립지역에서의 행동요령을 알려드리니 사전에 숙지하셔서 큰 피해에 대비합시다.
+                        </p>
+                    </div>
+                    <div class="sub-tab-title">             
+                        <div class='tabs tabs_animate'>
+                            <div style="margin-bottom: 50px;">
+                                <div class="msfrtn_info_wrap">
+                                    <h1 class="msfrtn-title">수난사고 발생 시 이렇게 행동합니다.</h1>
+                                    <div class="msfrtn-info">
+                                        <div class="msfrtn-info-img">
+                                            <img src="resources/images/accident-item/mpr_water01_1.jpg" alt="하천 이미지" class="imgs">
+                                        </div>
+                                        <div class="msfrtn-info-txt">
+                                            <div class="msfrtn-txt">
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">하천이나 계곡물을 건널 때</li>
+                                                    <li>물결이 완만한 장소를 선정하여, 될 수 있으면 바닥을 끌듯이 이동하는 것이 안전하다.</li>
+                                                    <li>시선은 건너편 강변 둑을 바라보고 건너야 한다.</li>
+                                                    <li>이동방향에 돌이 있으면 될 수 있으면 피해서 가는 것이 안전하다.</li>
+                                                    <li>지팡이 등으로 수심을 재면서 이동한다.(지팡이는 약간 상류 쪽을 짚는다.)</li>
+                                                    <li>물의 흐름에 따라 이동하되 물살이 셀 때는 물결을 약간 거슬러 이동한다.</li>
+                                                </ul>
+                                                <ul class="mg0">
+                                                    <li class="tab-sub-main-txt">무릎 이상의 깊은 급류를 건널 때</li>
+                                                    <li>건너편 하류 쪽으로 밧줄(로프)을 설치하고 한 사람씩 건너도록 한다.</li>
+                                                    <li>밧줄은 물위로 설치하고 밧줄이 없을 때에는 여러 사람이 손을 맞잡거나 어깨를 지탱하고 물 흐르는<br> 방향과 나란히 서서 건너도록 한다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="msfrtn_info_wrap">
+                                    <h1 class="msfrtn-title">물에 빠졌을 때 이렇게 행동합니다.</h1>
+                                    <div class="msfrtn-info">
+                                        <div class="msfrtn-info-img">
+                                            <img src="resources/images/accident-item/mpr_water01_2.jpg" alt="물에 빠진 사람 이미지" class="imgs">
+                                            <img src="resources/images/accident-item/mpr_water01_3.jpg" alt="수영 금지 이미지" class="imgs">
+                                        </div>
+                                        <div class="msfrtn-info-txt">
+                                            <div class="msfrtn-txt">
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">물놀이 시 물에 빠진 경우</li>
+                                                    <li>건너편 하류 쪽으로 밧줄(로프)을 설치하고 한 사람씩 건너도록 한다.</li>
+                                                    <li>밧줄은 물위로 설치하고 밧줄이 없을 때에는 여러 사람이 손을 맞잡거나 어깨를 지탱하고 물 흐르는<br> 방향과 나란히 서서 건너도록 한다.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">선박(보트) 전복 등으로 물에 빠진 경우</li>
+                                                    <li>물 밖으로 나온다.(공기 중에서 보다 물속에서의 체온손실이 많다.)</li>
+                                                    <li>옷을 많이 입는다. (물에 빠졌을 때 옷을 벗어서는 안된다. 모직 옷을 두겹 정도 더 껴입으면 열손실이<br>속옷만 입었을 때보다 1/4감소한다.)</li>
+                                                    <li>체온유지를 위해 수영이나 불필요한 동작은 하지 않는다.</li>
+                                                    <li>수온 ℃에서 보통 정상적인 성인일 경우 수영가능 거리는 약 1해리(1,852m) 정도이다.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">파도가 갑자기 높아져 위험할 때</li>
+                                                    <li>물을 안 먹으려고 애쓰기 보다는 다소 마시게 되더라도 체력소모를 줄이도록 편안한 상태를 유지하는것이<br> 안전하다.</li>
+                                                    <li>머리는 수면상 위에 내밀고 큰 파도가 덮칠 때는 깊이 잠수 할 수록안전하다.</li>
+                                                    <li>체력이 다하여 움직일 수 없거나 지쳤을 때 배영, 선헤엄 등으로 휴식을 취하면서 파도에 몸을 맡기는 것이<br>안전하다.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">수초에 감겼을 때</li>
+                                                    <li>수초에 감겼을 때는 부드럽게 서서히 팔과 다리를 움직여 풀어야 하고 만약 물 흐름이 있으면 흐름에 맡기고<br>잠깐만 조용히 기다리면 감긴 수초가 헐거워지므로 이때 털어버리듯이 풀고 수상으로 나오는 것이 안전하다.</li>
+                                                    <li>놀라서 발버둥 칠 경우 오히려 더 휘감겨서 위험에 빠질 수 있으므로 침착하게 여유를 가지고 호흡하며,<br>서서히 부드럽게 몸을 수직으로 움직이면서 꾸준히 헤엄쳐 나오는 것이 안전하다.</li>
+                                                    <li>체력이 다하여 움직일 수 없거나 지쳤을 때 배영, 선헤엄 등으로 휴식을 취하면서 파도에 몸을 맡기는 것이<br> 안전하다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="msfrtn_info_wrap">
+                                    <h1 class="msfrtn-title">의식없는 사고자를 구했을 경우 이렇게 행동합니다.</h1>
+                                    <div class="msfrtn-info">
+                                        <div class="msfrtn-info-txt">
+                                            <div class="msfrtn-txt">
+                                                <ul class="pd0">
+                                                    <li class="tab-sub-main-txt">구조직후 응급처치</li>
+                                                    <li>구조요원 또는 119에 아직 신고 되어 있지 않다면 즉시 신고한다.</li>
+                                                    <li>가장먼저 인공호흡을 실시한다.(구조하면서 수중에서도 곧바로 실시해야 한다.)</li>
+                                                    <li>물을 빼고자 복부나 등을 누르는 행위는 하지 않는다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- msfrtn_info_wrap  -->
+                                <div class="tip_wrap">
+                                    <ul>
+                                        <p style="margin-left:0;"><img src="resources/images/blt_check.png" align="center">사고자의 위속에 있는 물과 음식물을 오히려 역류시켜 기도를 막을 수 있으며, 구토물이 기도를 통해 페에 흡수될 가능성이 있기 때문에 물을 빼는 것이 더 위험 할 수 있다.
+                                            <br><span style="padding-left:50px">또한 인공호흡이 늦어지게 되므로 그만큼 사고자의 소생가능성이 작아지며, 이후의 응급처치 요령은 일반적인 심폐소생술과 동일하다.</span>
+                                        </p>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="msfrtn_info_wrap">
+                                    <h1 class="msfrtn-title">체온손실 응급처치</h1>
+                                    <div class="msfrtn-info">
+                                        <div class="msfrtn-info-txt">
+                                            <div class="msfrtn-txt">
+                                                <ul class="pd0">
+                                                    <li>머리, 목 , 가슴, 사타구니 등의 체온 손실이 많다.</li>
+                                                    <li>환자를 마른상태의 따뜻한 곳으로 옮긴다.</li>
+                                                    <li>젖은 옷을 벗기고 따뜻한 물병이나 따뜻한 물에 적신 수건으로 가슴부위를 따뜻하게 해준다.</li>
+                                                    <li>몸을 담요나 슬리핑백으로 감싸주고 추운 곳에 노출되지 않도록 하며 머리와 목을 따뜻하게 감싸준다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- msfrtn_info_wrap  -->
+                                <div class="tip_wrap">
+                                    <ul>
+                                        <h2 style="margin-left:0"><img src="resources/images/blt_check_green.png" align="center">체온손실에 따른 신체증상</h2>
+                                        <li>체온이 떨어지면 피부에서 차가운 기운을 느끼기 시작하며, 혈액순환이 감소되고 신체의 주요 기관의 활동이 저하된다.</li>
+                                        <li>혈액순환이 잘 되지 않으면 먼저 손과 발이 차가워지는 것을 느끼게 된다. 무의식적으로 근육의 떨림이 시작되고, 몸에서 열이 발산된다.</li>
+                                        <li>체온이 더 떨어지면 신체내부가 추워지기 시작하고, 신체외부의 혈액의 흐름이 더욱 감소되면 살아있는 기관의 온도유지를 위해 신체는 격렬한 방법을 택하게 된다. </li>
+                                        <li>떨림이 감소되거나 정지되며 내부기관 조직에 영향을 미치기 시작한다.</li>
+                                        <li>뇌가 차가워 지면 신체조종이 곤란하며,
+                                            의식을 잃게되고 즉각적이고 정확한 처치를 하지 않으면 생명을 잃게 된다.</li>
+                                    </ul>
+                                </div>
+                                <!-- msfrtn_info_wrap  -->
+                                <div class="msfrtn_info_wrap">
+                                    <h1 class="msfrtn-title">보트 전복 등에 따른 대처</h1>
+                                    <div class="msfrtn-info">
+                                        <div class="msfrtn-info-img">
+                                            <img src="resources/images/accident-item/mpr_water01_5.jpg" alt="선박 좌초 이미지" class="imgs">
+                                            <img src="resources/images/accident-item/mpr_water01_6.jpg" alt="화재 진화 이미지" class="imgs">
+                                            <img src="resources/images/accident-item/mpr_water01_7.jpg" alt="구명조끼 이미지" class="imgs">
+                                        </div>
+                                        <div class="msfrtn-info-txt">
+                                            <div class="msfrtn-txt">
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">좌초시</li>
+                                                    <li>즉시 기관을 정지하고, 좌초된 부분의 손상유무 및 침수가 되는지 확인한다.</li>
+                                                    <li>침수가 되지 않을 시 : 주변의 저질이나 수심을 확인 후 보트 훅 또는 에비노 등을 이용하여 수심 깊은 곳으로<br>이동 후 기관을 사용 이탈한다.</li>
+                                                    <li>침수 시 모든 수단(빌지펌프, 양동이, 물바가지)을 동원하여 물을 배출하고 파손부위 응급처치 자력으로<br>빠져 나갈 수 없을 때는 관계기관에 구조요청을 한다.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">충돌 시</li>
+                                                    <li>즉시 기관을 정지하고 인명안전 및 체의 손상장소와 정도를 확인한다.</li>
+                                                    <li>침수 시 응급처치 후 침수할 염려가 있을 시 타 선벅에 승선자를 이동조치한다.</li>
+                                                    <li>구조요청을 하고, 사후 사고처리를 위해 충돌장소, 일시, 상대선의 손상정도,</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">어망 및 부유물 등에 의한 사고 시</li>
+                                                    <li>즉시 기관을 정지하고, 선체 나 추진기(프로펠러)에 어망이나 로프가 감겼을 시 보트 훅 또는 추진기를 들어 올려<br>감긴 것을 처리 후 이탈 소유자 및 유관기관에 통보한다.</li>
+                                                    <li>제거 할 수 없는 경우 구조요청을 한다.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">정박 중 화재발생 시</li>
+                                                    <li>'불이야' 하며 승선원 및 주변선박에 상황을 전파한다.</li>
+                                                    <li>소화기, 모포 등으로 초기진화 하며, 진화가 불가능한 경우 관계기관에 화재신고를 한다.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">항해 중 화재발생 시</li>
+                                                    <li>'불이야' 하며 승선원 및 주변선박에 상황을 전파한다.</li>
+                                                    <li>발화지점이 풍하 쪽으로 향하도록 조종 후, 기관을 정지힌다.</li>
+                                                    <li>소화기, 모포 등으로 초기진화 및 연료 등 위험한 것을 발화지점에서 멀리 이동 시킨다.</li>
+                                                    <li>수심이 낮은 곳으로 좌초시키거나 접안 후 소화작업을 실시한다.</li>
+                                                    <li>불이 선박전체로 확대되면 안전장비 착용 퇴선 하여 보트 가까운 곳에서 구조를 기다린다.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">정박 중 침수 시</li>
+                                                    <li>침수개소를 확인 및 침수상황을 확인한다.</li>
+                                                    <li>침수개소의 손상 상황에 적합한 방수 및 파손부위를 응급처치 한다.</li>
+                                                    <li>배수 작업실시 및 응급처치 불가한 경우 유관기관에 요청한다.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">항해 중 침수 시</li>
+                                                    <li>기관을 중립위치에 놓고 침수장소 - 상황 및 파손 정도 등을 확인한다.</li>
+                                                    <li>침수개소를 확인하면 침수장소가 풍하 측으로 향하도록 조종 한다.</li>
+                                                    <li>파손부위에 침수구에 나무(쐐기)나 헝겊을 채워 파손부의를 막는다.</li>
+                                                    <li>파손부위가 큰 경우 모든 수단(빌지펌프, 양동이, 물바가지)을 동원하여 물을 배출하고 파손부위 응급처치<br> 및 구조요청을 한다.</li>
+                                                    <li>응급처치 후 적절한 속력으로 가까운 선착장으로 이동한다.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">갯바위 등 바다낚시 사고예방 요령</li>
+                                                    <li>구명조끼를 착용한다.</li>
+                                                    <li>기상 상황을 수시로 확인하고 휴대폰 등을 활용하여 들물 시간 알람을 설정 미리 사고에 대응할 수 있도록 한다.</li>
+                                                    <li>낚시 도중 수시로 주변 상황을 살핀다.</li>
+                                                    <li>갯바위 등에 미끄러지지 않도록 신발(안전화)을 착용한다.</li>
+                                                    <li>출입이 금지된 장소에는 절대로 들어가지 않는다.</li>
+                                                    <li>위험에 처했을 때 도움을 받을 수 있도록 호루라기나 랜턴 등을 휴대하고 체온 보온용으로 담요를 준비하는<br> 것도 좋다.</li>
+                                                    <li>가족과 주변 사람에게 행선지와 일정을 미리 알려준다.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">갯벌 해루질 사고예방 요령</li>
+                                                    <li>구명조끼를 착용한다.</li>
+                                                    <li>진입로로부터 멀리 떨어진 곳은 출입하지 않는다.</li>
+                                                    <li>절대로 혼자 들어가지 않는다.</li>
+                                                    <li>들물 시간을 확인하고 휴대폰 등에 알람을 설정하여 미리 대응할 수 있도록 한다.</li>
+                                                    <li>갑자기 안개가 끼면 밀물 시간과는 관계없이 즉시 갯벌에서 나온다.</li>
+                                                    <li>갯골을 넘어가지 않는다.</li>
+                                                    <li>갯벌에 발이 깊이 빠진 경우 반대방향으로 엎드려 기어 나오며, 옆 사람의 도움을 받는다.</li>
+                                                    <li>맨발로 들어가지 않는다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tip_wrap">
+                                        <ul>
+                                            <h2 style="margin-left:0;"><img src="resources/images/blt_check_green.png" align="center">수난사고</h2>
+                                            <li>상식 준비운동을 한 다음 다리부터 서서히 들어가 몸을 순환시키고 수온에 적응시켜 수영하기 시작한다.</li>
+                                            <li>초보자는 수심이 얕다고 안심해서는 안된다. 배 혹은 떠 있는 큰 물체 밑을 헤엄쳐 나간다는 것은 위험하므로 하지 않는다.</li>
+                                            <li>통나무 같은 의지물이나 부유구, 튜브 등을 믿고 자신의 능력 이상 깊은 곳으로 나가지 않는다. 자신의 체력과 능력에 맞게 물놀이를 한다.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="msfrtn_info_wrap">
+                                    <div class="msfrtn-info">
+                                        <div class="msfrtn-info-img">
+                                            <img src="resources/images/accident-item/mpr_water01_5.jpg" alt="선박 좌초 이미지" class="imgs">
+                                        </div>
+                                        <div class="msfrtn-info-txt">
+                                            <div class="msfrtn-txt">
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">고립 지역에서의 행동</li>
+                                                    <li>자기 체온 유지에 관심을 둬야 하며 무리한 탈출 행동은 삼간다.</li>
+                                                    <li>가능한 모든 방법을 이용하여 구조신호를 보낸다.</li>
+                                                    <li>가능하다면 라디오 방송을 청취하여 상황에 대처한다.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">계곡에서 야영지를 선택할 때</li>
+                                                    <li>계곡에서 야영지를 선택할 때는 물이 흘러간 가장 높은 흔적보다 위쪽에 있도록 하고, 대피 할 수 있는<br>고지대와 대피로가 확보된 곳을 선정하며 낙석과 산사태 위험이 없는 곳으로 선택한다.</li>
+                                                    <li>물놀이사고 및 안전사고 발생 때는 즉시119(해상122)로 신고한다.</li>
+                                                </ul>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- tab bar content -->
+                    <div class='media_tab tab_media_title'>
+                 
+        
+                        <div id='media-tab-1'>
+                            <div id="media-tab-1" class="media_title"><img src="resources/images/blt_check_green.png">내가 지키는 내 생명, 생존수영 배우기</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">너울성 파도에 휩쓸린 초등학교 6학년 남학생이 13분만에 극적으로 구조되었습니다. 물 위에 오래 떠 있는 방법인 생존수영덕분.<br><br>당시 2미터가 넘는 파도 속에서도 학교에서 배운 생존수영법을 활용해 침착하게 구조를 기다린 것으로 알려져 있습니다.<br><br>[해경] 헤엄을 쳐서 학생에게 도착했을 때 생존수영법이라고 하늘을 보고 다리를 넓게 벌리는 그 자세를 취하고...<br><br>[경찰] 이솔아. 바다에서 배를 타고 가다가 사고가 났을 때 어떻게 되는지 알어?<br><br>[이솔] 네. 알죠. 배에서 사고가 났을 때에는 구명조끼를 챙겨서 비상소집장소에 있다가 탈출해야 할 경우 구명조끼를 입고 구명뗏목에 탑승해야 해요. <br><br>[해경] 정말 잘 알고 있구나. 무엇보다 당황하지 않고 침착하게 대응하는 것이 중요해.<br><br>[이솔] 그럼 구명조끼 없이 바다에 빠졌을 땐 어떻게 해야 해요?<br><br>[해경] 그럴 때 필요한게 생존수영이야. 오늘 선생님이랑 생존수영에 대해서 배워보자.<br><br>[어린이들] 네.<br><br>[해경] 생존수영을 배우는 이유는 물놀이나 체력을 기르는게 목적이 아니라 갑작스런 해상사고를 당했을 때 구조대가 도착할 때까지 버틸 수 있는 능력을 기르는게 주 목적이야. <br><br>생존수영을 연습하기 전 물에서 발차기와 물놀이 등 여러가지 활동을 통해 물에 대한 적응력을 높일 수 있도록 합니다. <br><br>[해경] 물과 친해졌으니까 호흡하는 방법을 배워보자. 코에 물이 들어가면 어떻게 될까?<br><br>[이솔] 콜록콜록 기침해요<br><br>[해경] 맞아 생존수영에서 하는 호흡법도 똑같애. 생존수영을 하면서 코에 물이 들어가면 당황하게 되겠지? 호흡법만 제대로 익혀도 물에 빠졌을 때 당황하지 않고 잘 대처할 수 있어. 자 선생님과 한번 해 볼까?<br><br>음파 호흡법은 육상에서와 달리 숨을 들어마실 때와 내실 때를 구분해 물 밖에서는 입으로 들이마시고 물 속에서는 코로 숨을 내쉽니다. <br><br>[해경] 얘들아. 우리 몸에는 두 개의 큰 공기주머니가 있어. 어디에 있지? 그건 작은 풍선이네. <br><br>우리 몸 속에는 폐라는 두 개의 공기주머니가 있어서 숨을 크게 들이마시면 몸을 위로 띄울 수 있게 해 준단다. <br><br>자 그럼 생존수영법 중에서 가장 쉽게 배울 수 있는 누워 뜨기에 대해서 배워볼까?<br><br>누워뜨기는 가슴과 허리를 펴고 시선을 하늘을 응시하며 물위에 누워서 떠있는 자세입니다. 몸에 힘을 뺀 상태로 귀가 수면에 잠기도록 눕고 양팔은 넓게 벌려주어야 몸이 가라앉는 것을 방지할 수 있습니다.<br><br>처음에는 구명조끼를 착용하고 수영장 풀 벽면에 발을 가볍게 올려 연습을 하는 등 올바른 자세를 연습하도록 합니다.<br><br>다음으로 부유물을 안고 물 위에 누워뜨는 연습을 합니다. 이 때 서서히 부유물에 의지하는 힘을 빼면 몸의 부력으로 물 위에 뜰 수 있습니다.<br><br>맨 몸 누워뜨기는 음파 호흡을 통해 폐에 공기를 채우고 몸에 힘을 뺀 상태에서 천천히 머리 가슴 다리 순으로 물에 뜰 수 있도록 합니다.<br><br>누워뜨기가 익숙해지면 스컬링과 발차기를 하여 이동하는 연습을 실시합니다.<br><br>생존수영을 할 때에는 해상에 파도나 물결로 인해 코로 물이 들어가는 것을 방지하고 침착하게 침착하게 대처하기 위하여 앞서 배운 음파 호흡법을 지속적으로 유지하도록 합니다. <br><br>해상에서 탈출시에는 구명조끼를 꼭 착용하여야 하며 없을 때에는 과자봉지나 스티로폼 등 부력이 있는 물건을 활용해야 합니다.<br><br>구명조끼가 없이 물에 뛰어들어야 할 경우나 갑작스럽게 물에 빠진 경우에는 당황하지 않고 수면 위로 부상한 뒤 누워뜨기 자세를 취해야 합니다. <br><br>실제 상황을 대비하여 누워뜨기를 응용한 연습을 실시하도록 합니다. <br><br>생존수영은 바다에서 자신의 생명을 지키기 위한 최후의 수단입니다. 지금까지 배워본 생존수영을 통해 물에 대한 두려움을 극복하고 자신의 생명을 지킬 수 있는 능력을 길러보는 건 어떨까요??<br><br>[해경] 올바른 교육은 위급한 상황에서 소중한 생명을 지킵니다. 생존수영법과 구조법을 통해 타인과 자신의 안전을 지키기 바랍니다. <br><br>[어린이1] 친구들과 함께 생존수영을 배우니 쉽고 재미있었어요<br><br>[어린이2] 튜브 없이 맨 몸로 누워서 뜰 수 있다는 것이 너무 신기했어요. <br><br>[어린이들] 생존수영 너무 재미있어요.</div>
+                            </div>
+                        </div>
+                        <!-- media 1 -->
+                        <div id='media-tab-2'>
+                            <div id="media-tab-2" class="media_title"><img src="resources/images/blt_check_green.png">물놀이 안전 사고 예방 및 행동 요령</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">물놀이 안전 사고예방<br>우리는 안전 안전대장 조금만 조심하면 안전해! 차가운 물 풍덩하면 oh NO! 준비운동 잊지 마요 하나 둘 셋 맨발로 물에 들어가면 oh NO! 뾰족뾰족 다칠지도 몰라요 (아야!) 깊은 물에 수영하면 oh NO! 갑자기 물이 깊어져요 (위험해) <br>우리는 안전 안전대장 조금만 조심하면 안전해! 깊은 물에 다이빙 oh NO! 머리가 쿵하고 다칠지 몰라 (조심) 친구들과 달리기 oh NO! 미끄러워 바닥에 쿵해요 (아야!) 친구가 물에 빠졌다면 oh NO! 주변 어른에게 도움을 (도와주세요!) 우리는 안전 안전대장 구명조끼 입으면 안전해!</div>
+                            </div>
+                        </div>
+                        <!-- media 2 -->
+                        <div id='media-tab-3'>
+                            <div id="media-tab-3" class="media_title"><img src="resources/images/blt_check_green.png">어린이 전기 안전 요령</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">해마다 늘어나는 물놀이 사고 . 사고가 일어나면 어떻게 할까?<br><br>절대로 절대로 당황하지 마. 침착하게 하나하나 따라해 봐요<br><br>첫째! 물놀이 장소 도착하면 가장 먼저 구조장비 확인해<br><br>밧줄, 튜브 위치 파악해요. 구조요원 있는지도 반드시 확인<br><br>둘째! 물에 빠진 사람 발견하면 가장 먼저 119에 신고해요.<br><br>힘껏 소리쳐서 사람들을 모아요. 혼자 뛰어드는 것은 절대로 안 돼!<br><br>절대 잊어선 안 되는 안전. 물놀이 시작 전 반드시 공부해<br><br>사고 일어나도 당황하지 말고 침착하게 하나하나 따라해 봐요<br><br>아차하면 일어나는 물놀이 사고. 사고가 일어나면 따라해 봐요<br><br>절대로 절대로 당황하지 마. 침착하게 하나하나 따라해 봐요<br><br>셋째! 구조장비 던져 주세요! 없다면 기다란 장대나 스티로폼<br><br>밧줄 묶어 던진 뒤에 천천히 당겨. 혼자 뛰어드는 것은 절대로 안 돼!<br><br>넷째! 물에 빠진 사람 밖에 나오면 늦기 전에 심폐소생술 시작해요<br><br>기도 확보하고 가슴 강하게 눌러 119 올 때까지 심폐소생술 해요<br><br>절대 잊어선 안 되는 안전. 물놀이 시작 전 반드시 공부해<br><br>사고 일어나도 당황하지 말고 침착하게 하나하나 따라해 봐요</div>
+                            </div>
+                        </div>
+                        <!-- media 3 -->
+                        <div id='media-tab-4'>
+                            <div id="media-tab-4" class="media_title"><img src="resources/images/blt_check_green.png" align="center" style="margin-left:0;">[안전 돋보기] 어린이 놀이터 안전사고 예방 요령</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">[준희]우와 이야~ 돌격 앞으로~ <br><br>[국민이]나도 데리고가~ <br><br>[나나]하나, 둘, 셋, 넷 <br><br>[준희]이힛 재밌다 <br><br>[나나]위.. 위험해.. 얼른 쫓아 가자. <br><br>[안전이]준희를 계속 지켜봤어야하는데.. <br><br>[안전이]꽉잡아 <br><br>[준희]오 나나도 들어왔네 <br><br>[나나]얼른 나가자 서둘러 곧 온다고 <br><br>[준희]어 왜그래 <br><br>[국민이]이얍 너 때문에 물먹었잖아. <br><br>[준희]난 그냥 <br><br>[안전이] 어쩌자고 들어간거야 <br><br>[준희]저 그게 <br><br>[안전이] 준희야 물놀이를 안전하게 하는 방법을 알아봐야겠어. 나나도 물놀이전 반드시 준비 운동을 해야해. <br><br>[국민이] 물깊이를 잘 알고 수영하고 [안전이]자신의 체력에 맞게 물놀이를 하자 <br><br>[국민이]수영장 안에선 뛰지 말고 <br><br>[안전이] 얘들아 다시 한번 복습해보자 <br><br>[다함께] 준비운동은 반드시 해야해 물깊이는 꼭 나에게 알맞게 그래 그래 그래 그래 맞아 맞아 맞아 맞아 체력에 맞는 물놀이 해봐요. 수영장 안에서는 달리면 안돼요. 준비운동은 반드시 해야해. 우리모두 안전한 생활 해봐요. 약속 꼭 <br><br>[엄마] 얘들아 그만 놀고 점심 먹자 <br><br>[준희 나나] 네</div>
+                            </div>
+                        </div>
+                        <!-- media 4 -->
+                        <div id='media-tab-5'>
+                            <div id="media-tab-5" class="media_title"><img src="resources/images/blt_check_green.png" align="center" style="margin-left:0;">여름철 물놀이 안전 캠페인 영상(힙합 물개)</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">여름철 물놀이 안전 캠페인 영상(힙합 물개)</div>
+                            </div>
+                        </div>
+                        <!-- media 5 -->
+                        <div id='media-tab-6'>
+                            <div id="media-tab-6" class="media_title"><img src="resources/images/blt_check_green.png" align="center" style="margin-left:0;">여름철 물놀이 안전수칙 애니메이션(애니메이션)</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption"><div class="media_caption">토끼 가족의 물놀이 <br><br>준비 운동은 필수죠<br><br>술은 안돼요.!<br><br>구명조끼 좋아요.<br><br>안전수칙 지키고 즐거운 여름을!!</div></div>
+                            </div>
+                        </div>
+                        <!-- media 6 -->
+                        <div id='media-tab-7'>
+                            <div id="media-tab-7" class="media_title"><img src="resources/images/blt_check_green.png" align="center" style="margin-left:0;">여름철 물놀이 안전수칙(스팟)</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">여름철 물놀이 안전 수칙을 알아보겠습니다. 먼저 준비운동을 하고 심장에서 먼 부분부터 물에 적신 후 물에 들어 갑니다. <br>바다에 안전 경계선은 생명선이므로 절대 넘어가지 않고 높은 파도와 갑자기 수심이 깊어지는 곳은 주의 합니다. <br>몸에 이상 증상이 발생하면 즉시 물 밖으로 나가야 합니다. <br>강과 계곡에 수영 금지 구역을 준수 하시고 비온 후 계곡에서의 물놀이를 피해야 합나다. <br>수영장에서는 눈병 위험이 있으므로 물안경 착용하고, 적절한 휴식을 취해야 합니다. 안전 수칙을 지켜 여름철 물놀이 사고를 예방합시다.</div>
+                            </div>
+                        </div>
+                        <!-- media 7 -->
+                        <div id='media-tab-8'>
+                            <div id="media-tab-8" class="media_title"><img src="resources/images/blt_check_green.png" align="center" style="margin-left:0;">코코몽과 함께하는 물놀이 안전수칙 2탄</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">물에 들어간 후 주의사항<br><br>자신의 키 보다 깊은 곳은 들어가지 마세요. 너무 무리한 물놀이는 위험 할 수 있어요. 내가 물에 빠졌다면? 한 쪽 팔을 높이 흔들며 주위에 도움을 요청 하세요. 그리고 한가지 더 너무 오랜 시간 물 속에 있으면 안돼요. 물 박에서 종종 쉬는 시간을 가지세요.  <br><br></div>
+                            </div>
+                        </div>
+                        <!-- media 8 -->
+                        <div id='media-tab-9'>
+                            <div id="media-tab-9" class="media_title"><img src="resources/images/blt_check_green.png" align="center" style="margin-left:0;">코코몽과 함께하는 물놀이 안전수칙 1탄</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">물에 들어가기 전 주의 사항<br><br>물놀이 안전수칙 1<br><br>준비운동으로 충분히 몸을 풀어 주세요.<br><br>물놀이 안전수칙 2<br><br>심장에서 먼 부분부터 차례대로 물에 적셔 주세요.<br><br>물놀이 안전수칙 3<br><br>자신의 몸에 맞는 구명조끼를 꼭 입으세요.<br><br>다른 사람이 물에 빠졌다면?<br><br>물놀이 안전수칙 4<br><br>주위 어른이나 안전요원에게 소리쳐 알려 주세요.<br><br>안전하고 즐거운 물놀이 되세요.<br><br></div>
+                            </div>
+                        </div>
+                        <!-- media 9 -->
+                        <div id='media-tab-10'>
+                            <div id="media-tab-10" class="media_title"><img src="resources/images/blt_check_green.png" align="center" style="margin-left:0;">뽀로로와 함께 바다야 안전하게 놀자~</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">시원한 여름바다 심장이 두근 두근<br><br>여기 다 모여라 모여라 와~<br><br>핑크 빛 수영복에 튜브 끼고<br><br>즐겁게 준비 운동 하지요. 하나 둘 셋<br><br>푸르른 여름바다 파도가 넘실 넘실<br><br>우리 다 가보자 가보자 와~<br><br>길다른 오리발에 안경 쓰고<br><br>깊은 물엔 가지 않아요.<br><br>시원한 여름바다 준비운동 함께 하고<br><br>신나는 바다가 좋아 바다야 놀자<br><br>안전한 여름바다 깊은 물엔 가지 않죠 와<br><br>안전한 바다가 좋아 바다가 참 좋아 <br><br>황금 빛 모래사장 뜨거운 태양아래<br><br>모래성을 만들어볼까 좋아<br><br>신나는 보드 타고 보트 탈 때<br><br>든든한 구명조끼 입지요<br><br>찬란한 여름바다 시원한 파도소리<br><br>조개 껍질 차아볼까나 어디<br><br>배고픔도 잊은 채 밤이 되도록<br><br>어른들도 함께 웃지요 하하하<br><br>푸르른 여름바다 구명조끼 같이 입고 예~<br><br>신나는 바다가 좋아 바다야 놀자<br><br>안전한 여름바다 어른들과 함께 놀죠 와~<br><br>안전한 바다가 좋아 바다가 참 좋아<br><br>라라랄라 라랄라 랄랄랄라 라랄랄라<br><br>라라랄라 라랄라 라랄랄라 랄라<br><br> <br><br>여러분 한가지만 기억해 주세요.<br><br>물놀이 할땐 꼭꼭꼭<br><br>구명조끼를 입어야해요.<br><br>잊지 마세요.<br><br>그럼 안녕<br><br>  <br><br></div>
+                            </div>
+                        </div>
+                        <!-- media 10 -->
+                        <div id='media-tab-11'>
+                            <div id="media-tab-11" class="media_title"><img src="resources/images/blt_check_green.png" align="center" style="margin-left:0;">안전한 물놀이 이렇게 시작해요</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">[해양경찰] 해파리에 쏘였을 경우 해파리의 가시가 피부에 박혀 있기 때문에 손으로 문지르거나 만지면 안돼요.<br><br>           해파리에 쏘이면 우선 바닷물로 해파리 쏘인 부위를 충분히 세척해서 해파리의 가시를 제거해야 합니다.<br><br>           수돗물이나 생수 같은 민물은 해파리의 가시를 자극해 독을 더 퍼트릴 수 있으니 사용해서는 안돼요.<br><br>           그 다음 주변의 흔히 볼 수 있는 카드나 칼의 무딘 면으로 살살 긁어 남아 있는 가시를 제거 해주세요.<br><br>           해파리의 독은 열에 약하므로 따뜻한 물에 상처 부위를 담그면 통증 완화에 도움이 된답니다. <br><br>           독소가 강한 해파리는 매우 위험하므로 통증이 점점 심해지거나 온 몸이 아플 경우 즉시 병원으로 가서 의사의 치료를 <br><br>           받아야 합니다. <br><br>[해양경찰] 만약 물에 빠진 사람을 발견하면 큰 소리로 주변에 알려야해요. <br><br>[남자아이] 저기 사람이 물에 빠졌어요. 도와주세요.<br><br>[해양경찰] 빠진 사람을 구하겠다고 함부로 물에 뛰어 들면 매우 위험하니 반드시 가까운 곳에 있는 구조요원에게 도움을<br><br>           요청 해야 합니다. 이렇게 구조된 사람이 의식이 없을 경우 즉시 심폐소생술을 실시해야 되는데요.<br><br>           심폐소생술은 가슴 압박, 기도유지, 인공호흡 순으로 실시하며 가슴압박 30회 인공호흡 2회씩 반복 실시합니다.<br><br>           이처럼 물에서 사고가 났을때 적절한 응급조치만 잘 알고 있어도 더 큰 피해를 막을 수 있답니다.<br><br>           하지만 무엇보다 사고가 나지 않게 미리 예방하는게 중요하겠죠.<br><br>           바다의 안전벨트 구명 조끼만 챙겨도 훨씬 안전하게 물놀이를 즐길 수 있어요.<br><br>           우선 자신의 몸에 맞는 구명 조끼를 착용하고 가슴에 있는 버클을 모두 채워준 후 몸에 꼭 맞게 줄을 당겨 주면 됩니다.<br><br>           그 다음 생명줄을 다리 사이에 걸어주는 것을 잊지 마세요. 생명줄을 걸지 않을 경우 구조시 조끼가 벗겨질 위험이 있어요.<br><br>           이러한 안전 수칙을 잘 알고 지킨다면 물놀이가 더욱 더 즐거워 질거예요. <br><br></div>
+                            </div>
+                        </div>
+                        <!-- media 11 -->
+                        <div id='media-tab-12'>
+                            <div id="media-tab-12" class="media_title"><img src="resources/images/blt_check_green.png" align="center" style="margin-left:0;">[여러분 안전하세요] 물놀이 안전사고 예방법</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">더위가 기승을 부리는 여름 더위를 피해 사람들은 바다로 계곡으로 휴가를 떠나는 계절이기도 한데요. 그런데 휴가지에서 물놀이 안전사고로 인해 위험에 빠지는 경우가 지속적으로 늘고 있다고 합니다. 여러분 물놀이 안전수칙 얼마나 알고 계신가요?<br><br>[시민1] 사고 대비해서 일단 안전규칙 잘 지키고 비상시 연락할 연락처들 꼭 알고 있고<br><br>[시민2] 물에 들어가기 전 안전체조를 하고요. 구명조끼를 입어요.<br><br>[시민3] 다 해놓으셨잖아요. 어느 선까지 가야되는지.. 잘 지켜서 놀면 될것 같아요.<br><br>대부분의 시민들이 기본적인 물놀이 안전수칙에 대해 알고 있었는데요. 그럼에도 불구하고 물놀이 사고가 발생하는 이유는 부주의와 방심, 수영 실력 과신에 의해서 입니다. <br><br>[재난대비과] 물놀이 사고는 대부분 개인안전의식 결여나 부주의로 발생합니다. 물놀이 안전사고 예방을 위해서는 물놀이의 위험성을 국민들이 인식하고 국민들 스스로가 안전수칙을 준수하는 것이 필요합니다.<br><br>생명을 구하는 물놀이 안전 수칙 지금부터 제대로 알아볼까요? 물에 들어가기전 준비운동은 꼭 해야하고요. 자신의 수영 실력을 과신하지 말고 안전요원의 지시에 따릅니다. 바다나 강에 들어갈때에는 미끄러지거나 발이 찔리지 않도록 신발을 신어 발을 보호합니다. 사람이 물에 빠졌을 경우 직접 뛰어들지 말고 로프나 긴막대기를 이용해 조치를 취한후 구조대에 신고 합니다. <br><br>안전수칙을 지키는 것만으로 사고를 미연에 방지할 수 있습니다. 물놀이 안전수칙을 잘 지켜서 즐거운 휴가, 즐거운 물놀이 하시길 바랍니다. </div>
+                            </div>
+                        </div>
+                        <!-- media 12 -->
+                        <div id='media-tab-13'>
+                            <div id="media-tab-13" class="media_title"><img src="resources/images/blt_check_green.png" align="center" style="margin-left:0;">[도전 안전벨] 물놀이</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">여러분 안녕하세요. 전 국민의 안전상식을 퀴즈로 풀어보는 도전 안전벨 시간입니다. <br><br>여러분은 여름철 가장 많이 발생하는 안전사고가 물놀이 중에 일어난다는 사실 알고 있나요? <br><br>잠시만요. 여름철 휴가 떠나기 전에 안전상식 챙기시고 떠나실게요. 슝슝~<br><br>오늘은 서울에 한 태권도장에서 문제를 풀 예정인데요. 우렁찬 기압소리 만큼 자신있게 문제를 맞추길 기대할게요. <br><br>[리포터] 안녕하세요.<br><br>[학생들] 차렷! 경례! <br><br>[리포터] 저희가 온다는 이야기를 들어서 그런지 다른 때보다 더 열심히 하시는 거 아니예요?<br><br>[관장] 평상시에도 열심히 하고 있습니다. <br><br>[리포터] 정말요? 우리 친구들 평소에도 이렇게 열심히 하시나요?<br><br>네! 믿겠습니다. 여러분들의 안전을 지키기 위한 오늘의 문제 짠~!! 물놀이 중에 이것을 먹으면 질식사의 위험이 있다. 우리 학생들 시키면 뭐든지 열심히 합니다. 온 몸에 정신을 통일하여 판넬에 정답을 적어가는데요. 그런데 얘들아! 이건 메뉴판이 아닌데... 정답을 들어주세요.  우와 우리 친구들 정말 개성 만점인데요. 다양한 종류의 음식이 총 집합했네요. <br><br>[학생1] 빵과 김밥이 가장 간편하고 들고 오기도 편하고<br><br>[학생2] 김밥은 김이 길어서 잘못하면 목에 걸릴 수 있으니까...<br><br>우리 친구들 정답이 뭔거 같아요? 드디어 공개되는 오늘의 정답 두구 두구 두구 정답은 껌과 사탕! 우리 친구들 대단하네요. 정답입니다. <br><br>[학생3] 다 씹지 않아서 자칫 잘못하면 목에 걸려서 죽을 수도 있으니까요..<br><br>사실 여름철 물놀이 관리지역에서 발생하는 안전 사고 중 56%가 안전 부주의에 의한 건데요. 특히 물놀이 시 껌이나 사탕의 섭취는 안전부주의에 상당수를 차지하는 질식사를 초래해 매우 위험합니다. <br><br>즐겁고 안전한 물놀이를 위해서 이것만은 꼭 기억해야하는데요. 물놀이를 하기 전 준비 운동은 필수, 구명 조끼를 꼭 착용하고요. 물의 깊이는 일정하지 않기 때문에 갑자기 깊어지는 곳은 특히 위험합니다. 몹시 배가 고프거나 식사를 하고 바로 물놀이를 하지 않는게 좋습니다. 물놀이 중 반드시 껌과 사탕을 먹지 않도록 유의해야 합니다. 어린이는 어른의 시야가 보이는 곳에서 물놀이를 해야한다는거 잊지 마세요. <br><br>[학생4] 앞으로 물놀이를 할 때 껌과 사탕을 먹지 않고 안전에 유의해서 놀아야겠어요.<br><br>[학생5] 안전과 관련이 되어 있어서 유익한 시간이 된 것...</div>
+                            </div>
+                        </div>
+                        <!-- media 13 -->
+                        <div id='media-tab-14'>
+                            <div id="media-tab-14" class="media_title"><img src="resources/images/blt_check_green.png" align="center" style="margin-left:0;">[위급상황 수화 한마디] 물에 빠졌어요</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">[위급상황 수화 한마디] 물에 빠졌어요</div>
+                            </div>
+                        </div>
+                        <!-- media 14 -->
+                        
+                        <ul class='media-tab'>
+                            <li class="active-2"><a href="#media-tab-1">1</a></li>
+                            <li><a href="#media-tab-2">2</a></li>
+                            <li><a href="#media-tab-3">3</a></li>
+                            <li><a href="#media-tab-4">4</a></li>
+                            <li><a href="#media-tab-5">5</a></li>
+                            <li><a href="#media-tab-6">6</a></li>
+                            <li><a href="#media-tab-7">7</a></li>
+                            <li><a href="#media-tab-8">8</a></li>
+                            <li><a href="#media-tab-9">9</a></li>
+                            <li><a href="#media-tab-10">10</a></li>
+                            <li><a href="#media-tab-11">11</a></li>
+                            <li><a href="#media-tab-12">12</a></li>
+                          </ul>
+                      </div>
+        
+                </div>
+                    
+                    <script>
+                        $(function(){                
+                            $('.tabs').tabslet({
+                              mouseevent: 'click',
+                              attribute: 'href',
+                              animation: true
+                            });
+                        });
+                        $(function(){                
+                            $('.media_tab').tabslet({
+                            mouseevent: 'click',
+                            attribute: 'href'
+                            });
+                        });
+                    </script>
+                </div>
+        
+            </div>
+            <!-- content_wrap end  -->
+        </div>
+        <div class="quickmenu accident-quick">
+            <ul>
+                <li>
+                    <a href="traffic.html">
+                        <img src="resources/images/accident/ico_tfcacd_w.png" alt="교통사고">교통사고
+                    </a>
+                </li>
+                <li>
+                    <a href="fire.html">
+                        <img src="resources/images/accident/ico_frfire_w.png" alt="화재사고">화재사고
+                    </a>
+                </li>
+                <li>
+                    <a href="child.html">
+                        <img src="resources/images/accident/ico_childadt_w.png" alt="어린이안전사고">어린이<br>안전사고
+                    </a>
+                </li>
+                <li class="hv">
+                    <a href="water.html">
+                        <img src="resources/images/accident/ico_wateradt_w.png" alt="수난사고">수난사고
+                    </a>
+                </li>
+                <li>
+                    <a href="animal.html">
+                        <img src="resources/images/accident/ico_animaladt_w.png" alt="가축질병">가축질병
+                    </a>
+                </li>
+                <li>
+                    <a href="dam.html">
+                        <img src="resources/images/accident/ico_dam_w.png" alt="댐 붕괴">댐 붕괴
+                    </a>
+                </li>
+                <li>
+                    <a href="infection.html">
+                        <img src="resources/images/accident/ico_infection_w.png" alt="감염병 예방">감염병 예방
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- <script type="text/javascript">
+            $(function(){
+
+                $('.quickmenu li:nth-child(1)').mouseover(function(){
+                    $('.quickmenu li:nth-child(1) img').attr('src','resources/images/accident/ico_tfcacd_w.png');
+                });
+                $('.quickmenu li:nth-child(1)').mouseleave(function(){
+                    $('.quickmenu li:nth-child(1) img').attr('src','resources/images/accident/ico_tfcacd_r.png');
+                });
+
+                $('.quickmenu li:nth-child(2)').mouseover(function(){
+                    $('.quickmenu li:nth-child(2) img').attr('src','resources/images/accident/ico_frfire_w.png');
+                });
+                $('.quickmenu li:nth-child(2)').mouseleave(function(){
+                    $('.quickmenu li:nth-child(2) img').attr('src','resources/images/accident/ico_frfire_r.png');
+                });
+
+                $('.quickmenu li:nth-child(3)').mouseover(function(){
+                    $('.quickmenu li:nth-child(3) img').attr('src','resources/images/accident/ico_childadt_w.png');
+                });
+                $('.quickmenu li:nth-child(3)').mouseleave(function(){
+                    $('.quickmenu li:nth-child(3) img').attr('src','resources/images/accident/ico_childadt_r.png');
+                });
+                
+                $('.quickmenu li:nth-child(5)').mouseover(function(){
+                    $('.quickmenu li:nth-child(5) img').attr('src','resources/images/accident/ico_animaladt_w.png');
+                });
+                $('.quickmenu li:nth-child(5)').mouseleave(function(){
+                    $('.quickmenu li:nth-child(5) img').attr('src','resources/images/accident/ico_animaladt_r.png');
+                });
+
+                $('.quickmenu li:nth-child(6)').mouseover(function(){
+                    $('.quickmenu li:nth-child(6) img').attr('src','resources/images/accident/ico_dam_w.png');
+                });
+                $('.quickmenu li:nth-child(6)').mouseleave(function(){
+                    $('.quickmenu li:nth-child(6) img').attr('src','resources/images/accident/ico_dam_r.png');
+                });
+
+                $('.quickmenu li:nth-child(7)').mouseover(function(){
+                    $('.quickmenu li:nth-child(7) img').attr('src','resources/images/accident/ico_infection_w.png');
+                });
+                $('.quickmenu li:nth-child(7)').mouseleave(function(){
+                    $('.quickmenu li:nth-child(7) img').attr('src','resources/images/accident/ico_infection_r.png');
+                });
+            });
+
+        </script> -->
+    </section>
+    <!-- TOP버튼 -->
+    <div class="quick">
+        <button type="button" class="go_top_btn" style="display: inline-block;"><span>위로</span></button>
+    </div>
+
+    <script>
+        $(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 500) {
+                    $('.quick').fadeIn();
+                } else {
+                    $('.quick').fadeOut();
+                }
+            });
+            
+            $(".quick").click(function() {
+                $('html, body').animate({
+                    scrollTop : 0
+                }, 400);
+                return false;
+            });
+        });
+    </script>
+    <!-- TOP버튼 끝 -->
+    <footer>
+        <div id="footer">
+            <div class="footer-content">
+                <div class="foot-logo">
+                    <img src="resources/images/logo.png" alt="로고">
+                </div>
+                <div class="footer-copyright">
+                    <p>(우) 32435 충남 예산군 예산읍 군청로 22 Tel 041-339-7114 / Fax 041-339-7229</p>
+                    <p>COPYRIGHT ⓒ YESAN COUNTRY.ALL RIGHTS RESERVED</p>
+                </div>
+                <div class="list-box"></div>
+            </div>
+        </div>
+    </footer>
+    <!-- JS -->
+    <script type="text/javascript" src="resources/javascripts/vendor/jquery.tabslet.min.js"></script>
+    <script type="text/javascript" src="resources/javascripts/vendor/rainbow-custom.min.js"></script>
+    <script type="text/javascript" src="resources/javascripts/vendor/jquery.anchor.js"></script>
+    <script src="resources/javascripts/initializers.js"></script>
+    <!-- JS ends -->
+    <!-- <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script> -->
+    <script type="text/javascript" src="resources/js/main.js"></script>
+</body>
+</html>

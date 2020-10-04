@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta property=”og:image” content="resources/images/POZ_202007131009436070.jpg">
+    <meta property=”og:image:width” content="600">
+    <meta property=”og:image:height” content="400"> 
+    <meta name="author" content="예산재난포털" />
+    <meta name="Keywords" content="예산재난포털" />
+    <title>예산군청</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="shortcut icon" href="resources/images/fa_gDi_icon.ico">
+    <link rel="stylesheet" href="resources/css/commmon/common.css">
+    <link rel="stylesheet" href="resources/css/layout.css">
+        <!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+</head>
+<body>
+    <!-- 공통메뉴  -->
+    <header id="header">
+        <div class="nav-wrapper">
+            <a href="index.html"><h1 id="logo">예산재난포털</h1></a>
+            <div class="gnb" id="gnb">
+                <ul>
+                    <li>
+                        <a href="#">종합날씨</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-weather">
+                                <ul>
+                                    <li>
+                                        <a href="livingweather.html">
+                                            <div class="sub-icon-6">
+                                                <img src="resources/images/icon/main-menu-2-1.png" alt="생활날씨">
+                                                <img src="resources/images/icon/main-menu-2-1-hover.png" alt="생활날씨">
+                                            </div>
+                                            생활날씨</a>
+                                    </li>
+                                    <li>
+                                        <a href="rain-info.html">
+                                            <div class="sub-icon-7">
+                                                <img src="resources/images/icon/main-menu-2-2.png" alt="강우정보">
+                                                <img src="resources/images/icon/main-menu-2-2-hover.png" alt="강우정보">
+                                            </div>
+                                            강우정보</a>
+                                    </li>
+                                    <li>
+                                        <a href="snow-info.html">
+                                            <div class="sub-icon-8">
+                                                <img src="resources/images/icon/main-menu-2-3.png" alt="적설정보">
+                                                <img src="resources/images/icon/main-menu-2-3-hover.png" alt="적설정보">
+                                            </div>
+                                            적설정보</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 1depth -->
+                    <li class="on">
+                        <a href="#">생활안전정보</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-information">
+                                <ul>
+                                    <li>
+                                        <a href="information.html">
+                                            <div class="sub-icon-3">
+                                                <img src="resources/images/icon/main-menu-1-3.png" alt="재난속보">
+                                                <img src="resources/images/icon/main-menu-1-3-hover.png" alt="재난속보">
+                                            </div>
+                                            재난속보
+                                        </a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="government-info.html">하천 수위</a></li>
+                                                <li><a href="dam-info.html">댐정보</a></li>
+                                                <li><a href="fire-info.html">소방 긴급구조</a></li>
+                                                <li><a href="firecenter-info.html">소방서센터</a></li>
+                                                <li><a href="earth-info.html">지진</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-9">
+                                                <img src="resources/images/icon/main-menu-3-1.png" alt="재난안전지도">
+                                                <img src="resources/images/icon/main-menu-3-1-hover.png" alt="재난안전지도">
+                                            </div>
+                                            재난안전지도
+                                        </a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="safemap.html">안전MAP</a></li>
+                                            </ul>
+                                        </div>
+                                        
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-10">
+                                                <img src="resources/images/icon/main-menu-3-2.png" alt="재난예방정보">
+                                                <img src="resources/images/icon/main-menu-3-2-hover.png" alt="재난예방정보">
+                                            </div>
+                                            재난예방정보</a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li>
+                                                    <a href="earthquake.html">자연재난</a>
+                                                </li>
+                                                <li>
+                                                    <a href="traffic.html">사회재난</a>
+                                                </li>
+                                                <li>
+                                                    <a href="extinguisher.html">생활안전수칙</a>
+                                                </li>
+                                                <li>
+                                                    <a href="farm.html">농어촌안전</a>
+                                                </li>
+                                                <li>
+                                                    <a href="spring.html">계절별재난</a>
+                                                </li>
+                                                <li>
+                                                    <a href="baby.html">생애주기별 재난</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-11">
+                                                <img src="resources/images/icon/main-menu-3-3.png" alt="재난안전보험">
+                                                <img src="resources/images/icon/main-menu-3-3-hover.png" alt="재난안전보험">
+                                            </div>
+                                            재난안전보험</a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="insurance.html">풍수해보험</a></li>
+                                                <li><a href="safe-insurance.html">예산군 군민안전보험</a></li>
+                                                <li><a href="bicycle.html">예산군 자전거안전보험</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-12">
+                                                <img src="resources/images/icon/main-menu-3-4.png" alt="재난안전앱">
+                                                <img src="resources/images/icon/main-menu-3-4-hover.png" alt="재난안전앱">
+                                            </div>
+                                            재난안전앱</a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="safe-app.html">안전디딤돌</a></li>
+                                                <li><a href="safe-news.html">안전신문고</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 2depth -->
+                    <li>
+                        <a href="#">재난안전대책본부</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-safety">
+                                <ul>
+                                    <li>
+                                        <a href="tissue.html">
+                                            <div class="sub-icon-13">
+                                                <img src="resources/images/icon/main-menu-4-1.png" alt="대책본부 조직도 및 주요업무">
+                                                <img src="resources/images/icon/main-menu-4-1-hover.png" alt="대책본부 조직도 및 주요업무">
+                                            </div>
+                                            대책본부 조직도 및 주요업무</a>
+                                    </li>
+                                    <li>
+                                        <a href="system-1.html">
+                                            <div class="sub-icon-14">
+                                                <img src="resources/images/icon/main-menu-4-2.png" alt="재난대응 체계도">
+                                                <img src="resources/images/icon/main-menu-4-2-hover.png" alt="재난대응 체계도">
+                                            </div>
+                                            재난대응 체계도</a>
+                                    </li>
+                                    <li>
+                                        <a href="system-2.html">
+                                            <div class="sub-icon-15">
+                                                <img src="resources/images/icon/main-menu-4-3.png" alt="피해조사 및 복구계획">
+                                                <img src="resources/images/icon/main-menu-4-3-hover.png" alt="피해조사 및 복구계획">
+                                            </div>
+                                            피해조사 및 복구계획</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 3depth -->
+                    <li>
+                        <a href="#">안전게시판</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-board">
+                                <ul>
+                                    <li>
+                                        <a href="notice.html">
+                                            <div class="sub-icon-16">
+                                                <img src="resources/images/icon/main-menu-5-1.png" alt="공지사항">
+                                                <img src="resources/images/icon/main-menu-5-1-hover.png" alt="공지사항">
+                                            </div>
+                                            공지사항</a>
+                                    </li>
+                                    <li>
+                                        <a href="report.html">
+                                            <div class="sub-icon-17">
+                                                <img src="resources/images/icon/main-menu-5-2.png" alt="보도자료">
+                                                <img src="resources/images/icon/main-menu-5-2-hover.png" alt="보도자료">
+                                            </div>
+                                            보도자료</a>
+                                    </li>
+                                    <li>
+                                        <a href="education.html">
+                                            <div class="sub-icon-18">
+                                                <img src="resources/images/icon/main-menu-5-3.png" alt="교육자료">
+                                                <img src="resources/images/icon/main-menu-5-3-hover.png" alt="교육자료">
+                                            </div>
+                                            교육자료</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 4depth -->
+                </ul>
+            </div>
+        </div>        
+    </header>
+        <div class="gnb_bg"></div>
+    <section>
+        <!-- <div class="main-bg"></div> -->
+        <div class="container_wrapper">
+            <div class="visual_top_wrap-cpr">
+                <div class="content-title-top">
+                    <h1>심폐소생술</h1>
+                </div>
+            </div>
+            <div class="content-tab-top">
+                <ul class="tab-top-nav">
+                    <li><a href="#">홈</a></li>
+                    <li><span>></span></li>
+                    <li><a href="#">재난예방정보</a></li>
+                    <li><span>></span></li>
+                    <li><a href="#">생활안전수칙</a></li>
+                    <li><span>></span></li>
+                    <li><a>심폐소생술</a></li>
+                </ul>
+            </div>
+            <!-- visual top  end -->
+            <div class="sub-content">
+                <div class="content_title">
+                    <div class="earth-title">
+                        <h1><img src="resources/images/life-safety/ico_lifesate02.png" align="center">심폐소생술</h1>
+                        <div class="line"></div>
+                        <p>
+                            심장과 폐의 활동이 멈추어 호흡이 정지되었을 경우에 실시하는 응급처치 입니다.
+                        </p>
+                    </div>
+                    <div class="sub-tab-title">             
+                        <div class='tabs tabs_animate'>
+                            <ul class='horizontal-tab'>
+                              <li class="active"><a href="#tab-1">심폐소생술은</a></li>
+                              <li><a href="#tab-2">심폐소생술</a></li>
+                            </ul>
+                            <div id='tab-1' style="margin-bottom: 50px;">
+                                <div class="msfrtn_info_wrap">
+                                    <h1 class="msfrtn-title">성인 심정지환자의 심폐소생술</h1>
+                                    <div class="msfrtn-info">
+                                        <div class="msfrtn-info-img">
+                                            <img src="resources/images/life-safety-item/cpr1.jpg" alt="심정지확인" class="imgs">
+                                            <img src="resources/images/life-safety-item/cpr2.jpg" alt="119 신고" class="imgs">
+                                            <img src="resources/images/life-safety-item/cpr3.jpg" alt="가슴압박" class="imgs">
+                                            <img src="resources/images/life-safety-item/cpr4.jpg" alt="인공호흡" class="imgs">
+                                            <img src="resources/images/life-safety-item/cpr4.jpg" alt="반복" class="imgs">
+                                        </div>
+                                        <div class="msfrtn-info-txt">
+                                            <div class="msfrtn-txt">
+                                                <ul class="mg-100">
+                                                    <li class="tab-sub-main-txt">1. 심정지 확인(반응확인)</li>
+                                                    <li>환자의 어깨를 가볍게 두드리며 “괜찮으세요?”라고 여쭤보세요.</li>
+                                                </ul>
+                                                <ul class="mg-150">
+                                                    <li class="tab-sub-main-txt">2. 119신고 및 자동제세동기 요청</li>
+                                                    <li>주변 사람에게 큰소리로 119에 전화해 달라고 부탁하고 자동제세동기 요청,<br>주변에 아무도 없으면 직접 119에 신고합시다.</li>
+                                                </ul>
+                                                <ul class="mg-200">
+                                                    <li class="tab-sub-main-txt">3. 가슴압박 30회 시행</li>
+                                                    <li>손꿈치 중앙을 양쪽 젖꼭지 사이의 흉부의 정중앙에 놓고 손가락이 늑골이 닿치 않도록 합시다.</li>
+                                                    <li>다른 손으로 나머지 손을 덮어주세요.</li>
+                                                    <li>팔을 쭉 펴고 수직으로 최소 5cm 깊이로 환자 가슴을 눌러 준 다음 힘을 뺍니다.</li>
+                                                    <li>분당 최소 100회의 속도로 30회 흉부를 압박합시다. 흉부압박 때 환자 가슴에서 양손을 떼지 맙시다.<br><span>※ ‘하나, 둘, 셋’, ---, ‘서른’하고 세어가면서 시행하며, 압박된 가슴은 완전히 이완되도록 함.</span></li>
+                                                </ul>
+                                                <ul class="mg-150">
+                                                    <li class="tab-sub-main-txt">4. 인공호흡 2회 시행</li>
+                                                    <li>머리를 뒤로 젖히고 턱을 위로 들어 올려 기도를 열어 주세요.(기도개방)</li>
+                                                    <li>환자의 코를 막고 입속으로 두 번 불어주세요. 이때, 환자 가슴이 올라와야 기도로 호흡이 들어간 것입니다.<br><span>※ 구조자가 인공호흡을 모르거나 능숙하지 않은 경우에는 인공호흡을 제외하고, 지속적으로<br>가슴압박만을 시행(가슴압박 소생술)</span></li>
+                                                </ul>
+                                                <ul class="mg-150">
+                                                    <li class="tab-sub-main-txt">5. 가슴압박과 인공호흡의 반복</li>
+                                                    <li>30회의 가슴압박과 2회의 인공호흡을 119구급대원이 도착할 때까지 반복해서 시행하세요.</li>
+                                                    <li>구조자가 두사람인 경우에는 30:2로 1인은 흉부압박을 하고 다른 1인은 인공호흡을 합니다.<br>5주기마다(매 2분마다) 교대하여 실시합니다.<br><span>※ 흉부압박시 중단 시간이 10초 미만이 되도록 함.</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- msfrtn_info_wrap  -->
+                            </div>
+                            <div id='tab-2' style="margin-bottom: 50px;">
+                                <h1 class="msfrtn-title">심폐소생술 알아보기</h1>
+                                    <div class="msfrtn-info">
+                                        <div class="msfrtn-info-txt">
+                                            <div class="msfrtn-txt">
+                                                <ul>
+                                                    <li>심장과 폐의 활동이 멈추어 호흡이 정지되었을 경우에 실시하는 응급처치입니다.</li>
+                                                    <li>심장과 폐의 정지현상은 급성심부전 및 폐부전증 등에 의하여 생기므로 그 원인을 분석해서 처치에 적용해야 합니다.</li>
+                                                    <li>심부전증의 원인으로는 심근수축력 억제, 흥분, 관상동맥혈류량 부족 등이 있습니다.</li>
+                                                    <li>소생술은 심장과 호흡이 멈춘 지 4분 이내에 시작하면 살아날 가능성이 높으며, 시간이 갈수록 뇌가 손상되어 사망하게 됩니다.<br>
+                                                        시간에 따른 환자의 상태는 다음과 같습니다.<br>
+                                                        - 0~4분 : 소생술을 실시하면 뇌손상 가능성이 거의 없습니다.<br>
+                                                        - 4~6분 : 뇌 손상 가능성이 높습니다.<br>
+                                                        - 6~10분 : 뇌 손상이 확실합니다.<br>
+                                                        - 10분 이상 : 심한 뇌 손상 또는 뇌사상태가 됩니다.</li>
+                                                    <li>그러나 회복 불가능한 질환을 가진 사람이나 오랫동안 심장이 멈추어 살아날 가망이 전혀 없는 경우에는 시행하지 않습니다.</li>
+                                                    <li>단, 예를 들어 물에 빠져서 낮은 온도에 노출된 사람이나 어린 아이는 시간이 어느 정도 지나더라도 뇌기능이 정상으로 돌아올 수<br>있으므로 이러한 경우에는 시간이 경과했더라도 시행해야 합니다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <!-- msfrtn_info_wrap  -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- tab bar content   -->
+                    <div class='media_tab tab_media_title'>
+                        <div id='media-tab-1'>
+                            <div id="media-tab-1" class="media_title"><img src="resources/images/blt_check_green.png" align="center" style="margin-left:0;">소중한 생명을 살리는 자동심장충격기 사용법</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">자동심장충격기는 심정지 환자에게 자동으로 전기충격을 주어 심장리듬을 정상으로 회복시키는 중요한 역할을 합니다. 일반인도 쉽게 사용할 수 있는 자동심장충격기! 자동심장충격기 사용, 어떻게 해야 할까요?<br>자동심장충격기를 인수 받고 즉시 전원을 켭니다. 전원이 들어오면 음성이 나오면서 사용방법을 안내해줍니다. 상체를 노출시킨 후 우측 쇄골 아래쪽에 패드를 부착하고 또 다른 패드는 좌측 유두 바깥쪽 아래의 겨드랑이 중앙선에 부착합니다. 이때, 각 패드의 표면에는 부착할 위치가 어디인지 그림으로 표시되어 있으므로 참고하면 좋습니다. 패드에 연결된 선을 기계에 꼽고 기계에서 자동으로 심장리듬 분석 중이라는 말이 나오면 심장 분석에 오류가 나지 않도록 환자에게서 조금 떨어져 있습니다. 제세동이 필요하다면 기계가 자동으로 충전을 하며 충전 후 제세동 버튼을 누르라는 메시지가 나옵니다. 버튼을 누르기 전 주변 사람들에게 환자와 떨어지도록 주의를 주고 제세동 버튼을 눌러 줍니다. 전기 충격이 주어지고 나서는 즉시 심폐소생술을 시행합니다. 환자가 소생하거나, 119구급대원이 도착 할 때까지, 자동심장충격기 지시에 따라 이전과정을 반복합니다. <br>첫째, 전원 켜기 버튼을 누릅니다. 둘째, 패드 표면 그림을 참고하여 패드를 부착합니다. 셋째, 패드에 연결된 선을 기계에 꼽고 심장리듬을 분석합니다. 넷째, 제세동 필요시, 환자와 주변사람을 떨어지도록 한 뒤, 제세동 버튼을 눌러 전기충격을 줍니다. 다섯 째, 전기충격 후, 심폐소생술을 시행하고 이전과정을 반복합니다.</div>
+                            </div>
+                        </div>
+                        <!-- media 1 -->
+                        <div id='media-tab-2'>
+                            <div id="media-tab-2" class="media_title"><img src="resources/images/blt_check_green.png" align="center" style="margin-left:0;">소중한 생명을 살리는 심폐소생술 영아편</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">이물질에 의한 기도폐쇄는 주로 9세 이전에 많이 발생하는데 특히 2세 무렵의 아동에게 가장 높은 빈도로 발생하고 있습니다. 땅콩, 사탕과 같은 크기가 작고 둥근형태의 음식을 섭취하거나 장난감, 건전지 등을 삼키는 행위로 인해 기도폐쇄가 일어날 수 있습니다. 이때 꼭 필요한 기도폐쇄환자 응급처치 방법! 영아의 경우, 어떻게 해야 할까요?<br><br>영아의 경우, 얼굴에 청색증을 보이거나  쉰 울음소리가 들릴 경우, 기도폐쇄로 판단합니다. 주변 사람들에게 119에 신고를 부탁하고 자동심장충격기를 가져다 줄 것을 요청합니다. 왼손으로는 환자의 턱을, 오른손으로는 환자의 뒤통수를 감싸면서 천천히 안아 올리며 왼쪽 허벅지 위에 환자 머리가 아래를 향하도록 엎드려 놓습니다. 이후, 손바닥 밑 부분으로 양쪽 날개 뼈의 가운데를 세게 5회 두드려줍니다. 다음은 환자의 턱과 뒤통수를 다시 손으로 감싸 들어올려 반대쪽 허벅지 위에 머리가 아래를 향하도록 바로 눕혀 가슴압박을 시행합니다. 양쪽 젖꼭지 잇는 선 중앙의 바로 아래 흉골 부위에 두 개의 손가락을 위치시켜 4cm 정도의 깊이로 강하고 빠르게 5회 눌러줍니다. 이때, 의자에 앉아서 하면 올바른 자세로 환자의 등과 가슴을 보다 쉽고 정확하게 압박할 수 있습니다. 이물질이 제거되거나 119 구급대원이 도착 할 때까지 복부 밀어내기를 반복합니다. <br><br>첫째, 의식 확인 및 119신고를 합니다. 둘째, 허벅지 위에 머리가 아래를 향하도록 엎드려 놓은 뒤, 손바닥 아래쪽으로 양쪽 날개 뼈 중앙부위를 세게 약 5회 두드립니다. 셋째, 허벅지 위에 머리가 아래를 향하도록 눕힌 뒤, 젖꼭지를 잇는 선 중앙 바로 아래 두 개의 손가락을 위치시켜 가슴압박을 5회 실시합니다. 넷째, 이물질이 제거 될 때까지 무한 반복합니다.</div>
+                            </div>
+                        </div>
+                        <!-- media 2 -->
+                        <div id='media-tab-3'>
+                            <div id="media-tab-3" class="media_title"><img src="resources/images/blt_check_green.png" align="center" style="margin-left:0;">소중한 생명을 살리는 심폐소생술 소아편</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">질식, 교통사고, 추락 및 기타 외상 등이 소아에게 일어날 경우, 심정지가 발생할 수 있습니다. 이때 꼭 필요한 것! 바로 심폐소생술입니다. 소아의 경우, 어떻게 해야 할까요?<br><br>먼저 환자의 어깨를 가볍게 치면서 의식이 있는지 확인합니다. 이후, 주변 사람들에게 119에 신고를 부탁하고 자동심장충격기를 가져다 줄 것을 요청합니다. 그 다음 환자의 호홉을 확인합니다. <br><br>가슴압박은 가슴 중앙인 흉골 아래쪽에 한 손으로 손바닥 아래(손꿈치) 부위만을 환자의 흉골 부위에 위치시킵니다. 그리고 분당 100에서 120회를 약 4에서5cm(센치) 깊이로 강하고, <br><br>빠르게 눌러줍니다. 시술자의 어깨는 환자의 흉골이 맞닿는 부위와 반드시 수직이 되도록 합니다. 환자가 의식을 회복하거나 119구급대원이 도착할 때까지 반복해줍니다.<br><br>첫째, 의식 확인 및 119에 신고를 합니다. 둘째, 호흡을 확인 합니다. 셋째, 분당 100에서 120회,  약 4~5cm (센치)깊이로 가슴압박을 시행합니다. 넷째, 팔꿈치를 굽히지 않도록 수직을 유지하며  무한반복 합니다.<br><br></div>
+                            </div>
+                        </div>
+                        <!-- media 3 -->
+                        <div id='media-tab-4'>
+                            <div id="media-tab-4" class="media_title"><img src="resources/images/blt_check_green.png" align="center" style="margin-left:0;">소중한 생명을 살리는 심폐소생술 성인편</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">이물에 의한 기도폐쇄 환자를 발견할 때에는 신속한 응급처치가 매우 중요합니다. 성인의 기도이물폐쇄는 대부분 음식물 섭취 중에 발생합니다. 이때 꼭 필요한 기도폐쇄환자 응급처치방법! 기도이물폐쇄 환자 목격 시, 어떻게 해야 할까요? <br><br>환자가 숨쉬기 힘들어 하거나 목을 감싸며 괴로움을 호소할 경우, 기도폐쇄로 판단하며, 주변 사람들에게 119에 신고를 부탁하고 자동심장충격기를 가져다 줄 것을 요청합니다. 환자 스스로 기침이 가능 하다면<br><br>방해하지 말고 기침을 하도록 유도합니다. 그러나 스스로 이물질을 뱉어낼 수 없다면 환자의 등 뒤에서 주먹 쥔 손을 배꼽과 명치 중간 정도에 위치시킨 후, 주먹 쥔 손의 엄지 손가락이 배에 닿도록 놓습니다. 그리고 다른 한 손으로 주먹을 감싸주고 한쪽 다리는 환자의 다리 사이로, 다른 한쪽 다리는 뒤로 뻗어 균형을 잡습니다. 강하게 힘을 주면서 배를 안쪽으로 누르며 아래에서 위로 약 5회 정도 당겨 줍니다. 이물질이 제거되거나 119 구급대원이 도착 할 때까지 복부 밀어내기를 반복합니다. <br><br>첫째, 의식 확인 및 119에 신고를 합니다. 둘째, 환자 스스로 기침을 유발하도록 합니다. 셋째, 환자의 등 뒤에서 주먹 쥔 손을 배꼽과 명치 중간 정도에 위치하여 배 안쪽을 누르며 아래에서 위로 당겨줍니다. 넷째, 이물질이 제거될 때까지 무한 반복합니다.<br><br></div>
+                            </div>
+                        </div>
+                        <!-- media 4 -->
+                        <div id='media-tab-5'>
+                            <div id="media-tab-5" class="media_title"><img src="resources/images/blt_check_green.png" align="center" style="margin-left:0;">여름철 물놀이 안전 캠페인 영상(힙합 물개)</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">여름철 물놀이 안전 캠페인 영상(힙합 물개)<br><br></div>
+                            </div>
+                        </div>
+                        <!-- media 5 -->
+                        <div id='media-tab-6'>
+                            <div id="media-tab-6" class="media_title"><img src="resources/images/blt_check_green.png" align="center" style="margin-left:0;">[안전한 실험실] 소중한 생명을 살릴 수 있는 심폐소생술 편</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">[MC] 안녕하세요.  이번 주 &lt;안전한 실험실&gt;의 진행을 맡은 김소미입니다. 여러분 인사 전에 보여드린 영상 잘 보셨나요?  바로, 2017년 2월에 있었던 일인데요.<br>인천지하철 2호선에서 한 남성이 쓰러지며 호흡이 없었다고 합니다. 이 남성을 구한 사람은 바로, 야간근무를 마치고 퇴근 중이었던 김종진 소방관이라고 하네요. <br>다행히 옆 칸에 타고 있어서 금방 달려올 수 있었습니다. 그런데, 만약 소방관님이 그 자리에 없었다고 상상해보세요.일반 시민들 중에서 과연 응급처치를 바로 할 수 있는 사람이 몇 명이나 있었을까요? <br>주위에서는 우리가 흔히 말하는 ‘골든타임에 가장 적절한 응급처치를 했다’고 하는데요. 저라면 많이 당황했었을 것 같더라고요. 그래서! 오늘 &lt;안전한 실험실&gt;에서는 학교나 집, 길거리 등 이런 응급상황이 일어났을 때 어떻게 대처해야하는지 그 방법에 대해 알아보려고 합니다.<br>그 전에 &lt;안전한 실험실&gt;을 함께 해 줄 친구들을 소개할게요!  오늘은 전의초등학교 5~6학년 친구들입니다. 안녕하세요~!<br>반갑습니다!! 친구들, 정말 활기차네요. 오늘 &lt;안전한 실험실&gt; 재밌게 보고 궁금한 점이 있다면  얼마든지 댓글로 남겨주세요!<br>&lt;안전한 실험실&gt;은 유 튜브 [국민안전처 안전한 TV] 채널을 통해 실시간으로 진행되며, 전국민이 함께 시청할 수 있습니다. 그리고! 라이브 채팅창을 통해 모두 소통할 수 있으니까요, <br>여러분의 많은 의견 부탁드리겠습니다! <br>자, 그럼 오늘 &lt;안전한 실험실&gt;을 함께 이끌어갈  전문가 분을 소개하겠습니다. (인사하며) 어서 오세요. <br> <br>[정재훈]  전문가 안녕하세요. 반갑습니다.  저는 서울시 은평소방서 홍보교육팀에서  안전교육담당을 맡고 있는 정재훈입니다.  오늘 &lt;안전한 실험실&gt;에서는  언제 어디에서나 일어날 수 있는 아주 위급한 상황!  ‘심정지’에 대해 어떻게 대처해야하는지!  또, 심폐소생술의 중요성과 방법 그리고 순서에 대해서도 꼼꼼하게 알려드리겠습니다.<br>[MC] 네, 안녕하세요. 여러분들은 심폐소생술에 대해 얼마나 알고 있나요? 알고 있다! 잘 모르겠다! 댓글로 남겨주시겠어요? 사실... 솔직히 말씀드리면 부끄럽지만 저도 정확히는 잘 모르겠어요.<br>[전문가] 지금부터라도 알면 돼죠~! 의사도 아닌데, 구급대원도 아닌데 내가 어떻게 하지? 이런 생각들로 많은 사람들이 쭈뼛쭈뼛하기도 하더라고요. 근데 최근에는 사회적으로도 여러 매체를 통해서  응급처치와 심폐 소생술의 중요성이 강조됨으로써 국민들의 관심이 많이 높아지고 있기 때문에  개인적으로는 참 뿌듯합니다. <br>[MC] 맞아요~! 요즘에는 CPR체조도 있고  소방서 견학이라든지, 민방위훈련 등에서도 교육을 한다고  들었습니다. 친구들! 우리 이번 시간을 통해서 확실하게 알아보자고요~!!<br>[MC] 선생님, 심정지로 의식을 잃는 건, 정말 예고 없이 찾아오지  않나요? 그리고 4분에서 6분 안에 응급처치를 해야 한다고 <br> 알고 있는데요. 정말 그런가요?  <br> [전문가]네~! 맞아요.   심정지 환자는 학교, 가정 등 어디에서든 나타날 수 있습니다.   통계에 따르면 목격즉시 심폐소생술을 할 경우, <br> 97%가 생존할 수 있다고 합니다.  이후 급격히4분이 지나면 50% 의 생존율을,   5분이 되면 25%가 됩니다.<br> 또, 4분부터는 뇌손상 가능성이 있기 때문에 <br>4분 이전에 심폐소생술을 받아야 회복 가능성과 예후가좋습니다. 그래서 심폐소생술에 골든타임이 4분이에요.<br> [MC]선생님, 응급처치는 4분 내에 하라고 말씀 하셨는데요.   이 시간이 정말 중요한 거죠?   혹시 구급차가 4분 내에 못 오거나 병원에 못 가게 되면<br> 어쩌나요.. <br> [전문가]그래서 저는 이번 시간이 굉장히 중요하다고 생각합니다.  우리 몸의 모든 세포는 반드시 산소가 필요한데요.  앞서 이야기 했듯이 4분부터는 뇌손상 가능성이 있고5분부터는 뇌가 손상되기 시작합니다. <br> 그리고 10분이 지나게 되면 뇌사 상태가 되거든요.   따라서 심정지 후, 5분 이상 아무런 조치를 취하지 않을 때  소생하더라도 심각한 뇌손상 후유증을 앓게 되는 거죠.<br> 그래서 최초의 목격자가 중요하다고 말씀드린 거예요.   우리 모두가 심폐소생술을 알고 있다면  목격 즉시 심폐소생술을 할 수 있겠죠?<br> [MC] 저도 오늘 이 시간 이후로는 정말 확실하게 알아야겠어요.  실시간 댓글 창도 벌써부터 열기가 후끈합니다. <br>“매번 알아야지, 알아야지 하면서도 미뤘는데 이번 기회에 확실하게 배우고 싶어요.”<br>“저랑 같은 초등학생이 어른의 생명을 구했다고 하니 완전 신기해요~! 저도 열심히 배울게요!” <br> 선생님, 얼른 알려 주세요~! <br> <br> [전문가]네~ 그래서 제가 준비했습니다.  장소를 이동해서 보여드릴게요. 이쪽으로 오세요~!<br> <br> [전문가] (장소 이동 후)   지금 제 앞에 보시는 것이 바로 애니와 더미입니다.   TV에서 자주 등장하기 때문에 익숙하죠?<br> 인체 모형을 따서 만든 심폐소생술 마네킨인데요.  지금부터 잘 들어 주세요~!<br>[전문가]먼저, 사람이 쓰러진 것을 보자마자 해야 할 일이 있어요. <br>[MC] 그게 뭐죠? 빨리 가슴압박을 해서 깨어나게 해드려야죠!<br>[전문가]지금부터 아주 쉽게 알려 드릴게요. 3go 라고 들어보셨나요?   첫 번째 go는 깨우고 입니다.<br> 쓰러진 환자를 보면 우리가 깨워 봐야겠죠?  의식을 확인하는 건데요.   양쪽어깨를 두드리며 ‘여보세요!!괜찮으세요!!’라고 <br> 말을 시켜 언어반응과 통증반응을 확인합니다.  이후 몸을 전체적으로 스캔하여 움직임과 호흡 등 반응을 확인합니다.  두 번째 반응이 없는 경우 119에 알려야겠죠? <br> 그래서 두 번째 go는 알리고!!입니다.  주변에 사람이 많으면 한사람의 포인트를 지적하여 책임감을주어 빨리 119에 알리고 자동심장충격기를 요청 하는 거예요. <br>[MC] 아, 신고! 맞아요~ 신고는 기본이죠!  주변에 사람이 많다면, 한 사람은 신고를 도와주고  다른 한 사람은 응급처치를 위해 준비 한다면 더 좋겠네요.<br> [전문가] 네, 맞습니다. 그리고 세 번째 go는 누르고입니다.   아까 위치가 궁금하다고 하셨죠?  지금 제가 손으로 짚은 곳이 포인트인데요.  가슴의 중앙이 되겠습니다.   가슴뼈의 아래쪽 절반 부위이고, 가슴뼈는 쇄골에서명치까지 이어지는 아주 크고 단단한 뼈입니다. <br> 이 부분에서 손 꿈치 부위를 대고 양손을 포개어   깍지 낀 손으로 팔꿈치를 쭉~펴고 수직자세로   5cm 깊이를 압박하는 것입니다. <br> 하나, 둘, 이런 식으로 말이죠.   이때 중요한 점은, 팔꿈치를 쭉 펴야 힘 전달이 잘되고 수직자세로 압박을 해야 가슴뼈아래에 있는 심장을  압박할 수 있다는 것입니다.  또한 팔 힘 보다는 나의 체중을 이용해서 압박해야 힘이덜 듭니다.<br>[MC] 아, 수직압박..! 그렇다면 몇 번을 해야 될까요?  여러분들은 알고 계신가요?<br> <br>[전문가]음. 1분에 몇 번을 하는 게 가장 이상적일까요?<br>[MC] 1초에 한번씩 60번이 아닐까 조심스럽게 예상해 봅니다~!  여러분들은 알고 있나요?<br> [전문가] 자, 그럼 실험을 한 번 해보겠습니다.  여기 더미에 가슴압박을 하면 그 상태가  모니터에 이렇게 표시되거든요~<br> 한번 해보시죠? <br> [MC] 어...! 선생님 어떻게 하죠? 이렇게 하는 것 맞나요?<br> <br>[전문가]  1분에 약 100번에서 120번 정도를 빠르게 해야 합니다<br>[MC]와, 그렇게나 빨리요?<br>[전문가] 다시 한 번 해보시겠어요?<br>[MC]네~! 먼저, 의식을 확인 한 후, 신고를 했다면... <br>[전문가] 잘 하고 계십니다~!<br>[MC]가슴 중앙에서 이렇게 수직으로 심장압박을....  1분에 100~120회 정도 해야 한다고 하셨죠?<br>(어느 정도 하고난 뒤, 숨을 고르면서) 제가 잘 이해했나요?<br>[전문가] 잠시만요. 자세 부분에 대해서 말씀드릴게요. 교육을 나갈 때에도 많이 틀리는 부분이기도 합니다. 아마, 한 번도 해보지 않았고 익숙하지 않아서 그럴 텐데요. 이렇게 자세를 잡고,1분 동안 약 100회에서 120회를 두 번 정도 반복 한 뒤에 다시 환자의 호흡을 체크해 줍니다. 호흡이 돌아올 경우는 다행이지만, 그렇지 않을 때에는 구급차가 도착할 때까지 하는 것이 좋겠습니다.<br> [MC]그렇다면 제가 처음부터 다시 해보겠습니다.  와! 이제 저도 한 사람의 생명을 구할 수 있을 것 같아요! <br> [전문가] 잘 하셨어요. 이제 마지막 단계입니다.  가슴압박을 30회 한 뒤에 인공호흡을 해야 합니다.   우선, 인공호흡을 하기 전에 기도를 확보합니다.  의식을 잃으면 혀가 이완되어 기도를 막고 있기 때문에   아무리 인공호흡을 하더라도 들어가지가 않거든요.   그래서 기도확보가 꼭 필요합니다.   머리에 가까운 손을 이마에 올리고 다른 손의 손가락 두 개를  모아 머리를 뒤로 젖혀줍니다. 이걸 턱 들기법 이라고 합니다.  기도확보 후 인공호흡을 해야 하는데 만약 호흡이 들어가지  않는다면 기도확보를 한 번 더 하고 다시 인공호흡을<br> 시도합니다.   인공호흡을 하는 방법은 이마올린 손에   엄지와 검지로 손을 막고 입을 전체적으로 다 덥어준 뒤, 1초간 호흡을 불어줍니다.   이후 손가락을 때준 뒤 한 번 더 똑같이 합니다.   이렇게 2회 인공호흡을 해주면 됩니다. <br> [MC]선생님 그런데 인공호흡을 꼭 해야 하는 건가요? <br> [전문가] 아.. 많이 궁금해 하는 내용인데요.<br> 최근에는 인공호흡대신 가슴압박만 하는 가슴압박소생술이<br> 생겼습니다. 인공호흡은 10초 이내에 2회 하여야하는데<br> 숙련되지 않으면 20초 이상 걸리기 때문에 <br> 안하는 것 보다 환자의 결과가 더 안 좋아 질 수 있죠. <br> 그래서 일반인구조자가 인공호흡을 잘 못 하거나, <br> 입과 입을 대기 어렵다고 생각되면 인공호흡을 제외하고<br> 가슴압박만 계속하면 됩니다.<br> [MC]아..! 정확하게 할 수 없다면 생략이 가능한 거군요. <br> [전문가] 아무래도 일반인들은 응급처치에 서툴 수가 있잖아요? <br> 가능하다면 하지만, 필수적으로 하실 필요는 없습니다.<br> [MC] 그렇군요~!<br>아, 선생님! 궁금한 게 또 있는데요.<br>혹시 아기들은 심폐소생술 방법이 다르다고 들었어요.너무 여리 여리해서 조금만 힘을 줘도 안 될 것 같은데...<br> <br>[전문가]맞아요. 그래서 방법이 다른데요.<br> 갓난아이(영아)의 경우에는 손가락 2개를 가슴 가운데에 댄 다음<br> 4cm 깊이로 분당 100~120회 가슴압박30번 인공호흡을 2번 <br> 실시하게 됩니다. <br> 또 다른 방법은 양손의 엄지를 이용하여 가슴 가운데 부위를<br> 4cm 깊이로 압박해주면 됩니다.<br> 소아의 경우에는 성인 심폐소생술에서 양손에서 한손을 때고가슴압박을 해주면 됩니다. <br> 이때 압박의 깊이는 4~5cm가 되겠습니다.<br> 우리친구들은 꼭 119가 올 때까지 하는 것이 좋겠습니다.<br>-심폐소생술 송에 맞춰 실시한다.<br> 그리고 노래에 맞춰서 하면 더 쉽게 할 수가 있는데요.<br> 제가 딱 한번 만 보여드리겠습니다.<br> [MC] 우와, 이렇게 하니까 기억하기 쉽겠어요~!<br>선생님 저 오늘 궁금한 점 또 있습니다~! 도서관이라든지 지하철 등 공공장소에 갔을 때, AED? 라고 쓰여 있으면서 하단에 자동심장.. 뭐라고 쓰여 진 걸 봤거든요.  하트와 심장 박동 그래프가 있어서 느낌은 알겠는데, 정확히 어떤 건지 잘 모르겠어요~ <br>[전문가] 네. 빨간색으로 되어 있어서 눈에 잘 띄죠. 여러분도 한번쯤은 보셨을 텐데요. AED, 즉 ‘자동심장충격기’라고도 합니다. <br>조금만 교육받으면 누구나 사용할 수 있는 안전 장비로 법적인 조치가 마련되어 있습니다.<br>  [MC] 선생님! 그럼 이것도 알려주세요~!<br>[전문가]네, 당연히 알려드리겠습니다.  ‘자동제세동기’라고도 하는데요.   2015년도부터 명칭이 통일이 됐어요. <br> 보건의료인을 제외한 일반인들은 자동심장충격기라고   부릅니다.  심장 기능이 멈췄을 때 사용하는 응급처치 기구로,<br> 사용방법만 숙지하면 누구나 사용할 수 있는 안전한   장비입니다.  <br> [전문가]자, 그럼 순서와 방법을 알려드릴게요~!<br> 먼저, 자동심장충격기의 전원을 켭니다.<br> 그리고 전원이 들어오면 음성이 나오는데요.<br> 절차를 안내해주면 차근차근 따라하면 됩니다.<br>전문가]두 번째는 심폐소생술을 하고 있는 사람을 방해하지 않고 피해서 패드에 그려진 그림대로, <br> 오른쪽 쇄골 아래쪽에 이렇게 생긴 패드를 부착해줍니다.   다른 패드는 왼쪽 유두 바깥쪽 아래인 겨드랑이 중앙선에  부착해줍니다.<br> 세 번째로 목록패드에 연결된 선을 기계에 꽂으면,  자동으로 ‘심장리듬 분석중’이라는 음성이 나옵니다.  이때 주의해야 할 점은 심장 분석 오류가 나지 않도록  환자에게서 조금 떨어져야 합니다.<br> 다음은 전기충격인데요.   전기충격이 필요하다면 기계는 자동적으로 충전이 되는데요.  충전 완료 후에 ‘제세동 버튼을 눌러주세요’라는 음성이   나옵니다. 그러면, 버튼을 누르기 전에 주의를 살펴주세요.  그리고 주변 사람들이 환자와 떨어지도록 말한 뒤,<br> 버튼을 눌러 전기충격을 주는 것입니다.<br> [전문가]만약, 전기충격을 했음에도 소용이 없을 때에는 아까 배운 심폐소생술을 즉시 실시해야합니다. 기계는 2분마다 심장리듬을 분석하며, 심폐소생술 도중 기계에서 전기충격 음성지시가 나오면 음성에 따라 지금까지 한 방법을 반복해야 합니다.<br> [MC] 네, 기기라고해서 복잡할 것 같았는데 생각보다 단순하네요. 아직 저는 사용해본 적은 없지만 제 앞에서 위급한 상황이  벌어진다면, 이제는 꼭! 제가 나서서 도움을 줄 수 있을 것  같습니다! 여러분도 저처럼 자신감이 생겼나요~? <br> [전문가]맞아요. 우물쭈물하다가 4분을 놓치면 돌이킬 수 없는  사고를 맞이하게 될 수도 있습니다. 실제로 응급환자 사망 10명중 4명은 신속한 조치를 못 받아 사망하는 경우가 꽤 있다고 합니다.<br> [MC] 정말 간단하고 중요한 건데, 생명까지 구할 수 있다니 잊지 말아야겠습니다!<br>네, 그럼 지금부터 전의초등학교와 연결해서  궁금한 점이 있는지 한 번 연결해 볼게요.<br> [전문가]네, 질문이 올라오는 동안, 오늘 알려드린 내용을 한 번 더 정리해 드리겠습니다. (심폐소생술 순서 짚어주세요.)<br>생명을 살리는 기적의 4분! 심폐소생술은 빨리 이루어질수록  좋습니다. 자, 그럼 순서는 첫째, 환자의 의식을 확인합니다. 둘째, 한 사람을 지목해서 119에 신고를 부탁하고, 그 동안 셋째, 가슴압박을 해줍니다. 위치는 가슴 중앙에서 하는데요. 5~6cm정도의 깊이로 수직압박을 하며 이때, 수직자세 꼭 잊지 말고요, 1분에 약 100회에서 120회 정도를 하면 됩니다.<br>마지막으로 상태를 확인 후, 기도를 확보하면 되겠습니다. <br>생명을 살리는 기적의 4분!<br>첫째, 의식 확인하기<br>둘째, 신고하기<br>셋째, 가슴압박! 가슴의 중앙에서 5~6cm 수직압박  (1분에 약 100~120회 실시)<br>넷째, 환자의 기도 확보 <br>Q1. 도와주고 싶은데.. 심폐소생술을 하다가 갈비뼈가 부러진다거나<br>심폐소생술을 받고도 깨어나지 않게 되면 제가 책임져야 하나요?<br> [MC]네~! 그럼 전의초등학교 학생들의 질문을 직접 받겠습니다. “심폐소생술을 하다가 갈비뼈가 부러지거나, <br> 혹시 깨어나지 못 할 경우, 제가 책임져야 하나요?”<br> 라는 질문을 해주셨는데요. 어! 그러게요.   너무 다급해서 열심히 하다가 혹시라도 다치게 되면 어쩌죠..?<br>[전문가]네, 좋은 질문입니다.  ‘소중한 생명을 지키는 좋은 일인데.. 혹시나 다치면 어쩌지?’  하는 생각, 누구나 한번쯤은 해봤을 텐데요.  걱정하실 필요는 없습니다. <br>[MC]선생님, 걱정을 하지 말라고요? <br>[전문가]응급의료에 관한 법률 제5조 2항 구조자보호법이 있는데요.  ‘선한 의도로 위험에 처한 사람에게 도움을 제공하다 의도하지<br> 않은 손해를 끼쳤을 때 그 구조자를 보호해 주는 법’이 있죠.  물론, 또 다른 사고가 나지 않는다면 정말 좋겠지만  일부러 그런 것도 아니고, ‘빨리 이 사람을 구조하겠다!’라는   마음으로 행동한 것이기 때문에 혹시나 다른 일이 생긴다면,   법적으로 보호를 받을 수 있게 됩니다. <br>  하지만, 여러분들은 오늘 이 시간을 통해서 열심히 배웠으니까  내 앞에 누군가 쓰러져서 고통을 호소하는 사람이 있을 때   두려워하지 말고 오늘 배운 걸 떠올리면서 침착하게 하면  분명, 좋은 결과가 있을 거라고 생각합니다.<br>[MC]맞아요, 우리친구들은 잘 할거예요. 혹시 다음 질문 있나요~? <br>Q2. 옛날에도 심폐소생술이 있었나요?<br>[전문가] (질문 영상 나온 뒤) 음. 아주 옛날에는 지금처럼 과학적으로 기록된 근거는 없지만 1960년도에 소방대원을 대상으로 심폐소생술을 실시해도 치명적인 손상이나 부작용이 나타나지 않았음을 보고함으로써 비의료인에 대한 교육을 점차 확대하기 시작했다고 합니다.<br>사실 거리마다 설치를 할 수는 없고요. 법적으로 설치장소가 나와있습니다. 제 27조 2 일부 개정에서 공공보건의료기관, 구급차, 항공기, 공항, 객차, 선박, 아파트 등 모두가 이용하는 시설에는 설치를 의무화 하고 있습니다. 아는 만큼 보인다고 아마 오늘 이 시간 이후로는  공공시설에서 조금만 주위를 둘러보면 아마 보일겁니다.<br> <br>[MC]네! 저도 언젠가는 한 사람의 영웅이 될 수 도 있으니  만약 그런 일이 생긴다면 꼭! 용기내보겠습니다. <br> <br>“일반인 시청자입니다. 최근 모세의 기적이 많이 일어나지만  아무래도 골목에서는 그렇지 못할 때가 있더군요.  그런 걸 대비해서 잘 알아두겠습니다.”<br>“완전 쉬워요. 덕분에 심폐소생술 전도사가 될 것 같아요. 고맙습니다~!”<br>[MC]음... 많은 분들이 다양한 댓글을 올려주고 계신대요..,<br>[전문가] 아, 정말 감사합니다. 이런 위급상황 뿐만 아니라, 사고가 났을 때에도 골든타임이라는 게 존재하니까요. 앞으로 길을 걷다가 구조대원을 보거나 또는 운전을 하면서 구급차가 보일 때에는  위급한 상황을 인지해서 조금씩만 양보를 해주시면 더  좋을 것 같습니다.<br>[MC]네~! 잘 알겠습니다. 오늘 &lt;안전한 실험실&gt;에서는 심폐소생술에 대해 알아봤는데요.  방송이 끝난 후에도 더 많은 관심을 가져주셨으면 좋겠습니다.<br> [MC]네~! 일상생활 속에서 누구나 일어날 수 있는 긴 급 상 황!  심폐소생술에 대해 알아봤습니다.  선생님 어떠셨나요?<br> [전문가] 매번 교육을 할 때 마다 더 많은 사람들이 알고 있으면   좋겠다고 생각했습니다.   제가 알려드린 내용들이 언젠가는.. 정말 위급할 때   도움이 되길 바라봅니다.  잊지 마세요. 3go. 깨우고! 알리고! 누르고!  우리 친구들은 다들 잘 할 수 있을 것 같아요! <br>  [MC]분명 많은 도움이 됐을 거예요. 저도 물론이고요!  그럼 오늘 함께 해준 전의초등학교 친구들과도 작별인사를  나눠볼게요. 여러분~ 오늘 어떠셨나요.   이제 심폐소생술에 대해 많이 알 수 있었죠~?<br> <br> [MC]네~! 끝까지 집중해서 봐주신 여러분들 모두 감사드립니다. 심폐소생술! 특별한 기술이 요구되는 것도 아니고 그렇다고 아주 오랜 시간 배워야 하는 것도 아니기 때문에 한번쯤은 시간을 내서 배워두면 좋겠습니다.정재훈 선생님도 정말 수고하셨습니다. <br>생방송으로 진행되는 안전한TV_&lt;안전한 실험실&gt;  오늘은 여기서 마치겠습니다.  다음 시간에 또 만나요. 안녕~!</div>
+                            </div>
+                        </div>
+                        <!-- media 6 -->
+                        <div id='media-tab-7'>
+                            <div id="media-tab-7" class="media_title"><img src="resources/images/blt_check_green.png" align="center" style="margin-left:0;">심폐소생술 습득</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">어느 날 방에서 책을 보고 있던 민주는 이상한 소리를 듣는데요<br><br>소리를 따라간 민주는 그곳에서 의식을 잃은 아빠를 보게 되고  당황한 엄마는 옆에서 정신없이 울고만 있었습니다<br><br>그때 학교에서 배운 심폐소생술이 떠오른 민주는 엄마에게 신고를 부탁한 뒤, 아빠에게 심폐소생술을 시도합니다 <br><br>며칠 후, 아빠는 민주의 심폐소생술 덕분에  무사히 의식을 되찾을 수 있었습니다<br><br>앞서 보셨던 재연은 2015년에 실제 서울 송파구에서 있었던 사례인데요<br><br>이 사례에 나온 심폐소생술에 대해 알아보도록 하겠습니다<br><br>심폐소생술 시 의식을 먼저 확인하고 의식이 없고 비정상호흡을 한다면 즉시 주변 사람에게 신고를 요청하여야 합니다.<br><br>그리고 환자의 어깨 옆에 무릎을 꿇고 앉아, 가슴뼈 아래쪽 2분의 1지점에 있는 압박지점을 확인하세요<br><br>심폐소생술을 시행합니다. 한 손바닥은 압박 위치에,  다른 손바닥은 그 위에 평행하게 겹치세요<br><br>가슴을 누를 땐, 가슴과 맞닿은 손바닥의 아래 부위에만 힘이 들어가도록 해야 합니다<br><br>압박을 할 때는 깊이가 5~6cm가 되도록 강하게, 1초에 2회 정도로 빠르게 압박합니다<br><br>이 때 심폐소생술을 하는 사람의 팔과 바닥이 수직이 되도록 하여 체중을 이용해 압박하세요<br><br>30회의 가슴압박이 끝나면 인공호흡을 시작하는데요,<br><br>인공호흡은 반드시 전문교육을 받은 사람만 시도해야 합니다.<br><br>전문교육을 받지 못했다면, 인공호흡 없이 계속해서 가슴압박을 해주세요<br><br>한 손으로 턱을 들어 올리고 다른 손으로는 머리를 젖힌 후 입안에 이물질이 있는지 확인합니다<br><br>그다음 머리를 젖힌 손의 검지와 엄지로 코를 막고  환자의 입에 가슴상승이 보일 정도로 호흡을 1초씩 2회 불어 넣어줍니다<br><br>이후에는 다시 가슴압박을 시작합니다<br><br>이 심폐소생술은 환자가 깨어나거나 구급대원이 올 때까지 계속해주어야 한다는 것 잊지 마시고요. <br><br>무엇보다도 실제 상황에서 당황하지 않도록  평소에 반복적으로 연습하는 것이 중요합니다</div>
+                            </div>
+                        </div>
+                        <!-- media 7 -->
+                        <div id='media-tab-8'>
+                            <div id="media-tab-8" class="media_title"><img src="resources/images/blt_check_green.png" align="center" style="margin-left:0;">[심폐소생술 웹드라마] 심폐소생술은 나와 가족, 우리 이웃을 지키는 방법입니다(full)</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">뭐야 강아지 장례식? <br>예지몽은 아니겠지? <br>심폐소생술? <br>그래 꿈은 반대라니까 길몽일수도 있자나. 그래 이거야 <br>심폐 소생술 하면 인공 호흡이지, 마우스투 마!우!스!<br>[유유미 - 취업준비생]<br>선생님 인공호흡 단계가 없어진 이유가 뭔가요? <br>[황수정- 서대문 소방서 홍보교육팀]<br>위급상황이 생겼을때 심폐소생술이 익숙하지 않은 시민은 인공호흡 대신 가슴압박만 이용해 응급처치를 하도록 기준이 바뀌었습니다. 응급처치에 서툰 시민들이 환자 기도를 충분히 열지 않고 인공호흡을 하다가 골든 타임을 놓치는 경우가 많기 때문입니다.<br>실제로 한 연구 결과 가슴압박만 받은 환자의 생존율을 14.4%로 인공호흡을 같이 할때 11.5% 보다 높았습니다. <br>[유유미 - 취업준비생]<br>아저씨 괜찮으세요? 아저씨~<br>저기요 여기 사람이 쓰러졌어요 ~ 안경쓰신분 119에 신고해 주세요. 검정색 티셔츠 입으신분 자동 심장 충격기좀 가져다 주세요 <br>쓰러진 사람이 나나 우리 엄말수도 있자나.<br>심폐소생술로 생명을 살릴수 있는 골든 타임은 딱 5분이야.<br>꿈에서처럼 끔찍한 일은 없어야되 구급대원이 오는 시간동안 최초 목격자인 내가 나서야 겠다. <br>뭐지? <br>살려야해~ 아저씨~ 아저씨~ <br>'심폐소생술은 쉽게 말해서 심장과 뇌를 살리는 응급처치 입니다 심장의 역활은 쿵쾅 쿵쾅 펌프질을 하여 전신에 혈액을....'<br>취업도 못하고 한심한 내가 누군가의 생명을 구하다니<br>이젠 내게도 꿈이 생겼다 바로 안전을 지키는 사람이 되고 싶다는 꿈 말이다. <br></div>
+                            </div>
+                        </div>
+                        <!-- media 8 -->
+                        <div id='media-tab-9'>
+                            <div id="media-tab-9" class="media_title"><img src="resources/images/blt_check_green.png" align="center" style="margin-left:0;">[심폐소생술 웹드라마] 심폐소생술 시행 방법(에피소드2)</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">[여자] 아저씨! 괜찮으세요? 아저씨? 저기여! 여기 사람이 쓰러졌어요. <br>안경 쓰신분 119에 신고해 주세요. 검정색 티셔츠 입으신분 자동심장충격기 좀 갖다 주세요. <br>쓰러진 사람이 나나 우리 엄마 일수도 있잖아? <br>심폐소생술로 사람을 살릴 수 있는 골든타임은 딱 5분이야. 꿈에서 처럼 끔찍한 일은 없어야해. <br>구급대원이 오는 시간동안 최초 목격자인 내가 나서야겠다. </div>
+                            </div>
+                        </div>
+                        <!-- media 9 -->
+                        <div id='media-tab-10'>
+                            <div id="media-tab-10" class="media_title"><img src="resources/images/blt_check_green.png" align="center" style="margin-left:0;">[심폐소생술 웹드라마] 나도 언젠가 외면당할 수 있다(에피소드1)</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">[유유리] 뭐야? 강아지 장례식?<br>심폐소생술을 모른다는 이유로 내가 외면한 사람. 언젠가는 나도 외면당할 수 있다. </div>
+                            </div>
+                        </div>
+                        <!-- media 10 -->
+                        <div id='media-tab-11'>
+                            <div id="media-tab-11" class="media_title"><img src="resources/images/blt_check_green.png" align="center" style="margin-left:0;">심폐소생술 우리가족 안전백서</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">국민의 안전과 행복을 위한 메뉴얼 생활속 위기 상황에 대처하는 노하우 대공개 <br><br>안전한 대한민국이 되는 그날까지 우리가족 안전백서가 함께합니다.<br><br>서울시 강서구 2015년 4월 9일 아파트에서 의식을 잃고 쓰러진 한 남자가 있었습니다.<br><br>[의사] 심정지후 4분이 지나면 뇌손상이 시작되고 1분당 10%의 생존률이 감소하게 됩니다.<br><br>즉 10분이 넘어가면 돌이킬수 없는 뇌사 상태에 이를수 있습니다. <br><br>생사에 기로에선 남자는 무사할까요? <br><br>119 구급대가 도착했을때는 다행이 의식을 회복한 상태였습니다. 과연 이남자가 위기의 순간 의식을 되찾을수 있었던 이유는 무엇이였을까요? <br><br>사고 당일 같은 시각 장을 보러 마트에 가던 모녀는 아파트 입구에서 쓰러진 남자를 발견하고 깜짝 놀랐습니다. <br><br>[이수빈(11)- 실제 구조자]<br><br>쓰러진 분이 계셨어요. 쓰러지신 분이 의식이 없고 호흡도 고르게 못하시고 계셨어요 그때는 계속 그것만 했어요 가슴압박만..<br><br>어른들도 하기 어려운 심폐소생술을 구급대가 오기전까지 온힘을 다해 했습니다. <br><br>11살 수빈양의 마음은 어땠을까요? <br><br>[이수빈(11)- 실제 구조자]<br><br>아저씨가 빨리 살아났으면 좋겟다라는 생각만 가지고 있었어요.<br><br>사고4시간전 소방서에서 심폐소생술 교육을 받았기 때문에 바로 할수 있었는데요. <br><br>뇌가 산소 없이 버틸수 있는 시간은 4분 심정지가 왔을때 이 4분안에 어떻게 대처하느냐 따라서 생과 사의 갈림길에 놓이게 됩니다. <br><br>이 기적의 4분을 놓치면 심할경우 사망에 이를수 있습니다. <br><br>2011년 5월8일 축구경기도중 심장마지 증상을 일으켰던 신영록 선수 즉각적인 심폐소생술을 통해 생명에는 지장이 없었는데요.<br><br>심정지를 유발하는 주 원인에는 심장 혈관이 갑자기 막혀서 심장근육이 손상되 발생하는 급성 심근경색이 있습니다. <br><br>암다음으로 높은 사망원인은 심혈관 질환 정상적인 생활을 하다가 예고 없이 심장마비가 일어날수 있기 때문에 주의가 필요합니다. <br><br>서울시 노원구에 있는 지하철 6호선 석계역 지난달 9일 위기에 빠진 시민의 생명을 지킨일이 있었는데요 이남자를 살린것도 역시 심폐소생술을 했기 때문입니다.<br><br>[정진수- 부역장(49)/실제구조자]<br><br>매월 안전점검의날 자동제세동기 점검을 하면서 심폐소생술 반복 교육하고 있습니다. 그래서 위험에 빠진 승객을 신속히 구할수 있었던거 같습니다. <br><br>정씨는 10분여간 심폐소생술을 시행한것이 전부였지만 귀한 생명을 살리는데 큰 도움이 됐습니다. <br><br>모두 심폐소생술을 배웠기 때문에 가능한 일이였는데요. <br><br>만약 여러분 앞에 심장이 멈춘 사람이 있다면 먼저 환자가 움직이거나 호흡과 의식이 있는지 확인하고 주변사람을 지명해 도움을 요청합니다. <br><br>지체하지 말고 신속하게 119에 신고를 하고  발견자는 바로 두손을 깍지 낀체 손바닥 아랫부분으로 가슴을 압박해주는데요.<br><br> 가슴압박 30회에 인공호흡 2회씩 반복합니다. <br><br>영아의 심폐소생술 영아의 심폐소생술 즉 1세 미만의 소아에서의 심폐소생술은 성인의 심폐소생술과 크게 다르바 없지만 가슴압박 방법과 인공호흡 방법에 약간의 차이가 있습니다. 혼자서 심폐소생술을 할때는 가슴압박을 두손가락을 이용해서 하게 됩니다.<br><br>젖꼭지선을 이은 가상의 선에서 약간 아랫부분을 두손가락을 이용해서 강하게 눌러주게 됩니다. <br><br>입과 코를 성인의 입으로 한꺼번에 감싼다음에 인공호흡을 하게 됩니다. 가슴이 올라오는걸 확인해야 하고 1초에 걸처서 천천히 생각보다 적은양의 호흡양을 줘야 합니다.<br><br>지하철역이나 공공장소에 가면 자동제세동기가 비치되어 있습니다.<br><br> 위기 상황에선 누구든 사용할수 있다는 사실을 아시나요? <br><br>사용전에 기도확보 호흡확인을 한후 심폐소생술을 시행해야 합니다. 안내 그림을 보고 표시된 위치에 패드를 붙여줍니다. <br><br>이음성이 나오면 환자에게서 손을 때는데요 충전도중에도 가슴압박을 멈춰서는 안됩니다. 제세동을 실시할때는 중지. 잠깐 떨어지세요.<br><br>제세동 실시후엔 바로 심폐소생술을 실시 자동제세동기는 2분마다 반복시행하도록 합니다.<br><br>괜찮으세요 괜찮으세요? 거기 회색티셧츠 입은 남성분 119에 신고해주세요. 자 이렇게 의식확인후 119에 신고하고 심폐소생술은 빠르게 30회 인공호흡2회를 실시해주시기 바랍니다.<br><br>여러분 모두 심폐소생술을 기억해두었다가 위기의 순간 소중한 생명을 살리시길 바랍니다. <br><br></div>
+                            </div>
+                        </div>
+                        <!-- media 11 -->
+                        <div id='media-tab-12'>
+                            <div id="media-tab-12" class="media_title"><img src="resources/images/blt_check_green.png" align="center" style="margin-left:0;">기도이물폐쇄 대처법(성인편)</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">성인에서 기도이물폐쇄의 원인은 대부분 음식물입니다.<br>주로 음식을 먹다가 갑자기 호흡곤란과 괴로움을 호소하는데 양손으로 목을 감싸쥐며 괴로워 하는게 특징적인 징후입니다. <br>기도폐쇄 환자는 빠른 응급처치가 환자의 생명을 살리는데 가장 중요한 역활을 하기 때문에 평소 기도 이물폐쇄에 대한 응급처치 법을 숙지할 필요가 있습니다. <br>괜찮습니까? 목에 뭐가 걸렸나요? <br>기도의 이물질이 걸린경우 호흡곤란과 괴로움을 호소합니다. 양손으로 목을 감싸며 괴로워 하는것이 가장 큰 특징입니다. <br>기도이물폐쇄로 판단되면 바로 응급처치를 시행해야 하며 이때 주변 사람에게 119 신고를 요청합니다. <br>'환자 기도 이물폐쇄인거 같습니다. 119 신고해주세요!'<br>'기침할수 있겠습니까? '<br>환자가 강한 기침을 하고 있다면 자발적인 기침과 호흡을 위한 노력을 방해하지 않도록 합니다.<br>만약 기침을 하지 못하면 바로 복부 밀어내기를 실행해야 합니다. <br>'기침한번 해보실래요? 좀더 크개 해보실래요? '<br>환자의 등뒤에서 배꼽과 명치 중간정도에 주먹을 위치 시킵니다. 다른 한손으로는 주먹을 감쌉니다 팔에 강하게 힘을 주어 안쪽으로 누르면서 위로 5회 밀어내기를 합니다.<br>이물질이 제거되거나 119가 도착할때까지 복부 밀어내기를 반복하다가 환자가 의식을 잃고 쓰러지면 바로 심폐소생술을 시행합니다.<br> 임산부 또는 복부비만이 심한경우 복부 대신 가슴 부위를 밀어냅니다.<br></div>
+                            </div>
+                        </div>
+                        <!-- media 12 -->
+                        <div id='media-tab-13'>
+                            <div id="media-tab-13" class="media_title"><img src="resources/images/blt_check_green.png" align="center" style="margin-left:0;">자동제세동기 사용법</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">자동제세동기는 심정지 환자에게 전기 충격을 주어 심장리듬을 정상으로 회복시켜주는 장비입니다. <br>공공장소에 비치되어있는 자동제세동기를 통해 심정지 환자의 생존율이 크게 증가한것으로 보고됩니다. <br>자동제세동기는 의학지식이 부족한 일반 사람들도 쉽게 사용할수 있도로 만들어져 있으므로 응급사황시 잘 활용하여 주시기 바랍니다. <br> <br>[남자2]<br>여기 자동제세동기 도착했습니다.<br>[남자1]<br>제가 진행하는동안 심폐소생술을 계속 진행해 주십시오<br>준비된 자동제세동기에도 전원을 켭니다. <br>자동제세동기를 준비하는 동안에도 심폐소생술은 멈추지 말고 진행해야 합니다. <br>패드를 부착할때 신체표면에 땀이 있으면 닦은후 붙여야 합니다 <br>패드는 우측쇄골 아래쪽과 좌측 유두밖았쪽 겨드랑이 중앙쪽에 부착합니다. <br>각패드에는 부착할 위치가 표시되어 있습니다. 패드를 부착하는 중에도 심폐소생술은 멈추지 말고 계속 이어 하도록 합니다. <br>[남자1]<br>환자에게서 떨어지세요.<br>패드를 환자에게 부착하면 기계에서 자동으로 심장리듬 분석중이라는 말이 나옵니다. <br>이때 심장분석에 오류가 나지 않도록 환자에게서 떨어집니다. <br>[남자1]환자에게서 떨어지세요<br>제세동이 필요하다면 기계가 자동으로 충전을 하며 충전후 제세동 버튼을 누르라는 메세지가 나옵니다.<br>버튼을 누르기전 주변사람들에게 환자에게서 떨어지라고 다시한번 주의를 준뒤 제세동 버튼을 누릅니다. <br>[남자1]<br>제세동 실시하겠습니다. <br>전기 충격이 주어지고 나서는 즉시 심폐소생술을 시행합니다. <br>환자가 소생하거나 119 도착시까지 자동제세동기의 지시에 따라 이전 과정을 반복합니다. <br>보통 제세동기는 2분마다 심장리듬을 분석합니다. </div>
+                            </div>
+                        </div>
+                        <!-- media 13 -->
+                        <div id='media-tab-14'>
+                            <div id="media-tab-14" class="media_title"><img src="resources/images/blt_check_green.png" align="center" style="margin-left:0;">영아 심폐소생술법</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">영아의 심정지 원인은 소아와 크게 다르지 않습니다. 신생아의 경우 태어난 직후 질식으로 인한 심정지가 가장 흔하고요. <br>1세 미만에서는 영아 돌연사 증후근과 기도폐쇄등이 심정지의 원인이 됩니다. <br>영아의 기준은 보통 생후 1개월부터 만 1세까지의 어린 아이를 의미합니다.<br>[남자] 아가야? 아가야? 괜찮니? <br>영아의 경우 발바닥을 치면서 환자의 상태를 살핍니다. 의식 또는 호흡이 없거나 자발적인 움직임이 없을 때, 또는 헐떡이는 비정상적인 호흡과 경련 발작을 동반한다면 지체하지 말고 119 신고 후 심폐소생술을 시작합니다. <br>[남자] 여기 의식이 없는 아이가 있습니다 119에 신고 해주시고 자동제세동기를 요청합니다. <br>[남자1] 네<br>양쪽 젖꼭지 부위를 잇는 정중앙의 아랫쪽 해부학적 위치로는 흉골 하부의 절반 부위보다 약간 아랫쪽에 두개의 손가락을 위치시킵니다. 손가락은 압박하기 좋은 손가락 두개를 모으며 보통 검지와 중지 또는 중지와 약지의 첫 마디 부분을 사용합니다. <br>압박 깊이는 최소 4cm이상 압박 속도는 분당 100회 이상으로 가슴을 압박합니다.<br>한 손으로 이마를 뒤로 젖히고 다른 한 손으로 턱을 들어 올려 기도를 열어 줍니다. <br>영아의 경우 지나치게 머리를 뒤로 젖히면 오히려 숨길이 막힐 수 있으므로 귀와 바닥이 평행하도록 턱을 들어 올립니다. <br>환자의 코와 입에 동시에 숨을 불어 넣으면서 환자의 가슴이 상승하는지 관찰합니다. <br>이제 다음과 같은 속도로 호흡을 2회 불어 넣습니다. <br>119 도착이나 제세동기 도착 및 패드 부착시까지 가슴압박과 인공호흡을 30:2 비율로 반복합니다. <br>만일 심폐소생술의 교육을 받지 않았거나 인공호흡의 부담을 느낄 경우 가슴압박만 계속합니다.  </div>
+                            </div>
+                        </div>
+                        <!-- media 14 -->
+                        <div id='media-tab-15'>
+                            <div id="media-tab-15" class="media_title"><img src="resources/images/blt_check_green.png" align="center" style="margin-left:0;">성인 심폐소생술법</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">일반적으로 사망이라고 함은 심장과 폐기능이 멎었을 때를 의미합니다.<br>실제 많은 사람들이 심장박동이 멈추고 있지만 그들중 사망했다고 판단하기엔 이른 경우가 종종 있습니다.<br>이러한 심정지 환자에게 자발적인 심장활동을 회복시켜주는 일련의 과정을 심폐소생술이라고 합니다.<br>심폐소생술은 크게 의식확인, 119 신고, 가슴 압박, 인공 호흡순으로 진행됩니다.<br>의식 확인 및 119 신고<br>여보세요 괜찮으세요? 괜찮으세요?<br>심정지가 발생한 사람은 의식이 없거나 호흡이 없거나 자발적인 움직임이 없으며<br>간혹 헐떡이는 비정상적인 호흡이나 경련발작을 동반하기도 합니다.<br>이럴땐 지체하지 말고 119 신고 후 심폐소생술을 바로 시작합니다.<br>여기 의식이 없는 환자가 없습니다. 119에 신고해 주시고 자동제세동기를 요청합니다.<br>가슴 압박 30회<br>양쪽 젖꼭지 부위를 잇는 선의 중앙 해부학적 위치는 흉골하부의 절반부위에 깍지 낀 손의 손바닥 부위를 위치합니다.<br>이때 팔꿈치를 펴 어깨가 환자의 가슴과 수직이 되게 합니다.<br>압박 깊이는 최소 5cm이상 압박 속도는 분당 100회 이상으로 가슴을 압박합니다.<br>인공 호흡 2회<br>한 손으로 이마를 뒤로 젖히고 다른 한 속으로 턱을 들어 올려 기도를 열어줍니다.<br>이마를 젖힌 손으로 환자의 코를 막고 입으로 숨을 불어 넣습니다.<br>이때 환자의 가슴이 상승하는지 관찰해야 합니다.<br>이제 다음과 같은 속도로 호흡을 2회 불어 넣습니다.<br>119 도착이나 제세동기 도착 및 패드 부착시까지 가슴 압박과 인공호흡을 30대 2 비율로 반복합니다.<br>만일 심폐소생술에 대한 교육을 받지 않았거나 인공호흡에 부담을 느낄 경우 가슴 압박만 계속 합니다.</div>
+                            </div>
+                        </div>
+                        <!-- media 15 -->
+                        <div id='media-tab-16'>
+                            <div id="media-tab-16" class="media_title"><img src="resources/images/blt_check_green.png" align="center" style="margin-left:0;">심폐소생술 뮤직비디오</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">여보세요? 괜찮으세요? 어! 숨을 안 쉬네! 119에 신고해 주세요. <br>가슴압박을 시작해 하나, 둘, 셋, 넷, 다섯, 여섯... 팔꿈치를 곧게 펴고 체중을 실어서 <br>이 템포를 유지해 오륙 센티 깊이로 서른 번 압박해 계속해! 스물일곱, 스물여덟, 스물아홉, 서른!<br>머리 젖히며 턱을 들어 코를 막고 인공호흡 후~! <br>가슴이 올라올 정도로 후~ 가슴압박을 다시 해 하나, 둘, 셋, 넷, 다섯, 여섯... <br>팔꿈치를 곧게 펴고 체중을 실어서 이 템포를 유지해 오륙 센티 깊이로 <br>서른 번 압박해 계속해! 스물일곱, 스물여덟, 스물아홉, 서른! 다시 입으로 후~ <br>가슴이 올라올 정도로 후~ 가슴압박을 다시해 하나, 둘, 셋, 넷, 다섯, 여섯, 일곱, 여덟, 아홉, 열, 열하나, 열둘, 열셋, 열다섯, 열여섯, 열일곱, 열여덟, 열아홉, 스물, 스물하나, 스물둘, 스물셋, 스물넷, 스물다섯, 스물여섯, 스물일곱, 스물여덟, 스물아홉, 서른! 다시 입으로 <br>[할머니] 내 영감도 아닌데!~<br>가슴이 올라올 정도로 후~ 가슴 압박을 다시 해 사람을 살리는 CPR 우리 함께 배워요. <br>이 노래를 따라 부르며 우리 모두 같이 해 봐요. 남녀노소 누구나 쉽게 할 수 있어요. <br>Keep going~ twenty seven, twenty eight, twenty nine, thirty!! Blow two more times Whoo~</div>
+                            </div>
+                        </div>
+                        <!-- media 16 -->
+                        <div id='media-tab-17'>
+                            <div id="media-tab-17" class="media_title"><img src="resources/images/blt_check_green.png" align="center" style="margin-left:0;">[도전 안전벨] 자동제세동기</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">여러분 안녕하세요! 전 국민의 안전 상식을 퀴즈로 풀어보는 도전 안전벨 시간입니다. <br><br>사람을 살리는 4분의 기적 뭔지 아세요? 바로 심폐소생술과 자동제세동기인데요. <br><br>이 자동제세동기를 사용하면 심정지 환자의 생존율을 50% 이상 높일 수 있다는 결과가 나온 만큼 알아두면 매우 유용한 정보입니다. <br><br>그래서 오늘의 퀴즈를 준비해 봤습니다. 저와 함께 풀러 가보실까요?<br><br>오늘 퀴즈를 함께할 주인공은 고등학생들이였는데요.<br><br>[보건교사] 손하고 어깨하고 일찍선이 되게 해서 팔꿈치가 굽혀지지 않게 해서 30회를 합니다. <br><br>[학생1] 괜찮으세요? 괜찮으세요?<br><br>[보건교사] 심폐소생술 실습이 한창이였는데.. 우리 학생들 솜씨가 제법인거 같죠? 안녕하세요.<br><br>[학생들] 안녕하세요.<br><br>[보건교사] 산소공급이 안 돼서 생명을 잃을 수가 있어요. 그럴때 우리가 심폐소생술을 통해서 기도를 확보해서 생명을 살리는 기술적인 기법을 배웠습니다.<br><br>실습하는 학우를 제법 진지한 눈빛으로 바라보며 수업에 열중하고 있는 모습이였는데요. 퀴즈 정답자도 기대해 볼만 합니다. 도전 안전벨 문제 나갑니다. 드디어 공개되는 오늘의 문제. 심정지 환자에게 심폐소생술 또는 네모를 이용하면 소생률을 높일 수 있다. 풀어 주세요. 문제 공개 후 싸해진 분위기. 다들 모르겠다는 표정입니다. 짝궁에도 물어 보면서 답을 유추해 보는데. 학생들 모두 골똘히 생각에 잠겼는데요. 하나 둘씩 판넬에 정답을 써내려 갑니다. 정답과는 조금 거리가 먼 답변도 보이죠? 정답을 들어주세요. 모두들 자신의 답변에 강한 자신감을 내비치는데 전기와 관련된 답변들이 눈에 띄는데요. 과연 정답자가 있을까요? 정답을 공개합니다. 대망의 정답 공개 자동제세동기! 정답자 있나요? 에구구 정답자가 단 한명도 없네요.<br><br>[학생2] 환자를 전기로 충격을 줘야 할 것 같은데 마땅한 이름이 생각나지 않아서 전기충격기라 썼어요.<br><br>자동제세동기란 심정지 환자에게 전기충격을 주어서 심장을 정상 리듬으로 회복시켜 주는 기계인데요. 자동제세동기 사용 시 심정지 환자의 소생률이 크게 높아 진다고 합니다. 우리 나라는 2009년부터 자동제세동기 설치가 의무가 되서 유동인구가 많은 곳에 소화전처럼 유리박스 형태로 보관되어 있는데요. 기계에서 나오는 안내방송에 따라 행동하면 되기 때문에 의학지식이 부족한 일반인도 쉽게 사용이 가능합니다. 심정지 환자 발생시 자동제세동기를 사용하는 방법을 알아보겠습니다.<br><br>우선 자동제세동기의 전원 버튼을 누릅니다. 패드에 표시된 그림을 확인하며 우측 쇄골 아래쪽과 좌측 유도 바깥쪽 겨드랑이 중앙선에 부착하도록 합니다. 패드 커넥터 전원 연결 후 안내 멘트에 따라 행동해야 합니다. <br><br>[자동제세동기] 분석 진행중입니다. 접촉금지 <br><br>심장 리듬을 분석할때는 심장 분석의 오류가 날 수도 있기 때문에 환자의 주변 사람들은 모두 떨어지도록 합니다. <br><br>[자동제세동기] 제세동해야합니다. 환자에게서 떨어지세요. 지금 제세동 실시하세요.<br><br>이때 버튼을 누르면 전기 충격이 실시 됩니다. 전기 충격후 환자가 소생하거나 119가 도착할때까지 자동제세동기의 지시에 따라 2분마다 이전 과정을 반복해 시행하도록 합니다. <br><br>[학생3] 몰랐던 것을 알려줘서 매우 흥미로웠고요. <br><br>[학생4] 많이 봤고 들어본 것 같은데 정확히 명칭을 몰랐었는데 오늘 정확히 알게 되서 정말 유익하고 좋았던 것 같아요.</div>
+                            </div>
+                        </div>
+                        <!-- media 17 -->
+                        <div id='media-tab-18'>
+                            <div id="media-tab-18" class="media_title"><img src="resources/images/blt_check_green.png" align="center" style="margin-left:0;">[도전 안전벨] 영아심폐소생술, 하임리히법</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">세살 된 딸과 함께 신생아 한명이 숨졌고, <br><br>[리포터]여러분 안녕하세요. 전국민의 안전 상식을 퀴즈로 풀어보는 도전 안전벨 시간입니다.<br><br>오늘은 생활속 안전 상식을 알려드리려고 하는데요.<br><br>특히나 아이를 가진 주부님들<br><br>아이에게 어떤 일이 발생할 지 아무도 모르는 거잖아요.<br><br>그럴땐 어떻게 어떻게 대처하는지 알려드려요.<br><br>그럼 따라 오세요.<br><br>오늘 저와 함께 도전 안전벨 퀴즈를 풀어볼 주인공은 보육교사 교육생들인데요.<br><br>[선생님]어떤 안전 교육이 있을까요?<br><br>[학 생1] 불이 나서 내려왔었을 때 서로 다치지 않게 하기 위해서 비상구를 통해 나가는 방법이 있습니다.<br><br>[리포터]여러분 안녕하세요. <br><br>[선생님] 어린이집에서 재난이 났을 때 어떻게 대피를 하는지 재난 대피 훈련을 하고 있었습니다.<br><br>[리포터] 벌써부터 오늘의 만점자 여러 명을 배출할 분위기 인데요. 과연 이중에 신의 한수는 누가 될까요?<br><br>도전 안전벨 문제 나갑니다.<br><br>마침내 공개되는 오늘의 문제는 <br><br>1세 미만 영아 심폐소생술은 네모와 네모 두 개의 손가락으로만 30회 압박해야 한다<br><br>그런데 예상외로 모두들 골똘히 생각에 잠겼는데요.<br><br>대체 얼마나 고민을 했는지 얼굴에 수심이 한가득 입니다.<br><br>그러나 머리 속의 지식을 총동원 약속이라도 한듯 하나 같이 힘차게 답을 적어 보는데요.<br><br>과연 이중에 답이 있을까요?<br><br>자 다쓰셨나요?<br><br>[학생들]네<br><br>[리포터]정답을 들어주세요.여러가지 답들이 쏟아지는 가운데 재밌는 답도 눈에 띄네요.<br><br>[학 생2]이게 엄마 손이고 이게 오빠 손이고 이게 언니 손<br><br>[리포터]정말 센스 만점이네요.<br><br>정답을 공개합니다.<br><br>드디어 공개되는 오늘의 정답<br><br>1세 미만 영아 심폐소생술은 중지와 약지 두 개의 손가락으로만 30회 압박해야 한다.<br><br>와 로또 일등이라도 당첨된 거 마냥 좋아 하시네요. <br><br>[학 생3]옛날에 한 번 교육을 받은 것 같고요. <br><br>책에서도 한 번 본 것 같아요. <br><br>생활 속 어린이 안전 사고는 장소를 가리지 않고 빈번하게 발생하고 있는데요.<br><br>특히 생후 1개월부터 만 1세까지 영아기때에는 아이의 호흡 기관과 심장이 덜 성숙되어 있어 호흡기능 상실이나<br><br>호흡성 심장 정지가 잦기 때문에 응급처치 요령인 영아심폐소생술법과 하임리히법을 꼭 숙지하고 있어야 합니다.<br><br>영아심폐소생술 첫번째는 아이를 바로 눕혀 발바닥을 가볍게 치면서 의식을 확인한 후 바닥과 귀가 수평이 되도록 <br><br>눕혀 기도 확보합니다.<br><br>그 다음 양쪽 젖꼭지 중간 바로 아랫부분에 중지와 약지 혹은 검지와 중지를 위치 시켜 4cm 깊이로 압박을 30회 실시<br><br>합니다. 그 다음 코와 입을 통해 동시에 숨을 불어 넣으면서 의식이 회복 될때까지 압박과 인공호흡을 계속 반복합니다.<br><br>만일 입술에 청색증이 있거나 쉰 울음소리가 나면 기도폐쇄로 판단 왼손으로는 뒷목을 잡고 오른손으로 턱을 감싸 안고<br><br>허벅지 위에 아이의 머리가 아래로 향하도록 엎드려 놓은 후 손바닥 밑부분으로 등의 중앙 부위를 세게 5회 <br><br>쓸어내리면서 두드립니다. 그리고 영아의 뒷 머리를 받치고 등을 바닥으로 향하게 다시 눕히고 심폐소생술과 같은 위치에 <br><br>중지와 약지 혹은 검지와 중지로 압박을 5회 실시 합니다.<br><br>이것을 이물질을 제거될때까지 계속 반복 합니다.<br><br>[학 생4]만약에 사고가 났을 때 그렇게 할 수 있는 방법을 알아서 참 기분이 좋고요. 이렇게 카메라에도 나올 수 있어서 좋아요.</div>
+                            </div>
+                        </div>
+                        <!-- media 18 -->
+                        <div id='media-tab-19'>
+                            <div id="media-tab-19" class="media_title"><img src="resources/images/blt_check_green.png" align="center" style="margin-left:0;">[위급상황 수화 한마디] 숨쉬기가 어려워요</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">"숨쉬기가 어려워요"를 배우겠습니다. <br><br>먼저 숨쉬다는 주먹 쥔 상태에서 손가락 두개를 아래에서 숨을 빨아 올리듯이 혹은 냄새를 맡듯이. 숨쉬다 <br><br>어렵다는 주먹을 쥔 상태에서 얼굴 볼에서 손목을 가볍게 돌려줍니다. 어렵다. 어렵다. 힘들어하는 표정을 같이 함께 씁니다. <br><br>어렵다. 어렵다. 숨쉬기가 어려워요. 숨쉬기가 어려워요. </div>
+                            </div>
+                        </div>
+                        <!-- media 19 -->
+                        <ul class='media-tab'>
+                            <li class="active-2"><a href="#media-tab-1">1</a></li>
+                            <li><a href="#media-tab-2">2</a></li>
+                            <li><a href="#media-tab-3">3</a></li>
+                            <li><a href="#media-tab-4">4</a></li>
+                            <li><a href="#media-tab-5">5</a></li>
+                            <li><a href="#media-tab-6">6</a></li>
+                            <li><a href="#media-tab-7">7</a></li>
+                            <li><a href="#media-tab-8">8</a></li>
+                            <li><a href="#media-tab-9">9</a></li>
+                            <li><a href="#media-tab-10">10</a></li>
+                            <li><a href="#media-tab-11">11</a></li>
+                            <li><a href="#media-tab-12">12</a></li>
+                            <li><a href="#media-tab-13">13</a></li>
+                            <li><a href="#media-tab-14">14</a></li>
+                            <li><a href="#media-tab-15">15</a></li>
+                            <li><a href="#media-tab-16">16</a></li>
+                            <li><a href="#media-tab-17">17</a></li>
+                            <li><a href="#media-tab-18">18</a></li>
+                            <li><a href="#media-tab-19">19</a></li>
+                          </ul>
+                      </div>
+        
+                </div>
+                    
+                    <script>
+                        $(function(){                
+                            $('.tabs').tabslet({
+                              mouseevent: 'click',
+                              attribute: 'href',
+                              animation: true
+                            });
+                        });
+                        $(function(){                
+                            $('.media_tab').tabslet({
+                            mouseevent: 'click',
+                            attribute: 'href'
+                            });
+                        });
+                    </script>
+                </div>
+        
+            </div>
+            <!-- content_wrap end  -->
+        </div>
+        <div class="quickmenu exting-quick">
+            <ul>
+                <li>
+                    <a href="extinguisher.html">
+                        <img src="resources/images/life-safety/ico_fire_w.png" alt="소화기사용법">소화기사용법
+                    </a>
+                </li>
+                <li class="hv">
+                    <a href="cpr.html"><img src="resources/images/life-safety/ico_lifesate02_w.png" alt="심폐소생술">심폐소생술
+                    </a>
+                </li>
+                <li>
+                    <a href="burn.html">
+                        <img src="resources/images/life-safety/ico_lifesate03_w.png" alt="화상응급처치">화상응급처치
+                    </a>
+                </li>
+                <li>
+                    <a href="bleed.html">
+                        <img src="resources/images/life-safety/ico_lifesate04_w.png" alt="출혈응급처치">출혈응급처치
+                    </a>
+                </li>
+                <li>
+                    <a href="rope.html">
+                        <img src="resources/images/life-safety/ico_lifesate04_w.png" alt="완강기사용법">완강기사용법
+                    </a>
+                </li>
+                <li>
+                    <a href="bee.html">
+                        <img src="resources/images/life-safety/ico_bee_w.png" alt="벌쏘임 예방">벌쏘임 예방
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- <script type="text/javascript">
+            $(function(){
+
+                $('.quickmenu li:nth-child(1)').mouseover(function(){
+                    $('.quickmenu li:nth-child(1) img').attr('src','resources/images/life-safety/ico_fire_w.png');
+                });
+                $('.quickmenu li:nth-child(1)').mouseleave(function(){
+                    $('.quickmenu li:nth-child(1) img').attr('src','resources/images/life-safety/ico_fire_r.png');
+                });
+
+                // $('.quickmenu li:nth-child(2)').mouseover(function(){
+                //     $('.quickmenu li:nth-child(2) img').attr('src','resources/images/life-safety/ico_lifesate02_w.png');
+                // });
+                // $('.quickmenu li:nth-child(2)').mouseleave(function(){
+                //     $('.quickmenu li:nth-child(2) img').attr('src','resources/images/life-safety/ico_lifesate02_r.png');
+                // });
+
+                $('.quickmenu li:nth-child(3)').mouseover(function(){
+                    $('.quickmenu li:nth-child(3) img').attr('src','resources/images/life-safety/ico_lifesate03_w.png');
+                });
+                $('.quickmenu li:nth-child(3)').mouseleave(function(){
+                    $('.quickmenu li:nth-child(3) img').attr('src','resources/images/life-safety/ico_lifesate03_r.png');
+                });
+
+                $('.quickmenu li:nth-child(4)').mouseover(function(){
+                    $('.quickmenu li:nth-child(4) img').attr('src','resources/images/life-safety/ico_lifesate04_w.png');
+                });
+                $('.quickmenu li:nth-child(4)').mouseleave(function(){
+                    $('.quickmenu li:nth-child(4) img').attr('src','resources/images/life-safety/ico_lifesate04_r.png');
+                });
+                
+                $('.quickmenu li:nth-child(5)').mouseover(function(){
+                    $('.quickmenu li:nth-child(5) img').attr('src','resources/images/life-safety/ico_lifesate04_w.png');
+                });
+                $('.quickmenu li:nth-child(5)').mouseleave(function(){
+                    $('.quickmenu li:nth-child(5) img').attr('src','resources/images/life-safety/ico_lifesate04_r.png');
+                });
+
+                $('.quickmenu li:nth-child(6)').mouseover(function(){
+                    $('.quickmenu li:nth-child(6) img').attr('src','resources/images/life-safety/ico_bee_w.png');
+                });
+                $('.quickmenu li:nth-child(6)').mouseleave(function(){
+                    $('.quickmenu li:nth-child(6) img').attr('src','resources/images/life-safety/ico_bee_r.png');
+                });
+            });
+
+        </script> -->
+    </section>
+    <!-- TOP버튼 -->
+    <div class="quick">
+        <button type="button" class="go_top_btn" style="display: inline-block;"><span>위로</span></button>
+    </div>
+
+    <script>
+        $(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 500) {
+                    $('.quick').fadeIn();
+                } else {
+                    $('.quick').fadeOut();
+                }
+            });
+            
+            $(".quick").click(function() {
+                $('html, body').animate({
+                    scrollTop : 0
+                }, 400);
+                return false;
+            });
+        });
+    </script>
+    <!-- TOP버튼 끝 -->
+    <footer>
+        <div id="footer">
+            <div class="footer-content">
+                <div class="foot-logo">
+                    <img src="resources/images/logo.png" alt="로고">
+                </div>
+                <div class="footer-copyright">
+                    <p>(우) 32435 충남 예산군 예산읍 군청로 22 Tel 041-339-7114 / Fax 041-339-7229</p>
+                    <p>COPYRIGHT ⓒ YESAN COUNTRY.ALL RIGHTS RESERVED</p>
+                </div>
+                <div class="list-box"></div>
+            </div>
+        </div>
+    </footer>
+    <!-- JS -->
+    <script type="text/javascript" src="resources/javascripts/vendor/jquery.tabslet.min.js"></script>
+    <script type="text/javascript" src="resources/javascripts/vendor/rainbow-custom.min.js"></script>
+    <script type="text/javascript" src="resources/javascripts/vendor/jquery.anchor.js"></script>
+    <script src="resources/javascripts/initializers.js"></script>
+    <!-- JS ends -->
+    <!-- <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script> -->
+    <script type="text/javascript" src="resources/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta property=”og:image” content="resources/images/POZ_202007131009436070.jpg">
+    <meta property=”og:image:width” content="600">
+    <meta property=”og:image:height” content="400"> 
+    <meta name="author" content="예산재난포털" />
+    <meta name="Keywords" content="예산재난포털" />
+    <title>예산군청</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="shortcut icon" href="resources/images/fa_gDi_icon.ico">
+    <link rel="stylesheet" href="resources/css/commmon/common.css">
+    <link rel="stylesheet" href="resources/css/layout.css">
+        <!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+</head>
+<body>
+    <!-- 공통메뉴  -->
+    <header id="header">
+        <div class="nav-wrapper">
+            <a href="index.html"><h1 id="logo">예산재난포털</h1></a>
+            <div class="gnb" id="gnb">
+                <ul>
+                    <li>
+                        <a href="#">종합날씨</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-weather">
+                                <ul>
+                                    <li>
+                                        <a href="livingweather.html">
+                                            <div class="sub-icon-6">
+                                                <img src="resources/images/icon/main-menu-2-1.png" alt="생활날씨">
+                                                <img src="resources/images/icon/main-menu-2-1-hover.png" alt="생활날씨">
+                                            </div>
+                                            생활날씨</a>
+                                    </li>
+                                    <li>
+                                        <a href="rain-info.html">
+                                            <div class="sub-icon-7">
+                                                <img src="resources/images/icon/main-menu-2-2.png" alt="강우정보">
+                                                <img src="resources/images/icon/main-menu-2-2-hover.png" alt="강우정보">
+                                            </div>
+                                            강우정보</a>
+                                    </li>
+                                    <li>
+                                        <a href="snow-info.html">
+                                            <div class="sub-icon-8">
+                                                <img src="resources/images/icon/main-menu-2-3.png" alt="적설정보">
+                                                <img src="resources/images/icon/main-menu-2-3-hover.png" alt="적설정보">
+                                            </div>
+                                            적설정보</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 1depth -->
+                    <li class="on">
+                        <a href="#">생활안전정보</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-information">
+                                <ul>
+                                    <li>
+                                        <a href="information.html">
+                                            <div class="sub-icon-3">
+                                                <img src="resources/images/icon/main-menu-1-3.png" alt="재난속보">
+                                                <img src="resources/images/icon/main-menu-1-3-hover.png" alt="재난속보">
+                                            </div>
+                                            재난속보
+                                        </a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="government-info.html">하천 수위</a></li>
+                                                <li><a href="dam-info.html">댐정보</a></li>
+                                                <li><a href="fire-info.html">소방 긴급구조</a></li>
+                                                <li><a href="firecenter-info.html">소방서센터</a></li>
+                                                <li><a href="earth-info.html">지진</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-9">
+                                                <img src="resources/images/icon/main-menu-3-1.png" alt="재난안전지도">
+                                                <img src="resources/images/icon/main-menu-3-1-hover.png" alt="재난안전지도">
+                                            </div>
+                                            재난안전지도
+                                        </a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="safemap.html">안전MAP</a></li>
+                                            </ul>
+                                        </div>
+                                        
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-10">
+                                                <img src="resources/images/icon/main-menu-3-2.png" alt="재난예방정보">
+                                                <img src="resources/images/icon/main-menu-3-2-hover.png" alt="재난예방정보">
+                                            </div>
+                                            재난예방정보</a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li>
+                                                    <a href="earthquake.html">자연재난</a>
+                                                </li>
+                                                <li>
+                                                    <a href="traffic.html">사회재난</a>
+                                                </li>
+                                                <li>
+                                                    <a href="extinguisher.html">생활안전수칙</a>
+                                                </li>
+                                                <li>
+                                                    <a href="farm.html">농어촌안전</a>
+                                                </li>
+                                                <li>
+                                                    <a href="spring.html">계절별재난</a>
+                                                </li>
+                                                <li>
+                                                    <a href="baby.html">생애주기별 재난</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-11">
+                                                <img src="resources/images/icon/main-menu-3-3.png" alt="재난안전보험">
+                                                <img src="resources/images/icon/main-menu-3-3-hover.png" alt="재난안전보험">
+                                            </div>
+                                            재난안전보험</a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="insurance.html">풍수해보험</a></li>
+                                                <li><a href="safe-insurance.html">예산군 군민안전보험</a></li>
+                                                <li><a href="bicycle.html">예산군 자전거안전보험</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-12">
+                                                <img src="resources/images/icon/main-menu-3-4.png" alt="재난안전앱">
+                                                <img src="resources/images/icon/main-menu-3-4-hover.png" alt="재난안전앱">
+                                            </div>
+                                            재난안전앱</a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="safe-app.html">안전디딤돌</a></li>
+                                                <li><a href="safe-news.html">안전신문고</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 2depth -->
+                    <li>
+                        <a href="#">재난안전대책본부</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-safety">
+                                <ul>
+                                    <li>
+                                        <a href="tissue.html">
+                                            <div class="sub-icon-13">
+                                                <img src="resources/images/icon/main-menu-4-1.png" alt="대책본부 조직도 및 주요업무">
+                                                <img src="resources/images/icon/main-menu-4-1-hover.png" alt="대책본부 조직도 및 주요업무">
+                                            </div>
+                                            대책본부 조직도 및 주요업무</a>
+                                    </li>
+                                    <li>
+                                        <a href="system-1.html">
+                                            <div class="sub-icon-14">
+                                                <img src="resources/images/icon/main-menu-4-2.png" alt="재난대응 체계도">
+                                                <img src="resources/images/icon/main-menu-4-2-hover.png" alt="재난대응 체계도">
+                                            </div>
+                                            재난대응 체계도</a>
+                                    </li>
+                                    <li>
+                                        <a href="system-2.html">
+                                            <div class="sub-icon-15">
+                                                <img src="resources/images/icon/main-menu-4-3.png" alt="피해조사 및 복구계획">
+                                                <img src="resources/images/icon/main-menu-4-3-hover.png" alt="피해조사 및 복구계획">
+                                            </div>
+                                            피해조사 및 복구계획</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 3depth -->
+                    <li>
+                        <a href="#">안전게시판</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-board">
+                                <ul>
+                                    <li>
+                                        <a href="notice.html">
+                                            <div class="sub-icon-16">
+                                                <img src="resources/images/icon/main-menu-5-1.png" alt="공지사항">
+                                                <img src="resources/images/icon/main-menu-5-1-hover.png" alt="공지사항">
+                                            </div>
+                                            공지사항</a>
+                                    </li>
+                                    <li>
+                                        <a href="report.html">
+                                            <div class="sub-icon-17">
+                                                <img src="resources/images/icon/main-menu-5-2.png" alt="보도자료">
+                                                <img src="resources/images/icon/main-menu-5-2-hover.png" alt="보도자료">
+                                            </div>
+                                            보도자료</a>
+                                    </li>
+                                    <li>
+                                        <a href="education.html">
+                                            <div class="sub-icon-18">
+                                                <img src="resources/images/icon/main-menu-5-3.png" alt="교육자료">
+                                                <img src="resources/images/icon/main-menu-5-3-hover.png" alt="교육자료">
+                                            </div>
+                                            교육자료</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 4depth -->
+                </ul>
+            </div>
+        </div>        
+    </header>
+        <div class="gnb_bg"></div>
+    <section>
+        <!-- <div class="main-bg"></div> -->
+        <div class="container_wrapper">
+            <div class="visual_top_wrap-ptcd">
+                <div class="content-title-top">
+                    <h1>농약중독 및 응급조치법</h1>
+                </div>
+            </div>
+            <div class="content-tab-top">
+                <ul class="tab-top-nav">
+                    <li><a href="#">홈</a></li>
+                    <li><span>></span></li>
+                    <li><a href="#">재난예방정보</a></li>
+                    <li><span>></span></li>
+                    <li><a href="#">농어촌안전</a></li>
+                    <li><span>></span></li>
+                    <li><a>농약중독 및 응급조치법</a></li>
+                </ul>
+            </div>
+            <!-- visual top  end -->
+            <div class="sub-content">
+                <div class="content_title">
+                    <div class="earth-title">
+                        <h1><img src="resources/images/village/ico_ptcd01.png" align="center">농약중독 및 응급조치법</h1>
+                        <div class="line"></div>
+                    </div>
+                    <div class="sub-tab-title">             
+                        <div class='tabs tabs_animate'>
+                            <ul class='horizontal-tab farm-horizontal-tab'>
+                              <li class="active"><a href="#tab-1">주의사항</a></li>
+                              <li><a href="#tab-2">보호장비</a></li>
+                              <li><a href="#tab-3">중독증상관찰</a></li>
+                              <li><a href="#tab-4">현장응급조치</a></li>
+                            </ul>
+                            <div id='tab-1' style="margin-bottom: 50px;">
+                                <div class="msfrtn_info_wrap">
+                                    <h1 class="msfrtn-title">농약중독 예방 주의사항</h1>
+                                    <div class="msfrtn-info">
+                                        <div class="msfrtn-info-img">
+                                            <img src="resources/images/village-item/mpr_ptcd01_1.gif" alt="농약이 피부에 닿음" class="imgs mg-t10">
+                                            <img src="resources/images/village-item/mpr_ptcd01_2.gif" alt="농약포장지표시" class="imgs mg-t10">
+                                            <img src="resources/images/village-item/mpr_ptcd01_3.gif" alt="마스크착용" class="imgs mg-t10">
+                                        </div>
+                                        <div class="msfrtn-info-txt">
+                                            <div class="msfrtn-txt">
+                                                <ul class="mg-t50">
+                                                    <li class="tab-sub-main-txt">중독의 예방</li>
+                                                    <li>"예방은 치료보다 낫다"는 사실에 유념하여 농약을 사용할 때에는 중독사고예방을 위해 노력 해야 한다.<br>농약은 신체와 접촉하여 국부 장애를 일으킬 수 있고 신체 내로 들어가서는 중독 장애를 유발할 수 있으므로<br> 농약이 체내로 들어갈 수 없도록 예방조치를 철저히 하여야 한다.<br>농약은 다음 3가지 경로로 신체 내로 들어갈 수 있다.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">피부투과</li>
+                                                    <li>인체의 피부는 완벽한 보호 장벽으로 작용하지는 못하여 농약이 피부에 묻으면 신체 내로 흡수될 수 있다.</li>
+                                                    <li>가능한 한 피부 접촉을 피하여야 한다.</li>
+                                                    <li>피부 오염시는 노출 부위를 깨끗이 닦아야 한다.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">마심</li>
+                                                    <li>농약 본래 용기라 할지라도 포장지가 떨어진 것은 반드시 포장지를 다시 붙여 보관토록 한다.</li>
+                                                    <li>농약을 취급할 때는 음식물을 먹거나 음료수 등을 마시지 말고 흡연을 삼가한다.</li>
+                                                    <li>음식물에 농약이 묻지 않도록 주의한다.</li>
+                                                    <li>농약용 빈 용기를 음식물 보관용으로 사용해서는 안된다.</li>
+                                                    <li>반대로 음식용 용기를 농약 보관용으로 사용해서도 안된다.</li>
+                                                    <li>농약보관소나 작업장 및 살포 장소에는 어린이의 접근을 막아야 한다.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">흡입</li>
+                                                    <li>악천후일 때는 사고의 위험이 높으므로 무리하여 작업하지 않는다.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">점검, 정비</li>
+                                                    <li>농약 중에는 체형에 따라 취급 시 호흡을 통해 폐로 흡수될 수 있는 가스나 분말이 되는 것도 있다.</li>
+                                                    <li>농약 살포액 준비는 야외에서, 환기가 잘 되는 곳에서 하도록 한다.</li>
+                                                    <li>농약용기 개방 시에 특히 수화제의 개봉시에 세심한 주의를 기울여야 한다.</li>
+                                                    <li>농약을 따를 때 세심한 주의를 해야 한다.</li>
+                                                    <li>분무기를 깨끗이 유지 보관토록 하고 고장이 생겼을 때 입으로 빨거나 부는 일이 없도록 한다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- msfrtn_info_wrap  -->
+                            </div>
+                            <div id='tab-2' style="margin-bottom: 50px;">
+                                        <div class="msfrtn-info-txt">
+                                            <div class="msfrtn-txt">
+                                                <ul class="mg-t50">
+                                                    <li class="tab-sub-main-txt">물</li>
+                                                    <li>물은 살포액으로 만드는데 꼭 필요할 뿐만 아니라 농약으로 오염된 눈을 씻는데도 필수적이다. 따라서, 깨끗한 물을 충분히 준비하도록 한다.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">비누</li>
+                                                    <li>농약이 묻은 부분을 닦아낼 때 사용할 비누를 준비한다.</li>
+
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">옷</li>
+                                                    <li>물을 쉽게 이용할 수 없는 경우에는 마르고 깨끗한 옷과 농약을 훔쳐낼 화장지 등을 충분히 준비한다.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">담요</li>
+                                                    <li>충격(쇼크)시에 덮거나 환자를 운반하는데 유용하다.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">활성탄</li>
+                                                    <li>농약을 삼켰을 때에 유용하다</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">
+                                                        플라스틱 용기
+                                                    </li>
+                                                    <li>오염된 옷과 신발의 보관에 사용된다.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">응급조치 계획수립</li>
+                                                    <li>사고시를 가정하여 적절한 치료를 받을 수 있는 가장 빠른 방법과, 환자를 진료소 및 병원까지 운반하는데 필요한 계획을 세워두어야 한다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- tab-3 -->
+                                    <div id='tab-3' style="margin-bottom: 50px;">
+                                        <div class="msfrtn-info-txt">
+                                            <div class="msfrtn-txt">
+                                                <ul class="mg-t50">
+                                                    <li class="tab-sub-main-txt">중독의 예방</li>
+                                                    <li>농약중독은 통상 급성적이며 대체로 과대 피부 접촉 및 과대 흡입시 발생된다. 만약 어떤 사람이 농약에 중독되었다고 판단될 때는 즉시 응급조치를<br> 취하고 의사의 치료를 받아야 한다. 농약의 중독 증상은 농약의 여러 가지 제형 및 흡수 경로의 차이로 여러 형태로 나타날 수 있다. 기타 질병<br> 및 고열로 인한 증상도 농약의 중독과 유상하게 보일 수 있다. 따라서 가능하면 의사의 진료를 받는 것이 중요하다.<br>
+                                                    다음에 설명한 증상들이 나타나면 농약 중독일 가능성이 있으니 즉시 주의를 기울여 관찰하여야 한다.</li>
+                                                </ul>
+                                                <div class="tip_wrap mg0">
+                                                    <ul style="margin-left: 7px;">
+                                                    <li><img src="resources/images/blt_check_green.png" align="center">농약중독 증상</li>
+                                                    <li style="margin-left: 60px; line-height: 32px;">1. 전경신 : 극히 무기력하고 피곤함을 느낌<br>
+                                                        2. 피경부 : 자극성, 화상, 과도한 땀흘림, 지저분해짐<br>
+                                                        3. 신눈경 : 가려움, 화상, 눈물, 잘 보이지 않거나 침침함, 동공축소 또는 확대<br>
+                                                        4. 소화계 : 구강 및 인후화상, 과도한 침분비, 구역질, 구토, 복통, 설사<br>
+                                                        5. 신경계 : 두통, 현기증 혼미, 분안정, 근육경련, 비틀걸음, 분명치 않은 언사(말을 더듬음), 발작, 무의식<br>
+                                                        6. 호흡계 : 기침, 흉통, 흉부압박, 호흡곤란, 숨을 헐덕임</li>
+                                                    </ul>
+                                                </div>
+                                                <ul>
+                                                    <li>어떤 사람의 신체적 상태가 농약중독과 관련 있는지를 판단하기 어려울 때는 현재 앓고 있는 기타 질병의 가능성도 고려하는 등 입수 가능한 모든 <br>정보를 이용하는 것이 중요하다.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">문의</li>
+                                                    <li>관계 있는 사람 또는 같이 작업하던 사람에게 농약과의 접촉이 있었는지 또는 어떤 농약으로 작업을 하였는지 물어본다.</li>
+                                                    <li>무슨 제품을 얼마만 한 양으로 다뤘는지 , 무슨 보호의를 사용하였는지, 어떤 중독 증상이 나타났는지, 술을 마셨거나, 약을 먹었는지 등을 알아본다.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">관찰</li>
+                                                    <li>농약용기, 포장지, 살포 기구 등은 점검하고 모든 포장지를 주의 깊게 살펴보고 보관한다.</li>
+                                                    <li>땅이나 옷 위에 엎질렀거나 노출된 흔적이 있는가 살펴본다.</li>
+                                                    <li>살포 기구의 고장이나 잘못 사용한 경우는 없는가 살펴본다.
+                                                    </li>
+                                                    <li>환자의 상태를 관찰한다.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">냄새</li>
+                                                    <li>대부분의 농약은 많은 양이 오염되었을 때 쉽게 알 수 있을 정도로 특수한 냄새가 있으므로 냄새를 잘 맡아보도록 한다.</li>
+                                                    <li>농약과의 과도한 접촉이 의심되면 응급조치를 먼저 취하고 가능한 한 빨리 의사의 치료를 받아야 한다.</li>
+                                                    <li>의사나 진료소에 환자의 중독 내력, 관찰 사항, 농약 포장지 내용 등을 알려주도록 하고 반면에 질병이 의심되면 평상시처럼 의사의 진료를 받고<br>담당 의사에게 사용 농약과 접촉 정보 등을 일러준다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- tap 4 -->
+                                    <div id='tab-4' style="margin-bottom: 50px;">
+                                        <div class='tabs tabs_animate'>
+                                            <ul class='horizontal-tab ptcd-horizontal-tab'>
+                                              <li class="active"><a href="#tabs-1">일반사항</a></li>
+                                              <li><a href="#tabs-2">오염제거</a></li>
+                                              <li><a href="#tabs-3">응급조치법</a></li>
+                                            </ul>
+                                            <div id="tabs-1">
+                                                <div class="msfrtn_info_wrap">
+                                                    <h1 class="msfrtn-title">현장에서의 응급조치 일반사항</h1>
+                                                    <div class="msfrtn-info">
+                                                        <div class="msfrtn-info-img">
+                                                            <img src="resources/images/village-item/mpr_ptcd04_1_1.gif" alt="응급조치" class="imgs mg-t10">
+                                                        </div>
+                                                        <div class="msfrtn-info-txt">
+                                                            <div class="msfrtn-txt">
+                                                                <ul class="mg-t50">
+                                                                    <li class="tab-sub-main-txt">일반사항</li>
+                                                                    <li>신속 대처가 가장 중요하므로 전문가의 도움을 기다리지 말고 침착하게 행동한다.</li>
+                                                                    <li>
+                                                                        응급조치법에 따라 조치하되 응급조치 중에 자신이 오염되지 않도록 주의한다.
+                                                                    </li>
+                                                                    <li>환자에게는 증상의 중요도에 따라 행동하되, 가장 중요한 것은 호흡을 유지하는 것이다.</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- msfrtn_info_wrap  -->
+                                            </div>
+                                            <div id="tabs-2">
+                                                <div class="msfrtn_info_wrap">
+                                                    <h1 class="msfrtn-title">오염제거</h1>
+                                                    <div class="msfrtn-info">
+                                                        <div class="msfrtn-info-img">
+                                                            <img src="resources/images/village-item/mpr_ptcd04_2_1.gif" alt="바람이 잘통하는 곳" class="imgs mg-t10">
+                                                            <img src="resources/images/village-item/mpr_ptcd04_2_2.gif" alt="오염된 옷" class="imgs">
+                                                            <img src="resources/images/village-item/mpr_ptcd04_2_3.gif" alt="농약이 피부에 닿음" class="imgs">
+                                                        </div>
+                                                        <div class="msfrtn-info-txt">
+                                                            <div class="msfrtn-txt">
+                                                                <ul class="mg-t50">
+                                                                    <li class="tab-sub-main-txt">환자의 격리</li>
+                                                                    <li>중독된 사람은 중독현장에서 멀리 떨어지고 바람이 잘 통하는 곳으로 옮겨 더이상의 피부접촉이나<br>흡입을 하지 않도록 조치한다 .</li>
+                                                                </ul>
+                                                                <ul>
+                                                                    <li class="tab-sub-main-txt">오염된 옷의 제거</li>
+                                                                    <li>오염된 옷과 신발을 완전히 신속하게 벗겨 준비한 다른 용기에 넣도록 한다 .</li>
+                                                                </ul>
+                                                                <ul>
+                                                                    <li class="tab-sub-main-txt">피부, 머리 및 눈의 농약제거</li>
+                                                                    <li>특수 세척액을 찾을 필요가 없이 다량의 물을 사용하여 몸에 묻는 농약을 깨끗이 씻는다.</li>
+                                                                    <li>눈에 농약이 들어갔을 때는 눈을 뜨고 최소한 10분 이상 완전히 씻어낸다.</li>
+                                                                    <li>가능하면 중독환자의 전신을 씻되 10 - 15분 이상 물로 완전히 샤워시킨다.</li>
+                                                                    <li>만약 물을 이용할 수 없으면 옷이나 화장지 등으로 두드리거나 가볍게 닦아낸다.</li>
+                                                                    <li>피부를 거칠게 문지르지 말아야 한다.</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tabs-3">
+                                                <div class="msfrtn_info_wrap">
+                                                    <h1 class="msfrtn-title">응급조치법</h1>
+                                                    <div class="msfrtn-info">
+                                                        <div class="msfrtn-info-img">
+                                                            <img src="resources/images/village-item/mpr_ptcd04_3_1.gif" alt="바람이 잘통하는 곳" class="imgs mg-t10">
+                                                            <img src="resources/images/village-item/mpr_ptcd04_3_2.gif" alt="오염된 옷" class="imgs">
+                                                            <img src="resources/images/village-item/mpr_ptcd04_3_3.gif" alt="농약이 피부에 닿음" class="imgs">
+                                                            <img src="resources/images/village-item/mpr_ptcd04_3_4.gif" alt="농약이 피부에 닿음" class="imgs">
+                                                            <img src="resources/images/village-item/mpr_ptcd04_3_5.gif" alt="농약이 피부에 닿음" class="imgs">
+                                                            <img src="resources/images/village-item/mpr_ptcd04_3_6.gif" alt="농약이 피부에 닿음" class="imgs">
+                                                            <img src="resources/images/village-item/mpr_ptcd04_3_7.gif" alt="농약이 피부에 닿음" class="imgs">
+                                                        </div>
+                                                        <div class="msfrtn-info-txt">
+                                                            <div class="msfrtn-txt">
+                                                                <ul class="mg-t50">
+                                                                    <li class="tab-sub-main-txt">자세</li>
+                                                                    <li>환자의 머리를 낮게 하여 한쪽으로 향하게 누인다. 환자가 의식이 없는 상태이면 턱은 쳐들고,<br>머리는 뒤쪽으로 향하게 하여 호흡을 쉽게 할 수 있도록 한다.</li>
+                                                                </ul>
+                                                                <ul>
+                                                                    <li class="tab-sub-main-txt">체온</li>
+                                                                    <li>의식이 없는 환자인 경우에는 체온을 조절하는데 특별히 유의하여야 한다.</li>
+                                                                    <li>환자의 열이 심하거나 땀을 지나치게 많이 흘리면 찬물로 식혀준다.</li>
+                                                                    <li>환자의 체온이 내려가면 담요나 시트로 덮어 주어 정상체온을 유지하도록 한다.</li>
+                                                                </ul>
+                                                                <ul>
+                                                                    <li class="tab-sub-main-txt">농약을 삼켰을 때</li>
+                                                                    <li>농약이 고독성이어서 치명적일 것 같거나 의사의 치료를 빨리 받을 수 없는 경우에만 토하게 한다.</li>
+                                                                    <li>섭취한 농약을 토하게 하는 것이 좋은지 또는 고독성 농약인지는 농약 포장지를 통해 확인한다.</li>
+                                                                    <li>토하는 것은 의식이 있는 환자에게만 가능하다.</li>
+                                                                    <li>무의식 상태인 환자에게는 아무것도 먹이지 않도록 한다.</li>
+                                                                    <li>자는 본래 누워있던 자세로 편안하게 유지하도록 한다.</li>
+                                                                </ul>
+                                                                <ul>
+                                                                    <li class="tab-sub-main-txt">호흡</li>
+                                                                    <li>환자의 호흡 상태를 계속 관찰한다.</li>
+                                                                    <li>호흡이 얕아지면 (환자의 얼굴이나 혀가 파래질 수 있음) 턱을 앞으로 끌어당겨 혀가 목뒤로 쳐지지<br>않도록 하고, 그래도 숨을 쉬지 않으면 위와 같은 방법으로 호흡 통로를 개방시킨 후에 환자의<br>등 부위를 감싸 안고 턱을 쳐들고, 머리가 뒤로 향하게 한다.</li>
+                                                                    <li>환자의 입에 묻은 찌꺼기나 농약잔류물은 깨끗한 천으로 감싼 손을 넣어 깨끗이 닦는다. 특히 유기<br>인계 또는 카바메이트계 농약을 삼켰을 때는 매우 중요하다.</li>
+                                                                    <li>인공호흡이 필요할 때는 환자의 코를 두 손가락으로 눌러 막고 입으로 숨을 불어 넣어 주거나 입을<br>막고 코로 숨을 불러 넣어 준다. 이때 환자의 가슴이 움직이는 것을 확인하면서 정상호흡을 되찾을<br>때까지 계속한다.</li>
+                                                                </ul>
+                                                                <ul>
+                                                                    <li class="tab-sub-main-txt">경련</li>
+                                                                    <li>경련을 일으킬 때는 솜이나 헝겊 등 (Padded material)을 이 사이에 끼워주어 자해행위가<br>이뤄지지 않도록 한다. 이 경우 가압적으로 해서는 안된다.</li>
+                                                                </ul>
+                                                                <ul>
+                                                                    <li class="tab-sub-main-txt">주의</li>
+                                                                    <li>환자가 담배를 피우거나 술을 마시지 않도록 한다.</li>
+                                                                    <li>우유는 어떤 농약에 한해서는 장으로부터의 흡수를 빠르게 하기 때문에 마시게 해서는 안된다.</li>
+                                                                    <li>기타 음료수는 마실 수도 있다.</li>
+                                                                </ul>
+                                                                <ul>
+                                                                    <li class="tab-sub-main-txt">의사의 치료</li>
+                                                                    <li>중독이 의심스럽거나 계속 아프거나 하면 즉시 의사의 지시를 받거나 환자를 가까운 병원으로 데려간다.
+                                                                    </li>
+                                                                    <li>의사에게는 중독시 상황, 응급조치 사항 및 농약 포장지 내용이나 용기 등을 상세하게 설명해주는<br>것이 신속한 치료에 도움이 된다.</li>
+                                                                    <li>간단한 응급조치 후 중독으로부터 회복되었다 하더라도 작업을 다시 시작하기 전에 반드시 의료진에게<br> 적절한 조언을 받도록 하고 중독사고가 일어났을 때는 그 원인을 명확하게 밝혀 같은 사고가<br>재발되지 않도록 필요한 조치를 충분히 취하도록 한다.</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                        
+                                    
+                                    
+                        </div>
+                    </div>
+                    <!-- tab bar content   -->
+                   
+        
+                </div>
+                    
+                    <script>
+                        $(function(){                
+                            $('.tabs').tabslet({
+                              mouseevent: 'click',
+                              attribute: 'href',
+                              animation: true
+                            });
+                        });
+                        $(function(){                
+                            $('.media_tab').tabslet({
+                            mouseevent: 'click',
+                            attribute: 'href'
+                            });
+                        });
+                    </script>
+                </div>
+        
+            </div>
+            <!-- content_wrap end  -->
+        </div>
+        <div class="quickmenu village-quick">
+            <ul>
+                <li>
+                    <a href="farm.html">
+                        <img src="resources/images/village/ico_farm_w.png" alt="농기계안전">농기계안전
+                    </a>
+                </li>
+                <li class="hv">
+                    <a href="ptcd.html">
+                        <img src="resources/images/village/ico_ptcd01_w.png" alt="농약중독 및 응급조치법">농약중독 및<br> 응급조치법
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- <script type="text/javascript">
+            $(function(){
+
+                $('.village-quick li:nth-child(1)').mouseover(function(){
+                    $('.village-quick li:nth-child(1) img').attr('src','resources/images/village/ico_farm_w.png');
+                });
+                $('.village-quick li:nth-child(1)').mouseleave(function(){
+                    $('.village-quick li:nth-child(1) img').attr('src','resources/images/village/ico_farm_r.png');
+                });
+
+                // $('.village-quick li:nth-child(2)').mouseover(function(){
+                //     $('.village-quick li:nth-child(2) img').attr('src','resources/images/village/ico_ptcd01_w.png');
+                // });
+                // $('.village-quick li:nth-child(2)').mouseleave(function(){
+                //     $('.village-quick li:nth-child(2) img').attr('src','resources/images/village/ico_ptcd01_r.png');
+                // });
+            });
+
+        </script> -->
+    </section>
+    <!-- TOP버튼 -->
+    <div class="quick">
+        <button type="button" class="go_top_btn" style="display: inline-block;"><span>위로</span></button>
+    </div>
+
+    <script>
+        $(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 500) {
+                    $('.quick').fadeIn();
+                } else {
+                    $('.quick').fadeOut();
+                }
+            });
+            
+            $(".quick").click(function() {
+                $('html, body').animate({
+                    scrollTop : 0
+                }, 400);
+                return false;
+            });
+        });
+    </script>
+    <!-- TOP버튼 끝 -->
+    <footer>
+        <div id="footer">
+            <div class="footer-content">
+                <div class="foot-logo">
+                    <img src="resources/images/logo.png" alt="로고">
+                </div>
+                <div class="footer-copyright">
+                    <p>(우) 32435 충남 예산군 예산읍 군청로 22 Tel 041-339-7114 / Fax 041-339-7229</p>
+                    <p>COPYRIGHT ⓒ YESAN COUNTRY.ALL RIGHTS RESERVED</p>
+                </div>
+                <div class="list-box"></div>
+            </div>
+        </div>
+    </footer>
+    <!-- JS -->
+    <script type="text/javascript" src="resources/javascripts/vendor/jquery.tabslet.min.js"></script>
+    <script type="text/javascript" src="resources/javascripts/vendor/rainbow-custom.min.js"></script>
+    <script type="text/javascript" src="resources/javascripts/vendor/jquery.anchor.js"></script>
+    <script src="resources/javascripts/initializers.js"></script>
+    <!-- JS ends -->
+    <!-- <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script> -->
+    <script type="text/javascript" src="resources/js/main.js"></script>
+</body>
+</html>

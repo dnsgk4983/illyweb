@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta property=”og:image” content="resources/images/POZ_202007131009436070.jpg">
+    <meta property=”og:image:width” content="600">
+    <meta property=”og:image:height” content="400"> 
+    <meta name="author" content="예산재난포털" />
+    <meta name="Keywords" content="예산재난포털" />
+    <title>예산군청</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="shortcut icon" href="resources/images/fa_gDi_icon.ico">
+    <link rel="stylesheet" href="resources/css/commmon/common.css">
+    <link rel="stylesheet" href="resources/css/layout.css">
+        <!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+</head>
+<body>
+    <!-- 공통메뉴  -->
+    <header id="header">
+        <div class="nav-wrapper">
+            <a href="index.html"><h1 id="logo">예산재난포털</h1></a>
+            <div class="gnb" id="gnb">
+                <ul>
+                    <li>
+                        <a href="#">종합날씨</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-weather">
+                                <ul>
+                                    <li>
+                                        <a href="livingweather.html">
+                                            <div class="sub-icon-6">
+                                                <img src="resources/images/icon/main-menu-2-1.png" alt="생활날씨">
+                                                <img src="resources/images/icon/main-menu-2-1-hover.png" alt="생활날씨">
+                                            </div>
+                                            생활날씨</a>
+                                    </li>
+                                    <li>
+                                        <a href="rain-info.html">
+                                            <div class="sub-icon-7">
+                                                <img src="resources/images/icon/main-menu-2-2.png" alt="강우정보">
+                                                <img src="resources/images/icon/main-menu-2-2-hover.png" alt="강우정보">
+                                            </div>
+                                            강우정보</a>
+                                    </li>
+                                    <li>
+                                        <a href="snow-info.html">
+                                            <div class="sub-icon-8">
+                                                <img src="resources/images/icon/main-menu-2-3.png" alt="적설정보">
+                                                <img src="resources/images/icon/main-menu-2-3-hover.png" alt="적설정보">
+                                            </div>
+                                            적설정보</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 1depth -->
+                    <li class="on">
+                        <a href="#">생활안전정보</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-information">
+                                <ul>
+                                    <li>
+                                        <a href="information.html">
+                                            <div class="sub-icon-3">
+                                                <img src="resources/images/icon/main-menu-1-3.png" alt="재난속보">
+                                                <img src="resources/images/icon/main-menu-1-3-hover.png" alt="재난속보">
+                                            </div>
+                                            재난속보
+                                        </a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="government-info.html">하천 수위</a></li>
+                                                <li><a href="dam-info.html">댐정보</a></li>
+                                                <li><a href="fire-info.html">소방 긴급구조</a></li>
+                                                <li><a href="firecenter-info.html">소방서센터</a></li>
+                                                <li><a href="earth-info.html">지진</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-9">
+                                                <img src="resources/images/icon/main-menu-3-1.png" alt="재난안전지도">
+                                                <img src="resources/images/icon/main-menu-3-1-hover.png" alt="재난안전지도">
+                                            </div>
+                                            재난안전지도
+                                        </a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="safemap.html">안전MAP</a></li>
+                                            </ul>
+                                        </div>
+                                        
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-10">
+                                                <img src="resources/images/icon/main-menu-3-2.png" alt="재난예방정보">
+                                                <img src="resources/images/icon/main-menu-3-2-hover.png" alt="재난예방정보">
+                                            </div>
+                                            재난예방정보</a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li>
+                                                    <a href="earthquake.html">자연재난</a>
+                                                </li>
+                                                <li>
+                                                    <a href="traffic.html">사회재난</a>
+                                                </li>
+                                                <li>
+                                                    <a href="extinguisher.html">생활안전수칙</a>
+                                                </li>
+                                                <li>
+                                                    <a href="farm.html">농어촌안전</a>
+                                                </li>
+                                                <li>
+                                                    <a href="spring.html">계절별재난</a>
+                                                </li>
+                                                <li>
+                                                    <a href="baby.html">생애주기별 재난</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-11">
+                                                <img src="resources/images/icon/main-menu-3-3.png" alt="재난안전보험">
+                                                <img src="resources/images/icon/main-menu-3-3-hover.png" alt="재난안전보험">
+                                            </div>
+                                            재난안전보험</a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="insurance.html">풍수해보험</a></li>
+                                                <li><a href="safe-insurance.html">예산군 군민안전보험</a></li>
+                                                <li><a href="bicycle.html">예산군 자전거안전보험</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-12">
+                                                <img src="resources/images/icon/main-menu-3-4.png" alt="재난안전앱">
+                                                <img src="resources/images/icon/main-menu-3-4-hover.png" alt="재난안전앱">
+                                            </div>
+                                            재난안전앱</a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="safe-app.html">안전디딤돌</a></li>
+                                                <li><a href="safe-news.html">안전신문고</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 2depth -->
+                    <li>
+                        <a href="#">재난안전대책본부</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-safety">
+                                <ul>
+                                    <li>
+                                        <a href="tissue.html">
+                                            <div class="sub-icon-13">
+                                                <img src="resources/images/icon/main-menu-4-1.png" alt="대책본부 조직도 및 주요업무">
+                                                <img src="resources/images/icon/main-menu-4-1-hover.png" alt="대책본부 조직도 및 주요업무">
+                                            </div>
+                                            대책본부 조직도 및 주요업무</a>
+                                    </li>
+                                    <li>
+                                        <a href="system-1.html">
+                                            <div class="sub-icon-14">
+                                                <img src="resources/images/icon/main-menu-4-2.png" alt="재난대응 체계도">
+                                                <img src="resources/images/icon/main-menu-4-2-hover.png" alt="재난대응 체계도">
+                                            </div>
+                                            재난대응 체계도</a>
+                                    </li>
+                                    <li>
+                                        <a href="system-2.html">
+                                            <div class="sub-icon-15">
+                                                <img src="resources/images/icon/main-menu-4-3.png" alt="피해조사 및 복구계획">
+                                                <img src="resources/images/icon/main-menu-4-3-hover.png" alt="피해조사 및 복구계획">
+                                            </div>
+                                            피해조사 및 복구계획</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 3depth -->
+                    <li>
+                        <a href="#">안전게시판</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-board">
+                                <ul>
+                                    <li>
+                                        <a href="notice.html">
+                                            <div class="sub-icon-16">
+                                                <img src="resources/images/icon/main-menu-5-1.png" alt="공지사항">
+                                                <img src="resources/images/icon/main-menu-5-1-hover.png" alt="공지사항">
+                                            </div>
+                                            공지사항</a>
+                                    </li>
+                                    <li>
+                                        <a href="report.html">
+                                            <div class="sub-icon-17">
+                                                <img src="resources/images/icon/main-menu-5-2.png" alt="보도자료">
+                                                <img src="resources/images/icon/main-menu-5-2-hover.png" alt="보도자료">
+                                            </div>
+                                            보도자료</a>
+                                    </li>
+                                    <li>
+                                        <a href="education.html">
+                                            <div class="sub-icon-18">
+                                                <img src="resources/images/icon/main-menu-5-3.png" alt="교육자료">
+                                                <img src="resources/images/icon/main-menu-5-3-hover.png" alt="교육자료">
+                                            </div>
+                                            교육자료</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 4depth -->
+                </ul>
+            </div>
+        </div>        
+    </header>
+        <div class="gnb_bg"></div>
+    <section>
+        <!-- <div class="main-bg"></div> -->
+        <div class="container_wrapper">
+            <div class="visual_top_wrap-gale">
+                <div class="content-title-top">
+                    <h1>강풍/풍랑</h1>
+                </div>
+            </div>
+            <div class="content-tab-top">
+                <ul class="tab-top-nav">
+                    <li><a href="#">홈</a></li>
+                    <li><span>></span></li>
+                    <li><a href="#">재난예방정보</a></li>
+                    <li><span>></span></li>
+                    <li><a href="#">자연재난</a></li>
+                    <li><span>></span></li>
+                    <li><a>강풍/풍랑</a></li>
+                </ul>
+            </div>
+            <!-- visual top  end -->
+            <div class="sub-content">
+                <div class="content_title">
+                    <div class="earth-title">
+                        <h1><img src="resources/images/ico_gale.png" align="center">강풍/풍랑</h1>
+                        <div class="line"></div>
+                        <p>강풍은 10분간 평균초속이 14m/s 이상인 바람을 말하며 이런 강풍이 파도가 되는 것을 풍랑이라고 합니다.</p>
+                    </div>
+                    <div class="sub-tab-title">             
+                        <div class='tabs tabs_animate'>
+                            <ul class='horizontal-tab'>
+                              <li class="active"><a href="#tab-1">강풍 국민행동요령</a></li>
+                              <li><a href="#tab-2">풍랑 국민행동요령</a></li>
+                            </ul>
+                            <div id='tab-1'>
+                                <div class="msfrtn_info_wrap">
+                                    <h1 class="msfrtn-title">강풍특보 시 이렇게 행동합니다.</h1>
+                                    <div class="msfrtn-info">
+                                        <div class="msfrtn-info-img">
+                                            <img src="resources/images/item/mpr_gale01_1.jpg" alt="119 신고 이미지" class="imgs">
+                                        </div>
+                                        <div class="msfrtn-info-txt">
+                                            <div class="msfrtn-txt">
+                                                <ul>
+                                                    <li class="tab-sub-main-txt">집 안에서의 안전을 확보합니다.</li>
+                                                    <li>간판 등의 낙하물과 가로수 전도의 위험이 있으니 가급적 외출을 삼가고, 특히 노약자나 어린이는 집 밖으로<br>나가지 않도록 주의해야 합니다.</li>
+                                                    <li>창문과 같은 유리창 근처는 유리가 깨지면 다칠 위험이 있으므로 피합니다.</li>
+                                                    <li>지붕 위나 바깥에서의 작업은 위험하니 피해야 합니다.</li>
+                                                    <li>파도에 휩쓸릴 위험이 있으니 바닷가로 나가지 않도록 주의합니다.</li>
+                                                    <li>강풍이 지나간 후 땅바닥에 떨어진 전깃줄에 접근하거나 만지지 말아야 합니다.</li>
+                                                    <li>강풍으로 파손된 전기시설 등 위험 상황을 발견했을 때에는 119나 시 · 군 · 구청에 연락하여 조치를 취하도록<br>안내합니다.</li>
+                                                    <li>창틀과 유리 사이의 채움 재가 손상되거나 벌어져 있으면 유리창 파손의 위험이 커지므로, 틈새가 없도록<br>보강해 주어야 합니다.</li>
+                                                    <li>유리창 파손 시 흩날림 물에 의한 피해를 줄이기 위해서 창문에 비산 방지용 안전필름을 붙입니다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- msfrtn_info_wrap  -->
+                                <div class="tip_wrap">
+                                    <h1 class="msfrtn-title" style="padding-top: 0px; margin-bottom: -30px;">알아두면 좋은 재난정보</h1>
+                                    <h2><img src="resources/images/blt_check_green.png" align="center">강풍 주의보</h2>
+                                    <ul>
+                                        <li>육상에서 14m/s 이상 또는 순간풍속 20m/s 이상이 예상될 때. 다만, 산지는 풍속 17m/s 이상 또는 순간풍속 25m/s 이상이 예상될 때</li>
+                                    </ul>
+                                    <h2><img src="resources/images/blt_check_green.png" align="center">강풍경보</h2>
+                                    <ul>
+                                        <li>육상에서 풍속 21m/s 이상 또는 순간풍속 26m/s 이상이 예상될 때. 다만, 산지는 풍속 24m/s 이상 또는 순간풍속 30m/s 이상이 예상될 때</li>
+                                    </ul>
+                                    <h1 class="msfrtn-title" style="padding-top: 50px; margin-bottom: -30px;">Q & A</h1>
+                                    <h2><img src="resources/images/blt_check_green.png" align="center">강풍 주의보</h2>
+                                    <ul>
+                                        <li>Q. 강풍특보 발효시 아파트 창문파손을 어떻게 하면 최소화 할 수 있습니까?</li>
+                                        <li>A. 고층아파트 등 대형·고층건물에 거주하고 계신 주민은 유리창이 파손되는 것을 방지하기위해 창틀고정(젖은 신문지, 테이프) 등을 사용하여 피해를 최소화 합시다.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div id='tab-2'>
+                                <div class="msfrtn_info_wrap">
+                                    <h1 class="msfrtn-title">풍랑특보 시 이렇게 행동합니다.</h1>
+                                    <div class="msfrtn-info">
+                                        <div class="msfrtn-info-img">
+                                            <img src="resources/images/item/mpr_gale01_2.jpg" alt="라디오 이미지" class="imgs">              
+                                        </div>
+                                        <div class="msfrtn-info-txt">
+                                            <div class="msfrtn-txt">
+                                                <ul>
+                                                    <li>TV, 라디오 등을 통해 풍랑정보를 수시로 확인하고 관공서의 재난 예·경보를 청취합시다.</li>
+                                                    <li>해안가의 낚시꾼, 야영객, 행락객 등은 인근의 안전한 곳으로 대피합시다.</li>
+                                                    <li>지붕 위나 바깥에서의 작업은 위험하니 피해야 합니다.</li>
+                                                    <li>파도에 휩쓸릴 위험이 있으니 바닷가로 나가지 않도록 주의합니다.</li>
+                                                    <li>높은 파도가 발생할 위험이 있는 방파제, 방조제 등에 가지 맙시다.</li>
+                                                    <li>항해 중 또는 조업 어선은 인근 선박이나 관계기관(어업무선국 등)에 연락하고 대피합시다.</li>
+                                                    <li>수산 증·양식시설을 고정하고 지지대로 보강하여 높은 파도와 강풍에 유실되지 않도록 사전 조치합시다.</li>
+                                                    <li>양식자재·해상작업대 등은 안전한 장소로 미리 이동 조치합시다.</li>
+                                                    <li>집 안팎의 전기수리는 하지 맙시다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tip_wrap">
+                                    <h1 class="msfrtn-title" style="margin-top:-50px; margin-bottom: -30px;">알아두면 좋은 재난정보</h1>
+                                    <h2 style="margin-left: 0 !important;"><img src="resources/images/blt_check_green.png" align="center">풍랑 주의보</h2>
+                                    <ul>
+                                        <li>해상풍속 14m/s 이상(3시간 이상 지속), 유의 파고 3m 초과</li>
+                                    </ul>
+                                    <h2 style="margin-left: 0 !important;"><img src="resources/images/blt_check_green.png" align="center">풍랑경보</h2>
+                                    <ul>
+                                        <li>해상풍속 21m/s 이상(3시간 이상 지속), 유의 파고 5m 초과</li>
+                                    </ul>
+                                    <h1 class="msfrtn-title">Q & A</h1>
+                                    <li style="margin-left: 0 !important;"><img src="resources/images/blt_check_green.png" align="center">Q. 너울성 파도 대처 요령은?</li>
+                                    <li>A. 해안가 위험 축대나 시설물은 사전에 철거, 방파제 근처가 가장 위험</li>
+                                </div>
+                                <!-- msfrtn_info_wrap  -->
+                            </div>
+                        </div>
+                    <div class='media_tab tab_media_title'>
+                 
+        
+                        <div id='media-tab-1'>
+                            <div id="media-tab-1" class="media_title"><img src="resources/images/blt_check_green.png" align="center" style="margin-left: 0;">[도전 안전벨] 강풍</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">여러분 반갑습니다. 전 국민의 안전 상식을 퀴즈로 풀어보는 도전 안전벨 시간입니다. <br><br>본격적이 장마가 시작 되면서 2차 재난의 우려까지 발생되고 있는데요. 지난 6월에는 전례 없는 초속 60m/s 의 강풍이 불어오는 기상 현상이 일어나기도 했죠? 자꾸 이렇게 기상 이변이 확! 그냥 막! 그냥! 여기 저기 막! 그냥 발생하는 요즘 우리 국민들의 안전을 지키기 위해서 강풍 안전 상식 지키고 가실게요~!!<br><br>오늘 안전 상식 퀴즈를 함께 풀어 볼 주인공은 24시간 불철주야 우리의 안전을 지키기 노력하는 경비 교육생들. 수업에 집중하는 자세나 강렬한 눈빛만 봐도 알 수 있듯이 오늘 퀴즈의 정답을 쉽게 맞출거라 기대해봅니다. <br><br>[리포터] 여러분 안녕하세요.<br><br>[교육생들] 안녕하세요.<br><br>[교수] 사고예방이나 안전 교육이 지금 수업시간의 주된 내용입니다.<br><br>[리포터] 여러분 항상 이렇게 교육해주시나요? <br><br>[교육생들] 네!<br><br>[교수] 오늘은 강도가 좀 낮은편인데 원래는 더 세게 하죠? 그죠? <br><br>[교육생들] 네<br><br>믿으니까 걱정 마세요. 도전 안전벨 문제 나갑니다. 오늘의 문제 빠밤 강풍 특보 발령 시 유리창 파손을 방지하기 위해 유리창 가장자리에 네모를 붙이는 것이 좋다. 일단 반응은 나쁘지 않은 것 같았는데. 이내 하나, 둘씩 깊은 고뇌에 빠지기 시작합니다. 급기야 옆친구에게 물어 보지만 썩 도움이 되지 않는 눈치 입니다. 마침내 모두들 확신에 찼는지 답을 적기 시작하는데요. 과연? 어떤 답이 나올까요? 정답을 들어주세요.<br><br>[교육생들] 우와 <br><br>다양한 답들이 쏟아졌는데. 아.. 이 분은 너무 솔직하시네요. <br><br>[교육생1] 옷은 가장 쉽게 보이기 때문에 급한 대로 옷을 적었어요. <br><br>[교육생2] 옛날에 교육을 받긴 받았는데 기억이 잘 않나가지고 모르겠다고 적었어요. <br><br>이번에 확실히 기억하세요! 정답을 공개합니다. 두둥! 대망의 정답은 두구 두구 두구 두구! 테이프! 어디 정답자 있나요? 와! 다행이 정답자가 있었네요.<br><br>[교육생3] 작년에 태풍이 왔을 때 뉴스에서 봤고 인터넷을 찾아봤을 때 이런식으로 하라하는게 제일 좋다고 했어요.<br><br>강풍이랑 초속 14~21m/s 센 바람을 말하는데요. 지난 10년동안 총 15회나 발생하며 무려 388억원의 재산 손실을 입혔습니다. 특히 강풍이 불때 가장 심각한 피해사례로 유리창 파손을 들수 있는데요. 강풍에 안전하게 대비하려면 먼저 가정에서는 유리창과 창틀 가장자리에 테이프로 고정시켜 틈이 발생하지 않도록 하는 것이 좋습니다. 또 농어촌에서는 비닐하우스나 농작물에 방풍벽을 설치해야 합니다. 그리고 입간판은 안으로 들여놓거나 단단히 고정시켜 파손을 방지하고, 가급적 외출을 삼가하며 특히 해안가는 파도에 휩쓸릴 수 있으니 꼭 피해야 합니다.<br><br>[교육생4] 이번 기회에 좋은 경험을 했고요. 다시 한번 더 알아보는 계기가 된것 같아요. <br><br>[교육생5] 이런 유익한 정보를 알게 돼서 예방도 되고 즐거운 시간이었습니다. 고맙습니다.<br><br>시속 379km 현실에선 상상하기 조차 쉽지 않은 비바람이 몰아 쳤습니다. </div>
+                            </div>
+                        </div>
+                        <!-- media 1 -->
+                        <div id='media-tab-2'>
+                            <div id="media-tab-2" class="media_title"><img src="resources/images/blt_check_green.png" align="center" style="margin-left: 0;">강풍에 따른 피해예방 및 행동요령</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">2010년 9월, 태풍 곰파스가 몰고온 강풍의 위력은 엄청났습니다.<br>순간 최대풍속 52.5미터로 몰아치는 거센 바람은 인천문학경기장의 지붕막을 찢어 놓았고 비닐하우스 수천동을 파괴시켰으며 전신주를 넘어뜨려 사상 최대의 정전사태를 불러오기도 했습니다.<br><br>한순간에 모든 것을 날려버리는 강풍. 피해를 최소화하기 위한 대비방법을 알아봅니다.</div>
+                            </div>
+                        </div>
+                        <!-- media 2 -->
+                        <div id='media-tab-3'>
+                            <div id="media-tab-3" class="media_title"><img src="resources/images/blt_check_green.png" align="center" style="margin-left: 0;">[도전 안전벨] 풍랑 주의보</div>
+                            <div class="media_wrap">
+                                <div class="player">
+                                    <video controls poster="resources/images/gugmin-anjeon_earthquake.jpg">
+                                        <source xmlns="http://www.w3.org/1999/xhtml" type="video/mp4" src="safeTv/gugmin-anjeon_earthquake.mp4"> 
+                                    </video>
+                                </div>
+                                <div class="media_caption">여러분 안녕하세요. 전 국민의 안전 상식을 퀴즈로 점검해 보는 도전 안전벨 시간입니다. <br><br>오늘은 바다의 사나운 바람으로 발생하는 풍랑에 대해서 알아볼건데요. 신에게는 아직 사고에 대비할 수 있는 여러 가지 방법이 남아 있습니다.<br><br>오늘 저와 함께 퀴를 풀어 볼 주인공은 풍랑과 아주 관련이 많은 분들인데요. 바로 바다와 함께 살아가는 인천 영종도 어민들입니다. 으리 으리한 바다 사나이들의 안전점검 교육이 한창이였는데요.<br><br>[어촌계장] 조업을 나가게 됐는데 우리 계원께서는 구명조끼를 꼭 착용하시고<br><br>[리포터] 안녕하세요.<br><br>[주민들] 안녕하세요.<br><br>[어촌계장] 조업을 하러 나가야 되는데 거기에 대해서 주의사항을 주고 조심하라고 제가 일주일에 두번씩 교육을 하고 있습니다.<br><br>위풍 당당한 주민들 열정과 패기로 가득한 모습을 보니 오늘도 역시나 기대가 됩니다. 도전 안전벨 문제 나갑니다. 빠밤 해상에서 풍속 네모 이상이 네모 이상 지속되거나 유의파고가 3m 예상될 때 발령된다. 그런데 의외로 문제 공개 후 다소 의기소침해진 분위기였는데요. 문제를 보고 또 보지만 답은 보이지 않고 그러나 바다의 승부사들 다시 고도의 집중력을 발휘해 봅니다. 이건 어떨까? 저건 어떨까? 그래도 아버님들 너무 고민 고민하지 마시라고요. 정답을 들어주세요.<br><br>[주민들] 우와~!!!<br><br>분명 정답은 하나 일텐데 쏟아진 답변은 각양 각색이네요. 과연 이안에 정답은 있을까요? <br><br>[주민1] 이거 텔레비전에서도 보고 이야기하는 걸 평소에도 들었기 때문에 확실해요. 100% 맞습니다. <br><br>자신감 만큼은 백점이시네요. 정답을 공개합니다. 드디어 공개되는 오늘의 정답은 14m/s 이상이 3시간 이상! 맙소사 실망하는 오답자들 사이로 반가운 정답자가 다행히 있네요. <br><br>풍랑은 바람이 강하게 불어 일어나는 물결을 말하는데요. 바람으로 인해 해수면이 거칠어 지고 높아져서 뾰족한 삼각형을 이루는 경우가 많았습니다. 풍랑주의보는 14m/s 이상 3시간 이상 지속하거나 유의 파고가 3m를 초과할 것으로 예상될 때 발령되고요. 풍랑경보는 21m/s 이상이 3시간 이상 지속하거나 유의파고가 5m를 초과할 것으로 예상될때 발령되는데요. 풍랑시 매년 막대한 재산피해와 인명피해가 발생하고 있는 만큼 대비는 필수겠죠? <br><br>풍랑시 가장 중요한 것은 주민과 관광객은 즉시 해안가에서 피하고 해안가 인근에 있던 모든 사람들은 안전한 곳으로 신속하게 대피해야하는데요. 그리고 실내에선 건물의 출입문 창문을 잠그고 베란다에 있는 소품 및 가재 도구를 정리해 안전한 곳으로 이동시켜 손실을 예방합니다. 또 항내 선박은 침몰과 파손을 방지하도록 결박하고 조업 중인 선박은 신속히 대피합니다. 양식장에서는 해상작업대와 양식자재를 안전한 곳으로 이동해 높은 파도와 강풍에 유실되지 않도록 사전에 조치합니다. 마지막으로 항만의 대형사고를 일으킬 수 있는 컨테이너, 기타 적재화물 등은 풍랑 피해를 당하지 않도록 이동하거나 결박해야 합니다. <br><br>[주민2] 앞으로 풍랑이나 바다 생활하는데 열심히 공부 좀 많이하고 오늘 즐거웠습니다. </div>
+                            </div>
+                        </div>
+                        <!-- media 3 -->
+                        
+                        <ul class='media-tab'>
+                            <li class="active-2"><a href="#media-tab-1">1</a></li>
+                            <li><a href="#media-tab-2">2</a></li>
+                            <li><a href="#media-tab-3">3</a></li>
+                          </ul>
+                      </div>
+        
+                </div>
+                    
+                    <script>
+                        $(function(){                
+                            $('.tabs').tabslet({
+                              mouseevent: 'click',
+                              attribute: 'href',
+                              animation: true
+                            });
+                        });
+                        $(function(){                
+                            $('.media_tab').tabslet({
+                            mouseevent: 'click',
+                            attribute: 'href'
+                            });
+                        });
+                    </script>
+                </div>
+        
+            </div>
+            <!-- content_wrap end  -->
+        </div>
+        <div class="quickmenu quick-1">
+            <ul>
+                <li>
+                    <a href="earthquake.html">
+                        <img src="resources/images/ico_erthqk_w.png" alt="지진">지진
+                    </a>
+                </li>
+                <li>
+                    <a href="typhoon.html">
+                        <img src="resources/images/ico_typhn_w.png" alt="태풍">태풍
+                    </a>
+                </li>
+                <li>
+                    <a href="downpour.html">
+                        <img src="resources/images/ico_havyrain_w.png" alt="호우">호우
+                    </a>
+                </li>
+                <li class="hv">
+                    <a href="gale.html">
+                        <img src="resources/images/ico_gale_w.png" alt="강풍/풍랑">강풍/풍랑
+                    </a>
+                </li>
+                <li>
+                    <a href="flood.html">
+                        <img src="resources/images/ico_flood_w.png" alt="홍수">홍수
+                    </a>
+                </li>
+                <li>
+                    <a href="hvsnow.html">
+                        <img src="resources/images/ico_hvsnow_w.png" alt="대설">대설
+                    </a>
+                </li>
+                <li>
+                    <a href="frfire.html">
+                        <img src="resources/images/ico_frfire_w.png" alt="산불">산불
+                    </a>
+                </li>
+                <li>
+                    <a href="landslide.html">
+                        <img src="resources/images/ico_lndsld_w.png" alt="산사태">산사태
+                    </a>
+                </li>
+                <li>
+                    <a href="hitwave.html">
+                        <img src="resources/images/ico_hitwave_w.png" alt="폭염">폭염
+                    </a>
+                </li>
+                <li>
+                    <a href="drought.html">
+                        <img src="resources/images/ico_drought_w.png" alt="가뭄">가뭄
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- <script type="text/javascript">
+            $(function(){
+                $('.quickmenu li:nth-child(1)').mouseover(function(){
+                    $('.quickmenu li:nth-child(1) img').attr('src','resources/images/ico_erthqk_w.png');
+                });
+                $('.quickmenu li:nth-child(1)').mouseleave(function(){
+                    $('.quickmenu li:nth-child(1) img').attr('src','resources/images/ico_erthqk_r.png');
+                });
+
+                $('.quickmenu li:nth-child(2)').mouseover(function(){
+                    $('.quickmenu li:nth-child(2) img').attr('src','resources/images/ico_typhn_w.png');
+                });
+                $('.quickmenu li:nth-child(2)').mouseleave(function(){
+                    $('.quickmenu li:nth-child(2) img').attr('src','resources/images/ico_typhn_r.png');
+                });
+
+                $('.quickmenu li:nth-child(3)').mouseover(function(){
+                    $('.quickmenu li:nth-child(3) img').attr('src','resources/images/ico_havyrain_w.png');
+                });
+                $('.quickmenu li:nth-child(3)').mouseleave(function(){
+                    $('.quickmenu li:nth-child(3) img').attr('src','resources/images/ico_havyrain_r.png');
+                });
+                
+                $('.quickmenu li:nth-child(5)').mouseover(function(){
+                    $('.quickmenu li:nth-child(5) img').attr('src','resources/images/ico_flood_w.png');
+                });
+                $('.quickmenu li:nth-child(5)').mouseleave(function(){
+                    $('.quickmenu li:nth-child(5) img').attr('src','resources/images/ico_flood_r.png');
+                });
+
+                $('.quickmenu li:nth-child(6)').mouseover(function(){
+                    $('.quickmenu li:nth-child(6) img').attr('src','resources/images/ico_hvsnow_w.png');
+                });
+                $('.quickmenu li:nth-child(6)').mouseleave(function(){
+                    $('.quickmenu li:nth-child(6) img').attr('src','resources/images/ico_hvsnow_r.png');
+                });
+
+                $('.quickmenu li:nth-child(7)').mouseover(function(){
+                    $('.quickmenu li:nth-child(7) img').attr('src','resources/images/ico_frfire_w.png');
+                });
+                $('.quickmenu li:nth-child(7)').mouseleave(function(){
+                    $('.quickmenu li:nth-child(7) img').attr('src','resources/images/ico_frfire_r.png');
+                });
+
+                $('.quickmenu li:nth-child(8)').mouseover(function(){
+                    $('.quickmenu li:nth-child(8) img').attr('src','resources/images/ico_lndsld_w.png');
+                });
+                $('.quickmenu li:nth-child(8)').mouseleave(function(){
+                    $('.quickmenu li:nth-child(8) img').attr('src','resources/images/ico_lndsld_r.png');
+                });
+
+                $('.quickmenu li:nth-child(9)').mouseover(function(){
+                    $('.quickmenu li:nth-child(9) img').attr('src','resources/images/ico_hitwave_w.png');
+                });
+                $('.quickmenu li:nth-child(9)').mouseleave(function(){
+                    $('.quickmenu li:nth-child(9) img').attr('src','resources/images/ico_hitwave_r.png');
+                });
+
+                $('.quickmenu li:nth-child(10)').mouseover(function(){
+                    $('.quickmenu li:nth-child(10) img').attr('src','resources/images/ico_drought_w.png');
+                });
+                $('.quickmenu li:nth-child(10)').mouseleave(function(){
+                    $('.quickmenu li:nth-child(10) img').attr('src','resources/images/ico_drought_r.png');
+                });
+            });
+
+        </script> -->
+
+    </section>
+    <!-- TOP버튼 -->
+    <div class="quick">
+        <button type="button" class="go_top_btn" style="display: inline-block;"><span>위로</span></button>
+    </div>
+
+    <script>
+        $(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 500) {
+                    $('.quick').fadeIn();
+                } else {
+                    $('.quick').fadeOut();
+                }
+            });
+            
+            $(".quick").click(function() {
+                $('html, body').animate({
+                    scrollTop : 0
+                }, 400);
+                return false;
+            });
+        });
+    </script>
+    <!-- TOP버튼 끝 -->
+    <footer>
+        <div id="footer">
+            <div class="footer-content">
+                <div class="foot-logo">
+                    <img src="resources/images/logo.png" alt="로고">
+                </div>
+                <div class="footer-copyright">
+                    <p>(우) 32435 충남 예산군 예산읍 군청로 22 Tel 041-339-7114 / Fax 041-339-7229</p>
+                    <p>COPYRIGHT ⓒ YESAN COUNTRY.ALL RIGHTS RESERVED</p>
+                </div>
+                <div class="list-box"></div>
+            </div>
+        </div>
+    </footer>
+    <!-- JS -->
+    <script type="text/javascript" src="resources/javascripts/vendor/jquery.tabslet.min.js"></script>
+    <script type="text/javascript" src="resources/javascripts/vendor/rainbow-custom.min.js"></script>
+    <script type="text/javascript" src="resources/javascripts/vendor/jquery.anchor.js"></script>
+    <script src="resources/javascripts/initializers.js"></script>
+    <!-- JS ends -->
+    <!-- <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script> -->
+    <script type="text/javascript" src="resources/js/main.js"></script>
+</body>
+</html>

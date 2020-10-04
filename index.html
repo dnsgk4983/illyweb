@@ -1,0 +1,1713 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta
+            name="viewport"
+            content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+        <meta
+            property="”og:image”"
+            content="resources/images/POZ_202007131009436070.jpg">
+        <meta property="”og:image:width”" content="600">
+        <meta property="”og:image:height”" content="400">
+        <meta name="author" content="예산재난포털"/>
+        <meta name="Keywords" content="예산재난포털"/>
+        <title>예산군청</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <link rel="shortcut icon" href="resources/images/fa_gDi_icon.ico">
+        <link rel="stylesheet" href="resources/css/commmon/common.css">
+        <link rel="stylesheet" href="resources/css/layout.css">
+        <link
+            rel="stylesheet"
+            href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+        <link rel="stylesheet" href="resources/css/slick.css">
+        <!-- jQuery Modal -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"/>
+            <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    </head>
+
+    <body>
+        <!-- 공통메뉴 -->
+        <header id="header">
+            <div class="nav-wrapper">
+                <a href="index.html">
+                    <h1 id="logo">예산재난포털</h1>
+                </a>
+                <div class="gnb" id="gnb">
+                    <ul>
+                        <li>
+                            <a href="#">종합날씨</a>
+                            <div class="sub-nav-wrap">
+                                <div class="sub-nav sub-nav-weather">
+                                    <ul>
+                                        <li>
+                                            <a href="livingweather.html">
+                                                <div class="sub-icon-6">
+                                                    <img src="resources/images/icon/main-menu-2-1.png" alt="생활날씨">
+                                                    <img src="resources/images/icon/main-menu-2-1-hover.png" alt="생활날씨">
+                                                </div>
+                                                생활날씨</a>
+                                        </li>
+                                        <li>
+                                            <a href="rain-info.html">
+                                                <div class="sub-icon-7">
+                                                    <img src="resources/images/icon/main-menu-2-2.png" alt="강우정보">
+                                                    <img src="resources/images/icon/main-menu-2-2-hover.png" alt="강우정보">
+                                                </div>
+                                                강우정보</a>
+                                        </li>
+                                        <li>
+                                            <a href="snow-info.html">
+                                                <div class="sub-icon-8">
+                                                    <img src="resources/images/icon/main-menu-2-3.png" alt="적설정보">
+                                                    <img src="resources/images/icon/main-menu-2-3-hover.png" alt="적설정보">
+                                                </div>
+                                                적설정보</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- 1depth -->
+                        <li>
+                            <a href="#">생활안전정보</a>
+                            <div class="sub-nav-wrap">
+                                <div class="sub-nav sub-nav-information">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <div class="sub-icon-10">
+                                                    <img src="resources/images/icon/main-menu-3-2.png" alt="재난예방정보">
+                                                    <img src="resources/images/icon/main-menu-3-2-hover.png" alt="재난예방정보">
+                                                </div>
+                                                재난예방정보</a>
+                                            <div class="inner-nav">
+                                                <ul>
+                                                    <li>
+                                                        <a href="earthquake.html">자연재난</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="traffic.html">사회재난</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="extinguisher.html">생활안전수칙</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="farm.html">농어촌안전</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="spring.html">계절별재난</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="baby.html">생애주기별 재난</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <div class="sub-icon-11">
+                                                    <img src="resources/images/icon/main-menu-3-3.png" alt="재난안전보험">
+                                                    <img src="resources/images/icon/main-menu-3-3-hover.png" alt="재난안전보험">
+                                                </div>
+                                                재난안전보험</a>
+                                            <div class="inner-nav">
+                                                <ul>
+                                                    <li>
+                                                        <a href="insurance.html">풍수해보험</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="safe-insurance.html">예산군 군민안전보험</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="bicycle.html">예산군 자전거안전보험</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <div class="sub-icon-12">
+                                                    <img src="resources/images/icon/main-menu-3-4.png" alt="재난안전앱">
+                                                    <img src="resources/images/icon/main-menu-3-4-hover.png" alt="재난안전앱">
+                                                </div>
+                                                재난안전앱</a>
+                                            <div class="inner-nav">
+                                                <ul>
+                                                    <li>
+                                                        <a href="safe-app.html">안전디딤돌</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="safe-news.html">안전신문고</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            안전신문앱
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <div class="sub-icon-9">
+                                                    <img src="resources/images/icon/main-menu-3-1.png" alt="재난안전지도">
+                                                    <img src="resources/images/icon/main-menu-3-1-hover.png" alt="재난안전지도">
+                                                </div>
+                                                재난안전지도
+                                            </a>
+                                            <div class="inner-nav">
+                                                <ul>
+                                                    <li>
+                                                        <a href="safemap.html">안전MAP</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="firecenter-info.html">소방서센터</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="dam-info.html">댐정보</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="earth-info.html">지진</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="government-info.html">하천 수위</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- 2depth -->
+                        <li>
+                            <a href="#">재난안전대책본부</a>
+                            <div class="sub-nav-wrap">
+                                <div class="sub-nav sub-nav-safety">
+                                    <ul>
+                                        <li>
+                                            <a href="tissue.html">
+                                                <div class="sub-icon-13">
+                                                    <img src="resources/images/icon/main-menu-4-1.png" alt="대책본부 조직도 및 주요업무">
+                                                    <img src="resources/images/icon/main-menu-4-1-hover.png" alt="대책본부 조직도 및 주요업무">
+                                                </div>
+                                                대책본부 조직도 및 주요업무</a>
+                                        </li>
+                                        <li>
+                                            <a href="system-1.html">
+                                                <div class="sub-icon-14">
+                                                    <img src="resources/images/icon/main-menu-4-2.png" alt="재난대응 체계도">
+                                                    <img src="resources/images/icon/main-menu-4-2-hover.png" alt="재난대응 체계도">
+                                                </div>
+                                                재난대응 체계도</a>
+                                        </li>
+                                        <li>
+                                            <a href="system-2.html">
+                                                <div class="sub-icon-15">
+                                                    <img src="resources/images/icon/main-menu-4-3.png" alt="피해조사 및 복구계획">
+                                                    <img src="resources/images/icon/main-menu-4-3-hover.png" alt="피해조사 및 복구계획">
+                                                </div>
+                                                피해조사 및 복구계획</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- 3depth -->
+                        <li>
+                            <a href="#">안전게시판</a>
+                            <div class="sub-nav-wrap">
+                                <div class="sub-nav sub-nav-board">
+                                    <ul>
+                                        <li>
+                                            <a href="notice.html">
+                                                <div class="sub-icon-16">
+                                                    <img src="resources/images/icon/main-menu-5-1.png" alt="공지사항">
+                                                    <img src="resources/images/icon/main-menu-5-1-hover.png" alt="공지사항">
+                                                </div>
+                                                공지사항</a>
+                                        </li>
+                                        <li>
+                                            <a href="report.html">
+                                                <div class="sub-icon-17">
+                                                    <img src="resources/images/icon/main-menu-5-2.png" alt="보도자료">
+                                                    <img src="resources/images/icon/main-menu-5-2-hover.png" alt="보도자료">
+                                                </div>
+                                                보도자료</a>
+                                        </li>
+                                        <li>
+                                            <a href="education.html">
+                                                <div class="sub-icon-18">
+                                                    <img src="resources/images/icon/main-menu-5-3.png" alt="교육자료">
+                                                    <img src="resources/images/icon/main-menu-5-3-hover.png" alt="교육자료">
+                                                </div>
+                                                교육자료</a>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                          <!-- 4depth -->
+                        <li>
+                            <a href="#">재난문자서비스</a>
+                            <div class="sub-nav-wrap">
+                                <div class="sub-nav sub-nav-service">
+                                    <ul>
+                                        <li>
+                                            <a href="message-main.html">
+                                                <div class="sub-icon-19">
+                                                    <img src="resources/images/icon/main-menu-6-1.png" alt="공지사항">
+                                                    <img src="resources/images/icon/main-menu-6-1-hover.png" alt="공지사항">
+                                                </div>
+                                                재난문자서비스안내</a>
+                                        </li>
+                                        <li>
+                                            <a href="message.html">
+                                                <div class="sub-icon-20">
+                                                    <img src="resources/images/icon/main-menu-6-2.png" alt="보도자료">
+                                                    <img src="resources/images/icon/main-menu-6-2-hover.png" alt="보도자료">
+                                                </div>
+                                                신청하기</a>
+                                        </li>
+                                        <li>
+                                            <a href="education.html">
+                                                <div class="sub-icon-21">
+                                                    <img src="resources/images/icon/main-menu-6-3.png" alt="교육자료">
+                                                    <img src="resources/images/icon/main-menu-6-3-hover.png" alt="교육자료">
+                                                </div>
+                                                재난문자해지신청</a>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- 5depth -->
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="gnb_bg"></div>
+        <main>
+            <section class="top_section">
+                <div class="main-warp">
+                    <div id="main-video">
+                        <div class="safe-tab-list">
+                            <!-- <div class="event-title"> <h1>생활안전맵</h1> </div> -->
+                            <div class="event-map">
+                                <div class="safe-map-box"></div>
+                                <div class="event_con" id="tab_con">
+                                    
+                                    <div id="event-over-01">
+                                        <div class="safe-input">
+                                            <input type="text" placeholder="장소, 주소, 버스 검색">
+                                        </div>
+                                        <div class="sf-title">
+                                            <p class="sftt">재난안전지도</p>
+                                        </div>
+                                        <div class="map-box-content">
+                                            <div class="safe-map-box-title">
+                                                <div class="wrap-map-title info-safe-map">
+                                                    <div class="wrap-map-info">
+                                                        <div class="title">
+                                                            생활정보
+                                                            <div class="close" onclick="closeOverlay()" title="닫기"></div>
+                                                        </div>
+                                                        <div class="body">
+                                                            <div class="desc">
+                                                                <div class="ellipsis">제주특별자치도 제주시 첨단로 242</div>
+                                                                <div class="jibun ellipsis">(우) 63309 (지번) 영평동 2181</div>
+                                                                <div></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wrap-map-title info-map-cctv" style="height: 250px;">
+                                                    <div class="wrap-map-info" style="height: 248px;">
+                                                        <div class="title">
+                                                            CCTV
+                                                            <div class="close" onclick="closeOverlay()" title="닫기"></div>
+                                                        </div>
+                                                        <div class="body">
+                                                            <div class="desc">
+                                                                <div class="ellipsis">제주특별자치도 제주시 첨단로 242</div>
+                                                                <div class="jibun ellipsis">CCTV 주소</div>
+                                                                <div></div>
+                                                            </div>
+                                                            <div class="body-image"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="event-over-01">
+                                        <div class="safe-map-box-title">
+                                            <h1>산사태취약지역</h1>
+                                            <div>
+                                                <p>산사태취약 공사중</p>
+                                                <p>공사진행중</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="event-over-01">
+                                        <div class="safe-map-box-title">
+                                            <h1>산사태취약지역</h1>
+                                            <div>
+                                                <p>산사태취약 공사중</p>
+                                                <p>공사진행중</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="event-over-01">
+                                        <div class="safe-map-box-title">
+                                            <h1>산사태취약지역</h1>
+                                            <div>
+                                                <p>산사태취약 공사중</p>
+                                                <p>공사진행중</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="event-over-01">
+                                        <div class="safe-map-box-title">
+                                            <h1>산사태취약지역</h1>
+                                            <div>
+                                                <p>산사태취약 공사중</p>
+                                                <p>공사진행중</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="event-over-01">
+                                        <div class="safe-map-box-title">
+                                            <h1>산사태취약지역</h1>
+                                            <div>
+                                                <p>산사태취약 공사중</p>
+                                                <p>공사진행중</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="event-over-01">
+                                        <div class="safe-map-box-title">
+                                            <h1>산사태취약지역</h1>
+                                            <div>
+                                                <p>산사태취약 공사중</p>
+                                                <p>공사진행중</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="event-over-01">
+                                        <div class="safe-map-box-title">
+                                            <h1>산사태취약지역</h1>
+                                            <div>
+                                                <p>산사태취약 공사중</p>
+                                                <p>공사진행중</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <a href="#" class="event-over-more"><i class="xi-search"></i>자세히보기</a>
+                                </div>
+                            </div>
+                            <div class="safe-table-board">
+                                <ul class="safe-tab" id="tab">
+                                    
+                                    <li>
+                                        <div class="svg-icon">
+                                            <svg
+                                                version="1.1"
+                                                id="Layer_1"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                x="0px"
+                                                y="0px"
+                                                viewbox="0 0 50 50"
+                                                style="enable-background:new 0 0 50 50;"
+                                                xml:space="preserve">
+                                                <g>
+                                                    <circle class="st0" cx="25" cy="26" r="22.5"/>
+                                                    <g>
+                                                        <circle class="st1" cx="25" cy="24" r="22.5"/>
+                                                        <g>
+                                                            <path
+                                                                class="st2"
+                                                                d="M8.9,30.7c1.3,1,2.7,1.9,4.3,2.4c1.4,0.5,2.9,0.7,4.3,0.7c3.3-0.1,6.5-1.3,9.6-2.3c1.8-0.7,3.6-1.3,5.4-1.7
+                            c1.7-0.5,3.5-0.7,5.3-0.6c1.6,0.1,3.1,0.7,4.6,1.4c0.6,0.3,0.7,0.9,0.5,1.6c-0.3,0.6-0.9,0.7-1.6,0.5c-0.9-0.6-1.9-0.8-3-1
+                            c-1.7-0.2-3.4,0-5,0.3c-1.8,0.5-3.6,1-5.4,1.7c-0.9,0.3-1.8,0.7-2.7,0.9c-2.2,0.7-4.6,1.4-7,1.5c-4.1,0.2-7.5-0.9-10.7-3.5
+                            c-0.6-0.5-0.6-1.1-0.2-1.6C7.7,30.5,8.5,30.4,8.9,30.7z"/>
+                                                            <path
+                                                                class="st2"
+                                                                d="M8.9,34.9c1.3,1,2.7,1.9,4.3,2.4c1.4,0.5,2.9,0.7,4.3,0.7c3.3-0.1,6.5-1.3,9.6-2.3c1.8-0.7,3.6-1.3,5.4-1.7
+                            c1.7-0.5,3.5-0.7,5.3-0.6c1.6,0.1,3.1,0.7,4.6,1.4c0.6,0.3,0.7,0.9,0.5,1.6c-0.3,0.6-0.9,0.7-1.6,0.5c-0.9-0.6-1.9-0.8-3-1
+                            c-1.7-0.2-3.4,0-5,0.3c-1.8,0.5-3.6,1-5.4,1.7c-0.9,0.3-1.8,0.7-2.7,0.9c-2.2,0.7-4.6,1.4-7,1.5c-4.1,0.2-7.5-0.9-10.7-3.5
+                            c-0.6-0.5-0.6-1-0.2-1.6C7.7,34.6,8.5,34.5,8.9,34.9z"/>
+                                                            <path
+                                                                class="st3"
+                                                                d="M20.4,32.7v-6.8c0-0.5,0.3-0.7,0.7-0.7h7.7c0.5,0,0.7,0.3,0.7,0.7v3.9c0.9-0.3,1.9-0.7,2.9-0.8
+                            c0.9-0.2,1.8-0.5,2.7-0.6v-9c0-0.5-0.3-0.7-0.7-0.7H15.6c-0.5,0-0.7,0.3-0.7,0.7v13.3c0.8,0.2,1.8,0.2,2.6,0.2
+                            C18.6,33,19.5,32.9,20.4,32.7z"/>
+                                                            <path
+                                                                class="st3"
+                                                                d="M25.6,8l13.3,11l-0.6,0.6l0.6-0.6c0.3,0.2,0.3,0.7,0.1,1c-0.1,0.2-0.3,0.3-0.6,0.3l0,0H11.7
+                            c-0.5,0-0.7-0.3-0.7-0.7c0-0.2,0.1-0.5,0.3-0.7l13.1-11l0,0C24.8,7.8,25.2,7.8,25.6,8z"/>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </svg>
+
+                                            <span>인명피해우려지역</span></div>
+                                    </li>
+
+                                    <li>
+                                        <div class="svg-icon">
+                                            <svg
+                                                version="1.1"
+                                                id="Layer_1"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                x="0px"
+                                                y="0px"
+                                                viewbox="0 0 50 50"
+                                                style="enable-background:new 0 0 50 50;"
+                                                xml:space="preserve">
+                                                <g>
+                                                    <circle class="st0" cx="25" cy="26" r="21.3"/>
+                                                    <g>
+                                                        <circle class="st1" cx="25" cy="24" r="21.3"/>
+                                                        <g>
+                                                            <path
+                                                                class="st2"
+                                                                d="M33,25.8c0.3,0,0.7,0.4,0.8,0.7s-0.4,0.7-0.7,0.7c-0.5,0-0.7-0.1-0.7-0.8C32.4,26.2,32.6,25.8,33,25.8z"/>
+                                                            <path
+                                                                class="st2"
+                                                                d="M31,21.3c0,0.1,0,0.3,0,0.4c0.1,0.4,0,0.8-0.5,0.9c-0.3,0.1-0.5,0.4-0.8,0.4c-0.3,0-0.7-0.1-0.9-0.3
+                            c-0.1-0.1-0.3-0.4-0.3-0.5c0-0.4,0.1-0.9,0.3-1.3c0-0.3,0.1-0.4,0.5-0.3c0.3,0.1,0.7,0.1,0.9,0.1C30.9,20.6,31,20.6,31,21.3z"/>
+                                                            <path
+                                                                class="st2"
+                                                                d="M30.7,25.4c0,0.4-0.4,0.7-0.8,0.7c-0.5,0-0.5-0.1-0.5-0.8c0-0.4,0.1-0.5,0.5-0.5
+                            C30.7,24.8,30.7,24.9,30.7,25.4z"/>
+                                                            <path
+                                                                class="st2"
+                                                                d="M25.7,13.7c0.8-0.3,1.4-0.5,2.2-0.8c0.3-0.1,0.5-0.1,0.6-0.1c0.1,0,0.3,0.1,0.4,0.3c0.1,0.4,0.1,0.8,0.3,1.2
+                            c-0.1,0.5-0.4,1.1-0.5,1.7c-0.1,0.3-0.1,0.5-0.3,0.8c-0.1,0.3-0.3,0.5-0.6,0.4c-0.6-0.3-1.3-0.4-2-0.6c-0.1,0-0.4-0.3-0.4-0.4
+                            c-0.1-0.6-0.1-1.2-0.3-1.7C25.4,13.8,25.5,13.7,25.7,13.7z"/>
+                                                            <path
+                                                                class="st2"
+                                                                d="M23.4,20.4c0.3-0.5,0.4-0.9,0.6-1.3c0-0.1,0.3-0.3,0.4-0.3c0.4,0,0.8,0,1.2,0.1c0.1,0,0.3,0.1,0.4,0.3
+                            c0.1,0.5,0.3,1.1,0.4,1.4c0,0.8-0.8,1.3-1.3,1.1c-0.4-0.1-0.8-0.4-1.2-0.5C23.5,20.9,23.3,20.8,23.4,20.4z"/>
+                                                            <path
+                                                                class="st2"
+                                                                d="M19.7,11.3c0-0.3,0.1-0.4,0.5-0.3c0.8,0.1,1.6,0.4,2.3,0.4c0.3,0,0.4,0.1,0.5,0.5c0,0.6,0.1,1.1,0.3,1.8
+                            c-0.1,0.1-0.1,0.3-0.4,0.4c-0.6,0.4-1.3,0.8-2,0.9c-0.4,0.3-1.7-0.8-1.7-1.1C19.4,13.2,19.5,12.1,19.7,11.3z"/>
+                                                            <path
+                                                                class="st2"
+                                                                d="M38.7,38.1c-2.5,0-5,0-7.4,0c-6.5,0-13,0-19.5,0c-0.1,0-0.2,0-0.5,0c-0.4,0-0.5-0.1-0.5-0.5
+                            c0-9.1,0-18.2,0-27.2c0-0.1,0-0.2,0-0.5c0.6,0.4,1.1,0.6,1.5,0.8c1.3,0.8,2.6,1.5,4,2.2c0.7,0.4,1,1,1.3,1.5
+                            c0.8,1.4,1.4,2.7,2.2,4.1c0.8,1.4,1.4,2.7,2.2,4.1c0.4,0.7,0.7,1.4,1.1,2.1c0.4,0.5,0.8,0.8,1.4,1.1c0.8,0.6,1.9,1.1,2.7,1.7
+                            c0.8,0.6,1.9,1,2.6,1.7c0.8,0.7,1.7,1.4,2.5,2.2c2.1,2,4.3,4.1,6.4,6.1c0,0,0,0.1,0.1,0.2C39,38.1,39,38.1,38.7,38.1z"/>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </svg>
+
+                                            <span>산사태취약지역</span></div>
+                                    </li>
+                                    <li>
+                                        <div class="svg-icon">
+
+                                            <?xml version="1.0" encoding="utf-8"?>
+                                            <!-- Generator: Adobe Illustrator 24.1.3, SVG Export Plug-In . SVG Version: 6.00
+                                            Build 0) -->
+                                            <svg
+                                                version="1.1"
+                                                id="Layer_1"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                x="0px"
+                                                y="0px"
+                                                viewbox="0 0 50 50"
+                                                style="enable-background:new 0 0 50 50;"
+                                                xml:space="preserve">
+                                                <g>
+                                                    <circle class="st0" cx="25" cy="26" r="22.5"/>
+                                                    <g>
+                                                        <circle class="st1" cx="25" cy="24" r="22.5"/>
+                                                        <g>
+                                                            <g>
+                                                                <path
+                                                                    class="st2"
+                                                                    d="M11,26.3c0.6,0,1.1,0.5,1.1,0.8v4.3h7l4.6-6.9l-9.2-5.2c-0.5-0.2-0.6-0.8-0.4-1.2L20.8,7
+                                                        c0.4-0.5,1-0.6,1.5-0.4l19.6,11.1c0.5,0.2,0.6,0.8,0.4,1.2l-6.7,11.2c-0.2,0.5-0.8,0.6-1.3,0.4l-7.7-4.3l-5,7.3
+                                                        c-0.2,0.2-0.5,0.5-0.8,0.5h-8.6l0.1,4.1c0,0.6-0.8,1-1.4,1c-0.6,0-1.1-0.5-1.1-0.8V27.1C9.9,26.7,10.4,26.3,11,26.3z"/>
+                                                                <path
+                                                                    class="st2"
+                                                                    d="M44.8,23.7c0.5,0.2,0.6,0.8,0.4,1.2l-2.9,4.8c-0.2,0.5-0.8,0.6-1.3,0.4l-2.4-1.4l3.8-6.4L44.8,23.7z"/>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </svg>
+
+                                            <span>안전CCTV</span></div>
+                                    </li>
+                                    <li>
+                                        <div class="svg-icon">
+                                            <svg
+                                                version="1.1"
+                                                id="Layer_1"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                x="0px"
+                                                y="0px"
+                                                viewbox="0 0 50 50"
+                                                style="enable-background:new 0 0 50 50;"
+                                                xml:space="preserve">
+                                                <g>
+                                                    <circle class="st0" cx="25" cy="26" r="21.3"/>
+                                                    <g>
+                                                        <circle class="st1" cx="25" cy="24" r="21.3"/>
+                                                        <g>
+                                                            <g>
+                                                                <polygon class="st2" points="30.4,8.4 32.1,9.1 30.5,13.4 28.8,12.6 				"/>
+                                                                <rect x="24" y="7.7" class="st2" width="1.8" height="4.6"/>
+                                                                <polygon class="st2" points="19.7,8.4 21.4,12.6 19.6,13.4 17.9,9.1 				"/>
+                                                                <polygon class="st2" points="14.3,11.5 17.3,14.9 15.9,16.3 12.9,12.9 				"/>
+                                                                <path
+                                                                    class="st2"
+                                                                    d="M35.7,40.3H14.4v-4.1c0-1.3,0.9-2.5,2-2.8V24c0-4.8,4-8.6,8.6-8.6s8.7,3.9,8.7,8.6v9.3c1.2,0.5,2,1.5,2,2.8
+                                    C35.7,36.1,35.7,40.3,35.7,40.3z"/>
+                                                                <polygon class="st2" points="34.1,16.2 32.7,14.9 35.7,11.5 37.1,12.9 				"/>
+                                                            </g>
+                                                            <path
+                                                                class="st3"
+                                                                d="M30.6,25.7c0-3.1-2.5-5.6-5.6-5.6s-5.6,2.5-5.6,5.6V30h11.2L30.6,25.7L30.6,25.7z M25.8,28.8h-1.5v-1.5h1.5
+                                V28.8z M25.8,26.1h-1.5v-4.3h1.5V26.1z"/>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </svg>
+
+                                            <span>이재민 시주거시설</span></div>
+                                    </li>
+                                    <li>
+                                        <div class="svg-icon">
+                                            <svg
+                                                version="1.1"
+                                                id="Layer_1"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                x="0px"
+                                                y="0px"
+                                                viewbox="0 0 50 50"
+                                                style="enable-background:new 0 0 50 50;"
+                                                xml:space="preserve">
+                                                <g>
+                                                    <circle class="st0" cx="25" cy="26" r="22.5"/>
+                                                    <g>
+                                                        <circle class="st1" cx="25" cy="24" r="22.5"/>
+                                                        <path
+                                                            class="st2"
+                                                            d="M37.8,30.2l3.2-1.7c0.2-0.1,0.4-0.4,0.4-0.8h0.1v-5c0-0.6-0.4-0.9-0.9-0.9h-2.3v-7.6l1.1,0.9
+                            c0.2,0.1,0.3,0.1,0.6,0.1s0.6-0.1,0.7-0.3c0.2-0.4,0.1-0.9-0.2-1.1l-9.1-6.6c-0.3-0.2-0.7-0.2-1,0l-9.1,6.6
+                            c-0.4,0.3-0.6,0.8-0.2,1.1c0.3,0.4,0.9,0.6,1.1,0.2l1.1-0.9V22h-4.3c-0.3,0-0.7,0.1-0.8,0.4l-1.6,3.4c-0.2,0.3-0.1,0.8,0.1,1
+                            l2.6,2.6L18,30.4l0.2-0.6c0.2-0.3,0.1-0.8-0.1-1L15.3,26l1.3-2.8c0.2-0.3,0.2-0.6,0-0.9c-0.2-0.3-0.4-0.4-0.7-0.4H9.3
+                            c-0.6,0-0.9,0.4-0.9,0.9v13.4c0,0.6,0.4,0.9,0.9,0.9h16.5c0.3,0,0.7-0.2,0.8-0.4c0.1-0.3,0.1-0.7,0-0.9l-1.3-2.8l2-2l-0.6,1.7
+                            c-0.1,0.2-0.1,0.4,0,0.7l1.7,3.2c0.1,0.2,0.4,0.4,0.8,0.4h11.7c0.6,0,0.9-0.4,0.9-0.9v-5c0-0.3-0.1-0.7-0.4-0.8s-0.7-0.1-0.9,0
+                            l-2.7,1.3L36.7,30l0.6,0.2C37.3,30.3,37.6,30.3,37.8,30.2z M32.5,22h-3.2v-5.7h3.2V22z"/>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                            <span>지진옥외대피장소</span></div>
+                                    </li>
+                                    <li>
+                                        <div class="svg-icon">
+                                            <svg
+                                                version="1.1"
+                                                id="Layer_1"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                x="0px"
+                                                y="0px"
+                                                viewbox="0 0 49.2 49.2"
+                                                style="enable-background:new 0 0 49.2 49.2;"
+                                                xml:space="preserve">
+                                                <g class="st0">
+                                                    <circle class="st1" cx="24.6" cy="25.6" r="22.5"/>
+                                                    <path
+                                                        d="M9.4,38.1h4.4c0.3,0,0.5-0.2,0.5-0.5V22.4c0-0.3-0.3-0.5-0.5-0.5H9.4c-0.3,0-0.5,0.2-0.5,0.5v15.2
+            C8.8,38,9.1,38.1,9.4,38.1z"/>
+                                                    <path
+                                                        d="M35.4,38.1h4.4c0.3,0,0.5-0.2,0.5-0.5V22.4c0-0.3-0.3-0.5-0.5-0.5h-4.4c-0.3,0-0.5,0.2-0.5,0.5v15.2
+            C34.9,38,35.1,38.1,35.4,38.1z"/>
+                                                    <path
+                                                        d="M22.1,38.1H27c0.3,0,0.5-0.2,0.5-0.5v-7.8c0-0.3-0.2-0.5-0.5-0.5h-4.9c-0.3,0-0.5,0.2-0.5,0.5v7.8
+            C21.6,37.9,21.8,38.1,22.1,38.1z"/>
+                                                    <path
+                                                        d="M15.8,13.6v23.9c0,0.3,0.2,0.5,0.5,0.5h3.3c0.3,0,0.5-0.2,0.5-0.5v-8.6c0-0.6,0.5-1.2,1.2-1.2h6.3c0.6,0,1.2,0.5,1.2,1.2
+            v8.6c0,0.3,0.2,0.5,0.5,0.5h3.6c0.3,0,0.5-0.2,0.5-0.5V13.6c0-0.3-0.2-0.5-0.5-0.5H16.3C16,13.1,15.8,13.3,15.8,13.6z M27.6,20.5
+            H26c-0.3,0-0.5,0.2-0.5,0.5v1.6c0,0.4-0.4,0.7-0.7,0.7s-0.7-0.4-0.7-0.7v-1.5c0-0.3-0.2-0.5-0.5-0.5H22c-0.4,0-0.7-0.4-0.7-0.7
+            s0.4-0.7,0.7-0.7h1.6c0.3,0,0.5-0.2,0.5-0.5v-1.6c0-0.4,0.4-0.7,0.7-0.7s0.7,0.4,0.7,0.7v1.6c0,0.3,0.2,0.5,0.5,0.5h1.6
+            c0.4,0,0.7,0.4,0.7,0.7S27.9,20.5,27.6,20.5z"/>
+                                                </g>
+                                                <circle class="st2" cx="24.6" cy="23.6" r="22.5"/>
+                                                <g>
+                                                    <path
+                                                        class="st3"
+                                                        d="M9.4,36.1h4.4c0.3,0,0.5-0.2,0.5-0.5V20.4c0-0.3-0.3-0.5-0.5-0.5H9.4c-0.3,0-0.5,0.2-0.5,0.5v15.2
+            C8.8,36,9.1,36.1,9.4,36.1z"/>
+                                                    <path
+                                                        class="st3"
+                                                        d="M35.4,36.1h4.4c0.3,0,0.5-0.2,0.5-0.5V20.4c0-0.3-0.3-0.5-0.5-0.5h-4.4c-0.3,0-0.5,0.2-0.5,0.5v15.2
+            C34.9,36,35.1,36.1,35.4,36.1z"/>
+                                                    <path
+                                                        class="st3"
+                                                        d="M22.1,36.1H27c0.3,0,0.5-0.2,0.5-0.5v-7.8c0-0.3-0.2-0.5-0.5-0.5h-4.9c-0.3,0-0.5,0.2-0.5,0.5v7.8
+            C21.6,35.9,21.8,36.1,22.1,36.1z"/>
+                                                    <path
+                                                        class="st3"
+                                                        d="M15.8,11.6v23.9c0,0.3,0.2,0.5,0.5,0.5h3.3c0.3,0,0.5-0.2,0.5-0.5v-8.6c0-0.6,0.5-1.2,1.2-1.2h6.3
+            c0.6,0,1.2,0.5,1.2,1.2v8.6c0,0.3,0.2,0.5,0.5,0.5h3.6c0.3,0,0.5-0.2,0.5-0.5V11.6c0-0.3-0.2-0.5-0.5-0.5H16.3
+            C16,11.1,15.8,11.3,15.8,11.6z M27.6,18.5H26c-0.3,0-0.5,0.2-0.5,0.5v1.6c0,0.4-0.4,0.7-0.7,0.7s-0.7-0.4-0.7-0.7v-1.5
+            c0-0.3-0.2-0.5-0.5-0.5H22c-0.4,0-0.7-0.4-0.7-0.7s0.4-0.7,0.7-0.7h1.6c0.3,0,0.5-0.2,0.5-0.5v-1.6c0-0.4,0.4-0.7,0.7-0.7
+            s0.7,0.4,0.7,0.7v1.6c0,0.3,0.2,0.5,0.5,0.5h1.6c0.4,0,0.7,0.4,0.7,0.7S27.9,18.5,27.6,18.5z"/>
+                                                </g>
+                                            </svg>
+                                            <span>병원</span></div>
+                                    </li>
+                                    <li>
+                                        <div class="svg-icon">
+                                            <svg
+                                                version="1.1"
+                                                id="Layer_1"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                x="0px"
+                                                y="0px"
+                                                viewbox="0 0 53 53"
+                                                style="enable-background:new 0 0 53 53;"
+                                                xml:space="preserve">
+                                                <g>
+                                                    <circle class="st0" cx="26.5" cy="27.5" r="24.1"/>
+                                                    <g>
+                                                        <circle class="st1" cx="26.5" cy="25.5" r="24.1"/>
+                                                        <g>
+                                                            <path
+                                                                class="st2"
+                                                                d="M19.4,20.5c-0.7,0.7-1.4,1.4-2.1,2.1C16,24,14.5,25.4,13,26.9c-1.5,1.4-3.3,3.3-3.9,5.8V36v0.1
+                    c0.9,3.6,3.3,5.8,6.8,6.8h3.3h0.1c2.6-0.8,4.4-2.4,5.8-3.9c2.2-2.2,4.4-4.3,6.5-6.3l0.4-0.4L19.8,20L19.4,20.5z"/>
+                                                            <path
+                                                                class="st2"
+                                                                d="M41.5,10.7c-1.5-1.6-3.7-2.6-5.9-2.6c-2.3-0.1-4.4,0.8-6.1,2.4c-2,1.8-3.9,3.8-5.7,5.7
+                    c-0.7,0.7-1.3,1.3-1.9,2c-0.2,0.2-0.2,0.2-0.6,0.7L21,19l0.3,0.3c0.6,0.6,0.9,0.9,1.3,1.5l0.3,0.4l0.4-0.2c0.1,0,0.1-0.1,0.1-0.1
+                    c0.1-0.1,0.2-0.1,0.3-0.3l7.6-7.6c2.4-2.4,5.6-2.5,7.9-0.2c1,1,1.7,2.4,1.7,3.8c0,1.5-0.7,2.9-1.8,4.1c-1.5,1.6-3.1,3.1-4.6,4.6
+                    c-0.8,0.8-1.6,1.6-2.4,2.4l-0.9,0.9l0.2,0.3c0.5,0.7,0.8,1.1,1.3,1.7l0.4,0.4l8.2-8.2C44.7,19.4,44.8,14.1,41.5,10.7z"/>
+                                                            <path
+                                                                class="st2"
+                                                                d="M32,18.3l0.6-0.7c1.5-1.8,2.5-2.7,4.5-1.3l0.3,0.3l2-2L39,14.3c-1.1-1.2-2.6-1.8-4.1-1.6
+                    c-1.8,0.2-3.4,1.3-4.6,3.1l-0.2,0.3l0.3,0.3c0.5,0.5,0.9,1,1.2,1.5L32,18.3z"/>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                            <span>약국</span></div>
+                                    </li>
+                                    <li>
+                                        <div class="svg-icon">
+                                            <svg
+                                                version="1.1"
+                                                id="Layer_1"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                x="0px"
+                                                y="0px"
+                                                viewbox="0 0 50 50"
+                                                style="enable-background:new 0 0 50 50;"
+                                                xml:space="preserve">
+                                                <g>
+                                                    <circle class="st0" cx="25" cy="26" r="22.5"/>
+                                                    <g>
+                                                        <circle class="st1" cx="25" cy="24" r="22.5"/>
+                                                        <g>
+                                                            <path
+                                                                class="st2"
+                                                                d="M27.9,22.2c0-0.4-0.3-0.7-0.7-0.7s-0.7,0.3-0.7,0.7v4.6c0,0.4,0.3,0.7,0.7,0.7c0.4,0,0.7-0.3,0.7-0.7V22.2z"/>
+                                                            <rect x="9.8" y="25.1" class="st3" width="1.5" height="13.6"/>
+                                                            <rect x="9.8" y="29.5" class="st3" width="23.1" height="4.9"/>
+                                                            <rect x="21.5" y="26.2" class="st3" width="11.4" height="4.4"/>
+                                                            <g>
+                                                                <path
+                                                                    class="st2"
+                                                                    d="M39.6,18.2c0.4,0.1,0.7-0.1,0.8-0.5c0.1-0.4-0.1-0.7-0.5-0.8l-1.5-0.4l-1.9,7.1l0,0v0.1l1.6,0.3
+                        c0.4,0.1,0.7-0.1,0.8-0.5c0.1-0.4-0.1-0.7-0.5-0.8L39.6,18.2z"/>
+                                                                <path
+                                                                    class="st2"
+                                                                    d="M43.7,21.7l-1.2,4.5l-0.7-0.3l0.7,0.2c-0.1,0.4-0.4,0.6-0.7,0.5l0,0l0,0l0,0l0,0h-0.1
+                        c-1.4-0.4-2.5-1.3-3.3-2.4l0,0l0,0l0,0l0,0c-0.7-1.2-0.8-2.5-0.5-4V20c0.4-1.4,1.3-2.5,2.4-3.3c1.2-0.7,2.6-0.8,4.1-0.5
+                        l-0.2,0.7l0.2-0.7c0.4,0.1,0.6,0.5,0.5,0.8l0,0L43.7,21.7z"/>
+
+                                                                <rect
+                                                                    x="13.7"
+                                                                    y="12.3"
+                                                                    transform="matrix(0.2588 -0.9659 0.9659 0.2588 -0.4637 29.1087)"
+                                                                    class="st3"
+                                                                    width="10.1"
+                                                                    height="5"/>
+
+                                                                <rect
+                                                                    x="24.3"
+                                                                    y="9.9"
+                                                                    transform="matrix(0.2588 -0.9659 0.9659 0.2588 4.6574 41.4493)"
+                                                                    class="st3"
+                                                                    width="10.1"
+                                                                    height="15.6"/>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </svg>
+
+                                            <span>고속도로 CCTV</span></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="weather-main">
+                        <div class="container">
+                            <!-- 탭 메뉴 상단 시작 -->
+                            <ul class="tabs-weather-bar">
+                                <li class="tab-link current" data-tab="tab-1">날씨</li>
+                                <li class="tab-link" data-tab="tab-2">통합대기</li>
+                                <li class="tab-link" data-tab="tab-3">미세먼지</li>
+                                <li class="tab-link" data-tab="tab-4">황사</li>
+                                <li class="tab-link" data-tab="tab-5">강우정보</li>
+                                <li class="tab-link" data-tab="tab-6">적설정보</li>
+                            </ul>
+                            <!-- 탭 메뉴 상단 끝 -->
+                            <div id="tab-1" class="tab-weather-content current">
+                                <div class="tab-1-weather-content">
+                                    <div class="main-weather-circle">
+                                        <div class="main-weather-wrap">
+                                            <p class="main-circle-text">
+                                                <img alt="흐림" src="resources/images/icon_b_weather04.png" title="흐림"><span>흐림</span>
+                                            </p>
+                                            <p class="main-circle-text-2">
+                                                <strong>26.1</strong><em>°C</em>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="main-temp">
+                                        <ul>
+                                            <li>
+                                                <span>풍속</span>
+                                                <br>
+                                                <span>3.6m/s</span>
+                                            </li>
+                                            <li>
+                                                <span>습도</span>
+                                                <br>
+                                                <span>89%</span>
+                                            </li>
+                                            <li>
+                                                <span>강수</span>
+                                                <br>
+                                                <span>0mm</span>
+                                            </li>
+                                            <li>
+                                                <span>체감온도</span>
+                                                <br>
+                                                <span>-</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="more">
+                                        <span class="xi-search"></span>자세히보기
+                                    </a>
+                                    <div class="main-table">
+                                        <table width="100%" border="1">
+                                            <tr>
+                                                <th>시간별(시)</th>
+                                                <th>21</th>
+                                                <th>00</th>
+                                                <th>03</th>
+                                                <th>06</th>
+                                                <th>09</th>
+                                                <th>12</th>
+                                                <th>15</th>
+                                                <th>18</th>
+                                            </tr>
+                                            <tr>
+                                                <th>기상</th>
+                                                <th colspan="8"></th>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- main-weather end -->
+                            <div id="tab-2" class="tab-weather-content">
+                                <div class="tab-1-weather-content">
+                                    <div class="weather-bg">
+                                        <p class="tab-1-p">예상군 예상읍<br>08.02. 07시 기준</p>
+                                        <div class="weather_circle">
+                                            <p class="type02">
+                                                <span>통합대기</span>
+                                                <b class="cr01">좋음</b>
+                                            </p>
+                                            <p class="type_2">
+                                                <strong>28</strong>
+                                            </p>
+                                        </div>
+                                        <ul class="color_circle">
+                                            <li>
+                                                <span>좋음</span>
+                                                <span>~50</span>
+                                            </li>
+                                            <li>
+                                                <span>보통</span>
+                                                <span>~100</span>
+                                            </li>
+                                            <li>
+                                                <span>나쁨</span>
+                                                <span>~250</span>
+                                            </li>
+                                            <li>
+                                                <span>매우나쁨</span>
+                                                <span>251~</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- tab-2 -->
+                            <div id="tab-3" class="tab-weather-content">
+                                <div class="tab-1-weather-content">
+                                    <div class="weather-bg">
+                                        <p class="tab-1-p">예상군 예상읍<br>08.02. 07시 기준</p>
+                                        <div class="weather_circle">
+                                            <p class="type02">
+                                                <span>미세먼지</span>
+                                                <b class="cr01">좋음</b>
+                                            </p>
+                                            <p class="type_2">
+                                                <strong>14</strong><em>㎍/㎥</em>
+                                            </p>
+                                        </div>
+                                        <ul class="color_circle">
+                                            <li>
+                                                <span>좋음</span>
+                                                <span>~50</span>
+                                            </li>
+                                            <li>
+                                                <span>보통</span>
+                                                <span>~100</span>
+                                            </li>
+                                            <li>
+                                                <span>나쁨</span>
+                                                <span>~250</span>
+                                            </li>
+                                            <li>
+                                                <span>매우나쁨</span>
+                                                <span>251~</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- tab-3 -->
+                            <div id="tab-4" class="tab-weather-content">
+                                <div class="tab-1-weather-content">
+                                    <div class="weather-bg">
+                                        <p class="tab-1-p">예상군 예상읍<br>08.02. 07시 기준</p>
+                                        <div class="weather_circle">
+                                            <p class="type02">
+                                                <span>황사</span>
+                                                <b class="cr01">낮음</b>
+                                            </p>
+                                            <p class="type_2">
+                                                <strong>18</strong>
+                                                <em>㎍/㎥</em>
+                                            </p>
+                                        </div>
+                                        <ul class="color_circle">
+                                            <li>
+                                                <span>좋음</span>
+                                                <span>~199</span>
+                                            </li>
+                                            <li>
+                                                <span>보통</span>
+                                                <span>~399</span>
+                                            </li>
+                                            <li>
+                                                <span>나쁨</span>
+                                                <span>~799</span>
+                                            </li>
+                                            <li>
+                                                <span>매우나쁨</span>
+                                                <span>800~</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- tab-4 -->
+                            <div class="tab-weather-content wt-sd" id="tab-5">
+                                <div class="rainfall">
+                                    <!-- <h1 class="rain-title">강우 정보</h1> -->
+                                    <div class="rainfall-map rainy-map">
+                                        <div class="map-title-01">
+                                            <span class="rainfall-title">봉산면</span>
+                                            <span class="rainfall-content-title">124</span>
+                                        </div>
+                                        <div class="map-title-02">
+                                            <span class="rainfall-title">고덕면</span>
+                                            <span class="rainfall-content-title">124</span>
+                                        </div>
+                                        <div class="map-title-03">
+                                            <span class="rainfall-title">신암면</span>
+                                            <span class="rainfall-content-title">124</span>
+                                        </div>
+                                        <div class="map-title-04">
+                                            <span class="rainfall-title">예산읍</span>
+                                            <span class="rainfall-content-title">124</span>
+                                        </div>
+                                        <div class="map-title-05">
+                                            <span class="rainfall-title">대술면</span>
+                                            <span class="rainfall-content-title">124</span>
+                                        </div>
+                                        <div class="map-title-06">
+                                            <span class="rainfall-title">신양면</span>
+                                            <span class="rainfall-content-title">124</span>
+                                        </div>
+                                        <div class="map-title-07">
+                                            <span class="rainfall-title">대흥면</span>
+                                            <span class="rainfall-content-title">124</span>
+                                        </div>
+                                        <div class="map-title-08">
+                                            <span class="rainfall-title">오가면</span>
+                                            <span class="rainfall-content-title">124</span>
+                                        </div>
+                                        <div class="map-title-09">
+                                            <span class="rainfall-title">덕산면</span>
+                                            <span class="rainfall-content-title">124</span>
+                                        </div>
+                                        <div class="map-title-10">
+                                            <span class="rainfall-title">삽교읍</span>
+                                            <span class="rainfall-content-title">124</span>
+                                        </div>
+                                        <div class="map-title-11">
+                                            <span class="rainfall-title">응복면</span>
+                                            <span class="rainfall-content-title">124</span>
+                                        </div>
+                                        <div class="map-title-12">
+                                            <span class="rainfall-title">광시면</span>
+                                            <span class="rainfall-content-title">124</span>
+                                        </div>
+                                    </div>
+                                    <!-- 지역별 체크 -->
+                                    <div class="map-table">
+                                        <div class="table-close">
+                                            <p>닫기</p>
+                                        </div>
+                                        <table class="table-responsive" cellspacing='0'>
+                                            <!-- cellspacing='0' is important, must stay -->
+
+                                            <thead>
+                                                <tr>
+                                                    <th>구분</th>
+                                                    <th>전일<br>(mm)</th>
+                                                    <th>금일<br>(mm)</th>
+                                                    <th>합계<br>(mm)</th>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody>
+
+                                                <tr>
+                                                    <td>예산읍</td>
+
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>1</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>삽교읍</td>
+
+                                                    <td>8</td>
+                                                    <td>5</td>
+                                                    <td>3</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>대술면</td>
+                                                    <td>9</td>
+                                                    <td>2</td>
+                                                    <td>5</td>
+
+                                                </tr>
+
+                                                <tr>
+                                                    <td>신양면</td>
+                                                    <td>8</td>
+                                                    <td>5</td>
+                                                    <td>3</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>광시면</td>
+                                                    <td>16</td>
+                                                    <td>8</td>
+                                                    <td>4</td>
+
+                                                </tr>
+
+                                                <tr>
+                                                    <td>대흥면</td>
+                                                    <td>16</td>
+                                                    <td>2</td>
+                                                    <td>5</td>
+
+                                                </tr>
+
+                                                <tr>
+                                                    <td>응봉면</td>
+                                                    <td>16</td>
+                                                    <td>2</td>
+                                                    <td>5</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>덕산면</td>
+                                                    <td>9</td>
+                                                    <td>2</td>
+                                                    <td>5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>봉산면</td>
+                                                    <td>16</td>
+                                                    <td>2</td>
+                                                    <td>5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>고덕면</td>
+                                                    <td>16</td>
+                                                    <td>9</td>
+                                                    <td>5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>신암면</td>
+                                                    <td>16</td>
+                                                    <td>9</td>
+                                                    <td>5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>오가면</td>
+                                                    <td>16</td>
+                                                    <td>9</td>
+                                                    <td>5</td>
+                                                </tr>
+                                            </tbody>
+                                            <!-- Table Body -->
+
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="view-table">
+                                    <p>데이터 보기</p>   
+                                </div>
+                                <a href="#" class="more">
+                                    <span class="xi-search"></span>자세히보기
+                                </a>
+                            </div>
+                            <!-- rain-slider -->
+                            <div class="tab-weather-content" id="tab-6">
+                                <div class="rainfall snowfall">
+                                    <!-- <h1 class="rain-title">적설 정보</h1> -->
+                                    <h1 class="rain-more">
+                                        <a href="snow-info.html">자세히보기</a>
+                                    </h1>
+                                    <div class="rainfall-map snowy-map">
+                                        <div class="map-title-01">
+                                            <span class="rainfall-title">봉산면</span>
+                                            <span class="rainfall-content-title">124</span>
+                                        </div>
+                                        <div class="map-title-02">
+                                            <span class="rainfall-title">고덕면</span>
+                                            <span class="rainfall-content-title">124</span>
+                                        </div>
+                                        <div class="map-title-03">
+                                            <span class="rainfall-title">신암면</span>
+                                            <span class="rainfall-content-title">124</span>
+                                        </div>
+                                        <div class="map-title-04">
+                                            <span class="rainfall-title">예산읍</span>
+                                            <span class="rainfall-content-title">124</span>
+                                        </div>
+                                        <div class="map-title-05">
+                                            <span class="rainfall-title">대술면</span>
+                                            <span class="rainfall-content-title">124</span>
+                                        </div>
+                                        <div class="map-title-06">
+                                            <span class="rainfall-title">신양면</span>
+                                            <span class="rainfall-content-title">124</span>
+                                        </div>
+                                        <div class="map-title-07">
+                                            <span class="rainfall-title">대흥면</span>
+                                            <span class="rainfall-content-title">124</span>
+                                        </div>
+                                        <div class="map-title-08">
+                                            <span class="rainfall-title">오가면</span>
+                                            <span class="rainfall-content-title">124</span>
+                                        </div>
+                                        <div class="map-title-09">
+                                            <span class="rainfall-title">덕산면</span>
+                                            <span class="rainfall-content-title">124</span>
+                                        </div>
+                                        <div class="map-title-10">
+                                            <span class="rainfall-title">삽교읍</span>
+                                            <span class="rainfall-content-title">124</span>
+                                        </div>
+                                        <div class="map-title-11">
+                                            <span class="rainfall-title">응복면</span>
+                                            <span class="rainfall-content-title">124</span>
+                                        </div>
+                                        <div class="map-title-12">
+                                            <span class="rainfall-title">광시면</span>
+                                            <span class="rainfall-content-title">124</span>
+                                        </div>
+                                    </div>
+                                    <!-- 지역별 체크 -->
+                                    <div class="map-table">
+                                        <div class="table-close">
+                                            <p>닫기</p>
+                                        </div>
+                                        <table class="table-responsive" cellspacing='0'>
+                                            <!-- cellspacing='0' is important, must stay -->
+
+                                            <thead>
+                                                <tr>
+                                                    <th>구분</th>
+                                                    <th>전일<br>(mm)</th>
+                                                    <th>금일<br>(mm)</th>
+                                                    <th>합계<br>(mm)</th>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody>
+
+                                                <tr>
+                                                    <td>예산읍</td>
+
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>1</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>삽교읍</td>
+
+                                                    <td>8</td>
+                                                    <td>5</td>
+                                                    <td>3</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>대술면</td>
+                                                    <td>9</td>
+                                                    <td>2</td>
+                                                    <td>5</td>
+
+                                                </tr>
+
+                                                <tr>
+                                                    <td>신양면</td>
+                                                    <td>8</td>
+                                                    <td>5</td>
+                                                    <td>3</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>광시면</td>
+                                                    <td>16</td>
+                                                    <td>8</td>
+                                                    <td>4</td>
+
+                                                </tr>
+
+                                                <tr>
+                                                    <td>대흥면</td>
+                                                    <td>16</td>
+                                                    <td>2</td>
+                                                    <td>5</td>
+
+                                                </tr>
+
+                                                <tr>
+                                                    <td>응봉면</td>
+                                                    <td>16</td>
+                                                    <td>2</td>
+                                                    <td>5</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>덕산면</td>
+                                                    <td>9</td>
+                                                    <td>2</td>
+                                                    <td>5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>봉산면</td>
+                                                    <td>16</td>
+                                                    <td>2</td>
+                                                    <td>5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>고덕면</td>
+                                                    <td>16</td>
+                                                    <td>9</td>
+                                                    <td>5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>신암면</td>
+                                                    <td>16</td>
+                                                    <td>9</td>
+                                                    <td>5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>오가면</td>
+                                                    <td>16</td>
+                                                    <td>9</td>
+                                                    <td>5</td>
+                                                </tr>
+                                            </tbody>
+                                            <!-- Table Body -->
+                                        </table>
+                                    </div>
+                                    <div class="view-table">
+                                        <p>표 보기</p>   
+                                    </div>
+                                    <a href="#" class="more">
+                                        <span class="xi-search"></span>자세히보기
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- 탭 메뉴 내용 끝 -->
+                        </div>
+                        <script>
+                            $(document).ready(function () {
+                                $('ul.tabs-weather-bar li').click(
+                                    function () { //선택자를 통해 tabs 메뉴를 클릭 이벤트를 지정해줍니다.
+                                        var tab_id = $(this).attr('data-tab');
+                                        $('ul.tabs-weather-bar li').removeClass(
+                                            'current'); //선택 되있던 탭의 current css를 제거하고
+                                        $('.tab-weather-content').removeClass('current');
+                
+                                        $(this).addClass('current'); ////선택된 탭에 current class를 삽입해줍니다.
+                                        $("#" + tab_id).addClass('current');
+                                    }
+                                )
+                
+                            });
+                        </script>
+                    </div>
+                </div>
+                <!-- main-sevice -->
+                <div class="main-sevice">
+                    <div id="product__slider">
+                        <div class="product__slider-main">
+                            <div class="slide item-bg-07">
+                                <img src="resources/images/main/slide1.jpg" alt="슬라이드1">
+                            </div>
+                            <div class="slide item-bg-07">
+                                <img src="resources/images/main/slide1.jpg" alt="슬라이드1">
+                            </div>
+                        </div>
+                        <div class="product__slider-main">
+                            <div class="slide item-bg-07">
+                                <img src="resources/images/main/slide2.jpg" alt="슬라이드2">
+                            </div>
+                            <div class="slide item-bg-07">
+                                <img src="resources/images/main/slide2.jpg" alt="슬라이드2">
+                            </div>
+                        </div>
+                        <div class="product__slider-main">
+                            <div class="slide item-bg-07">
+                                <img src="resources/images/main/slide3.jpg" alt="슬라이드3">
+                            </div>
+                            <div class="slide item-bg-07">
+                                <img src="resources/images/main/slide3.jpg" alt="슬라이드3">
+                            </div>
+                        </div>
+                        <div class="product__slider-main">
+                            <div class="swiper-box">
+                                <div class="video-container">
+                                    <a class="video-slider, videobox">
+                                      <div class="video-slide">
+                                        <video controls poster="https://safe.chungnam.go.kr//images/sftv/aed_manual.jpg" autoplay muted>
+                                          <source src="https://safe.chungnam.go.kr/safeTv/aed_manual.mp4" type="video/mp4">
+                                        </video>
+                                      </div>
+                                      <div class="video-slide">
+                                        <video controls  poster="https://safe.chungnam.go.kr//images/sftv/aed_manual.jpg">
+                                          <source src="https://safe.chungnam.go.kr/safeTv/aed_manual.mp4" type="video/mp4">
+                                        </video>
+                                      </div>
+                                      <div class="video-slide">
+                                        <video controls  poster="https://safe.chungnam.go.kr//images/sftv/aed_manual.jpg">
+                                          <source src="https://safe.chungnam.go.kr/safeTv/aed_manual.mp4" type="video/mp4">
+                                        </video>
+                                      </div>
+                                    </a>
+                                  
+                                  
+                                    <button class="video-slider-btn left-side" onclick="plusDivs(-1)">
+                                        <span class="xi-angle-left next-box"></span>
+                                    </button>
+                                    <button class="video-slider-btn right-side" onclick="plusDivs(1)">
+                                        <span class="xi-angle-right prev-box"></span>
+                                    </button>
+                                  </div>
+                        </div>
+                        </div>
+                    </div>
+                    <!-- slick slider -->
+                </div>
+<script>
+    var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {  
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i,
+      x = document.getElementsByClassName("video-slide"),
+      y = document.getElementsByTagName("video");
+  
+  if (n > x.length) {
+    slideIndex = 1
+  }
+  
+  if (n < 1) {
+    slideIndex = x.length
+  }
+  
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+    y[i].pause();
+  }
+  
+  x[slideIndex-1].style.display = "block";
+  
+}
+</script>
+                
+
+                <!-- modal -->
+                <div id="modal"></div>
+                <div class="modal-con modal1">
+                    <a href="javascript:;" class="close">
+                        <span class="xi-close-min"></span></a>
+                    <p class="title">재난문자 신청하기</p>
+                    <div class="con">
+                        <div class="modal-form">
+                            <div class="modal-txt">
+                                신청자명 :
+                            </div>
+                            <div class="modal-text">
+                                <input type="text" placeholder="이름" class="modal-text">
+                            </div>
+                        </div>
+                        <div class="modal-form">
+                            <div class="modal-txt">
+                                거주지역 :
+                            </div>
+                            <div class="modal-text">
+                                <select class="area-text">
+                                    <option>예산읍</option>
+                                    <option>예산읍</option>
+                                    <option>예산읍</option>
+                                    <option>예산읍</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="modal-form">
+                            <div class="modal-txt">
+                                통신사 :
+                            </div>
+                            <div class="modal-text">
+                                <select class="area-text">
+                                    <option>SKT</option>
+                                    <option>KT</option>
+                                    <option>LG</option>
+                                    <option>별정통신사</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="modal-form">
+                            <div class="modal-txt">
+                                연락처 :
+                            </div>
+                            <div class="modal-text">
+                                <input type="tel" placeholder="연락처" class="modal-text">
+                            </div>
+                        </div>
+                        <div class="modal-form form-flex">
+                            <div class="modal-btn">
+                                <button class="close-btn">취소</button>
+                            </div>
+                            <div class="modal-btn">
+                                <button class="check-btn">확인</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <script>
+                    function openModal(modalname) {
+                        document
+                            .get
+                            $("#modal")
+                            .fadeIn(300);
+                        $("." + modalname).fadeIn(300);
+                    }
+
+                    $("#modal, .close").on('click', function () {
+                        $("#modal").fadeOut(300);
+                        $(".modal-con").fadeOut(300);
+                    });
+                </script>
+
+                <!-- main-sevice end -->
+
+            </section>
+            <!-- 상단 날씨 탭 -->
+
+            <!-- quickmenu -->
+            
+
+            <!-- TOP버튼 -->
+                <div class="quick go-top">
+                    <button type="button" class="go_top_btn" style="display: inline-block;"><span>위로</span></button>
+                </div>
+
+                <script>
+                    $(function() {
+                        // $(window).scroll(function() {
+                        //     if ($(this).scrollTop() > 500) {
+                        //         $('.quick').fadeIn();
+                        //     } else {
+                        //         $('.quick').fadeOut();
+                        //     }
+                        // });
+                        
+                        $(".quick").click(function() {
+                            $('html, body').animate({
+                                scrollTop : 0
+                            }, 400);
+                            return false;
+                        });
+                    });
+                </script>
+            <!-- TOP버튼 끝 -->
+            <!-- 하단영역에 섹션 -->
+
+            <!-- 하단영역섹션 끝 -->
+            <div class="footer-logo">
+                <div class="slider-logo">
+                    <div class="logoBanner">
+                        <div class="slide">
+                            <img src="resources/images/main/footer-slider-logo-01.png" alt="logo">
+                        </div>
+                        <div class="slide">
+                            <img src="resources/images/main/footer-slider-logo-02.png" alt="logo">
+                        </div>
+                        <div class="slide">
+                            <img src="resources/images/main/footer-slider-logo-03.png" alt="logo">
+                        </div>
+                        <div class="slide">
+                            <img src="resources/images/main/footer-slider-logo-04.png" alt="logo">
+                        </div>
+                        <div class="slide">
+                            <img src="resources/images/main/footer-slider-logo-05.png" alt="logo">
+                        </div>
+                        <div class="slide">
+                            <img src="resources/images/main/footer-slider-logo-06.png" alt="logo">
+                        </div>
+                        <div class="slide">
+                            <img src="resources/images/main/footer-slider-logo-07.png" alt="logo">
+                        </div>
+                        <div class="slide">
+                            <img src="resources/images/main/footer-slider-logo-08.png" alt="logo">
+                        </div>
+                        <div class="slide">
+                            <img src="resources/images/main/footer-slider-logo-09.png" alt="logo">
+                        </div>
+                        <div class="slide">
+                            <img src="resources/images/main/footer-slider-logo-10.png" alt="logo">
+                        </div>
+                        <div class="slide">
+                            <img src="resources/images/main/footer-slider-logo-11.png" alt="logo">
+                        </div>
+                        <div class="slide">
+                            <img src="resources/images/main/footer-slider-logo-12.png" alt="logo">
+                        </div>
+                        <div class="slide">
+                            <img src="resources/images/main/footer-slider-logo-13.png" alt="logo">
+                        </div>
+                        <div class="slide">
+                            <img src="resources/images/main/footer-slider-logo-14.png" alt="logo">
+                        </div>
+                        <div class="slide">
+                            <img src="resources/images/main/footer-slider-logo-15.png" alt="logo">
+                        </div>
+                        <div class="slide">
+                            <img src="resources/images/main/footer-slider-logo-15.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="footer-slide-btn">
+                        <button class="pause-f-btn xi-pause"></button>
+                        <button class="play-f-btn xi-play"></button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div id="myModal" class="modal-box">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <p class="modal-content-title">
+                    코로나 바이러스 감염증-19 예방행동 수칙
+                </p>
+                <p class="modal-text-content">1. 예산군청 코로나 현황 <a href="#">바로가기</a></p>
+                <p class="modal-text-content">2. 예산군청 재난문자 신청하기 <a href="#">바로가기</a></p>
+                <p class="modal-text-content">3. 상황별 행동수칙 <a href="#">바로가기</a></p>
+                <p class="modal-text-content">4. 안전하고 올바른 마스크 착용법 <a href="#">바로가기</a></p>
+                <p><br/></p>
+                <div class="modal-footer-content">
+                    <input type="checkbox" name="하루동안 열지않기" id="" class="modal-checkbox"><span>하루동안 열지 않기</span>
+                </div>
+                <!-- <div
+                    style="cursor:pointer;background-color:#DDDDDD;text-align: center;padding-bottom: 10px;padding-top: 10px;"
+                    onclick="close_pop();">
+                    <span class="pop_bt" style="font-size: 13pt;">
+                        닫기
+                    </span>
+                </div> -->
+                <div class="close-pop-txt">
+                    <span class="xi-close-min" onclick="close_pop();"></span>
+                </div>
+            </div>
+
+        </div>
+        <script type="text/javascript">
+
+            jQuery(document).ready(function () {
+                $('#myModal').show();
+            });
+            //팝업 Close 기능
+            function close_pop(flag) {
+                $('#myModal').hide();
+            };
+        </script>
+
+        <script>
+            $(function () {
+                tab('#tab', 0);
+            });
+
+            function tab(e, num) {
+                var num = num || 0;
+                var menu = $(e).children();
+                var con = $(e + '_con').children();
+                var select = $(menu).eq(num);
+                var i = num;
+
+                select.addClass('on');
+                con
+                    .eq(num)
+                    .show();
+
+                menu.click(function () {
+                    if (select !== null) {
+                        select.removeClass("on");
+                        select.removeClass("svg");
+                        con
+                            .eq(i)
+                            .hide();
+                    }
+
+                    select = $(this);
+                    i = $(this).index();
+
+                    select.addClass('on');
+                    con
+                        .eq(i)
+                        .show();
+                });
+            }
+        </script>
+
+        <footer style="background-color:#fff;">
+            <div id="footer">
+                <div class="footer-content">
+                    <div class="foot-logo">
+                        <img src="resources/images/logo_b.png" alt="로고">
+                    </div>
+                    <div class="footer-copyright">
+                        <p>(우) 32435 충남 예산군 예산읍 군청로 22 Tel 041-339-7114 / Fax 041-339-7229</p>
+                        <p>COPYRIGHT ⓒ YESAN COUNTRY.ALL RIGHTS RESERVED</p>
+                    </div>
+                    <div class="list-box"></div>
+                </div>
+            </div>
+        </footer>
+        <!-- JS -->
+        <script src="resources/js/slick.min.js"></script>
+        <script src="resources/js/main-slider.js"></script>
+        <script
+            type="text/javascript"
+            src="resources/javascripts/vendor/jquery.tabslet.min.js"></script>
+        <script
+            type="text/javascript"
+            src="resources/javascripts/vendor/rainbow-custom.min.js"></script>
+        <script
+            type="text/javascript"
+            src="resources/javascripts/vendor/jquery.anchor.js"></script>
+        <script src="resources/javascripts/initializers.js"></script>
+        <!-- JS ends -->
+        <!-- <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script> -->
+        <script type="text/javascript" src="resources/js/main.js"></script>
+
+        <script>
+            window.open(
+'popup.html',
+'windowPop',
+'width=350, height=450, left=200, top=200, resizable = yes');
+        </script>
+    </body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mobile-css/normalize.css">
+    <link rel="stylesheet" href="mobile-css/reset.css">
+    <link rel="stylesheet" href="mobile-css/mobile.css">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+</head>
+<body>
+    <section class="main-app-section">
+    <header>
+        <div class="header_inner">
+            <button type="button" class="back">  </button>
+        </div>
+    </header>
+    <section>
+        <div class="content_inner">
+            <div class="news-title">
+               <h1>최근 재난 제보 정보</h1>
+            </div>
+            <div class="new-slider">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-content">
+                          <div class="news-title-today">
+                              <p class="news-today">2020.10.09</p>
+                              <p class="news-name">홍길동</p>
+                              <p class="news-title-incident">
+                                <span>[화재]</span> <span>일반화재(차량)</span>
+                             </p>
+                             <p>충청남도 예산읍 23-1</p>
+                          </div>
+                          <div class="slider-video">
+                              <video width="100%" controls>
+                                <source src="https://safe.chungnam.go.kr/safeTv/superman_home_accident.mp4" type="video/mp4">
+                              </video>
+                          </div>
+                          <div class="new-content">
+                            <p>화재사고를 신고합니다.</p>
+                          </div>
+                      </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-content">
+                          <div class="news-title-today">
+                              <p class="news-today">2020.10.09</p>
+                              <p class="news-name">홍길동</p>
+                              <p class="news-title-incident">
+                                <span>[화재]</span> <span>일반화재(차량)</span>
+                             </p>
+                             <p>충청남도 예산읍 23-1</p>
+                          </div>
+                          <div class="slider-video">
+                              <video width="100%" controls class="video1">
+                                <source src="https://safe.chungnam.go.kr/safeTv/superman_home_accident.mp4" type="video/mp4">
+                              </video>
+                          </div>
+                          <div class="new-content">
+                            <p>화재사고를 신고합니다.</p>
+                          </div>
+                      </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-content">
+                          <div class="news-title-today">
+                              <p class="news-today">2020.10.09</p>
+                              <p class="news-name">홍길동</p>
+                              <p class="news-title-incident">
+                                <span>[화재]</span> <span>일반화재(차량)</span>
+                             </p>
+                             <p>충청남도 예산읍 23-1</p>
+                          </div>
+                          <div class="slider-video">
+                              <video width="100%" controls>
+                                <source src="https://safe.chungnam.go.kr/safeTv/superman_home_accident.mp4" type="video/mp4">
+                              </video>
+                          </div>
+                          <div class="new-content">
+                         
+                            <p>화재사고를 신고합니다.</p>
+                          </div>
+                      </div>
+                      </div>
+
+                    </div>
+                    <!-- Add Pagination -->
+                  </div>
+            </div>
+            <!-- new-slider end -->
+
+
+            <div class="news-slider-btn">
+              <button>재난등록정보</button>
+            </div>
+        </div>
+    </section>
+</section>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+      // import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 2,
+      spaceBetween: 280,
+      centeredSlides: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        loop: true,
+      },
+    });
+  </script>
+  <script>
+    window.onload = function(){
+      let video = document.getElementByClassName('video1')
+      for (let i = 0; i < video.length; i++) {
+        video[i].addEventListener('mouseover', function() { video.play() }, false);
+        video[i].addEventListener('mouseout', function() { video.pause() }, false);
+      }
+   }
+  </script>
+</body>
+</html>

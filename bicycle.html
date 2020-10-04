@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta property=”og:image” content="resources/images/POZ_202007131009436070.jpg">
+    <meta property=”og:image:width” content="600">
+    <meta property=”og:image:height” content="400"> 
+    <meta name="author" content="예산재난포털">
+    <meta name="Keywords" content="예산재난포털">
+    <title>공지사항</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="shortcut icon" href="resources/images/fa_gDi_icon.ico">
+    <link rel="stylesheet" href="resources/css/commmon/common.css">
+    <link rel="stylesheet" href="resources/css/layout.css">
+    <!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+</head>
+<body>
+    <!-- 공통메뉴  -->
+    <header id="header">
+        <div class="nav-wrapper">
+            <a href="index.html"><h1 id="logo">예산재난포털</h1></a>
+            <div class="gnb" id="gnb">
+                <ul>
+                    <li>
+                        <a href="#">종합날씨</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-weather">
+                                <ul>
+                                    <li>
+                                        <a href="livingweather.html">
+                                            <div class="sub-icon-6">
+                                                <img src="resources/images/icon/main-menu-2-1.png" alt="생활날씨">
+                                                <img src="resources/images/icon/main-menu-2-1-hover.png" alt="생활날씨">
+                                            </div>
+                                            생활날씨</a>
+                                    </li>
+                                    <li>
+                                        <a href="rain-info.html">
+                                            <div class="sub-icon-7">
+                                                <img src="resources/images/icon/main-menu-2-2.png" alt="강우정보">
+                                                <img src="resources/images/icon/main-menu-2-2-hover.png" alt="강우정보">
+                                            </div>
+                                            강우정보</a>
+                                    </li>
+                                    <li>
+                                        <a href="snow-info.html">
+                                            <div class="sub-icon-8">
+                                                <img src="resources/images/icon/main-menu-2-3.png" alt="적설정보">
+                                                <img src="resources/images/icon/main-menu-2-3-hover.png" alt="적설정보">
+                                            </div>
+                                            적설정보</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 1depth -->
+                    <li class="on">
+                        <a href="#">생활안전정보</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-information">
+                                <ul>
+                                    <li>
+                                        <a href="information.html">
+                                            <div class="sub-icon-3">
+                                                <img src="resources/images/icon/main-menu-1-3.png" alt="재난속보">
+                                                <img src="resources/images/icon/main-menu-1-3-hover.png" alt="재난속보">
+                                            </div>
+                                            재난속보
+                                        </a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="government-info.html">하천 수위</a></li>
+                                                <li><a href="dam-info.html">댐정보</a></li>
+                                                <li><a href="fire-info.html">소방 긴급구조</a></li>
+                                                <li><a href="firecenter-info.html">소방서센터</a></li>
+                                                <li><a href="earth-info.html">지진</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-9">
+                                                <img src="resources/images/icon/main-menu-3-1.png" alt="재난안전지도">
+                                                <img src="resources/images/icon/main-menu-3-1-hover.png" alt="재난안전지도">
+                                            </div>
+                                            재난안전지도
+                                        </a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="safemap.html">안전MAP</a></li>
+                                            </ul>
+                                        </div>
+                                        
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-10">
+                                                <img src="resources/images/icon/main-menu-3-2.png" alt="재난예방정보">
+                                                <img src="resources/images/icon/main-menu-3-2-hover.png" alt="재난예방정보">
+                                            </div>
+                                            재난예방정보</a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li>
+                                                    <a href="earthquake.html">자연재난</a>
+                                                </li>
+                                                <li>
+                                                    <a href="traffic.html">사회재난</a>
+                                                </li>
+                                                <li>
+                                                    <a href="extinguisher.html">생활안전수칙</a>
+                                                </li>
+                                                <li>
+                                                    <a href="farm.html">농어촌안전</a>
+                                                </li>
+                                                <li>
+                                                    <a href="spring.html">계절별재난</a>
+                                                </li>
+                                                <li>
+                                                    <a href="baby.html">생애주기별 재난</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-11">
+                                                <img src="resources/images/icon/main-menu-3-3.png" alt="재난안전보험">
+                                                <img src="resources/images/icon/main-menu-3-3-hover.png" alt="재난안전보험">
+                                            </div>
+                                            재난안전보험</a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="insurance.html">풍수해보험</a></li>
+                                                <li><a href="safe-insurance.html">예산군 군민안전보험</a></li>
+                                                <li><a href="bicycle.html">예산군 자전거안전보험</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sub-icon-12">
+                                                <img src="resources/images/icon/main-menu-3-4.png" alt="재난안전앱">
+                                                <img src="resources/images/icon/main-menu-3-4-hover.png" alt="재난안전앱">
+                                            </div>
+                                            재난안전앱</a>
+                                        <div class="inner-nav">
+                                            <ul>
+                                                <li><a href="safe-app.html">안전디딤돌</a></li>
+                                                <li><a href="safe-news.html">안전신문고</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 2depth -->
+                    <li>
+                        <a href="#">재난안전대책본부</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-safety">
+                                <ul>
+                                    <li>
+                                        <a href="tissue.html">
+                                            <div class="sub-icon-13">
+                                                <img src="resources/images/icon/main-menu-4-1.png" alt="대책본부 조직도 및 주요업무">
+                                                <img src="resources/images/icon/main-menu-4-1-hover.png" alt="대책본부 조직도 및 주요업무">
+                                            </div>
+                                            대책본부 조직도 및 주요업무</a>
+                                    </li>
+                                    <li>
+                                        <a href="system-1.html">
+                                            <div class="sub-icon-14">
+                                                <img src="resources/images/icon/main-menu-4-2.png" alt="재난대응 체계도">
+                                                <img src="resources/images/icon/main-menu-4-2-hover.png" alt="재난대응 체계도">
+                                            </div>
+                                            재난대응 체계도</a>
+                                    </li>
+                                    <li>
+                                        <a href="system-2.html">
+                                            <div class="sub-icon-15">
+                                                <img src="resources/images/icon/main-menu-4-3.png" alt="피해조사 및 복구계획">
+                                                <img src="resources/images/icon/main-menu-4-3-hover.png" alt="피해조사 및 복구계획">
+                                            </div>
+                                            피해조사 및 복구계획</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 3depth -->
+                    <li>
+                        <a href="#">안전게시판</a>
+                        <div class="sub-nav-wrap">
+                            <div class="sub-nav sub-nav-board">
+                                <ul>
+                                    <li>
+                                        <a href="notice.html">
+                                            <div class="sub-icon-16">
+                                                <img src="resources/images/icon/main-menu-5-1.png" alt="공지사항">
+                                                <img src="resources/images/icon/main-menu-5-1-hover.png" alt="공지사항">
+                                            </div>
+                                            공지사항</a>
+                                    </li>
+                                    <li>
+                                        <a href="report.html">
+                                            <div class="sub-icon-17">
+                                                <img src="resources/images/icon/main-menu-5-2.png" alt="보도자료">
+                                                <img src="resources/images/icon/main-menu-5-2-hover.png" alt="보도자료">
+                                            </div>
+                                            보도자료</a>
+                                    </li>
+                                    <li>
+                                        <a href="education.html">
+                                            <div class="sub-icon-18">
+                                                <img src="resources/images/icon/main-menu-5-3.png" alt="교육자료">
+                                                <img src="resources/images/icon/main-menu-5-3-hover.png" alt="교육자료">
+                                            </div>
+                                            교육자료</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 4depth -->
+                </ul>
+            </div>
+        </div>        
+    </header>
+        <div class="gnb_bg"></div>
+    <section id="notice">
+        <div class="warp">
+            <div class="notice-title">
+                <h1 class="insur-title">예산군 자전거안전보험</h1>
+            </div>
+            <div class="insurance-wrap">
+                <div class="ins-info">
+                    <div class="ins-info-img">
+                        <img src="resources/images/insurance/bicycle.svg" alt="자전거안전보험">
+                    </div>
+                    <div class="ins-info-txt bicycle-info-txt">
+                        <h1>예산군 자전거안전보험</h1>
+                        <p>   - 피보험자 : 예산군에 주민을 두고 거주하는 모든 군민 (외국인 포함)<br>
+                            - 보장기간 : 1년간<br>
+                            - 보 험 료 : 예산군에서 일괄 납부완료<br>
+                            - 가입절차 : 예산군민 전체 자동가입</p>
+                    </div>
+                </div>
+                <div class="ins-cont">
+                    <h2><img src="resources/images/icon1-g.png" alt="아이콘">보험가입 혜택</h2>
+                    <div class="scroll1cont">
+                        <table class="t3 ttvam thtac">
+                        <caption><span class="blind">※ 타 제도와 관계없이 중복보상</span></caption>
+                        <thead>
+                        <tr>
+                            <th scope="col">담 보 명</th>
+                            <th colspan="3" scope="col">보장내용</th>
+                            <th colspan="3" scope="col">보장금액</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">자전거사고<br>
+                                상해 사망</th>
+                            <td colspan="3">
+                                예산군민이 자전거 교통사고로 사망한 경우<br>
+                                    (만 15세미만자 제외)<br>
+                                    ※ 타 제도와 관계없이 중복보상
+                            </td>
+                            <td>
+                                1,000만원
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">자전거사고<br>
+                                상해 후유장해</th>
+                            <td colspan="3">
+                                예산군민이 자전거 교통사고로 3%~100%의 후유장해가
+                                발생한 경우<br>
+                                ※ 타 제도와 관계없이 중복보상
+                            </td>
+                            <td>
+                                1,000만원 한도
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">자전거사고<br>
+                                진단위로금</th>
+                            <td colspan="3">
+                                예산군민이 자전거 교통사고로 4주 이상의 치료를 요한다는
+                                진단을 받은 경우 진단일에 따라 지급<br>
+                                (최초 진단기준, 1회에 한해 지급)<br>
+                                ※ 타 제도와 관계없이 중복보상
+                            </td>
+                            <td>
+                                -진단 4주(28일)이상 : 20만원<br>
+                                -진단 5주(35일)이상 : 30만원<br>
+                                -진단 6주(42일)이상 : 40만원<br>
+                                -진단 7주(49일)이상 : 50만원<br>
+                                -진단 8주(56일)이상 : 60만원
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">자전거사고<br>
+                                입원위로금</th>
+                            <td colspan="3">
+                                예산군민이 자전거 사고로 4주 이상의 치료를 요한다는
+                                진단을 받고 1주일(7일)이상 입원한 경우<br>
+                                ※ 타 제도와 관계없이 중복보상
+                            </td>
+                            <td>
+                                20만원
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">자전거사고<br>
+                                벌금</th>
+                            <td colspan="3">
+                                예산군민이 자전거 운전 중 타인을 사상케하여 확정판결로
+                                벌금을 부담하는 경우
+                            </td>
+                            <td>
+                                2,000만원 한도
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">자전거사고<br>
+                                변호사선임비용</th>
+                            <td colspan="3">
+                                예산군민이 자전거 운전 중 타인을 사상케하여 구속영장에
+                                의해 구속 되거나 검찰에 의해 공소제기된 경우 
+                            </td>
+                            <td>
+                                200만원한도
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">자전거사고><br>
+                                처리지원금<br>
+                                (동승자포함</th>
+                            <td colspan="3">
+                                예산군민이 자전거 운전 중 타인(가족제외, 동승자포함)을 
+                                사망케하거나 중상해를 입혀 검찰에 공소제기되어 형사합의를
+                                봐야할 경우 (피해자 1인당)
+                            </td>
+                            <td>
+                                1인당 3,000만원한도
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">뺑소니, 무보험차<br>
+                                상해 사망</th>
+                            <td colspan="3">
+                                예산군민이 뺑소니사고 또는 무보험차에 의한 사고로 발생한
+                                상해의 직접 결과로 사망하거나 약관상 장해분류표에서 정한 
+                                각 장해 지급률에 해당하는 장해상태 되었을 경우<br>
+                                (만15세미만자 제외)  ※ 타 제도와 관계없이 중복보상
+                            </td>
+                            <td>
+                                350만원
+                            </td>
+                        </tr>
+                        </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- table end  -->
+                <div class="ins-cont">
+                    <h2><img src="resources/images/icon1-g.png" alt="아이콘">보험금 청구</h2>
+                    <p>- 청구사유 발생 시 다음의 증빙서류를 첨부하여 사고처리 전담창구에 청구</p>
+                    <p> 1. 공통서류 : 보험금청구서, 주민등록등(초)본, 신분증사본, 통장사본 등</p>
+                    <p> 2. 기타서류 : 상담창구에 문의 바랍니다.</p>
+                </div>
+                <div class="info1box1">
+                    <strong class="t1">※ 보험금 청구서식 (예산군청 홈페이지에서 다운로드)</strong>
+                    <ul class="bu bu2 mgt0">
+                        <li>www.yesan.go.kr ➛ [공지사항] ➛ [자전거안전보험 검색] </li>
+                    </ul>
+                </div>
+                <div class="ins-cont ins-cont-flex ins-cont-hack">
+                    <img src="resources/images/icon1-g.png" alt="아이콘">
+                    <div class="ins-cont-wrap">
+                        <p>- 사고처리 문의 : 디비손해보험</p>
+                        <p>충남 예산군 예산읍 아리랑로 27, 월성빌딩 2층</p>
+                        <p>TEL. 041-359-0842      FAX. 0505-181-0572</p>
+                        <p>- 기타 문의 : 예산군청 안전관리과(☏ 041-339-7753)</p>
+                    </div>
+                </div>
+                <div class="info1box1">
+                    <strong class="t1">❍ 뺑소니, 무보험차에 의한 상해 사망/후유장해</strong>
+                    <ul class="bu bu2 mgt0">
+                        <li>☞ 뺑소니사고라 함은?</li>
+                        <li>  - 피보험자가 자동차 보유자를 알 수 없는 자동차에 의한 사고로 상해를 입고 경찰관서
+                            뺑소니사고로 신고되어 자동차손해배상보장법상의 자동차보유자를 알 수 없는 자동차에
+                            의한 사고</li>
+                        <li>☞ 무보험자동차에 의한 사고 라함은?</li>
+                        <li>- 피보험자가 자동차손해배상보장법상의 책임보험을 제외한 자동차보험(공제 포함)의 
+                            대인배상 책임보험에 가입되지 않은 자동차에 의해 상해를 입음으로써 손해배상청구권이
+                            발생한 경우  (단, 가해자동차가 2대 이상인 경우에는 그 전부가 무보험자동차일 때 한함)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- quickmenu -->
+    <div class="quickmenu-1">
+        <ul>
+            <li>
+                <a href="index.html">
+                    <img src="resources/images/icon/icon_gnb05_01-w.png" alt="안전맵">Home
+                </a>
+            </li>
+            <li>
+                <a href="earthquake.html">
+                    <img src="resources/images/icon/main-menu-3-2-w.png" alt="재난예방정보">재난예방정보
+                </a>
+            </li>
+            <li>
+                <a href="insurance.html">
+                    <img src="resources/images/icon/main-menu-3-3-w.png" alt="재난안전보험">재난안전보험
+                </a>
+            </li>
+            <li>
+                <a href="safe-app.html">
+                    <img src="resources/images/icon/main-menu-3-4-w.png" alt="재난안전앱">재난안전앱
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- quickmenu end -->
+    <!-- TOP버튼 -->
+    <div class="quick">
+        <button type="button" class="go_top_btn" style="display: inline-block;"><span>위로</span></button>
+    </div>
+
+    <script>
+        $(function() {
+            // $(window).scroll(function() {
+            //     if ($(this).scrollTop() > 500) {
+            //         $('.quick').fadeIn();
+            //     } else {
+            //         $('.quick').fadeOut();
+            //     }
+            // });
+            
+            $(".quick").click(function() {
+                $('html, body').animate({
+                    scrollTop : 0
+                }, 400);
+                return false;
+            });
+        });
+    </script>
+    <!-- TOP버튼 끝 -->
+    <footer>
+        <div id="footer">
+            <div class="footer-content">
+                <div class="foot-logo">
+                    <img src="resources/images/logo.png" alt="로고">
+                </div>
+                <div class="footer-copyright">
+                    <p>(우) 32435 충남 예산군 예산읍 군청로 22 Tel 041-339-7114 / Fax 041-339-7229</p>
+                    <p>COPYRIGHT ⓒ YESAN COUNTRY.ALL RIGHTS RESERVED</p>
+                </div>
+                <div class="list-box"></div>
+            </div>
+        </div>
+    </footer>
+    <!-- JS -->
+    <script type="text/javascript" src="resources/javascripts/vendor/jquery.tabslet.min.js"></script>
+    <script type="text/javascript" src="resources/javascripts/vendor/rainbow-custom.min.js"></script>
+    <script type="text/javascript" src="resources/javascripts/vendor/jquery.anchor.js"></script>
+    <script src="resources/javascripts/initializers.js"></script>
+    <!-- JS ends -->
+    <!-- <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script> -->
+    <script type="text/javascript" src="resources/js/main.js"></script>
+</body>
+</html>
