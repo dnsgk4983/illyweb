@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="viewport" content="width=1240, user-scalable=no, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
     <meta property=”og:image” content="resources/images/POZ_202007131009436070.jpg">
     <meta property=”og:image:width” content="600">
     <meta property=”og:image:height” content="400">
@@ -239,170 +239,138 @@
         </div>        
     </header>
     <div class="gnb_bg"></div>
-    <section id="weather">
-        <div class="warp">
-            <div class="weather-title">
-                <!-- <h1>생활날씨</h1> -->
-            </div>
-            <!-- weather-map  -->
-            <div class="weather-map">
-                <div class="weather-area wt-a40">
-                    <img src="resources/images/weather-icon/ico_weather-title.png" alt="생활날씨"><span>생활날씨</span>
+    <main id="weather">
+        <section>
+            <div class="warp">
+                <div class="weather-title">
+                    <!-- <h1>생활날씨</h1> -->
                 </div>
-                <div class="weather-area">
-                    <span>예산군</span>
-                </div>
-                <div class="weather-area wa-4">
-                   <div>
-                    <select name="" id="weather-option" class="weather-option">
-                            <option style="font-weight: 400;"><b>예산읍</b>
-                            <option style="font-weight: 400;">예산읍
-                            <option style="font-weight: 400;">예산읍
-                        </select>
+                <!-- weather-map  -->
+                <div class="weather-map">
+                    <div class="weather-area wt-a40">
+                        <img src="resources/images/weather-icon/ico_weather-title.png" alt="생활날씨"><span>생활날씨</span>
+                    </div>
+                    <div class="weather-area">
+                        <span>예산군</span>
+                    </div>
+                    <div class="weather-area wa-4">
+                    <div>
+                        <select name="" id="weather-option" class="weather-option">
+                                <option style="font-weight: 400;"><b>예산읍</b>
+                                <option style="font-weight: 400;">예산읍
+                                <option style="font-weight: 400;">예산읍
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="weather-btn">검색</button>
                     </div>
                 </div>
-                <div>
-                    <button class="weather-btn">검색</button>
-                </div>
-            </div>
-            <!-- weather-map  -->
-            <div class="weather-tab">
-                <div class="container">
-                    <ul class="tabs">
-                        <li class="tab-link current" data-tab="tab-1"><img src="resources/images/weather-icon/temp_w.svg" alt="기온">기온</li>
-                        <li class="tab-link" data-tab="tab-2"><img src='resources/images/weather-icon/air.svg' alt="통합대기">통합대기</li>
-                        <li class="tab-link" data-tab="tab-3"><img src="resources/images/weather-icon/dust.svg" alt="미세먼지">미세먼지</li>
-                        <li class="tab-link" data-tab="tab-4"><img src="resources/images/weather-icon/duststorm.svg" alt="황사">황사</li>
-                        <li class="tab-link" data-tab="tab-5"><img src="resources/images/weather-icon/ozone.svg" alt="오존">오존</li>
-                        <li class="tab-link" data-tab="tab-6"><img src="resources/images/weather-icon/ultraviolet.svg" alt="자외선">자외선</li>
-                    </ul>
-                    <div id="tab-1" class="tab-content current">
-                        <div class="weather-tab-light">
-                            <div class="weather-bg" id="temp-bg">
-                                <p class="tab-1-p">예상군 예상읍<br>08.06. 12시 기준</p>
-                                <dl class="weather_guide">
-                                    <dt>풍속</dt>
-                                    <dd id="wsd">3.6m/s</dd>
-                                    <dt>습도</dt>
-                                    <dd id="reh">89%</dd>
-                                    <dt>강수</dt>
-                                    <dd>0mm</dd>
-                                    <dt>체감온도</dt>
-                                    <dd>-</dd>
-                                </dl>
-                                <div class="weather_circle">
-                                    <p class="type02">
-                                        <img alt="흐림" src="resources/images/icon_b_weather04.png" title="흐림"><span>흐림</span>
-                                    </p>
-                                    <p class="type_2">
-                                        <strong>26.1</strong><em>°C</em>
-                                    </p>
+                <!-- weather-map  -->
+                <div class="weather-tab">
+                    <div class="container">
+                        <ul class="tabs">
+                            <li class="tab-link current" data-tab="tab-1"><img src="resources/images/weather-icon/temp_w.svg" alt="기온">기온</li>
+                            <li class="tab-link" data-tab="tab-2"><img src='resources/images/weather-icon/air.svg' alt="통합대기">통합대기</li>
+                            <li class="tab-link" data-tab="tab-3"><img src="resources/images/weather-icon/dust.svg" alt="미세먼지">미세먼지</li>
+                            <li class="tab-link" data-tab="tab-4"><img src="resources/images/weather-icon/duststorm.svg" alt="황사">황사</li>
+                            <li class="tab-link" data-tab="tab-5"><img src="resources/images/weather-icon/ozone.svg" alt="오존">오존</li>
+                            <li class="tab-link" data-tab="tab-6"><img src="resources/images/weather-icon/ultraviolet.svg" alt="자외선">자외선</li>
+                        </ul>
+                        <div id="tab-1" class="tab-content current">
+                            <div class="weather-tab-light">
+                                <div class="weather-bg" id="temp-bg">
+                                    <p class="tab-1-p">예상군 예상읍<br>08.06. 12시 기준</p>
+                                    <dl class="weather_guide">
+                                        <dt>풍속</dt>
+                                        <dd id="wsd">3.6m/s</dd>
+                                        <dt>습도</dt>
+                                        <dd id="reh">89%</dd>
+                                        <dt>강수</dt>
+                                        <dd>0mm</dd>
+                                        <dt>체감온도</dt>
+                                        <dd>-</dd>
+                                    </dl>
+                                    <div class="weather_circle">
+                                        <p class="type02">
+                                            <img alt="흐림" src="resources/images/icon_b_weather04.png" title="흐림"><span>흐림</span>
+                                        </p>
+                                        <p class="type_2">
+                                            <strong>26.1</strong><em>°C</em>
+                                        </p>
+                                    </div>
+                                    <a href="#" class="more">
+                                        <span class="xi-search"></span>자세히보기
+                                    </a>
                                 </div>
-                                <a href="#" class="more">
-                                    <span class="xi-search"></span>자세히보기
-                                </a>
+                                <!-- light  table  -->
+                                <table class="tg" width="100%" border="1">
+                                    <tr>
+                                        <th colspan="2">시간별(시)</th>
+                                        <th>21</th>
+                                        <th>00</th>
+                                        <th>03</th>
+                                        <th>06</th>
+                                        <th>09</th>
+                                        <th>12</th>
+                                        <th>15</th>
+                                        <th>18</th>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2">기상</th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">기온(˚C)</td>
+                                        <td>27 ˚C</td>
+                                        <td>26 ˚C</td>
+                                        <td>24 ˚C</td>
+                                        <td>24 ˚C</td>
+                                        <td>23 ˚C</td>
+                                        <td>23 ˚C</td>
+                                        <td>24 ˚C</td>
+                                        <td>26 ˚C</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">강수(mm)</td>
+                                        <td>15mm</td>
+                                        <td colspan="2">25mm</td>
+                                        <td colspan="2">25mm</td>
+                                        <td colspan="2">17mm</td>
+                                        <td>15mm</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">강수확률(%)</td>
+                                        <td>80%</td>
+                                        <td>80%</td>
+                                        <td>80%</td>
+                                        <td>80%</td>
+                                        <td>80%</td>
+                                        <td>80%</td>
+                                        <td>80%</td>
+                                        <td>80%</td>
+                                    </tr>
+                                </table>
+                                <!-- light table   -->
                             </div>
-                            <!-- light  table  -->
-                            <table class="tg" width="100%" border="1">
-                                <tr>
-                                    <th colspan="2">시간별(시)</th>
-                                    <th>21</th>
-                                    <th>00</th>
-                                    <th>03</th>
-                                    <th>06</th>
-                                    <th>09</th>
-                                    <th>12</th>
-                                    <th>15</th>
-                                    <th>18</th>
-                                </tr>
-                                <tr>
-                                    <th colspan="2">기상</th>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">기온(˚C)</td>
-                                    <td>27 ˚C</td>
-                                    <td>26 ˚C</td>
-                                    <td>24 ˚C</td>
-                                    <td>24 ˚C</td>
-                                    <td>23 ˚C</td>
-                                    <td>23 ˚C</td>
-                                    <td>24 ˚C</td>
-                                    <td>26 ˚C</td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">강수(mm)</td>
-                                    <td>15mm</td>
-                                    <td colspan="2">25mm</td>
-                                    <td colspan="2">25mm</td>
-                                    <td colspan="2">17mm</td>
-                                    <td>15mm</td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">강수확률(%)</td>
-                                    <td>80%</td>
-                                    <td>80%</td>
-                                    <td>80%</td>
-                                    <td>80%</td>
-                                    <td>80%</td>
-                                    <td>80%</td>
-                                    <td>80%</td>
-                                    <td>80%</td>
-                                </tr>
-                            </table>
-                            <!-- light table   -->
                         </div>
-                    </div>
-                    <div id="tab-2" class="tab-content">
-                        <div class="weather-bg">
-                            <p class="tab-1-p">예상군 예상읍<br>08.02. 07시 기준</p>
-                            <div class="weather_circle">
-                                <p class="type02">
-                                    <span>통합대기</span>
-                                    <b class="cr01">좋음</b>
-                                </p>
-                                <p class="type_2">
-                                    <strong>28</strong>
-                                </p>
-                            </div>
-                            <ul class="color_circle">
-                                <li>
-                                    <span>좋음</span>
-                                    <span>~50</span>
-                                </li>
-                                <li>
-                                    <span>보통</span>
-                                    <span>~100</span>
-                                </li>
-                                <li>
-                                    <span>나쁨</span>
-                                    <span>~250</span>
-                                </li>
-                                <li>
-                                    <span>매우나쁨</span>
-                                    <span>251~</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div id="tab-3" class="tab-content">
-                        <div class="weather-bg">
+                        <div id="tab-2" class="tab-content">
                             <div class="weather-bg">
                                 <p class="tab-1-p">예상군 예상읍<br>08.02. 07시 기준</p>
                                 <div class="weather_circle">
                                     <p class="type02">
-                                        <span>미세먼지</span>
+                                        <span>통합대기</span>
                                         <b class="cr01">좋음</b>
                                     </p>
                                     <p class="type_2">
-                                        <strong>14</strong><em>㎍/㎥</em>
+                                        <strong>28</strong>
                                     </p>
                                 </div>
                                 <ul class="color_circle">
@@ -425,595 +393,629 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
-                    <div id="tab-4" class="tab-content">
-                        <div class="weather-bg">
-                            <p class="tab-1-p">예상군 예상읍<br>07.19. 02시 20분 기준</p>
-                            <div class="weather_circle">
-                                <p class="type02">
-                                    <span>황사</span>
-                                    <b class="cr01">낮음</b>
-                                </p>
-                                <p class="type_2">
-                                    <strong>18</strong><em>㎍/㎥</em>
-                                </p>
+                        <div id="tab-3" class="tab-content">
+                            <div class="weather-bg">
+                                <div class="weather-bg">
+                                    <p class="tab-1-p">예상군 예상읍<br>08.02. 07시 기준</p>
+                                    <div class="weather_circle">
+                                        <p class="type02">
+                                            <span>미세먼지</span>
+                                            <b class="cr01">좋음</b>
+                                        </p>
+                                        <p class="type_2">
+                                            <strong>14</strong><em>㎍/㎥</em>
+                                        </p>
+                                    </div>
+                                    <ul class="color_circle">
+                                        <li>
+                                            <span>좋음</span>
+                                            <span>~50</span>
+                                        </li>
+                                        <li>
+                                            <span>보통</span>
+                                            <span>~100</span>
+                                        </li>
+                                        <li>
+                                            <span>나쁨</span>
+                                            <span>~250</span>
+                                        </li>
+                                        <li>
+                                            <span>매우나쁨</span>
+                                            <span>251~</span>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <ul class="color_circle">
-                                <li>
-                                    <span>좋음</span>
-                                    <span>~199</span>
-                                </li>
-                                <li>
-                                    <span>보통</span>
-                                    <span>~399</span>
-                                </li>
-                                <li>
-                                    <span>나쁨</span>
-                                    <span>~799</span>
-                                </li>
-                                <li>
-                                    <span>매우나쁨</span>
-                                    <span>800~</span>
-                                </li>
-                            </ul>
                         </div>
-                    </div>
-                    <div id="tab-5" class="tab-content">
-                        <div class="weather-bg">
-                            <p class="tab-1-p">예상군 예상읍<br>08.02. 07시 기준</p>
-                            <div class="weather_circle">
-                                <p class="type02">
-                                    <span>오존</span>
-                                    <b class="cr01">좋음</b>
-                                </p>
-                                <p class="type_2">
-                                    <strong>0.013</strong><em>ppm</em>
-                                </p>
+                        <div id="tab-4" class="tab-content">
+                            <div class="weather-bg">
+                                <p class="tab-1-p">예상군 예상읍<br>07.19. 02시 20분 기준</p>
+                                <div class="weather_circle">
+                                    <p class="type02">
+                                        <span>황사</span>
+                                        <b class="cr01">낮음</b>
+                                    </p>
+                                    <p class="type_2">
+                                        <strong>18</strong><em>㎍/㎥</em>
+                                    </p>
+                                </div>
+                                <ul class="color_circle">
+                                    <li>
+                                        <span>좋음</span>
+                                        <span>~199</span>
+                                    </li>
+                                    <li>
+                                        <span>보통</span>
+                                        <span>~399</span>
+                                    </li>
+                                    <li>
+                                        <span>나쁨</span>
+                                        <span>~799</span>
+                                    </li>
+                                    <li>
+                                        <span>매우나쁨</span>
+                                        <span>800~</span>
+                                    </li>
+                                </ul>
                             </div>
-                            <ul class="color_circle">
-                                <li>
-                                    <span>좋음</span>
-                                    <span>~0.03</span>
-                                </li>
-                                <li>
-                                    <span>보통</span>
-                                    <span>~0.09</span>
-                                </li>
-                                <li>
-                                    <span>나쁨</span>
-                                    <span>~0.15</span>
-                                </li>
-                                <li>
-                                    <span>매우나쁨</span>
-                                    <span>0.151~</span>
-                                </li>
-                            </ul>
                         </div>
-                    </div>
-                    <div id="tab-6" class="tab-content">
-                        <div class="weather-bg lv-6-circle">
-                            <p class="tab-1-p">예상군 예상읍</p>
-                            <div class="weather_circle">
-                                <p class="type02">
-                                    <span>자외선</span>
-                                    <b class="cr01">예보정보없음</b>
-                                </p>
+                        <div id="tab-5" class="tab-content">
+                            <div class="weather-bg">
+                                <p class="tab-1-p">예상군 예상읍<br>08.02. 07시 기준</p>
+                                <div class="weather_circle">
+                                    <p class="type02">
+                                        <span>오존</span>
+                                        <b class="cr01">좋음</b>
+                                    </p>
+                                    <p class="type_2">
+                                        <strong>0.013</strong><em>ppm</em>
+                                    </p>
+                                </div>
+                                <ul class="color_circle">
+                                    <li>
+                                        <span>좋음</span>
+                                        <span>~0.03</span>
+                                    </li>
+                                    <li>
+                                        <span>보통</span>
+                                        <span>~0.09</span>
+                                    </li>
+                                    <li>
+                                        <span>나쁨</span>
+                                        <span>~0.15</span>
+                                    </li>
+                                    <li>
+                                        <span>매우나쁨</span>
+                                        <span>0.151~</span>
+                                    </li>
+                                </ul>
                             </div>
-                            <ul class="color_circle">
-                                <li>
-                                    <span>낮음</span>
-                                    <span>~2</span>
-                                </li>
-                                <li>
-                                    <span>보통</span>
-                                    <span>~5</span>
-                                </li>
-                                <li>
-                                    <span>높음</span>
-                                    <span>~7</span>
-                                </li>
-                                <li>
-                                    <span>매우높음</span>
-                                    <span>~10</span>
-                                </li>
-                                <li>
-                                    <span>위험</span>
-                                    <span>11~</span>
-                                </li>
-                            </ul>
                         </div>
-                    </div>
+                        <div id="tab-6" class="tab-content">
+                            <div class="weather-bg lv-6-circle">
+                                <p class="tab-1-p">예상군 예상읍</p>
+                                <div class="weather_circle">
+                                    <p class="type02">
+                                        <span>자외선</span>
+                                        <b class="cr01">예보정보없음</b>
+                                    </p>
+                                </div>
+                                <ul class="color_circle">
+                                    <li>
+                                        <span>낮음</span>
+                                        <span>~2</span>
+                                    </li>
+                                    <li>
+                                        <span>보통</span>
+                                        <span>~5</span>
+                                    </li>
+                                    <li>
+                                        <span>높음</span>
+                                        <span>~7</span>
+                                    </li>
+                                    <li>
+                                        <span>매우높음</span>
+                                        <span>~10</span>
+                                    </li>
+                                    <li>
+                                        <span>위험</span>
+                                        <span>11~</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
 
-                </div><!-- container -->
-            </div>
-            <!-- weather tab -->
-            <script>
-                $(document).ready(function () {
-
-                    $('ul.tabs li').click(function () {
-                        var tab_id = $(this).attr('data-tab');
-
-                        $('ul.tabs li').removeClass('current');
-                        $('.tab-content').removeClass('current');
-
-                        $(this).addClass('current');
-                        $("#" + tab_id).addClass('current');
-                    });
-
-                });
-                $(function(){
-                    $('.tab-link:nth-child(1)').click(function(){
-                    $('.tab-link:nth-child(1) img').attr('src','resources/images/weather-icon/temp_w.svg');
-                    $('.tab-link:nth-child(2) img').attr('src','resources/images/weather-icon/air.svg');
-                    $('.tab-link:nth-child(3) img').attr('src','resources/images/weather-icon/dust.svg');
-                    $('.tab-link:nth-child(4) img').attr('src','resources/images/weather-icon/duststorm.svg');
-                    $('.tab-link:nth-child(5) img').attr('src','resources/images/weather-icon/ozone.svg');
-                    $('.tab-link:nth-child(6) img').attr('src','resources/images/weather-icon/ultraviolet.svg');
-                    });
-                    $('.tab-link:nth-child(2)').click(function(){
-                    $('.tab-link:nth-child(1) img').attr('src','resources/images/weather-icon/temp.svg');
-                    $('.tab-link:nth-child(2) img').attr('src','resources/images/weather-icon/air_w.svg');
-                    $('.tab-link:nth-child(3) img').attr('src','resources/images/weather-icon/dust.svg');
-                    $('.tab-link:nth-child(4) img').attr('src','resources/images/weather-icon/duststorm.svg');
-                    $('.tab-link:nth-child(5) img').attr('src','resources/images/weather-icon/ozone.svg');
-                    $('.tab-link:nth-child(6) img').attr('src','resources/images/weather-icon/ultraviolet.svg');
-                    });
-                    $('.tab-link:nth-child(3)').click(function(){
-                    $('.tab-link:nth-child(1) img').attr('src','resources/images/weather-icon/temp.svg');
-                    $('.tab-link:nth-child(2) img').attr('src','resources/images/weather-icon/air.svg');
-                    $('.tab-link:nth-child(3) img').attr('src','resources/images/weather-icon/dust_w.svg');
-                    $('.tab-link:nth-child(4) img').attr('src','resources/images/weather-icon/duststorm.svg');
-                    $('.tab-link:nth-child(5) img').attr('src','resources/images/weather-icon/ozone.svg');
-                    $('.tab-link:nth-child(6) img').attr('src','resources/images/weather-icon/ultraviolet.svg');
-                    });
-                    $('.tab-link:nth-child(4)').click(function(){
-                    $('.tab-link:nth-child(1) img').attr('src','resources/images/weather-icon/temp.svg');
-                    $('.tab-link:nth-child(2) img').attr('src','resources/images/weather-icon/air.svg');
-                    $('.tab-link:nth-child(3) img').attr('src','resources/images/weather-icon/dust.svg');
-                    $('.tab-link:nth-child(4) img').attr('src','resources/images/weather-icon/duststorm_w.svg');
-                    $('.tab-link:nth-child(5) img').attr('src','resources/images/weather-icon/ozone.svg');
-                    $('.tab-link:nth-child(6) img').attr('src','resources/images/weather-icon/ultraviolet.svg');
-                    });
-                    $('.tab-link:nth-child(5)').click(function(){
-                    $('.tab-link:nth-child(1) img').attr('src','resources/images/weather-icon/temp.svg');
-                    $('.tab-link:nth-child(2) img').attr('src','resources/images/weather-icon/air.svg');
-                    $('.tab-link:nth-child(3) img').attr('src','resources/images/weather-icon/dust.svg');
-                    $('.tab-link:nth-child(4) img').attr('src','resources/images/weather-icon/duststorm.svg');
-                    $('.tab-link:nth-child(5) img').attr('src','resources/images/weather-icon/ozone_w.svg');
-                    $('.tab-link:nth-child(6) img').attr('src','resources/images/weather-icon/ultraviolet.svg');
-                    });
-                    $('.tab-link:nth-child(6)').click(function(){
-                    $('.tab-link:nth-child(1) img').attr('src','resources/images/weather-icon/temp.svg');
-                    $('.tab-link:nth-child(2) img').attr('src','resources/images/weather-icon/air.svg');
-                    $('.tab-link:nth-child(3) img').attr('src','resources/images/weather-icon/dust.svg');
-                    $('.tab-link:nth-child(4) img').attr('src','resources/images/weather-icon/duststorm.svg');
-                    $('.tab-link:nth-child(5) img').attr('src','resources/images/weather-icon/ozone.svg');
-                    $('.tab-link:nth-child(6) img').attr('src','resources/images/weather-icon/ultraviolet_w.svg');
-                    });
-                })
-            </script>
-        <div class="weather-table">
-            <div class="weather-table-title">
-                <h1>예산군 예성읍 단기 예보</h1>
-            </div>
-            <table class="tg" width="100%">
-                <caption>발표시간: 2020년 08월 01일 (토) 06:00 발표</caption>
-                <thead>
-                  <tr>
-                    <th class="tg-0pky">날짜</th>
-                    <th class="tg-0pky" colspan="8">7월 30일 (오늘)</th>
-                    <th class="tg-0pky" colspan="8">7월 31일 (내일)</th>
-                    <th class="tg-0pky" colspan="8">8월 1일 (모레)</th>
-                  </tr>
-                  <tr>
-                    <td class="tg-0pky">시간(시)</td>
-                    <td class="tg-0pky">00</td>
-                    <td class="tg-0pky">03</td>
-                    <td class="tg-0pky">06</td>
-                    <td class="tg-0pky">09</td>
-                    <td class="tg-0pky">12</td>
-                    <td class="tg-0pky">15</td>
-                    <td class="tg-0pky">18</td>
-                    <td class="tg-0pky">21</td>
-                    <td class="tg-0pky">00</td>
-                    <td class="tg-0pky">03</td>
-                    <td class="tg-0pky">06</td>
-                    <td class="tg-0pky">09</td>
-                    <td class="tg-0pky">12</td>
-                    <td class="tg-0pky">15</td>
-                    <td class="tg-0pky">18</td>
-                    <td class="tg-0pky">21</td>
-                    <td class="tg-0pky">00</td>
-                    <td class="tg-0pky">03</td>
-                    <td class="tg-0pky">06</td>
-                    <td class="tg-0pky">09</td>
-                    <td class="tg-0pky">12</td>
-                    <td class="tg-0pky">15</td>
-                    <td class="tg-0pky">18</td>
-                    <td class="tg-0pky">21</td>
-                  </tr>
-                  <tr>
-                    <td class="tg-0pky">기상</td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_b_weather04.png" alt="weather">
-                    </td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_b_weather05.png" alt="weather">
-                    </td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_s_weather01.png" alt="weather">
-                    </td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_s_weather03.png" alt="weather">
-                    </td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_b_weather04.png" alt="weather">
-                    </td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_b_weather05.png" alt="weather">
-                    </td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_s_weather01.png" alt="weather">
-                    </td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_s_weather03.png" alt="weather">
-                    </td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_b_weather04.png" alt="weather">
-                    </td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_b_weather05.png" alt="weather">
-                    </td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_s_weather01.png" alt="weather">
-                    </td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_s_weather03.png" alt="weather">
-                    </td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_b_weather04.png" alt="weather">
-                    </td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_b_weather05.png" alt="weather">
-                    </td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_s_weather01.png" alt="weather">
-                    </td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_s_weather03.png" alt="weather">
-                    </td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_b_weather04.png" alt="weather">
-                    </td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_b_weather05.png" alt="weather">
-                    </td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_s_weather01.png" alt="weather">
-                    </td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_s_weather03.png" alt="weather">
-                    </td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_b_weather04.png" alt="weather">
-                    </td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_b_weather05.png" alt="weather">
-                    </td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_s_weather01.png" alt="weather">
-                    </td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_s_weather03.png" alt="weather">
-                    </td>
-                  </tr>
-                </thead>
-                <tbody>
-                  
-                  <tr>
-                    <td class="tg-0pky">자외선</td>
-                    <td class="tg-0pky" colspan="8">-</td>
-                    <td class="tg-0pky" colspan="8">-</td>
-                    <td class="tg-0pky" colspan="8">-</td>
-                  </tr>
-                  <tr>
-                    <td class="tg-0pky">기온(˚)</td>
-                    <td class="tg-0pky" colspan="8">
-                        <span class="tg-row">18°</span>　/　<span class="tg-high">26°</span>
-                    </td>
-                    <td class="tg-0pky" colspan="8">
-                        <span class="tg-row">18°</span>　/　<span class="tg-high">26°</span>
-                    </td>
-                    <td class="tg-0pky" colspan="8">
-                        <span class="tg-row">18°</span>　/　<span class="tg-high">26°</span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="tg-0pky">강수확률(%)</td>
-                    <td class="tg-0pky">70</td>
-                    <td class="tg-0pky">60</td>
-                    <td class="tg-0pky">60</td>
-                    <td class="tg-0pky">60</td>
-                    <td class="tg-0pky">60</td>
-                    <td class="tg-0pky">30</td>
-                    <td class="tg-0pky">30</td>
-                    <td class="tg-0pky">30</td>
-                    <td class="tg-0pky">30</td>
-                    <td class="tg-0pky">30</td>
-                    <td class="tg-0pky">30</td>
-                    <td class="tg-0pky">30</td>
-                    <td class="tg-0pky">30</td>
-                    <td class="tg-0pky">0</td>
-                    <td class="tg-0pky">0</td>
-                    <td class="tg-0pky">0</td>
-                    <td class="tg-0pky">0</td>
-                    <td class="tg-0pky">0</td>
-                    <td class="tg-0pky">0</td>
-                    <td class="tg-0pky">0</td>
-                    <td class="tg-0pky">0</td>
-                    <td class="tg-0pky">0</td>
-                    <td class="tg-0pky">0</td>
-                    <td class="tg-0pky">0</td>
-                  </tr>
-                  <tr>
-                    <td class="tg-0pky">강수/적설량(mm)</td>
-                    <td class="tg-0pky" colspan="2">5 / 0</td>
-                    <td class="tg-0pky" colspan="2">0 / 0</td>
-                    <td class="tg-0pky" colspan="2">0 / 0</td>
-                    <td class="tg-0pky" colspan="2">0 / 0</td>
-                    <td class="tg-0pky" colspan="2">0 / 0</td>
-                    <td class="tg-0pky" colspan="2">0 / 0</td>
-                    <td class="tg-0pky" colspan="2">0 / 0</td>
-                    <td class="tg-0pky" colspan="2">0 / 0</td>
-                    <td class="tg-0pky" colspan="2">0 / 0</td>
-                    <td class="tg-0pky" colspan="2">0 / 0</td>
-                    <td class="tg-0pky" colspan="2">0 / 0</td>
-                    <td class="tg-0pky" colspan="2">0 / 0</td>
-                  </tr>
-                  <tr>
-                    <td class="tg-0pky">습도(%)</td>
-                    <td class="tg-0pky">95</td>
-                    <td class="tg-0pky">95</td>
-                    <td class="tg-0pky">90</td>
-                    <td class="tg-0pky">75</td>
-                    <td class="tg-0pky">85</td>
-                    <td class="tg-0pky">90</td>
-                    <td class="tg-0pky">90</td>
-                    <td class="tg-0pky">90</td>
-                    <td class="tg-0pky">90</td>
-                    <td class="tg-0pky">100</td>
-                    <td class="tg-0pky">90</td>
-                    <td class="tg-0pky">100</td>
-                    <td class="tg-0pky">95</td>
-                    <td class="tg-0pky">90</td>
-                    <td class="tg-0pky">90</td>
-                    <td class="tg-0pky">100</td>
-                    <td class="tg-0pky">65</td>
-                    <td class="tg-0pky">80</td>
-                    <td class="tg-0pky">85</td>
-                    <td class="tg-0pky">70</td>
-                    <td class="tg-0pky">75</td>
-                    <td class="tg-0pky">80</td>
-                    <td class="tg-0pky">90</td>
-                    <td class="tg-0pky">65</td>
-                  </tr>
-                  <tr class="direction">
-                    <td class="tg-0pky">풍향/풍속(m/s)</td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_wd03.png" alt="direction">
-                        <div class="tg-dn">1.1</div>
-                    </td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_wd04.png" alt="direction">
-                        <div class="tg-dn">1.1</div>
-                    </td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_wd05.png" alt="direction">
-                        <div class="tg-dn">1.1</div>
-                    </td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_wd06.png" alt="direction">
-                        <div class="tg-dn">1.1</div>
-                    </td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_wd03.png" alt="direction">
-                        <div class="tg-dn">1.1</div>
-                    </td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_wd04.png" alt="direction">
-                        <div class="tg-dn">1.1</div>
-                    </td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_wd05.png" alt="direction">
-                        <div class="tg-dn">1.1</div>
-                    </td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_wd06.png" alt="direction">
-                        <div class="tg-dn">1.1</div>
-                    </td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_wd03.png" alt="direction">
-                        <div class="tg-dn">1.1</div>
-                    </td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_wd04.png" alt="direction">
-                        <div class="tg-dn">1.1</div>
-                    </td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_wd05.png" alt="direction">
-                        <div class="tg-dn">1.1</div>
-                    </td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_wd06.png" alt="direction">
-                        <div class="tg-dn">1.1</div>
-                    </td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_wd03.png" alt="direction">
-                        <div class="tg-dn">1.1</div>
-                    </td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_wd04.png" alt="direction">
-                        <div class="tg-dn">1.1</div>
-                    </td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_wd05.png" alt="direction">
-                        <div class="tg-dn">1.1</div>
-                    </td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_wd06.png" alt="direction">
-                        <div class="tg-dn">1.1</div>
-                    </td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_wd03.png" alt="direction">
-                        <div class="tg-dn">1.1</div>
-                    </td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_wd04.png" alt="direction">
-                        <div class="tg-dn">1.1</div>
-                    </td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_wd05.png" alt="direction">
-                        <div class="tg-dn">1.1</div>
-                    </td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_wd06.png" alt="direction">
-                        <div class="tg-dn">1.1</div>
-                    </td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_wd03.png" alt="direction">
-                        <div class="tg-dn">1.1</div>
-                    </td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_wd04.png" alt="direction">
-                        <div class="tg-dn">1.1</div>
-                    </td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_wd05.png" alt="direction">
-                        <div class="tg-dn">1.1</div>
-                    </td>
-                    <td class="tg-0pky">
-                        <img src="resources/images/icon_wd06.png" alt="direction">
-                        <div class="tg-dn">1.1</div>
-                    </td>
-                  </tr>
-                </tbody>
-            </table>
-        </div>
-        <!-- weather table  -->
-        <div class="weather-table">
-            <div class="weather-table-title">
-                <h1>예상군 예상읍 중기 예보</h1>
-            </div>
-            <table class="tg" width="100%">
-                <caption>발표시간: 2020년 08월 01일 (토) 06:00 발표</caption>
-                <thead>
-                  <tr>
-                    <th class="tg-0lax"></th>
-                    <th class="tg-0lax" colspan="2">8월 2일 (일)</th>
-                    <th class="tg-0lax" colspan="2">8월 3일 (월)</th>
-                    <th class="tg-0lax" colspan="2">8월 4일 (화)</th>
-                    <th class="tg-0lax" colspan="2">8월 5일 (수)</th>
-                    <th class="tg-0lax" colspan="2">8월 6일 (목)</th>
-                  </tr>
-                  <tr>
-                    <td class="tg-0lax">시간(시)</td>
-                    <td class="tg-0lax">오전</td>
-                    <td class="tg-0lax">오후</td>
-                    <td class="tg-0lax">오전</td>
-                    <td class="tg-0lax">오후</td>
-                    <td class="tg-0lax">오전</td>
-                    <td class="tg-0lax">오후</td>
-                    <td class="tg-0lax">오전</td>
-                    <td class="tg-0lax">오후</td>
-                    <td class="tg-0lax">오전</td>
-                    <td class="tg-0lax">오후</td>
-                  </tr>
-                  <tr>
-                    <td class="tg-0lax">기상</td>
-                    <td class="tg-0lax">
-                        <img src="resources/images/icon_b_weather04.png" alt="weather">
-                    </td>
-                    <td class="tg-0lax">
-                        <img src="resources/images/icon_b_weather05.png" alt="weather">
-                    </td>
-                    <td class="tg-0lax">
-                        <img src="resources/images/icon_s_weather01.png" alt="weather">
-                    </td>
-                    <td class="tg-0lax">
-                        <img src="resources/images/icon_s_weather03.png" alt="weather">
-                    </td>
-                    <td class="tg-0lax">
-                        <img src="resources/images/icon_b_weather04.png" alt="weather">
-                    </td>
-                    <td class="tg-0lax">
-                        <img src="resources/images/icon_b_weather05.png" alt="weather">
-                    </td>
-                    <td class="tg-0lax">
-                        <img src="resources/images/icon_s_weather01.png" alt="weather">
-                    </td>
-                    <td class="tg-0lax">
-                        <img src="resources/images/icon_s_weather03.png" alt="weather">
-                    </td>
-                    <td class="tg-0lax">
-                        <img src="resources/images/icon_b_weather04.png" alt="weather">
-                    </td>
-                    <td class="tg-0lax">
-                        <img src="resources/images/icon_b_weather05.png" alt="weather">
-                    </td>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="tg-0lax">기온(˚)</td>
-                    <td class="tg-0pky" colspan="2">
-                        <span class="tg-row">18°</span>　/　<span class="tg-high">26°</span>
-                    </td>
-                    <td class="tg-0pky" colspan="2">
-                        <span class="tg-row">18°</span>　/　<span class="tg-high">26°</span>
-                    </td>
-                    <td class="tg-0pky" colspan="2">
-                        <span class="tg-row">18°</span>　/　<span class="tg-high">26°</span>
-                    </td>
-                    <td class="tg-0pky" colspan="2">
-                        <span class="tg-row">18°</span>　/　<span class="tg-high">26°</span>
-                    </td>
-                    <td class="tg-0pky" colspan="2">
-                        <span class="tg-row">18°</span>　/　<span class="tg-high">26°</span>
-                    </td>
-                  </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-        <!-- warp    -->
-    <!-- quickmenu -->
-    <div class="quickmenu-1">
-        <ul>
-            <li>
-                <a href="index.html">
-                    <img src="resources/images/icon/icon_gnb05_01-w.png" alt="안전맵">Home
-                </a>
-            </li>
-            <li>
-                <a href="livingweather.html">
-                    <img src="resources/images/icon/main-menu-2-1-w.png" alt="생활날씨">생활날씨
-                </a>
-            </li>
-            <li>
-                <a href="safemap.html">
-                    <img src="resources/images/icon/main-menu-3-1-w.png" alt="재난안전지도">재난안전지도
-                </a>
-            </li>
-            <li>
-                <div class="quick">
-                    <button type="button" class="go_top_btn" style="display: inline-block;"><img src="resources/images/ico_up_arrow.png" alt=""><span>위로</span></button>
+                    </div><!-- container -->
                 </div>
-            </li>
-        </ul>
-    </div>
-    <!-- quickmenu end -->
-    
-    </section>
+                <!-- weather tab -->
+                <script>
+                    $(document).ready(function () {
+
+                        $('ul.tabs li').click(function () {
+                            var tab_id = $(this).attr('data-tab');
+
+                            $('ul.tabs li').removeClass('current');
+                            $('.tab-content').removeClass('current');
+
+                            $(this).addClass('current');
+                            $("#" + tab_id).addClass('current');
+                        });
+
+                    });
+                    $(function(){
+                        $('.tab-link:nth-child(1)').click(function(){
+                        $('.tab-link:nth-child(1) img').attr('src','resources/images/weather-icon/temp_w.svg');
+                        $('.tab-link:nth-child(2) img').attr('src','resources/images/weather-icon/air.svg');
+                        $('.tab-link:nth-child(3) img').attr('src','resources/images/weather-icon/dust.svg');
+                        $('.tab-link:nth-child(4) img').attr('src','resources/images/weather-icon/duststorm.svg');
+                        $('.tab-link:nth-child(5) img').attr('src','resources/images/weather-icon/ozone.svg');
+                        $('.tab-link:nth-child(6) img').attr('src','resources/images/weather-icon/ultraviolet.svg');
+                        });
+                        $('.tab-link:nth-child(2)').click(function(){
+                        $('.tab-link:nth-child(1) img').attr('src','resources/images/weather-icon/temp.svg');
+                        $('.tab-link:nth-child(2) img').attr('src','resources/images/weather-icon/air_w.svg');
+                        $('.tab-link:nth-child(3) img').attr('src','resources/images/weather-icon/dust.svg');
+                        $('.tab-link:nth-child(4) img').attr('src','resources/images/weather-icon/duststorm.svg');
+                        $('.tab-link:nth-child(5) img').attr('src','resources/images/weather-icon/ozone.svg');
+                        $('.tab-link:nth-child(6) img').attr('src','resources/images/weather-icon/ultraviolet.svg');
+                        });
+                        $('.tab-link:nth-child(3)').click(function(){
+                        $('.tab-link:nth-child(1) img').attr('src','resources/images/weather-icon/temp.svg');
+                        $('.tab-link:nth-child(2) img').attr('src','resources/images/weather-icon/air.svg');
+                        $('.tab-link:nth-child(3) img').attr('src','resources/images/weather-icon/dust_w.svg');
+                        $('.tab-link:nth-child(4) img').attr('src','resources/images/weather-icon/duststorm.svg');
+                        $('.tab-link:nth-child(5) img').attr('src','resources/images/weather-icon/ozone.svg');
+                        $('.tab-link:nth-child(6) img').attr('src','resources/images/weather-icon/ultraviolet.svg');
+                        });
+                        $('.tab-link:nth-child(4)').click(function(){
+                        $('.tab-link:nth-child(1) img').attr('src','resources/images/weather-icon/temp.svg');
+                        $('.tab-link:nth-child(2) img').attr('src','resources/images/weather-icon/air.svg');
+                        $('.tab-link:nth-child(3) img').attr('src','resources/images/weather-icon/dust.svg');
+                        $('.tab-link:nth-child(4) img').attr('src','resources/images/weather-icon/duststorm_w.svg');
+                        $('.tab-link:nth-child(5) img').attr('src','resources/images/weather-icon/ozone.svg');
+                        $('.tab-link:nth-child(6) img').attr('src','resources/images/weather-icon/ultraviolet.svg');
+                        });
+                        $('.tab-link:nth-child(5)').click(function(){
+                        $('.tab-link:nth-child(1) img').attr('src','resources/images/weather-icon/temp.svg');
+                        $('.tab-link:nth-child(2) img').attr('src','resources/images/weather-icon/air.svg');
+                        $('.tab-link:nth-child(3) img').attr('src','resources/images/weather-icon/dust.svg');
+                        $('.tab-link:nth-child(4) img').attr('src','resources/images/weather-icon/duststorm.svg');
+                        $('.tab-link:nth-child(5) img').attr('src','resources/images/weather-icon/ozone_w.svg');
+                        $('.tab-link:nth-child(6) img').attr('src','resources/images/weather-icon/ultraviolet.svg');
+                        });
+                        $('.tab-link:nth-child(6)').click(function(){
+                        $('.tab-link:nth-child(1) img').attr('src','resources/images/weather-icon/temp.svg');
+                        $('.tab-link:nth-child(2) img').attr('src','resources/images/weather-icon/air.svg');
+                        $('.tab-link:nth-child(3) img').attr('src','resources/images/weather-icon/dust.svg');
+                        $('.tab-link:nth-child(4) img').attr('src','resources/images/weather-icon/duststorm.svg');
+                        $('.tab-link:nth-child(5) img').attr('src','resources/images/weather-icon/ozone.svg');
+                        $('.tab-link:nth-child(6) img').attr('src','resources/images/weather-icon/ultraviolet_w.svg');
+                        });
+                    })
+                </script>
+            <div class="weather-table">
+                <div class="weather-table-title">
+                    <h1>예산군 예성읍 단기 예보</h1>
+                </div>
+                <table class="tg" width="100%">
+                    <caption>발표시간: 2020년 08월 01일 (토) 06:00 발표</caption>
+                    <thead>
+                    <tr>
+                        <th class="tg-0pky">날짜</th>
+                        <th class="tg-0pky" colspan="8">7월 30일 (오늘)</th>
+                        <th class="tg-0pky" colspan="8">7월 31일 (내일)</th>
+                        <th class="tg-0pky" colspan="8">8월 1일 (모레)</th>
+                    </tr>
+                    <tr>
+                        <td class="tg-0pky">시간(시)</td>
+                        <td class="tg-0pky">00</td>
+                        <td class="tg-0pky">03</td>
+                        <td class="tg-0pky">06</td>
+                        <td class="tg-0pky">09</td>
+                        <td class="tg-0pky">12</td>
+                        <td class="tg-0pky">15</td>
+                        <td class="tg-0pky">18</td>
+                        <td class="tg-0pky">21</td>
+                        <td class="tg-0pky">00</td>
+                        <td class="tg-0pky">03</td>
+                        <td class="tg-0pky">06</td>
+                        <td class="tg-0pky">09</td>
+                        <td class="tg-0pky">12</td>
+                        <td class="tg-0pky">15</td>
+                        <td class="tg-0pky">18</td>
+                        <td class="tg-0pky">21</td>
+                        <td class="tg-0pky">00</td>
+                        <td class="tg-0pky">03</td>
+                        <td class="tg-0pky">06</td>
+                        <td class="tg-0pky">09</td>
+                        <td class="tg-0pky">12</td>
+                        <td class="tg-0pky">15</td>
+                        <td class="tg-0pky">18</td>
+                        <td class="tg-0pky">21</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-0pky">기상</td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_b_weather04.png" alt="weather">
+                        </td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_b_weather05.png" alt="weather">
+                        </td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_s_weather01.png" alt="weather">
+                        </td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_s_weather03.png" alt="weather">
+                        </td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_b_weather04.png" alt="weather">
+                        </td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_b_weather05.png" alt="weather">
+                        </td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_s_weather01.png" alt="weather">
+                        </td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_s_weather03.png" alt="weather">
+                        </td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_b_weather04.png" alt="weather">
+                        </td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_b_weather05.png" alt="weather">
+                        </td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_s_weather01.png" alt="weather">
+                        </td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_s_weather03.png" alt="weather">
+                        </td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_b_weather04.png" alt="weather">
+                        </td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_b_weather05.png" alt="weather">
+                        </td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_s_weather01.png" alt="weather">
+                        </td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_s_weather03.png" alt="weather">
+                        </td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_b_weather04.png" alt="weather">
+                        </td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_b_weather05.png" alt="weather">
+                        </td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_s_weather01.png" alt="weather">
+                        </td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_s_weather03.png" alt="weather">
+                        </td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_b_weather04.png" alt="weather">
+                        </td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_b_weather05.png" alt="weather">
+                        </td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_s_weather01.png" alt="weather">
+                        </td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_s_weather03.png" alt="weather">
+                        </td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    
+                    <tr>
+                        <td class="tg-0pky">자외선</td>
+                        <td class="tg-0pky" colspan="8">-</td>
+                        <td class="tg-0pky" colspan="8">-</td>
+                        <td class="tg-0pky" colspan="8">-</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-0pky">기온(˚)</td>
+                        <td class="tg-0pky" colspan="8">
+                            <span class="tg-row">18°</span>　/　<span class="tg-high">26°</span>
+                        </td>
+                        <td class="tg-0pky" colspan="8">
+                            <span class="tg-row">18°</span>　/　<span class="tg-high">26°</span>
+                        </td>
+                        <td class="tg-0pky" colspan="8">
+                            <span class="tg-row">18°</span>　/　<span class="tg-high">26°</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tg-0pky">강수확률(%)</td>
+                        <td class="tg-0pky">70</td>
+                        <td class="tg-0pky">60</td>
+                        <td class="tg-0pky">60</td>
+                        <td class="tg-0pky">60</td>
+                        <td class="tg-0pky">60</td>
+                        <td class="tg-0pky">30</td>
+                        <td class="tg-0pky">30</td>
+                        <td class="tg-0pky">30</td>
+                        <td class="tg-0pky">30</td>
+                        <td class="tg-0pky">30</td>
+                        <td class="tg-0pky">30</td>
+                        <td class="tg-0pky">30</td>
+                        <td class="tg-0pky">30</td>
+                        <td class="tg-0pky">0</td>
+                        <td class="tg-0pky">0</td>
+                        <td class="tg-0pky">0</td>
+                        <td class="tg-0pky">0</td>
+                        <td class="tg-0pky">0</td>
+                        <td class="tg-0pky">0</td>
+                        <td class="tg-0pky">0</td>
+                        <td class="tg-0pky">0</td>
+                        <td class="tg-0pky">0</td>
+                        <td class="tg-0pky">0</td>
+                        <td class="tg-0pky">0</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-0pky">강수/적설량(mm)</td>
+                        <td class="tg-0pky" colspan="2">5 / 0</td>
+                        <td class="tg-0pky" colspan="2">0 / 0</td>
+                        <td class="tg-0pky" colspan="2">0 / 0</td>
+                        <td class="tg-0pky" colspan="2">0 / 0</td>
+                        <td class="tg-0pky" colspan="2">0 / 0</td>
+                        <td class="tg-0pky" colspan="2">0 / 0</td>
+                        <td class="tg-0pky" colspan="2">0 / 0</td>
+                        <td class="tg-0pky" colspan="2">0 / 0</td>
+                        <td class="tg-0pky" colspan="2">0 / 0</td>
+                        <td class="tg-0pky" colspan="2">0 / 0</td>
+                        <td class="tg-0pky" colspan="2">0 / 0</td>
+                        <td class="tg-0pky" colspan="2">0 / 0</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-0pky">습도(%)</td>
+                        <td class="tg-0pky">95</td>
+                        <td class="tg-0pky">95</td>
+                        <td class="tg-0pky">90</td>
+                        <td class="tg-0pky">75</td>
+                        <td class="tg-0pky">85</td>
+                        <td class="tg-0pky">90</td>
+                        <td class="tg-0pky">90</td>
+                        <td class="tg-0pky">90</td>
+                        <td class="tg-0pky">90</td>
+                        <td class="tg-0pky">100</td>
+                        <td class="tg-0pky">90</td>
+                        <td class="tg-0pky">100</td>
+                        <td class="tg-0pky">95</td>
+                        <td class="tg-0pky">90</td>
+                        <td class="tg-0pky">90</td>
+                        <td class="tg-0pky">100</td>
+                        <td class="tg-0pky">65</td>
+                        <td class="tg-0pky">80</td>
+                        <td class="tg-0pky">85</td>
+                        <td class="tg-0pky">70</td>
+                        <td class="tg-0pky">75</td>
+                        <td class="tg-0pky">80</td>
+                        <td class="tg-0pky">90</td>
+                        <td class="tg-0pky">65</td>
+                    </tr>
+                    <tr class="direction">
+                        <td class="tg-0pky">풍향/풍속(m/s)</td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_wd03.png" alt="direction">
+                            <div class="tg-dn">1.1</div>
+                        </td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_wd04.png" alt="direction">
+                            <div class="tg-dn">1.1</div>
+                        </td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_wd05.png" alt="direction">
+                            <div class="tg-dn">1.1</div>
+                        </td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_wd06.png" alt="direction">
+                            <div class="tg-dn">1.1</div>
+                        </td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_wd03.png" alt="direction">
+                            <div class="tg-dn">1.1</div>
+                        </td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_wd04.png" alt="direction">
+                            <div class="tg-dn">1.1</div>
+                        </td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_wd05.png" alt="direction">
+                            <div class="tg-dn">1.1</div>
+                        </td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_wd06.png" alt="direction">
+                            <div class="tg-dn">1.1</div>
+                        </td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_wd03.png" alt="direction">
+                            <div class="tg-dn">1.1</div>
+                        </td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_wd04.png" alt="direction">
+                            <div class="tg-dn">1.1</div>
+                        </td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_wd05.png" alt="direction">
+                            <div class="tg-dn">1.1</div>
+                        </td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_wd06.png" alt="direction">
+                            <div class="tg-dn">1.1</div>
+                        </td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_wd03.png" alt="direction">
+                            <div class="tg-dn">1.1</div>
+                        </td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_wd04.png" alt="direction">
+                            <div class="tg-dn">1.1</div>
+                        </td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_wd05.png" alt="direction">
+                            <div class="tg-dn">1.1</div>
+                        </td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_wd06.png" alt="direction">
+                            <div class="tg-dn">1.1</div>
+                        </td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_wd03.png" alt="direction">
+                            <div class="tg-dn">1.1</div>
+                        </td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_wd04.png" alt="direction">
+                            <div class="tg-dn">1.1</div>
+                        </td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_wd05.png" alt="direction">
+                            <div class="tg-dn">1.1</div>
+                        </td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_wd06.png" alt="direction">
+                            <div class="tg-dn">1.1</div>
+                        </td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_wd03.png" alt="direction">
+                            <div class="tg-dn">1.1</div>
+                        </td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_wd04.png" alt="direction">
+                            <div class="tg-dn">1.1</div>
+                        </td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_wd05.png" alt="direction">
+                            <div class="tg-dn">1.1</div>
+                        </td>
+                        <td class="tg-0pky">
+                            <img src="resources/images/icon_wd06.png" alt="direction">
+                            <div class="tg-dn">1.1</div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- weather table  -->
+            <div class="weather-table">
+                <div class="weather-table-title">
+                    <h1>예상군 예상읍 중기 예보</h1>
+                </div>
+                <table class="tg" width="100%">
+                    <caption>발표시간: 2020년 08월 01일 (토) 06:00 발표</caption>
+                    <thead>
+                    <tr>
+                        <th class="tg-0lax"></th>
+                        <th class="tg-0lax" colspan="2">8월 2일 (일)</th>
+                        <th class="tg-0lax" colspan="2">8월 3일 (월)</th>
+                        <th class="tg-0lax" colspan="2">8월 4일 (화)</th>
+                        <th class="tg-0lax" colspan="2">8월 5일 (수)</th>
+                        <th class="tg-0lax" colspan="2">8월 6일 (목)</th>
+                    </tr>
+                    <tr>
+                        <td class="tg-0lax">시간(시)</td>
+                        <td class="tg-0lax">오전</td>
+                        <td class="tg-0lax">오후</td>
+                        <td class="tg-0lax">오전</td>
+                        <td class="tg-0lax">오후</td>
+                        <td class="tg-0lax">오전</td>
+                        <td class="tg-0lax">오후</td>
+                        <td class="tg-0lax">오전</td>
+                        <td class="tg-0lax">오후</td>
+                        <td class="tg-0lax">오전</td>
+                        <td class="tg-0lax">오후</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-0lax">기상</td>
+                        <td class="tg-0lax">
+                            <img src="resources/images/icon_b_weather04.png" alt="weather">
+                        </td>
+                        <td class="tg-0lax">
+                            <img src="resources/images/icon_b_weather05.png" alt="weather">
+                        </td>
+                        <td class="tg-0lax">
+                            <img src="resources/images/icon_s_weather01.png" alt="weather">
+                        </td>
+                        <td class="tg-0lax">
+                            <img src="resources/images/icon_s_weather03.png" alt="weather">
+                        </td>
+                        <td class="tg-0lax">
+                            <img src="resources/images/icon_b_weather04.png" alt="weather">
+                        </td>
+                        <td class="tg-0lax">
+                            <img src="resources/images/icon_b_weather05.png" alt="weather">
+                        </td>
+                        <td class="tg-0lax">
+                            <img src="resources/images/icon_s_weather01.png" alt="weather">
+                        </td>
+                        <td class="tg-0lax">
+                            <img src="resources/images/icon_s_weather03.png" alt="weather">
+                        </td>
+                        <td class="tg-0lax">
+                            <img src="resources/images/icon_b_weather04.png" alt="weather">
+                        </td>
+                        <td class="tg-0lax">
+                            <img src="resources/images/icon_b_weather05.png" alt="weather">
+                        </td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="tg-0lax">기온(˚)</td>
+                        <td class="tg-0pky" colspan="2">
+                            <span class="tg-row">18°</span>　/　<span class="tg-high">26°</span>
+                        </td>
+                        <td class="tg-0pky" colspan="2">
+                            <span class="tg-row">18°</span>　/　<span class="tg-high">26°</span>
+                        </td>
+                        <td class="tg-0pky" colspan="2">
+                            <span class="tg-row">18°</span>　/　<span class="tg-high">26°</span>
+                        </td>
+                        <td class="tg-0pky" colspan="2">
+                            <span class="tg-row">18°</span>　/　<span class="tg-high">26°</span>
+                        </td>
+                        <td class="tg-0pky" colspan="2">
+                            <span class="tg-row">18°</span>　/　<span class="tg-high">26°</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+            <!-- warp    -->
+        <!-- quickmenu -->
+        <div class="quickmenu-1">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img src="resources/images/icon/icon_gnb05_01-w.png" alt="안전맵">Home
+                    </a>
+                </li>
+                <li>
+                    <a href="livingweather.html">
+                        <img src="resources/images/icon/main-menu-2-1-w.png" alt="생활날씨">생활날씨
+                    </a>
+                </li>
+                <li>
+                    <a href="safemap.html">
+                        <img src="resources/images/icon/main-menu-3-1-w.png" alt="재난안전지도">재난안전지도
+                    </a>
+                </li>
+                <li>
+                    <div class="quick">
+                        <button type="button" class="go_top_btn" style="display: inline-block;"><img src="resources/images/ico_up_arrow.png" alt=""><span>위로</span></button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- quickmenu end -->
+        
+        </section>
+    </main>
     <!-- TOP버튼 -->
     
 
