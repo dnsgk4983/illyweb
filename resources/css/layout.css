@@ -1894,6 +1894,7 @@ select{
     padding-top: 80px;
     padding-bottom: 50px;
     font-family: 'Noto Sans KR' !important;
+    position: relative;
 }
 
 .weather-map{
