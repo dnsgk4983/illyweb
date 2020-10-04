@@ -6374,7 +6374,7 @@ table.ui-datepicker-calendar td a{
 
 @media (max-width: 968px){
     #myModal{
-        display: none;
+        display: none !important;
     }
 
 }
