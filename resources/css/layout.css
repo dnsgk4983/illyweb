@@ -4663,9 +4663,9 @@ table a:link {
 }
 
   @media screen and (max-width: 1000px) {
-    /* body {
+    body {
       padding: 1em;
-    } */
+    }
     
     .accordion {
       width: 100%;
