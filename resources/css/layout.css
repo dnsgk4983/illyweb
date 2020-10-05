@@ -1891,7 +1891,7 @@ select{
 #weather{
     background-image: url('../images/livingweather-bg.jpg');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     padding-top: 80px;
     padding-bottom: 50px;
     font-family: 'Noto Sans KR' !important;
