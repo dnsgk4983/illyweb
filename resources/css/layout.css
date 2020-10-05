@@ -141,6 +141,7 @@ a{
     text-decoration: none;
     color: inherit;
 }
+
 .ft16{
     font-size: 16px;
 }
@@ -6280,12 +6281,16 @@ a.more > span{
     background: url(../images/main_snowy-map.png);
 }
 /* 0924 22??異붽??곸뿭 */
-.sf-title{
+.sf-title{    
     position: absolute;
-    left: 15px;
-    top: 15px;
+    left: 4px;
+    top: 7px;
     z-index: 50;
-    font-size: 16px;
+    font-size: 13px;
+    background-color: #258fff;
+    padding: 8px 12px;
+    border-radius: 11px;
+    color: white;
 }
 .detail-title{
     font-size: 20px;
@@ -6374,5 +6379,6 @@ table.ui-datepicker-calendar td a{
 #myModal{
     display: none !important;
 }
-
-
+#tab-1 > img {
+    width: 100%;
+}
