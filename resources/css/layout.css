@@ -6217,12 +6217,12 @@ a.more > span{
     }
 }
 @media(max-width: 1510px){
-    .quickmenu{
+    /* .quickmenu{
         left: -200px;
     }
     .quickmenu-1{
         right: -200px;
-    }
+    } */
 }
 .view-table{
     position: absolute;
