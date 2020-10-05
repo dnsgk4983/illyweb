@@ -4663,7 +4663,7 @@ table a:link {
     color:#333;
 }
 
-  @media screen and (max-width: 1240px) {
+  @media screen and (max-width: 1000px) {
     body {
       padding: 1em;
     }
