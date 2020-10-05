@@ -86,7 +86,7 @@ html{
     width: 100%;
 }
 body{
-    min-width: 1280px;
+    min-width: 1240px;
     /* overflow-x: hidden; */
     letter-spacing: -1px;
     font-family: 'Noto Sans KR';
