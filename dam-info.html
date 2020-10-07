@@ -4,9 +4,6 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta
-            name="viewport"
-            content="width=1240,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-        <meta
             property="”og:image”"
             content="resources/images/POZ_202007131009436070.jpg">
         <meta property="”og:image:width”" content="600">
@@ -26,12 +23,6 @@
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"/>
-
-        <!-- 아코디언 -->
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-
     </head>
     <body>
         <!-- 공통메뉴 -->
@@ -249,496 +240,872 @@
             </div>        
         </header>
         <div class="gnb_bg"></div>
-        <section class="weather-info-bg">
-            <div class="weather-info-top">
+        <main class="info-bg">
+            <section class="weather-info-bg">
+                <div class="weather-info-top">
 
-                <div class="weather-info">
-                    <div class="weather-info-map">
-                        <div class="weather-info-form">
-                            <div class="info-area-01">
-                                <span>지역선택</span>
+                    <div class="weather-info">
+                        <div class="weather-info-map">
+                            <div class="weather-info-form">
+                                <div class="info-area-01">
+                                    <span>지역선택</span>
+                                </div>
+                                <div class="info-area-02">
+                                    <span>예산군</span>
+                                </div>
+                                <div class="info-area-03">
+                                    <select id="">
+                                        <option>예산읍</option>
+                                        <option>예산읍</option>
+                                        <option>예산읍</option>
+                                    </select>
+                                </div>
+                                <div class="info-area-search">
+                                    <button class="btn_search">검색</button>
+                                </div>
                             </div>
-                            <div class="info-area-02">
-                                <span>예산군</span>
+                            <div class="weather-info-map-box"></div>
+                        </div>
+                        <div class="weather-wrap">
+                            <div class="weather-info-tab">
+                                <div class="weather-info-title">
+                                    <!-- <h1>강우정보</h1> -->
+                                    <div class="weather-day-select">
+                                        <div class="day-select-wrap">
+                                            <input type="text" id="datepicker-from" placeholder="시작날짜">
+                                        </div>
+                                        <div class="day-select-wrap">
+                                            <input type="text" id="datepicker-to" placeholder="끝날짜">
+                                        </div>
+                                    </div>
+                                    <div class="day-search-btn">
+                                        <button type="button">검색</button>
+                                    </div>
+                                </div>
+                                <!-- datepicker script -->
+                                <script>
+                                    $( function() {
+                                    $( "#datepicker-from" ).datepicker({
+                                        
+                                        dateFormat: 'yy-mm-dd'
+                                    });
+                                    
+                                    $("#datepicker-to").datepicker({
+                                        dateFormat: 'yy-mm-dd'
+                                    });
+                                    } );
+                                    
+                                </script>
+                                <div class="weather-information-box">
+                                    <div id="info-1">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>번호</td>
+                                                    <td>발생위치</td>
+                                                    <td>재난유형</td>
+                                                    <td>내용</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>삽교읍</td>
+                                                    <td>화재</td>
+                                                    <td>원룸화재</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>오가면</td>
+                                                    <td>-</td>
+                                                    <td>업무운행</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>삽교읍</td>
+                                                    <td>구조</td>
+                                                    <td>건물갇힘</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>예산읍</td>
+                                                    <td>구조</td>
+                                                    <td>건물갇힘</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>응봉면</td>
+                                                    <td>구조</td>
+                                                    <td>차에깔림</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>삽교읍</td>
+                                                    <td>화재</td>
+                                                    <td>건물화재</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td>신암면</td>
+                                                    <td>구조</td>
+                                                    <td>포크레인에갇힘</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>8</td>
+                                                    <td>삽교읍</td>
+                                                    <td>화재</td>
+                                                    <td>속보기확인출동</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9</td>
+                                                    <td>예산읍</td>
+                                                    <td>구조</td>
+                                                    <td>동물구조</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10</td>
+                                                    <td>예산읍</td>
+                                                    <td>구조</td>
+                                                    <td>배란다벌집제거</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- 1depth -->
+                                    <div id="info-2">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>번호</td>
+                                                    <td>발생위치</td>
+                                                    <td>재난유형</td>
+                                                    <td>내용</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>11</td>
+                                                    <td>삽교읍</td>
+                                                    <td>화재</td>
+                                                    <td>원룸화재</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>12</td>
+                                                    <td>오가면</td>
+                                                    <td>-</td>
+                                                    <td>업무운행</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>13</td>
+                                                    <td>삽교읍</td>
+                                                    <td>구조</td>
+                                                    <td>건물갇힘</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>14</td>
+                                                    <td>예산읍</td>
+                                                    <td>구조</td>
+                                                    <td>건물갇힘</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>15</td>
+                                                    <td>응봉면</td>
+                                                    <td>구조</td>
+                                                    <td>차에깔림</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>16</td>
+                                                    <td>삽교읍</td>
+                                                    <td>화재</td>
+                                                    <td>건물화재</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>17</td>
+                                                    <td>신암면</td>
+                                                    <td>구조</td>
+                                                    <td>포크레인에갇힘</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>18</td>
+                                                    <td>삽교읍</td>
+                                                    <td>화재</td>
+                                                    <td>속보기확인출동</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>19</td>
+                                                    <td>예산읍</td>
+                                                    <td>구조</td>
+                                                    <td>동물구조</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>20</td>
+                                                    <td>예산읍</td>
+                                                    <td>구조</td>
+                                                    <td>배란다벌집제거</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- 2depth -->
+                                    <div id="info-2">
+                                        <table id="info-2">
+                                            <thead>
+                                                <tr>
+                                                    <td>번호</td>
+                                                    <td>발생위치</td>
+                                                    <td>재난유형</td>
+                                                    <td>내용</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>11</td>
+                                                    <td>삽교읍</td>
+                                                    <td>화재</td>
+                                                    <td>원룸화재</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>12</td>
+                                                    <td>오가면</td>
+                                                    <td>-</td>
+                                                    <td>업무운행</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>13</td>
+                                                    <td>삽교읍</td>
+                                                    <td>구조</td>
+                                                    <td>건물갇힘</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>14</td>
+                                                    <td>예산읍</td>
+                                                    <td>구조</td>
+                                                    <td>건물갇힘</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>15</td>
+                                                    <td>응봉면</td>
+                                                    <td>구조</td>
+                                                    <td>차에깔림</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>16</td>
+                                                    <td>삽교읍</td>
+                                                    <td>화재</td>
+                                                    <td>건물화재</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>17</td>
+                                                    <td>신암면</td>
+                                                    <td>구조</td>
+                                                    <td>포크레인에갇힘</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>18</td>
+                                                    <td>삽교읍</td>
+                                                    <td>화재</td>
+                                                    <td>속보기확인출동</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>19</td>
+                                                    <td>예산읍</td>
+                                                    <td>구조</td>
+                                                    <td>동물구조</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>20</td>
+                                                    <td>예산읍</td>
+                                                    <td>구조</td>
+                                                    <td>배란다벌집제거</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- 3depth -->
+                                    <div id="info-2">
+                                        <table id="info-2">
+                                            <thead>
+                                                <tr>
+                                                    <td>번호</td>
+                                                    <td>발생위치</td>
+                                                    <td>재난유형</td>
+                                                    <td>내용</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>11</td>
+                                                    <td>삽교읍</td>
+                                                    <td>화재</td>
+                                                    <td>원룸화재</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>12</td>
+                                                    <td>오가면</td>
+                                                    <td>-</td>
+                                                    <td>업무운행</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>13</td>
+                                                    <td>삽교읍</td>
+                                                    <td>구조</td>
+                                                    <td>건물갇힘</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>14</td>
+                                                    <td>예산읍</td>
+                                                    <td>구조</td>
+                                                    <td>건물갇힘</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>15</td>
+                                                    <td>응봉면</td>
+                                                    <td>구조</td>
+                                                    <td>차에깔림</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>16</td>
+                                                    <td>삽교읍</td>
+                                                    <td>화재</td>
+                                                    <td>건물화재</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>17</td>
+                                                    <td>신암면</td>
+                                                    <td>구조</td>
+                                                    <td>포크레인에갇힘</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>18</td>
+                                                    <td>삽교읍</td>
+                                                    <td>화재</td>
+                                                    <td>속보기확인출동</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>19</td>
+                                                    <td>예산읍</td>
+                                                    <td>구조</td>
+                                                    <td>동물구조</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>20</td>
+                                                    <td>예산읍</td>
+                                                    <td>구조</td>
+                                                    <td>배란다벌집제거</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- 4depth -->
+                                    <div id="info-2">
+                                        <table id="info-2">
+                                            <thead>
+                                                <tr>
+                                                    <td>번호</td>
+                                                    <td>발생위치</td>
+                                                    <td>재난유형</td>
+                                                    <td>내용</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>11</td>
+                                                    <td>삽교읍</td>
+                                                    <td>화재</td>
+                                                    <td>원룸화재</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>12</td>
+                                                    <td>오가면</td>
+                                                    <td>-</td>
+                                                    <td>업무운행</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>13</td>
+                                                    <td>삽교읍</td>
+                                                    <td>구조</td>
+                                                    <td>건물갇힘</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>14</td>
+                                                    <td>예산읍</td>
+                                                    <td>구조</td>
+                                                    <td>건물갇힘</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>15</td>
+                                                    <td>응봉면</td>
+                                                    <td>구조</td>
+                                                    <td>차에깔림</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>16</td>
+                                                    <td>삽교읍</td>
+                                                    <td>화재</td>
+                                                    <td>건물화재</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>17</td>
+                                                    <td>신암면</td>
+                                                    <td>구조</td>
+                                                    <td>포크레인에갇힘</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>18</td>
+                                                    <td>삽교읍</td>
+                                                    <td>화재</td>
+                                                    <td>속보기확인출동</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>19</td>
+                                                    <td>예산읍</td>
+                                                    <td>구조</td>
+                                                    <td>동물구조</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>20</td>
+                                                    <td>예산읍</td>
+                                                    <td>구조</td>
+                                                    <td>배란다벌집제거</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- 5depth -->
+                                    <div id="info-2">
+                                        <table id="info-2">
+                                            <thead>
+                                                <tr>
+                                                    <td>번호</td>
+                                                    <td>발생위치</td>
+                                                    <td>재난유형</td>
+                                                    <td>내용</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>11</td>
+                                                    <td>삽교읍</td>
+                                                    <td>화재</td>
+                                                    <td>원룸화재</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>12</td>
+                                                    <td>오가면</td>
+                                                    <td>-</td>
+                                                    <td>업무운행</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>13</td>
+                                                    <td>삽교읍</td>
+                                                    <td>구조</td>
+                                                    <td>건물갇힘</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>14</td>
+                                                    <td>예산읍</td>
+                                                    <td>구조</td>
+                                                    <td>건물갇힘</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>15</td>
+                                                    <td>응봉면</td>
+                                                    <td>구조</td>
+                                                    <td>차에깔림</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>16</td>
+                                                    <td>삽교읍</td>
+                                                    <td>화재</td>
+                                                    <td>건물화재</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>17</td>
+                                                    <td>신암면</td>
+                                                    <td>구조</td>
+                                                    <td>포크레인에갇힘</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>18</td>
+                                                    <td>삽교읍</td>
+                                                    <td>화재</td>
+                                                    <td>속보기확인출동</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>19</td>
+                                                    <td>예산읍</td>
+                                                    <td>구조</td>
+                                                    <td>동물구조</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>20</td>
+                                                    <td>예산읍</td>
+                                                    <td>구조</td>
+                                                    <td>배란다벌집제거</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- 6depth -->
+                                    <div id="info-2">
+                                        <table id="info-2">
+                                            <thead>
+                                                <tr>
+                                                    <td>번호</td>
+                                                    <td>발생위치</td>
+                                                    <td>재난유형</td>
+                                                    <td>내용</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>11</td>
+                                                    <td>삽교읍</td>
+                                                    <td>화재</td>
+                                                    <td>원룸화재</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>12</td>
+                                                    <td>오가면</td>
+                                                    <td>-</td>
+                                                    <td>업무운행</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>13</td>
+                                                    <td>삽교읍</td>
+                                                    <td>구조</td>
+                                                    <td>건물갇힘</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>14</td>
+                                                    <td>예산읍</td>
+                                                    <td>구조</td>
+                                                    <td>건물갇힘</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>15</td>
+                                                    <td>응봉면</td>
+                                                    <td>구조</td>
+                                                    <td>차에깔림</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>16</td>
+                                                    <td>삽교읍</td>
+                                                    <td>화재</td>
+                                                    <td>건물화재</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>17</td>
+                                                    <td>신암면</td>
+                                                    <td>구조</td>
+                                                    <td>포크레인에갇힘</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>18</td>
+                                                    <td>삽교읍</td>
+                                                    <td>화재</td>
+                                                    <td>속보기확인출동</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>19</td>
+                                                    <td>예산읍</td>
+                                                    <td>구조</td>
+                                                    <td>동물구조</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>20</td>
+                                                    <td>예산읍</td>
+                                                    <td>구조</td>
+                                                    <td>배란다벌집제거</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- 7depth -->
+                                    <div id="info-2">
+                                        <table id="info-2">
+                                            <thead>
+                                                <tr>
+                                                    <td>번호</td>
+                                                    <td>발생위치</td>
+                                                    <td>재난유형</td>
+                                                    <td>내용</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>11</td>
+                                                    <td>삽교읍</td>
+                                                    <td>화재</td>
+                                                    <td>원룸화재</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>12</td>
+                                                    <td>오가면</td>
+                                                    <td>-</td>
+                                                    <td>업무운행</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>13</td>
+                                                    <td>삽교읍</td>
+                                                    <td>구조</td>
+                                                    <td>건물갇힘</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>14</td>
+                                                    <td>예산읍</td>
+                                                    <td>구조</td>
+                                                    <td>건물갇힘</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>15</td>
+                                                    <td>응봉면</td>
+                                                    <td>구조</td>
+                                                    <td>차에깔림</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>16</td>
+                                                    <td>삽교읍</td>
+                                                    <td>화재</td>
+                                                    <td>건물화재</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>17</td>
+                                                    <td>신암면</td>
+                                                    <td>구조</td>
+                                                    <td>포크레인에갇힘</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>18</td>
+                                                    <td>삽교읍</td>
+                                                    <td>화재</td>
+                                                    <td>속보기확인출동</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>19</td>
+                                                    <td>예산읍</td>
+                                                    <td>구조</td>
+                                                    <td>동물구조</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>20</td>
+                                                    <td>예산읍</td>
+                                                    <td>구조</td>
+                                                    <td>배란다벌집제거</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- 8depth -->
+                                    <div id="info-2">
+                                        <table id="info-2">
+                                            <thead>
+                                                <tr>
+                                                    <td>번호</td>
+                                                    <td>발생위치</td>
+                                                    <td>재난유형</td>
+                                                    <td>내용</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>11</td>
+                                                    <td>삽교읍</td>
+                                                    <td>화재</td>
+                                                    <td>원룸화재</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>12</td>
+                                                    <td>오가면</td>
+                                                    <td>-</td>
+                                                    <td>업무운행</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>13</td>
+                                                    <td>삽교읍</td>
+                                                    <td>구조</td>
+                                                    <td>건물갇힘</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>14</td>
+                                                    <td>예산읍</td>
+                                                    <td>구조</td>
+                                                    <td>건물갇힘</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>15</td>
+                                                    <td>응봉면</td>
+                                                    <td>구조</td>
+                                                    <td>차에깔림</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>16</td>
+                                                    <td>삽교읍</td>
+                                                    <td>화재</td>
+                                                    <td>건물화재</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>17</td>
+                                                    <td>신암면</td>
+                                                    <td>구조</td>
+                                                    <td>포크레인에갇힘</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>18</td>
+                                                    <td>삽교읍</td>
+                                                    <td>화재</td>
+                                                    <td>속보기확인출동</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>19</td>
+                                                    <td>예산읍</td>
+                                                    <td>구조</td>
+                                                    <td>동물구조</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>20</td>
+                                                    <td>예산읍</td>
+                                                    <td>구조</td>
+                                                    <td>배란다벌집제거</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- 9depth -->
+                                    <div id="info-2">
+                                        <table id="info-2">
+                                            <thead>
+                                                <tr>
+                                                    <td>번호</td>
+                                                    <td>발생위치</td>
+                                                    <td>재난유형</td>
+                                                    <td>내용</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>11</td>
+                                                    <td>삽교읍</td>
+                                                    <td>화재</td>
+                                                    <td>원룸화재</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>12</td>
+                                                    <td>오가면</td>
+                                                    <td>-</td>
+                                                    <td>업무운행</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>13</td>
+                                                    <td>삽교읍</td>
+                                                    <td>구조</td>
+                                                    <td>건물갇힘</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>14</td>
+                                                    <td>예산읍</td>
+                                                    <td>구조</td>
+                                                    <td>건물갇힘</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>15</td>
+                                                    <td>응봉면</td>
+                                                    <td>구조</td>
+                                                    <td>차에깔림</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>16</td>
+                                                    <td>삽교읍</td>
+                                                    <td>화재</td>
+                                                    <td>건물화재</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>17</td>
+                                                    <td>신암면</td>
+                                                    <td>구조</td>
+                                                    <td>포크레인에갇힘</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>18</td>
+                                                    <td>삽교읍</td>
+                                                    <td>화재</td>
+                                                    <td>속보기확인출동</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>19</td>
+                                                    <td>예산읍</td>
+                                                    <td>구조</td>
+                                                    <td>동물구조</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>20</td>
+                                                    <td>예산읍</td>
+                                                    <td>구조</td>
+                                                    <td>배란다벌집제거</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- 10depth -->
+                                </div>
+                                <!-- information-box -->
                             </div>
-                            <div class="info-area-03">
-                                <select id="">
-                                    <option>예산읍</option>
-                                    <option>예산읍</option>
-                                    <option>예산읍</option>
-                                </select>
-                            </div>
-                            <div class="info-area-search">
-                                <button class="btn_search">검색</button>
+                            <div class="weather-info-num">
+                                <ul class="info-tab">
+                                    <li class="active-2"><a href="#info-1">1</a></li>
+                                    <li><a href="#info-2">2</a></li>
+                                    <li><a href="#info-3">3</a></li>
+                                    <li><a href="#info-4">4</a></li>
+                                    <li><a href="#info-5">5</a></li>
+                                    <li><a href="#info-6">6</a></li>
+                                    <li><a href="#info-7">7</a></li>
+                                    <li><a href="#info-8">8</a></li>
+                                    <li><a href="#info-9">9</a></li>
+                                    <li><a href="#info-10">10</a></li>
+                                </ul>
+                                <script>
+                                    $(function(){                
+                                        $('.weather-information-box').tabslet({
+                                        mouseevent: 'click',
+                                        attribute: 'href'
+                                        });
+                                    });
+                                </script>
                             </div>
                         </div>
-                        <div class="weather-info-map-box"></div>
                     </div>
-                    <div class="weather-info-tab">
-                        <div class="weather-info-title">
-                            <!-- <h1>강우정보</h1> -->
-                            <div class="weather-day-select">
-                                <div class="day-select-wrap">
-                                    <input type="text" id="datepicker-from">
-                                </div>
-                                <div class="day-select-wrap">
-                                    <input type="text" id="datepicker-to">
-                                </div>
-                            </div>
-                            <div class="day-search-btn">
-                                <button type="button">검색</button>
-                            </div>
-                        </div>
-                        <!-- datepicker script -->
-                        <script>
-                            $( function() {
-                              $( "#datepicker-from" ).datepicker({
-                                //   showOn: "button"
-                              });
-                              $("#datepicker-to").datepicker({
-                                //   showOn: "button"
-                              });
-                            } );
-                        </script>
-                        <div class="weather-information-box">
-                            <div class="accordion js-accordion dam-accordion">
-                                <div class="accordion__item js-accordion-item active">
-                                    <div class="accordion-header js-accordion-header">
-                                        <div class="accrdion-main">
-                                            <div class="accrdion-img">
-                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
-                                                    <g>
-                                                        <g>
-                                                            <circle class="st0" cx="25" cy="26" r="21.8"/>
-                                                            <path class="st0" d="M25,4.7c11.8,0,21.3,9.5,21.3,21.3S36.8,47.3,25,47.3S3.7,37.8,3.7,26S13.2,4.7,25,4.7 M25,3.7    C12.7,3.7,2.7,13.7,2.7,26s10,22.3,22.3,22.3s22.3-10,22.3-22.3S37.3,3.7,25,3.7L25,3.7z"/>
-                                                        </g>
-                                                        <g>
-                                                            <g>
-                                                                <circle class="st1" cx="25" cy="24" r="21.8"/>
-                                                                <path class="st2" d="M25,2.7c11.8,0,21.3,9.5,21.3,21.3S36.8,45.3,25,45.3S3.7,35.8,3.7,24S13.2,2.7,25,2.7 M25,1.7     C12.7,1.7,2.7,11.7,2.7,24s10,22.3,22.3,22.3s22.3-10,22.3-22.3S37.3,1.7,25,1.7L25,1.7z"/>
-                                                            </g>
-                                                            <g>
-                                                                <defs>
-                                                                    <circle id="SVGID_1_" cx="25" cy="24" r="21.3"/>
-                                                                </defs>
-                                                                <clipPath id="SVGID_2_">
-                                                                    <use xlink:href="#SVGID_1_" style="overflow:visible;"/>
-                                                                </clipPath>
-                                                                <g class="st3">
-                                                                    <path class="st4" d="M45.1,25.4C45.2,25.4,45.2,25.4,45.1,25.4c0.5-0.2,0.9-0.5,1.2-0.5v2.2h-0.1c-0.7,0.2-1.4,0.7-2.4,0.9      c-0.2,0-0.4,0.5-0.3,1.2c0,0.5,0.2,0.7,0.4,0.7c0,0,0,0,0.1,0c1-0.2,1.7-0.7,2.3-0.9v3.1c-2.2,1.2-7.3,2.6-10.6,2.6      s-8.4-1.3-10.6-2.4c-2.2-1.2-7.3-2.6-10.6-2.6S6,31.2,3.7,32.3v-7.4h0.1c0.3-0.2,0.8-0.2,1.2-0.5c0.2,0,0.4-0.5,0.3-1.2      c0-0.5-0.2-0.9-0.5-0.7C4.4,22.7,4,22.7,3.7,23v-7.4C5.9,14.4,11,13,14.3,13s8.4,1.4,10.6,2.6s7.3,2.6,10.6,2.6S44,17,46.2,15.7      v3.1h-0.1c-0.7,0.2-1.4,0.7-2.4,0.9c-0.2,0-0.4,0.5-0.3,1.2c0,0.5,0.2,0.7,0.4,0.7c0,0,0,0,0.1,0c1-0.2,1.7-0.7,2.4-0.9v2.2      h-0.1c-0.3,0.2-0.8,0.2-1.2,0.5c-0.2,0-0.4,0.5-0.3,1.2C44.7,25.2,45,25.4,45.1,25.4z"/>
-                                                                    <g>
-                                                                        <path class="st1" d="M13.7,21.4c0-0.5-0.2-0.9-0.4-0.9c-0.8,0.2-1.5,0.2-2.3,0.5c-0.2,0-0.4,0.5-0.3,0.9c0,0.5,0.2,0.9,0.4,0.9       c0,0,0,0,0.1,0c0.8-0.2,1.5-0.2,2.3-0.5C13.5,22.4,13.7,22.2,13.7,21.4z"/>
-                                                                        <path class="st1" d="M9.1,17.6c-0.9,0.2-1.7,0.7-2.4,0.9c-0.2,0-0.4,0.7-0.3,1.2c0,0.5,0.2,0.7,0.4,0.7h0.1       c0.7-0.2,1.5-0.7,2.4-0.9c0.2,0,0.4-0.5,0.3-0.9C9.6,17.8,9.4,17.3,9.1,17.6z"/>
-                                                                        <path class="st1" d="M15.7,16.2c-0.8,0-1.6,0.2-2.5,0.2c-0.2,0-0.4,0.5-0.4,0.9c0,0.5,0.2,0.9,0.4,0.9l0,0       c0.9-0.2,1.6-0.2,2.4-0.2c0.2,0,0.4-0.5,0.4-0.9S15.9,16.2,15.7,16.2z"/>
-                                                                        <path class="st1" d="M15.7,24.5c-0.8,0-1.6,0.2-2.5,0.2c-0.2,0-0.4,0.5-0.4,0.9s0.2,0.9,0.4,0.9l0,0c0.9-0.2,1.6-0.2,2.4-0.2       c0.2,0,0.4-0.5,0.4-0.9C16.1,24.8,15.9,24.5,15.7,24.5z"/>
-                                                                        <path class="st1" d="M26.4,20.2c0.3,0.2,0.5,0.2,0.9,0.5c0.4,0.2,1,0.5,1.6,0.7c0,0,0,0,0.1,0c0.2,0,0.4-0.2,0.4-0.7       s-0.1-0.9-0.3-1.2c-0.7-0.2-1.1-0.5-1.5-0.7c-0.2-0.2-0.5-0.2-0.9-0.5c-0.2,0-0.4,0.2-0.5,0.7C26,19.5,26.1,20,26.4,20.2z"/>
-                                                                        <path class="st1" d="M9.1,25.8c-0.9,0.2-1.7,0.5-2.4,0.9c-0.2,0-0.4,0.7-0.3,1.2c0,0.5,0.1,0.7,0.3,0.7h0.1       c0.7-0.2,1.5-0.7,2.4-0.9c0.2,0,0.4-0.5,0.3-0.9C9.6,26,9.4,25.8,9.1,25.8z"/>
-                                                                        <path class="st1" d="M32.8,22.6c0.9,0.2,1.6,0.2,2.5,0.5l0,0c0.2,0,0.4-0.5,0.4-0.9c0-0.5-0.2-0.9-0.4-0.9       c-0.8,0-1.6-0.2-2.4-0.5c-0.2,0-0.4,0.2-0.4,0.9C32.4,22,32.6,22.4,32.8,22.6z"/>
-                                                                        <path class="st1" d="M39.5,23.1L39.5,23.1c0.8,0,1.6-0.2,2.5-0.5c0.2,0,0.4-0.5,0.4-0.9c0-0.5-0.2-0.9-0.4-0.9       c-0.9,0.2-1.6,0.2-2.4,0.5c-0.2,0-0.4,0.5-0.4,0.9C39.1,22.6,39.3,23.1,39.5,23.1z"/>
-                                                                        <path class="st1" d="M19.8,21.4c0-0.5-0.2-0.9-0.4-0.9c-0.9-0.2-1.6-0.2-2.3-0.2c-0.2,0-0.4,0.5-0.4,0.9c0,0.5,0.2,0.9,0.4,0.9       c0.7,0,1.4,0,2.3,0.2l0,0C19.6,22.4,19.8,22.2,19.8,21.4z"/>
-                                                                        <path class="st1" d="M19.8,18.3c0.8,0.2,1.6,0.2,2.4,0.5l0,0c0.2,0,0.4-0.5,0.4-0.9c0-0.5-0.1-0.9-0.3-0.9       c-0.9-0.2-1.6-0.5-2.5-0.5c-0.2,0-0.4,0.2-0.4,0.9C19.4,17.8,19.6,18.3,19.8,18.3z"/>
-                                                                        <path class="st1" d="M43.5,24.5c-0.8,0.2-1.5,0.2-2.3,0.5c-0.2,0-0.4,0.5-0.4,0.9c0,0.5,0.2,0.9,0.4,0.9l0,0       c0.8-0.2,1.5-0.2,2.3-0.5c0.2,0,0.4-0.5,0.3-0.9C44,25.1,43.8,24.5,43.5,24.5z"/>
-                                                                        <path class="st1" d="M22.4,25.3c-0.9-0.2-1.6-0.5-2.5-0.5c-0.2,0-0.4,0.2-0.4,0.9c0,0.5,0.1,0.9,0.4,0.9       c0.8,0.2,1.6,0.2,2.4,0.5l0,0c0.2,0,0.4-0.5,0.4-0.7C22.7,25.8,22.6,25.3,22.4,25.3z"/>
-                                                                        <path class="st1" d="M37.5,25.5c-0.7,0-1.4,0-2.3-0.2c-0.2,0-0.4,0.5-0.4,0.9c0,0.5,0.2,0.9,0.4,0.9c0.9,0.2,1.6,0.2,2.3,0.2       l0,0c0.2,0,0.4-0.5,0.4-0.9S37.7,25.5,37.5,25.5z"/>
-                                                                        <path class="st1" d="M41.9,29.1c-0.9,0.2-1.6,0.2-2.4,0.5c-0.2,0-0.4,0.5-0.4,0.9c0,0.5,0.2,0.9,0.4,0.9l0,0       c0.8,0,1.6-0.2,2.5-0.5c0.2,0,0.4-0.5,0.4-0.9C42.5,29.6,42.2,29.1,41.9,29.1z"/>
-                                                                        <path class="st1" d="M25.5,22.2c-0.7-0.2-1.4-0.5-2.3-0.7c-0.2,0-0.4,0.2-0.4,0.7s0.1,0.9,0.3,0.9c0.8,0.2,1.5,0.5,2.2,0.7       c0,0,0,0,0.1,0c0.2,0,0.4-0.2,0.4-0.7C25.9,22.6,25.7,22.2,25.5,22.2z"/>
-                                                                        <path class="st1" d="M35.4,29.3c-0.8,0-1.6-0.2-2.4-0.5c-0.2,0-0.4,0.2-0.4,0.9c0,0.5,0.1,0.9,0.4,0.9c0.9,0.2,1.6,0.2,2.5,0.5       l0,0c0.2,0,0.4-0.5,0.4-0.9C35.8,29.8,35.7,29.3,35.4,29.3z"/>
-                                                                        <path class="st1" d="M28.9,27.6c-0.7-0.2-1.1-0.5-1.5-0.7c-0.2-0.2-0.5-0.2-0.9-0.5c-0.2,0-0.4,0.2-0.5,0.7       c0,0.5,0.1,0.9,0.3,1.2c0.3,0.2,0.5,0.2,0.9,0.5c0.4,0.2,1,0.5,1.6,0.7c0,0,0,0,0.1,0c0.2,0,0.4-0.2,0.4-0.7       C29.3,28.4,29.1,27.9,28.9,27.6z"/>
-                                                                        <path class="st1" d="M31.4,24.3c-0.8-0.2-1.5-0.5-2.2-0.7c-0.2,0-0.4,0.2-0.5,0.7c0,0.5,0.1,0.9,0.3,1.2       c0.7,0.2,1.4,0.5,2.3,0.7c0,0,0,0,0.1,0c0.2,0,0.4-0.2,0.4-0.9C31.8,25.1,31.6,24.5,31.4,24.3z"/>
-                                                                    </g>
-                                                                </g>
-                                                            </g>
-                                                        </g>
-                                                    </g>
-                                                    </svg>
-                                            </div>
-                                            <div class="accrdion-txt">
-                                        <b>[홍수주의보 해제]</b>
-                                        <span>충청남도 예산군</span>
-                                        <span class="acc-block">2020.08.04. 06시 00분</span>
-                                    </div>
-                                    </div>
-                                    </div>
-                                    <div class="accordion-body js-accordion-body">
-                                        <div class="accordion-body__contents">
-                                            <div class="newsbreak"style="display: block;">
-                                                <p>
-                                                    <b>[홍수주의보 해제]</b>충청남도 예산군</p>
-                                                <label>홍수예보 제 2020-30 호</label><br>
-                                                <label>해제일시</label><span> 2020년 08월 04일 06시 00분</span><br>
-                                                <label>해제자</label><span>금강홍수통제소장</span><br>
-                                                <p class="news-content">삽교천 예산군(예산대교) 지점의 수위가 계속 하강하고 있으므로 2020년 08월 04일 01시 50분 에 발령한 예산 지역의 홍수주의보를
-                                                    해제합니다.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- end of accordion body -->
-                                </div>
-                                <!-- end of accordion item -->
-                                <div class="accordion__item js-accordion-item">
-                                    <div class="accordion-header js-accordion-header">
-                                        <div class="accrdion-main">
-                                            <div class="accrdion-img">
-                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
-                                                    <g>
-                                                        <g>
-                                                            <circle class="st0" cx="25" cy="26" r="21.8"/>
-                                                            <path class="st0" d="M25,4.7c11.8,0,21.3,9.5,21.3,21.3S36.8,47.3,25,47.3S3.7,37.8,3.7,26S13.2,4.7,25,4.7 M25,3.7    C12.7,3.7,2.7,13.7,2.7,26s10,22.3,22.3,22.3s22.3-10,22.3-22.3S37.3,3.7,25,3.7L25,3.7z"/>
-                                                        </g>
-                                                        <g>
-                                                            <g>
-                                                                <circle class="st1" cx="25" cy="24" r="21.8"/>
-                                                                <path class="st2" d="M25,2.7c11.8,0,21.3,9.5,21.3,21.3S36.8,45.3,25,45.3S3.7,35.8,3.7,24S13.2,2.7,25,2.7 M25,1.7     C12.7,1.7,2.7,11.7,2.7,24s10,22.3,22.3,22.3s22.3-10,22.3-22.3S37.3,1.7,25,1.7L25,1.7z"/>
-                                                            </g>
-                                                            <g>
-                                                                <defs>
-                                                                    <circle id="SVGID_1_" cx="25" cy="24" r="21.3"/>
-                                                                </defs>
-                                                                <clipPath id="SVGID_2_">
-                                                                    <use xlink:href="#SVGID_1_" style="overflow:visible;"/>
-                                                                </clipPath>
-                                                                <g class="st3">
-                                                                    <path class="st4" d="M45.1,25.4C45.2,25.4,45.2,25.4,45.1,25.4c0.5-0.2,0.9-0.5,1.2-0.5v2.2h-0.1c-0.7,0.2-1.4,0.7-2.4,0.9      c-0.2,0-0.4,0.5-0.3,1.2c0,0.5,0.2,0.7,0.4,0.7c0,0,0,0,0.1,0c1-0.2,1.7-0.7,2.3-0.9v3.1c-2.2,1.2-7.3,2.6-10.6,2.6      s-8.4-1.3-10.6-2.4c-2.2-1.2-7.3-2.6-10.6-2.6S6,31.2,3.7,32.3v-7.4h0.1c0.3-0.2,0.8-0.2,1.2-0.5c0.2,0,0.4-0.5,0.3-1.2      c0-0.5-0.2-0.9-0.5-0.7C4.4,22.7,4,22.7,3.7,23v-7.4C5.9,14.4,11,13,14.3,13s8.4,1.4,10.6,2.6s7.3,2.6,10.6,2.6S44,17,46.2,15.7      v3.1h-0.1c-0.7,0.2-1.4,0.7-2.4,0.9c-0.2,0-0.4,0.5-0.3,1.2c0,0.5,0.2,0.7,0.4,0.7c0,0,0,0,0.1,0c1-0.2,1.7-0.7,2.4-0.9v2.2      h-0.1c-0.3,0.2-0.8,0.2-1.2,0.5c-0.2,0-0.4,0.5-0.3,1.2C44.7,25.2,45,25.4,45.1,25.4z"/>
-                                                                    <g>
-                                                                        <path class="st1" d="M13.7,21.4c0-0.5-0.2-0.9-0.4-0.9c-0.8,0.2-1.5,0.2-2.3,0.5c-0.2,0-0.4,0.5-0.3,0.9c0,0.5,0.2,0.9,0.4,0.9       c0,0,0,0,0.1,0c0.8-0.2,1.5-0.2,2.3-0.5C13.5,22.4,13.7,22.2,13.7,21.4z"/>
-                                                                        <path class="st1" d="M9.1,17.6c-0.9,0.2-1.7,0.7-2.4,0.9c-0.2,0-0.4,0.7-0.3,1.2c0,0.5,0.2,0.7,0.4,0.7h0.1       c0.7-0.2,1.5-0.7,2.4-0.9c0.2,0,0.4-0.5,0.3-0.9C9.6,17.8,9.4,17.3,9.1,17.6z"/>
-                                                                        <path class="st1" d="M15.7,16.2c-0.8,0-1.6,0.2-2.5,0.2c-0.2,0-0.4,0.5-0.4,0.9c0,0.5,0.2,0.9,0.4,0.9l0,0       c0.9-0.2,1.6-0.2,2.4-0.2c0.2,0,0.4-0.5,0.4-0.9S15.9,16.2,15.7,16.2z"/>
-                                                                        <path class="st1" d="M15.7,24.5c-0.8,0-1.6,0.2-2.5,0.2c-0.2,0-0.4,0.5-0.4,0.9s0.2,0.9,0.4,0.9l0,0c0.9-0.2,1.6-0.2,2.4-0.2       c0.2,0,0.4-0.5,0.4-0.9C16.1,24.8,15.9,24.5,15.7,24.5z"/>
-                                                                        <path class="st1" d="M26.4,20.2c0.3,0.2,0.5,0.2,0.9,0.5c0.4,0.2,1,0.5,1.6,0.7c0,0,0,0,0.1,0c0.2,0,0.4-0.2,0.4-0.7       s-0.1-0.9-0.3-1.2c-0.7-0.2-1.1-0.5-1.5-0.7c-0.2-0.2-0.5-0.2-0.9-0.5c-0.2,0-0.4,0.2-0.5,0.7C26,19.5,26.1,20,26.4,20.2z"/>
-                                                                        <path class="st1" d="M9.1,25.8c-0.9,0.2-1.7,0.5-2.4,0.9c-0.2,0-0.4,0.7-0.3,1.2c0,0.5,0.1,0.7,0.3,0.7h0.1       c0.7-0.2,1.5-0.7,2.4-0.9c0.2,0,0.4-0.5,0.3-0.9C9.6,26,9.4,25.8,9.1,25.8z"/>
-                                                                        <path class="st1" d="M32.8,22.6c0.9,0.2,1.6,0.2,2.5,0.5l0,0c0.2,0,0.4-0.5,0.4-0.9c0-0.5-0.2-0.9-0.4-0.9       c-0.8,0-1.6-0.2-2.4-0.5c-0.2,0-0.4,0.2-0.4,0.9C32.4,22,32.6,22.4,32.8,22.6z"/>
-                                                                        <path class="st1" d="M39.5,23.1L39.5,23.1c0.8,0,1.6-0.2,2.5-0.5c0.2,0,0.4-0.5,0.4-0.9c0-0.5-0.2-0.9-0.4-0.9       c-0.9,0.2-1.6,0.2-2.4,0.5c-0.2,0-0.4,0.5-0.4,0.9C39.1,22.6,39.3,23.1,39.5,23.1z"/>
-                                                                        <path class="st1" d="M19.8,21.4c0-0.5-0.2-0.9-0.4-0.9c-0.9-0.2-1.6-0.2-2.3-0.2c-0.2,0-0.4,0.5-0.4,0.9c0,0.5,0.2,0.9,0.4,0.9       c0.7,0,1.4,0,2.3,0.2l0,0C19.6,22.4,19.8,22.2,19.8,21.4z"/>
-                                                                        <path class="st1" d="M19.8,18.3c0.8,0.2,1.6,0.2,2.4,0.5l0,0c0.2,0,0.4-0.5,0.4-0.9c0-0.5-0.1-0.9-0.3-0.9       c-0.9-0.2-1.6-0.5-2.5-0.5c-0.2,0-0.4,0.2-0.4,0.9C19.4,17.8,19.6,18.3,19.8,18.3z"/>
-                                                                        <path class="st1" d="M43.5,24.5c-0.8,0.2-1.5,0.2-2.3,0.5c-0.2,0-0.4,0.5-0.4,0.9c0,0.5,0.2,0.9,0.4,0.9l0,0       c0.8-0.2,1.5-0.2,2.3-0.5c0.2,0,0.4-0.5,0.3-0.9C44,25.1,43.8,24.5,43.5,24.5z"/>
-                                                                        <path class="st1" d="M22.4,25.3c-0.9-0.2-1.6-0.5-2.5-0.5c-0.2,0-0.4,0.2-0.4,0.9c0,0.5,0.1,0.9,0.4,0.9       c0.8,0.2,1.6,0.2,2.4,0.5l0,0c0.2,0,0.4-0.5,0.4-0.7C22.7,25.8,22.6,25.3,22.4,25.3z"/>
-                                                                        <path class="st1" d="M37.5,25.5c-0.7,0-1.4,0-2.3-0.2c-0.2,0-0.4,0.5-0.4,0.9c0,0.5,0.2,0.9,0.4,0.9c0.9,0.2,1.6,0.2,2.3,0.2       l0,0c0.2,0,0.4-0.5,0.4-0.9S37.7,25.5,37.5,25.5z"/>
-                                                                        <path class="st1" d="M41.9,29.1c-0.9,0.2-1.6,0.2-2.4,0.5c-0.2,0-0.4,0.5-0.4,0.9c0,0.5,0.2,0.9,0.4,0.9l0,0       c0.8,0,1.6-0.2,2.5-0.5c0.2,0,0.4-0.5,0.4-0.9C42.5,29.6,42.2,29.1,41.9,29.1z"/>
-                                                                        <path class="st1" d="M25.5,22.2c-0.7-0.2-1.4-0.5-2.3-0.7c-0.2,0-0.4,0.2-0.4,0.7s0.1,0.9,0.3,0.9c0.8,0.2,1.5,0.5,2.2,0.7       c0,0,0,0,0.1,0c0.2,0,0.4-0.2,0.4-0.7C25.9,22.6,25.7,22.2,25.5,22.2z"/>
-                                                                        <path class="st1" d="M35.4,29.3c-0.8,0-1.6-0.2-2.4-0.5c-0.2,0-0.4,0.2-0.4,0.9c0,0.5,0.1,0.9,0.4,0.9c0.9,0.2,1.6,0.2,2.5,0.5       l0,0c0.2,0,0.4-0.5,0.4-0.9C35.8,29.8,35.7,29.3,35.4,29.3z"/>
-                                                                        <path class="st1" d="M28.9,27.6c-0.7-0.2-1.1-0.5-1.5-0.7c-0.2-0.2-0.5-0.2-0.9-0.5c-0.2,0-0.4,0.2-0.5,0.7       c0,0.5,0.1,0.9,0.3,1.2c0.3,0.2,0.5,0.2,0.9,0.5c0.4,0.2,1,0.5,1.6,0.7c0,0,0,0,0.1,0c0.2,0,0.4-0.2,0.4-0.7       C29.3,28.4,29.1,27.9,28.9,27.6z"/>
-                                                                        <path class="st1" d="M31.4,24.3c-0.8-0.2-1.5-0.5-2.2-0.7c-0.2,0-0.4,0.2-0.5,0.7c0,0.5,0.1,0.9,0.3,1.2       c0.7,0.2,1.4,0.5,2.3,0.7c0,0,0,0,0.1,0c0.2,0,0.4-0.2,0.4-0.9C31.8,25.1,31.6,24.5,31.4,24.3z"/>
-                                                                    </g>
-                                                                </g>
-                                                            </g>
-                                                        </g>
-                                                    </g>
-                                                    </svg>
-                                            </div>
-                                            <div class="accrdion-txt">
-                                        <b>[홍수주의보 해제]</b>
-                                        <span>충청남도 예산군</span>
-                                        <span class="acc-block">2020.08.04. 06시 00분</span>
-                                    </div>
-                                    </div>
-                                    </div>
-                                    <div class="accordion-body js-accordion-body">
-                                        <div class="accordion-body__contents">
-                                            <div class="newsbreak"style="display: block;">
-                                                <p>
-                                                    <b>[홍수주의보 해제]</b>충청남도 예산군</p>
-                                                <label>홍수예보 제 2020-30 호</label><br>
-                                                <label>해제일시</label><span> 2020년 08월 04일 06시 00분</span><br>
-                                                <label>해제자</label><span>금강홍수통제소장</span><br>
-                                                <p class="news-content">삽교천 예산군(예산대교) 지점의 수위가 계속 하강하고 있으므로 2020년 08월 04일 01시 50분 에 발령한 예산 지역의 홍수주의보를
-                                                    해제합니다.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- end of accordion body -->
-                                </div>
-                                <!-- end of accordion item -->
-                                <div class="accordion__item js-accordion-item">
-                                    <div class="accordion-header js-accordion-header">
-                                        <div class="accrdion-main">
-                                            <div class="accrdion-img">
-                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
-                                                    <g>
-                                                        <g>
-                                                            <circle class="st0" cx="25" cy="26" r="21.8"/>
-                                                            <path class="st0" d="M25,4.7c11.8,0,21.3,9.5,21.3,21.3S36.8,47.3,25,47.3S3.7,37.8,3.7,26S13.2,4.7,25,4.7 M25,3.7    C12.7,3.7,2.7,13.7,2.7,26s10,22.3,22.3,22.3s22.3-10,22.3-22.3S37.3,3.7,25,3.7L25,3.7z"/>
-                                                        </g>
-                                                        <g>
-                                                            <g>
-                                                                <circle class="st1" cx="25" cy="24" r="21.8"/>
-                                                                <path class="st2" d="M25,2.7c11.8,0,21.3,9.5,21.3,21.3S36.8,45.3,25,45.3S3.7,35.8,3.7,24S13.2,2.7,25,2.7 M25,1.7     C12.7,1.7,2.7,11.7,2.7,24s10,22.3,22.3,22.3s22.3-10,22.3-22.3S37.3,1.7,25,1.7L25,1.7z"/>
-                                                            </g>
-                                                            <g>
-                                                                <defs>
-                                                                    <circle id="SVGID_1_" cx="25" cy="24" r="21.3"/>
-                                                                </defs>
-                                                                <clipPath id="SVGID_2_">
-                                                                    <use xlink:href="#SVGID_1_" style="overflow:visible;"/>
-                                                                </clipPath>
-                                                                <g class="st3">
-                                                                    <path class="st4" d="M45.1,25.4C45.2,25.4,45.2,25.4,45.1,25.4c0.5-0.2,0.9-0.5,1.2-0.5v2.2h-0.1c-0.7,0.2-1.4,0.7-2.4,0.9      c-0.2,0-0.4,0.5-0.3,1.2c0,0.5,0.2,0.7,0.4,0.7c0,0,0,0,0.1,0c1-0.2,1.7-0.7,2.3-0.9v3.1c-2.2,1.2-7.3,2.6-10.6,2.6      s-8.4-1.3-10.6-2.4c-2.2-1.2-7.3-2.6-10.6-2.6S6,31.2,3.7,32.3v-7.4h0.1c0.3-0.2,0.8-0.2,1.2-0.5c0.2,0,0.4-0.5,0.3-1.2      c0-0.5-0.2-0.9-0.5-0.7C4.4,22.7,4,22.7,3.7,23v-7.4C5.9,14.4,11,13,14.3,13s8.4,1.4,10.6,2.6s7.3,2.6,10.6,2.6S44,17,46.2,15.7      v3.1h-0.1c-0.7,0.2-1.4,0.7-2.4,0.9c-0.2,0-0.4,0.5-0.3,1.2c0,0.5,0.2,0.7,0.4,0.7c0,0,0,0,0.1,0c1-0.2,1.7-0.7,2.4-0.9v2.2      h-0.1c-0.3,0.2-0.8,0.2-1.2,0.5c-0.2,0-0.4,0.5-0.3,1.2C44.7,25.2,45,25.4,45.1,25.4z"/>
-                                                                    <g>
-                                                                        <path class="st1" d="M13.7,21.4c0-0.5-0.2-0.9-0.4-0.9c-0.8,0.2-1.5,0.2-2.3,0.5c-0.2,0-0.4,0.5-0.3,0.9c0,0.5,0.2,0.9,0.4,0.9       c0,0,0,0,0.1,0c0.8-0.2,1.5-0.2,2.3-0.5C13.5,22.4,13.7,22.2,13.7,21.4z"/>
-                                                                        <path class="st1" d="M9.1,17.6c-0.9,0.2-1.7,0.7-2.4,0.9c-0.2,0-0.4,0.7-0.3,1.2c0,0.5,0.2,0.7,0.4,0.7h0.1       c0.7-0.2,1.5-0.7,2.4-0.9c0.2,0,0.4-0.5,0.3-0.9C9.6,17.8,9.4,17.3,9.1,17.6z"/>
-                                                                        <path class="st1" d="M15.7,16.2c-0.8,0-1.6,0.2-2.5,0.2c-0.2,0-0.4,0.5-0.4,0.9c0,0.5,0.2,0.9,0.4,0.9l0,0       c0.9-0.2,1.6-0.2,2.4-0.2c0.2,0,0.4-0.5,0.4-0.9S15.9,16.2,15.7,16.2z"/>
-                                                                        <path class="st1" d="M15.7,24.5c-0.8,0-1.6,0.2-2.5,0.2c-0.2,0-0.4,0.5-0.4,0.9s0.2,0.9,0.4,0.9l0,0c0.9-0.2,1.6-0.2,2.4-0.2       c0.2,0,0.4-0.5,0.4-0.9C16.1,24.8,15.9,24.5,15.7,24.5z"/>
-                                                                        <path class="st1" d="M26.4,20.2c0.3,0.2,0.5,0.2,0.9,0.5c0.4,0.2,1,0.5,1.6,0.7c0,0,0,0,0.1,0c0.2,0,0.4-0.2,0.4-0.7       s-0.1-0.9-0.3-1.2c-0.7-0.2-1.1-0.5-1.5-0.7c-0.2-0.2-0.5-0.2-0.9-0.5c-0.2,0-0.4,0.2-0.5,0.7C26,19.5,26.1,20,26.4,20.2z"/>
-                                                                        <path class="st1" d="M9.1,25.8c-0.9,0.2-1.7,0.5-2.4,0.9c-0.2,0-0.4,0.7-0.3,1.2c0,0.5,0.1,0.7,0.3,0.7h0.1       c0.7-0.2,1.5-0.7,2.4-0.9c0.2,0,0.4-0.5,0.3-0.9C9.6,26,9.4,25.8,9.1,25.8z"/>
-                                                                        <path class="st1" d="M32.8,22.6c0.9,0.2,1.6,0.2,2.5,0.5l0,0c0.2,0,0.4-0.5,0.4-0.9c0-0.5-0.2-0.9-0.4-0.9       c-0.8,0-1.6-0.2-2.4-0.5c-0.2,0-0.4,0.2-0.4,0.9C32.4,22,32.6,22.4,32.8,22.6z"/>
-                                                                        <path class="st1" d="M39.5,23.1L39.5,23.1c0.8,0,1.6-0.2,2.5-0.5c0.2,0,0.4-0.5,0.4-0.9c0-0.5-0.2-0.9-0.4-0.9       c-0.9,0.2-1.6,0.2-2.4,0.5c-0.2,0-0.4,0.5-0.4,0.9C39.1,22.6,39.3,23.1,39.5,23.1z"/>
-                                                                        <path class="st1" d="M19.8,21.4c0-0.5-0.2-0.9-0.4-0.9c-0.9-0.2-1.6-0.2-2.3-0.2c-0.2,0-0.4,0.5-0.4,0.9c0,0.5,0.2,0.9,0.4,0.9       c0.7,0,1.4,0,2.3,0.2l0,0C19.6,22.4,19.8,22.2,19.8,21.4z"/>
-                                                                        <path class="st1" d="M19.8,18.3c0.8,0.2,1.6,0.2,2.4,0.5l0,0c0.2,0,0.4-0.5,0.4-0.9c0-0.5-0.1-0.9-0.3-0.9       c-0.9-0.2-1.6-0.5-2.5-0.5c-0.2,0-0.4,0.2-0.4,0.9C19.4,17.8,19.6,18.3,19.8,18.3z"/>
-                                                                        <path class="st1" d="M43.5,24.5c-0.8,0.2-1.5,0.2-2.3,0.5c-0.2,0-0.4,0.5-0.4,0.9c0,0.5,0.2,0.9,0.4,0.9l0,0       c0.8-0.2,1.5-0.2,2.3-0.5c0.2,0,0.4-0.5,0.3-0.9C44,25.1,43.8,24.5,43.5,24.5z"/>
-                                                                        <path class="st1" d="M22.4,25.3c-0.9-0.2-1.6-0.5-2.5-0.5c-0.2,0-0.4,0.2-0.4,0.9c0,0.5,0.1,0.9,0.4,0.9       c0.8,0.2,1.6,0.2,2.4,0.5l0,0c0.2,0,0.4-0.5,0.4-0.7C22.7,25.8,22.6,25.3,22.4,25.3z"/>
-                                                                        <path class="st1" d="M37.5,25.5c-0.7,0-1.4,0-2.3-0.2c-0.2,0-0.4,0.5-0.4,0.9c0,0.5,0.2,0.9,0.4,0.9c0.9,0.2,1.6,0.2,2.3,0.2       l0,0c0.2,0,0.4-0.5,0.4-0.9S37.7,25.5,37.5,25.5z"/>
-                                                                        <path class="st1" d="M41.9,29.1c-0.9,0.2-1.6,0.2-2.4,0.5c-0.2,0-0.4,0.5-0.4,0.9c0,0.5,0.2,0.9,0.4,0.9l0,0       c0.8,0,1.6-0.2,2.5-0.5c0.2,0,0.4-0.5,0.4-0.9C42.5,29.6,42.2,29.1,41.9,29.1z"/>
-                                                                        <path class="st1" d="M25.5,22.2c-0.7-0.2-1.4-0.5-2.3-0.7c-0.2,0-0.4,0.2-0.4,0.7s0.1,0.9,0.3,0.9c0.8,0.2,1.5,0.5,2.2,0.7       c0,0,0,0,0.1,0c0.2,0,0.4-0.2,0.4-0.7C25.9,22.6,25.7,22.2,25.5,22.2z"/>
-                                                                        <path class="st1" d="M35.4,29.3c-0.8,0-1.6-0.2-2.4-0.5c-0.2,0-0.4,0.2-0.4,0.9c0,0.5,0.1,0.9,0.4,0.9c0.9,0.2,1.6,0.2,2.5,0.5       l0,0c0.2,0,0.4-0.5,0.4-0.9C35.8,29.8,35.7,29.3,35.4,29.3z"/>
-                                                                        <path class="st1" d="M28.9,27.6c-0.7-0.2-1.1-0.5-1.5-0.7c-0.2-0.2-0.5-0.2-0.9-0.5c-0.2,0-0.4,0.2-0.5,0.7       c0,0.5,0.1,0.9,0.3,1.2c0.3,0.2,0.5,0.2,0.9,0.5c0.4,0.2,1,0.5,1.6,0.7c0,0,0,0,0.1,0c0.2,0,0.4-0.2,0.4-0.7       C29.3,28.4,29.1,27.9,28.9,27.6z"/>
-                                                                        <path class="st1" d="M31.4,24.3c-0.8-0.2-1.5-0.5-2.2-0.7c-0.2,0-0.4,0.2-0.5,0.7c0,0.5,0.1,0.9,0.3,1.2       c0.7,0.2,1.4,0.5,2.3,0.7c0,0,0,0,0.1,0c0.2,0,0.4-0.2,0.4-0.9C31.8,25.1,31.6,24.5,31.4,24.3z"/>
-                                                                    </g>
-                                                                </g>
-                                                            </g>
-                                                        </g>
-                                                    </g>
-                                                    </svg>
-                                            </div>
-                                            <div class="accrdion-txt">
-                                        <b>[홍수주의보 해제]</b>
-                                        <span>충청남도 예산군</span>
-                                        <span class="acc-block">2020.08.04. 06시 00분</span>
-                                    </div>
-                                    </div>
-                                    </div>
-                                    <div class="accordion-body js-accordion-body">
-                                        <div class="accordion-body__contents">
-                                            <div class="newsbreak"style="display: block;">
-                                                <p>
-                                                    <b>[홍수주의보 해제]</b>충청남도 예산군</p>
-                                                <label>홍수예보 제 2020-30 호</label><br>
-                                                <label>해제일시</label><span> 2020년 08월 04일 06시 00분</span><br>
-                                                <label>해제자</label><span>금강홍수통제소장</span><br>
-                                                <p class="news-content">삽교천 예산군(예산대교) 지점의 수위가 계속 하강하고 있으므로 2020년 08월 04일 01시 50분 에 발령한 예산 지역의 홍수주의보를
-                                                    해제합니다.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- end of accordion body -->
-                                </div>
-                                <!-- end of accordion item -->
-                                <div class="accordion__item js-accordion-item">
-                                    <div class="accordion-header js-accordion-header">
-                                        <div class="accrdion-main">
-                                            <div class="accrdion-img">
-                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
-                                                    <g>
-                                                        <g>
-                                                            <circle class="st0" cx="25" cy="26" r="21.8"/>
-                                                            <path class="st0" d="M25,4.7c11.8,0,21.3,9.5,21.3,21.3S36.8,47.3,25,47.3S3.7,37.8,3.7,26S13.2,4.7,25,4.7 M25,3.7    C12.7,3.7,2.7,13.7,2.7,26s10,22.3,22.3,22.3s22.3-10,22.3-22.3S37.3,3.7,25,3.7L25,3.7z"/>
-                                                        </g>
-                                                        <g>
-                                                            <g>
-                                                                <circle class="st1" cx="25" cy="24" r="21.8"/>
-                                                                <path class="st2" d="M25,2.7c11.8,0,21.3,9.5,21.3,21.3S36.8,45.3,25,45.3S3.7,35.8,3.7,24S13.2,2.7,25,2.7 M25,1.7     C12.7,1.7,2.7,11.7,2.7,24s10,22.3,22.3,22.3s22.3-10,22.3-22.3S37.3,1.7,25,1.7L25,1.7z"/>
-                                                            </g>
-                                                            <g>
-                                                                <defs>
-                                                                    <circle id="SVGID_1_" cx="25" cy="24" r="21.3"/>
-                                                                </defs>
-                                                                <clipPath id="SVGID_2_">
-                                                                    <use xlink:href="#SVGID_1_" style="overflow:visible;"/>
-                                                                </clipPath>
-                                                                <g class="st3">
-                                                                    <path class="st4" d="M45.1,25.4C45.2,25.4,45.2,25.4,45.1,25.4c0.5-0.2,0.9-0.5,1.2-0.5v2.2h-0.1c-0.7,0.2-1.4,0.7-2.4,0.9      c-0.2,0-0.4,0.5-0.3,1.2c0,0.5,0.2,0.7,0.4,0.7c0,0,0,0,0.1,0c1-0.2,1.7-0.7,2.3-0.9v3.1c-2.2,1.2-7.3,2.6-10.6,2.6      s-8.4-1.3-10.6-2.4c-2.2-1.2-7.3-2.6-10.6-2.6S6,31.2,3.7,32.3v-7.4h0.1c0.3-0.2,0.8-0.2,1.2-0.5c0.2,0,0.4-0.5,0.3-1.2      c0-0.5-0.2-0.9-0.5-0.7C4.4,22.7,4,22.7,3.7,23v-7.4C5.9,14.4,11,13,14.3,13s8.4,1.4,10.6,2.6s7.3,2.6,10.6,2.6S44,17,46.2,15.7      v3.1h-0.1c-0.7,0.2-1.4,0.7-2.4,0.9c-0.2,0-0.4,0.5-0.3,1.2c0,0.5,0.2,0.7,0.4,0.7c0,0,0,0,0.1,0c1-0.2,1.7-0.7,2.4-0.9v2.2      h-0.1c-0.3,0.2-0.8,0.2-1.2,0.5c-0.2,0-0.4,0.5-0.3,1.2C44.7,25.2,45,25.4,45.1,25.4z"/>
-                                                                    <g>
-                                                                        <path class="st1" d="M13.7,21.4c0-0.5-0.2-0.9-0.4-0.9c-0.8,0.2-1.5,0.2-2.3,0.5c-0.2,0-0.4,0.5-0.3,0.9c0,0.5,0.2,0.9,0.4,0.9       c0,0,0,0,0.1,0c0.8-0.2,1.5-0.2,2.3-0.5C13.5,22.4,13.7,22.2,13.7,21.4z"/>
-                                                                        <path class="st1" d="M9.1,17.6c-0.9,0.2-1.7,0.7-2.4,0.9c-0.2,0-0.4,0.7-0.3,1.2c0,0.5,0.2,0.7,0.4,0.7h0.1       c0.7-0.2,1.5-0.7,2.4-0.9c0.2,0,0.4-0.5,0.3-0.9C9.6,17.8,9.4,17.3,9.1,17.6z"/>
-                                                                        <path class="st1" d="M15.7,16.2c-0.8,0-1.6,0.2-2.5,0.2c-0.2,0-0.4,0.5-0.4,0.9c0,0.5,0.2,0.9,0.4,0.9l0,0       c0.9-0.2,1.6-0.2,2.4-0.2c0.2,0,0.4-0.5,0.4-0.9S15.9,16.2,15.7,16.2z"/>
-                                                                        <path class="st1" d="M15.7,24.5c-0.8,0-1.6,0.2-2.5,0.2c-0.2,0-0.4,0.5-0.4,0.9s0.2,0.9,0.4,0.9l0,0c0.9-0.2,1.6-0.2,2.4-0.2       c0.2,0,0.4-0.5,0.4-0.9C16.1,24.8,15.9,24.5,15.7,24.5z"/>
-                                                                        <path class="st1" d="M26.4,20.2c0.3,0.2,0.5,0.2,0.9,0.5c0.4,0.2,1,0.5,1.6,0.7c0,0,0,0,0.1,0c0.2,0,0.4-0.2,0.4-0.7       s-0.1-0.9-0.3-1.2c-0.7-0.2-1.1-0.5-1.5-0.7c-0.2-0.2-0.5-0.2-0.9-0.5c-0.2,0-0.4,0.2-0.5,0.7C26,19.5,26.1,20,26.4,20.2z"/>
-                                                                        <path class="st1" d="M9.1,25.8c-0.9,0.2-1.7,0.5-2.4,0.9c-0.2,0-0.4,0.7-0.3,1.2c0,0.5,0.1,0.7,0.3,0.7h0.1       c0.7-0.2,1.5-0.7,2.4-0.9c0.2,0,0.4-0.5,0.3-0.9C9.6,26,9.4,25.8,9.1,25.8z"/>
-                                                                        <path class="st1" d="M32.8,22.6c0.9,0.2,1.6,0.2,2.5,0.5l0,0c0.2,0,0.4-0.5,0.4-0.9c0-0.5-0.2-0.9-0.4-0.9       c-0.8,0-1.6-0.2-2.4-0.5c-0.2,0-0.4,0.2-0.4,0.9C32.4,22,32.6,22.4,32.8,22.6z"/>
-                                                                        <path class="st1" d="M39.5,23.1L39.5,23.1c0.8,0,1.6-0.2,2.5-0.5c0.2,0,0.4-0.5,0.4-0.9c0-0.5-0.2-0.9-0.4-0.9       c-0.9,0.2-1.6,0.2-2.4,0.5c-0.2,0-0.4,0.5-0.4,0.9C39.1,22.6,39.3,23.1,39.5,23.1z"/>
-                                                                        <path class="st1" d="M19.8,21.4c0-0.5-0.2-0.9-0.4-0.9c-0.9-0.2-1.6-0.2-2.3-0.2c-0.2,0-0.4,0.5-0.4,0.9c0,0.5,0.2,0.9,0.4,0.9       c0.7,0,1.4,0,2.3,0.2l0,0C19.6,22.4,19.8,22.2,19.8,21.4z"/>
-                                                                        <path class="st1" d="M19.8,18.3c0.8,0.2,1.6,0.2,2.4,0.5l0,0c0.2,0,0.4-0.5,0.4-0.9c0-0.5-0.1-0.9-0.3-0.9       c-0.9-0.2-1.6-0.5-2.5-0.5c-0.2,0-0.4,0.2-0.4,0.9C19.4,17.8,19.6,18.3,19.8,18.3z"/>
-                                                                        <path class="st1" d="M43.5,24.5c-0.8,0.2-1.5,0.2-2.3,0.5c-0.2,0-0.4,0.5-0.4,0.9c0,0.5,0.2,0.9,0.4,0.9l0,0       c0.8-0.2,1.5-0.2,2.3-0.5c0.2,0,0.4-0.5,0.3-0.9C44,25.1,43.8,24.5,43.5,24.5z"/>
-                                                                        <path class="st1" d="M22.4,25.3c-0.9-0.2-1.6-0.5-2.5-0.5c-0.2,0-0.4,0.2-0.4,0.9c0,0.5,0.1,0.9,0.4,0.9       c0.8,0.2,1.6,0.2,2.4,0.5l0,0c0.2,0,0.4-0.5,0.4-0.7C22.7,25.8,22.6,25.3,22.4,25.3z"/>
-                                                                        <path class="st1" d="M37.5,25.5c-0.7,0-1.4,0-2.3-0.2c-0.2,0-0.4,0.5-0.4,0.9c0,0.5,0.2,0.9,0.4,0.9c0.9,0.2,1.6,0.2,2.3,0.2       l0,0c0.2,0,0.4-0.5,0.4-0.9S37.7,25.5,37.5,25.5z"/>
-                                                                        <path class="st1" d="M41.9,29.1c-0.9,0.2-1.6,0.2-2.4,0.5c-0.2,0-0.4,0.5-0.4,0.9c0,0.5,0.2,0.9,0.4,0.9l0,0       c0.8,0,1.6-0.2,2.5-0.5c0.2,0,0.4-0.5,0.4-0.9C42.5,29.6,42.2,29.1,41.9,29.1z"/>
-                                                                        <path class="st1" d="M25.5,22.2c-0.7-0.2-1.4-0.5-2.3-0.7c-0.2,0-0.4,0.2-0.4,0.7s0.1,0.9,0.3,0.9c0.8,0.2,1.5,0.5,2.2,0.7       c0,0,0,0,0.1,0c0.2,0,0.4-0.2,0.4-0.7C25.9,22.6,25.7,22.2,25.5,22.2z"/>
-                                                                        <path class="st1" d="M35.4,29.3c-0.8,0-1.6-0.2-2.4-0.5c-0.2,0-0.4,0.2-0.4,0.9c0,0.5,0.1,0.9,0.4,0.9c0.9,0.2,1.6,0.2,2.5,0.5       l0,0c0.2,0,0.4-0.5,0.4-0.9C35.8,29.8,35.7,29.3,35.4,29.3z"/>
-                                                                        <path class="st1" d="M28.9,27.6c-0.7-0.2-1.1-0.5-1.5-0.7c-0.2-0.2-0.5-0.2-0.9-0.5c-0.2,0-0.4,0.2-0.5,0.7       c0,0.5,0.1,0.9,0.3,1.2c0.3,0.2,0.5,0.2,0.9,0.5c0.4,0.2,1,0.5,1.6,0.7c0,0,0,0,0.1,0c0.2,0,0.4-0.2,0.4-0.7       C29.3,28.4,29.1,27.9,28.9,27.6z"/>
-                                                                        <path class="st1" d="M31.4,24.3c-0.8-0.2-1.5-0.5-2.2-0.7c-0.2,0-0.4,0.2-0.5,0.7c0,0.5,0.1,0.9,0.3,1.2       c0.7,0.2,1.4,0.5,2.3,0.7c0,0,0,0,0.1,0c0.2,0,0.4-0.2,0.4-0.9C31.8,25.1,31.6,24.5,31.4,24.3z"/>
-                                                                    </g>
-                                                                </g>
-                                                            </g>
-                                                        </g>
-                                                    </g>
-                                                    </svg>
-                                            </div>
-                                            <div class="accrdion-txt">
-                                        <b>[홍수주의보 해제]</b>
-                                        <span>충청남도 예산군</span>
-                                        <span class="acc-block">2020.08.04. 06시 00분</span>
-                                    </div>
-                                    </div>
-                                    </div>
-                                    <div class="accordion-body js-accordion-body">
-                                        <div class="accordion-body__contents">
-                                            <div class="newsbreak"style="display: block;">
-                                                <p>
-                                                    <b>[홍수주의보 해제]</b>충청남도 예산군</p>
-                                                <label>홍수예보 제 2020-30 호</label><br>
-                                                <label>해제일시</label><span> 2020년 08월 04일 06시 00분</span><br>
-                                                <label>해제자</label><span>금강홍수통제소장</span><br>
-                                                <p class="news-content">삽교천 예산군(예산대교) 지점의 수위가 계속 하강하고 있으므로 2020년 08월 04일 01시 50분 에 발령한 예산 지역의 홍수주의보를
-                                                    해제합니다.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- end of accordion body -->
-                                </div>
-                                <!-- end of accordion item -->
-                                <div class="accordion__item js-accordion-item">
-                                    <div class="accordion-header js-accordion-header">
-                                        <div class="accrdion-main">
-                                            <div class="accrdion-img">
-                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
-                                                    <g>
-                                                        <g>
-                                                            <circle class="st0" cx="25" cy="26" r="21.8"/>
-                                                            <path class="st0" d="M25,4.7c11.8,0,21.3,9.5,21.3,21.3S36.8,47.3,25,47.3S3.7,37.8,3.7,26S13.2,4.7,25,4.7 M25,3.7    C12.7,3.7,2.7,13.7,2.7,26s10,22.3,22.3,22.3s22.3-10,22.3-22.3S37.3,3.7,25,3.7L25,3.7z"/>
-                                                        </g>
-                                                        <g>
-                                                            <g>
-                                                                <circle class="st1" cx="25" cy="24" r="21.8"/>
-                                                                <path class="st2" d="M25,2.7c11.8,0,21.3,9.5,21.3,21.3S36.8,45.3,25,45.3S3.7,35.8,3.7,24S13.2,2.7,25,2.7 M25,1.7     C12.7,1.7,2.7,11.7,2.7,24s10,22.3,22.3,22.3s22.3-10,22.3-22.3S37.3,1.7,25,1.7L25,1.7z"/>
-                                                            </g>
-                                                            <g>
-                                                                <defs>
-                                                                    <circle id="SVGID_1_" cx="25" cy="24" r="21.3"/>
-                                                                </defs>
-                                                                <clipPath id="SVGID_2_">
-                                                                    <use xlink:href="#SVGID_1_" style="overflow:visible;"/>
-                                                                </clipPath>
-                                                                <g class="st3">
-                                                                    <path class="st4" d="M45.1,25.4C45.2,25.4,45.2,25.4,45.1,25.4c0.5-0.2,0.9-0.5,1.2-0.5v2.2h-0.1c-0.7,0.2-1.4,0.7-2.4,0.9      c-0.2,0-0.4,0.5-0.3,1.2c0,0.5,0.2,0.7,0.4,0.7c0,0,0,0,0.1,0c1-0.2,1.7-0.7,2.3-0.9v3.1c-2.2,1.2-7.3,2.6-10.6,2.6      s-8.4-1.3-10.6-2.4c-2.2-1.2-7.3-2.6-10.6-2.6S6,31.2,3.7,32.3v-7.4h0.1c0.3-0.2,0.8-0.2,1.2-0.5c0.2,0,0.4-0.5,0.3-1.2      c0-0.5-0.2-0.9-0.5-0.7C4.4,22.7,4,22.7,3.7,23v-7.4C5.9,14.4,11,13,14.3,13s8.4,1.4,10.6,2.6s7.3,2.6,10.6,2.6S44,17,46.2,15.7      v3.1h-0.1c-0.7,0.2-1.4,0.7-2.4,0.9c-0.2,0-0.4,0.5-0.3,1.2c0,0.5,0.2,0.7,0.4,0.7c0,0,0,0,0.1,0c1-0.2,1.7-0.7,2.4-0.9v2.2      h-0.1c-0.3,0.2-0.8,0.2-1.2,0.5c-0.2,0-0.4,0.5-0.3,1.2C44.7,25.2,45,25.4,45.1,25.4z"/>
-                                                                    <g>
-                                                                        <path class="st1" d="M13.7,21.4c0-0.5-0.2-0.9-0.4-0.9c-0.8,0.2-1.5,0.2-2.3,0.5c-0.2,0-0.4,0.5-0.3,0.9c0,0.5,0.2,0.9,0.4,0.9       c0,0,0,0,0.1,0c0.8-0.2,1.5-0.2,2.3-0.5C13.5,22.4,13.7,22.2,13.7,21.4z"/>
-                                                                        <path class="st1" d="M9.1,17.6c-0.9,0.2-1.7,0.7-2.4,0.9c-0.2,0-0.4,0.7-0.3,1.2c0,0.5,0.2,0.7,0.4,0.7h0.1       c0.7-0.2,1.5-0.7,2.4-0.9c0.2,0,0.4-0.5,0.3-0.9C9.6,17.8,9.4,17.3,9.1,17.6z"/>
-                                                                        <path class="st1" d="M15.7,16.2c-0.8,0-1.6,0.2-2.5,0.2c-0.2,0-0.4,0.5-0.4,0.9c0,0.5,0.2,0.9,0.4,0.9l0,0       c0.9-0.2,1.6-0.2,2.4-0.2c0.2,0,0.4-0.5,0.4-0.9S15.9,16.2,15.7,16.2z"/>
-                                                                        <path class="st1" d="M15.7,24.5c-0.8,0-1.6,0.2-2.5,0.2c-0.2,0-0.4,0.5-0.4,0.9s0.2,0.9,0.4,0.9l0,0c0.9-0.2,1.6-0.2,2.4-0.2       c0.2,0,0.4-0.5,0.4-0.9C16.1,24.8,15.9,24.5,15.7,24.5z"/>
-                                                                        <path class="st1" d="M26.4,20.2c0.3,0.2,0.5,0.2,0.9,0.5c0.4,0.2,1,0.5,1.6,0.7c0,0,0,0,0.1,0c0.2,0,0.4-0.2,0.4-0.7       s-0.1-0.9-0.3-1.2c-0.7-0.2-1.1-0.5-1.5-0.7c-0.2-0.2-0.5-0.2-0.9-0.5c-0.2,0-0.4,0.2-0.5,0.7C26,19.5,26.1,20,26.4,20.2z"/>
-                                                                        <path class="st1" d="M9.1,25.8c-0.9,0.2-1.7,0.5-2.4,0.9c-0.2,0-0.4,0.7-0.3,1.2c0,0.5,0.1,0.7,0.3,0.7h0.1       c0.7-0.2,1.5-0.7,2.4-0.9c0.2,0,0.4-0.5,0.3-0.9C9.6,26,9.4,25.8,9.1,25.8z"/>
-                                                                        <path class="st1" d="M32.8,22.6c0.9,0.2,1.6,0.2,2.5,0.5l0,0c0.2,0,0.4-0.5,0.4-0.9c0-0.5-0.2-0.9-0.4-0.9       c-0.8,0-1.6-0.2-2.4-0.5c-0.2,0-0.4,0.2-0.4,0.9C32.4,22,32.6,22.4,32.8,22.6z"/>
-                                                                        <path class="st1" d="M39.5,23.1L39.5,23.1c0.8,0,1.6-0.2,2.5-0.5c0.2,0,0.4-0.5,0.4-0.9c0-0.5-0.2-0.9-0.4-0.9       c-0.9,0.2-1.6,0.2-2.4,0.5c-0.2,0-0.4,0.5-0.4,0.9C39.1,22.6,39.3,23.1,39.5,23.1z"/>
-                                                                        <path class="st1" d="M19.8,21.4c0-0.5-0.2-0.9-0.4-0.9c-0.9-0.2-1.6-0.2-2.3-0.2c-0.2,0-0.4,0.5-0.4,0.9c0,0.5,0.2,0.9,0.4,0.9       c0.7,0,1.4,0,2.3,0.2l0,0C19.6,22.4,19.8,22.2,19.8,21.4z"/>
-                                                                        <path class="st1" d="M19.8,18.3c0.8,0.2,1.6,0.2,2.4,0.5l0,0c0.2,0,0.4-0.5,0.4-0.9c0-0.5-0.1-0.9-0.3-0.9       c-0.9-0.2-1.6-0.5-2.5-0.5c-0.2,0-0.4,0.2-0.4,0.9C19.4,17.8,19.6,18.3,19.8,18.3z"/>
-                                                                        <path class="st1" d="M43.5,24.5c-0.8,0.2-1.5,0.2-2.3,0.5c-0.2,0-0.4,0.5-0.4,0.9c0,0.5,0.2,0.9,0.4,0.9l0,0       c0.8-0.2,1.5-0.2,2.3-0.5c0.2,0,0.4-0.5,0.3-0.9C44,25.1,43.8,24.5,43.5,24.5z"/>
-                                                                        <path class="st1" d="M22.4,25.3c-0.9-0.2-1.6-0.5-2.5-0.5c-0.2,0-0.4,0.2-0.4,0.9c0,0.5,0.1,0.9,0.4,0.9       c0.8,0.2,1.6,0.2,2.4,0.5l0,0c0.2,0,0.4-0.5,0.4-0.7C22.7,25.8,22.6,25.3,22.4,25.3z"/>
-                                                                        <path class="st1" d="M37.5,25.5c-0.7,0-1.4,0-2.3-0.2c-0.2,0-0.4,0.5-0.4,0.9c0,0.5,0.2,0.9,0.4,0.9c0.9,0.2,1.6,0.2,2.3,0.2       l0,0c0.2,0,0.4-0.5,0.4-0.9S37.7,25.5,37.5,25.5z"/>
-                                                                        <path class="st1" d="M41.9,29.1c-0.9,0.2-1.6,0.2-2.4,0.5c-0.2,0-0.4,0.5-0.4,0.9c0,0.5,0.2,0.9,0.4,0.9l0,0       c0.8,0,1.6-0.2,2.5-0.5c0.2,0,0.4-0.5,0.4-0.9C42.5,29.6,42.2,29.1,41.9,29.1z"/>
-                                                                        <path class="st1" d="M25.5,22.2c-0.7-0.2-1.4-0.5-2.3-0.7c-0.2,0-0.4,0.2-0.4,0.7s0.1,0.9,0.3,0.9c0.8,0.2,1.5,0.5,2.2,0.7       c0,0,0,0,0.1,0c0.2,0,0.4-0.2,0.4-0.7C25.9,22.6,25.7,22.2,25.5,22.2z"/>
-                                                                        <path class="st1" d="M35.4,29.3c-0.8,0-1.6-0.2-2.4-0.5c-0.2,0-0.4,0.2-0.4,0.9c0,0.5,0.1,0.9,0.4,0.9c0.9,0.2,1.6,0.2,2.5,0.5       l0,0c0.2,0,0.4-0.5,0.4-0.9C35.8,29.8,35.7,29.3,35.4,29.3z"/>
-                                                                        <path class="st1" d="M28.9,27.6c-0.7-0.2-1.1-0.5-1.5-0.7c-0.2-0.2-0.5-0.2-0.9-0.5c-0.2,0-0.4,0.2-0.5,0.7       c0,0.5,0.1,0.9,0.3,1.2c0.3,0.2,0.5,0.2,0.9,0.5c0.4,0.2,1,0.5,1.6,0.7c0,0,0,0,0.1,0c0.2,0,0.4-0.2,0.4-0.7       C29.3,28.4,29.1,27.9,28.9,27.6z"/>
-                                                                        <path class="st1" d="M31.4,24.3c-0.8-0.2-1.5-0.5-2.2-0.7c-0.2,0-0.4,0.2-0.5,0.7c0,0.5,0.1,0.9,0.3,1.2       c0.7,0.2,1.4,0.5,2.3,0.7c0,0,0,0,0.1,0c0.2,0,0.4-0.2,0.4-0.9C31.8,25.1,31.6,24.5,31.4,24.3z"/>
-                                                                    </g>
-                                                                </g>
-                                                            </g>
-                                                        </g>
-                                                    </g>
-                                                    </svg>
-                                            </div>
-                                            <div class="accrdion-txt">
-                                        <b>[홍수주의보 해제]</b>
-                                        <span>충청남도 예산군</span>
-                                        <span class="acc-block">2020.08.04. 06시 00분</span>
-                                    </div>
-                                    </div>
-                                    </div>
-                                    <div class="accordion-body js-accordion-body">
-                                        <div class="accordion-body__contents">
-                                            <div class="newsbreak"style="display: block;">
-                                                <p>
-                                                    <b>[홍수주의보 해제]</b>충청남도 예산군</p>
-                                                <label>홍수예보 제 2020-30 호</label><br>
-                                                <label>해제일시</label><span> 2020년 08월 04일 06시 00분</span><br>
-                                                <label>해제자</label><span>금강홍수통제소장</span><br>
-                                                <p class="news-content">삽교천 예산군(예산대교) 지점의 수위가 계속 하강하고 있으므로 2020년 08월 04일 01시 50분 에 발령한 예산 지역의 홍수주의보를
-                                                    해제합니다.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- end of accordion body -->
-                                </div>
-                                <!-- end of accordion item -->
-                            </div>
-                            <!-- end of accordion -->
-                            <!-- 아코디언 끝 -->
-                        </div>
-                        <!-- information-box -->
-                    </div>
-                </div>
-                <div class="cont dam-cont">
+                    <!-- 퀵메뉴 -->
+                <div class="quickmenu info-quick">
                     <ul>
                         <li>
-                            <strong>홍수 발생 시</strong>
-                            <b>행동요령</b>
+                            <a href="information.html"><img src="resources/images/ico_all_w.png" alt="전체">전체</a>
                         </li>
                         <li>
-                            <b>1</b>
-                            <span>
-                                높은 곳으로 대피</span>
+                            <a href="firecenter-info.html">
+                                <img src="resources/images/icon/main-menu-1-3-w.png" alt="사건사고">
+                            사건사고속보</a>
+                        </li>
+                        <li class="hv">
+                            <a href="dam-info.html">
+                                <img src="resources/images/ico_typhn_w.png" alt="태풍아이콘">
+                            태풍</a>
+                            </li>
+                        <li>
+                            <a href="earth-info.html">
+                                <img src="resources/images/ico_drought_w.png" alt="지진아이콘"> 
+                            지진</a>
                         </li>
                         <li>
-                            <b>2</b>
-                            <span>
-                                비탈면이 있는 지역<br>
-                                피하기</span>
-                        </li>
-                        <li>
-                            <b>3</b>
-                            <span>전기차단기 Off<br>
-                                가스 밸브 잠그기</span>
-                        </li>
-                        <li>
-                            <b>4</b>
-                            <span>침수 지역 자동차<br>
-                                운행 자제</span>
-                        </li>
-                        <li>
-                            <b>5</b>
-                            <span>수돗물, 저장식수 등<br>
-                                오염 여부 확인</span>
+                            <a href="government-info.html">
+                                <img src="resources/images/ico_flood_w.png" alt="하천수위">
+                                하천 수위</a>
                         </li>
                     </ul>
                 </div>
-                <!-- 퀵메뉴 -->
-            <div class="quickmenu info-quick">
-                <ul>
-                    <li>
-                        <a href="information.html"><img src="resources/images/ico_all_w.png" alt="전체">전체</a>
-                    </li>
-                    <li>
-                        <a href="firecenter-info.html">
-                            <img src="resources/images/icon/main-menu-1-3-w.png" alt="사건사고">
-                        사건사고속보</a>
-                    </li>
-                    <li class="hv">
-                        <a href="dam-info.html">
-                            <img src="resources/images/ico_typhn_w.png" alt="태풍아이콘">
-                        태풍</a>
-                        </li>
-                    <li>
-                        <a href="earth-info.html">
-                            <img src="resources/images/ico_drought_w.png" alt="지진아이콘"> 
-                        지진</a>
-                    </li>
-                    <li>
-                        <a href="government-info.html">
-                            <img src="resources/images/ico_flood_w.png" alt="하천수위">
-                            하천 수위</a>
-                    </li>
-                </ul>
+                <!-- 퀵메뉴 끝 -->
             </div>
-            <!-- 퀵메뉴 끝 -->
-        </div>
-    </section>
+        </section>
+    </main>
         <!-- TOP버튼 -->
     <div class="quick">
         <button type="button" class="go_top_btn" style="display: inline-block;"><span>위로</span></button>
@@ -779,22 +1146,13 @@
             </div>
         </footer>
         <!-- JS -->
-        <script
-            type="text/javascript"
-            src="resources/javascripts/vendor/jquery.tabslet.min.js"></script>
-        <script
-            type="text/javascript"
-            src="resources/javascripts/vendor/rainbow-custom.min.js"></script>
-        <script
-            type="text/javascript"
-            src="resources/javascripts/vendor/jquery.anchor.js"></script>
+        <script type="text/javascript" src="resources/javascripts/vendor/jquery.tabslet.min.js"></script>
+        <script type="text/javascript" src="resources/javascripts/vendor/rainbow-custom.min.js"></script>
+        <script type="text/javascript" src="resources/javascripts/vendor/jquery.anchor.js"></script>
         <script src="resources/javascripts/initializers.js"></script>
-        <script type="text/javascript" src="resources/js/jquery-ui.js">
-        </script>
+        <script type="text/javascript" src="resources/js/jquery-ui.js"></script>
         <!-- JS ends -->
         <!-- <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script> -->
         <script type="text/javascript" src="resources/js/main.js"></script>
-        <script type="text/javascript" src="resources/js/accordion.js"></script>
-
     </body>
 </html>

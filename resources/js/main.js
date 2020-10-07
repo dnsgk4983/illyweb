@@ -171,6 +171,13 @@ $(selector).on('click', function(){
     $(this).addClass('active-2');
 });
 
+var infoNum = '.info-tab li';
+
+$(infoNum).on('click', function(){
+    $(infoNum).removeClass('active-2');
+    $(this).addClass('active-2');
+});
+
 // 수정한 퀵메뉴
 $(window).scroll(function() {
     if($(this).scrollTop() > 170) {

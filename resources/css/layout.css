@@ -91,16 +91,6 @@ body{
     letter-spacing: -1px;
     font-family: 'Noto Sans KR';
 }
-		
-main{	
-    background: url('../images/background-main.jpg');	
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    /* background-color: #f1f7f5; */
-
-    background-position: bottom center;
-}
 
 button{
     cursor:pointer;
@@ -4345,15 +4335,15 @@ table a:link {
 }
 .weather-info-map{
     width:67%;
-    height:560px;
+    height:660px;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 1px 1px 4px #333;
 }
 .weather-info-tab{
-    width:31%;
+    width:100%;
     background-color:cadetblue;
-    height: 560px;
+    height: 660px;
     position: relative;
     box-shadow: 1px 1px 4px #333;
 }
@@ -4444,7 +4434,7 @@ table a:link {
 
 .weather-info-map-box{
     width: 100%;
-    height: 512px;
+    height: 612px;
     background-color: #00a645;
 }
 
@@ -4477,170 +4467,10 @@ table a:link {
 .weather-information-box{
     overflow: auto;
     width: 100%;
-    height: 495px;
+    height: 590px;
     background-color: #fff;
 }
 
-/* accordion */
-
-.accordion {
-    font-size: 1rem;
-    width: 100%;
-    margin: 0 auto;
-    border-radius: 5px;
-  }
-  
-.accrdion-main{
-    display:flex;
-}
-.accrdion-txt{
-    padding-left: 20px;
-}
-
-  .accordion-header,
-  .accordion-body {
-    background: white;
-  }
-  
-  .accordion-header {
-    padding: 1em 1.5em;
-    background: url('../images/line_newsbreak.gif')no-repeat #fff;
-    background-position: 28px;
-    cursor: pointer;
-    font-size: .7em;
-    letter-spacing: .1em;
-    transition: all .3s;
-    text-transform: uppercase;
-    position: relative;
-  }
-  .accordion__item {
-      
-      /* border-bottom: 1px solid #3a4ba4; */
-  }
-  
-  .accordion__item .accordion__item {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-  }
-  
-  .accordion-header:hover {
-
-    position: relative;
-    z-index: 5;
-
-  }
-  
-  .accordion-body {
-    background: url('../images/line_newsbreak.gif')no-repeat #fcfcfc;
-    background-position: 28px;
-    color: #353535;
-    display: none;
-    border-bottom: 1px solid #ccc;
-  }
-  
-  .accordion-body__contents {
-    padding: 1.5em 1.5em;
-    font-size: .85em;
-    background:url('../images/line.jpg')
-  }
-  
-  .accordion__item.active:last-child .accordion-header {
-    border-radius: none;
-  }
-  
-  .accordion:first-child > .accordion__item > .accordion-header {
-      background: url('../images/line_newsbreak.gif') no-repeat #fff;
-      background-position: 28px;
-    border-bottom: 1px solid #ccc;
-  }
-  
-  .accordion__item > .accordion-header:after {
-    content: "\f3d0";
-    font-family: IonIcons;
-    font-size: 2.3em;
-    float: right;
-    position: absolute;
-    right: 20px;
-    transition: .3s all;
-    transform: rotate(0deg);
-    color:#000;
-    margin-top: -37px;
-  }
-  
-  .accordion__item.active > .accordion-header:after {
-    transform: rotate(-180deg);
-  }
-  
-  .accordion__item.active .accordion-header {
-    background: #fff;
-
-  }
-  
-  .accordion__item .accordion__item .accordion-header {
-    background: #f1f1f1;
-    color: #353535;
-  }
-  
-  .accordion-header b{
-    margin-right: 5px;
-    font-weight: 400;
-    color: #fa2829;
-    font-size: 16px;
-}
-
-.accrdion-txt{
-    font-family: 'Noto Sans KR';
-}
-
-.accordion-header span {
-    font-size: 16px;
-    color: #333;
-    font-weight: 400;
-}
-.acc-block{
-    display:block;
-    color: #777 !important;
-    font-size: 14px !important;
-    font-weight: 300 !important;
-}
-.accrdion-img{
-    width: 31px;
-    height: 31px;
-    background: #e12f29;
-    margin-left: -5px;
-    margin-top: 5px;
-    border-radius: 50px;
-}
-.accrdion-img svg{
-    vertical-align: middle;
-    width: 21px;
-    height: 31px;
-    margin-left: 5px;
-    margin-top: -5px;
-    padding-top: 10px;
-}
-
-.accrdion-img svg .st0{fill:transparent;stroke:transparent;stroke-miterlimit:10;}
-.accrdion-img svg .st1{fill:#e12f29;stroke:none;stroke-miterlimit:10;}
-.accrdion-img svg .st2{clip-path:url(#SVGID_2_);}
-.accrdion-img svg .st3{fill:#FFFFFF;}
-
-.accordion__item:nth-child(1) .accrdion-img svg .st2{ fill: #fff;}
-.accordion__item:nth-child(1) .accrdion-img svg .st3{ fill: #e12f29;}
-
-.accordion__item:nth-child(3) .accrdion-img svg .st2{ fill: #fff;}
-
-.accordion__item:nth-child(5) .accrdion-img svg .st2{ fill: #fff;}
-
-.government-accordion svg .st3,
-.dam-accordion svg .st3{ fill : #fff !important}
-.fire-accordion svg .st0{fill:transparent;stroke:transparent;stroke-miterlimit:10;}
-.fire-accordion svg .st1{fill:#e12f29;stroke:none;stroke-miterlimit:10;}
-.fire-accordion svg .st2{fill:#fff;}
-
-.firecenter-accordion svg .st3{fill: #e12f29 !important;}
-.firecenter-accordion svg .st2{ fill: #fff;}
-
-.earth-accordion svg .st2{fill: #fff;}
 .newsbreak{
     margin-left: 50px;
     margin-right: 15px;
@@ -4668,9 +4498,6 @@ table a:link {
       padding: 1em;
     }
     
-    .accordion {
-      width: 100%;
-    }
   }
 
 
@@ -4728,36 +4555,6 @@ table a:link {
     border: none;
 }
 
-/* dam-cont */
-.dam-cont li:nth-child(1){
-    background: url('../images/bg_flood_cht.png')no-repeat #ffffff;
-}
-.dam-cont li:nth-child(2){
-    position: relative;
-    background: url('../images/img_flood_cht01.png')no-repeat #ffffff;
-    background-position: 50% 80%;
-}
-.dam-cont li:nth-child(3){
-    position: relative;
-    background: url('../images/img_flood_cht02.png')no-repeat #ffffff;
-    background-position: 50% 80%;
-}
-.dam-cont li:nth-child(4){
-    position: relative;
-    background: url('../images/img_flood_cht03.png')no-repeat #ffffff;
-    background-position: 50% 80%;
-}
-.dam-cont li:nth-child(5){
-    position: relative;
-    background: url('../images/img_flood_cht04.png')no-repeat #ffffff;
-    background-position: 50% 80%;
-}
-.dam-cont li:nth-child(6){
-    position: relative;
-    background: url('../images/img_flood_cht05.png')no-repeat #ffffff;
-    background-position: 50% 80%;
-    border: none;
-}
 
 /* fire-cont */
 .fire-cont li:nth-child(1){
@@ -6326,6 +6123,7 @@ a.more > span{
     width: 90%;
     border: 1px solid #ddd;
     border-radius: 5px;
+    text-align: center;
 }
 #ui-datepicker-div{
     z-index: 600;
@@ -6376,9 +6174,78 @@ table.ui-datepicker-calendar td a{
     padding: 5px 0;
     border-radius: 5px;
 }
+
+
+
+
+/* 수정 css */
+
+/* 4666 max-width:1000 */
+
 #myModal{
     display: none !important;
 }
+
+body{
+    min-width: 1240px;
+    /* overflow-x: hidden; */
+}
+
+main{
+    background: url('../images/background-main.jpg');	
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    /* background-color: #f1f7f5; */
+
+    background-position: bottom center;
+}
+
 #tab-1 > img {
     width: 100%;
+}
+.sf-title{    
+    position: absolute;
+    left: 4px;
+    top: 7px;
+    z-index: 50;
+    font-size: 13px;
+    background-color: #258fff;
+    padding: 8px 12px;
+    border-radius: 11px;
+    color: white;
+}
+
+/* 6210 줄 quickmenu 주석 */
+.weather-information-box table{
+    width: 100%;
+    text-align: center;
+}
+.weather-information-box table tr{
+    height: 37px;
+}
+.weather-info-num{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+}
+.weather-info-num ul{
+    display: flex;
+    margin-left: 0;
+    margin-right: 50px;
+}
+.weather-info-num ul > li{
+    margin: 0 7px;
+}
+
+.weather-wrap{
+    width: 31%;
+    height: 660px;
+    position: relative;
+}
+main.info-bg{
+    background: url(../images/info-bg.jpg);
+    background-size: cover;
+    background-position: center;
 }
