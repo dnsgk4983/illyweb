@@ -4,8 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-        <meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
-        <meta name="viewport" content="width=1240,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta
             property="”og:image”"
             content="resources/images/POZ_202007131009436070.jpg">
@@ -20,283 +19,62 @@
         <link rel="stylesheet" href="resources/css/commmon/common.css">
         <link rel="stylesheet" href="resources/css/layout.css">
         <link
-            rel="stylesheet"
-            href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+        rel="stylesheet"
+        href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
         <link rel="stylesheet" href="resources/css/slick.css">
         <!-- jQuery Modal -->
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
         <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"/>
-            <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <link rel="stylesheet" href="resources/css/bootstrap.min.css">
+        <link rel="stylesheet" href="resources/css/bootstrap-theme.min.css">
     </head>
 
     <body>
         <!-- 공통메뉴 -->
         <header id="header">
-            <div class="nav-wrapper">
-                <a href="index.html">
-                    <h1 id="logo">예산재난포털</h1>
-                </a>
-                <div class="gnb" id="gnb">
-                    <ul>
-                        <li>
-                            <a href="#">종합날씨</a>
-                            <div class="sub-nav-wrap">
-                                <div class="sub-nav sub-nav-weather">
-                                    <ul>
-                                        <li>
-                                            <a href="livingweather.html">
-                                                <div class="sub-icon-6">
-                                                    <img src="resources/images/icon/main-menu-2-1.png" alt="생활날씨">
-                                                    <img src="resources/images/icon/main-menu-2-1-hover.png" alt="생활날씨">
-                                                </div>
-                                                생활날씨</a>
-                                        </li>
-                                        <li>
-                                            <a href="rain-info.html">
-                                                <div class="sub-icon-7">
-                                                    <img src="resources/images/icon/main-menu-2-2.png" alt="강우정보">
-                                                    <img src="resources/images/icon/main-menu-2-2-hover.png" alt="강우정보">
-                                                </div>
-                                                강우정보</a>
-                                        </li>
-                                        <li>
-                                            <a href="snow-info.html">
-                                                <div class="sub-icon-8">
-                                                    <img src="resources/images/icon/main-menu-2-3.png" alt="적설정보">
-                                                    <img src="resources/images/icon/main-menu-2-3-hover.png" alt="적설정보">
-                                                </div>
-                                                적설정보</a>
-                                        </li>
-                                    </ul>
-                                </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="nav navbar-default" id="myYesan">
+                            <div class="navbar-header">
+                                <button type="button" data-toggle="collapse" data-target="#navbar-collapse-grid" class="navbar-toggle">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a href="/">
+                                    <img src="resources/images/logo.png" alt="예산군청_로고">
+                                </a>
                             </div>
-                        </li>
-                        <!-- 1depth -->
-                        <li>
-                            <a href="#">생활안전정보</a>
-                            <div class="sub-nav-wrap">
-                                <div class="sub-nav sub-nav-information">
-                                    <ul>
-                                        <li>
-                                            <a href="#">
-                                                <div class="sub-icon-10">
-                                                    <img src="resources/images/icon/main-menu-3-2.png" alt="재난예방정보">
-                                                    <img src="resources/images/icon/main-menu-3-2-hover.png" alt="재난예방정보">
-                                                </div>
-                                                재난예방정보</a>
-                                            <div class="inner-nav">
-                                                <ul>
-                                                    <li>
-                                                        <a href="earthquake.html">자연재난</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="traffic.html">사회재난</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="extinguisher.html">생활안전수칙</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="farm.html">농어촌안전</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="spring.html">계절별재난</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="baby.html">생애주기별 재난</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-
-                                        <li>
-                                            <a href="#">
-                                                <div class="sub-icon-11">
-                                                    <img src="resources/images/icon/main-menu-3-3.png" alt="재난안전보험">
-                                                    <img src="resources/images/icon/main-menu-3-3-hover.png" alt="재난안전보험">
-                                                </div>
-                                                재난안전보험</a>
-                                            <div class="inner-nav">
-                                                <ul>
-                                                    <li>
-                                                        <a href="insurance.html">풍수해보험</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="safe-insurance.html">예산군 군민안전보험</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="bicycle.html">예산군 자전거안전보험</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-
-                                        <li>
-                                            <a href="#">
-                                                <div class="sub-icon-12">
-                                                    <img src="resources/images/icon/main-menu-3-4.png" alt="재난안전앱">
-                                                    <img src="resources/images/icon/main-menu-3-4-hover.png" alt="재난안전앱">
-                                                </div>
-                                                재난안전앱</a>
-                                            <div class="inner-nav">
-                                                <ul>
-                                                    <li>
-                                                        <a href="safe-app.html">안전디딤돌</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="safe-news.html">안전신문고</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            안전신문앱
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-
-                                        <li>
-                                            <a href="#">
-                                                <div class="sub-icon-9">
-                                                    <img src="resources/images/icon/main-menu-3-1.png" alt="재난안전지도">
-                                                    <img src="resources/images/icon/main-menu-3-1-hover.png" alt="재난안전지도">
-                                                </div>
-                                                재난안전지도
-                                            </a>
-                                            <div class="inner-nav">
-                                                <ul>
-                                                    <li>
-                                                        <a href="safemap.html">안전MAP</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="firecenter-info.html">소방서센터</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="dam-info.html">댐정보</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="earth-info.html">지진</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="government-info.html">하천 수위</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-
-                                        </li>
-                                        
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <!-- 2depth -->
-                        <li>
-                            <a href="#">재난안전대책본부</a>
-                            <div class="sub-nav-wrap">
-                                <div class="sub-nav sub-nav-safety">
-                                    <ul>
-                                        <li>
-                                            <a href="tissue.html">
-                                                <div class="sub-icon-13">
-                                                    <img src="resources/images/icon/main-menu-4-1.png" alt="대책본부 조직도 및 주요업무">
-                                                    <img src="resources/images/icon/main-menu-4-1-hover.png" alt="대책본부 조직도 및 주요업무">
-                                                </div>
-                                                대책본부 조직도 및 주요업무</a>
-                                        </li>
-                                        <li>
-                                            <a href="system-1.html">
-                                                <div class="sub-icon-14">
-                                                    <img src="resources/images/icon/main-menu-4-2.png" alt="재난대응 체계도">
-                                                    <img src="resources/images/icon/main-menu-4-2-hover.png" alt="재난대응 체계도">
-                                                </div>
-                                                재난대응 체계도</a>
-                                        </li>
-                                        <li>
-                                            <a href="system-2.html">
-                                                <div class="sub-icon-15">
-                                                    <img src="resources/images/icon/main-menu-4-3.png" alt="피해조사 및 복구계획">
-                                                    <img src="resources/images/icon/main-menu-4-3-hover.png" alt="피해조사 및 복구계획">
-                                                </div>
-                                                피해조사 및 복구계획</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <!-- 3depth -->
-                        <li>
-                            <a href="#">안전게시판</a>
-                            <div class="sub-nav-wrap">
-                                <div class="sub-nav sub-nav-board">
-                                    <ul>
-                                        <li>
-                                            <a href="notice.html">
-                                                <div class="sub-icon-16">
-                                                    <img src="resources/images/icon/main-menu-5-1.png" alt="공지사항">
-                                                    <img src="resources/images/icon/main-menu-5-1-hover.png" alt="공지사항">
-                                                </div>
-                                                공지사항</a>
-                                        </li>
-                                        <li>
-                                            <a href="report.html">
-                                                <div class="sub-icon-17">
-                                                    <img src="resources/images/icon/main-menu-5-2.png" alt="보도자료">
-                                                    <img src="resources/images/icon/main-menu-5-2-hover.png" alt="보도자료">
-                                                </div>
-                                                보도자료</a>
-                                        </li>
-                                        <li>
-                                            <a href="education.html">
-                                                <div class="sub-icon-18">
-                                                    <img src="resources/images/icon/main-menu-5-3.png" alt="교육자료">
-                                                    <img src="resources/images/icon/main-menu-5-3-hover.png" alt="교육자료">
-                                                </div>
-                                                교육자료</a>
-                                        </li>
-                                        
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                          <!-- 4depth -->
-                        <li>
-                            <a href="#">재난문자서비스</a>
-                            <div class="sub-nav-wrap">
-                                <div class="sub-nav sub-nav-service">
-                                    <ul>
-                                        <li>
-                                            <a href="message-main.html">
-                                                <div class="sub-icon-19">
-                                                    <img src="resources/images/icon/main-menu-6-1.png" alt="공지사항">
-                                                    <img src="resources/images/icon/main-menu-6-1-hover.png" alt="공지사항">
-                                                </div>
-                                                재난문자서비스안내</a>
-                                        </li>
-                                        <li>
-                                            <a href="message.html">
-                                                <div class="sub-icon-20">
-                                                    <img src="resources/images/icon/main-menu-6-2.png" alt="보도자료">
-                                                    <img src="resources/images/icon/main-menu-6-2-hover.png" alt="보도자료">
-                                                </div>
-                                                신청하기</a>
-                                        </li>
-                                        <li>
-                                            <a href="education.html">
-                                                <div class="sub-icon-21">
-                                                    <img src="resources/images/icon/main-menu-6-3.png" alt="교육자료">
-                                                    <img src="resources/images/icon/main-menu-6-3-hover.png" alt="교육자료">
-                                                </div>
-                                                재난문자해지신청</a>
-                                        </li>
-                                        
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <!-- 5depth -->
-                    </ul>
+                            <div id="navbar-collapse-grid navbar-collapse collapse" class="header--nav">
+                                <ul class="nav navbar-nav">
+                                    <li class="dropdown">
+                                        <a href="livingweather.html" data-toggle="dropdown" class="dropdown-toggle">종합날씨
+                                            <ul class="dropdown-menu">
+                                                <li class="grid-demo">
+                                                    <div class="row">
+                                                        <div class="col-sm-4">
+                                                            <a href="livingweather.html">생활날씨</a>
+                                                        </div>
+                                                        <div class="col-sm-4">
+                                                            <a href="rain-info.html">강우정보</a>
+                                                        </div>
+                                                        <div class="col-sm-4">
+                                                            <a href="snow-info.html">적설정보</a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>        
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
@@ -1708,5 +1486,6 @@ function showDivs(n) {
 'windowPop',
 'width=350, height=450, left=200, top=200, resizable = yes');
         </script> -->
+        <script type="text/javascript" src="resources/js/bootstrap.min.js"></script>
     </body>
 </html>

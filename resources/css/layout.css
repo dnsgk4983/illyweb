@@ -6434,3 +6434,31 @@ main.info-bg{
 .weather-info-form{
     background-color: #258fff;
 }
+
+/* bootstrap */
+
+
+#myYesan{
+    font-family: 'Noto Sans KR' !important;
+    background: transparent;
+    box-shadow: 0 0;
+    height: 73px;
+    line-height: 73px;
+}
+
+.header--nav{
+    float: right;
+    height: 73px;
+    line-height: 73px;
+    text-align: center;
+}
+
+.header--nav > ul{
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+
+.header--naver > ul > li{
+    float: left;
+}
