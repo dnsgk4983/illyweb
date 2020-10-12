@@ -128,7 +128,7 @@ li{
     list-style: none;
 }
 a{
-    text-decoration: none;
+    text-decoration: none !important;
     color: inherit;
 }
 
@@ -6444,28 +6444,174 @@ main.info-bg{
 
 /* bootstrap */
 
-
-#myYesan{
-    font-family: 'Noto Sans KR' !important;
-    background: transparent;
-    box-shadow: 0 0;
-    height: 73px;
-    line-height: 73px;
+.top-nav{
+    float: right !important;
+}
+.top-nav .dropdown-menu{
+   border-bottom: none !important;
+   box-shadow: 0 0 !important;
+}
+.navbar-brand{
+    padding: 8px 10px !important;
 }
 
-.header--nav{
-    float: right;
-    height: 73px;
-    line-height: 73px;
-    text-align: center;
-}
+.navbar-default{
+    background: #fff !important;
+    border: none !important;
+    box-shadow: 0 0 !important;
+    min-height: 73px;
+    max-height: 73px;
+    line-height: 73px !important;
+    margin:  20px 0 !important;
+    }
+    .navbar-default .navbar-nav > li > a{
+        color:#fff;
+    }
+    .navbar-default .navbar-nav > .dropdown > a .caret{
+        border-top-color: #fff;
+        border-bottom-color: #fff;
+    }
+    .navbar-default .navbar-brand{
+        color:#fff;
+    }
+    .menu-large {
+      position: static !important;
+    }
+    .megamenu{
+      padding: 20px 0px;
+      width:100%;
+    }
+    .megamenu> li > ul {
+      padding: 0;
+      margin: 0;
+    }
+    .megamenu> li > ul > li {
+      list-style: none;
+    }
+    .megamenu> li > ul > li > a {
+      display: block;
+      padding: 3px 20px;
+      clear: both;
+      font-weight: normal;
+      line-height: 1.428571429;
+      color: #333333;
+      white-space: normal;
+    }
+    .megamenu> li ul > li > a:hover,
+    .megamenu> li ul > li > a:focus {
+      text-decoration: none;
+      color: #262626;
+      background-color: #f5f5f5;
+    }
+    .megamenu.disabled > a,
+    .megamenu.disabled > a:hover,
+    .megamenu.disabled > a:focus {
+      color: #999999;
+    }
+    .megamenu.disabled > a:hover,
+    .megamenu.disabled > a:focus {
+      text-decoration: none;
+      background-color: transparent;
+      background-image: none;
+      filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+      cursor: not-allowed;
+    }
+    .megamenu.dropdown-header {
+      color: #428bca;
+      font-size: 18px;
+    }
+    @media (max-width: 768px) {
+      .megamenu{
+        margin-left: 0 ;
+        margin-right: 0 ;
+      }
+      .megamenu> li {
+        margin-bottom: 30px;
+      }
+      .megamenu> li:last-child {
+        margin-bottom: 0;
+      }
+      .megamenu.dropdown-header {
+        padding: 3px 15px !important;
+    
+      }
+      .navbar-nav .open .dropdown-menu .dropdown-header{
+        color:#fff;
+      }
+    }
 
-.header--nav > ul{
-    display: inline-block;
-    *display: inline;
-    zoom: 1;
-}
+    .megamenu > .container {
+        width: 45% !important;
+        line-height: 1.4em;
+        padding: 1em 0;
+    }
+    .m-img-wrap{
+        width: 33px;
+        height: 29px;
+        overflow: hidden;
+        margin: 0 auto 1em;
+    }
+    .m-img-wrap > img{
+        display: block;
+        margin: 0 auto;
+    }
+    .sub-icon-9{
+        width: 39px;
+    }
 
-.header--naver > ul > li{
-    float: left;
-}
+    .dropdown > a{
+        font-size: 20px;
+        font-weight: 600;
+        color: #000 !important;
+        position: relative;
+        /* transition: all .5s; */
+    }
+    .wt-li:hover{
+        color: #263997 !important;
+    }
+    .wt-li .col-sm-6:hover a{
+        color: #263997 !important;
+    }
+    .di-li:hover, .bd-li:hover, .mg-li:hover{
+        color: #e12f29 !important;
+    }
+    .di-li .col-sm-6:hover a, .bd-li .col-sm-6:hover > a, .mg-li .col-sm-6:hover > a{
+        color: #e12f29 !important;
+    }
+    .on-li:hover{
+        color: #00aa58 !important;
+    }
+    .on-li .col-sm-6:hover a{
+        color: #00aa58 !important;
+    }
+    .sub-list > ul > li > a{
+        color: #000 !important;
+    }
+    .dropdown .col-sm-6 a{
+        color: #000;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .sub-list a{
+        font-size: 14px !important;
+        font-weight: 400 !important;
+    }
+    .navbar-default .navbar-collapse{
+        background: #fff;
+    }
+    .sub-list ul{
+        padding: 0;
+        margin: 1em 0;
+    }
+    .sub-list ul > li {
+        line-height: 30px;
+    }
+
+    @media(max-width:767px){
+        .top-nav{
+            float: left !important;
+        }
+        .dropdown-menu.megamenu.row{
+            display: none;
+        }
+    }
