@@ -6435,6 +6435,13 @@ main.info-bg{
     background-color: #258fff;
 }
 
+@media(max-width: 767px){
+    .nav-wrapper{
+        width: 100%;
+        padding: 0 30px;
+    }
+}
+
 /* bootstrap */
 
 
