@@ -1,0 +1,244 @@
+@import url(https://cdn.jsdelivr.net/gh/moonspam/Noto sans KR@1.0/Noto sans KR.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url('normalize.css');
+@font-face {
+    font-family: "DS-Digital";
+    src: url("../fonts/DS-DIGI.eot"); /* IE9 Compat Modes */
+    src: url("../fonts/DS-DIGI.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+      url("../fonts/DS-DIGI.woff") format("woff"), /* Modern Browsers */
+      url("../fonts/DS-DIGI.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+  }
+/* noto-sans-kr-regular - KR */
+@font-face {
+    font-family: "Noto Sans KR";
+    font-weight: 100;
+    font-style: normal;
+    src: url("../fonts/NotoSans-Thin.eot?") format("eot"),
+    url("../fonts/NotoSans-Thin.otf") format("opentype"),
+    url("../fonts/NotoSans-Thin.woff") format("woff"),
+    url("../fonts/NotoSans-Thin.woff2") format("woff2");
+  }
+  
+  @font-face {
+    font-family: "Noto Sans KR";
+    font-weight: 200;
+    font-style: normal;
+    src: url("../fonts/NotoSans-Light.eot?") format("eot"),
+    url("../fonts/NotoSans-Light.otf") format("opentype"),
+    url("../fonts/NotoSans-Light.woff") format("woff"),
+    url("../fonts/NotoSans-Light.woff2") format("woff2");
+  }
+  
+  @font-face {
+    font-family: "Noto Sans KR";
+    font-weight: 300;
+    font-style: normal;
+    src: url("../fonts/NotoSans-DemiLight.eot?") format("eot"),
+    url("../fonts/NotoSans-DemiLight.otf") format("opentype"),
+    url("../fonts/NotoSans-DemiLight.woff") format("woff"),
+    url("../fonts/NotoSans-DemiLight.woff2") format("woff2");
+  }
+  
+  @font-face {
+    font-family: "Noto Sans KR";
+    font-weight: 400;
+    font-style: normal;
+    src: url(" toSans-Regular.eot?") format("eot"),
+    url("../fonts/NotoSans-Regular.otf") format("opentype"),
+    url("../fonts/NotoSans-Regular.woff") format("woff"),
+    url("../fonts/NotoSans-Regular.woff2") format("woff2");
+  }
+  
+  @font-face {
+    font-family: "Noto Sans KR";
+    font-weight: 500;
+    font-style: normal;
+    src: url("../fonts/NotoSans-Medium.eot?") format("eot"),
+    url("../fonts/NotoSans-Medium.otf") format("opentype"),
+    url("../fonts/NotoSans-Medium.woff") format("woff"),
+    url("../fonts/NotoSans-Medium.woff2") format("woff2");
+  }
+  
+  @font-face {
+    font-family: "Noto Sans KR";
+    font-weight: 700;
+    font-style: normal;
+    src: url("../fonts/NotoSans-Black.eot?") format("eot"),
+    url("../fonts/NotoSans-Black.otf") format("opentype"),
+    url("../fonts/NotoSans-Black.woff") format("woff"),
+    url("../fonts/NotoSans-Black.woff2") format("woff2");
+  }
+  
+  @font-face {
+    font-family: "Noto Sans KR";
+    font-weight: 700;
+    font-style: normal;
+    src: url("../fonts/NotoSans-Bold.eot?") format("eot"),
+    url("../fonts/NotoSans-Bold.otf") format("opentype"),
+    url("../fonts/NotoSans-Bold.woff") format("woff"),
+    url("../fonts/NotoSans-Bold.woff2") format("woff2");
+  }
+
+
+html{
+    width: 100%;
+}
+body{
+    min-width: 1240px;
+    /* overflow-x: hidden; */
+    letter-spacing: -1px;
+    font-family: 'Noto Sans KR';
+}
+
+button{
+    cursor:pointer;
+}
+
+.top_section{
+    padding-top: 80px;
+}
+header{
+    box-sizing: border-box;
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9460;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+body{
+    font-family: 'Noto sans KR';
+    font-size: 16px; 
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none !important;
+    color: inherit;
+}
+
+.navbar-default{
+    color: #fff;
+    background-color: #ccc6c6;
+    border-color: #aca1a2;
+    }
+    .navbar-default .navbar-nav > li > a{
+        color:#fff;
+    }
+    .navbar-default .navbar-nav > .dropdown > a .caret{
+        border-top-color: #fff;
+        border-bottom-color: #fff;
+    }
+    .navbar-default .navbar-brand{
+        color:#fff;
+    }
+    .menu-large {
+      position: static !important;
+    }
+    .megamenu{
+      padding: 20px 0px;
+      width:100%;
+    }
+    .megamenu> li > ul {
+      padding: 0;
+      margin: 0;
+    }
+    .megamenu> li > ul > li {
+      list-style: none;
+    }
+    .megamenu> li > ul > li > a {
+      display: block;
+      padding: 3px 20px;
+      clear: both;
+      font-weight: normal;
+      line-height: 1.428571429;
+      color: #333333;
+      white-space: normal;
+    }
+    .megamenu> li ul > li > a:hover,
+    .megamenu> li ul > li > a:focus {
+      text-decoration: none;
+      color: #262626;
+      background-color: #f5f5f5;
+    }
+    .megamenu.disabled > a,
+    .megamenu.disabled > a:hover,
+    .megamenu.disabled > a:focus {
+      color: #999999;
+    }
+    .megamenu.disabled > a:hover,
+    .megamenu.disabled > a:focus {
+      text-decoration: none;
+      background-color: transparent;
+      background-image: none;
+      filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+      cursor: not-allowed;
+    }
+    .megamenu.dropdown-header {
+      color: #428bca;
+      font-size: 18px;
+    }
+    @media (max-width: 768px) {
+      .megamenu{
+        margin-left: 0 ;
+        margin-right: 0 ;
+      }
+      .megamenu> li {
+        margin-bottom: 30px;
+      }
+      .megamenu> li:last-child {
+        margin-bottom: 0;
+      }
+      .megamenu.dropdown-header {
+        padding: 3px 15px !important;
+    
+      }
+      .navbar-nav .open .dropdown-menu .dropdown-header{
+        color:#fff;
+      }
+    }
+
+@media only screen and (min-width: 768px) {
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+  }
+
+.navbar-static-top > .container{
+    text-align: center;
+}
+.navbar-static-top > .container{
+    display: inline-block;;
+
+}
+.navbar{
+    background: #fff !important;
+    border: none !important;
+    box-shadow: 0 0 !important;
+    margin: 0 !important;
+}
+.dropdown-menu{
+    border: none !important;
+    box-shadow: 0 0 !important;
+}
+.top-nav{
+    float: right !important;
+}
+.top-nav > li > a{
+    font-size: 20px;
+    color: #000 !important;
+    font-weight: 600;
+}
