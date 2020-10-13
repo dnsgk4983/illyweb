@@ -86,7 +86,7 @@ html{
     width: 100%;
 }
 body{
-    min-width: 1240px;
+    /* min-width: 1240px; */
     /* overflow-x: hidden; */
     letter-spacing: -1px;
     font-family: 'Noto Sans KR';
@@ -100,13 +100,13 @@ button{
     padding-top: 80px;
 }
 header{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: 0 auto;
+  border-bottom: 1px solid #ccc;
     box-sizing: border-box;
-    position: absolute;
-    margin: 0 auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 9460;
 }
 
 table{
@@ -114,7 +114,7 @@ table{
 }
 
 body{
-    font-family: 'Noto sans KR';
+    font-family: 'Noto sans KR' !important;
     font-size: 16px; 
 }
 *{
@@ -217,13 +217,14 @@ a{
     }
   }
 
+.navbar-static-top{
+  background: #fff;
+}
 .navbar-static-top > .container{
     text-align: center;
+    /* padding: 25px 0 0; */
 }
-.navbar-static-top > .container{
-    display: inline-block;;
 
-}
 .navbar{
     background: #fff !important;
     border: none !important;
@@ -234,11 +235,167 @@ a{
     border: none !important;
     box-shadow: 0 0 !important;
 }
+.dropdown-menu > li{
+  width: 700px;
+  padding: 25px 0;
+}
 .top-nav{
     float: right !important;
 }
 .top-nav > li > a{
-    font-size: 20px;
-    color: #000 !important;
-    font-weight: 600;
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  padding: 0 24px;
+  line-height: 78px;
+  box-sizing: border-box;
+  transition: all 0.3s;
+  position: relative;
+  font-weight: 600;
+  color: #000 !important;
+}
+.top-nav > li a{
+  color: #000 !important;
+}
+.m-img-wrap{
+  width: 40px;
+  height: 29px;
+  overflow: hidden;
+  margin: 0 auto 10px;
+}
+.m-img-wrap img{
+  display: block;
+  height: 29px;
+  margin: 0 auto;
+}
+.sub-list ul{
+  padding: 0;
+}
+.dropdown.menu-large{
+  line-height: 30px;
+}
+.wt-li:hover > a{
+  color: #263997 !important;
+}
+.top-nav > li > a::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  background-color: #e12f29;
+  transform-origin: bottom center;
+  transition: transform 0.25s ease-out;
+}
+.top-nav > li > a:hover::after{
+  transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+  transform-origin: bottom center;
+}
+.wt-li > a::after{
+  background-color: #263997 !important;
+}
+.on-li > a::after{
+  background-color: #00aa58 !important;
+}
+.di-li:hover > a,
+.bd-li:hover > a,
+.mg-li:hover > a{
+  color: #e12f29 !important;
+}
+.on-li:hover > a{
+  color: #00aa58 !important;
+}
+
+.dropdown-menu > li > .col-sm-6:hover > a{
+  line-height: 20px;
+  color: #e12f29 !important;
+}
+.wt-li > .dropdown-menu > li > .col-sm-6:hover > a{
+  color: #263997 !important;
+}
+.on-li > .dropdown-menu > li >.col-sm-6:hover > a{
+  color: #00aa58 !important;
+}
+.sub-list > ul > li > a:hover{
+  color: #e12f29 !important;
+  background: #fff !important;
+}
+
+.navbar-default .navbar-nav>li>a {
+  display: block;
+  width: 100%;
+  line-height: 40px;
+}
+
+
+
+/* 메인 섹션 시작 */
+section{
+  padding: 50px 0 0;
+}
+main{
+  padding: 30px 0;
+  background: url(../images/background-main.jpg)no-repeat;
+  background-size: cover;
+}
+.main-section{
+  width: 100%;
+}
+.main-section > .row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-section > .row > .col-sm-6{
+  border-radius: 10px;
+  width: 48%;
+  height: 452px;
+  background: lightgreen;
+  overflow: hidden;
+  padding: 0;
+}
+.event-map{
+  position: relative;
+}
+.map-title{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #258fff;
+  text-align: center;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+.map-title > p {
+  color: #fff;
+  margin: 0;
+}
+.map-wrapper{
+  width: 100%;
+  height: 369px;
+}
+.main-tabs{
+  background: #fff;
+  width: 100%;
+}
+.main-tabs li{
+  width: 25%;
+}
+.main-tabs li:hover a{
+  background: #fff !important;
+  box-shadow: 0 0 !important;
+  border: 1px solid #fff !important;
+} 
+
+@media(max-width:767px){
+  .main-section > .row{
+    flex-direction: column;
+  }
+  .main-section > .row > .col-sm-6{
+    width: 100%;
+  }
 }

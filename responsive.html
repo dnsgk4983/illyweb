@@ -256,7 +256,49 @@
             </div>
         </header>
         <section>
-
+            <main>
+                <div class="container main-section">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6">
+                            <div class="event-map">
+                                <div class="event-con" id="tab-con">
+                                    <div>
+                                        <div class="map-title">
+                                            <p>재난안전지도</p>
+                                        </div>
+                                        <div class="map-wrapper">
+                                            <!-- Tab panes -->
+                                            <div class="tab-content">
+                                                <div role="tabpanel" class="tab-pane" id="human">Content Home</div>
+                                                <div role="tabpanel" class="tab-pane" id="land">Content Profile</div>
+                                                <div role="tabpanel" class="tab-pane" id="safe-cctv">Content Messages</div>
+                                                <div role="tabpanel" class="tab-pane" id="housing">Content Settings</div>
+                                                <div role="tabpanel" class="tab-pane" id="earth">Content Home</div>
+                                                <div role="tabpanel" class="tab-pane" id="hospital">Content Profile</div>
+                                                <div role="tabpanel" class="tab-pane" id="pharmacy">Content Messages</div>
+                                                <div role="tabpanel" class="tab-pane" id="highway">Content Settings</div>
+                                            </div>
+                                        </div>
+                                        <!-- Nav tabs -->
+                                        <ul class="nav nav-tabs main-tabs" role="tablist" id="myTab">
+                                            <li role="presentation"><a href="#human" aria-controls="human" role="tab" data-toggle="tab">인명피해우려지역</a></li>
+                                            <li role="presentation"><a href="#land" aria-controls="land" role="tab" data-toggle="tab">산사태취약지역</a></li>
+                                            <li role="presentation"><a href="#safe-cctv" aria-controls="safe-cctv" role="tab" data-toggle="tab">안전CCTV</a></li>
+                                            <li role="presentation"><a href="#housing" aria-controls="housing" role="tab" data-toggle="tab">이재민임시주거시설</a></li>
+                                            <li role="presentation"><a href="#earth" aria-controls="earth" role="tab" data-toggle="tab">지진옥외대피장소</a></li>
+                                            <li role="presentation"><a href="#hospital" aria-controls="hospital" role="tab" data-toggle="tab">병원</a></li>
+                                            <li role="presentation"><a href="#pharmacy" aria-controls="pharmacy" role="tab" data-toggle="tab">약국</a></li>
+                                            <li role="presentation"><a href="#highway" aria-controls="highway" role="tab" data-toggle="tab">고속도로 CCTV</a></li>
+                                        </ul>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6"></div>
+                    </div>
+                </div>
+            </main>
         </section>
         <footer>
 
@@ -285,6 +327,7 @@
 'windowPop',
 'width=350, height=450, left=200, top=200, resizable = yes');
         </script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script type="text/javascript" src="resources/js/bootstrap.min.js"></script>
         <script>
             $('.dropdown-toggle').click(function(e) {
