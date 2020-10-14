@@ -19,7 +19,39 @@ $('.logoBanner').slick({
     arrows: true,
     slidesToShow: 5,
     lazyLoad: 'ondemand',
-    pauseOnHover : true
+    pauseOnHover : true,
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 4,
+                infinite: true
+            }
+        },
+        {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 568,
+            settings: {
+                slidesToShow: 2
+            }
+        }
+    ]
+});
+
+$('.play-f-btn').on('click', function () {
+    $('.play-f-btn').attr('style', 'display:none !important');
+    $('.pause-f-btn').attr('style', 'display:block !important');
+    $('.logoBanner').slick('slickPlay');
+});
+$('.pause-f-btn').on('click', function () {
+    $('.play-f-btn').attr('style', 'display:block !important');
+    $('.pause-f-btn').attr('style', 'display:none !important');
+    $('.logoBanner').slick('slickPause');
 });
 
 
@@ -56,13 +88,3 @@ $slickElement.on('init reInit afterChange', function (event, slick, currentSlide
 });
 
 
-$('.play-f-btn').on('click', function () {
-    $('.play-f-btn').attr('style', 'display:none !important');
-    $('.pause-f-btn').attr('style', 'display:block !important');
-    $('.logoBanner').slick('slickPlay');
-});
-$('.pause-f-btn').on('click', function () {
-    $('.play-f-btn').attr('style', 'display:block !important');
-    $('.pause-f-btn').attr('style', 'display:none !important');
-    $('.logoBanner').slick('slickPause');
-});

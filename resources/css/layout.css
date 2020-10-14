@@ -6620,3 +6620,43 @@ main.info-bg{
             display: none;
         }
     }
+
+
+    /* 1014 수정css */
+    
+    .info-area-03 > span{
+        color: #fff;
+        margin-right: 15px;
+    }
+
+    .info-area-01 {
+        background-position: 70px 52%;
+    }
+    .weather-info-title{
+        width: 35%;
+    }
+    .weather-info-title > span{
+        color: #fff;
+        margin-right: 10px;
+    }
+
+    /* 재수정 css */
+    .day-search-btn{
+        width: 5%;
+    }
+    .weather-info-map-box{
+        width: 744px;
+    }
+    .weather-information-box{
+        width: 496px;
+    }
+    .info-area-03{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: 15px;
+    }
+
+    .info-area-03{ width: 34% }
+    .day-search-btn{ width: 4% }
+    .weather-info-title{ width: 36% }
