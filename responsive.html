@@ -269,7 +269,7 @@
                                         <div class="map-wrapper">
                                             <!-- Tab panes -->
                                             <div class="tab-content">
-                                                <div role="tabpanel" class="tab-pane" id="human">Content Home</div>
+                                                <div role="tabpanel" class="tab-pane active" id="human">Content Home</div>
                                                 <div role="tabpanel" class="tab-pane" id="land">Content Profile</div>
                                                 <div role="tabpanel" class="tab-pane" id="safe-cctv">Content Messages</div>
                                                 <div role="tabpanel" class="tab-pane" id="housing">Content Settings</div>
@@ -283,40 +283,131 @@
                                             </a>
                                         </div>
                                         <!-- Nav tabs -->
-                                        <ul class="nav nav-tabs main-tabs" role="tablist" id="myTab">
-                                            <li role="presentation"><a href="#human" aria-controls="human" role="tab" data-toggle="tab">인명피해우려지역</a></li>
-                                            <li role="presentation"><a href="#land" aria-controls="land" role="tab" data-toggle="tab">산사태취약지역</a></li>
-                                            <li role="presentation"><a href="#safe-cctv" aria-controls="safe-cctv" role="tab" data-toggle="tab">안전CCTV</a></li>
-                                            <li role="presentation"><a href="#housing" aria-controls="housing" role="tab" data-toggle="tab">이재민임시주거시설</a></li>
-                                            <li role="presentation"><a href="#earth" aria-controls="earth" role="tab" data-toggle="tab">지진옥외대피장소</a></li>
-                                            <li role="presentation"><a href="#hospital" aria-controls="hospital" role="tab" data-toggle="tab">병원</a></li>
-                                            <li role="presentation"><a href="#pharmacy" aria-controls="pharmacy" role="tab" data-toggle="tab">약국</a></li>
-                                            <li role="presentation"><a href="#highway" aria-controls="highway" role="tab" data-toggle="tab">고속도로 CCTV</a></li>
-                                        </ul>
-                                    
+                                        
                                     </div>
                                 </div>
                             </div>
+                            <ul class="nav nav-tabs main-tabs" role="tablist" id="myTab">
+                                <li role="presentation"><a href="#human" aria-controls="human" role="tab" data-toggle="tab">인명피해우려지역</a></li>
+                                <li role="presentation"><a href="#land" aria-controls="land" role="tab" data-toggle="tab">산사태취약지역</a></li>
+                                <li role="presentation"><a href="#safe-cctv" aria-controls="safe-cctv" role="tab" data-toggle="tab">안전CCTV</a></li>
+                                <li role="presentation"><a href="#housing" aria-controls="housing" role="tab" data-toggle="tab">이재민임시주거시설</a></li>
+                                <li role="presentation"><a href="#earth" aria-controls="earth" role="tab" data-toggle="tab">지진옥외대피장소</a></li>
+                                <li role="presentation"><a href="#hospital" aria-controls="hospital" role="tab" data-toggle="tab">병원</a></li>
+                                <li role="presentation"><a href="#pharmacy" aria-controls="pharmacy" role="tab" data-toggle="tab">약국</a></li>
+                                <li role="presentation"><a href="#highway" aria-controls="highway" role="tab" data-toggle="tab">고속도로 CCTV</a></li>
+                            </ul>
                         </div>
                         <div class="col-sm-6 col-md-6 main-right">
-                            <ul class="nav nav-tabs" role="tablist" id="weather-tab">
-                                <li role="presentation"><a href="#tab1" role="tab" data-toggle="tab" aria-controls="weather">날씨</a></li>
-                                <li role="presentation"><a href="#tab2" role="tab" data-toggle="tab" aria-controls="air">통합대기</a></li>
-                                <li role="presentation"><a href="#tab3" role="tab" data-toggle="tab" aria-controls="dust">미세먼지</a></li>
-                                <li role="presentation"><a href="#tab4" role="tab" data-toggle="tab" aria-controls="sand">황사</a></li>
-                                <li role="presentation"><a href="#tab5" role="tab" data-toggle="tab" aria-controls="rain">강우정보</a></li>
-                                <li role="presentation"><a href="#tab6" role="tab" data-toggle="tab" aria-controls="snow">적설정보</a></li>
-                            </ul>
+                            <div class="tab-button-outer">
+                                <ul class="nav nav-tabs" role="tablist" id="weather-tab">
+                                    <li role="presentation"><a href="#tab1" role="tab" data-toggle="tab" aria-controls="weather">날씨</a></li>
+                                    <li role="presentation"><a href="#tab2" role="tab" data-toggle="tab" aria-controls="air">통합대기</a></li>
+                                    <li role="presentation"><a href="#tab3" role="tab" data-toggle="tab" aria-controls="dust">미세먼지</a></li>
+                                    <li role="presentation"><a href="#tab4" role="tab" data-toggle="tab" aria-controls="sand">황사</a></li>
+                                    <li role="presentation"><a href="#tab5" role="tab" data-toggle="tab" aria-controls="rain">강우정보</a></li>
+                                    <li role="presentation"><a href="#tab6" role="tab" data-toggle="tab" aria-controls="snow">적설정보</a></li>
+                                </ul>
+                            </div>
                             <div class="tab-select-outer">
-                                표시 선택：
                                 <select id="tab-select">
-                                  <option value="#tab01">Tab 1</option>
-                                  <option value="#tab02">Tab 2</option>
-                                  <option value="#tab03">Tab 3</option>
-                                  <option value="#tab04">Tab 4</option>
-                                  <option value="#tab05">Tab 5</option>
+                                  <option value="#tab1">Tab 1</option>
+                                  <option value="#tab2">Tab 2</option>
+                                  <option value="#tab3">Tab 3</option>
+                                  <option value="#tab4">Tab 4</option>
+                                  <option value="#tab5">Tab 5</option>
+                                  <option value="#tab6">Tab 6</option>
                                 </select>
-                              </div>
+                            </div>
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="tab1">
+                                    <div class="row">
+                                        <div class="col-sm-12 text-center">
+                                            <div class="weather-box">
+                                                <div class="flex-box">
+                                                    <img src="resources/images/icon_b_weather04.png" alt="구름아이콘">
+                                                    <span>흐림</span>
+                                                </div>
+                                                <p class="text-2">17 ℃</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 text-center weather-conts">
+                                            <div class="row flex-box">
+                                                <div class="col-sm-2"></div>
+                                                <div class="col-sm-2">
+                                                    <p>풍속</p>
+                                                </div>
+                                                <div class="col-sm-2">
+                                                    <p>습도</p>
+                                                </div>
+                                                <div class="col-sm-2">
+                                                    <p>강수</p>
+                                                </div>
+                                                <div class="col-sm-2">
+                                                    <p>체감온도</p>
+                                                </div>
+                                                <div class="col-sm-2"></div>
+                                            </div>
+                                            <div class="row flex-box">
+                                                <div class="col-sm-2"></div>
+                                                <div class="col-sm-2">
+                                                    <p>0.9m/s</p>
+                                                </div>
+                                                <div class="col-sm-2">
+                                                    <p>83%</p>
+                                                </div>
+                                                <div class="col-sm-2">
+                                                    <p>0mm</p>
+                                                </div>
+                                                <div class="col-sm-2">
+                                                    <p>-</p>
+                                                </div>
+                                                <div class="col-sm-2"></div>
+                                            </div>
+                                            <a href="/weather/weatherList.do" class="more">
+                                                <span class="xi-search"></span>자세히보기
+                                            </a>
+                                        </div>
+                                        <div class="col-sm-12 weather-table">
+                                            <table width="100%">
+                                                <colgroup>
+                                                    <col width="25%">
+                                                    <col width="15%">
+                                                    <col width="15%">
+                                                    <col width="15%">
+                                                    <col width="15%">
+                                                    <col width="15%">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th>시간별(시)</th>
+                                                        <th>11시</th>
+                                                        <th>12시</th>
+                                                        <th>13시</th>
+                                                        <th>14시</th>
+                                                        <th>15시</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>기온(℃)</td>
+                                                        <td>16 ℃</td>
+                                                        <td>17 ℃</td>
+                                                        <td>17 ℃</td>
+                                                        <td>17 ℃</td>
+                                                        <td>17 ℃</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="tab2">통합대기</div>
+                                <div role="tabpanel" class="tab-pane" id="tab3">미세먼지</div>
+                                <div role="tabpanel" class="tab-pane" id="tab4">Content Home</div>
+                                <div role="tabpanel" class="tab-pane" id="tab5">Content Home</div>
+                                <div role="tabpanel" class="tab-pane" id="tab6">Content Home</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -358,6 +449,41 @@
                     }
 
                 }
+            });
+        </script>
+
+        <script>
+            $(document).ready(function() {
+                var $tabButtonItem = $('#tab-button li'),
+                    $tabSelect = $('#tab-select'),
+                    $tabContents = $('.tab-contents'),
+                    activeClass = 'is-active';
+
+                $tabButtonItem.first().addClass(activeClass);
+                $tabContents.not(':first').hide();
+
+                // button
+                $tabButtonItem.find('a').on('click', function(e) {
+                    var target = $(this).attr('href');
+
+                    $tabButtonItem.removeClass(activeClass);
+                    $(this).parent().addClass(activeClass);
+                    $tabSelect.val(target);
+                    $tabContents.hide();
+                    $(target).show();
+                    e.preventDefault();
+                });
+
+                // select
+                $tabSelect.on('change', function() {
+                    var target = $(this).val(),
+                        targetSelectNum = $(this).prop('selectedIndex');
+
+                    $tabButtonItem.removeClass(activeClass);
+                    $tabButtonItem.eq(targetSelectNum).addClass(activeClass);
+                    $tabContents.hide();
+                    $(target).show();
+                });
             });
         </script>
     </body>
