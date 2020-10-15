@@ -1,0 +1,55 @@
+.main-tabs li:nth-child(1) .st0{fill:#8C8C8C;stroke:#8C8C8C;stroke-miterlimit:10;}
+.main-tabs li:nth-child(1) .st1{fill:#43A5F9;stroke:#FAFAFA;stroke-miterlimit:10;}
+.main-tabs li:nth-child(1) .st2{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFE;}
+.main-tabs li:nth-child(1) .st3{fill:#FFFFFE;}
+
+.main-tabs li:nth-child(2) .st0{fill:#8C8C8C;stroke:#8C8C8C;stroke-miterlimit:10;}
+.main-tabs li:nth-child(2) .st1{fill:#795546;stroke:#FAFAFA;stroke-miterlimit:10;}
+.main-tabs li:nth-child(2) .st2{fill:#FFFFFF;}
+
+.main-tabs li:nth-child(3) .st0{fill:#8C8C8C;stroke:#8C8C8C;stroke-miterlimit:10;}
+.main-tabs li:nth-child(3) .st1{fill:#EF5351;stroke:#FAFAFA;stroke-miterlimit:10;}
+.main-tabs li:nth-child(3) .st2{fill:#FFFFFF;}
+
+.main-tabs li:nth-child(4) .st0{fill:#8C8C8C;stroke:#8C8C8C;stroke-miterlimit:10;}
+.main-tabs li:nth-child(4) .st1{fill:#FE5721;stroke:#FAFAFA;stroke-miterlimit:10;}
+.main-tabs li:nth-child(4) .st2{fill:#FFFFFF;}
+.main-tabs li:nth-child(4) .st3{fill:#FE5721;}
+.main-tabs li:nth-child(4).on .st3{fill:#0e6efe;}
+
+.main-tabs li:nth-child(5) .st0{fill:#8C8C8C;stroke:#8C8C8C;stroke-miterlimit:10;}
+.main-tabs li:nth-child(5) .st1{fill:#795548;stroke:#FAFAFA;stroke-miterlimit:10;}
+.main-tabs li:nth-child(5) .st2{fill:#FFFFFF;}
+
+.main-tabs li:nth-child(6) .st0{opacity:0.45;}
+.main-tabs li:nth-child(6) .st1{stroke:#000000;stroke-miterlimit:10;}
+.main-tabs li:nth-child(6) .st2{fill:#84BC46;stroke:#FAFAFA;stroke-miterlimit:10;}
+.main-tabs li:nth-child(6) .st3{fill:#FFFFFF;}
+
+.main-tabs li:nth-child(6).on .st2{fill:#0e6efe;stroke:#FAFAFA;}
+.main-tabs li:nth-child(6).on .st3{fill:#ffffff;}
+
+
+.main-tabs li:nth-child(7) .st0{fill:#8C8C8C;stroke:#8C8C8C;stroke-miterlimit:10;}
+.main-tabs li:nth-child(7) .st1{fill:#F15452;stroke:#FAFAFA;stroke-miterlimit:10;}
+.main-tabs li:nth-child(7) .st2{fill:#FFFFFF;}
+
+.main-tabs li:nth-child(8) .st0{fill:#8C8C8C;stroke:#8C8C8C;stroke-miterlimit:10;}
+.main-tabs li:nth-child(8) .st1{fill:#E9534F;stroke:#FAFAFA;stroke-miterlimit:10;}
+.main-tabs li:nth-child(8) .st2{fill:#FFFFFF;}
+.main-tabs li:nth-child(8) .st3{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+
+.main-tabs li.active a,
+.main-tabs li.active a:hover,
+.main-tabs li.active a:visited,
+.main-tabs li.active a:focus{
+    background-color: #0e6efe !important;
+    fill: #0e6efe !important;
+    border-color: #0e6efe !important
+}
+.main-tabs li.active a,
+.main-tabs li.active a:hover,
+.main-tabs li.active a:visited,
+.main-tabs li.active a:focus{
+    color: #fff !important;
+}
