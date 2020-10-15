@@ -6645,10 +6645,10 @@ main.info-bg{
         width: 5%;
     }
     .weather-info-map-box{
-        width: 744px;
+        width: 855px;
     }
     .weather-information-box{
-        width: 496px;
+        width: 385px;
     }
     .info-area-03{
         display: flex;
@@ -6660,3 +6660,20 @@ main.info-bg{
     .info-area-03{ width: 34% }
     .day-search-btn{ width: 4% }
     .weather-info-title{ width: 36% }
+
+    /* 1015수정사항 */
+    .info-area-01{
+        width: 35%;
+    }
+    .info-area-03{
+        width: 35%;
+    }
+    .weather-day-select input{
+        width: 95%;
+    }
+    .weather-info-title{
+        width: 30%;
+    }
+    .weather-day-select{
+        width: 60%;
+    }

@@ -269,15 +269,65 @@
                                         </div>
                                         <div class="map-wrapper">
                                             <!-- Tab panes -->
-                                            <div class="tab-content">
-                                                <div role="tabpanel" class="tab-pane active tab-conts" id="human">Content Home</div>
-                                                <div role="tabpanel" class="tab-pane tab-conts" id="land">Content Profile</div>
-                                                <div role="tabpanel" class="tab-pane tab-conts" id="safe-cctv">Content Messages</div>
-                                                <div role="tabpanel" class="tab-pane tab-conts" id="housing">Content Settings</div>
-                                                <div role="tabpanel" class="tab-pane tab-conts" id="earth">Content Home</div>
-                                                <div role="tabpanel" class="tab-pane tab-conts" id="hospital">Content Profile</div>
-                                                <div role="tabpanel" class="tab-pane tab-conts" id="pharmacy">Content Messages</div>
-                                                <div role="tabpanel" class="tab-pane tab-conts" id="highway">Content Settings</div>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <div class="tab-content">
+                                                        <div role="tabpanel" class="tab-pane active tab-conts" id="human">
+                                                            <div class="map-box-content">
+                                                                <div class="safe-map-box-title">
+                                                                    <div class="col-sm-1"></div>
+                                                                    <div class="wrap-map-title info-safe-map col-sm-5">
+                                                                        <div class="wrap-map-info">
+                                                                            <div class="title">
+                                                                                생활정보
+                                                                                <div class="close" onclick="closeOverlay()" title="닫기"></div>
+                                                                            </div>
+                                                                            <div class="body">
+                                                                                <div class="desc">
+                                                                                    <div class="ellipsis">제주특별자치도 제주시 첨단로 242</div>
+                                                                                    <div class="jibun ellipsis">(우) 63309 (지번) 영평동 2181</div>
+                                                                                    <div></div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="wrap-map-title info-map-cctv col-sm-5" style="height: 250px;">
+                                                                        <div class="wrap-map-info" style="height: 248px;">
+                                                                            <div class="row">
+                                                                                <div class="col-sm-12">
+                                                                                    <div class="title">
+                                                                                        CCTV
+                                                                                        <div class="close" onclick="closeOverlay()" title="닫기"></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <div class="col-sm-12">
+                                                                                    <div class="body">
+                                                                                        <div class="desc">
+                                                                                            <div class="ellipsis">제주특별자치도 제주시 첨단로 242</div>
+                                                                                            <div class="jibun ellipsis">CCTV 주소</div>
+                                                                                            <div></div>
+                                                                                        </div>
+                                                                                        <div class="body-image"></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-sm-1"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div role="tabpanel" class="tab-pane tab-conts" id="land">Content Profile</div>
+                                                        <div role="tabpanel" class="tab-pane tab-conts" id="safe-cctv">Content Messages</div>
+                                                        <div role="tabpanel" class="tab-pane tab-conts" id="housing">Content Settings</div>
+                                                        <div role="tabpanel" class="tab-pane tab-conts" id="earth">Content Home</div>
+                                                        <div role="tabpanel" class="tab-pane tab-conts" id="hospital">Content Profile</div>
+                                                        <div role="tabpanel" class="tab-pane tab-conts" id="pharmacy">Content Messages</div>
+                                                        <div role="tabpanel" class="tab-pane tab-conts" id="highway">Content Settings</div>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <a href="#" class="event-over-more" onclick="moreMap()">
                                                 <i class="xi-search"></i>자세히보기
