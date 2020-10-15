@@ -813,6 +813,8 @@ main{
 .footer-logo{
   padding: 10px 0;
   background-color: #fff;
+}
+section .container-fluid{
   border-top: 1px solid #ccc;
 }
 
@@ -922,6 +924,9 @@ footer .container{
 footer .col-sm-2{
   text-align: right;
 }
+.container-fluid{
+  padding: 0 !important;
+}
 
 @media(min-width: 320px){
   .main-tabs .col-sm-1{
@@ -935,6 +940,9 @@ footer .col-sm-2{
   }
   .col-sm-3{
     width: 25%;
+  }
+  .col-sm-4{
+    width: 33.3333333%;
   }
   .col-sm-5{
     width: 41.66666667%;
@@ -959,6 +967,12 @@ footer .col-sm-2{
   }
   .main-tabs > li > a{
     padding: 10px 5px !important;
+  }
+  .logoBanner .slick-arrow{
+    display: none !important;
+  }
+  .footer-slide-btn{
+    display: none !important;
   }
   
 }
@@ -1075,11 +1089,15 @@ footer .col-sm-2{
   }
 }
 @media (max-width:414px) and (min-width:320px){
+  .rainy-map{
+    background-size: 140% !important;
+  }
   .rainfall-title, .rainfall-content-title{
     font-size: 11px;
   }
   .map-title-1{
-    top:31%
+    top:31%;
+    left:19%;
   }
   .map-title-2{
     top: 30%;
@@ -1160,7 +1178,7 @@ footer .col-sm-2{
     bottom: 9px;
   }
   .main-right .weather-conts .more{
-    bottom: -5px;
+    bottom: -25px;
   }
   .weather-circle .circle{
     width: 50px;
@@ -1218,7 +1236,7 @@ footer .col-sm-2{
     display: none;
   }
   .navbar-collapse.collapse.in{
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
   }
   .nav.navbar-nav.top-nav{
@@ -1241,6 +1259,14 @@ footer .col-sm-2{
   }
   footer p{
     font-size: 12px !important;
+  }
+
+  .sub-dister .menu-hv:nth-child(3),
+  .sub-dister .menu-hv:nth-child(4){
+    margin-top: 5%;
+  }
+  .sub-weather, .sub-ong, .sub-board, .sub-msg{
+    display: flex;
   }
 }
 
