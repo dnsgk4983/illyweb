@@ -1088,7 +1088,7 @@ footer .col-sm-2{
     left: 11%;
   }
 }
-@media (max-width:414px) and (min-width:320px){
+@media (max-width:413px) and (min-width:361px){
   .rainy-map{
     background-size: 140% !important;
   }
@@ -1135,6 +1135,33 @@ footer .col-sm-2{
   }
   .map-title-12{
     top: 64%;
+  }
+}
+@media(max-width:360px) and (min-width:320px){
+  .map-title-1{
+    top: 29%;
+  }
+  .map-title-2{
+    top: 28%;
+  }
+  .map-title-3{
+    top: 27%;
+  }
+  .map-title-4{
+    top: 35%;
+    left: 64%;
+  }
+  .map-title-5{
+    left: 78%;
+  }
+  .map-title-6{
+    left: 73%;
+  }
+  .map-title-7{
+    left: 59%;
+  }
+  .map-title-12{
+    top: 70;
   }
 }
 
