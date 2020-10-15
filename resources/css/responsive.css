@@ -1142,7 +1142,7 @@ footer .col-sm-2{
     top: 64%;
   }
 }
-@media(max-width:360px) and (min-width:320px){
+@media(max-width:360px) and (min-width:280px){
   .map-title-1{
     top: 29%;
   }
