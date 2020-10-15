@@ -974,7 +974,12 @@ footer .col-sm-2{
   .footer-slide-btn{
     display: none !important;
   }
-  
+  .main-right .weather-conts .more{
+    bottom: -35px;
+  }
+  .map-wrapper > .event-over-more{
+    bottom: -20px;
+  }
 }
 
 @media(max-width: 1200px) and (min-width:992px){
