@@ -419,6 +419,10 @@ main{
   border-radius: 0 0 0 0 !important;
   padding: 5px 0 0 3px !important;
 }
+.main-tabs > li .flex{
+  align-items: center;
+  height: 24px;
+}
 
 #weather-tab{
   width: 100%;
@@ -928,38 +932,7 @@ footer .col-sm-2{
   padding: 0 !important;
 }
 
-@media(min-width: 320px){
-  .main-tabs .col-sm-1{
-    width: 2% !important;
-  }
-  .col-sm-1{
-    width: 8.33333%;
-  }
-  .col-sm-2{
-    width: 16.6667%;
-  }
-  .col-sm-3{
-    width: 25%;
-  }
-  .col-sm-4{
-    width: 33.3333333%;
-  }
-  .col-sm-5{
-    width: 41.66666667%;
-  }
-  .col-sm-6{
-    width: 50%;
-  }
-  .col-sm-7{
-    width: 58.3333%;
-  }
-  .col-sm-12{
-    width: 100%;
-  }
-  .col-md-4{
-    width: 33.3333% !important;
-  }
-}
+
 @media(max-width: 1200px){
   .main-right .nav > li > a{
     height: 40px;
@@ -1314,5 +1287,39 @@ footer .col-sm-2{
   }
   .main-right > .tab-content > .tab-pane{
     height: 411px;
+  }
+}
+
+
+@media screen and (min-width: 320px){
+  .main-tabs .col-sm-1{
+    width: 2% !important;
+  }
+  .col-sm-1{
+    width: 8.33333%;
+  }
+  .col-sm-2{
+    width: 16.6667%;
+  }
+  .col-sm-3{
+    width: 25%;
+  }
+  .col-sm-4{
+    width: 33.3333333%;
+  }
+  .col-sm-5{
+    width: 41.66666667%;
+  }
+  .col-sm-6{
+    width: 50%;
+  }
+  .col-sm-7{
+    width: 58.3333%;
+  }
+  .col-sm-12{
+    width: 100%;
+  }
+  .col-md-4{
+    width: 33.3333% !important;
   }
 }
