@@ -40,3 +40,15 @@ $('.tab-button li').first().addClass("activeClass");
         $(select_link).show();
         console.log(select_link);
     });
+    $(function(){
+        $('.table-tabs').click(function(){
+            $('.table-row table').animate({marginLeft:0},0);
+            $('.table-close').css("display",'block');
+            $('.table-tabs').css('display','none');
+        });
+        $('.table-close').click(function(){
+            $('.table-row table').animate({marginLeft:400},0);
+            $('.table-close').css("display","none");
+            $('.table-tabs').css("display","block");
+        });
+    });

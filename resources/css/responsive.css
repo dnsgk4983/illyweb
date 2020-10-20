@@ -318,7 +318,7 @@ p{
 
 /* 메인 섹션 시작 */
 section{
-  padding: 50px 0 10px;
+  padding: 50px 0 0;
 }
 main{
   width: 100%;
@@ -368,7 +368,7 @@ main{
 .nav-tabs > li > a{
   border: 1px solid #fff !important;
   margin-right: 0 !important;
-  font-size: 13px;
+  font-size: 11px;
 }
 .map-title > p {
   color: #fff;
@@ -632,12 +632,12 @@ main{
 .map-title-1{
   position: absolute;
   top: 23%;
-  left: 26%;
+  left: 29%;
 }
 .map-title-2{
   position: absolute;
   top: 20%;
-  left: 37%;
+  left: 38%;
 }
 .map-title-3{
   position: absolute;
@@ -652,7 +652,7 @@ main{
 .map-title-5{
   position: absolute;
   top: 42%;
-  left: 75%;
+  left: 72%;
 }
 .map-title-6{
   position: absolute;
@@ -677,7 +677,7 @@ main{
 .map-title-10{
   position: absolute;
   top: 40%;
-  left: 19%;
+  left: 22%;
 }
 .map-title-11{
   position: absolute;
@@ -714,11 +714,13 @@ main{
 .main-sevice .video-slide{
   position: relative;
     margin: 0 auto;
-    height: 228px;
+    height: 250px;
 }
 
 .main-sevice .video-slide video{
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .product__slider-main{
@@ -780,7 +782,7 @@ main{
 }
 
 .main--section--3{
-  padding: 0 15px;
+  padding: 10px 13px;
 }
 
 .banner-slide{
@@ -822,12 +824,12 @@ main{
   font-weight: bold;
   color:#000;
 }
-.logoBanner img{
+/* .logoBanner img{
   margin: 0 auto;
-}
+} */
 
 .footer-logo{
-  padding: 10px 0;
+
   background-color: #fff;
 }
 section .container-fluid{
@@ -847,7 +849,7 @@ section .container-fluid{
   border: none;
   font-size: 17px;
   position: absolute;
-  right: 15px;
+  right: 20px;
   top: -7px;
 }
 .play-f-btn{
@@ -935,6 +937,78 @@ section .container-fluid{
   clear: both;
 }
 
+/* 메인테이블 */
+.table-tabs{
+  position: absolute;
+  width: 22px;
+  height: 110px;
+  padding: 3px 1px;
+  line-height: 20px;
+  text-align: center;
+  background: #0e6efe;
+  cursor: pointer;
+  top: 141px;
+  right: 0;
+  border-radius: 5px 0 0 5px;
+}
+.table-close{
+  position: absolute;
+  width: 22px;
+  height: 110px;
+  padding: 3px 1px;
+  line-height: 20px;
+  text-align: center;
+  background: #0e6efe;
+  cursor: pointer;
+  top: 141px;
+  left: -22px;
+  border-radius: 5px 0 0 5px;
+}
+.table-close{
+  display: none;
+}
+.table-close p{
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+}
+.table-tabs p{
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+}
+.table-row{
+  position: absolute;
+  right: -1px;
+  top: 0;
+  width: 100%;
+}
+.table-row table{
+  width: 100%;
+  height: 100%;
+  margin-left: 400px;
+  text-align: center !important;
+  border: 1px solid #e6e6e6;
+  border-right: 0;
+  border-collapse: collapse;
+}
+.table-row table tr{
+  /* padding: 10px 0; */
+  height: 28px;
+  font-size: 12px;
+}
+.table-row th{
+  text-align: center;
+  color: #fff;
+  background: #34495e;
+  height: 37px;
+}
+.table-row td{
+  font-size: 10px;
+  color: #000;
+  background: #fff;
+}
+
 /* 푸터 */
 footer{
   padding: 1.5em 0;
@@ -973,6 +1047,9 @@ footer .col-sm-2{
   }
   #product__slider{
     height: 210px;
+  }
+  .table-row{
+    display: none;
   }
 }
 @media(min-width: 1321px){
@@ -1217,9 +1294,9 @@ footer .col-sm-2{
   .main--section--2{
     padding: 0 10px;
   }
-  .safe-1{
+  /* .safe-1{
     display: none;
-  }
+  } */
   #product__slider > div{
     width: 33.3333%;
   }
