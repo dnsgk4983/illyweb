@@ -239,7 +239,7 @@ p{
     box-shadow: 0 0 !important;
 }
 .dropdown-menu > li{
-  width: 700px;
+  width: 600px;
   padding: 25px 0;
 }
 .top-nav{
@@ -359,6 +359,7 @@ main{
   text-align: center;
   padding: 10px 15px;
   border-radius: 10px;
+  z-index: 500;
 }
 .nav-tabs > li > a{
   border: 1px solid #fff !important;
@@ -407,6 +408,12 @@ main{
 }
 .main-tabs > li .flex svg{
   vertical-align: middle;
+}
+.main-tabs li .col-sm-9{
+  color: #000;
+}
+.main-tabs li.active .col-sm-9{
+  color: #fff;
 }
 
 #weather-tab{
@@ -768,14 +775,14 @@ main{
   border: none;
 }
 .logoBanner button.slick-prev{
-  right: 50px;
+  right: -20px;
   top: 10px;
   z-index: 99;
   color:transparent;
   font-size: 0px;
 }
 .logoBanner button.slick-next{
-  right: 0;
+  right: -100px;
   top:10px;
   z-index: 99;
   color:transparent;
@@ -822,7 +829,7 @@ section .container-fluid{
   font-size: 17px;
   position: absolute;
   right: 15px;
-  top: 4px;
+  top: -7px;
 }
 .play-f-btn{
   display: none !important;
@@ -905,17 +912,40 @@ section .container-fluid{
   text-overflow: ellipsis;
   overflow: hidden;
 }
+.clear-fix{
+  clear: both;
+}
 
 /* 푸터 */
+footer{
+  padding: 1.5em 0;
+}
 footer .container{
   padding: 15px !important;
 }
-
+footer p{
+  color: #777;
+}
 footer .col-sm-2{
   text-align: right;
 }
 .container-fluid{
   padding: 0 !important;
+}
+
+@media(max-width: 1280px){
+  .logoBanner .slick-arrow{
+    display: none !important;
+  }
+  .footer-slide-btn{
+    display: none !important;
+  }
+  .footer-logo .col-sm-11{
+    width: 100% !important;
+  }
+  .footer-logo .col-sm-1{
+    width: 0% !important;
+  }
 }
 
 @media(max-width: 1200px){
@@ -926,16 +956,10 @@ footer .col-sm-2{
   .main-tabs > li > a{
     padding: 10px 5px !important;
   }
-  .logoBanner .slick-arrow{
-    display: none !important;
-  }
-  .footer-slide-btn{
-    display: none !important;
-  }
 
 }
 
-@media(max-width: 1200px) and (min-width:992px){
+@media(max-width: 1280px) and (min-width:992px){
   .map-title-1{
     left: 22%;
   }
@@ -951,6 +975,7 @@ footer .col-sm-2{
   .main-sevice button.slick-prev{
     top: 60%;
   }
+  
 }
 @media(max-width:992px) and (min-width:768px){
   .rainy-map{
