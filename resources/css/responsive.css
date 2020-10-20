@@ -239,8 +239,11 @@ p{
     box-shadow: 0 0 !important;
 }
 .dropdown-menu > li{
-  width: 600px;
+  width: 26%;
   padding: 25px 0;
+}
+.dropdown-menu > li.sub-dister{
+  width: 40%;
 }
 .top-nav{
     float: right !important;
@@ -315,7 +318,7 @@ p{
 
 /* 메인 섹션 시작 */
 section{
-  padding: 50px 0 0;
+  padding: 50px 0 10px;
 }
 main{
   width: 100%;
@@ -326,6 +329,7 @@ main{
 .main-section{
   width: 100%;
 }
+
 
 .flex{
   display: flex;
@@ -342,7 +346,7 @@ main{
 
 .main-section > .row > .col-sm-6{
   border-radius: 10px;
-  width: 48%;
+  width: 47%;
   height: 452px;
   background: lightgreen;
   overflow: hidden;
@@ -357,7 +361,7 @@ main{
   left: 10px;
   background: #258fff;
   text-align: center;
-  padding: 10px 15px;
+  padding: 8px 12px;
   border-radius: 10px;
   z-index: 500;
 }
@@ -424,14 +428,25 @@ main{
   width: 16.6667%;
   background: #fff;
 }
+#weather-tab > li.active{
+  background: #0e6efe;
+}
 #weather-tab > li > a{
   color: #777;
+  padding: 13px 15px;
+  font-size: 16px;
+
+}
+#weather-tab > li.active > a{
+  background: #0e6efe;
+  color: #fff;
+  border-color: #0e6efe !important;
 }
 
 .main-right > .tab-content > .tab-pane{
   position: relative;
   width: 100%;
-  height: 412px;
+  height: 402px;
   background-size: cover !important;
 }
 
@@ -716,7 +731,7 @@ main{
   position: absolute;
   z-index: 99;
   left: 15px;
-  top: 80%;
+  top: 90%;
 }
 
 .main-sevice button.slick-next {
@@ -748,7 +763,7 @@ main{
 .main-sevice .slick-next{
   position:absolute;
   z-index: 99;
-  top: 80%;
+  top: 90%;
   right: 15px;
 }
 
@@ -768,6 +783,10 @@ main{
   padding: 0 15px;
 }
 
+.banner-slide{
+  border-bottom: 1px solid #ccc;
+  padding: 5px 0 !important;
+}
 .logoBanner button{
   position: absolute;
   z-index: 99;
@@ -930,10 +949,10 @@ footer .col-sm-2{
   text-align: right;
 }
 .container-fluid{
-  padding: 0 !important;
+  padding: 0;
 }
 
-@media(max-width: 1280px){
+@media(max-width: 1320px){
   .logoBanner .slick-arrow{
     display: none !important;
   }
@@ -946,6 +965,35 @@ footer .col-sm-2{
   .footer-logo .col-sm-1{
     width: 0% !important;
   }
+  #weather-tab > li > a{
+    font-size: 12px;
+  }
+  .main-right > .tab-content > .tab-pane{
+    height: 407px;
+  }
+  #product__slider{
+    height: 210px;
+  }
+}
+@media(min-width: 1321px){
+  .navbar-static-top > .container{
+    width: 1240px !important;
+  }
+  .navbar-static-top .top-nav > li {
+    margin: 0 15px;
+  }
+  .sub-weather{
+    margin-left: 30.5% !important;
+  }
+  .sub-ong{
+    margin-left: 47% !important;
+  }
+  .sub-board{
+    margin-left: 56.3% !important;
+  }
+  .sub-msg{
+    margin-left: 56.3% !important;
+  }
 }
 
 @media(max-width: 1200px){
@@ -956,10 +1004,12 @@ footer .col-sm-2{
   .main-tabs > li > a{
     padding: 10px 5px !important;
   }
-
+  .main-right > .tab-content > .tab-pane{
+    height: 412px;
+  }
 }
 
-@media(max-width: 1280px) and (min-width:992px){
+@media(max-width: 1319px) and (min-width:992px){
   .map-title-1{
     left: 22%;
   }
@@ -1147,7 +1197,7 @@ footer .col-sm-2{
     bottom: -5px;
   }
   .weather-conts .more{
-    bottom: -35px;
+    bottom: -25px;
 
   }
 }
@@ -1214,6 +1264,12 @@ footer .col-sm-2{
 }
 
 @media screen and (min-width: 768px){
+  .navbar-static-top .navbar-collapse.collapse{
+    padding: 10px 0;
+  }
+  .top-nav .dropdown-menu{
+    top: 90%;
+  }
   .top-nav > li > a::after{
     content: '';
     position: absolute;
@@ -1237,6 +1293,9 @@ footer .col-sm-2{
   }
   .on-li > a::after{
     background-color: #00aa58 !important;
+  }
+  .main-section .row.flex-side{
+    margin: 0 -10px !important;
   }
 }
 
