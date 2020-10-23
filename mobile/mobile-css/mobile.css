@@ -15,6 +15,7 @@ body{
 
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 16px;
+    background: #f8f8fd;
 }
 
 /* 예산군 로그인 페이지  시작  */
@@ -22,7 +23,6 @@ body{
 .app-section{
     width: 100%;
     height: 100%;
-    background: #f8f8fd;
 }
 .join-app-section{
     width:100%;
@@ -608,7 +608,7 @@ div.header_inner>button.back{
 
 /* 2020 10 22 수정사항 css */
 .content-text-subjuct textarea{
-    width: 93%;
+    width: 92.5%;
     padding: 15px !important;
     resize: none;
 }
