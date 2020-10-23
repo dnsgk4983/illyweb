@@ -242,7 +242,7 @@ div.header_inner>button.back{
 .main-app-section{
     background: #f8f8fd;
     width: 100%;
-    /* height: 100%; */
+    height: 100%;
 }
 
 
@@ -608,7 +608,7 @@ div.header_inner>button.back{
 
 /* 2020 10 22 수정사항 css */
 .content-text-subjuct textarea{
-    width: 93%;
+    width: 95%;
     padding: 15px !important;
     resize: none;
 }

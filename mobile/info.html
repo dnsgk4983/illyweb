@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mobile-css/normalize.css">
+    <link rel="stylesheet" href="mobile-css/reset.css">
+    <link rel="stylesheet" href="mobile-css/mobile.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+</head>
+<body>
+    <section class="content-app-section">
+        <header>
+            <div class="header_inner">
+               <button type="button" class="back" onclick=" javascript:history.back(); ">  </button>
+            </div>
+        </header>
+        <section>
+            <div class="content_inner">
+                <div class="content-registration-title">
+                    <h1>재난정보</h1>
+                </div>
+                <form id="form" method="post" enctype="multipart/form-data">
+                    <div class="content-join-app-id flex-center">
+                           <input type="text" placeholder="제목" class="join-style-wh box" name="CINF_NAME" id="CINF_NAME" value="산불발생" disabled="disabled">
+                    </div>
+                    <div class="content-join-app-id flex-center">
+                        <input type="text" placeholder="발생위치" class="join-style-wh box" id="LOCATION" name="LOCATION" value="예산군청 근청 산 뒷편" disabled="disabled">
+                    </div>
+                    <div class="content-join-app-id flex-center">
+                        <input type="text" placeholder="이름" class="join-style-wh box" name="USR_NAME" id="USR_NAME" value="대민1" disabled="disabled">
+                    </div>
+                    <div class="content-join-app-id flex-center">
+                         <input type="tel" placeholder="연락처" class="join-style-wh box" name="PHONE_NO" id="PHONE_NO" value="01041047596" disabled="disabled">
+                    </div>
+                    <div class="content-join-app-id flex-center">
+                        <input type="text" placeholder="재난유형" class="join-style-wh box" id="CINF_TYPE" name="CINF_TYPE" value="산불" disabled="disabled">
+                    </div>
+                    <div class="filebox bs3-primary" id="fileList"><div class="image-wrap"><img src="images/file-img.jpg" alt="첨부파일" width="100%"></div></div>
+            
+                    <div class="content-text-subjuct">
+                        <textarea id="subject" placeholder="내용" class="post-box" disabled="disabled" name="CINF_CONTENT">산불로 추정되는 연기발생
+조치필요</textarea>
+                    </div>
+                    
+                    <div class="row" style="" id="approval">
+                        <select id="stat" class="content-join-app-tel flex-center-line" name="APPROVAL_TYPE">
+                            <option value="0">대기</option>
+                            <option value="1">승인</option>
+                        </select>
+                    </div>
+                    
+                    <div class="content-text-btn" id="btn" style="">
+                        <button class="registration" id="write" style="width: 100%">권한수정</button>
+                    </div>
+                <input type="hidden" name="IDX" value="119">
+            </form>
+        </div>
+        </section>
+    </section>
+</body>
+</html>

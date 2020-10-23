@@ -13,77 +13,186 @@
 </head>
 <body>
     <section class="content-app-section">
-    <header>
-        <div class="header_inner">
-            <button type="button" class="back"> </button>
-        </div>
-    </header>
-    <section>
-        <div class="content_inner">
-            <div class="content-registration-title">
-                <h1>재난정보등록</h1>
+        <header>
+            <div class="header_inner">
+               <button type="button" class="back" onclick=" javascript:history.back(); ">  </button>
             </div>
-        <div class="content-join-app-id flex-center">
-            <input type="text" placeholder="제목" class="join-style-wh box">
-        </div>
-        <div class="content-join-app-id flex-center">
-            <input type="text" placeholder="재난위치" class="join-style-wh box">
-        </div>
-        <div class="content-join-app-id flex-center">
-            <input type="text" placeholder="이름" class="join-style-wh box">
-        </div>
-        <div class="content-join-app-id flex-center">
-            <input type="tel" placeholder="연락처" class="join-style-wh box">
-        </div>
-        <div class="content-join-app-id flex-center">
-            <input type="text" placeholder="재난유형" class="join-style-wh box">
-        </div>
-        <div class="content-join-app-id flex-center">
-            <input type="text" placeholder="재난유형" class="join-style-wh box">
-        </div>
-        <div class="filebox bs3-primary">
-            <div class="filebox bs3-primary">
-                <!-- <input class="upload-name" value="파일선택" disabled="disabled"> -->
-                <div class="content-file">
-                    <div class="file-box">
-                        <label for="ex_filename">+</label>
-                        <input type="file" id="ex_filename" class="upload-hidden box">
-                    </div>
-                    <div class="file-box">
-                        <label for="ex_filename">+</label>
-                        <input type="file" id="ex_filename" class="upload-hidden box">
-                    </div>
-                    <div class="file-box">
-                        <label for="ex_filename">+</label>
-                        <input type="file" id="ex_filename" class="upload-hidden box">
+        </header>
+        <section>
+            <div class="content_inner">
+                <div class="content-registration-title">
+                    <h1>재난 등록</h1>
+                </div>
+                <form id="form" method="post" enctype="multipart/form-data">
+            <div class="content-join-app-id flex-center">
+                   <input type="text" placeholder="제목" class="join-style-wh box" name="CINF_NAME" id="CINF_NAME">
+            </div>
+            <div class="content-join-app-id flex-center">
+                <input type="text" placeholder="발생위치" class="join-style-wh box" id="LOCATION" name="LOCATION">
+            </div>
+            <div class="content-join-app-id flex-center">
+                
+                
+                    <input type="hidden" name="USR_NAME" value="홍길동">
+                
+            </div>
+            <div class="content-join-app-id flex-center">
+                
+                
+                    <input type="hidden" name="PHONE_NO" value="01041047596">
+                
+            </div>
+            <div class="content-join-app-id flex-center">
+                <input type="text" placeholder="재난유형" class="join-style-wh box" id="CINF_TYPE" name="CINF_TYPE">
+            </div>
+            
+            <div class="content-text-subjuct">
+                <textarea id="subject" placeholder="내용" class="post-box" name="CINF_CONTENT"></textarea>
+            </div>
+            <div class="filebox bs3-primary bs3-wrap">
+                <div class="filebox bs3-primary bs3-hack">
+                    <div class="content-file">
+                        <div class="file-box">
+                            <div class="filebox bs3-primary bs3-hack">
+                                <div class="flex-center">
+                                    <input class="upload-name" value="파일선택" disabled="disabled" id="upload-name1">
+                                    <label for="ex_filename1">업로드</label>
+                                </div>
+                                <input type="file" id="ex_filename1" name="files" class="upload-hidden">
+                            </div>		
+                            <div class="file-images" id="previewbox1">
+                            </div>
+                        </div>
+                        <div class="file-box">
+                           <div class="filebox bs3-primary bs3-hack">
+                               <div class="flex-center">
+                                    <input class="upload-name" value="파일선택" disabled="disabled" id="upload-name2">
+                                    <label for="ex_filename2">업로드</label>
+                                </div>
+                               <input type="file" id="ex_filename2" name="files" class="upload-hidden">
+                           </div>		
+                           <div class="file-images" id="previewbox2">
+                           </div>
+                        </div>
+                        <div class="file-box">
+                            <div class="filebox bs3-primary bs3-hack">
+                                <div class="flex-center">
+                                    <input class="upload-name" value="파일선택" disabled="disabled" id="upload-name3">
+                                    <label for="ex_filename3">업로드</label>
+                                </div>
+                                <input type="file" id="ex_filename3" name="files" class="upload-hidden">
+                            </div>		
+                            <div class="file-images" id="previewbox3">
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <script>
+                                    
+                                    
+                                    function readURL(input, ext) {
+                                        if (input.files && input.files[0]) {
+                                            var reader = new FileReader();
+                                            reader.onload = function(e) {
+                                                
+                                                if( input.id == "ex_filename1" ) {
+                                                    var add = "";
+                                                    if($.inArray(ext, ['gif','png','jpg','jpeg', 'bmp', 'GIF','PNG', 'JPG', "JPEG", 'BMP']) !== -1) {
+                                                        add = "<img id='imgView1' style='cursor:pointer;'>"
+                                                       } else {
+                                                           add = " <video id='imgView1' muted autoplay='autoplay'></video>"
+                                                       }
+                                                    $("#previewbox1").append(add);
+                                                    $("#imgView1").attr('src', e.target.result);
+                                                }
+                                                else if( input.id == "ex_filename2" ) {
+                                                    var add = "";
+                                                    if($.inArray(ext, ['gif','png','jpg','jpeg', 'bmp', 'GIF','PNG', 'JPG', "JPEG", 'BMP']) !== -1) {
+                                                        add = "<img id='imgView2' style='cursor:pointer;'>"
+                                                       } else {
+                                                           add = " <video id='imgView2' muted autoplay='autoplay'></video>"
+                                                       }
+                                                    $("#previewbox2").append(add);
+                                                    $("#imgView2").attr('src', e.target.result);
+                                                } else {
+                                                    var add = "";
+                                                    if($.inArray(ext, ['gif','png','jpg','jpeg', 'bmp', 'GIF','PNG', 'JPG', "JPEG", 'BMP']) !== -1) {
+                                                        add = "<img id='imgView3' style='cursor:pointer;'>"
+                                                       } else {
+                                                           add = " <video id='imgView3' muted autoplay='autoplay'></video>"
+                                                       }
+                                                    $("#previewbox3").append(add);
+                                                    $("#imgView3").attr('src', e.target.result);
+                                                }
+                                                
+                                            }
+                                            reader.readAsDataURL(input.files[0]);
+                                        }
+                                    }
+                                    
+                                    
+                                    
+                                    $(document).on('click', '#imgView1', function() {
+                                        $("#previewbox1").empty();
+                                        var fileObj = $("#ex_filename1");
+                                        fileObj.replaceWith(fileObj.clone(true));
+                                        fileObj.val("");
+                                        $("#upload-name1").val("파일선택");
+                                    });
+                                    
+                                    $(document).on('click', '#imgView2', function() {
+                                        $("#previewbox2").empty();
+                                        var fileObj = $("#ex_filename2");
+                                        fileObj.replaceWith(fileObj.clone(true));
+                                        fileObj.val("");
+                                        $("#upload-name2").val("파일선택");
+                                    });
+                                    
+                                    $(document).on('click', '#imgView3', function() {
+                                        $("#previewbox3").empty();
+                                        var fileObj = $("#ex_filename3");
+                                        fileObj.replaceWith(fileObj.clone(true));
+                                        fileObj.val("");
+                                        $("#upload-name3").val("파일선택");
+                                    });
+                                    
+                                    
+                                    $(document).ready(function () {
+                                        var fileTarget = $('.filebox .upload-hidden');
+                                        fileTarget.on('change', function () {
+                                            var fileObj = $(this);
+                                            var ext = $(this).val().split('.').pop().toLowerCase();
+                                            if($.inArray(ext, ['gif','png','jpg','jpeg', 'bmp', 'GIF','PNG', 'JPG', "JPEG", 'BMP','mp4', 'avi', 'mkv', 'mov', 'wmv', 'MP4', 'AVI', 'MKV', 'MOV', 'WMV']) == -1) {
+                                                 alert('첨부파일은 사진/동영상 파일만 업로드 할수 있습니다.');
+                                                 fileObj.replaceWith(fileObj.clone(true));
+                                                 $(this).val("");
+                                                 return false;
+                                            }
+                                            
+                                            if (window.FileReader) {
+                                                var filename = $(this)[0].files[0].name;
+                                            } else {
+                                                var filename = $(this).val().split('/').pop().split('\\').pop();
+                                            }
+                                            $(this).siblings('.upload-name').val(filename);
+                                            readURL(this, ext);
+                                        });
+                                        
+                                        
+                                    });
+                                    
+                                    
+                                </script>
             </div>
-            <script>
-                $(document).ready(function () {
-                    var fileTarget = $('.filebox .upload-hidden');
-
-                    fileTarget.on('change', function () {
-                        if (window.FileReader) {
-                            var filename = $(this)[0].files[0].name;
-                        } else {
-                            var filename = $(this).val().split('/').pop().split('\\').pop();
-                        }
-
-                        $(this).siblings('.upload-name').val(filename);
-                    });
-                });
-            </script>
+            
+             <input type="hidden" name="APPROVAL_TYPE" value="0"> <!-- 대기 -->
+            <input type="hidden" name="OPEN_TYPE" value="0"> <!-- 주민 -->
+            </form>
+            <div class="content-text-btn">
+                <button class="registration" id="write" style="width: 100%">재난등록</button>
+            </div>
         </div>
-
-        <div class="content-text-subjuct">
-            <textarea id="subject" name="subject" placeholder="내용" class="post-box"></textarea>
-        </div>
-        <div class="content-text-btn">
-            <button class="cancel">취소</button><button class="registration">재난등록</button>
-        </div>
-    </div>
+        </section>
     </section>
-</section>
 </body>
 </html>

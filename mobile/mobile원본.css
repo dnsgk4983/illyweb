@@ -57,8 +57,8 @@ div.content_inner {
 
 .content-app-title{
     text-align: center;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
 }
 .content-app-title h1{
     font-size: 25px;
@@ -242,7 +242,7 @@ div.header_inner>button.back{
 .main-app-section{
     background: #f8f8fd;
     width: 100%;
-    /* height: 100%; */
+    height: 100%;
 }
 
 
@@ -255,12 +255,12 @@ div.header_inner>button.back{
 }
 .swiper-slide-content{
     width: 100%;
-    height: 280px !important;
+    height: 380px !important;
     display: flex;
     flex-direction: column;
+
     background: #fff;
     border-radius: 10px;
-    border: 1px solid #ccc;
 }
 .slider-video{
     padding-top: 10%;
@@ -371,7 +371,7 @@ div.header_inner>button.back{
 .content-app-section{
     background: #f8f8fd;
     width: 100%;
-    /* height: 100%; */
+    height: 100%;
 }
 .content-registration-title{
     text-align: center;
@@ -398,7 +398,7 @@ div.header_inner>button.back{
 
 .filebox .upload-name {
     display: inline-block;
-    padding: .5em 1.0em;
+    padding: .5em .75em;
     font-size: inherit;
     font-family: inherit;
     line-height: normal;
@@ -416,7 +416,7 @@ div.header_inner>button.back{
     color: #fff;
     background-color: #337ab7;
     border-color: #2e6da4;
-    width: 70px;
+    width: 80px;
     text-align: center;
 }
 .filebox label {
@@ -447,12 +447,12 @@ div.header_inner>button.back{
     margin-left: -3%;
 }
 .filebox.bs3-primary{
-    width: 96%;
+    width: 97%;
     margin: 0 auto;
-    margin-top: 3%;
+    margin-top: 1%;
 }
 .file-box{
-    /* margin-right: 2%; */
+    margin-right: 2%;
 }
 .file-images{
     width: 50%;
@@ -530,72 +530,6 @@ div.header_inner>button.back{
     border: none;
     margin: 1% 0;
 }
-.mobile-list{
-    width: 80%;
-    height: auto;
-    margin: 0 auto;
-}
-.mobile-list > ul > li{
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #ddd;
-    padding: 3% 0;
-}
-.list-title{
-    width: 84%;
-}
-.list-title > .title{
-    font-size: 16px;
-}
-.list-title > .sub{
-    font-size: 14px;
-    margin-top: 1%;
-    color: #d4d6d7;
-}
-.list-title > .sub > .date{
-    margin-left: 6px;
-}
-.list-title > .sub > .e{
-    margin-left: 6px;
-}
-.list-img{
-    width: 10%;
-    height: auto;
-    border-radius: 50px;
-}
-.list-img img{
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-}
-.list-comment{
-    width: 6%;
-    height: 38px;
-    padding-top: 8px;
-    text-align: center;
-    background: #f5f6f8;
-    border-radius: 5px;
-    margin-left: 3%;
-}
-.list-comment .cm-count{
-    font-weight: 600;
-    color: #000;
-    font-size: 16px;
-    margin-bottom: 1%;
-}
-.list-comment > p {
-    color: #d4d6d7;
-    font-size: 14px;
-}
-.list-pazing{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-}
-.list-pazing p{
-    cursor: pointer;
-}
-
 
 .new-select{
     text-align: center;
@@ -608,32 +542,5 @@ div.header_inner>button.back{
 
 /* 2020 10 22 수정사항 css */
 .content-text-subjuct textarea{
-    width: 93%;
     padding: 15px !important;
-    resize: none;
-}
-.content-file{
-    margin: 0;
-}
-.filebox.bs3-primary{
-    width: 95%;
-    margin: 0 auto;
-    margin-top: 3%;
-}
-.filebox.bs3-primary.bs3-hack{
-    width: 100%;
-}
-.upload-name{
-    width: 100%;
-}
-.filebox .upload-name{
-    width: 100%;
-    padding-left: 15px;
-}
-
-select#stat{
-    width: 95%;
-    height: 45px;
-    margin: 5% auto 0;
-    border: 1px solid #ccc;
 }
