@@ -1310,6 +1310,7 @@ footer{
     width: 40px;
     height: 40px;
 }
+
 .notice-option {
     width: 100px;
     height: 36px;
@@ -1320,6 +1321,7 @@ footer{
     transition: all 0.3s;
     margin-right: -1px;
 }
+
 
 select{
     box-sizing: border-box;
@@ -1583,7 +1585,7 @@ select{
 .safe-table-board li:nth-child(7) .st3{fill:#65BC68;}
 
 .safe-table-board li:nth-child(8) .st0{fill:#8C8C8C;stroke:#8C8C8C;stroke-miterlimit:10;}
-.safe-table-board li:nth-child(8) .st1{fill:#8CC24A;stroke:#FAFAFA;stroke-miterlimit:10;}
+.safe-table-board li:nth-child(8) .st1{fill:#795548;stroke:#FAFAFA;stroke-miterlimit:10;}
 .safe-table-board li:nth-child(8) .st2{fill:#FFFFFF;}
 
 .safe-table-board li:nth-child(9) .st0{fill:#8C8C8C;stroke:#8C8C8C;stroke-miterlimit:10;}
@@ -1592,11 +1594,15 @@ select{
 
 .safe-table-board li:nth-child(10) .st0{fill:#8C8C8C;stroke:#8C8C8C;stroke-miterlimit:10;}
 .safe-table-board li:nth-child(10) .st1{fill:#795548;stroke:#FAFAFA;stroke-miterlimit:10;}
-.safe-table-board li:nth-child(10) .st2{fill:#FFFFFF;}
+.safe-table-board li:nth-child(10) .st2{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+.safe-table-board li:nth-child(10) .st3{fill:#FFFFFF;}
+.safe-table-board li:nth-child(10) .st4{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:0.3;stroke-miterlimit:10;}
+
 
 .safe-table-board li:nth-child(11) .st0{fill:#8C8C8C;stroke:#8C8C8C;stroke-miterlimit:10;}
 .safe-table-board li:nth-child(11) .st1{fill:#8CC44B;stroke:#FAFAFA;stroke-miterlimit:10;}
 .safe-table-board li:nth-child(11) .st2{fill:#FFFFFF;}
+.safe-table-board li:nth-child(11) .st3{fill: #ffffff}
 
 .safe-table-board li:nth-child(12) .st0{fill:#8C8C8C;stroke:#8C8C8C;stroke-miterlimit:10;}
 .safe-table-board li:nth-child(12) .st1{fill:#009688;stroke:#FAFAFA;stroke-miterlimit:10;}
@@ -4022,9 +4028,9 @@ table a:link {
 .safe-tab-list li:nth-child(3) .st2{fill:#FFFFFF;}
 
 .safe-tab-list li:nth-child(4) .st0{fill:#8C8C8C;stroke:#8C8C8C;stroke-miterlimit:10;}
-.safe-tab-list li:nth-child(4) .st1{fill:#FE5721;stroke:#FAFAFA;stroke-miterlimit:10;}
+.safe-tab-list li:nth-child(4) .st1{fill:#65bc68;stroke:#FAFAFA;stroke-miterlimit:10;}
 .safe-tab-list li:nth-child(4) .st2{fill:#FFFFFF;}
-.safe-tab-list li:nth-child(4) .st3{fill:#FE5721;}
+.safe-tab-list li:nth-child(4) .st3{fill:#65bc68;}
 .safe-tab-list li:nth-child(4).on .st3{fill:#0e6efe;}
 
 .safe-tab-list li:nth-child(5) .st0{fill:#8C8C8C;stroke:#8C8C8C;stroke-miterlimit:10;}
@@ -6676,4 +6682,9 @@ main.info-bg{
     }
     .weather-day-select{
         width: 60%;
+    }
+
+    .notice-title.resizing > h1 > img{
+        width: 32px;
+        height: 32px;
     }

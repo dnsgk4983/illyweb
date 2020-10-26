@@ -12,10 +12,11 @@
 .main-tabs li:nth-child(3) .st2{fill:#FFFFFF;}
 
 .main-tabs li:nth-child(4) .st0{fill:#8C8C8C;stroke:#8C8C8C;stroke-miterlimit:10;}
-.main-tabs li:nth-child(4) .st1{fill:#FE5721;stroke:#FAFAFA;stroke-miterlimit:10;}
+.main-tabs li:nth-child(4) .st1{fill:#65BC68;stroke:#FAFAFA;stroke-miterlimit:10;}
 .main-tabs li:nth-child(4) .st2{fill:#FFFFFF;}
-.main-tabs li:nth-child(4) .st3{fill:#FE5721;}
-.main-tabs li:nth-child(4).on .st3{fill:#0e6efe;}
+.main-tabs li:nth-child(4) .st3{fill:#65BC68;}
+
+
 
 .main-tabs li:nth-child(5) .st0{fill:#8C8C8C;stroke:#8C8C8C;stroke-miterlimit:10;}
 .main-tabs li:nth-child(5) .st1{fill:#795548;stroke:#FAFAFA;stroke-miterlimit:10;}
@@ -25,9 +26,6 @@
 .main-tabs li:nth-child(6) .st1{stroke:#000000;stroke-miterlimit:10;}
 .main-tabs li:nth-child(6) .st2{fill:#84BC46;stroke:#FAFAFA;stroke-miterlimit:10;}
 .main-tabs li:nth-child(6) .st3{fill:#FFFFFF;}
-
-.main-tabs li:nth-child(6).on .st2{fill:#0e6efe;stroke:#FAFAFA;}
-.main-tabs li:nth-child(6).on .st3{fill:#ffffff;}
 
 
 .main-tabs li:nth-child(7) .st0{fill:#8C8C8C;stroke:#8C8C8C;stroke-miterlimit:10;}
@@ -39,6 +37,25 @@
 .main-tabs li:nth-child(8) .st2{fill:#FFFFFF;}
 .main-tabs li:nth-child(8) .st3{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
 
+.main-tabs li.active .st0{
+    fill: #0e6efe; stroke: #0e6efe;
+}
+.main-tabs li.active .st1{
+    fill: transparent; stroke: #fff;
+}
+.main-tabs li.active .st2{
+    fill: #fff;
+}
+.main-tabs li.active .st3{
+    fill: #fff;
+}
+.main-tabs li:nth-child(4).active .st3{
+    fill: #0e6efe;
+}
+
+.main-tabs li:nth-child(6).active .st2{
+    fill: #0e6efe;
+}
 .main-tabs li.active a,
 .main-tabs li.active a:hover,
 .main-tabs li.active a:visited,

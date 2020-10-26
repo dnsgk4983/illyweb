@@ -51,4 +51,10 @@ $('.tab-button li').first().addClass("activeClass");
             $('.table-close').css("display","none");
             $('.table-tabs').css("display","block");
         });
+        $('.dropdown').mouseover(function(){
+            $('.hover-bg').css('display','block');
+        });
+        $('.dropdown').mouseleave(function(){
+            $(".hover-bg").css('display','none');
+        });
     });

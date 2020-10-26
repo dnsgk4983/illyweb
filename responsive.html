@@ -28,6 +28,7 @@
     </head>
 
     <body>
+        <div class="hover-bg"></div>
         <!-- 공통메뉴 -->
         <header>
             <div class="navbar navbar-default navbar-static-top">
@@ -276,7 +277,7 @@
                                                         <div role="tabpanel" class="tab-pane active tab-conts" id="human">
                                                             <div class="map-box-content">
                                                                 <div class="safe-map-box-title">
-                                                                    <div class="col-sm-1"></div>
+                    
                                                                     <div class="wrap-map-title info-safe-map col-sm-5">
                                                                         <div class="wrap-map-info">
                                                                             <div class="title">
@@ -316,7 +317,7 @@
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col-sm-1"></div>
+                    
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -370,8 +371,8 @@
                                                         </svg>
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-1"></div>
-                                                <div class="col-sm-9">
+
+                                                <div class="col-sm-10">
                                                     인명피해우려지역
                                                 </div>
                                             </div>
@@ -408,8 +409,7 @@
                                                         </g>
                                                     </svg>
                                                 </div>
-                                                <div class="col-sm-1"></div>
-                                                <div class="col-sm-9">
+                                                <div class="col-sm-10">
                                                     산사태취약지역
                                                 </div>
                                             </div>
@@ -436,8 +436,8 @@
                                                         </g>
                                                     </svg>
                                                 </div>
-                                                <div class="col-sm-1"></div>
-                                                <div class="col-sm-9">
+
+                                                <div class="col-sm-10">
                                                     안전CCTV
                                                 </div>
                                             </div>
@@ -461,8 +461,8 @@
                                                         </g>
                                                         </svg>
                                                 </div>
-                                                <div class="col-sm-1"></div>
-                                                <div class="col-sm-9">
+
+                                                <div class="col-sm-10">
                                                     이재민임시주거시설
                                                 </div>
                                             </div>
@@ -488,8 +488,8 @@
                                                         </g>
                                                     </svg>
                                                 </div>
-                                                <div class="col-sm-1"></div>
-                                                <div class="col-sm-9">지진옥외대피장소</div>
+
+                                                <div class="col-sm-10">지진옥외대피장소</div>
                                             </div>
                                         </a>
                                     </li>
@@ -528,8 +528,8 @@
                                                         </g>
                                                     </svg>
                                                 </div>
-                                                <div class="col-sm-1"></div>
-                                                <div class="col-sm-9">병원</div>
+
+                                                <div class="col-sm-10">병원</div>
                                             </div>
                                         </a>
                                     </li>
@@ -556,8 +556,8 @@
                                                         </g>
                                                     </svg>
                                                 </div>
-                                                <div class="col-sm-1"></div>
-                                                <div class="col-sm-9">
+
+                                                <div class="col-sm-10">
                                                     약국
                                                 </div>
                                             </div>
@@ -593,8 +593,8 @@
                                                         </g>
                                                     </svg>
                                                 </div>
-                                                <div class="col-sm-1"></div>
-                                                <div class="col-sm-9">
+
+                                                <div class="col-sm-10">
                                                     고속도로 CCTV
                                                 </div>
                                             </div>
@@ -840,6 +840,9 @@
                                     <div class="row">
                                         <div class="col-sm-12">
                                             <div class="rainy-map">
+                                                <a href="#" class="more">
+                                                    <i class="xi-search"></i> 자세히보기
+                                                </a>
                                                 <div class="map-title-1">
                                                     <span class="rainfall-title">봉산면</span>
                                                     <span class="rainfall-content-title">0</span>
@@ -1005,6 +1008,9 @@
                                     <div class="row">
                                         <div class="col-sm-12">
                                             <div class="rainy-map snowy-map">
+                                                <a href="#" class="more">
+                                                    <i class="xi-search"></i> 자세히보기
+                                                </a>
                                                 <div class="map-title-1">
                                                     <span class="rainfall-title">봉산면</span>
                                                     <span class="rainfall-content-title">0</span>
@@ -1257,6 +1263,12 @@
                                     <div class="swiper-box">
                                         <div class="video-container">
                                             <a class="video-slider, videobox">
+                                                <button class="video-slider-btn left-side" onclick="plusDivs(-1)">
+                                                    <span class="xi-angle-left next-box"></span>
+                                                </button>
+                                                <button class="video-slider-btn right-side" onclick="plusDivs(1)">
+                                                    <span class="xi-angle-right prev-box"></span>
+                                                </button>
                                             <div class="video-slide">
                                                 <video controls poster="https://safe.chungnam.go.kr//images/sftv/aed_manual.jpg" autoplay muted>
                                                     <source src="https://safe.chungnam.go.kr/safeTv/aed_manual.mp4" type="video/mp4">
