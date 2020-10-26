@@ -87,7 +87,7 @@ html{
 }
 body{
     /* min-width: 1240px; */
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     letter-spacing: -1px;
     font-family: 'Noto Sans KR';
 }
