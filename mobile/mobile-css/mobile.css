@@ -637,3 +637,19 @@ select#stat{
     margin: 5% auto 0;
     border: 1px solid #ccc;
 }
+
+/* 1023 추가 css */
+
+.new-slider {
+    padding-top: 5%;
+    width: 100%;
+    margin-left: 6px;
+}
+
+.swiper-wrapper {
+    justify-content: center !important;
+}
+
+.new-slider .swiper-container{
+    margin-left: 0 !important;
+}
