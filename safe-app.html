@@ -14,6 +14,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <link rel="shortcut icon" href="resources/images/fa_gDi_icon.ico">
     <link rel="stylesheet" href="resources/css/commmon/common.css">
+    <link rel="stylesheet" href="resources/css/slick.css">
     <link rel="stylesheet" href="resources/css/layout.css">
     <!-- jQuery Modal -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
@@ -246,25 +247,51 @@
                         <img src="resources/images/insurance/smartpphone.svg" alt="안전디딤돌">
                     </div>
                     <div class="ins-info-txt">
-                        <h1>안전디딤돌이란?</h1>
-                        <p>정부대표 재난안전 포털 ‘앱’으로 재난 발생 시 또는 일상생활에서 필요한 다양한 재난안전       정보를 제공하고 있습니다. </p>
+                        <h1>재난제보앱</h1>
+                        <p>예산군 재난안전 포털 ‘앱’으로 재난 발생 시 또는 일상생활에서 확인된 재난현장을 제보하여 공유하고 있습니다.</p>
+                    </div>
+                </div>
+                <div class="ins-cont ins-cont-flex">
+                    <img src="resources/images/icon1-g.png" alt="아이콘">
+                    <div class="ins-cont-wrap">
+                        <h2>주요내용</h2>
+                        <p>재난현장제보, 재난현황, 정보를 하나의 ‘앱’으로 서비스 합니다. 예산군 내에 일어나는 시민의 제보로 재난현장을 공유하여 사고를 방지합니다.</p>
                     </div>
                 </div>
                 <div class="ins-cont">
-                    <h2>주요내용</h2>
-                    <p>긴급재난문자, 재난뉴스 및 재난신고, 민방위대피소, 병의원 등 시설물 위치, 유형별 콘텐츠      등 다양한 정보를 하나의 ‘앱’으로 서비스 합니다. 특히 지진 등 재난유형별 국민행동     요령은 통신이 두절되어도 언제 어디서나 이용 할 수 있습니다.</p>
-                </div>
-                <div class="ins-cont">
-                    <div class="safe-app-images">
-                        <img src="resources/images/safe-item/safe-app-1.jpg" alt="안전디딤돌">
-                        <img src="resources/images/safe-item/safe-app-2.jpg" alt="안전디딤돌">
-                        <img src="resources/images/safe-item/safe-app-3.jpg" alt="안전디딤돌">
+                    <div class="single-item">
+                        <div>
+                            <img src="resources/images/safe-item/safe-yesan.jpg" alt="safe">
+                        </div>
+                        <div>
+                            <img src="resources/images/safe-item/safe-yesan-1.jpg" alt="safe">
+                        </div>
+                        <div>
+                            <img src="resources/images/safe-item/safe-yesan-2.jpg" alt="safe">
+                        </div>
+                        <div>
+                            <img src="resources/images/safe-item/safe-yesan-3.jpg" alt="safe">
+                        </div>
+                        <div>
+                            <img src="resources/images/safe-item/safe-yesan-4.jpg" alt="safe">
+                        </div>
+                        <div>
+                            <img src="resources/images/safe-item/safe-yesan-5.jpg" alt="safe">
+                        </div>
                     </div>
                 </div>
-                <div class="ins-cont">
-                    <h2>다운로드 방법</h2>
-                    <p>- 안드로이드폰 : 「Play스토어」 실행 → 검색창에 「안전디딤돌」입력 → 「안전디딤돌」 선택 → 설치</p>
-                    <p>- 아이폰 : 「앱 스토어」 실행 → 검색창에 「안전디딤돌」 입력 → 「안전디딤돌」 선택 → 설치</p>
+                <div class="ins-cont ins-cont-flex">
+                    <img src="resources/images/icon1-g.png" alt="아이콘">
+                    <div class="ins-cont-wrap">
+                        <h2>접속 방법</h2>
+                        <p>모바일 :「인터넷 브라우져」 실행 → 주소창에 「http://m.safe.yesan.go.kr」입력  → 실행</p>
+                        <p>
+	                        QR코드 스캔 : 네이버, 다음어플로 QR코드를 촬영하세요(권장)
+                        </p>
+                       	<img src="resources/mobile/images/m.qr.jpg" style="width: 10%; height: 10%">
+                       	<span style="font-size: 12px">재난제보앱</span>
+                         
+                    </div>
                 </div>
         </div>
     </section>
@@ -334,6 +361,7 @@
         </div>
     </footer>
     <!-- JS -->
+    <script src="resources/js/slick.min.js"></script>
     <script type="text/javascript" src="resources/javascripts/vendor/jquery.tabslet.min.js"></script>
     <script type="text/javascript" src="resources/javascripts/vendor/rainbow-custom.min.js"></script>
     <script type="text/javascript" src="resources/javascripts/vendor/jquery.anchor.js"></script>
@@ -341,5 +369,9 @@
     <!-- JS ends -->
     <!-- <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script> -->
     <script type="text/javascript" src="resources/js/main.js"></script>
+
+    <script>
+        $('.single-item').slick();
+    </script>
 </body>
 </html>

@@ -58,3 +58,64 @@ $('.tab-button li').first().addClass("activeClass");
             $(".hover-bg").css('display','none');
         });
     });
+
+
+    var nodes = document.querySelectorAll("#product__slider");
+
+
+
+    Array.prototype.forEach.call(nodes, function(k, v){
+
+    
+
+    });
+
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+        items:1,
+        dots: false,
+        nav: true,
+        navigationText: ["◀", "▶"],
+        loop:true,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true,
+    });
+    var owl = $('.owl-carousel_1');
+    owl.owlCarousel({
+        items:1,
+        dots: false,
+        nav: true,
+        navigationText: ["◀", "▶"],
+        loop:true,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true,
+    });
+    var owl = $('.owl-carousel_2');
+    owl.owlCarousel({
+        items:1,
+        dots: false,
+        nav: true,
+        navigationText: ["◀", "▶"],
+        loop:true,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true,
+    });
+    var banner = $('#logo-carousel');
+    banner.owlCarousel({
+        items: 1,
+        dots: false,
+        nav: true,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true
+    });
+    $('.play').on('click',function(){
+        owl.trigger('play.owl.autoplay',[3000])
+    });
+    $('.stop').on('click',function(){
+        owl.trigger('stop.owl.autoplay')
+    });

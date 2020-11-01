@@ -706,7 +706,10 @@ main{
 }
 #product__slider > div{
   width: 25%;
-  height: 240px;
+  height: 100%;
+}
+#product__slider img{
+  /* width: 100%; */
 }
 .main-sevice .slide > img{
   width: 100%;
@@ -1619,4 +1622,28 @@ footer .col-sm-2{
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.owl-nav{
+  font-size: 2em;
+  line-height: 1;
+  color: #fff;
+  position: relative;
+  top: -60px;
+}
+.owl-nav > button {
+  padding: 5px 15px 10px !important;
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+.owl-prev{
+  position: absolute;
+  top: 0;
+  left: 15px;
+  outline: none;
+}
+.owl-next{
+  position: absolute;
+  top: 0;
+  right: 15px;
+  outline: none;
 }
