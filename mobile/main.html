@@ -164,5 +164,12 @@
       }
    }
   </script>
+  <script>
+    window.onpageshow = function(event){
+      if(event.persised || (window.performance && window.performance.navigation.type == 2)){
+        alert('정말로 종료하시겠습니까?');
+      }
+    }
+  </script>
 </body>
 </html>

@@ -1079,9 +1079,6 @@ footer .col-sm-2{
   .main-right > .tab-content > .tab-pane{
     height: 412px;
   }
-  .foot-logo, .foot-visit{
-    display: none;
-  }
 }
 
 @media(max-width: 1319px) and (min-width:992px){

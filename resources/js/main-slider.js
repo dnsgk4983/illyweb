@@ -2,45 +2,69 @@
 
 
 
-$('.product__slider-main').slick({
-    // dots: true,
-    autoplay: true,
-    autoplaySpeed: 4000,
-    arrows: true,
-    slidesToShow: 1,
-    lazyLoad: 'ondemand',
-    pauseOnHover : true
-});
+// $('.product__slider-main').slick({
+//     // dots: true,
+//     autoplay: true,
+//     autoplaySpeed: 4000,
+//     arrows: true,
+//     slidesToShow: 1,
+//     lazyLoad: 'ondemand',
+//     pauseOnHover : true
+// });
 
-$('.logoBanner').slick({
-    // dots: true,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    arrows: true,
-    slidesToShow: 5,
-    lazyLoad: 'ondemand',
-    pauseOnHover : true,
-    responsive: [
-        {
-            breakpoint: 992,
-            settings: {
-                slidesToShow: 4,
-                infinite: true
-            }
+// $('.logoBanner').slick({
+//     // dots: true,
+//     autoplay: true,
+//     autoplaySpeed: 3000,
+//     arrows: true,
+//     slidesToShow: 5,
+//     lazyLoad: 'ondemand',
+//     pauseOnHover : true,
+//     responsive: [
+//         {
+//             breakpoint: 992,
+//             settings: {
+//                 slidesToShow: 4,
+//                 infinite: true
+//             }
+//         },
+//         {
+//             breakpoint: 767,
+//             settings: {
+//                 slidesToShow: 3
+//             }
+//         },
+//         {
+//             breakpoint: 568,
+//             settings: {
+//                 slidesToShow: 2
+//             }
+//         }
+//     ]
+// });
+$('.logoBanner').owlCarousel({
+    items:5,
+    autoplay:true,
+    autoplayHoverPause:true,
+    loop:true,
+    dots: false,
+    responsive: {
+        1325: {
+            items: 5
         },
-        {
-            breakpoint: 767,
-            settings: {
-                slidesToShow: 3
-            }
+        992: {
+            items: 4
         },
-        {
-            breakpoint: 568,
-            settings: {
-                slidesToShow: 2
-            }
+        767: {
+            items: 3
+        },
+        568: {
+            items: 2
+        },
+        320: {
+            items: 2
         }
-    ]
+    }
 });
 
 $('.play-f-btn').on('click', function () {
